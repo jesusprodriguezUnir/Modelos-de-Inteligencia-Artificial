@@ -1,2 +1,10 @@
 /node_modules
 /package-lock.json
+
+# Skill update-intelligence-index: payloads crudos diarios (auditoría local).
+# Se suben como artifact efímero del GitHub Action en su lugar.
+/data/raw/
+
+# Entorno virtual Python local (si se crea para probar el extractor).
+/.venv/
+/__pycache__/
