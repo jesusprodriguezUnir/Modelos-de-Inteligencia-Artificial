@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { models, companies } from '../data/models';
+
+// Modelos que tengan benchmarks
+const bmModels = models
+  .filter((m) => m.benchmarks)
+  .sort((a, b) => (b.benchmarks?.sweBenchPro ?? 0) - (a.benchmarks?.sweBenchPro ?? 0));
+---
+
+<Layout title="Benchmarks de Modelos para Coding">
+  <header class="hero">
+    <div class="wrap">
+      <h1>Benchmarks de Coding</h1>
+      <p>Resultados en SWE-bench Pro, LiveCodeBench y HumanEval para los mejores modelos de programación.</p>
+      <p style="margin-top:6px"><a href="./index.html" class="guide-link">← Volver al catálogo de modelos</a></p>
+    </div>
+  </header>
+
+  <main class="wrap" style="margin-top: 40px; margin-bottom: 80px;">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Modelo</th>
+            <th>Empresa</th>
+            <th>SWE-bench Pro</th>
+            <th>HumanEval</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bmModels.map((m, i) => (
+            <tr>
+              <td>#{i + 1}</td>
+              <td>
+                <span class="dot" style={`background:${companies[m.company].accent}`}></span>
+                <strong>{m.displayName}</strong>
+              </td>
+              <td>{m.company}</td>
+              <td>{m.benchmarks?.sweBenchPro ? `${m.benchmarks.sweBenchPro}%` : '—'}</td>
+              <td>{m.benchmarks?.humanEval ? `${m.benchmarks.humanEval}%` : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <h2>Fuentes Oficiales</h2>
+      <ul style="color: var(--text-dim); font-size: 14px; line-height: 1.8;">
+        <li><a href="https://www.swebench.com/" target="_blank" rel="noopener">SWE-bench</a>: Benchmark definitivo de resolución de issues en GitHub (Python).</li>
+        <li><a href="https://livecodebench.github.io/leaderboard.html" target="_blank" rel="noopener">LiveCodeBench</a>: Problemas recientes de LeetCode/Codeforces para evitar contaminación del dataset.</li>
+        <li><a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>: Precios y velocidades agregadas de múltiples proveedores.</li>
+      </ul>
+    </div>
+  </main>
+</Layout>

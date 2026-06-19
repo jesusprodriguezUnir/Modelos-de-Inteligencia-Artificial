@@ -1,0 +1,200 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { models, companies } from '../data/models';
+
+// Filtrar solo herramientas
+const tools = models.filter((m) => m.kind === 'tool');
+const catLabels: Record<string, string> = {
+  coding: 'Código', reasoning: 'Razonamiento', agentic: 'Agéntico', general: 'General',
+  multimodal: 'Multimodal', fast: 'Rápido', budget: 'Económico', tool: 'Herramienta',
+};
+
+// Datos de comparación para la tabla
+const toolFeatures = [
+  { label: 'Tipo', fn: (m: typeof tools[0]) => {
+    if (m.id === 'cursor' || m.id === 'windsurf') return 'IDE (editor)';
+    if (m.id === 'github-copilot') return 'Extensión IDE';
+    if (m.id === 'cline') return 'Extensión VS Code';
+    if (m.id === 'jules') return 'Agente web (GitHub)';
+    return 'Agente terminal (CLI)';
+  }},
+  { label: 'Precio', fn: (m: typeof tools[0]) => m.pricing.note || '—' },
+  { label: 'Open-source', fn: (m: typeof tools[0]) => m.openWeight ? `✓ ${m.license || ''}` : '✗ Propietario' },
+  { label: 'Multi-modelo', fn: (m: typeof tools[0]) => {
+    const multi = ['cursor', 'windsurf', 'github-copilot', 'opencode', 'aider', 'cline'];
+    return multi.includes(m.id) ? '✓ (varios proveedores)' : '—';
+  }},
+  { label: 'Uso offline/local', fn: (m: typeof tools[0]) => {
+    const local = ['opencode', 'aider', 'cline'];
+    return local.includes(m.id) ? '✓ (con Ollama/llama.cpp)' : '✗';
+  }},
+  { label: 'Modalities', fn: (m: typeof tools[0]) => m.modalities.join(', ') },
+];
+
+// Recomendaciones por perfil
+const profiles = [
+  { icon: '🏢', title: 'Equipo profesional', tool: 'Cursor', reason: 'El IDE AI-native más maduro. Transición natural desde VS Code, excelente refactoring multi-archivo y tab completion.' },
+  { icon: '🚀', title: 'Prototyping rápido', tool: 'Windsurf', reason: 'El flujo "Cascade" permite que el agente ejecute tareas multi-paso autónomamente. Ideal para construir rápido.' },
+  { icon: '🔒', title: 'Privacidad / air-gap', tool: 'OpenCode + Ollama', reason: 'Todo corre en local, sin enviar datos a la nube. Perfecto para banca, sanidad o defensa.' },
+  { icon: '🤝', title: 'Pair-programming', tool: 'Aider', reason: 'El OG de los agentes de terminal. Commits automáticos, excelente integración con Git.' },
+  { icon: '📋', title: 'Automatización de PRs', tool: 'Jules (Google)', reason: 'Asignas issues y Jules crea PRs automáticamente. Ideal para tareas repetitivas y mantenimiento.' },
+  { icon: '🆓', title: 'Sin presupuesto', tool: 'Cline + API key propia', reason: 'Extensión gratuita para VS Code. Solo pagas los tokens del modelo que elijas (puede ser un modelo barato).' },
+];
+---
+
+<Layout title="Herramientas de Coding con IA — Catálogo de Modelos de IA">
+  <header class="hero">
+    <div class="wrap">
+      <a href="./index.html" class="back">← Volver al catálogo</a>
+      <h1>🛠️ Herramientas de Coding con IA</h1>
+      <p>Comparador de IDEs, agentes de terminal y extensiones para programar con inteligencia artificial. Desde Cursor hasta Aider: ¿cuál elegir?</p>
+    </div>
+  </header>
+
+  <main class="wrap tools-page">
+    <!-- Tabla comparativa -->
+    <section>
+      <h2>Comparativa rápida</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              {tools.map((t) => (
+                <th>
+                  <span class="dot" style={`background:${companies[t.company].accent}`}></span>
+                  {t.displayName}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {toolFeatures.map((f) => (
+              <tr>
+                <td class="feat-label">{f.label}</td>
+                {tools.map((t) => (
+                  <td>{f.fn(t)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tarjetas de herramientas -->
+    <section>
+      <h2>Detalle por herramienta</h2>
+      <div class="tools-grid">
+        {tools.map((t) => {
+          const accent = companies[t.company].accent;
+          return (
+            <article class="tool-card" style={`--accent:${accent}`}>
+              <div class="tool-card-bar" style={`background:${accent}`}></div>
+              <div class="tool-card-head">
+                <h3>{t.displayName}</h3>
+                <span class="tool-type">
+                  {t.openWeight ? '🔓 Open-source' : '🔒 Propietario'}
+                </span>
+              </div>
+              <p class="tool-notes">{t.notes}</p>
+              <div class="tool-pricing">{t.pricing.note || '—'}</div>
+              {t.examples?.[0] && (
+                <pre><code class={`language-${t.examples[0].lang}`}>{t.examples[0].code}</code></pre>
+              )}
+              {(t.videos?.length ?? 0) > 0 && (
+                <div class="tool-videos">
+                  <div class="tool-videos-title">🎬 Vídeos</div>
+                  {t.videos!.map((v) => (
+                    <a class="video-link" href={v.url} target="_blank" rel="noopener">
+                      <span class="play">▶</span>
+                      <span>{v.title}</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+              <div class="tool-links">
+                {t.playgroundUrl && <a class="btn primary" href={t.playgroundUrl} target="_blank" rel="noopener">Probar</a>}
+                {t.docsUrl && <a class="btn" href={t.docsUrl} target="_blank" rel="noopener">Docs</a>}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Recomendaciones por perfil -->
+    <section>
+      <h2>¿Cuál elegir? Recomendaciones por perfil</h2>
+      <div class="profiles-grid">
+        {profiles.map((p) => (
+          <div class="profile-card">
+            <div class="profile-icon">{p.icon}</div>
+            <div>
+              <div class="profile-title">{p.title}</div>
+              <div class="profile-tool">→ {p.tool}</div>
+              <p class="profile-reason">{p.reason}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><a href="./index.html">← Volver al catálogo</a></div>
+  </footer>
+
+  <script is:inline>
+    window.addEventListener('load', () => { if (window.hljs) document.querySelectorAll('pre code').forEach((b) => window.hljs.highlightElement(b)); });
+  </script>
+</Layout>
+
+<style>
+  .back { display: inline-block; margin-bottom: 18px; font-size: 14px; color: var(--text-dim); }
+  .tools-page { padding-top: 14px; }
+  .tools-page section { margin: 34px 0; }
+  .tools-page h2 { font-size: 24px; font-weight: 700; margin: 0 0 16px; letter-spacing: -0.01em; }
+
+  .feat-label { font-weight: 600; color: var(--text-dim); white-space: nowrap; }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 18px;
+  }
+  .tool-card {
+    position: relative; background: var(--bg-elev); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 20px; overflow: hidden;
+  }
+  .tool-card-bar { position: absolute; inset: 0 0 auto 0; height: 4px; }
+  .tool-card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .tool-card h3 { font-size: 18px; font-weight: 700; margin: 0; }
+  .tool-type { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: var(--bg-elev-2); color: var(--text-dim); border: 1px solid var(--border); }
+  .tool-notes { color: var(--text-dim); font-size: 14px; margin: 0 0 12px; }
+  .tool-pricing { font-size: 13px; color: var(--text-faint); margin-bottom: 14px; border-left: 2px solid var(--border); padding-left: 10px; }
+  .tool-card pre { margin: 8px 0 14px; }
+  .tool-card pre code { padding: 12px !important; font-size: 12px; background: none; border: 0; }
+  .tool-videos { margin: 14px 0; }
+  .tool-videos-title { font-size: 12px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+  .tool-links { display: flex; gap: 10px; margin-top: 14px; }
+
+  .profiles-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px;
+  }
+  .profile-card {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--bg-elev); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+    transition: border-color .15s;
+  }
+  .profile-card:hover { border-color: var(--brand); }
+  .profile-icon { font-size: 28px; flex: none; }
+  .profile-title { font-size: 15px; font-weight: 700; color: var(--text); }
+  .profile-tool { font-size: 14px; font-weight: 600; color: var(--brand); margin: 2px 0 6px; }
+  .profile-reason { font-size: 13px; color: var(--text-dim); margin: 0; }
+
+  @media (max-width: 640px) {
+    .tools-grid { grid-template-columns: 1fr; }
+    .profiles-grid { grid-template-columns: 1fr; }
+  }
+</style>
