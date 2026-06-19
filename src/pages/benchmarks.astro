@@ -2,57 +2,220 @@
 import Layout from '../layouts/Layout.astro';
 import { models, companies } from '../data/models';
 
-// Modelos que tengan benchmarks
-const bmModels = models
-  .filter((m) => m.benchmarks)
-  .sort((a, b) => (b.benchmarks?.sweBenchPro ?? 0) - (a.benchmarks?.sweBenchPro ?? 0));
+// Solo modelos con benchmarks
+const modelsWithBench = models.filter((m) => m.kind === 'model' && m.benchmarks);
+const allModels = models.filter((m) => m.kind === 'model');
+
+// Ordenar por SWE-bench Pro descendente
+const bySweBench = [...modelsWithBench]
+  .filter((m) => m.benchmarks?.sweBenchPro != null)
+  .sort((a, b) => (b.benchmarks!.sweBenchPro! - a.benchmarks!.sweBenchPro!));
+
+const fmtCtx = (n: number | null) => (n == null ? '—' : n >= 1_000_000 ? `${n / 1_000_000}M` : `${Math.round(n / 1000)}K`);
+
+// Benchmark descriptions
+const benchDescs = [
+  { name: 'SWE-bench Pro', desc: 'Benchmark de referencia para ingeniería de software: el modelo debe resolver issues reales de GitHub en repos multi-archivo. Mide capacidad agéntica completa: leer código, planificar, implementar y verificar.', url: 'https://swebench.com' },
+  { name: 'HumanEval', desc: 'Benchmark clásico de generación de código Python: 164 problemas de programación con tests unitarios. Mide la capacidad de escribir funciones correctas a partir de docstrings.', url: 'https://github.com/openai/human-eval' },
+  { name: 'LiveCodeBench', desc: 'Benchmark dinámico con problemas de competiciones de programación recientes (post-entrenamiento). Evita contaminación de datos.', url: 'https://livecodebench.github.io' },
+];
 ---
 
-<Layout title="Benchmarks de Modelos para Coding">
+<Layout title="Benchmarks de Coding — Catálogo de Modelos de IA">
   <header class="hero">
     <div class="wrap">
-      <h1>Benchmarks de Coding</h1>
-      <p>Resultados en SWE-bench Pro, LiveCodeBench y HumanEval para los mejores modelos de programación.</p>
-      <p style="margin-top:6px"><a href="./index.html" class="guide-link">← Volver al catálogo de modelos</a></p>
+      <a href="./index.html" class="back">← Volver al catálogo</a>
+      <h1>📊 Benchmarks de Coding</h1>
+      <p>Ranking de modelos de IA en los principales benchmarks de programación. Datos recopilados de fuentes públicas a junio de 2026.</p>
+      <p class="disclaimer">⚠️ Los benchmarks tienen limitaciones: pueden ser "harness-tuned", contaminados o no representar tu caso de uso específico. Úsalos como orientación, no como verdad absoluta. Verifica con evaluaciones independientes como LMSYS Chatbot Arena o Artificial Analysis.</p>
     </div>
   </header>
 
-  <main class="wrap" style="margin-top: 40px; margin-bottom: 80px;">
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Modelo</th>
-            <th>Empresa</th>
-            <th>SWE-bench Pro</th>
-            <th>HumanEval</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bmModels.map((m, i) => (
-            <tr>
-              <td>#{i + 1}</td>
-              <td>
-                <span class="dot" style={`background:${companies[m.company].accent}`}></span>
-                <strong>{m.displayName}</strong>
-              </td>
-              <td>{m.company}</td>
-              <td>{m.benchmarks?.sweBenchPro ? `${m.benchmarks.sweBenchPro}%` : '—'}</td>
-              <td>{m.benchmarks?.humanEval ? `${m.benchmarks.humanEval}%` : '—'}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+  <main class="wrap bench-page">
+    <!-- Ranking visual SWE-bench Pro -->
+    <section>
+      <h2>🏆 Ranking SWE-bench Pro</h2>
+      <p class="bench-subtitle">El benchmark más relevante para evaluar capacidad de ingeniería de software real (resolución de issues en repos multi-archivo).</p>
+      <div class="rank-chart">
+        {bySweBench.map((m, i) => {
+          const score = m.benchmarks!.sweBenchPro!;
+          const accent = companies[m.company].accent;
+          const maxScore = bySweBench[0].benchmarks!.sweBenchPro!;
+          const width = (score / maxScore) * 100;
+          return (
+            <div class="rank-row">
+              <div class="rank-pos">{i + 1}</div>
+              <div class="rank-info">
+                <span class="rank-dot" style={`background:${accent}`}></span>
+                <span class="rank-name">{m.displayName}</span>
+                <span class="rank-company">{m.company}</span>
+              </div>
+              <div class="rank-bar-wrap">
+                <div class="rank-bar" style={`width:${width}%; background:${accent}`}></div>
+              </div>
+              <div class="rank-score">{score}%</div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
 
-    <div style="margin-top: 40px;">
-      <h2>Fuentes Oficiales</h2>
-      <ul style="color: var(--text-dim); font-size: 14px; line-height: 1.8;">
-        <li><a href="https://www.swebench.com/" target="_blank" rel="noopener">SWE-bench</a>: Benchmark definitivo de resolución de issues en GitHub (Python).</li>
-        <li><a href="https://livecodebench.github.io/leaderboard.html" target="_blank" rel="noopener">LiveCodeBench</a>: Problemas recientes de LeetCode/Codeforces para evitar contaminación del dataset.</li>
-        <li><a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>: Precios y velocidades agregadas de múltiples proveedores.</li>
-      </ul>
-    </div>
+    <!-- Tabla completa -->
+    <section>
+      <h2>Tabla completa de datos</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Empresa</th>
+              <th>Contexto</th>
+              <th>$/M entrada</th>
+              <th>SWE-bench Pro</th>
+              <th>HumanEval</th>
+              <th>Open-weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            {allModels
+              .sort((a, b) => (b.benchmarks?.sweBenchPro ?? 0) - (a.benchmarks?.sweBenchPro ?? 0))
+              .map((m) => (
+                <tr>
+                  <td>
+                    <span class="dot" style={`background:${companies[m.company].accent}`}></span>
+                    {m.displayName}
+                  </td>
+                  <td>{m.company}</td>
+                  <td>{fmtCtx(m.context)}</td>
+                  <td>{m.pricing.inputPer1M != null ? `$${m.pricing.inputPer1M}` : '—'}</td>
+                  <td class={m.benchmarks?.sweBenchPro ? 'has-bench' : ''}>
+                    {m.benchmarks?.sweBenchPro ? `${m.benchmarks.sweBenchPro}%` : '—'}
+                  </td>
+                  <td class={m.benchmarks?.humanEval ? 'has-bench' : ''}>
+                    {m.benchmarks?.humanEval ? `${m.benchmarks.humanEval}%` : '—'}
+                  </td>
+                  <td>{m.openWeight ? '✓' : '—'}</td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Explicación de benchmarks -->
+    <section>
+      <h2>¿Qué mide cada benchmark?</h2>
+      <div class="bench-descs">
+        {benchDescs.map((b) => (
+          <div class="bench-desc-card">
+            <h3>{b.name}</h3>
+            <p>{b.desc}</p>
+            <a href={b.url} target="_blank" rel="noopener">Ver fuente →</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Consejos -->
+    <section>
+      <h2>💡 Cómo interpretar los benchmarks</h2>
+      <div class="tips">
+        <div class="tip">
+          <div class="tip-icon">🎯</div>
+          <div>
+            <b>Match modelo → tarea</b>
+            <p>Un modelo top en SWE-bench puede no ser el mejor para tu caso. Si haces mucho prototyping rápido, un modelo "flash" barato puede ser más productivo que el #1 del ranking.</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-icon">⚠️</div>
+          <div>
+            <b>Cuidado con el benchmark gaming</b>
+            <p>Los vendors optimizan para benchmarks específicos. SWE-bench Pro y LiveCodeBench son más difíciles de gamear, pero no son inmunes. Valida siempre con tu propio código.</p>
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip-icon">🔄</div>
+          <div>
+            <b>Actualiza trimestralmente</b>
+            <p>Los modelos se actualizan cada 2-3 meses. Un ranking de enero puede ser obsoleto en abril. Fuentes fiables: <a href="https://artificialanalysis.ai" target="_blank">Artificial Analysis</a>, <a href="https://livebench.ai" target="_blank">LiveBench</a>, <a href="https://swebench.com" target="_blank">SWE-bench</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap"><a href="./index.html">← Volver al catálogo</a></div>
+  </footer>
 </Layout>
+
+<style>
+  .back { display: inline-block; margin-bottom: 18px; font-size: 14px; color: var(--text-dim); }
+  .bench-page { padding-top: 14px; }
+  .bench-page section { margin: 36px 0; }
+  .bench-page h2 { font-size: 24px; font-weight: 700; margin: 0 0 12px; letter-spacing: -0.01em; }
+  .bench-subtitle { color: var(--text-dim); font-size: 15px; margin: 0 0 20px; }
+
+  /* ── Rank chart ─────────────────────────────── */
+  .rank-chart { display: flex; flex-direction: column; gap: 8px; }
+  .rank-row {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--bg-elev); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; transition: border-color .15s;
+  }
+  .rank-row:hover { border-color: var(--brand); }
+  .rank-pos {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--bg-elev-2); color: var(--text-faint);
+    font-size: 13px; font-weight: 800;
+    display: grid; place-items: center; flex: none;
+  }
+  .rank-row:first-child .rank-pos {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #0b0d12;
+  }
+  .rank-row:nth-child(2) .rank-pos { background: var(--text-dim); color: #0b0d12; }
+  .rank-row:nth-child(3) .rank-pos { background: #b87333; color: #0b0d12; }
+  .rank-info { display: flex; align-items: center; gap: 8px; width: 260px; flex: none; }
+  .rank-dot { width: 10px; height: 10px; border-radius: 4px; flex: none; }
+  .rank-name { font-size: 14px; font-weight: 700; color: var(--text); }
+  .rank-company { font-size: 12px; color: var(--text-faint); }
+  .rank-bar-wrap {
+    flex: 1; height: 10px; background: var(--bg-elev-2); border-radius: 5px;
+    overflow: hidden; border: 1px solid var(--border);
+  }
+  .rank-bar { height: 100%; border-radius: 5px; transition: width .6s ease-out; }
+  .rank-score { font-size: 15px; font-weight: 800; color: var(--text); width: 52px; text-align: right; flex: none; }
+
+  .has-bench { font-weight: 700; color: var(--brand); }
+
+  /* ── Bench descriptions ──────────────────────── */
+  .bench-descs {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;
+  }
+  .bench-desc-card {
+    background: var(--bg-elev); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px; transition: border-color .15s;
+  }
+  .bench-desc-card:hover { border-color: var(--brand); }
+  .bench-desc-card h3 { font-size: 16px; font-weight: 700; margin: 0 0 8px; }
+  .bench-desc-card p { font-size: 13px; color: var(--text-dim); margin: 0 0 10px; }
+  .bench-desc-card a { font-size: 13px; font-weight: 600; }
+
+  /* ── Tips ────────────────────────────────────── */
+  .tips { display: flex; flex-direction: column; gap: 12px; }
+  .tip {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--bg-elev); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+  }
+  .tip-icon { font-size: 24px; flex: none; }
+  .tip b { font-size: 15px; color: var(--text); }
+  .tip p { font-size: 13px; color: var(--text-dim); margin: 4px 0 0; }
+
+  @media (max-width: 640px) {
+    .rank-info { width: 140px; }
+    .rank-company { display: none; }
+    .bench-descs { grid-template-columns: 1fr; }
+  }
+</style>
