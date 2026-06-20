@@ -2,7 +2,7 @@
 interface Props {
   title?: string;
   /** Clave de página para resaltar el enlace activo de la barra superior. */
-  active?: 'index' | 'local' | 'tools' | 'benchmarks';
+  active?: 'index' | 'local' | 'tools' | 'opencode' | 'benchmarks';
 }
 const { title = 'Catálogo de Modelos de IA para Programación', active } = Astro.props;
 
@@ -10,6 +10,7 @@ const nav = [
   { key: 'index', label: 'Catálogo', href: './index.html' },
   { key: 'local', label: 'Locales', href: './local.html' },
   { key: 'tools', label: 'Herramientas', href: './tools.html' },
+  { key: 'opencode', label: 'Guía OpenCode', href: './opencode.html' },
   { key: 'benchmarks', label: 'Benchmarks', href: './benchmarks.html' },
 ];
 ---
