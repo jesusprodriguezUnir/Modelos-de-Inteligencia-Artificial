@@ -75,6 +75,10 @@ export interface Model {
   license?: string;
   /** Popularidad/uso relativo curado a mano, 0-100 (mayor = más usado). */
   popularity?: number;
+  /** Slug en el Artificial Analysis Intelligence Index (enlace para refresco auto). */
+  iiSlug?: string;
+  /** true si el modelo se importó automáticamente del Intelligence Index. */
+  autoImported?: boolean;
 }
 
 export interface CompanyMeta {

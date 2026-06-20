@@ -12,20 +12,20 @@ const catLabels: Record<string, string> = {
 // Datos de comparación para la tabla
 const toolFeatures = [
   { label: 'Tipo', fn: (m: typeof tools[0]) => {
-    if (m.id === 'cursor' || m.id === 'windsurf') return 'IDE (editor)';
+    if (m.id === 'cursor' || m.id === 'windsurf' || m.id === 'zed' || m.id === 'trae') return 'IDE (editor)';
     if (m.id === 'github-copilot') return 'Extensión IDE';
-    if (m.id === 'cline') return 'Extensión VS Code';
-    if (m.id === 'jules') return 'Agente web (GitHub)';
+    if (m.id === 'cline' || m.id === 'roo-code') return 'Extensión VS Code';
+    if (m.id === 'jules' || m.id === 'devin') return 'Agente web (GitHub)';
     return 'Agente terminal (CLI)';
   }},
   { label: 'Precio', fn: (m: typeof tools[0]) => m.pricing.note || '—' },
   { label: 'Open-source', fn: (m: typeof tools[0]) => m.openWeight ? `✓ ${m.license || ''}` : '✗ Propietario' },
   { label: 'Multi-modelo', fn: (m: typeof tools[0]) => {
-    const multi = ['cursor', 'windsurf', 'github-copilot', 'opencode', 'aider', 'cline'];
+    const multi = ['cursor', 'windsurf', 'github-copilot', 'opencode', 'aider', 'cline', 'zed', 'amp', 'roo-code', 'trae'];
     return multi.includes(m.id) ? '✓ (varios proveedores)' : '—';
   }},
   { label: 'Uso offline/local', fn: (m: typeof tools[0]) => {
-    const local = ['opencode', 'aider', 'cline'];
+    const local = ['opencode', 'aider', 'cline', 'roo-code'];
     return local.includes(m.id) ? '✓ (con Ollama/llama.cpp)' : '✗';
   }},
   { label: 'Modalities', fn: (m: typeof tools[0]) => m.modalities.join(', ') },
