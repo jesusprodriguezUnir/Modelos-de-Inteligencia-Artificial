@@ -10,11 +10,12 @@ const catLabels: Record<string, string> = {
 };
 const originLabels: Record<string, string> = { US: 'EE. UU.', EU: 'Europa', China: 'China', Open: 'Open' };
 
+const onlyModels = models.filter((m) => m.kind === 'model');
+
 const stats = {
-  models: models.filter((m) => m.kind === 'model').length,
-  tools: models.filter((m) => m.kind === 'tool').length,
+  models: onlyModels.length,
   companies: Object.keys(companies).length,
-  open: models.filter((m) => m.openWeight).length,
+  open: onlyModels.filter((m) => m.openWeight).length,
 };
 
 const originChips = ['all', 'US', 'China', 'EU', 'Open'];
@@ -25,9 +26,9 @@ const fmtPrice = (p: number | null) => (p == null ? '—' : `$${p}`);
 
 // Máximos para escalar las barras métricas.
 const mx = {
-  in: Math.max(1, ...models.map((m) => m.pricing.inputPer1M || 0)),
-  out: Math.max(1, ...models.map((m) => m.pricing.outputPer1M || 0)),
-  ctx: Math.max(1, ...models.map((m) => m.context || 0)),
+  in: Math.max(1, ...onlyModels.map((m) => m.pricing.inputPer1M || 0)),
+  out: Math.max(1, ...onlyModels.map((m) => m.pricing.outputPer1M || 0)),
+  ctx: Math.max(1, ...onlyModels.map((m) => m.context || 0)),
 };
 const pct = (v: number | null | undefined, max: number) =>
   !v || !max ? '0%' : `${Math.max(4, Math.min(100, (v / max) * 100))}%`;
@@ -65,21 +66,21 @@ function decorate(m: Model) {
   };
 }
 
-const decorated = models.map(decorate);
+const decorated = onlyModels.map(decorate);
 
 // ── KPIs ──────────────────────────────────────────────────────────────────
 const withSwe = decorated.filter((m) => m.swe != null);
 const bestSwe = [...withSwe].sort((a, b) => (b.swe! - a.swe!))[0];
-const withIn = models.filter((m) => m.pricing.inputPer1M != null && m.pricing.inputPer1M > 0);
+const withIn = onlyModels.filter((m) => m.pricing.inputPer1M != null && m.pricing.inputPer1M > 0);
 const cheap = [...withIn].sort((a, b) => a.pricing.inputPer1M! - b.pricing.inputPer1M!)[0];
-const withCtx = models.filter((m) => m.context);
+const withCtx = onlyModels.filter((m) => m.context);
 const bigCtx = [...withCtx].sort((a, b) => b.context! - a.context!)[0];
 
 // ── Distribución por origen ────────────────────────────────────────────────
 const oColors: Record<string, string> = { US: 'var(--accent)', China: 'var(--accent2)', EU: 'var(--warn)', Open: 'var(--pos)' };
-const total = models.length || 1;
+const total = onlyModels.length || 1;
 const originDist = (['US', 'China', 'EU', 'Open'] as const).map((o) => {
-  const count = models.filter((m) => m.origin === o).length;
+  const count = onlyModels.filter((m) => m.origin === o).length;
   return { label: originLabels[o], count, pct: `${(count / total) * 100}%`, color: oColors[o] };
 });
 
@@ -88,7 +89,7 @@ const topPopularity = [...decorated].sort((a, b) => b.popularity - a.popularity)
 const maxPop = topPopularity[0]?.popularity || 100;
 const leaderboardSwe = [...withSwe].sort((a, b) => (b.swe! - a.swe!)).slice(0, 7);
 
-// Agrupación por empresa (respeta el orden de `companies`).
+// Agrupación por empresa (respeta el orden de `companies`, solo modelos).
 const companyGroups = Object.keys(companies)
   .map((key) => ({ key, meta: companies[key], items: decorated.filter((m) => m.company === key) }))
   .filter((g) => g.items.length > 0);
@@ -106,7 +107,7 @@ const popularityGroups = POPULARITY_TIERS
     <!-- intro -->
     <div style="margin-bottom:18px;">
       <h1 style="margin:0 0 6px; font-size:clamp(24px,3.4vw,34px); font-weight:700; color:var(--head); letter-spacing:-.5px;">Panel de modelos de IA para programar</h1>
-      <p style="margin:0; color:var(--dim); font-size:14.5px; max-width:680px;">Precios por millón de tokens, ventana de contexto y SWE-bench de los modelos y agentes disponibles a junio de 2026. Confirma siempre el precio oficial antes de presupuestar.</p>
+      <p style="margin:0; color:var(--dim); font-size:14.5px; max-width:680px;">Precios por millón de tokens, ventana de contexto y SWE-bench de los modelos disponibles a junio de 2026. Confirma siempre el precio oficial antes de presupuestar.</p>
     </div>
 
     <!-- search -->
@@ -115,14 +116,14 @@ const popularityGroups = POPULARITY_TIERS
         <span style="color:var(--dim);">⌕</span>
         <input id="search" placeholder="Filtrar modelos, empresas o tecnologías…" spellcheck="false" autocomplete="off" style="flex:1; background:transparent; border:none; outline:none; color:var(--text); font-family:inherit; font-size:13.5px;" />
       </div>
-      <span id="result-label" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--dim);">{models.length} / {models.length}</span>
+      <span id="result-label" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--dim);">{onlyModels.length} / {onlyModels.length}</span>
     </div>
 
     <!-- KPI strip -->
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px;">
       <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
         <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Catálogo</div>
-        <div style="display:flex; align-items:baseline; gap:7px; margin-top:7px;"><span style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--head);">{stats.models}</span><span style="font-size:13px; color:var(--dim);">modelos · {stats.tools} agentes</span></div>
+        <div style="display:flex; align-items:baseline; gap:7px; margin-top:7px;"><span style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--head);">{stats.models}</span><span style="font-size:13px; color:var(--dim);">modelos · {stats.open} open-weight</span></div>
         <div style="display:flex; height:7px; border-radius:4px; overflow:hidden; margin-top:12px; background:var(--panel2);">
           {originDist.map((seg) => <span title={seg.label} style={`width:${seg.pct}; background:${seg.color}; display:block;`}></span>)}
         </div>
@@ -357,7 +358,7 @@ const popularityGroups = POPULARITY_TIERS
     </div>
   </div>
 
-  <script type="application/json" id="model-data" is:inline set:html={JSON.stringify({ models, companies, catLabels, originLabels })}></script>
+  <script type="application/json" id="model-data" is:inline set:html={JSON.stringify({ models: onlyModels, companies, catLabels, originLabels })}></script>
 
   <script>
     const DATA = JSON.parse(document.getElementById('model-data').textContent);
