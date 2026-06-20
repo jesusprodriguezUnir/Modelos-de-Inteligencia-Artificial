@@ -2,198 +2,612 @@
 import Layout from '../layouts/Layout.astro';
 import { models, companies } from '../data/models';
 
-// Filtrar solo herramientas
+// ── Datos base ─────────────────────────────────────────────────────────────
 const tools = models.filter((m) => m.kind === 'tool');
-const catLabels: Record<string, string> = {
-  coding: 'Código', reasoning: 'Razonamiento', agentic: 'Agéntico', general: 'General',
-  multimodal: 'Multimodal', fast: 'Rápido', budget: 'Económico', tool: 'Herramienta',
+const TOTAL = tools.length;
+
+// ── Clasificadores ─────────────────────────────────────────────────────────
+function getType(id: string): string {
+  if (['cursor', 'windsurf', 'zed', 'trae'].includes(id)) return 'IDE';
+  if (id === 'github-copilot') return 'Extensión IDE';
+  if (['cline', 'roo-code'].includes(id)) return 'Ext. VS Code';
+  if (['jules', 'devin'].includes(id)) return 'Agente Web';
+  return 'CLI / Terminal';
+}
+
+const TYPE_COLORS: Record<string, string> = {
+  'IDE': 'var(--accent)',
+  'Extensión IDE': 'var(--accent2)',
+  'Ext. VS Code': 'var(--warn)',
+  'Agente Web': 'var(--pos)',
+  'CLI / Terminal': '#a78bfa',
 };
 
-// Datos de comparación para la tabla
-const toolFeatures = [
-  { label: 'Tipo', fn: (m: typeof tools[0]) => {
-    if (m.id === 'cursor' || m.id === 'windsurf' || m.id === 'zed' || m.id === 'trae') return 'IDE (editor)';
-    if (m.id === 'github-copilot') return 'Extensión IDE';
-    if (m.id === 'cline' || m.id === 'roo-code') return 'Extensión VS Code';
-    if (m.id === 'jules' || m.id === 'devin') return 'Agente web (GitHub)';
-    return 'Agente terminal (CLI)';
-  }},
-  { label: 'Precio', fn: (m: typeof tools[0]) => m.pricing.note || '—' },
-  { label: 'Open-source', fn: (m: typeof tools[0]) => m.openWeight ? `✓ ${m.license || ''}` : '✗ Propietario' },
-  { label: 'Multi-modelo', fn: (m: typeof tools[0]) => {
-    const multi = ['cursor', 'windsurf', 'github-copilot', 'opencode', 'aider', 'cline', 'zed', 'amp', 'roo-code', 'trae'];
-    return multi.includes(m.id) ? '✓ (varios proveedores)' : '—';
-  }},
-  { label: 'Uso offline/local', fn: (m: typeof tools[0]) => {
-    const local = ['opencode', 'aider', 'cline', 'roo-code'];
-    return local.includes(m.id) ? '✓ (con Ollama/llama.cpp)' : '✗';
-  }},
-  { label: 'Modalities', fn: (m: typeof tools[0]) => m.modalities.join(', ') },
+const MULTI_MODEL = ['cursor', 'windsurf', 'github-copilot', 'opencode', 'aider', 'cline', 'zed', 'amp', 'roo-code', 'trae'];
+const LOCAL_SUPPORT = ['opencode', 'aider', 'cline', 'roo-code'];
+
+// ── Decorar herramientas ────────────────────────────────────────────────────
+function decorateTool(m: typeof tools[0]) {
+  const c = companies[m.company] || { name: m.company, accent: '#888888', origin: m.origin };
+  const toolType = getType(m.id);
+  return {
+    ...m,
+    accent: c.accent,
+    companyName: c.name,
+    toolType,
+    typeColor: TYPE_COLORS[toolType] || 'var(--dim)',
+    isOpenSource: !!m.openWeight,
+    isMultiModel: MULTI_MODEL.includes(m.id),
+    isLocal: LOCAL_SUPPORT.includes(m.id),
+    priceNote: m.pricing.note || '—',
+    modText: m.modalities.join(' · '),
+  };
+}
+
+const decorated = tools.map(decorateTool);
+
+// ── KPIs ────────────────────────────────────────────────────────────────────
+const openCount = decorated.filter((t) => t.isOpenSource).length;
+const multiCount = decorated.filter((t) => t.isMultiModel).length;
+const localCount = decorated.filter((t) => t.isLocal).length;
+
+// ── Distribución por tipo ───────────────────────────────────────────────────
+const typeKeys = ['IDE', 'Extensión IDE', 'Ext. VS Code', 'Agente Web', 'CLI / Terminal'];
+const typeDist = typeKeys.map((k) => ({
+  label: k,
+  count: decorated.filter((t) => t.toolType === k).length,
+  color: TYPE_COLORS[k],
+}));
+const maxTypeCount = Math.max(...typeDist.map((t) => t.count), 1);
+
+// ── Top por popularidad ────────────────────────────────────────────────────
+const topTools = [...decorated].sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0)).slice(0, 8);
+const maxPop = topTools[0]?.popularity || 100;
+
+// ── Agrupaciones por tipo ──────────────────────────────────────────────────
+const typeGroups = typeKeys
+  .map((k) => ({ type: k, color: TYPE_COLORS[k], items: decorated.filter((t) => t.toolType === k) }))
+  .filter((g) => g.items.length > 0);
+
+// ── Recomendaciones por perfil ─────────────────────────────────────────────
+const profiles = [
+  { icon: '🏢', title: 'Equipo profesional', tool: 'Cursor', toolId: 'cursor', reason: 'El IDE AI-native más maduro. Transición natural desde VS Code, excelente refactoring multi-archivo y tab completion.' },
+  { icon: '🚀', title: 'Prototyping rápido', tool: 'Windsurf', toolId: 'windsurf', reason: 'El flujo "Cascade" permite que el agente ejecute tareas multi-paso autónomamente. Ideal para construir rápido.' },
+  { icon: '🔒', title: 'Privacidad / air-gap', tool: 'OpenCode + Ollama', toolId: 'opencode', reason: 'Todo corre en local, sin enviar datos a la nube. Perfecto para banca, sanidad o defensa.' },
+  { icon: '🤝', title: 'Pair-programming', tool: 'Aider', toolId: 'aider', reason: 'El OG de los agentes de terminal. Commits automáticos, excelente integración con Git.' },
+  { icon: '📋', title: 'Automatización de PRs', tool: 'Jules (Google)', toolId: 'jules', reason: 'Asignas issues y Jules crea PRs automáticamente. Ideal para tareas repetitivas y mantenimiento.' },
+  { icon: '🆓', title: 'Sin presupuesto', tool: 'Cline + API key propia', toolId: 'cline', reason: 'Extensión gratuita para VS Code. Solo pagas los tokens del modelo que elijas (puede ser uno barato).' },
 ];
 
-// Recomendaciones por perfil
-const profiles = [
-  { icon: '🏢', title: 'Equipo profesional', tool: 'Cursor', reason: 'El IDE AI-native más maduro. Transición natural desde VS Code, excelente refactoring multi-archivo y tab completion.' },
-  { icon: '🚀', title: 'Prototyping rápido', tool: 'Windsurf', reason: 'El flujo "Cascade" permite que el agente ejecute tareas multi-paso autónomamente. Ideal para construir rápido.' },
-  { icon: '🔒', title: 'Privacidad / air-gap', tool: 'OpenCode + Ollama', reason: 'Todo corre en local, sin enviar datos a la nube. Perfecto para banca, sanidad o defensa.' },
-  { icon: '🤝', title: 'Pair-programming', tool: 'Aider', reason: 'El OG de los agentes de terminal. Commits automáticos, excelente integración con Git.' },
-  { icon: '📋', title: 'Automatización de PRs', tool: 'Jules (Google)', reason: 'Asignas issues y Jules crea PRs automáticamente. Ideal para tareas repetitivas y mantenimiento.' },
-  { icon: '🆓', title: 'Sin presupuesto', tool: 'Cline + API key propia', reason: 'Extensión gratuita para VS Code. Solo pagas los tokens del modelo que elijas (puede ser un modelo barato).' },
-];
+// ── Tabla comparativa columnas ─────────────────────────────────────────────
+const thStyle = "padding:12px 16px; font-weight:500; font-size:11px; text-transform:uppercase; letter-spacing:.6px; border-bottom:1px solid var(--border2); color:var(--dim); white-space:nowrap;";
+const tdStyle = "padding:11px 16px; border-bottom:1px solid var(--border);";
 ---
 
-<Layout title="Herramientas de Coding con IA — Catálogo de Modelos de IA" active="tools">
-  <header class="hero">
-    <div class="wrap">
-      <h1>🛠️ Herramientas de Coding con IA</h1>
-      <p>Comparador de IDEs, agentes de terminal y extensiones para programar con inteligencia artificial. Desde Cursor hasta Aider: ¿cuál elegir?</p>
-    </div>
-  </header>
+<Layout title="Herramientas de Coding con IA — Panel de IA" active="tools">
+  <main class="wrap" style="padding-top:24px; padding-bottom:150px;">
 
-  <main class="wrap tools-page">
-    <!-- Tabla comparativa -->
-    <section>
-      <h2>Comparativa rápida</h2>
-      <div class="table-wrap">
-        <table>
+    <!-- intro ────────────────────────────────────────────────────────── -->
+    <div style="margin-bottom:18px;">
+      <h1 style="margin:0 0 6px; font-size:clamp(24px,3.4vw,34px); font-weight:700; color:var(--head); letter-spacing:-.5px;">🛠️ Herramientas de Coding con IA</h1>
+      <p style="margin:0; color:var(--dim); font-size:14.5px; max-width:700px;">IDEs, agentes de terminal y extensiones para programar con IA. Compara Cursor, Windsurf, Aider, Cline y más. Datos actualizados a junio de 2026.</p>
+    </div>
+
+    <!-- search ───────────────────────────────────────────────────────── -->
+    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+      <div style="flex:1; min-width:220px; max-width:480px; display:flex; align-items:center; gap:9px; background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:8px 13px;">
+        <span style="color:var(--dim);">⌕</span>
+        <input id="tools-search" placeholder="Filtrar herramientas…" spellcheck="false" autocomplete="off" style="flex:1; background:transparent; border:none; outline:none; color:var(--text); font-family:inherit; font-size:13.5px;" />
+      </div>
+      <span id="tools-result-label" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--dim);">{TOTAL} / {TOTAL}</span>
+    </div>
+
+    <!-- KPI strip ────────────────────────────────────────────────────── -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin-bottom:14px;">
+      <!-- Catálogo -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Herramientas</div>
+        <div style="display:flex; align-items:baseline; gap:7px; margin-top:7px;">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--head);">{TOTAL}</span>
+          <span style="font-size:13px; color:var(--dim);">en catálogo</span>
+        </div>
+        <!-- barra distribución por tipo -->
+        <div style="display:flex; height:7px; border-radius:4px; overflow:hidden; margin-top:12px; background:var(--panel2);">
+          {typeDist.map((seg) => (
+            <span title={seg.label} style={`width:${(seg.count / TOTAL) * 100}%; background:${seg.color}; display:block;`}></span>
+          ))}
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:9px; margin-top:9px;">
+          {typeDist.filter(s => s.count > 0).map((seg) => (
+            <span style="display:inline-flex; align-items:center; gap:5px; font-size:11px; color:var(--dim);">
+              <span style={`width:8px;height:8px;border-radius:2px;background:${seg.color};`}></span>
+              {seg.label} {seg.count}
+            </span>
+          ))}
+        </div>
+      </div>
+      <!-- Open-source -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Open-source</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--pos); margin-top:7px;">{openCount}</div>
+        <div style="font-size:13px; color:var(--dim); margin-top:2px;">de {TOTAL} son open-weight / MIT</div>
+      </div>
+      <!-- Multi-modelo -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Multi-modelo</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--accent); margin-top:7px;">{multiCount}</div>
+        <div style="font-size:13px; color:var(--dim); margin-top:2px;">soportan varios proveedores</div>
+      </div>
+      <!-- Uso local -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Offline / Local</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--accent2); margin-top:7px;">{localCount}</div>
+        <div style="font-size:13px; color:var(--dim); margin-top:2px;">compatibles con Ollama/llama.cpp</div>
+      </div>
+    </div>
+
+    <!-- leaderboards ─────────────────────────────────────────────────── -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px; margin-bottom:14px;">
+      <!-- Top por popularidad -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+          <span style="font-size:13px; font-weight:600; color:var(--head); letter-spacing:.2px;">Top por adopción</span>
+          <span style="font-size:11px; color:var(--dim);">popularidad estimada</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          {topTools.map((t) => (
+            <div data-action="tool-detail" data-id={t.id} style="display:flex; align-items:center; gap:12px; cursor:pointer;">
+              <span style="width:120px; flex:none; font-size:12.5px; color:var(--head); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                <span style={`display:inline-block;width:7px;height:7px;border-radius:50%;background:${t.accent};margin-right:7px;`}></span>
+                {t.displayName}
+              </span>
+              <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;">
+                <span style={`display:block; height:100%; width:${((t.popularity ?? 0) / maxPop) * 100}%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;`}></span>
+              </div>
+              <span style="width:34px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--accent);">{t.popularity ?? 0}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Distribución por tipo -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+          <span style="font-size:13px; font-weight:600; color:var(--head); letter-spacing:.2px;">Por tipo de herramienta</span>
+          <span style="font-size:11px; color:var(--dim);">clic para filtrar</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          {typeDist.filter(d => d.count > 0).map((d) => (
+            <div class="type-filter-btn" data-type={d.label} style="display:flex; align-items:center; gap:12px; cursor:pointer; border-radius:8px; padding:4px 6px; transition:background .13s;">
+              <span style={`width:8px; height:8px; border-radius:50%; background:${d.color}; flex:none;`}></span>
+              <span style="width:120px; flex:none; font-size:12.5px; color:var(--head);">{d.label}</span>
+              <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;">
+                <span style={`display:block; height:100%; width:${(d.count / maxTypeCount) * 100}%; background:${d.color}; border-radius:4px; opacity:.8;`}></span>
+              </div>
+              <span style="width:20px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--dim);">{d.count}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- filter pills + view toggle ────────────────────────────────────── -->
+    <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:22px;">
+      <div id="type-chips" style="display:flex; flex-wrap:wrap; gap:8px;">
+        <button class="dpill" data-type="all" data-active="true" style="font-family:inherit; font-size:12.5px; padding:6px 13px; border-radius:8px; border:1px solid var(--accent); background:var(--accent); color:#fff;">Todos</button>
+        {typeKeys.map((k) => (
+          <button class="dpill" data-type={k} data-active="false" style={`font-family:inherit; font-size:12.5px; padding:6px 13px; border-radius:8px; border:1px solid var(--border2); background:transparent; color:var(--text);`}>{k}</button>
+        ))}
+      </div>
+      <div id="tools-view-toggle" style="margin-left:auto; display:flex; gap:0; border:1px solid var(--border2); border-radius:8px; overflow:hidden;">
+        <button class="dbtn tvbtn" data-view="cards" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; background:var(--accent); color:#fff;">▦ Tarjetas</button>
+        <button class="dbtn tvbtn" data-view="table" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">≣ Tabla</button>
+        <button class="dbtn tvbtn" data-view="type" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">▥ Por tipo</button>
+      </div>
+    </div>
+
+    <!-- empty state ──────────────────────────────────────────────────── -->
+    <div id="tools-empty" class="hidden" style="margin-top:30px; border:1px dashed var(--border2); border-radius:12px; padding:60px; text-align:center; color:var(--dim);">Sin resultados para este filtro.</div>
+
+    <!-- CARDS view ───────────────────────────────────────────────────── -->
+    <div id="tools-view-cards" class="tview" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; margin-top:18px;">
+      {decorated.map((t) => (
+        <div
+          class="dcard tcard"
+          data-id={t.id}
+          data-name={t.displayName.toLowerCase()}
+          data-company={t.company.toLowerCase()}
+          data-notes={(t.notes ?? '').toLowerCase()}
+          data-type={t.toolType}
+          style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:17px; cursor:pointer;"
+        >
+          <!-- accent bar -->
+          <div style={`height:3px; border-radius:3px 3px 0 0; background:${t.accent}; margin:-17px -17px 14px; border-radius:12px 12px 0 0;`}></div>
+          <!-- company row -->
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style={`width:9px; height:9px; border-radius:50%; background:${t.accent};`}></span>
+            <span style="font-size:11px; letter-spacing:.5px; text-transform:uppercase; color:var(--dim);">{t.companyName}</span>
+            <span style={`margin-left:auto; font-size:10px; font-weight:600; color:${t.typeColor}; background:var(--panel2); border-radius:5px; padding:2px 7px; border:1px solid ${t.typeColor}33;`}>{t.toolType}</span>
+          </div>
+          <!-- name -->
+          <div style="margin-top:10px;">
+            <h3 style="margin:0; font-size:18px; font-weight:600; color:var(--head);">{t.displayName}</h3>
+          </div>
+          <!-- pricing note -->
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent); min-height:15px; margin-top:3px;">{t.priceNote}</div>
+
+          <!-- feature bars -->
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:14px;">
+            <div style="display:flex; align-items:center; gap:9px;">
+              <span style="width:80px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Multi-modelo</span>
+              <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;">
+                <span style={`display:block; height:100%; width:${t.isMultiModel ? '100%' : '0%'}; background:var(--accent); border-radius:3px;`}></span>
+              </div>
+              <span style="width:28px; flex:none; text-align:right; font-size:12px; color:var(--head);">{t.isMultiModel ? '✓' : '✗'}</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:9px;">
+              <span style="width:80px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Local</span>
+              <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;">
+                <span style={`display:block; height:100%; width:${t.isLocal ? '100%' : '0%'}; background:var(--accent2); border-radius:3px;`}></span>
+              </div>
+              <span style="width:28px; flex:none; text-align:right; font-size:12px; color:var(--head);">{t.isLocal ? '✓' : '✗'}</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:9px;">
+              <span style="width:80px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Open</span>
+              <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;">
+                <span style={`display:block; height:100%; width:${t.isOpenSource ? '100%' : '0%'}; background:var(--pos); border-radius:3px;`}></span>
+              </div>
+              <span style="width:28px; flex:none; text-align:right; font-size:12px; color:var(--head);">{t.isOpenSource ? '✓' : '✗'}</span>
+            </div>
+          </div>
+
+          <!-- tags -->
+          <div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:13px;">
+            {t.isOpenSource && <span style="font-size:10.5px; color:var(--pos); border:1px solid var(--pos); border-radius:5px; padding:1px 7px;">open</span>}
+            {t.isMultiModel && <span style="font-size:10.5px; color:var(--accent); border:1px solid var(--accent)33; border-radius:5px; padding:1px 7px; background:var(--panel2);">multi-modelo</span>}
+            {t.isLocal && <span style="font-size:10.5px; color:var(--accent2); border:1px solid var(--accent2)33; border-radius:5px; padding:1px 7px; background:var(--panel2);">local</span>}
+            {t.license && <span style="font-size:10.5px; color:var(--dim); background:var(--panel2); border-radius:5px; padding:1px 7px;">{t.license}</span>}
+          </div>
+
+          <!-- actions -->
+          <div style="display:flex; gap:7px; margin-top:14px;">
+            <button class="dbtn" data-action="tool-detail" data-id={t.id} style="flex:1; font-family:inherit; font-size:12.5px; padding:8px; border-radius:8px; border:none; background:var(--accent); color:#fff; font-weight:500;">Ver detalle</button>
+            {t.playgroundUrl && <a class="dbtn" href={t.playgroundUrl} target="_blank" rel="noopener" style="font-family:inherit; font-size:12.5px; padding:8px 13px; border-radius:8px; border:1px solid var(--border2); background:var(--panel2); color:var(--text); text-decoration:none;">Probar ↗</a>}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- TABLE view ───────────────────────────────────────────────────── -->
+    <div id="tools-view-table" class="tview hidden">
+      <div class="dsh-scroll" style="margin-top:18px; background:var(--panel); border:1px solid var(--border); border-radius:12px; overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; min-width:820px; font-size:13px;">
           <thead>
-            <tr>
-              <th>Característica</th>
-              {tools.map((t) => (
-                <th>
-                  <span class="dot" style={`background:${companies[t.company].accent}`}></span>
-                  {t.displayName}
-                </th>
-              ))}
+            <tr style="text-align:left;">
+              <th style={thStyle}>Herramienta</th>
+              <th style={thStyle}>Empresa</th>
+              <th style={thStyle}>Tipo</th>
+              <th style={thStyle}>Precio</th>
+              <th style={`${thStyle} text-align:center;`}>Multi-modelo</th>
+              <th style={`${thStyle} text-align:center;`}>Local</th>
+              <th style={`${thStyle} text-align:center;`}>Open-source</th>
             </tr>
           </thead>
           <tbody>
-            {toolFeatures.map((f) => (
-              <tr>
-                <td class="feat-label">{f.label}</td>
-                {tools.map((t) => (
-                  <td>{f.fn(t)}</td>
-                ))}
+            {decorated.map((t) => (
+              <tr
+                class="drow trow"
+                data-id={t.id}
+                data-name={t.displayName.toLowerCase()}
+                data-company={t.company.toLowerCase()}
+                data-notes={(t.notes ?? '').toLowerCase()}
+                data-type={t.toolType}
+                style="border-bottom:1px solid var(--border); cursor:pointer;"
+              >
+                <td style={tdStyle}>
+                  <span style={`display:inline-block; width:8px; height:8px; border-radius:50%; background:${t.accent}; margin-right:9px;`}></span>
+                  <span style="color:var(--head); font-weight:500;">{t.displayName}</span>
+                </td>
+                <td style={`${tdStyle} color:var(--dim);`}>{t.companyName}</td>
+                <td style={tdStyle}>
+                  <span style={`font-size:11px; font-weight:600; color:${t.typeColor}; background:var(--panel2); border-radius:5px; padding:2px 8px; border:1px solid ${t.typeColor}33;`}>{t.toolType}</span>
+                </td>
+                <td style={`${tdStyle} font-family:'IBM Plex Mono',monospace; color:var(--text);`}>{t.priceNote}</td>
+                <td style={`${tdStyle} text-align:center;`}>
+                  <span style={`font-size:13px; color:${t.isMultiModel ? 'var(--pos)' : 'var(--dim)'};`}>{t.isMultiModel ? '✓' : '✗'}</span>
+                </td>
+                <td style={`${tdStyle} text-align:center;`}>
+                  <span style={`font-size:13px; color:${t.isLocal ? 'var(--accent2)' : 'var(--dim)'};`}>{t.isLocal ? '✓' : '✗'}</span>
+                </td>
+                <td style={`${tdStyle} text-align:center;`}>
+                  <span style={`font-size:13px; color:${t.isOpenSource ? 'var(--pos)' : 'var(--dim)'};`}>{t.isOpenSource ? '✓' : '✗'}</span>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-    </section>
+    </div>
 
-    <!-- Tarjetas de herramientas -->
-    <section>
-      <h2>Detalle por herramienta</h2>
-      <div class="tools-grid">
-        {tools.map((t) => {
-          const accent = companies[t.company].accent;
-          return (
-            <article class="tool-card" style={`--accent:${accent}`}>
-              <div class="tool-card-bar" style={`background:${accent}`}></div>
-              <div class="tool-card-head">
-                <h3>{t.displayName}</h3>
-                <span class="tool-type">
-                  {t.openWeight ? '🔓 Open-source' : '🔒 Propietario'}
-                </span>
-              </div>
-              <p class="tool-notes">{t.notes}</p>
-              <div class="tool-pricing">{t.pricing.note || '—'}</div>
-              {t.examples?.[0] && (
-                <pre><code class={`language-${t.examples[0].lang}`}>{t.examples[0].code}</code></pre>
-              )}
-              {(t.videos?.length ?? 0) > 0 && (
-                <div class="tool-videos">
-                  <div class="tool-videos-title">🎬 Vídeos</div>
-                  {t.videos!.map((v) => (
-                    <a class="video-link" href={v.url} target="_blank" rel="noopener">
-                      <span class="play">▶</span>
-                      <span>{v.title}</span>
-                    </a>
-                  ))}
+    <!-- TYPE view ────────────────────────────────────────────────────── -->
+    <div id="tools-view-type" class="tview hidden">
+      {typeGroups.map((g) => (
+        <div class="ttype-group" data-type-group={g.type} style="margin-top:26px;">
+          <div style="display:flex; align-items:center; gap:10px; padding-bottom:10px; border-bottom:1px solid var(--border); margin-bottom:14px;">
+            <span style={`width:10px; height:10px; border-radius:50%; background:${g.color};`}></span>
+            <span style="font-size:16px; font-weight:600; color:var(--head);">{g.type}</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--dim); margin-left:auto;">{g.items.length}</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px;">
+            {g.items.map((t) => (
+              <div
+                class="dcard tcard"
+                data-id={t.id}
+                data-name={t.displayName.toLowerCase()}
+                data-company={t.company.toLowerCase()}
+                data-notes={(t.notes ?? '').toLowerCase()}
+                data-type={t.toolType}
+                style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:17px; cursor:pointer;"
+              >
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span style={`width:9px; height:9px; border-radius:50%; background:${t.accent};`}></span>
+                  <span style="font-size:11px; letter-spacing:.5px; text-transform:uppercase; color:var(--dim);">{t.companyName}</span>
+                  <span style={`margin-left:auto; font-size:10px; font-weight:600; color:${t.typeColor}; background:var(--panel2); border-radius:5px; padding:2px 7px;`}>{t.toolType}</span>
                 </div>
-              )}
-              <div class="tool-links">
-                {t.playgroundUrl && <a class="btn primary" href={t.playgroundUrl} target="_blank" rel="noopener">Probar</a>}
-                {t.docsUrl && <a class="btn" href={t.docsUrl} target="_blank" rel="noopener">Docs</a>}
+                <h3 style="margin:10px 0 3px; font-size:17px; font-weight:600; color:var(--head);">{t.displayName}</h3>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent); min-height:14px;">{t.priceNote}</div>
+                <p style="font-size:13px; color:var(--dim); margin:10px 0 0; line-height:1.5;">{t.notes}</p>
+                <div style="display:flex; gap:7px; margin-top:14px;">
+                  <button class="dbtn" data-action="tool-detail" data-id={t.id} style="flex:1; font-family:inherit; font-size:12.5px; padding:8px; border-radius:8px; border:none; background:var(--accent); color:#fff; font-weight:500;">Ver detalle</button>
+                  {t.playgroundUrl && <a class="dbtn" href={t.playgroundUrl} target="_blank" rel="noopener" style="font-family:inherit; font-size:12.5px; padding:8px 13px; border-radius:8px; border:1px solid var(--border2); background:var(--panel2); color:var(--text); text-decoration:none;">Probar ↗</a>}
+                </div>
               </div>
-            </article>
-          );
-        })}
-      </div>
-    </section>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
 
-    <!-- Recomendaciones por perfil -->
-    <section>
-      <h2>¿Cuál elegir? Recomendaciones por perfil</h2>
-      <div class="profiles-grid">
+    <!-- perfiles ─────────────────────────────────────────────────────── -->
+    <div style="margin-top:40px;">
+      <div style="display:flex; align-items:center; gap:10px; padding-bottom:12px; border-bottom:1px solid var(--border); margin-bottom:18px;">
+        <span style="font-size:16px; font-weight:600; color:var(--head);">¿Cuál elegir?</span>
+        <span style="font-size:12px; color:var(--dim);">Recomendaciones por perfil de uso</span>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:14px;">
         {profiles.map((p) => (
-          <div class="profile-card">
-            <div class="profile-icon">{p.icon}</div>
+          <div
+            class="dbtn"
+            data-action="tool-detail"
+            data-id={p.toolId}
+            style="text-align:left; display:flex; align-items:flex-start; gap:14px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px; cursor:pointer; font-family:inherit; transition:border-color .15s, transform .15s;"
+          >
+            <span style="font-size:28px; flex:none; line-height:1;">{p.icon}</span>
             <div>
-              <div class="profile-title">{p.title}</div>
-              <div class="profile-tool">→ {p.tool}</div>
-              <p class="profile-reason">{p.reason}</p>
+              <div style="font-size:14px; font-weight:700; color:var(--head);">{p.title}</div>
+              <div style="font-size:13px; font-weight:600; color:var(--accent); margin:3px 0 7px;">→ {p.tool}</div>
+              <p style="font-size:13px; color:var(--dim); margin:0; line-height:1.5;">{p.reason}</p>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
+
   </main>
 
-  <footer>
-    <div class="wrap"><a href="./index.html">← Volver al catálogo</a></div>
-  </footer>
+  <!-- detail drawer ──────────────────────────────────────────────────── -->
+  <div id="tools-detail-drawer" class="hidden" style="position:fixed; inset:0; z-index:60; background:rgba(5,5,12,.6); display:flex; justify-content:flex-end;">
+    <div class="dsh-scroll" id="tools-detail-panel" style="width:min(580px,100%); height:100%; overflow-y:auto; background:var(--panel); border-left:1px solid var(--accent); animation:dshslide .24s ease both;">
+      <div id="tools-detail-body"></div>
+    </div>
+  </div>
 
-  <script is:inline>
-    window.addEventListener('load', () => { if (window.hljs) document.querySelectorAll('pre code').forEach((b) => window.hljs.highlightElement(b)); });
+  <!-- Datos en JSON para el script ─────────────────────────────────── -->
+  <script type="application/json" id="tools-data" is:inline set:html={JSON.stringify({
+    tools: tools.map(t => ({
+      id: t.id,
+      displayName: t.displayName,
+      company: t.company,
+      companyName: (companies[t.company] || { name: t.company }).name,
+      accent: (companies[t.company] || { accent: '#888' }).accent,
+      toolType: getType(t.id),
+      typeColor: TYPE_COLORS[getType(t.id)] || 'var(--dim)',
+      isOpenSource: !!t.openWeight,
+      isMultiModel: MULTI_MODEL.includes(t.id),
+      isLocal: LOCAL_SUPPORT.includes(t.id),
+      priceNote: t.pricing.note || '—',
+      license: t.license || (t.openWeight ? 'open-weight' : 'propietario'),
+      notes: t.notes || '',
+      modalities: t.modalities.join(' · '),
+      playgroundUrl: t.playgroundUrl || null,
+      docsUrl: t.docsUrl || null,
+      videos: t.videos || [],
+      examples: t.examples || [],
+      releaseDate: t.releaseDate || null,
+      popularity: t.popularity ?? 0,
+    }))
+  })}>
+  </script>
+
+  <script>
+    const DATA = JSON.parse(document.getElementById('tools-data').textContent);
+    const byId = Object.fromEntries(DATA.tools.map((t) => [t.id, t]));
+    const TOTAL = DATA.tools.length;
+
+    const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const fmtDate = (s) => {
+      if (!s) return '—';
+      const [y, m] = s.split('-');
+      const mes = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][parseInt(m, 10) - 1] || '';
+      return mes ? `${mes} ${y}` : y;
+    };
+
+    // ── Filtros ────────────────────────────────────────────────────
+    let q = '', typeFilter = 'all', view = 'cards';
+    const searchInput = document.getElementById('tools-search');
+    const resultLabel = document.getElementById('tools-result-label');
+    const emptyEl = document.getElementById('tools-empty');
+
+    function matches(el) {
+      const hay = `${el.dataset.name || ''} ${el.dataset.company || ''} ${el.dataset.notes || ''}`;
+      if (q && !hay.includes(q)) return false;
+      if (typeFilter !== 'all' && el.dataset.type !== typeFilter) return false;
+      return true;
+    }
+
+    function applyFilters() {
+      document.querySelectorAll('.tcard, .trow').forEach((el) => el.classList.toggle('hidden', !matches(el)));
+      // In type view, hide empty groups
+      document.querySelectorAll('.ttype-group').forEach((g) => {
+        const visible = g.querySelectorAll('.tcard:not(.hidden)').length;
+        g.classList.toggle('hidden', visible === 0);
+      });
+      const active = document.getElementById('tools-view-' + view);
+      const sel = view === 'table' ? '.trow:not(.hidden)' : '.tcard:not(.hidden)';
+      const shown = active ? active.querySelectorAll(sel).length : 0;
+      resultLabel.textContent = `${shown} / ${TOTAL}`;
+      if (shown === 0) { emptyEl.classList.remove('hidden'); if(active) active.classList.add('hidden'); }
+      else { emptyEl.classList.add('hidden'); if(active) active.classList.remove('hidden'); }
+    }
+
+    searchInput.addEventListener('input', (e) => { q = e.target.value.toLowerCase().trim(); applyFilters(); });
+
+    // ── Pills de tipo ─────────────────────────────────────────────
+    const typeChips = document.getElementById('type-chips');
+    typeChips.addEventListener('click', (e) => {
+      const b = e.target.closest('.dpill'); if (!b) return;
+      typeFilter = b.dataset.type;
+      typeChips.querySelectorAll('.dpill').forEach((pill) => {
+        const active = pill.dataset.type === typeFilter;
+        pill.style.background = active ? 'var(--accent)' : 'transparent';
+        pill.style.color = active ? '#fff' : 'var(--text)';
+        pill.style.borderColor = active ? 'var(--accent)' : 'var(--border2)';
+        pill.dataset.active = active ? 'true' : 'false';
+      });
+      applyFilters();
+    });
+
+    // ── Botones de tipo en leaderboard ────────────────────────────
+    document.querySelectorAll('.type-filter-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const t = btn.dataset.type;
+        typeFilter = t;
+        typeChips.querySelectorAll('.dpill').forEach((pill) => {
+          const active = pill.dataset.type === t;
+          pill.style.background = active ? 'var(--accent)' : 'transparent';
+          pill.style.color = active ? '#fff' : 'var(--text)';
+          pill.style.borderColor = active ? 'var(--accent)' : 'var(--border2)';
+          pill.dataset.active = active ? 'true' : 'false';
+        });
+        applyFilters();
+      });
+    });
+
+    // ── Vista toggle ──────────────────────────────────────────────
+    function setView(v) {
+      view = v;
+      document.querySelectorAll('.tview').forEach((el) => el.classList.toggle('hidden', !el.id.endsWith(v)));
+      document.querySelectorAll('.tvbtn').forEach((b) => {
+        const active = b.dataset.view === v;
+        b.style.background = active ? 'var(--accent)' : 'transparent';
+        b.style.color = active ? '#fff' : 'var(--text)';
+      });
+      applyFilters();
+    }
+    document.getElementById('tools-view-toggle').addEventListener('click', (e) => {
+      const b = e.target.closest('.tvbtn'); if (!b) return;
+      setView(b.dataset.view);
+    });
+
+    // ── Detail drawer ─────────────────────────────────────────────
+    const drawer = document.getElementById('tools-detail-drawer');
+    const drawerBody = document.getElementById('tools-detail-body');
+
+    function box(label, value, color) {
+      return `<div style="background:var(--panel2); border-radius:10px; padding:13px;"><div style="font-size:10px; text-transform:uppercase; letter-spacing:.5px; color:var(--dim);">${label}</div><div style="font-family:'IBM Plex Mono',monospace; font-size:19px; color:${color}; margin-top:4px;">${value}</div></div>`;
+    }
+    function boxText(label, value) {
+      return `<div style="background:var(--panel2); border-radius:10px; padding:13px;"><div style="font-size:10px; text-transform:uppercase; letter-spacing:.5px; color:var(--dim);">${label}</div><div style="font-size:14px; color:var(--head); margin-top:6px;">${esc(value)}</div></div>`;
+    }
+
+    function openToolDetail(id) {
+      const t = byId[id]; if (!t) return;
+      const code = t.examples && t.examples[0] ? t.examples[0] : null;
+
+      let html = `
+        <div style="position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--border); padding:13px 22px; display:flex; align-items:center; gap:10px;">
+          <span style="width:9px;height:9px;border-radius:50%;background:${esc(t.accent)};"></span>
+          <span style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">${esc(t.companyName)}</span>
+          <span style="font-size:11px; font-weight:600; color:${esc(t.typeColor)}; background:var(--panel2); border-radius:5px; padding:2px 8px; margin-left:6px;">${esc(t.toolType)}</span>
+          <button class="dbtn" id="tool-detail-close" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:5px 12px; font-family:inherit; font-size:12px; border-radius:8px;">Cerrar ✕</button>
+        </div>
+        <div style="padding:22px 24px 50px;">
+          <h2 style="margin:0; font-size:27px; font-weight:600; color:var(--head); letter-spacing:-.4px;">${esc(t.displayName)}</h2>
+          <div style="font-size:13px; color:var(--dim); margin-top:4px;">${esc(t.priceNote)}</div>
+          <p style="margin:14px 0 0; font-size:14.5px; color:var(--text); line-height:1.55;">${esc(t.notes)}</p>
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:16px;">
+            <span style="font-size:11px; font-weight:600; color:${esc(t.typeColor)}; background:var(--panel2); border-radius:6px; padding:3px 10px; border:1px solid ${esc(t.typeColor)}33;">${esc(t.toolType)}</span>
+            ${t.isOpenSource ? `<span style="font-size:11px; color:var(--pos); border:1px solid var(--pos); border-radius:6px; padding:2px 9px;">open-source</span>` : ''}
+            ${t.isMultiModel ? `<span style="font-size:11px; color:var(--accent); background:var(--panel2); border-radius:6px; padding:2px 9px;">multi-modelo</span>` : ''}
+            ${t.isLocal ? `<span style="font-size:11px; color:var(--accent2); background:var(--panel2); border-radius:6px; padding:2px 9px;">local / offline</span>` : ''}
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:20px;">
+            ${box('Multi-modelo', t.isMultiModel ? 'Sí' : 'No', t.isMultiModel ? 'var(--pos)' : 'var(--dim)')}
+            ${box('Uso local', t.isLocal ? 'Sí' : 'No', t.isLocal ? 'var(--accent2)' : 'var(--dim)')}
+            ${box('Open-source', t.isOpenSource ? 'Sí' : 'No', t.isOpenSource ? 'var(--pos)' : 'var(--dim)')}
+            ${boxText('Licencia', t.license)}
+            ${boxText('Modalidades', t.modalities)}
+            ${boxText('Lanzamiento', fmtDate(t.releaseDate))}
+          </div>`;
+
+      if (code) {
+        html += `<div style="margin-top:24px;">
+          <div style="display:flex; align-items:center; gap:9px; margin-bottom:9px;">
+            <span style="font-size:13px; font-weight:600; color:var(--head);">${esc(code.title || 'Cómo empezar')}</span>
+            <span style="font-size:10.5px; color:var(--accent); background:var(--panel2); border-radius:5px; padding:2px 8px;">${esc(code.lang)}</span>
+            <button class="dbtn" id="tool-copy-code" style="margin-left:auto; font-family:inherit; font-size:11.5px; padding:5px 12px; border-radius:8px; border:1px solid var(--border2); background:var(--panel2); color:var(--text);">Copiar</button>
+          </div>
+          <pre class="dsh-scroll" style="margin:0; background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:15px; overflow-x:auto; font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.6; color:var(--text);"><code>${esc(code.code)}</code></pre>
+        </div>`;
+      }
+
+      if (t.videos && t.videos.length) {
+        html += `<div style="margin-top:24px;">
+          <div style="font-size:13px; font-weight:600; color:var(--head); margin-bottom:9px;">Vídeos de referencia</div>
+          <div style="display:flex; flex-direction:column; gap:7px;">`;
+        t.videos.forEach((v) => {
+          html += `<a class="dlink" href="${esc(v.url)}" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:11px; text-decoration:none; color:var(--text); background:var(--panel2); border-radius:9px; padding:10px 13px; font-size:13px;"><span style="color:var(--accent2);">▶</span><span style="flex:1;">${esc(v.title)}</span><span style="color:var(--dim); font-size:11px;">${esc(v.source || '')}</span></a>`;
+        });
+        html += `</div></div>`;
+      }
+
+      html += `<div style="display:flex; gap:9px; margin-top:24px;">
+        ${t.playgroundUrl ? `<a href="${esc(t.playgroundUrl)}" target="_blank" rel="noopener" class="dbtn" style="text-decoration:none; flex:1; text-align:center; font-size:13px; padding:11px; border-radius:9px; border:none; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#fff; font-weight:600;">Probar ↗</a>` : ''}
+        ${t.docsUrl ? `<a href="${esc(t.docsUrl)}" target="_blank" rel="noopener" class="dbtn" style="text-decoration:none; flex:1; text-align:center; font-size:13px; padding:11px; border-radius:9px; border:1px solid var(--border2); background:var(--panel2); color:var(--text);">Docs ↗</a>` : ''}
+      </div></div>`;
+
+      drawerBody.innerHTML = html;
+      drawer.classList.remove('hidden');
+      if (window.hljs) drawerBody.querySelectorAll('pre code').forEach((b) => window.hljs.highlightElement(b));
+      document.getElementById('tool-detail-close').addEventListener('click', closeDrawer);
+      const copyBtn = document.getElementById('tool-copy-code');
+      if (copyBtn && code) copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(code.code).then(() => { copyBtn.textContent = '✓ Copiado'; setTimeout(() => copyBtn.textContent = 'Copiar', 1600); });
+      });
+    }
+
+    function closeDrawer() { drawer.classList.add('hidden'); }
+    drawer.addEventListener('click', (e) => { if (e.target === drawer) closeDrawer(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+
+    // ── Delegación global de clics ────────────────────────────────
+    document.addEventListener('click', (e) => {
+      const det = e.target.closest('[data-action="tool-detail"]');
+      if (det) { openToolDetail(det.dataset.id); return; }
+      const row = e.target.closest('.trow');
+      if (row) { openToolDetail(row.dataset.id); return; }
+    });
+
+    applyFilters();
   </script>
 </Layout>
-
-<style>
-  .back { display: inline-block; margin-bottom: 18px; font-size: 14px; color: var(--text-dim); }
-  .tools-page { padding-top: 14px; }
-  .tools-page section { margin: 34px 0; }
-  .tools-page h2 { font-size: 24px; font-weight: 700; margin: 0 0 16px; letter-spacing: -0.01em; }
-
-  .feat-label { font-weight: 600; color: var(--text-dim); white-space: nowrap; }
-
-  .tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 18px;
-  }
-  .tool-card {
-    position: relative; background: var(--bg-elev); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 20px; overflow: hidden;
-  }
-  .tool-card-bar { position: absolute; inset: 0 0 auto 0; height: 4px; }
-  .tool-card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-  .tool-card h3 { font-size: 18px; font-weight: 700; margin: 0; }
-  .tool-type { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: var(--bg-elev-2); color: var(--text-dim); border: 1px solid var(--border); }
-  .tool-notes { color: var(--text-dim); font-size: 14px; margin: 0 0 12px; }
-  .tool-pricing { font-size: 13px; color: var(--text-faint); margin-bottom: 14px; border-left: 2px solid var(--border); padding-left: 10px; }
-  .tool-card pre { margin: 8px 0 14px; }
-  .tool-card pre code { padding: 12px !important; font-size: 12px; background: none; border: 0; }
-  .tool-videos { margin: 14px 0; }
-  .tool-videos-title { font-size: 12px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
-  .tool-links { display: flex; gap: 10px; margin-top: 14px; }
-
-  .profiles-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px;
-  }
-  .profile-card {
-    display: flex; gap: 14px; align-items: flex-start;
-    background: var(--bg-elev); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
-    transition: border-color .15s;
-  }
-  .profile-card:hover { border-color: var(--brand); }
-  .profile-icon { font-size: 28px; flex: none; }
-  .profile-title { font-size: 15px; font-weight: 700; color: var(--text); }
-  .profile-tool { font-size: 14px; font-weight: 600; color: var(--brand); margin: 2px 0 6px; }
-  .profile-reason { font-size: 13px; color: var(--text-dim); margin: 0; }
-
-  @media (max-width: 640px) {
-    .tools-grid { grid-template-columns: 1fr; }
-    .profiles-grid { grid-template-columns: 1fr; }
-  }
-</style>
