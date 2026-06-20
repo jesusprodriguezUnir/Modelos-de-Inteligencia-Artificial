@@ -1,12 +1,18 @@
 import type { Model, CompanyMeta } from './types';
+import { autoModels, autoSpecs, autoCompanies } from './auto-models';
 
 // ─────────────────────────────────────────────────────────────────────────
 //  Catálogo de modelos de programación — datos a junio de 2026.
 //  ⚠️  Los precios cambian a menudo. Verifica siempre en la web oficial
 //      (enlace "docs"/"pricing" de cada modelo) antes de presupuestar.
+//
+//  Este catálogo se FUSIONA al final del archivo con datos autoimportados del
+//  Artificial Analysis Intelligence Index (auto-models.ts, autogenerado a
+//  diario). Lo curado SIEMPRE manda: lo auto solo rellena huecos y añade
+//  modelos nuevos del mercado. Ver CLAUDE.md.
 // ─────────────────────────────────────────────────────────────────────────
 
-export const companies: Record<string, CompanyMeta> = {
+const curatedCompanies: Record<string, CompanyMeta> = {
   Anthropic: { name: 'Anthropic', origin: 'US', accent: '#d97757', blurb: 'Familia Claude. Referente en código agéntico y razonamiento.' },
   OpenAI: { name: 'OpenAI', origin: 'US', accent: '#10a37f', blurb: 'Familia GPT y Codex. Ecosistema y tooling muy maduros.' },
   Google: { name: 'Google', origin: 'US', accent: '#4285f4', blurb: 'Familia Gemini. Contexto enorme (hasta 2M) y multimodalidad.' },
@@ -30,6 +36,11 @@ export const companies: Record<string, CompanyMeta> = {
   GoogleTools: { name: 'Google (Herramientas)', origin: 'US', accent: '#34a853', blurb: 'Jules: agente autónomo de coding de Google.' },
   Aider: { name: 'Aider', origin: 'Open', accent: '#f59e0b', blurb: 'Agente de terminal open-source para pair-programming con IA.' },
   Cline: { name: 'Cline', origin: 'Open', accent: '#ec4899', blurb: 'Extensión VS Code agéntica, open-source, con ejecución de terminal.' },
+  Cognition: { name: 'Cognition', origin: 'US', accent: '#6366f1', blurb: 'Devin: ingeniero de software autónomo que trabaja tareas de forma asíncrona.' },
+  Zed: { name: 'Zed', origin: 'US', accent: '#084ccf', blurb: 'Editor agéntico de alto rendimiento escrito en Rust, open-source.' },
+  Sourcegraph: { name: 'Sourcegraph', origin: 'US', accent: '#ff5543', blurb: 'Amp: agente de coding (CLI + extensión) centrado en bases de código grandes.' },
+  RooCode: { name: 'Roo Code', origin: 'Open', accent: '#f43f5e', blurb: 'Extensión VS Code agéntica open-source, fork de Cline con modos personalizables.' },
+  Trae: { name: 'Trae', origin: 'China', accent: '#e11d48', blurb: 'IDE AI-native de ByteDance, multimodelo y con flujos agénticos.' },
 };
 
 // Ejemplos reutilizables (mantener cortos y realistas).
@@ -888,6 +899,242 @@ aider> Añade validación de email al formulario de registro`,
     ],
     notes: 'Extensión agéntica para VS Code. Puede editar archivos, ejecutar comandos en terminal, hacer screenshots del navegador y usar MCP. Trae tu propia API key.',
   },
+
+  // ── Claude Code ──────────────────────────────────────────────────────────
+  {
+    id: 'claude-code',
+    company: 'Anthropic', origin: 'US', kind: 'tool',
+    displayName: 'Claude Code',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'Incluido en planes Claude Pro (20$/mes) y Max (100-200$/mes), o pago por API (tokens de Claude).' },
+    modalities: ['text', 'image'],
+    releaseDate: '2025-02-01',
+    playgroundUrl: 'https://claude.com/claude-code',
+    docsUrl: 'https://docs.claude.com/claude-code',
+    examples: [{
+      lang: 'bash', title: 'Instalar y usar',
+      code: `# Instalación
+npm install -g @anthropic-ai/claude-code
+
+# Lanzar en tu repo
+cd mi-proyecto && claude
+
+# Pedir una tarea agéntica
+claude> Añade tests al módulo de autenticación y ejecútalos`,
+    }],
+    videos: [
+      { title: 'Claude Code: agente de terminal de Anthropic — tutorial', url: 'https://www.youtube.com/results?search_query=claude+code+anthropic+terminal+agent+tutorial+2026', source: 'YouTube' },
+      { title: 'Claude Code vs Cursor vs Codex: comparación de agentes', url: 'https://www.youtube.com/results?search_query=claude+code+vs+cursor+vs+codex+comparison', source: 'YouTube' },
+    ],
+    notes: 'CLI agéntico oficial de Anthropic. Trabaja directamente en tu terminal y repo: edita archivos, ejecuta comandos y tests, usa MCP y planifica tareas multi-paso. También en VS Code/JetBrains, web y app de escritorio.',
+  },
+
+  // ── Codex CLI (OpenAI) ───────────────────────────────────────────────────
+  {
+    id: 'codex-cli',
+    company: 'OpenAI', origin: 'US', kind: 'tool',
+    displayName: 'Codex CLI (OpenAI)',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'CLI gratuito (open-source). Incluido en ChatGPT Plus/Pro/Team, o pago por API (tokens de OpenAI).' },
+    modalities: ['text', 'image'],
+    openWeight: true,
+    releaseDate: '2025-04-01',
+    playgroundUrl: 'https://openai.com/codex',
+    docsUrl: 'https://github.com/openai/codex',
+    license: 'Apache-2.0',
+    examples: [{
+      lang: 'bash', title: 'Instalar y usar',
+      code: `# Instalación
+npm install -g @openai/codex
+
+# Lanzar en tu repo
+cd mi-proyecto && codex
+
+# Pedir un cambio
+codex> Refactoriza utils.ts para extraer la lógica de fechas`,
+    }],
+    videos: [
+      { title: 'Codex CLI de OpenAI: agente de terminal — tutorial', url: 'https://www.youtube.com/results?search_query=openai+codex+cli+terminal+agent+tutorial+2026', source: 'YouTube' },
+      { title: 'Codex CLI vs Claude Code: ¿cuál es mejor?', url: 'https://www.youtube.com/results?search_query=openai+codex+cli+vs+claude+code+comparison', source: 'YouTube' },
+    ],
+    notes: 'Agente de terminal open-source (Apache-2.0) de OpenAI; el CLI es abierto pero usa modelos propietarios de OpenAI (familia GPT/Codex). Edita archivos, ejecuta comandos y trabaja sobre tu repo local.',
+  },
+
+  // ── Gemini CLI (Google) ──────────────────────────────────────────────────
+  {
+    id: 'gemini-cli',
+    company: 'GoogleTools', origin: 'US', kind: 'tool',
+    displayName: 'Gemini CLI',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'CLI gratuito (open-source). Tier gratis generoso con cuenta Google; pago por API para más uso (tokens de Gemini).' },
+    modalities: ['text', 'image'],
+    openWeight: true,
+    releaseDate: '2025-06-01',
+    playgroundUrl: 'https://github.com/google-gemini/gemini-cli',
+    docsUrl: 'https://github.com/google-gemini/gemini-cli',
+    license: 'Apache-2.0',
+    examples: [{
+      lang: 'bash', title: 'Instalar y usar',
+      code: `# Instalación
+npm install -g @google/gemini-cli
+
+# Lanzar en tu repo
+cd mi-proyecto && gemini
+
+# Pedir una tarea
+gemini> Explica la arquitectura de este proyecto y sugiere mejoras`,
+    }],
+    videos: [
+      { title: 'Gemini CLI: agente open-source de Google — tutorial', url: 'https://www.youtube.com/results?search_query=google+gemini+cli+open+source+agent+tutorial+2026', source: 'YouTube' },
+      { title: 'Gemini CLI vs Claude Code vs Codex', url: 'https://www.youtube.com/results?search_query=gemini+cli+vs+claude+code+vs+codex+comparison', source: 'YouTube' },
+    ],
+    notes: 'Agente de terminal open-source (Apache-2.0) de Google con tier gratis muy amplio. Usa modelos Gemini; aprovecha el contexto largo de Gemini para razonar sobre repos grandes.',
+  },
+
+  // ── Devin (Cognition) ────────────────────────────────────────────────────
+  {
+    id: 'devin',
+    company: 'Cognition', origin: 'US', kind: 'tool',
+    displayName: 'Devin (Cognition)',
+    category: ['agentic', 'coding', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'Core: desde 20$/mes con ACUs por uso. Team: 500$/mes. Pago por trabajo realizado (ACU).' },
+    modalities: ['text'],
+    releaseDate: '2025-01-01',
+    playgroundUrl: 'https://devin.ai',
+    docsUrl: 'https://docs.devin.ai',
+    examples: [{
+      lang: 'bash', title: 'Asignar una tarea a Devin',
+      code: `# Conectar tu repo de GitHub a Devin (web/Slack)
+# Asignar una tarea en lenguaje natural:
+# "Migra el módulo de pagos a la nueva API de Stripe"
+# Devin planifica, escribe código en su propio entorno,
+# ejecuta tests y abre un PR para tu revisión`,
+    }],
+    videos: [
+      { title: 'Devin: el ingeniero de software autónomo de Cognition', url: 'https://www.youtube.com/results?search_query=devin+cognition+autonomous+software+engineer+demo+2026', source: 'YouTube' },
+      { title: 'Devin vs Jules: agentes asíncronos comparados', url: 'https://www.youtube.com/results?search_query=devin+vs+jules+async+coding+agent+comparison', source: 'YouTube' },
+    ],
+    notes: 'Ingeniero de software autónomo asíncrono. Trabaja en su propio entorno en la nube (editor, navegador y terminal), planifica tareas completas y abre PRs. Integración con GitHub, Slack y Jira.',
+  },
+
+  // ── Zed ──────────────────────────────────────────────────────────────────
+  {
+    id: 'zed',
+    company: 'Zed', origin: 'US', kind: 'tool',
+    displayName: 'Zed',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'Editor gratis (open-source). Funciones de IA: tier gratis + planes de pago, o trae tu propia API key.' },
+    modalities: ['text'],
+    openWeight: true,
+    releaseDate: '2024-03-01',
+    playgroundUrl: 'https://zed.dev',
+    docsUrl: 'https://zed.dev/docs',
+    license: 'GPL-3.0 / AGPL-3.0',
+    examples: [{
+      lang: 'bash', title: 'Instalar y usar',
+      code: `# Descargar desde zed.dev (o brew install zed)
+# Abrir tu proyecto
+zed /ruta/a/mi-proyecto
+
+# Usar el "Agent Panel" para tareas multi-archivo
+# Soporta múltiples proveedores de modelos`,
+    }],
+    videos: [
+      { title: 'Zed: el editor agéntico en Rust — tutorial', url: 'https://www.youtube.com/results?search_query=zed+editor+rust+agentic+ai+tutorial+2026', source: 'YouTube' },
+      { title: 'Zed vs Cursor: rendimiento y modo agéntico', url: 'https://www.youtube.com/results?search_query=zed+vs+cursor+performance+agent+comparison', source: 'YouTube' },
+    ],
+    notes: 'Editor de código open-source escrito en Rust, ultrarrápido y colaborativo. Su "Agent Panel" permite tareas agénticas multi-archivo con varios proveedores de modelos. Buena alternativa ligera a IDEs basados en VS Code.',
+  },
+
+  // ── Amp (Sourcegraph) ────────────────────────────────────────────────────
+  {
+    id: 'amp',
+    company: 'Sourcegraph', origin: 'US', kind: 'tool',
+    displayName: 'Amp (Sourcegraph)',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'Pago por uso (créditos). Tier gratis limitado; planes de equipo disponibles.' },
+    modalities: ['text', 'image'],
+    releaseDate: '2025-05-01',
+    playgroundUrl: 'https://ampcode.com',
+    docsUrl: 'https://ampcode.com/manual',
+    examples: [{
+      lang: 'bash', title: 'Instalar y usar',
+      code: `# Instalación del CLI
+npm install -g @sourcegraph/amp
+
+# Lanzar en tu repo (o usar la extensión de VS Code)
+cd mi-proyecto && amp
+
+# Pedir una tarea agéntica sobre tu base de código
+amp> Encuentra y corrige todos los usos obsoletos de la API v1`,
+    }],
+    videos: [
+      { title: 'Amp de Sourcegraph: agente de coding — tutorial', url: 'https://www.youtube.com/results?search_query=sourcegraph+amp+coding+agent+tutorial+2026', source: 'YouTube' },
+      { title: 'Amp vs Claude Code: agentes para repos grandes', url: 'https://www.youtube.com/results?search_query=sourcegraph+amp+vs+claude+code+comparison', source: 'YouTube' },
+    ],
+    notes: 'Agente de coding de Sourcegraph, disponible como CLI y extensión (VS Code, etc.). Aprovecha la búsqueda de código de Sourcegraph para razonar sobre bases de código grandes. Multimodelo.',
+  },
+
+  // ── Roo Code ─────────────────────────────────────────────────────────────
+  {
+    id: 'roo-code',
+    company: 'RooCode', origin: 'Open', kind: 'tool',
+    displayName: 'Roo Code',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'Software gratis (Apache-2.0). Pagas solo el modelo vía API key propia.' },
+    modalities: ['text', 'image'],
+    openWeight: true,
+    releaseDate: '2025-01-01',
+    playgroundUrl: 'https://roocode.com',
+    docsUrl: 'https://docs.roocode.com',
+    license: 'Apache-2.0',
+    examples: [{
+      lang: 'bash', title: 'Instalar',
+      code: `# Instalar la extensión "Roo Code" en VS Code
+# Configurar API key (Anthropic, OpenAI, OpenRouter, local…)
+# Elegir un "modo" (Code, Architect, Ask, Debug…) y pedir:
+# "Implementa el endpoint /users con validación y tests"
+# Roo Code edita archivos, ejecuta comandos y verifica`,
+    }],
+    videos: [
+      { title: 'Roo Code: extensión agéntica para VS Code — tutorial', url: 'https://www.youtube.com/results?search_query=roo+code+vscode+agentic+extension+tutorial+2026', source: 'YouTube' },
+      { title: 'Roo Code vs Cline: ¿qué fork elegir?', url: 'https://www.youtube.com/results?search_query=roo+code+vs+cline+comparison', source: 'YouTube' },
+    ],
+    notes: 'Extensión agéntica open-source (Apache-2.0) para VS Code, fork de Cline. Añade "modos" personalizables (Code, Architect, Debug…), soporte multimodelo y MCP. Trae tu propia API key; puede usar modelos locales.',
+  },
+
+  // ── Trae (ByteDance) ─────────────────────────────────────────────────────
+  {
+    id: 'trae',
+    company: 'Trae', origin: 'China', kind: 'tool',
+    displayName: 'Trae',
+    category: ['coding', 'agentic', 'tool'],
+    context: null,
+    pricing: { inputPer1M: null, outputPer1M: null, note: 'Free tier disponible. Pro: ~10$/mes. Modelos incluidos según plan.' },
+    modalities: ['text', 'image'],
+    releaseDate: '2025-01-01',
+    playgroundUrl: 'https://trae.ai',
+    docsUrl: 'https://docs.trae.ai',
+    examples: [{
+      lang: 'bash', title: 'Instalar y usar',
+      code: `# Descargar desde trae.ai e instalar
+# Abrir tu proyecto (similar a VS Code)
+# Usar el modo "Builder" para tareas agénticas
+# Multimodelo (Claude, GPT, modelos propios)`,
+    }],
+    videos: [
+      { title: 'Trae: el IDE AI-native de ByteDance — tutorial', url: 'https://www.youtube.com/results?search_query=trae+ai+ide+bytedance+tutorial+2026', source: 'YouTube' },
+      { title: 'Trae vs Cursor vs Windsurf: comparación de IDEs', url: 'https://www.youtube.com/results?search_query=trae+vs+cursor+vs+windsurf+comparison', source: 'YouTube' },
+    ],
+    notes: 'IDE AI-native de ByteDance (fork de VS Code) con modo agéntico "Builder". Multimodelo (Claude, GPT y modelos propios) y con tier gratis competitivo. Origen: China.',
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -912,13 +1159,75 @@ const POPULARITY: Record<string, number> = {
   // Herramientas / agentes
   'github-copilot': 90, 'cursor': 95, 'windsurf': 75, 'jules': 58,
   'opencode': 80, 'aider': 70, 'cline': 68,
+  'claude-code': 92, 'codex-cli': 78, 'gemini-cli': 62, 'devin': 55,
+  'zed': 60, 'amp': 45, 'roo-code': 58, 'trae': 50,
 };
 
-/** Modelos con la popularidad curada fusionada (cae a 30 si falta). */
-export const models: Model[] = rawModels.map((m) => ({
-  ...m,
+// ─────────────────────────────────────────────────────────────────────────
+//  Fusión con el catálogo autoimportado (auto-models.ts).
+//  Reglas: lo curado tiene prioridad absoluta. De lo auto solo se toma:
+//   1) refresco de specs (precio/contexto/benchmarks/parámetros) de un modelo
+//      curado cuando ese dato falta o está marcado `approx`;
+//   2) modelos nuevos del mercado que no casen con ningún curado.
+//  Nunca se tocan examples, videos, notes, displayName ni popularity curados.
+// ─────────────────────────────────────────────────────────────────────────
+
+/** Empresas: las curadas mandan; se añaden las de creators no catalogados. */
+export const companies: Record<string, CompanyMeta> = {
+  ...autoCompanies,
+  ...curatedCompanies,
+};
+
+/** Clave de enlace de un modelo curado con el Intelligence Index. */
+const iiKeyOf = (m: Model): string => m.iiSlug ?? m.id;
+
+/** Refresca un modelo curado con specs frescas, sin pisar lo ya definido. */
+function refreshCurated(m: Model): Model {
+  const spec = autoSpecs[iiKeyOf(m)];
+  if (!spec) return m;
+  const next: Model = { ...m };
+  // Precio: solo si falta o el curado es aproximado.
+  if (spec.pricing && (!m.pricing || m.pricing.approx || m.pricing.inputPer1M == null)) {
+    next.pricing = { ...m.pricing, ...spec.pricing };
+  }
+  // Contexto: solo si el curado no lo tiene.
+  if (spec.context != null && m.context == null) next.context = spec.context;
+  // Parámetros: solo si faltan.
+  if (spec.parameters != null && m.parameters == null) next.parameters = spec.parameters;
+  // Benchmarks de coding: rellenar los que falten (SWE-bench Pro queda curado).
+  if (spec.benchmarks) {
+    next.benchmarks = {
+      ...spec.benchmarks,
+      ...m.benchmarks, // lo curado gana
+    };
+  }
+  return next;
+}
+
+const curatedModels: Model[] = rawModels.map((m) => ({
+  ...refreshCurated(m),
   popularity: m.popularity ?? POPULARITY[m.id] ?? 30,
 }));
+
+// Conjunto de claves ya cubiertas por el catálogo curado (para dedupe).
+const curatedKeys = new Set<string>();
+for (const m of curatedModels) {
+  curatedKeys.add(m.id);
+  if (m.iiSlug) curatedKeys.add(m.iiSlug);
+  if (m.apiModelString) curatedKeys.add(m.apiModelString);
+}
+
+/** Modelos autoimportados que no existen ya en el catálogo curado. */
+const importedModels: Model[] = autoModels
+  .filter((m) => !curatedKeys.has(m.id) && !(m.iiSlug && curatedKeys.has(m.iiSlug)))
+  .map((m) => ({
+    ...m,
+    autoImported: true,
+    popularity: POPULARITY[m.id] ?? 30,
+  }));
+
+/** Catálogo final: curado (con specs refrescadas) + modelos nuevos del mercado. */
+export const models: Model[] = [...curatedModels, ...importedModels];
 
 /** Niveles de popularidad para agrupar el catálogo. */
 export interface PopularityTier {

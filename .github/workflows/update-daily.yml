@@ -53,6 +53,12 @@ jobs:
             ${{ github.event.inputs.sections && format('--sections {0}', github.event.inputs.sections) || '' }} \
             ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
 
+      - name: Build auto catalog
+        run: |
+          python scripts/build_auto_catalog.py \
+            --verbose \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
       - name: Detect changes
         id: changes
         if: github.event.inputs.dry_run != 'true'
