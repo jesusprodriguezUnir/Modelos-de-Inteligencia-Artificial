@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-06-20T08:50:47Z
+// No editar a mano. Última actualización: 2026-06-20T09:08:13Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.1 (deducido))
 // Modelos: 511 metadata / 531 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
@@ -7,7 +7,7 @@
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-06-20T08:50:47Z",
+  "fetched_at": "2026-06-20T09:08:13Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1 (deducido)",
   "method": "rsc-html",
@@ -15,7 +15,18 @@ export const intelligenceIndexMeta: IntelligenceIndexMeta = {
   "n_default_data": 531,
   "sections_captured": [
     "intelligence_index",
-    "price_cost"
+    "sub_evaluations",
+    "coding_agent_index",
+    "aa_briefcase",
+    "aa_omniscience",
+    "gdpval_aa_v2",
+    "openness_index",
+    "cost_per_task",
+    "time_per_task",
+    "output_tokens",
+    "speed_latency",
+    "price_cost",
+    "metadata"
   ],
   "sections_failed": []
 };
