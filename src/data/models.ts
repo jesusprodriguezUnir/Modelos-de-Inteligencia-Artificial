@@ -92,7 +92,7 @@ resp = client.chat.completions.create(
 )
 print(resp.choices[0].message.content)`;
 
-export const models: Model[] = [
+const rawModels: Model[] = [
   // ── Anthropic ──────────────────────────────────────────────────────────
   {
     id: 'claude-opus-4-8',
@@ -889,3 +889,52 @@ aider> Añade validación de email al formulario de registro`,
     notes: 'Extensión agéntica para VS Code. Puede editar archivos, ejecutar comandos en terminal, hacer screenshots del navegador y usar MCP. Trae tu propia API key.',
   },
 ];
+
+// ─────────────────────────────────────────────────────────────────────────
+//  Popularidad / uso relativo — curado a mano (0-100, mayor = más usado).
+//  Señales: volumen de tokens de coding en OpenRouter, adopción de familias
+//  (Claude/GPT/Gemini), tracción open-weight (Qwen/DeepSeek/GLM) y de las
+//  herramientas (Cursor, Copilot, OpenCode). Editable según evolucione el uso.
+// ─────────────────────────────────────────────────────────────────────────
+const POPULARITY: Record<string, number> = {
+  // Modelos
+  'claude-opus-4-8': 95, 'claude-sonnet-4-6': 92, 'claude-haiku-4-5': 70,
+  'gpt-5-5': 93, 'gpt-5-5-pro': 60, 'gpt-5-4': 78, 'gpt-5-3-codex': 80, 'gpt-4-1-nano': 65,
+  'gemini-3-1-pro': 88, 'gemini-3-5-flash': 74, 'gemini-3-flash': 62, 'gemini-3-1-flash-lite': 55,
+  'phi-4': 45, 'mai-code-1-flash': 40,
+  'grok-3': 68, 'grok-3-mini': 48,
+  'llama-4-maverick': 66,
+  'mistral-large-3': 58, 'mistral-small': 50,
+  'deepseek-v4-pro': 82, 'deepseek-v4-flash': 72, 'deepseek-v3': 80,
+  'qwen-3-6-plus': 85, 'qwen-3-5': 78,
+  'glm-5': 80, 'kimi-k2-6': 70, 'minimax-m2-5': 68, 'mimo-v2-pro': 72,
+  'ernie-5': 42, 'hunyuan-large': 38, 'step-3-5-flash': 30,
+  // Herramientas / agentes
+  'github-copilot': 90, 'cursor': 95, 'windsurf': 75, 'jules': 58,
+  'opencode': 80, 'aider': 70, 'cline': 68,
+};
+
+/** Modelos con la popularidad curada fusionada (cae a 30 si falta). */
+export const models: Model[] = rawModels.map((m) => ({
+  ...m,
+  popularity: m.popularity ?? POPULARITY[m.id] ?? 30,
+}));
+
+/** Niveles de popularidad para agrupar el catálogo. */
+export interface PopularityTier {
+  key: string;
+  label: string;
+  /** Umbral mínimo (inclusive). */
+  min: number;
+}
+export const POPULARITY_TIERS: PopularityTier[] = [
+  { key: 'top', label: 'Más usados', min: 70 },
+  { key: 'popular', label: 'Populares', min: 40 },
+  { key: 'emerging', label: 'Emergentes', min: 0 },
+];
+
+/** Devuelve el nivel de popularidad de un valor 0-100. */
+export function popularityTier(p: number | undefined): PopularityTier {
+  const v = p ?? 0;
+  return POPULARITY_TIERS.find((t) => v >= t.min) ?? POPULARITY_TIERS[POPULARITY_TIERS.length - 1];
+}

@@ -73,6 +73,8 @@ export interface Model {
   parameters?: number;
   /** Licencia para modelos open-weight (MIT, Apache-2.0, Llama-3, etc.). */
   license?: string;
+  /** Popularidad/uso relativo curado a mano, 0-100 (mayor = más usado). */
+  popularity?: number;
 }
 
 export interface CompanyMeta {
