@@ -268,22 +268,48 @@ const popularityGroups = POPULARITY_TIERS
       </div>
     </div>
 
-    <!-- COMPANY view -->
+    <!-- COMPANY view (drill-down de 2 pasos: empresa → modelos) -->
     <div id="view-company" class="view hidden">
-      {companyGroups.map((g) => (
-        <div class="group" data-group={g.key} style="margin-top:26px;">
-          <div style="display:flex; align-items:center; gap:10px; padding-bottom:10px; border-bottom:1px solid var(--border); margin-bottom:14px;">
-            <span style={`width:11px; height:11px; border-radius:50%; background:${g.meta.accent};`}></span>
-            <span style="font-size:16px; font-weight:600; color:var(--head);">{g.meta.name}</span>
-            <span style="font-size:11px; text-transform:uppercase; letter-spacing:.5px; color:var(--dim); border:1px solid var(--border2); border-radius:5px; padding:1px 7px;">{originLabels[g.meta.origin] || g.meta.origin}</span>
-            <span style="font-size:12.5px; color:var(--dim); margin-left:6px; flex:1; min-width:0;">{g.meta.blurb}</span>
-            <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--dim);">{g.items.length}</span>
-          </div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:14px;">
-            {g.items.map((m) => <ModelCard m={m} />)}
-          </div>
+      <!-- Paso 1: selector de empresa -->
+      <div id="company-picker">
+        <div style="display:flex; align-items:center; gap:10px; margin:22px 0 14px;">
+          <span style="font-size:16px; font-weight:600; color:var(--head);">Elige una empresa</span>
+          <span style="font-size:12px; color:var(--dim);">clic para ver sus modelos</span>
         </div>
-      ))}
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:12px;">
+          {companyGroups.map((g) => (
+            <button type="button" class="dbtn" data-company-pick={g.key} style="text-align:left; display:flex; align-items:center; gap:11px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px 15px; cursor:pointer; font-family:inherit;">
+              <span style={`width:11px; height:11px; border-radius:50%; background:${g.meta.accent}; flex:none;`}></span>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; align-items:center; gap:7px;">
+                  <span style="font-size:14px; font-weight:600; color:var(--head); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{g.meta.name}</span>
+                  <span style="font-size:10px; text-transform:uppercase; letter-spacing:.5px; color:var(--dim); border:1px solid var(--border2); border-radius:5px; padding:1px 6px; flex:none;">{originLabels[g.meta.origin] || g.meta.origin}</span>
+                </div>
+                <div style="height:5px; background:var(--bg); border-radius:3px; overflow:hidden; margin-top:7px;"><span style={`display:block; height:100%; width:${(g.items.length / maxCompanyCount) * 100}%; background:${g.meta.accent}; border-radius:3px;`}></span></div>
+              </div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--dim); flex:none;">{g.items.length}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Paso 2: modelos de la empresa seleccionada -->
+      <div id="company-models" class="hidden">
+        <div style="display:flex; align-items:center; gap:12px; margin:22px 0 14px; flex-wrap:wrap;">
+          <button type="button" class="dbtn" id="company-back" style="font-family:inherit; font-size:12.5px; padding:7px 14px; border-radius:8px; border:1px solid var(--border2); background:var(--panel2); color:var(--text);">← Empresas</button>
+          <span id="company-head-dot" style="width:11px; height:11px; border-radius:50%; background:var(--accent);"></span>
+          <span id="company-head-name" style="font-size:16px; font-weight:600; color:var(--head);"></span>
+          <span id="company-head-origin" style="font-size:11px; text-transform:uppercase; letter-spacing:.5px; color:var(--dim); border:1px solid var(--border2); border-radius:5px; padding:1px 7px;"></span>
+          <span id="company-head-blurb" style="font-size:12.5px; color:var(--dim); flex:1; min-width:0;"></span>
+        </div>
+        {companyGroups.map((g) => (
+          <div class="group" data-group={g.key} style="margin-top:14px;">
+            <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:14px;">
+              {g.items.map((m) => <ModelCard m={m} />)}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
 
     <!-- POPULARITY view -->
@@ -379,6 +405,7 @@ const popularityGroups = POPULARITY_TIERS
 
     // ── Filtros y vistas ───────────────────────────────────────────────
     let q = '', origin = 'all', cat = 'all', view = 'grid';
+    let companyPick = null; // clave de empresa seleccionada en la vista Empresa (null = paso 1)
     const searchInput = document.getElementById('search');
     const resultLabel = document.getElementById('result-label');
     const empty = document.getElementById('empty');
@@ -400,18 +427,60 @@ const popularityGroups = POPULARITY_TIERS
     function applyFilters() {
       document.querySelectorAll('.dcard, .drow').forEach((el) => el.classList.toggle('hidden', !matches(el)));
       document.querySelectorAll('.group').forEach((g) => {
-        g.classList.toggle('hidden', g.querySelectorAll('.dcard:not(.hidden)').length === 0);
+        // En la vista Empresa solo se muestra el grupo de la empresa seleccionada (paso 2).
+        const inCompanyStep1 = view === 'company' && companyPick == null;
+        const wrongCompany = view === 'company' && companyPick != null && g.dataset.group !== companyPick;
+        const noMatches = g.querySelectorAll('.dcard:not(.hidden)').length === 0;
+        g.classList.toggle('hidden', inCompanyStep1 || wrongCompany || noMatches);
       });
+      // En el paso 1 de Empresa no aplica el conteo ni el estado "sin resultados".
+      if (view === 'company' && companyPick == null) {
+        resultLabel.textContent = `${TOTAL} / ${TOTAL}`;
+        empty.classList.add('hidden');
+        containers[view].classList.remove('hidden');
+        return;
+      }
       const cont = containers[view];
       const sel = view === 'table' ? '.drow:not(.hidden)' : '.dcard:not(.hidden)';
-      const shown = cont.querySelectorAll(sel).length;
+      const scope = view === 'company' && companyPick != null
+        ? cont.querySelector(`.group[data-group="${companyPick}"]`)
+        : cont;
+      const shown = scope ? scope.querySelectorAll(sel).length : 0;
       resultLabel.textContent = `${shown} / ${TOTAL}`;
       if (shown === 0) { empty.classList.remove('hidden'); cont.classList.add('hidden'); }
       else { empty.classList.add('hidden'); cont.classList.remove('hidden'); }
     }
 
+    // ── Drill-down de empresa (paso 1 ↔ paso 2) ────────────────────────
+    const companyPicker = document.getElementById('company-picker');
+    const companyModels = document.getElementById('company-models');
+    function enterCompany(key) {
+      companyPick = key;
+      const c = C[key] || { name: key, accent: '#888888', origin: '', blurb: '' };
+      document.getElementById('company-head-dot').style.background = c.accent;
+      document.getElementById('company-head-name').textContent = c.name;
+      document.getElementById('company-head-origin').textContent = ORI[c.origin] || c.origin || '';
+      document.getElementById('company-head-blurb').textContent = c.blurb || '';
+      companyPicker.classList.add('hidden');
+      companyModels.classList.remove('hidden');
+      applyFilters();
+      document.getElementById('search').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    function exitCompany() {
+      companyPick = null;
+      companyModels.classList.add('hidden');
+      companyPicker.classList.remove('hidden');
+      applyFilters();
+    }
+
     function setView(v) {
       view = v;
+      // La vista Empresa siempre arranca en el paso 1 (selector de empresa).
+      companyPick = null;
+      if (companyModels && companyPicker) {
+        companyModels.classList.add('hidden');
+        companyPicker.classList.remove('hidden');
+      }
       Object.entries(containers).forEach(([k, el]) => el.classList.toggle('hidden', k !== v));
       document.querySelectorAll('.vbtn').forEach((b) => {
         const active = b.dataset.view === v;
@@ -599,6 +668,10 @@ const popularityGroups = POPULARITY_TIERS
 
     // ── Delegación global de clics ─────────────────────────────────────
     document.addEventListener('click', (e) => {
+      const cp = e.target.closest('[data-company-pick]');
+      if (cp) { enterCompany(cp.dataset.companyPick); return; }
+      const cb = e.target.closest('#company-back');
+      if (cb) { exitCompany(); return; }
       const cf = e.target.closest('[data-company-filter]');
       if (cf) { filterByCompany(cf.dataset.companyFilter); return; }
       const cmp = e.target.closest('[data-action="compare"]');
