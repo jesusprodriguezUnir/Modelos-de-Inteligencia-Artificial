@@ -1,0 +1,483 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Snippets de código en variables para evitar problemas de parseo en Astro
+const snCompactPrompt = `Summarize the current state, decisions made, files changed, and next steps. Keep it short and actionable.`;
+
+const snBadChatPattern = `Chat 1 (Sesión única gigante):
+- Depurar tests
+- Luego diseñar arquitectura
+- Luego generar README
+- Luego revisar Dockerfile
+- Luego explicar un error de Azure
+- Luego pedir que escriba un tweet`;
+
+const snGoodChatPattern = `Chat 1: Depurar tests
+Chat 2: Diseño de arquitectura del servicio
+Chat 3: Generar documentación README
+Chat 4: Configurar y optimizar Dockerfile
+Chat 5: Resolver problema de despliegue en Azure`;
+
+const snBadPromptScope = `Analiza todo este repositorio y dime qué está mal.`;
+
+const snGoodPromptScope = `Analiza únicamente estos archivos:
+- src/MyApp.Api/Program.cs
+- src/MyApp.Core/Services/OrderService.cs
+- tests/MyApp.Tests/OrderServiceTests.cs
+
+Objetivo: Encontrar por qué falla el test de OrderService.
+No modifiques ningún archivo todavía. Explica primero la causa probable.`;
+
+const snPhases = `<!-- Fase 1: Planificar -->
+"Crea un plan de implementación corto. No modifiques archivos todavía. Concéntrate en la ruta de código mínima."
+
+<!-- Fase 2: Implementación acotada -->
+"Implementa el paso 1 únicamente. Modifica solo los archivos listados en el plan."
+
+<!-- Fase 3: Validación -->
+"Ejecuta solo los tests relevantes. Si fallan, explica el error antes de cambiar más código."`;
+
+const snCustomInstructions = `# Instrucciones de Copilot
+- Usa convenciones de C# 13 y .NET 10.
+- Mantén los cambios mínimos y enfocados.
+- No agregues dependencias sin explicar la razón.
+- Ejecuta \`dotnet build -c Release\` tras modificar código.
+- Prefiere los valores por defecto de Aspire al añadir servicios.
+- No modifiques archivos autogenerados.`;
+---
+
+<Layout title="Buenas Prácticas y Ahorro de Tokens — Panel de IA" active="buenas-practicas">
+  <main class="wrap" style="padding-top:24px; padding-bottom:150px;">
+    
+    <!-- Hero Header -->
+    <div style="margin-bottom:28px;">
+      <div style="display:inline-flex; align-items:center; gap:8px; font-size:12px; color:var(--accent); font-weight:600; text-transform:uppercase; letter-spacing:.8px; margin-bottom:8px;">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--accent);"></span>
+        Guía de Eficiencia y Productividad
+      </div>
+      <h1 style="margin:0 0 8px; font-size:clamp(26px, 3.6vw, 36px); font-weight:700; color:var(--head); letter-spacing:-.8px; display:flex; align-items:center; gap:10px;">
+        💡 Buenas Prácticas y Ahorro de Tokens
+      </h1>
+      <p style="margin:0; color:var(--dim); font-size:15px; max-width:800px; line-height:1.6;">
+        El uso de modelos de Inteligencia Artificial para programar ya no es invisible ni gratuito. Con la llegada de los esquemas basados en consumo y créditos de IA, la optimización del contexto y las buenas prácticas se han vuelto indispensables. <strong>Aprende a programar con IA de forma eficiente sin agotar tu presupuesto.</strong>
+      </p>
+    </div>
+
+    <!-- KPI Strip / Resumen Ejecutivo -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin-bottom:32px;">
+      <!-- Tab is King -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px; position:relative; overflow:hidden;">
+        <div style="position:absolute; top:0; right:0; width:4px; height:100%; background:var(--accent2);"></div>
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim); font-weight:600;">El Tabulador es Gratis</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700; color:var(--head); margin-top:8px;">Autocompletar Primero</div>
+        <p style="font-size:12.5px; color:var(--dim); margin:8px 0 0; line-height:1.4;">El autocompletado y Next Edit Suggestions en los planes de pago no consumen créditos de IA. Úsalos siempre como primera opción.</p>
+      </div>
+
+      <!-- Context is Expensive -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px; position:relative; overflow:hidden;">
+        <div style="position:absolute; top:0; right:0; width:4px; height:100%; background:var(--accent);"></div>
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim); font-weight:600;">El verdadero coste</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700; color:var(--head); margin-top:8px;">Controlar Contexto</div>
+        <p style="font-size:12.5px; color:var(--dim); margin:8px 0 0; line-height:1.4;">El gasto real no está en la línea que escribes, sino en el historial acumulado, archivos adjuntos innecesarios y logs gigantes.</p>
+      </div>
+
+      <!-- Right Model -->
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px; position:relative; overflow:hidden;">
+        <div style="position:absolute; top:0; right:0; width:4px; height:100%; background:var(--pos);"></div>
+        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim); font-weight:600;">Eficiencia del Modelo</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700; color:var(--head); margin-top:8px;">Modelo Adecuado</div>
+        <p style="font-size:12.5px; color:var(--dim); margin:8px 0 0; line-height:1.4;">"No vayas en camión a comprar pan". Usa modelos ligeros para boilerplate y reserva razonamiento para depuración compleja.</p>
+      </div>
+    </div>
+
+    <!-- Contenido Principal en Grid -->
+    <div style="display:grid; grid-template-columns:3fr 1.1fr; gap:28px; align-items:start;">
+      
+      <!-- Lado Izquierdo: Las 15 Lecciones Detalladas -->
+      <div style="display:flex; flex-direction:column; gap:28px;">
+        
+        <!-- Bloque 1: Elección de Herramienta y Modelo -->
+        <section style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:24px;">
+          <h2 style="margin:0 0 16px; font-size:20px; font-weight:700; color:var(--head); border-bottom:1px solid var(--border); padding-bottom:10px; display:flex; align-items:center; gap:8px;">
+            🛠️ 1. Editor y Selección de Modelos
+          </h2>
+          
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <!-- Punto 1 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">1.1. Autocompletado y NES antes de abrir el chat</h3>
+              <p style="margin:0 0 8px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                No todo requiere iniciar una conversación. El autocompletado básico de código en tu editor y las sugerencias de la siguiente edición (Next Edit Suggestions) resuelven de forma instantánea tareas repetitivas como terminar una línea, generar boilerplate simple, mapear DTOs o escribir condiciones. En planes de pago, estas funciones no consumen créditos de IA.
+              </p>
+              <div style="font-size:12px; font-style:italic; color:var(--dim); padding-left:10px; border-left:2px solid var(--border2);">
+                Regla general: Si puedes solucionarlo con un <code>Tab</code>, no abras el chat interactivo.
+              </div>
+            </div>
+
+            <!-- Punto 2 -->
+            <div>
+              <h3 style="margin:0 0 8px; font-size:16px; font-weight:600; color:var(--accent);">1.2. Elige el modelo adecuado para cada tarea</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Usar el modelo más potente y costoso para preguntar cómo centrar un <code>div</code> o generar una estructura básica es un desperdicio de recursos. La recomendación oficial es clara: mantén <strong>Auto</strong> como predeterminado (deja que el sistema determine la complejidad) y cambia manualmente a un modelo de razonamiento profundo solo cuando te enfrentes a algoritmos complejos o depuración multifichero.
+              </p>
+
+              <!-- Tabla de Tareas recomendada -->
+              <div class="table-wrap" style="margin-bottom:8px;">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Tipo de Tarea</th>
+                      <th>Modelo Recomendado</th>
+                      <th>Consumo Relativo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="font-weight:600; color:var(--head);">Preguntas simples / Centrar div</td>
+                      <td>Ligero (Gemini Flash, Claude Haiku)</td>
+                      <td style="color:var(--pos);">Muy Bajo</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight:600; color:var(--head);">Boilerplate / Estructura básica</td>
+                      <td>Ligero o Selección Automática</td>
+                      <td style="color:var(--pos);">Bajo</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight:600; color:var(--head);">Explicación de código / Tests simples</td>
+                      <td>Medio (GPT-4o mini, Claude Sonnet)</td>
+                      <td>Medio</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight:600; color:var(--head);">Depuración compleja / Bug fixing</td>
+                      <td>Razonamiento (Gemini 1.5 Pro, Claude Sonnet)</td>
+                      <td style="color:var(--warn);">Alto</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight:600; color:var(--head);">Arquitectura / Refactor multifichero</td>
+                      <td>Razonamiento Profundo / Frontier (o3-mini, o1)</td>
+                      <td style="color:var(--warn); font-weight:600;">Máximo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bloque 2: Gestión de la Sesión y Contexto -->
+        <section style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:24px;">
+          <h2 style="margin:0 0 16px; font-size:20px; font-weight:700; color:var(--head); border-bottom:1px solid var(--border); padding-bottom:10px; display:flex; align-items:center; gap:8px;">
+            💬 2. Gestión de Chats y Contexto
+          </h2>
+
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <!-- Punto 3 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">2.1. Inicia nuevos chats al cambiar de tarea</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Este es uno de los errores más comunes. A medida que un chat se alarga, acumula contexto de mensajes anteriores, outputs de herramientas y código ya revisado. Si cambias de tarea (por ejemplo, pasas de depurar un test a escribir documentación) en la misma sesión, el modelo seguirá leyendo y procesando todo el historial irrelevante, cobrándote miles de tokens innecesarios.
+              </p>
+              
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:8px;">
+                <div style="background:rgba(239,68,68,0.04); border:1px solid rgba(239,68,68,0.15); border-radius:8px; padding:12px;">
+                  <div style="color:var(--warn); font-weight:600; font-size:11px; text-transform:uppercase; margin-bottom:4px;">❌ Evitar (Un solo chat para todo)</div>
+                  <pre style="border:none; font-size:11px; background:transparent;"><code class="language-text" style="padding:0 !important;">{snBadChatPattern}</code></pre>
+                </div>
+                <div style="background:rgba(13,159,110,0.04); border:1px solid rgba(13,159,110,0.15); border-radius:8px; padding:12px;">
+                  <div style="color:var(--pos); font-weight:600; font-size:11px; text-transform:uppercase; margin-bottom:4px;">✅ Recomendado (Chats específicos)</div>
+                  <pre style="border:none; font-size:11px; background:transparent;"><code class="language-text" style="padding:0 !important;">{snGoodChatPattern}</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Punto 4 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">2.2. Usa /compact y /fork cuando sea necesario</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Si estás en una sesión de trabajo larga y el contexto empieza a ser gigantesco, pero hay información útil acumulada que no quieres perder, no necesitas empezar de cero totalmente a ciegas. Puedes usar comandos de compactación o pedirle al modelo un resumen del estado actual para copiarlo en una sesión nueva y limpia.
+              </p>
+              
+              <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:14px; position:relative;">
+                <div style="font-weight:600; font-size:12px; color:var(--head); margin-bottom:6px; display:flex; justify-content:space-between; align-items:center;">
+                  <span>Prompt de compactación recomendado:</span>
+                  <button class="copy-btn" data-target="compact-prompt" style="background:transparent; border:none; color:var(--accent); cursor:pointer; font-size:11px; font-weight:600;">📋 Copiar</button>
+                </div>
+                <pre style="background:var(--bg); border-color:var(--border);"><code id="compact-prompt" class="language-text">{snCompactPrompt}</code></pre>
+              </div>
+            </div>
+
+            <!-- Punto 5 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">2.3. No envíes todo el repositorio si solo necesitas tres archivos</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Evita las consultas de alcance infinito que fuercen al modelo a realizar búsquedas vectoriales masivas en todo tu proyecto. Especificar con qué archivos exactos quieres trabajar limita de inmediato el consumo de tokens y reduce drásticamente las alucinaciones de la IA.
+              </p>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:12px;">
+                  <div style="color:var(--dim); font-weight:600; font-size:11px; text-transform:uppercase; margin-bottom:4px;">Inadecuado (Consumo enorme)</div>
+                  <pre style="border:none; font-size:11px; background:transparent;"><code class="language-text" style="padding:0 !important;">{snBadPromptScope}</code></pre>
+                </div>
+                <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:12px;">
+                  <div style="color:var(--head); font-weight:600; font-size:11px; text-transform:uppercase; margin-bottom:4px;">Óptimo (Contexto controlado)</div>
+                  <pre style="border:none; font-size:11px; background:transparent;"><code class="language-text" style="padding:0 !important;">{snGoodPromptScope}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bloque 3: Flujos de Trabajo Eficientes -->
+        <section style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:24px;">
+          <h2 style="margin:0 0 16px; font-size:20px; font-weight:700; color:var(--head); border-bottom:1px solid var(--border); padding-bottom:10px; display:flex; align-items:center; gap:8px;">
+            ⚡ 3. Flujos de Trabajo Inteligentes
+          </h2>
+
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <!-- Punto 6 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">3.1. Separa planificación, implementación y validación</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Pedirle a un agente de IA que "analice, diseñe, implemente, corra tests, corrija errores y documente todo a la vez" es una receta para bucles infinitos de herramientas y facturas astronómicas. La clave es trabajar en fases lógicas e independientes:
+              </p>
+              
+              <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:14px; margin-bottom:8px;">
+                <div style="font-weight:600; font-size:12px; color:var(--head); margin-bottom:6px;">Usa instrucciones secuenciales en fases:</div>
+                <pre style="background:var(--bg); border-color:var(--border);"><code class="language-markdown">{snPhases}</code></pre>
+              </div>
+            </div>
+
+            <!-- Punto 7 y 10 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">3.2. Cuidado con los logs y usa herramientas tradicionales primero</h3>
+              <p style="margin:0 0 8px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Los logs de compilación o de ejecución de tests son los asesinos silenciosos del presupuesto de tokens. Pegar un log de 2,000 líneas cuando el error real se describe en las últimas 20 es sumamente costoso. Limita el volcado a las líneas significativas.
+              </p>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Además, <strong>deja que las herramientas tradicionales hagan su trabajo</strong>. Deja que tu linter corrija el estilo, que tu formateador ordene las llaves, y que el compilador te muestre los errores de tipo. No consumas tokens para tareas que se pueden resolver de forma local y determinista en milisegundos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bloque 4: Configuración Avanzada y Entorno -->
+        <section style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:24px;">
+          <h2 style="margin:0 0 16px; font-size:20px; font-weight:700; color:var(--head); border-bottom:1px solid var(--border); padding-bottom:10px; display:flex; align-items:center; gap:8px;">
+            ⚙️ 4. Configuración, MCP y Modelos Locales
+          </h2>
+
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <!-- Punto 8, 9 y 11 -->
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">4.1. Mantén tus instrucciones personalizadas cortas y vigentes</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Los archivos de instrucciones personalizadas (como <code>.github/copilot-instructions.md</code> o similares) viajan con cada una de tus solicitudes al servidor. Si este archivo es una constitución nacional gigante con reglas obsoletas y directivas contradictorias que nadie sigue, estarás pagando un peaje innecesario en cada prompt.
+              </p>
+              
+              <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:14px; margin-bottom:8px;">
+                <div style="font-weight:600; font-size:12.5px; color:var(--head); margin-bottom:6px;">Ejemplo de instrucciones enfocadas y concisas:</div>
+                <pre style="background:var(--bg); border-color:var(--border);"><code class="language-markdown">{snCustomInstructions}</code></pre>
+              </div>
+            </div>
+
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">4.2. Gestiona tus servidores y herramientas MCP</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Model Context Protocol (MCP) es extremadamente potente para dotar de herramientas a tus agentes. No obstante, cada servidor MCP activo añade descripciones de herramientas que incrementan el espacio de decisión y el tamaño del contexto. Si estás programando una API en local, desactiva servidores de Jira, Slack o búsquedas en la nube que no vayas a necesitar.
+              </p>
+            </div>
+
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">4.3. Aprovecha la potencia de los modelos locales</h3>
+              <p style="margin:0 0 8px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Para tareas sencillas y repetitivas, como formatear logs, generar drafts de documentación técnica básica, o traducir código, puedes utilizar herramientas locales como <strong>Ollama</strong> en lugar de enviar peticiones a la nube. Esto no solo es completamente gratuito, sino que además garantiza una privacidad absoluta de tus datos y código fuente.
+              </p>
+              <div style="font-size:12px; color:var(--dim); display:flex; align-items:center; gap:6px;">
+                <span>💡</span>
+                <span>Visita nuestra pestaña de <a href="./local.html" style="color:var(--accent2); text-decoration:underline;">Modelos Locales</a> para aprender a configurarlos paso a paso.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bloque 5: Gestión de Equipos -->
+        <section style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:24px;">
+          <h2 style="margin:0 0 16px; font-size:20px; font-weight:700; color:var(--head); border-bottom:1px solid var(--border); padding-bottom:10px; display:flex; align-items:center; gap:8px;">
+            👥 5. FinOps para Equipos y Organizaciones
+          </h2>
+
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <div>
+              <h3 style="margin:0 0 6px; font-size:16px; font-weight:600; color:var(--accent);">5.1. Uso estratégico de la revisión de código por IA (Code Review)</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                Las herramientas de revisión automática de código de Copilot o similares consumen gran volumen de tokens y minutos de CI/CD. Activar revisiones exhaustivas y automatizadas en cada commit de cada rama de pruebas es inviable. Limita el uso del revisor de IA a Pull Requests terminadas y significativas, y apóyate en analizadores estáticos locales primero.
+              </p>
+            </div>
+
+            <div>
+              <h3 style="margin:0 0 12px; font-size:16px; font-weight:600; color:var(--accent);">5.2. Definir perfiles de uso por tipo de tarea</h3>
+              <p style="margin:0 0 12px; color:var(--text); font-size:13.5px; line-height:1.5;">
+                En lugar de dar total libertad sin guías en equipos grandes, establece directrices claras para los tipos de tareas comunes:
+              </p>
+
+              <!-- Grid interactiva de perfiles -->
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
+                <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:10px; padding:16px;">
+                  <div style="font-weight:700; color:var(--head); font-size:14px; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                    💻 Perfil de Código Diario
+                  </div>
+                  <ul style="margin:0; padding-left:18px; font-size:12.5px; color:var(--dim); display:flex; flex-direction:column; gap:6px; line-height:1.4;">
+                    <li>Usa autocompletado y NES como primera opción.</li>
+                    <li>Mantener <strong>Auto</strong> como modelo por defecto.</li>
+                    <li>Chats cortos y contexto muy delimitado.</li>
+                  </ul>
+                </div>
+
+                <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:10px; padding:16px;">
+                  <div style="font-weight:700; color:var(--head); font-size:14px; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                    🐛 Perfil de Depuración
+                  </div>
+                  <ul style="margin:0; padding-left:18px; font-size:12.5px; color:var(--dim); display:flex; flex-direction:column; gap:6px; line-height:1.4;">
+                    <li>Pega solo las líneas significativas del error de compilación.</li>
+                    <li>Identifica explícitamente los archivos afectados.</li>
+                    <li>Pide un plan conceptual antes de que la IA escriba código.</li>
+                  </ul>
+                </div>
+
+                <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:10px; padding:16px;">
+                  <div style="font-weight:700; color:var(--head); font-size:14px; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                    📐 Perfil de Arquitectura / Refactor
+                  </div>
+                  <ul style="margin:0; padding-left:18px; font-size:12.5px; color:var(--dim); display:flex; flex-direction:column; gap:6px; line-height:1.4;">
+                    <li>Selecciona modelos de razonamiento (o3-mini, Claude Sonnet).</li>
+                    <li>Acota el alcance del refactor a carpetas específicas.</li>
+                    <li>Procesa los cambios en fases secuenciales cortas.</li>
+                  </ul>
+                </div>
+
+                <div style="background:var(--panel2); border:1px solid var(--border2); border-radius:10px; padding:16px;">
+                  <div style="font-weight:700; color:var(--head); font-size:14px; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                    🤖 Perfil Agente Autónomo
+                  </div>
+                  <ul style="margin:0; padding-left:18px; font-size:12.5px; color:var(--dim); display:flex; flex-direction:column; gap:6px; line-height:1.4;">
+                    <li>Define una tarea sumamente específica y clara.</li>
+                    <li>Especifica comandos explícitos de validación.</li>
+                    <li>Nunca dejes un agente correr sin supervisión por largo tiempo.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Lado Derecho: Recursos y Checklist Interactivo -->
+      <div style="display:flex; flex-direction:column; gap:20px; position:sticky; top:85px;">
+        
+        <!-- Origen de la información -->
+        <div style="background:linear-gradient(135deg, rgba(139,123,255,0.08), rgba(34,211,238,0.08)); border:1px solid var(--accent); border-radius:12px; padding:18px;">
+          <div style="font-size:10px; font-weight:700; color:var(--accent2); background:rgba(34,211,238,0.1); border:1px solid rgba(34,211,238,0.2); border-radius:5px; padding:2px 7px; text-transform:uppercase; letter-spacing:.5px; margin-bottom:12px; display:inline-block;">
+            📰 ARTÍCULO ORIGINAL
+          </div>
+          <h3 style="margin:0 0 6px; font-size:14px; font-weight:700; color:var(--head); line-height:1.3;">GitHub Copilot and tokens</h3>
+          <p style="margin:0 0 14px; color:var(--text); font-size:12.5px; line-height:1.4;">
+            Esta guía está inspirada en las lecciones personales publicadas por <strong>Bruno Capuano</strong> sobre cómo optimizar el uso de tokens y presupuesto.
+          </p>
+          <a href="https://elbruno.com/2026/06/04/github-copilot-and-tokens-how-to-keep-using-ai-without-burning-your-budget-in-three-prompts-some-personal-lessons-learned/" target="_blank" class="btn" style="width:100%; justify-content:center; font-size:12px; padding:8px 12px; border-radius:8px;">
+            Leer artículo completo ↗
+          </a>
+        </div>
+
+        <!-- Checklist interactivo rápido -->
+        <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px;">
+          <h3 style="margin:0 0 12px; font-size:14px; font-weight:600; color:var(--head); display:flex; align-items:center; gap:6px;">
+            ✅ Auto-Evaluación de Prompts
+          </h3>
+          <div style="display:flex; flex-direction:column; gap:10px;" id="checklist-container">
+            <label style="display:flex; gap:8px; font-size:12.5px; cursor:pointer; color:var(--text);">
+              <input type="checkbox" style="margin-top:3px;" />
+              <span>¿Puedo resolver esto con autocompletar (Tab)?</span>
+            </label>
+            <label style="display:flex; gap:8px; font-size:12.5px; cursor:pointer; color:var(--text);">
+              <input type="checkbox" style="margin-top:3px;" />
+              <span>¿Es necesario abrir un chat o basta con Inline Edit?</span>
+            </label>
+            <label style="display:flex; gap:8px; font-size:12.5px; cursor:pointer; color:var(--text);">
+              <input type="checkbox" style="margin-top:3px;" />
+              <span>¿Tengo el chat anterior limpio o deba abrir uno nuevo?</span>
+            </label>
+            <label style="display:flex; gap:8px; font-size:12.5px; cursor:pointer; color:var(--text);">
+              <input type="checkbox" style="margin-top:3px;" />
+              <span>¿He acotado el alcance a los archivos estrictos?</span>
+            </label>
+            <label style="display:flex; gap:8px; font-size:12.5px; cursor:pointer; color:var(--text);">
+              <input type="checkbox" style="margin-top:3px;" />
+              <span>¿He recortado el log para pegar solo el error real?</span>
+            </label>
+            <label style="display:flex; gap:8px; font-size:12.5px; cursor:pointer; color:var(--text);">
+              <input type="checkbox" style="margin-top:3px;" />
+              <span>¿El compilador o linter local pueden resolver esto antes?</span>
+            </label>
+          </div>
+          <div style="margin-top:16px; padding-top:12px; border-top:1px solid var(--border); font-size:11px; color:var(--dim); text-align:center;" id="checklist-status">
+            0 de 6 seleccionados. ¡Prepara tu prompt!
+          </div>
+        </div>
+
+        <!-- FinOps Quote -->
+        <div style="background:var(--panel2); border:1px solid var(--border); border-radius:12px; padding:16px; font-style:italic; font-size:12px; color:var(--dim); line-height:1.5; border-left:3px solid var(--accent);">
+          "El control de costes en Inteligencia Artificial es como el Cloud Computing: primero todo el mundo celebra la facilidad de crear recursos, luego llega la factura sorpresa, y finalmente aprendemos a optimizar de verdad."
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+</Layout>
+
+<script is:inline>
+  // Script para copiar al portapapeles de forma interactiva
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const codeEl = document.getElementById(targetId);
+      if (codeEl) {
+        navigator.clipboard.writeText(codeEl.textContent).then(() => {
+          const originalText = btn.textContent;
+          btn.textContent = '✅ Copiado!';
+          btn.style.color = 'var(--pos)';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.color = 'var(--accent)';
+          }, 2000);
+        });
+      }
+    });
+  });
+
+  // Script interactivo para la lista de verificación
+  const checkboxes = document.querySelectorAll('#checklist-container input[type="checkbox"]');
+  const statusEl = document.getElementById('checklist-status');
+  
+  function updateChecklistStatus() {
+    const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+    const totalCount = checkboxes.length;
+    
+    if (checkedCount === 0) {
+      statusEl.textContent = '0 de ' + totalCount + ' seleccionados. ¡Prepara tu prompt!';
+      statusEl.style.color = 'var(--dim)';
+    } else if (checkedCount === totalCount) {
+      statusEl.textContent = '🎉 ¡Todo listo! Tu prompt está optimizado al máximo.';
+      statusEl.style.color = 'var(--pos)';
+    } else {
+      statusEl.textContent = checkedCount + ' de ' + totalCount + ' optimizaciones comprobadas.';
+      statusEl.style.color = 'var(--accent2)';
+    }
+  }
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', updateChecklistStatus);
+  });
+</script>

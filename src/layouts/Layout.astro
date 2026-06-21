@@ -2,7 +2,7 @@
 interface Props {
   title?: string;
   /** Clave de página para resaltar el enlace activo de la barra superior. */
-  active?: 'index' | 'local' | 'tools' | 'opencode' | 'benchmarks';
+  active?: 'index' | 'local' | 'tools' | 'opencode' | 'buenas-practicas' | 'benchmarks';
 }
 const { title = 'Catálogo de Modelos de IA para Programación', active } = Astro.props;
 
@@ -11,6 +11,7 @@ const nav = [
   { key: 'local', label: 'Locales', href: './local.html' },
   { key: 'tools', label: 'Herramientas', href: './tools.html' },
   { key: 'opencode', label: 'Guía OpenCode', href: './opencode.html' },
+  { key: 'buenas-practicas', label: 'Buenas Prácticas', href: './buenas-practicas.html' },
   { key: 'benchmarks', label: 'Benchmarks', href: './benchmarks.html' },
 ];
 ---
@@ -21,6 +22,7 @@ const nav = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Catálogo de modelos de IA para programación agrupados por empresa: precios, contexto, ejemplos de uso, playgrounds y vídeos." />
+    <meta name="author" content="Jesús P. Rodríguez" />
     <title>{title}</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,6 +58,28 @@ const nav = [
     </header>
 
     <slot />
+
+    <footer class="global-footer">
+      <div class="wrap" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: var(--accent); font-weight: 600;">~</span>
+          <a href="https://web-personal-sandy.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--head); font-weight: 500; text-decoration: none;" class="dlink">
+            jesus.dev
+          </a>
+          <span style="color: var(--dim); font-size: 11px; font-family: 'IBM Plex Mono', monospace; border: 1px solid var(--border2); padding: 1px 6px; border-radius: 4px;">v2.1.0</span>
+          <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--pos); margin-left: 4px; display: inline-block;" title="Online"></span>
+        </div>
+        
+        <div style="font-size: 12.5px; color: var(--dim);">
+          Creado por <a href="https://web-personal-sandy.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600;" class="dlink">Jesús P. Rodríguez</a> — Senior Dev · .NET & IA
+        </div>
+
+        <div style="display: flex; gap: 14px; font-size: 12.5px;">
+          <a href="https://github.com/jesusprodriguezunir" target="_blank" rel="noopener noreferrer" style="color: var(--dim);" class="dlink">GitHub</a>
+          <a href="https://www.linkedin.com/in/jes%C3%BAs-pedro-rodr%C3%ADguez-castro-b746394a/" target="_blank" rel="noopener noreferrer" style="color: var(--dim);" class="dlink">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
 
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script is:inline>
