@@ -46,7 +46,14 @@ const benchDescs = [
               <div class="rank-pos">{i + 1}</div>
               <div class="rank-info">
                 <span class="rank-dot" style={`background:${accent}`}></span>
-                <span class="rank-name">{m.displayName}</span>
+                <span class="rank-name">
+                  {m.displayName}
+                  {m.id === 'glm-5' && (
+                    <a href="./opencode.html" class="opencode-badge-link" title="Ver guía de configuración de OpenCode">
+                      (en OpenCode)
+                    </a>
+                  )}
+                </span>
                 <span class="rank-company">{m.company}</span>
               </div>
               <div class="rank-bar-wrap">
@@ -174,11 +181,36 @@ const benchDescs = [
     background: linear-gradient(135deg, #fbbf24, #f59e0b);
     color: #0b0d12;
   }
-  .rank-row:nth-child(2) .rank-pos { background: var(--text-dim); color: #0b0d12; }
-  .rank-row:nth-child(3) .rank-pos { background: #b87333; color: #0b0d12; }
+  .rank-row:nth-child(2) .rank-pos {
+    background: linear-gradient(135deg, #f1f5f9, #cbd5e1, #94a3b8);
+    color: #0b0d12;
+  }
+  .rank-row:nth-child(3) .rank-pos {
+    background: linear-gradient(135deg, #ffedd5, #fed7aa, #b45309);
+    color: #0b0d12;
+  }
   .rank-info { display: flex; align-items: center; gap: 8px; width: 260px; flex: none; }
   .rank-dot { width: 10px; height: 10px; border-radius: 4px; flex: none; }
   .rank-name { font-size: 14px; font-weight: 700; color: var(--text); }
+  .opencode-badge-link {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--pos);
+    background: rgba(52, 211, 153, 0.1);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    border-radius: 6px;
+    padding: 1px 6px;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .opencode-badge-link:hover {
+    background: rgba(52, 211, 153, 0.2);
+    border-color: var(--pos);
+    text-decoration: none;
+  }
   .rank-company { font-size: 12px; color: var(--text-faint); }
   .rank-bar-wrap {
     flex: 1; height: 10px; background: var(--bg-elev-2); border-radius: 5px;
