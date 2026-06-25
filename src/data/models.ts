@@ -1,5 +1,10 @@
 import type { Model, CompanyMeta } from './types';
 import { autoModels, autoSpecs, autoCompanies } from './auto-models';
+import {
+  buildCuratedKeySet,
+  buildCuratedModels,
+  buildImportedModels,
+} from './catalog-utils';
 
 // ─────────────────────────────────────────────────────────────────────────
 //  Catálogo de modelos de programación — datos a junio de 2026.
@@ -1178,72 +1183,12 @@ export const companies: Record<string, CompanyMeta> = {
   ...curatedCompanies,
 };
 
-/** Clave de enlace de un modelo curado con el Intelligence Index. */
-const iiKeyOf = (m: Model): string => m.iiSlug ?? m.id;
-
-/** Refresca un modelo curado con specs frescas, sin pisar lo ya definido. */
-function refreshCurated(m: Model): Model {
-  const spec = autoSpecs[iiKeyOf(m)];
-  if (!spec) return m;
-  const next: Model = { ...m };
-  // Precio: solo si falta o el curado es aproximado.
-  if (spec.pricing && (!m.pricing || m.pricing.approx || m.pricing.inputPer1M == null)) {
-    next.pricing = { ...m.pricing, ...spec.pricing };
-  }
-  // Contexto: solo si el curado no lo tiene.
-  if (spec.context != null && m.context == null) next.context = spec.context;
-  // Parámetros: solo si faltan.
-  if (spec.parameters != null && m.parameters == null) next.parameters = spec.parameters;
-  // Benchmarks de coding: rellenar los que falten (SWE-bench Pro queda curado).
-  if (spec.benchmarks) {
-    next.benchmarks = {
-      ...spec.benchmarks,
-      ...m.benchmarks, // lo curado gana
-    };
-  }
-  return next;
-}
-
-const curatedModels: Model[] = rawModels.map((m) => ({
-  ...refreshCurated(m),
-  popularity: m.popularity ?? POPULARITY[m.id] ?? 30,
-}));
-
-// Conjunto de claves ya cubiertas por el catálogo curado (para dedupe).
-const curatedKeys = new Set<string>();
-for (const m of curatedModels) {
-  curatedKeys.add(m.id);
-  if (m.iiSlug) curatedKeys.add(m.iiSlug);
-  if (m.apiModelString) curatedKeys.add(m.apiModelString);
-}
-
-/** Modelos autoimportados que no existen ya en el catálogo curado. */
-const importedModels: Model[] = autoModels
-  .filter((m) => !curatedKeys.has(m.id) && !(m.iiSlug && curatedKeys.has(m.iiSlug)))
-  .map((m) => ({
-    ...m,
-    autoImported: true,
-    popularity: POPULARITY[m.id] ?? 30,
-  }));
+const curatedModels: Model[] = buildCuratedModels(rawModels, POPULARITY, autoSpecs);
+const curatedKeys = buildCuratedKeySet(curatedModels);
+const importedModels: Model[] = buildImportedModels(autoModels, curatedKeys, POPULARITY);
 
 /** Catálogo final: curado (con specs refrescadas) + modelos nuevos del mercado. */
 export const models: Model[] = [...curatedModels, ...importedModels];
 
-/** Niveles de popularidad para agrupar el catálogo. */
-export interface PopularityTier {
-  key: string;
-  label: string;
-  /** Umbral mínimo (inclusive). */
-  min: number;
-}
-export const POPULARITY_TIERS: PopularityTier[] = [
-  { key: 'top', label: 'Más usados', min: 70 },
-  { key: 'popular', label: 'Populares', min: 40 },
-  { key: 'emerging', label: 'Emergentes', min: 0 },
-];
-
-/** Devuelve el nivel de popularidad de un valor 0-100. */
-export function popularityTier(p: number | undefined): PopularityTier {
-  const v = p ?? 0;
-  return POPULARITY_TIERS.find((t) => v >= t.min) ?? POPULARITY_TIERS[POPULARITY_TIERS.length - 1];
-}
+export { POPULARITY_TIERS, popularityTier } from './catalog-utils';
+export type { PopularityTier } from './catalog-utils';
