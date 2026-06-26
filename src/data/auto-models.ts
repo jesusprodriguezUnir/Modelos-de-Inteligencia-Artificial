@@ -1093,7 +1093,7 @@ export const autoModels: Model[] = [
       "agentic",
       "budget"
     ],
-    "context": 256000,
+    "context": 262144,
     "pricing": {
       "inputPer1M": 0.2,
       "outputPer1M": 1.15,
@@ -1186,6 +1186,35 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 34.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "devstral-2",
+    "iiSlug": "devstral-2",
+    "company": "Mistral",
+    "origin": "EU",
+    "displayName": "Devstral 2",
+    "kind": "model",
+    "category": [
+      "coding",
+      "agentic",
+      "budget"
+    ],
+    "context": 256000,
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2025-12-09",
+    "parameters": 125.0,
+    "benchmarks": {
+      "liveCodeBench": 0.4
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 31.3). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-oss-120b",
     "iiSlug": "gpt-oss-120b",
     "company": "OpenAI",
@@ -1214,6 +1243,34 @@ export const autoModels: Model[] = [
       "liveCodeBench": 0.9
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 30.4). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "devstral-small-2",
+    "iiSlug": "devstral-small-2",
+    "company": "Mistral",
+    "origin": "EU",
+    "displayName": "Devstral Small 2",
+    "kind": "model",
+    "category": [
+      "coding",
+      "budget"
+    ],
+    "context": 256000,
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2025-12-09",
+    "parameters": 24.0,
+    "benchmarks": {
+      "liveCodeBench": 0.3
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 29.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "qwen3-5-9b",
@@ -1250,7 +1307,8 @@ export const autoModels: Model[] = [
     "kind": "model",
     "category": [
       "coding",
-      "reasoning"
+      "reasoning",
+      "agentic"
     ],
     "context": 256000,
     "pricing": {
@@ -1267,57 +1325,6 @@ export const autoModels: Model[] = [
       "liveCodeBench": 0.6
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 25.9). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "qwen3-5-9b-non-reasoning",
-    "iiSlug": "qwen3-5-9b-non-reasoning",
-    "company": "Alibaba",
-    "origin": "China",
-    "displayName": "Qwen3.5 9B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "budget"
-    ],
-    "context": 262144,
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-03-02",
-    "parameters": 9.65,
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 23.5). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "qwen3-5-4b",
-    "iiSlug": "qwen3-5-4b",
-    "company": "Alibaba",
-    "origin": "China",
-    "displayName": "Qwen3.5 4B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": 262144,
-    "pricing": {
-      "inputPer1M": 0.03,
-      "outputPer1M": 0.15,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-03-02",
-    "parameters": 4.66,
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 22.6). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -2418,7 +2425,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "outputPer1M": 1.15,
       "approx": true
     },
-    "context": 256000,
+    "context": 262144,
     "parameters": 198.0,
     "releaseDate": "2026-05-29"
   },
@@ -3525,6 +3532,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-09-05"
   },
+  "devstral-2": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 256000,
+    "benchmarks": {
+      "liveCodeBench": 0.4
+    },
+    "parameters": 125.0,
+    "releaseDate": "2025-12-09"
+  },
   "nova-2-0-lite-reasoning-medium": {
     "pricing": {
       "inputPer1M": 0.3,
@@ -3747,19 +3767,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.5
     },
     "releaseDate": "2025-04-17"
-  },
-  "nvidia-nemotron-3-nano-30b-a3b-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.055,
-      "outputPer1M": 0.22,
-      "approx": true
-    },
-    "context": 1000000,
-    "benchmarks": {
-      "liveCodeBench": 0.7
-    },
-    "parameters": 31.6,
-    "releaseDate": "2025-12-15"
   },
   "k2-think-v2": {
     "pricing": {
@@ -4013,19 +4020,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 31.2,
     "releaseDate": "2026-01-19"
   },
-  "devstral-2": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 256000,
-    "benchmarks": {
-      "liveCodeBench": 0.4
-    },
-    "parameters": 125.0,
-    "releaseDate": "2025-12-09"
-  },
   "gpt-5-chatgpt": {
     "pricing": {
       "inputPer1M": 1.25,
@@ -4193,6 +4187,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 70.0,
     "releaseDate": "2025-12-05"
+  },
+  "nvidia-nemotron-3-nano-30b-a3b-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.055,
+      "outputPer1M": 0.22,
+      "approx": true
+    },
+    "context": 1000000,
+    "benchmarks": {
+      "liveCodeBench": 0.7
+    },
+    "parameters": 31.6,
+    "releaseDate": "2025-12-15"
   },
   "gemini-2-5-flash": {
     "pricing": {
@@ -4745,6 +4752,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 33.4,
     "releaseDate": "2025-10-21"
   },
+  "ministral-3-14b": {
+    "pricing": {
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.2,
+      "approx": true
+    },
+    "context": 256000,
+    "benchmarks": {
+      "liveCodeBench": 0.4
+    },
+    "parameters": 14.0,
+    "releaseDate": "2025-12-02"
+  },
   "deepseek-r1-distill-qwen-32b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -5005,19 +5025,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 30.9,
     "releaseDate": "2025-05-20"
-  },
-  "ministral-3-14b": {
-    "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.2,
-      "approx": true
-    },
-    "context": 256000,
-    "benchmarks": {
-      "liveCodeBench": 0.4
-    },
-    "parameters": 14.0,
-    "releaseDate": "2025-12-02"
   },
   "deepseek-r1-distill-llama-70b": {
     "pricing": {
@@ -6055,6 +6062,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 236.0,
     "releaseDate": "2024-12-10"
   },
+  "ministral-3-3b": {
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.1,
+      "approx": true
+    },
+    "context": 256000,
+    "benchmarks": {
+      "liveCodeBench": 0.2
+    },
+    "parameters": 3.0,
+    "releaseDate": "2025-12-02"
+  },
   "qwen3-4b-instruct": {
     "pricing": {
       "inputPer1M": 0.11,
@@ -6314,19 +6334,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 32.0,
     "releaseDate": "2025-07-15"
-  },
-  "ministral-3-3b": {
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.1,
-      "approx": true
-    },
-    "context": 256000,
-    "benchmarks": {
-      "liveCodeBench": 0.2
-    },
-    "parameters": 3.0,
-    "releaseDate": "2025-12-02"
   },
   "gemini-1-5-flash-8b": {
     "pricing": {
