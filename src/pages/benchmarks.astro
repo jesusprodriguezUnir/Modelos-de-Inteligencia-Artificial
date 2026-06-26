@@ -105,6 +105,24 @@ const benchDescs = [
               ))}
           </tbody>
         </table>
+        <div class="table-cards">
+          {allModels
+            .sort((a, b) => (b.benchmarks?.sweBenchPro ?? 0) - (a.benchmarks?.sweBenchPro ?? 0))
+            .map((m) => (
+              <div class="table-card-row">
+                <div class="table-card-cell" data-label="Modelo">
+                  <span style={`display:inline-block; width:7px; height:7px; border-radius:50%; background:${companies[m.company].accent}; margin-right:6px;`}></span>
+                  {m.displayName}
+                </div>
+                <div class="table-card-cell" data-label="Empresa">{m.company}</div>
+                <div class="table-card-cell" data-label="Contexto">{fmtCtx(m.context)}</div>
+                <div class="table-card-cell" data-label="$/M entrada">{m.pricing.inputPer1M != null ? `$${m.pricing.inputPer1M}` : '—'}</div>
+                <div class="table-card-cell" data-label="SWE-bench">{m.benchmarks?.sweBenchPro ? `${m.benchmarks.sweBenchPro}%` : '—'}</div>
+                <div class="table-card-cell" data-label="HumanEval">{m.benchmarks?.humanEval ? `${m.benchmarks.humanEval}%` : '—'}</div>
+                <div class="table-card-cell" data-label="Open-weight">{m.openWeight ? '✓' : '—'}</div>
+              </div>
+            ))}
+        </div>
       </div>
     </section>
 

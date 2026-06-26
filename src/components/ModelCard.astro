@@ -65,7 +65,7 @@ const { m } = Astro.props;
   </div>
 
   <div style="display:flex; gap:var(--space-2); margin-top:var(--space-4);">
-    <button class="dbtn" data-action="detail" data-id={m.id} style="flex:1; font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2); border-radius:var(--radius-md); border:none; background:var(--accent); color:#fff; font-weight:500;">Ver detalle</button>
-    <button class="dbtn" data-action="compare" data-id={m.id} style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid var(--border2); background:transparent; color:var(--dim);">+</button>
+    <button class="dbtn" data-action="detail" data-id={m.id} type="button" aria-label={`Ver detalles de ${m.displayName}`} style="flex:1; font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2); border-radius:var(--radius-md); border:none; background:var(--accent); color:#fff; font-weight:500;">Ver detalle</button>
+    <button class="dbtn" data-action="compare" data-id={m.id} type="button" aria-label={`Comparar ${m.displayName}`} style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid var(--border2); background:transparent; color:var(--dim);">+</button>
   </div>
 </div>

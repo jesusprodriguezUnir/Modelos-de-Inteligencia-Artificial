@@ -43,6 +43,7 @@ const nav = [
     </script>
   </head>
   <body class="dsh-scroll">
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
     <header class="topbar">
       <a href="./index.html" class="brand">
         <span class="brand-logo"></span>
@@ -57,7 +58,9 @@ const nav = [
       <button id="theme-toggle" class="dbtn theme-toggle" type="button" aria-label="Cambiar tema">☀ Claro</button>
     </header>
 
-    <slot />
+    <div id="main-content">
+      <slot />
+    </div>
 
     <footer class="global-footer">
       <div class="wrap" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
@@ -210,6 +213,22 @@ const nav = [
   .drow:hover { background: var(--panel2) !important; }
   .hidden { display: none !important; }
 
+  /* Skip link */
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 999;
+    background: var(--accent); color: #fff;
+    padding: var(--space-2) var(--space-4); border-radius: 0 0 var(--radius-md) 0;
+    text-decoration: none; font-weight: 600; font-size: var(--fs-md);
+    transition: top var(--trans-fast);
+  }
+  .skip-link:focus { top: 0; outline: 2px solid #fff; outline-offset: 2px; }
+
+  /* Focus visible globally */
+  button:focus-visible, a:focus-visible, [tabindex="0"]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
   /* ── Barra superior compartida ─────────────────────────────────── */
   .topbar {
     position: sticky; top: 0; z-index: 40;
@@ -265,6 +284,21 @@ const nav = [
   th { color: var(--dim); font-weight: 500; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .6px; }
   td .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: var(--space-3); vertical-align: middle; }
 
+  /* Table cards (mobile) */
+  .table-cards { display: none; margin-top: var(--space-4); }
+  .table-card-row { background: var(--panel2); border-radius: var(--radius-md); padding: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+  .table-card-cell { display: flex; flex-direction: column; gap: 3px; }
+  .table-card-cell::before { content: attr(data-label); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .5px; color: var(--dim); font-weight: 500; }
+  .table-card-row .table-card-cell { font-size: var(--fs-md); color: var(--text); }
+  .table-card-row .table-card-cell.full-width { grid-column: 1 / -1; }
+
+  @media (max-width: 767px) {
+    .table-wrap { border: none; border-radius: 0; background: transparent; overflow: visible; margin-top: var(--space-3); }
+    .table-wrap table { display: none; }
+    .table-cards { display: block; }
+    .table-card-row { grid-template-columns: 1fr; }
+  }
+
   /* ── Tags / vídeos / código ────────────────────────────────────── */
   .tag { font-size: var(--fs-xs); font-weight: 600; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); background: var(--panel2); color: var(--text); border: 1px solid var(--border); }
   .empty { text-align: center; color: var(--dim); padding: 60px 0; }
@@ -281,8 +315,31 @@ const nav = [
 
   footer { border-top: 1px solid var(--border); margin-top: 60px; padding: 28px 0; color: var(--dim); font-size: var(--fs-md); }
 
-  @media (max-width: 640px) {
-    .hero { padding: 30px 0 20px; }
+  @media (max-width: 1023px) {
+    .topbar { padding: var(--space-3) var(--space-5); gap: var(--space-3); }
+    .brand-name { font-size: 16px; }
+    .brand-badge { font-size: 10px; }
+  }
+
+  @media (max-width: 767px) {
+    .wrap { padding: 0 16px; }
+    .hero { padding: 24px 0 16px; }
+    .hero h1 { font-size: clamp(20px, 3vw, 26px); margin-bottom: 8px; }
+    .hero p { font-size: 14px; }
+    .brand-name { font-size: 14px; }
     .brand-badge { display: none; }
+    .topnav { gap: 0; }
+    .topnav-link { font-size: 12px; padding: 6px 10px; }
+    .theme-toggle { font-size: 11px; padding: 5px 10px; }
+  }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 14px; }
+    .hero { padding: 20px 0 14px; }
+    .hero h1 { font-size: clamp(18px, 2.8vw, 24px); margin-bottom: 6px; }
+    .hero p { font-size: 13px; }
+    .topbar { flex-wrap: nowrap; gap: 6px; }
+    .topnav { display: none; }
+    .theme-toggle { font-size: 10px; padding: 4px 8px; }
   }
 </style>

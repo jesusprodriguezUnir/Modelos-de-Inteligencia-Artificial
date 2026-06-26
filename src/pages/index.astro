@@ -160,11 +160,11 @@ const popularityGroups = POPULARITY_TIERS
         </div>
         <div style="display:flex; flex-direction:column; gap:9px;">
           {topPopularity.map((m) => (
-            <div data-action="detail" data-id={m.id} style="display:flex; align-items:center; gap:12px; cursor:pointer;">
+            <button data-action="detail" data-id={m.id} type="button" aria-label={`Ver detalles de ${m.displayName}`} style="display:flex; align-items:center; gap:12px; cursor:pointer; background:none; border:none; padding:0; text-align:left; font-family:inherit;">
               <span style="width:130px; flex:none; font-size:12.5px; color:var(--head); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style={`display:inline-block;width:7px;height:7px;border-radius:50%;background:${m.accent};margin-right:7px;`}></span>{m.displayName}</span>
               <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;"><span style={`display:block; height:100%; width:${(m.popularity / maxPop) * 100}%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;`}></span></div>
               <span style="width:34px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--accent);">{m.popularity}</span>
-            </div>
+            </button>
           ))}
         </div>
       </div>
@@ -176,11 +176,11 @@ const popularityGroups = POPULARITY_TIERS
         </div>
         <div style="display:flex; flex-direction:column; gap:9px;">
           {leaderboardSwe.map((m) => (
-            <div data-action="detail" data-id={m.id} style="display:flex; align-items:center; gap:12px; cursor:pointer;">
+            <button data-action="detail" data-id={m.id} type="button" aria-label={`Ver detalles de ${m.displayName}`} style="display:flex; align-items:center; gap:12px; cursor:pointer; background:none; border:none; padding:0; text-align:left; font-family:inherit;">
               <span style="width:130px; flex:none; font-size:12.5px; color:var(--head); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style={`display:inline-block;width:7px;height:7px;border-radius:50%;background:${m.accent};margin-right:7px;`}></span>{m.displayName}</span>
               <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;"><span style={`display:block; height:100%; width:${m.barSwePct}; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;`}></span></div>
               <span style="width:48px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--pos);">{m.sweText}</span>
-            </div>
+            </button>
           ))}
         </div>
       </div>
@@ -219,11 +219,11 @@ const popularityGroups = POPULARITY_TIERS
           <button class="dpill" data-cat={c} data-active={c === 'all' ? 'true' : 'false'} style={`font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid ${c === 'all' ? 'var(--accent)' : 'var(--border2)'}; background:${c === 'all' ? 'var(--accent)' : 'transparent'}; color:${c === 'all' ? '#fff' : 'var(--text)'};`}>{c === 'all' ? 'Todas' : (catLabels[c] || c)}</button>
         ))}
       </div>
-      <div id="view-toggle" style="margin-left:auto; display:flex; gap:0; border:1px solid var(--border2); border-radius:var(--radius-md); overflow:hidden;">
-        <button class="dbtn vbtn" data-view="grid" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; background:var(--accent); color:#fff;">▦ Tarjetas</button>
-        <button class="dbtn vbtn" data-view="table" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">≣ Tabla</button>
-        <button class="dbtn vbtn" data-view="company" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">▥ Empresa</button>
-        <button class="dbtn vbtn" data-view="popularity" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">★ Popularidad</button>
+      <div id="view-toggle" role="tablist" style="margin-left:auto; display:flex; gap:0; border:1px solid var(--border2); border-radius:var(--radius-md); overflow:hidden;">
+        <button role="tab" aria-selected="true" aria-controls="view-grid" class="dbtn vbtn" data-view="grid" type="button" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; background:var(--accent); color:#fff;">▦ Tarjetas</button>
+        <button role="tab" aria-selected="false" aria-controls="view-table" class="dbtn vbtn" data-view="table" type="button" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">≣ Tabla</button>
+        <button role="tab" aria-selected="false" aria-controls="view-company" class="dbtn vbtn" data-view="company" type="button" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">▥ Empresa</button>
+        <button role="tab" aria-selected="false" aria-controls="view-popularity" class="dbtn vbtn" data-view="popularity" type="button" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">★ Popularidad</button>
       </div>
     </div>
 
@@ -266,6 +266,22 @@ const popularityGroups = POPULARITY_TIERS
             ))}
           </tbody>
         </table>
+        <div class="table-cards">
+          {decorated.map((m) => (
+            <div class="table-card-row">
+              <div class="table-card-cell" data-label="Modelo">
+                <span style={`display:inline-block; width:7px; height:7px; border-radius:50%; background:${m.accent}; margin-right:6px;`}></span>
+                {m.displayName}
+              </div>
+              <div class="table-card-cell" data-label="Empresa">{m.companyName}</div>
+              <div class="table-card-cell" data-label="Origen">{m.originLabel}</div>
+              <div class="table-card-cell" data-label="In/1M">{m.priceInText}</div>
+              <div class="table-card-cell" data-label="Out/1M">{m.priceOutText}</div>
+              <div class="table-card-cell" data-label="Contexto">{m.contextText}</div>
+              <div class="table-card-cell" data-label="SWE-bench">{m.sweCell}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
@@ -341,18 +357,18 @@ const popularityGroups = POPULARITY_TIERS
   </div>
 
   <!-- detail drawer -->
-  <div id="detail-drawer" class="hidden" style="position:fixed; inset:0; z-index:60; background:var(--overlay-bg); display:flex; justify-content:flex-end;">
+  <div id="detail-drawer" class="hidden" role="dialog" aria-modal="true" aria-labelledby="detail-title" style="position:fixed; inset:0; z-index:60; background:var(--overlay-bg); display:flex; justify-content:flex-end;">
     <div class="dsh-scroll" id="detail-panel" style="width:min(580px,100%); height:100%; overflow-y:auto; background:var(--panel); border-left:1px solid var(--accent); animation:dshslide var(--trans-slow);">
       <div id="detail-body"></div>
     </div>
   </div>
 
   <!-- compare overlay -->
-  <div id="compare-overlay" class="hidden" style="position:fixed; inset:0; z-index:65; background:var(--overlay-bg); display:flex; align-items:center; justify-content:center; padding:var(--space-6);">
+  <div id="compare-overlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="compare-title" style="position:fixed; inset:0; z-index:65; background:var(--overlay-bg); display:flex; align-items:center; justify-content:center; padding:var(--space-6);">
     <div class="dsh-scroll" id="compare-panel" style="width:min(1120px,100%); max-height:88vh; overflow:auto; background:var(--panel); border:1px solid var(--accent); border-radius:14px;">
       <div style="position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--border); padding:var(--space-4) var(--space-5); display:flex; align-items:center; gap:var(--space-3);">
-        <span style="font-size:var(--fs-xl); font-weight:600; color:var(--head);">Comparativa lado a lado</span>
-        <button class="dbtn" id="compare-close" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:var(--space-1) var(--space-3); font-family:inherit; font-size:var(--fs-sm); border-radius:var(--radius-md);">Cerrar ✕</button>
+        <span id="compare-title" style="font-size:var(--fs-xl); font-weight:600; color:var(--head);">Comparativa lado a lado</span>
+        <button class="dbtn" id="compare-close" type="button" aria-label="Cerrar comparación" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:var(--space-1) var(--space-3); font-family:inherit; font-size:var(--fs-sm); border-radius:var(--radius-md);">Cerrar ✕</button>
       </div>
       <div id="compare-body" style="padding:var(--space-5); display:grid; gap:var(--space-4); grid-template-columns:repeat(auto-fit,minmax(230px,1fr));"></div>
     </div>
@@ -485,6 +501,7 @@ const popularityGroups = POPULARITY_TIERS
       Object.entries(containers).forEach(([k, el]) => el.classList.toggle('hidden', k !== v));
       document.querySelectorAll('.vbtn').forEach((b) => {
         const active = b.dataset.view === v;
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
         b.style.background = active ? 'var(--accent)' : 'transparent';
         b.style.color = active ? '#fff' : 'var(--text)';
       });
@@ -497,7 +514,7 @@ const popularityGroups = POPULARITY_TIERS
         b.style.background = active ? 'var(--accent)' : 'transparent';
         b.style.color = active ? '#fff' : 'var(--text)';
         b.style.borderColor = active ? 'var(--accent)' : 'var(--border2)';
-        b.dataset.active = active ? 'true' : 'false';
+        b.setAttribute('aria-pressed', active ? 'true' : 'false');
       });
     }
 
@@ -525,6 +542,8 @@ const popularityGroups = POPULARITY_TIERS
     // ── Detalle lateral ────────────────────────────────────────────────
     const detailDrawer = document.getElementById('detail-drawer');
     const detailBody = document.getElementById('detail-body');
+    let lastFocusedElement = null;
+    let detailTrapFocus = null;
 
     function box(label, value, color) {
       return `<div style="background:var(--panel2); border-radius:10px; padding:13px;"><div style="font-size:10px; text-transform:uppercase; letter-spacing:.5px; color:var(--dim);">${label}</div><div style="font-family:'IBM Plex Mono',monospace; font-size:19px; color:${color}; margin-top:4px;">${value}</div></div>`;
@@ -534,12 +553,13 @@ const popularityGroups = POPULARITY_TIERS
     }
 
     function openDetail(id) {
+      lastFocusedElement = document.activeElement;
       const d = decorate(byId[id]); if (!d) return;
       let html = `
-        <div style="position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--border); padding:13px 22px; display:flex; align-items:center; gap:10px;">
+        <div id="detail-title" style="position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--border); padding:13px 22px; display:flex; align-items:center; gap:10px;">
           <span style="width:9px;height:9px;border-radius:50%;background:${d.accent};"></span>
           <span style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">${esc(d.company)}</span>
-          <button class="dbtn" id="detail-close" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:5px 12px; font-family:inherit; font-size:12px; border-radius:8px;">Cerrar ✕</button>
+          <button class="dbtn" id="detail-close" type="button" aria-label="Cerrar detalle" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:5px 12px; font-family:inherit; font-size:12px; border-radius:8px;">Cerrar ✕</button>
         </div>
         <div style="padding:22px 24px 50px;">
           <h2 style="margin:0; font-size:27px; font-weight:600; color:var(--head); letter-spacing:-.4px;">${esc(d.displayName)}</h2>
@@ -596,8 +616,24 @@ const popularityGroups = POPULARITY_TIERS
       if (copyBtn) copyBtn.addEventListener('click', () => {
         navigator.clipboard.writeText(d.code).then(() => { copyBtn.textContent = '✓ Copiado'; setTimeout(() => copyBtn.textContent = 'Copiar', 1600); });
       });
+
+      // Focus trap
+      const focusables = Array.from(detailBody.querySelectorAll('button, a, input'));
+      if (focusables.length > 0) focusables[0].focus();
+      detailTrapFocus = (e) => {
+        if (e.key !== 'Tab') return;
+        const first = focusables[0], last = focusables[focusables.length - 1];
+        const current = document.activeElement;
+        if (e.shiftKey && current === first) { e.preventDefault(); last?.focus(); }
+        else if (!e.shiftKey && current === last) { e.preventDefault(); first?.focus(); }
+      };
+      detailDrawer.addEventListener('keydown', detailTrapFocus);
     }
-    function closeDetail() { detailDrawer.classList.add('hidden'); }
+    function closeDetail() {
+      detailDrawer.classList.add('hidden');
+      if (detailTrapFocus) detailDrawer.removeEventListener('keydown', detailTrapFocus);
+      lastFocusedElement?.focus();
+    }
     detailDrawer.addEventListener('click', (e) => { if (e.target === detailDrawer) closeDetail(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeDetail(); closeCompareOverlay(); } });
 
@@ -606,12 +642,15 @@ const popularityGroups = POPULARITY_TIERS
     const tray = document.getElementById('compare-tray');
     const trayCount = document.getElementById('tray-count');
     const trayChips = document.getElementById('tray-chips');
+    const compareOverlay = document.getElementById('compare-overlay');
+    const compareBody = document.getElementById('compare-body');
+    let compareTrapFocus = null;
 
     function renderTray() {
       trayCount.textContent = selected.size;
       trayChips.innerHTML = [...selected].map((id) => {
         const m = decorate(byId[id]);
-        return `<span style="display:inline-flex; align-items:center; gap:7px; font-size:12px; color:var(--text); background:var(--panel2); border-radius:8px; padding:4px 7px 4px 11px;"><span style="width:7px;height:7px;border-radius:50%;background:${m.accent};"></span>${esc(m.displayName)}<button data-id="${id}" style="background:none;border:none;color:var(--dim);cursor:pointer;font-family:inherit;font-size:14px;padding:0 2px;">×</button></span>`;
+        return `<span style="display:inline-flex; align-items:center; gap:7px; font-size:12px; color:var(--text); background:var(--panel2); border-radius:8px; padding:4px 7px 4px 11px;"><span style="width:7px;height:7px;border-radius:50%;background:${m.accent};"></span>${esc(m.displayName)}<button data-id="${id}" aria-label="Eliminar ${m.displayName} de la comparación" style="background:none;border:none;color:var(--dim);cursor:pointer;font-family:inherit;font-size:14px;padding:0 2px;">×</button></span>`;
       }).join('');
       tray.classList.toggle('hidden', selected.size === 0);
     }
@@ -632,12 +671,12 @@ const popularityGroups = POPULARITY_TIERS
     trayChips.addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) toggleCompare(b.dataset.id); });
     document.getElementById('tray-clear').addEventListener('click', () => { [...selected].forEach((id) => toggleCompare(id)); });
 
-    const compareOverlay = document.getElementById('compare-overlay');
-    const compareBody = document.getElementById('compare-body');
     function compareRow(label, value, color) {
       return `<div style="display:flex; justify-content:space-between; padding:6px 0; border-top:1px solid var(--border);"><span style="color:var(--dim);">${label}</span><span style="${color ? `font-family:'IBM Plex Mono',monospace; color:${color};` : 'color:var(--text); text-align:right;'}">${esc(value)}</span></div>`;
     }
+
     function openCompareOverlay() {
+      lastFocusedElement = document.activeElement;
       if (!selected.size) return;
       compareBody.innerHTML = [...selected].map((id) => {
         const c = decorate(byId[id]);
@@ -653,12 +692,28 @@ const popularityGroups = POPULARITY_TIERS
             ${compareRow('Licencia', c.licenseText)}
             ${compareRow('Modalidades', c.modalText)}
           </div>
-          <button class="dbtn" data-remove="${c.id}" style="width:100%; margin-top:12px; font-family:inherit; font-size:12px; padding:7px; border-radius:8px; border:1px solid var(--border2); background:transparent; color:var(--dim);">quitar</button>
+          <button class="dbtn" data-remove="${c.id}" type="button" aria-label="Quitar ${c.displayName} de comparación" style="width:100%; margin-top:12px; font-family:inherit; font-size:12px; padding:7px; border-radius:8px; border:1px solid var(--border2); background:transparent; color:var(--dim);">quitar</button>
         </div>`;
       }).join('');
       compareOverlay.classList.remove('hidden');
+
+      // Focus trap
+      const focusables = Array.from(compareOverlay.querySelectorAll('button, a, input'));
+      if (focusables.length > 0) focusables[0].focus();
+      compareTrapFocus = (e) => {
+        if (e.key !== 'Tab') return;
+        const first = focusables[0], last = focusables[focusables.length - 1];
+        const current = document.activeElement;
+        if (e.shiftKey && current === first) { e.preventDefault(); last?.focus(); }
+        else if (!e.shiftKey && current === last) { e.preventDefault(); first?.focus(); }
+      };
+      compareOverlay.addEventListener('keydown', compareTrapFocus);
     }
-    function closeCompareOverlay() { compareOverlay.classList.add('hidden'); }
+    function closeCompareOverlay() {
+      compareOverlay.classList.add('hidden');
+      if (compareTrapFocus) compareOverlay.removeEventListener('keydown', compareTrapFocus);
+      lastFocusedElement?.focus();
+    }
     document.getElementById('tray-open').addEventListener('click', openCompareOverlay);
     document.getElementById('compare-close').addEventListener('click', closeCompareOverlay);
     compareOverlay.addEventListener('click', (e) => { if (e.target === compareOverlay) closeCompareOverlay(); });

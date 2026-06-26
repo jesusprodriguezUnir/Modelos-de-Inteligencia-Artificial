@@ -326,6 +326,22 @@ const tdStyle = "padding:11px 16px; border-bottom:1px solid var(--border);";
             ))}
           </tbody>
         </table>
+        <div class="table-cards">
+          {decorated.map((t) => (
+            <div class="table-card-row">
+              <div class="table-card-cell" data-label="Herramienta">
+                <span style={`display:inline-block; width:7px; height:7px; border-radius:50%; background:${t.accent}; margin-right:6px;`}></span>
+                {t.displayName}
+              </div>
+              <div class="table-card-cell" data-label="Empresa">{t.companyName}</div>
+              <div class="table-card-cell" data-label="Tipo"><span style={`font-size:11px; font-weight:600; color:${t.typeColor}; background:var(--panel2); border-radius:5px; padding:2px 8px;`}>{t.toolType}</span></div>
+              <div class="table-card-cell" data-label="Precio">{t.priceNote}</div>
+              <div class="table-card-cell" data-label="Multi-modelo"><span style={`color:${t.isMultiModel ? 'var(--pos)' : 'var(--dim)'};`}>{t.isMultiModel ? '✓' : '✗'}</span></div>
+              <div class="table-card-cell" data-label="Local"><span style={`color:${t.isLocal ? 'var(--accent2)' : 'var(--dim)'};`}>{t.isLocal ? '✓' : '✗'}</span></div>
+              <div class="table-card-cell" data-label="Open-source"><span style={`color:${t.isOpenSource ? 'var(--pos)' : 'var(--dim)'};`}>{t.isOpenSource ? '✓' : '✗'}</span></div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
