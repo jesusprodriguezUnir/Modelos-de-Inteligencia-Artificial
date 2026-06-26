@@ -111,42 +111,42 @@ const popularityGroups = POPULARITY_TIERS
     </div>
 
     <!-- search -->
-    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
-      <div style="flex:1; min-width:220px; max-width:480px; display:flex; align-items:center; gap:9px; background:var(--panel2); border:1px solid var(--border2); border-radius:8px; padding:8px 13px;">
+    <div style="display:flex; align-items:center; gap:var(--space-4); flex-wrap:wrap; margin-bottom:var(--space-5);">
+      <div style="flex:1; min-width:220px; max-width:480px; display:flex; align-items:center; gap:var(--space-3); background:var(--panel2); border:1px solid var(--border2); border-radius:var(--radius-md); padding:var(--space-2) var(--space-3);">
         <span style="color:var(--dim);">⌕</span>
-        <input id="search" placeholder="Filtrar modelos, empresas o tecnologías…" spellcheck="false" autocomplete="off" style="flex:1; background:transparent; border:none; outline:none; color:var(--text); font-family:inherit; font-size:13.5px;" />
+        <input id="search" placeholder="Filtrar modelos, empresas o tecnologías…" spellcheck="false" autocomplete="off" style="flex:1; background:transparent; border:none; outline:none; color:var(--text); font-family:inherit; font-size:var(--fs-base-lg);" />
       </div>
-      <span id="result-label" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--dim);">{onlyModels.length} / {onlyModels.length}</span>
+      <span id="result-label" style="font-family:'IBM Plex Mono',monospace; font-size:var(--fs-base); color:var(--dim);">{onlyModels.length} / {onlyModels.length}</span>
     </div>
 
     <!-- KPI strip -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px;">
-      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
-        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Catálogo</div>
-        <div style="display:flex; align-items:baseline; gap:7px; margin-top:7px;"><span style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--head);">{stats.models}</span><span style="font-size:13px; color:var(--dim);">modelos · {stats.open} open-weight</span></div>
-        <div style="display:flex; height:7px; border-radius:4px; overflow:hidden; margin-top:12px; background:var(--panel2);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:var(--space-4);">
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-4) var(--space-5);">
+        <div style="font-size:var(--fs-xs); letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Catálogo</div>
+        <div style="display:flex; align-items:baseline; gap:var(--space-2); margin-top:var(--space-2);"><span style="font-family:'IBM Plex Mono',monospace; font-size:var(--fs-4xl); font-weight:600; color:var(--head);">{stats.models}</span><span style="font-size:var(--fs-md); color:var(--dim);">modelos · {stats.open} open-weight</span></div>
+        <div style="display:flex; height:7px; border-radius:var(--radius-xs); overflow:hidden; margin-top:var(--space-3); background:var(--panel2);">
           {originDist.map((seg) => <span title={seg.label} style={`width:${seg.pct}; background:${seg.color}; display:block;`}></span>)}
         </div>
-        <div style="display:flex; flex-wrap:wrap; gap:9px; margin-top:9px;">
+        <div style="display:flex; flex-wrap:wrap; gap:var(--space-3); margin-top:var(--space-3);">
           {originDist.map((seg) => (
-            <span style="display:inline-flex; align-items:center; gap:5px; font-size:11px; color:var(--dim);"><span style={`width:8px;height:8px;border-radius:2px;background:${seg.color};`}></span>{seg.label} {seg.count}</span>
+            <span style="display:inline-flex; align-items:center; gap:var(--space-1); font-size:var(--fs-xs); color:var(--dim);"><span style={`width:8px;height:8px;border-radius:var(--radius-xs);background:${seg.color};`}></span>{seg.label} {seg.count}</span>
           ))}
         </div>
       </div>
-      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
-        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Mejor SWE-bench Pro</div>
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--pos); margin-top:7px;">{bestSwe ? bestSwe.sweText : '—'}</div>
-        <div style="font-size:13px; color:var(--head); margin-top:2px;">{bestSwe ? bestSwe.displayName : ''}</div>
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-4) var(--space-5);">
+        <div style="font-size:var(--fs-xs); letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Mejor SWE-bench Pro</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:var(--fs-4xl); font-weight:600; color:var(--pos); margin-top:var(--space-2);">{bestSwe ? bestSwe.sweText : '—'}</div>
+        <div style="font-size:var(--fs-md); color:var(--head); margin-top:var(--space-1);">{bestSwe ? bestSwe.displayName : ''}</div>
       </div>
-      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
-        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Entrada más barata /1M</div>
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--accent2); margin-top:7px;">{cheap ? `$${cheap.pricing.inputPer1M}` : '—'}</div>
-        <div style="font-size:13px; color:var(--head); margin-top:2px;">{cheap ? cheap.displayName : ''}</div>
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-4) var(--space-5);">
+        <div style="font-size:var(--fs-xs); letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Entrada más barata /1M</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:var(--fs-4xl); font-weight:600; color:var(--accent2); margin-top:var(--space-2);">{cheap ? `$${cheap.pricing.inputPer1M}` : '—'}</div>
+        <div style="font-size:var(--fs-md); color:var(--head); margin-top:var(--space-1);">{cheap ? cheap.displayName : ''}</div>
       </div>
-      <div style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px 18px;">
-        <div style="font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Mayor contexto</div>
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:32px; font-weight:600; color:var(--accent); margin-top:7px;">{bigCtx ? fmtCtx(bigCtx.context) : '—'}</div>
-        <div style="font-size:13px; color:var(--head); margin-top:2px;">{bigCtx ? bigCtx.displayName : ''}</div>
+      <div style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-4) var(--space-5);">
+        <div style="font-size:var(--fs-xs); letter-spacing:.6px; text-transform:uppercase; color:var(--dim);">Mayor contexto</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:var(--fs-4xl); font-weight:600; color:var(--accent); margin-top:var(--space-2);">{bigCtx ? fmtCtx(bigCtx.context) : '—'}</div>
+        <div style="font-size:var(--fs-md); color:var(--head); margin-top:var(--space-1);">{bigCtx ? bigCtx.displayName : ''}</div>
       </div>
     </div>
 
@@ -207,23 +207,23 @@ const popularityGroups = POPULARITY_TIERS
     </div>
 
     <!-- filter pills + view toggle -->
-    <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:22px;">
-      <div id="origin-chips" style="display:flex; flex-wrap:wrap; gap:8px;">
+    <div style="display:flex; flex-wrap:wrap; gap:var(--space-2); align-items:center; margin-top:var(--space-6);">
+      <div id="origin-chips" style="display:flex; flex-wrap:wrap; gap:var(--space-2);">
         {originChips.map((o) => (
-          <button class="dpill" data-origin={o} data-active={o === 'all' ? 'true' : 'false'} style={`font-family:inherit; font-size:12.5px; padding:6px 13px; border-radius:8px; border:1px solid ${o === 'all' ? 'var(--accent)' : 'var(--border2)'}; background:${o === 'all' ? 'var(--accent)' : 'transparent'}; color:${o === 'all' ? '#fff' : 'var(--text)'};`}>{o === 'all' ? 'Todos' : (originLabels[o] || o)}</button>
+          <button class="dpill" data-origin={o} data-active={o === 'all' ? 'true' : 'false'} style={`font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid ${o === 'all' ? 'var(--accent)' : 'var(--border2)'}; background:${o === 'all' ? 'var(--accent)' : 'transparent'}; color:${o === 'all' ? '#fff' : 'var(--text)'};`}>{o === 'all' ? 'Todos' : (originLabels[o] || o)}</button>
         ))}
       </div>
-      <span style="width:1px; height:22px; background:var(--border2); margin:0 4px;"></span>
-      <div id="cat-chips" style="display:flex; flex-wrap:wrap; gap:8px;">
+      <span style="width:1px; height:22px; background:var(--border2); margin:0 var(--space-1);"></span>
+      <div id="cat-chips" style="display:flex; flex-wrap:wrap; gap:var(--space-2);">
         {catChips.map((c) => (
-          <button class="dpill" data-cat={c} data-active={c === 'all' ? 'true' : 'false'} style={`font-family:inherit; font-size:12.5px; padding:6px 13px; border-radius:8px; border:1px solid ${c === 'all' ? 'var(--accent)' : 'var(--border2)'}; background:${c === 'all' ? 'var(--accent)' : 'transparent'}; color:${c === 'all' ? '#fff' : 'var(--text)'};`}>{c === 'all' ? 'Todas' : (catLabels[c] || c)}</button>
+          <button class="dpill" data-cat={c} data-active={c === 'all' ? 'true' : 'false'} style={`font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid ${c === 'all' ? 'var(--accent)' : 'var(--border2)'}; background:${c === 'all' ? 'var(--accent)' : 'transparent'}; color:${c === 'all' ? '#fff' : 'var(--text)'};`}>{c === 'all' ? 'Todas' : (catLabels[c] || c)}</button>
         ))}
       </div>
-      <div id="view-toggle" style="margin-left:auto; display:flex; gap:0; border:1px solid var(--border2); border-radius:8px; overflow:hidden;">
-        <button class="dbtn vbtn" data-view="grid" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; background:var(--accent); color:#fff;">▦ Tarjetas</button>
-        <button class="dbtn vbtn" data-view="table" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">≣ Tabla</button>
-        <button class="dbtn vbtn" data-view="company" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">▥ Empresa</button>
-        <button class="dbtn vbtn" data-view="popularity" style="font-family:inherit; font-size:12.5px; padding:6px 14px; border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">★ Popularidad</button>
+      <div id="view-toggle" style="margin-left:auto; display:flex; gap:0; border:1px solid var(--border2); border-radius:var(--radius-md); overflow:hidden;">
+        <button class="dbtn vbtn" data-view="grid" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; background:var(--accent); color:#fff;">▦ Tarjetas</button>
+        <button class="dbtn vbtn" data-view="table" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">≣ Tabla</button>
+        <button class="dbtn vbtn" data-view="company" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">▥ Empresa</button>
+        <button class="dbtn vbtn" data-view="popularity" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">★ Popularidad</button>
       </div>
     </div>
 
@@ -341,20 +341,20 @@ const popularityGroups = POPULARITY_TIERS
   </div>
 
   <!-- detail drawer -->
-  <div id="detail-drawer" class="hidden" style="position:fixed; inset:0; z-index:60; background:rgba(5,5,12,.6); display:flex; justify-content:flex-end;">
-    <div class="dsh-scroll" id="detail-panel" style="width:min(580px,100%); height:100%; overflow-y:auto; background:var(--panel); border-left:1px solid var(--accent); animation:dshslide .24s ease both;">
+  <div id="detail-drawer" class="hidden" style="position:fixed; inset:0; z-index:60; background:var(--overlay-bg); display:flex; justify-content:flex-end;">
+    <div class="dsh-scroll" id="detail-panel" style="width:min(580px,100%); height:100%; overflow-y:auto; background:var(--panel); border-left:1px solid var(--accent); animation:dshslide var(--trans-slow);">
       <div id="detail-body"></div>
     </div>
   </div>
 
   <!-- compare overlay -->
-  <div id="compare-overlay" class="hidden" style="position:fixed; inset:0; z-index:65; background:rgba(5,5,12,.66); display:flex; align-items:center; justify-content:center; padding:24px;">
+  <div id="compare-overlay" class="hidden" style="position:fixed; inset:0; z-index:65; background:var(--overlay-bg); display:flex; align-items:center; justify-content:center; padding:var(--space-6);">
     <div class="dsh-scroll" id="compare-panel" style="width:min(1120px,100%); max-height:88vh; overflow:auto; background:var(--panel); border:1px solid var(--accent); border-radius:14px;">
-      <div style="position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--border); padding:16px 22px; display:flex; align-items:center; gap:10px;">
-        <span style="font-size:16px; font-weight:600; color:var(--head);">Comparativa lado a lado</span>
-        <button class="dbtn" id="compare-close" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:5px 13px; font-family:inherit; font-size:12px; border-radius:8px;">Cerrar ✕</button>
+      <div style="position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--border); padding:var(--space-4) var(--space-5); display:flex; align-items:center; gap:var(--space-3);">
+        <span style="font-size:var(--fs-xl); font-weight:600; color:var(--head);">Comparativa lado a lado</span>
+        <button class="dbtn" id="compare-close" style="margin-left:auto; background:var(--panel2); color:var(--text); border:1px solid var(--border2); padding:var(--space-1) var(--space-3); font-family:inherit; font-size:var(--fs-sm); border-radius:var(--radius-md);">Cerrar ✕</button>
       </div>
-      <div id="compare-body" style="padding:22px; display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(230px,1fr));"></div>
+      <div id="compare-body" style="padding:var(--space-5); display:grid; gap:var(--space-4); grid-template-columns:repeat(auto-fit,minmax(230px,1fr));"></div>
     </div>
   </div>
 

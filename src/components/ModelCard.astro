@@ -18,54 +18,54 @@ const { m } = Astro.props;
   data-kind={m.kind}
   data-pop={m.popularity}
   data-tier={m.tierKey}
-  style="background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:17px;"
+  style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-5);"
 >
-  <div style="display:flex; align-items:center; gap:8px;">
+  <div style="display:flex; align-items:center; gap:var(--space-2);">
     <span style={`width:9px; height:9px; border-radius:50%; background:${m.accent};`}></span>
-    <span style="font-size:11px; letter-spacing:.5px; text-transform:uppercase; color:var(--dim);">{m.companyName}</span>
-    <span style="margin-left:auto; font-size:10px; color:var(--dim); background:var(--panel2); border-radius:5px; padding:2px 7px;">{m.kindLabel}</span>
+    <span style="font-size:var(--fs-xs); letter-spacing:.5px; text-transform:uppercase; color:var(--dim);">{m.companyName}</span>
+    <span style="margin-left:auto; font-size:var(--fs-xs); color:var(--dim); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{m.kindLabel}</span>
   </div>
-  <div style="display:flex; align-items:baseline; gap:8px; margin-top:9px;">
-    <h3 style="margin:0; font-size:18px; font-weight:600; color:var(--head);">{m.displayName}</h3>
+  <div style="display:flex; align-items:baseline; gap:var(--space-2); margin-top:var(--space-3);">
+    <h3 style="margin:0; font-size:var(--fs-2xl); font-weight:600; color:var(--head);">{m.displayName}</h3>
   </div>
-  <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent); min-height:15px;">{m.api}</div>
+  <div style="font-family:'IBM Plex Mono',monospace; font-size:var(--fs-xs); color:var(--accent); min-height:15px;">{m.api}</div>
 
   <!-- barras métricas -->
-  <div style="display:flex; flex-direction:column; gap:8px; margin-top:14px;">
-    <div style="display:flex; align-items:center; gap:9px;">
-      <span style="width:54px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">In/1M</span>
-      <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;"><span style={`display:block; height:100%; width:${m.barInPct}; background:var(--accent2); border-radius:3px;`}></span></div>
-      <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--head);">{m.priceInText}</span>
+  <div style="display:flex; flex-direction:column; gap:var(--space-3); margin-top:var(--space-4);">
+    <div style="display:flex; align-items:center; gap:var(--space-3);">
+      <span style="width:54px; flex:none; font-size:var(--fs-xs); color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">In/1M</span>
+      <div style="flex:1; height:8px; background:var(--panel2); border-radius:var(--radius-xs); overflow:hidden;"><span style={`display:block; height:100%; width:${m.barInPct}; background:var(--accent2); border-radius:var(--radius-xs);`}></span></div>
+      <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:var(--fs-base); color:var(--head);">{m.priceInText}</span>
     </div>
-    <div style="display:flex; align-items:center; gap:9px;">
-      <span style="width:54px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Out/1M</span>
-      <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;"><span style={`display:block; height:100%; width:${m.barOutPct}; background:var(--accent); border-radius:3px;`}></span></div>
-      <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--head);">{m.priceOutText}</span>
+    <div style="display:flex; align-items:center; gap:var(--space-3);">
+      <span style="width:54px; flex:none; font-size:var(--fs-xs); color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Out/1M</span>
+      <div style="flex:1; height:8px; background:var(--panel2); border-radius:var(--radius-xs); overflow:hidden;"><span style={`display:block; height:100%; width:${m.barOutPct}; background:var(--accent); border-radius:var(--radius-xs);`}></span></div>
+      <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:var(--fs-base); color:var(--head);">{m.priceOutText}</span>
     </div>
-    <div style="display:flex; align-items:center; gap:9px;">
-      <span style="width:54px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Contexto</span>
-      <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;"><span style={`display:block; height:100%; width:${m.barCtxPct}; background:var(--warn); border-radius:3px;`}></span></div>
-      <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--head);">{m.contextText}</span>
+    <div style="display:flex; align-items:center; gap:var(--space-3);">
+      <span style="width:54px; flex:none; font-size:var(--fs-xs); color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">Contexto</span>
+      <div style="flex:1; height:8px; background:var(--panel2); border-radius:var(--radius-xs); overflow:hidden;"><span style={`display:block; height:100%; width:${m.barCtxPct}; background:var(--warn); border-radius:var(--radius-xs);`}></span></div>
+      <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:var(--fs-base); color:var(--head);">{m.contextText}</span>
     </div>
     {m.swe != null && (
-      <div style="display:flex; align-items:center; gap:9px;">
-        <span style="width:54px; flex:none; font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">SWE</span>
-        <div style="flex:1; height:8px; background:var(--panel2); border-radius:3px; overflow:hidden;"><span style={`display:block; height:100%; width:${m.barSwePct}; background:var(--pos); border-radius:3px;`}></span></div>
-        <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--pos);">{m.sweText}</span>
+      <div style="display:flex; align-items:center; gap:var(--space-3);">
+        <span style="width:54px; flex:none; font-size:var(--fs-xs); color:var(--dim); text-transform:uppercase; letter-spacing:.4px;">SWE</span>
+        <div style="flex:1; height:8px; background:var(--panel2); border-radius:var(--radius-xs); overflow:hidden;"><span style={`display:block; height:100%; width:${m.barSwePct}; background:var(--pos); border-radius:var(--radius-xs);`}></span></div>
+        <span style="width:50px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:var(--fs-base); color:var(--pos);">{m.sweText}</span>
       </div>
     )}
   </div>
 
-  <div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:13px;">
-    <span style="font-size:10.5px; color:var(--text); background:var(--panel2); border-radius:5px; padding:2px 8px;">{m.originLabel}</span>
+  <div style="display:flex; flex-wrap:wrap; gap:var(--space-1); margin-top:var(--space-4);">
+    <span style="font-size:var(--fs-base-lg); color:var(--text); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{m.originLabel}</span>
     {m.cats.map((cat: string) => (
-      <span style="font-size:10.5px; color:var(--dim); background:var(--panel2); border-radius:5px; padding:2px 8px;">{cat}</span>
+      <span style="font-size:var(--fs-base-lg); color:var(--dim); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{cat}</span>
     ))}
-    {m.openWeight && <span style="font-size:10.5px; color:var(--pos); border:1px solid var(--pos); border-radius:5px; padding:1px 7px;">open</span>}
+    {m.openWeight && <span style="font-size:var(--fs-base-lg); color:var(--pos); border:1px solid var(--pos); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">open</span>}
   </div>
 
-  <div style="display:flex; gap:7px; margin-top:14px;">
-    <button class="dbtn" data-action="detail" data-id={m.id} style="flex:1; font-family:inherit; font-size:12.5px; padding:8px; border-radius:8px; border:none; background:var(--accent); color:#fff; font-weight:500;">Ver detalle</button>
-    <button class="dbtn" data-action="compare" data-id={m.id} style="font-family:inherit; font-size:12.5px; padding:8px 13px; border-radius:8px; border:1px solid var(--border2); background:transparent; color:var(--dim);">+</button>
+  <div style="display:flex; gap:var(--space-2); margin-top:var(--space-4);">
+    <button class="dbtn" data-action="detail" data-id={m.id} style="flex:1; font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2); border-radius:var(--radius-md); border:none; background:var(--accent); color:#fff; font-weight:500;">Ver detalle</button>
+    <button class="dbtn" data-action="compare" data-id={m.id} style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid var(--border2); background:transparent; color:var(--dim);">+</button>
   </div>
 </div>

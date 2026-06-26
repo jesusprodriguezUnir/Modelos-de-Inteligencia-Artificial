@@ -413,8 +413,8 @@ const snOpenCode = `// ~/.config/opencode/opencode.json
   </main>
 
   <!-- detail drawer -->
-  <div id="models-detail-drawer" class="hidden" style="position:fixed; inset:0; z-index:60; background:rgba(5,5,12,.6); display:flex; justify-content:flex-end;">
-    <div class="dsh-scroll" id="models-detail-panel" style="width:min(580px,100%); height:100%; overflow-y:auto; background:var(--panel); border-left:1px solid var(--accent); animation:dshslide .24s ease both;">
+  <div id="models-detail-drawer" class="hidden" style="position:fixed; inset:0; z-index:60; background:var(--overlay-bg); display:flex; justify-content:flex-end;">
+    <div class="dsh-scroll" id="models-detail-panel" style="width:min(580px,100%); height:100%; overflow-y:auto; background:var(--panel); border-left:1px solid var(--accent); animation:dshslide var(--trans-slow);">
       <div id="models-detail-body"></div>
     </div>
   </div>
