@@ -23,7 +23,33 @@ python scripts/fetch_intelligence_index.py --dry-run          # no escribe nada
 python scripts/fetch_intelligence_index.py --sections intelligence_index,price_cost
 ```
 
-No hay tests ni linter configurados. La validación real es `npm run build` (Astro hace type-check de los `.astro` y de `src/data/*.ts`).
+Tests: `npm test` corre 3 tests de `catalog-utils.test.ts`. Validación real: `npm run build` (Astro hace type-check de los `.astro` y de `src/data/*.ts`).
+
+## ⚠️ Archivos autogenerados — NO mergear a mano
+
+Los siguientes archivos son **100% regenerados** por scripts Python automáticos. Si aparecen conflictos de merge:
+
+- `data/intelligence-index.json`, `data/intelligence-index.jsonl`, `data/intelligence-index-master.json`
+- `docs/intelligence-index.md`
+- `src/data/intelligence-index.ts`, `src/data/intelligence-index-types.ts`
+- `src/data/auto-models.ts`
+
+**Estrategia**: En vez de resolver el conflicto manualmente:
+
+```bash
+# 1. Regenerar desde cero
+python scripts/fetch_intelligence_index.py
+python scripts/build_auto_catalog.py
+
+# 2. Verificar que el build pasa
+npm run build
+
+# 3. Commitear
+git add data/ docs/ src/data/
+git commit -m "Regenerar autogenerados (fecha AAAA-MM-DD)"
+```
+
+El archivo [`.gitattributes`](.gitattributes) está configurado con `merge=ours` para estos archivos: en caso de merge automático, Git toma HEAD (local) y evita conflictos manuales.
 
 ## Arquitectura
 

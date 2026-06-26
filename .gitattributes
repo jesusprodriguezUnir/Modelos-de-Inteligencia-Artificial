@@ -1,0 +1,13 @@
+# Archivos autogenerados por scripts/fetch_intelligence_index.py y scripts/build_auto_catalog.py
+# NO deben mergearse a mano. En caso de conflicto, regenerarlos:
+#   python scripts/fetch_intelligence_index.py
+#   python scripts/build_auto_catalog.py
+
+# Tomar HEAD en conflictos (merge=ours)
+data/intelligence-index.json merge=ours
+data/intelligence-index.jsonl merge=ours
+data/intelligence-index-master.json merge=ours
+docs/intelligence-index.md merge=ours
+src/data/intelligence-index.ts merge=ours
+src/data/intelligence-index-types.ts merge=ours
+src/data/auto-models.ts merge=ours
