@@ -1,11 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { models, companies } from '../data/models';
+import { fmtCtx } from '../utils/format';
 
 const openWeight = models.filter((m) => m.openWeight && m.kind === 'model');
-
-// Formatters para frontmatter
-const fmtCtx = (n: number | null) => (n == null ? '—' : n >= 1_000_000 ? `${n / 1_000_000}M` : `${Math.round(n / 1000)}K`);
 
 // Snippets como strings: Astro los interpola como texto (las llaves no se evalúan).
 const snOllama = `# Instalar (macOS/Linux)
@@ -451,26 +449,23 @@ const snOpenCode = `// ~/.config/opencode/opencode.json
     // 1. Inicialización de datos
     const dataEl = document.getElementById('models-data');
     const DATA = dataEl ? JSON.parse(dataEl.textContent || '{}') : { models: [] };
-    const byId = Object.fromEntries(DATA.models.map((m: any) => [m.id, m]));
+    type Hljs = { highlightElement: (el: Element) => void };
+    const getHljs = (): Hljs | undefined => (window as unknown as { hljs?: Hljs }).hljs;
+
+    const byId = Object.fromEntries(DATA.models.map((m: { id: string }) => [m.id, m]));
     const TOTAL = DATA.models.length;
 
-    const esc = (s: any) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-    const fmtDate = (s: any) => {
-      if (!s) return '—';
-      const [y, m] = s.split('-');
-      const mes = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][parseInt(m, 10) - 1] || '';
-      return mes ? `${mes} ${y}` : y;
-    };
-    const fmtCtx = (n: any) => (n == null ? '—' : n >= 1000000 ? `${n / 1000000}M` : `${Math.round(n / 1000)}K`);
+    // Importamos las funciones de formato desde el módulo centralizado
+    const { fmtCtx, fmtDate, esc } = await import('../utils/format.js');
 
     // Highlight existing blocks on load
     const highlightOnLoad = () => {
-      const hjs = (window as any).hljs;
+      const hjs = getHljs();
       if (hjs) {
         document.querySelectorAll('pre code').forEach((b) => hjs.highlightElement(b));
       } else {
         window.addEventListener('load', () => {
-          const hjsLater = (window as any).hljs;
+          const hjsLater = getHljs();
           if (hjsLater) {
             document.querySelectorAll('pre code').forEach((b) => hjsLater.highlightElement(b));
           }
@@ -615,7 +610,7 @@ const snOpenCode = `// ~/.config/opencode/opencode.json
         html += `<div style="margin-top:24px;">
           <div style="font-size:13px; font-weight:600; color:var(--head); margin-bottom:9px;">Vídeos de referencia</div>
           <div style="display:flex; flex-direction:column; gap:7px;">`;
-        m.videos.forEach((v: any) => {
+        m.videos.forEach((v: { url: string; title: string; source?: string }) => {
           html += `<a class="dlink" href="${esc(v.url)}" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:11px; text-decoration:none; color:var(--text); background:var(--panel2); border-radius:9px; padding:10px 13px; font-size:13px;"><span style="color:var(--accent2);">▶</span><span style="flex:1;">${esc(v.title)}</span><span style="color:var(--dim); font-size:11px;">${esc(v.source || '')}</span></a>`;
         });
         html += `</div></div>`;
@@ -629,7 +624,7 @@ const snOpenCode = `// ~/.config/opencode/opencode.json
       if (drawerBody) drawerBody.innerHTML = html;
       if (drawer) drawer.classList.remove('hidden');
       
-      const hjs = (window as any).hljs;
+      const hjs = getHljs();
       if (hjs && drawerBody) {
         drawerBody.querySelectorAll('pre code').forEach((b) => hjs.highlightElement(b));
       }

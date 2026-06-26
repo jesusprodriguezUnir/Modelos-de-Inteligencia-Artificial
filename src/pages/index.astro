@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ModelCard from '../components/ModelCard.astro';
 import { models, companies, POPULARITY_TIERS, popularityTier } from '../data/models';
 import type { Model } from '../data/types';
+import { fmtCtx, fmtPrice } from '../utils/format';
 
 const catLabels: Record<string, string> = {
   coding: 'Código', reasoning: 'Razonamiento', agentic: 'Agéntico', general: 'General',
@@ -20,9 +21,6 @@ const stats = {
 
 const originChips = ['all', 'US', 'China', 'EU', 'Open'];
 const catChips = ['all', 'coding', 'reasoning', 'agentic', 'multimodal', 'fast', 'budget', 'general', 'tool'];
-
-const fmtCtx = (n: number | null) => (n == null ? '—' : n >= 1_000_000 ? `${n / 1_000_000}M` : `${Math.round(n / 1000)}K`);
-const fmtPrice = (p: number | null) => (p == null ? '—' : `$${p}`);
 
 // Máximos para escalar las barras métricas.
 const mx = {
@@ -382,15 +380,8 @@ const popularityGroups = POPULARITY_TIERS
     const C = DATA.companies, CAT = DATA.catLabels, ORI = DATA.originLabels;
     const TOTAL = DATA.models.length;
 
-    const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-    const fmtCtx = (n) => n == null ? '—' : n >= 1e6 ? `${n / 1e6}M` : `${Math.round(n / 1000)}K`;
-    const fmtPrice = (p) => p == null ? '—' : `$${p}`;
-    const fmtDate = (s) => {
-      if (!s) return '—';
-      const [y, m] = s.split('-');
-      const mes = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][parseInt(m, 10) - 1] || '';
-      return mes ? `${mes} ${y}` : y;
-    };
+    // Importamos las funciones de formato desde el módulo centralizado
+    const { fmtCtx, fmtPrice, fmtDate, esc } = await import('../utils/format.js');
 
     function decorate(m) {
       const c = C[m.company] || { name: m.company, accent: '#888888' };

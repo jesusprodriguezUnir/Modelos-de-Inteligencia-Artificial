@@ -450,13 +450,8 @@ const tdStyle = "padding:11px 16px; border-bottom:1px solid var(--border);";
     const byId = Object.fromEntries(DATA.tools.map((t) => [t.id, t]));
     const TOTAL = DATA.tools.length;
 
-    const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-    const fmtDate = (s) => {
-      if (!s) return '—';
-      const [y, m] = s.split('-');
-      const mes = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][parseInt(m, 10) - 1] || '';
-      return mes ? `${mes} ${y}` : y;
-    };
+    // Importamos las funciones de formato desde el módulo centralizado
+    const { fmtDate, esc } = await import('../utils/format.js');
 
     // ── Filtros ────────────────────────────────────────────────────
     let q = '', typeFilter = 'all', view = 'cards';

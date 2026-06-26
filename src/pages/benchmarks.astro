@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { models, companies } from '../data/models';
+import { fmtCtx } from '../utils/format';
 
 // Solo modelos con benchmarks
 const modelsWithBench = models.filter((m) => m.kind === 'model' && m.benchmarks);
@@ -10,8 +11,6 @@ const allModels = models.filter((m) => m.kind === 'model');
 const bySweBench = [...modelsWithBench]
   .filter((m) => m.benchmarks?.sweBenchPro != null)
   .sort((a, b) => (b.benchmarks!.sweBenchPro! - a.benchmarks!.sweBenchPro!));
-
-const fmtCtx = (n: number | null) => (n == null ? '—' : n >= 1_000_000 ? `${n / 1_000_000}M` : `${Math.round(n / 1000)}K`);
 
 // Benchmark descriptions
 const benchDescs = [
