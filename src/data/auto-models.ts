@@ -1186,6 +1186,34 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 34.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "gemini-2-5-pro",
+    "iiSlug": "gemini-2-5-pro",
+    "company": "Google",
+    "origin": "US",
+    "displayName": "Gemini 2.5 Pro",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 10.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2025-06-05",
+    "benchmarks": {
+      "liveCodeBench": 0.8
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 33.3). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "devstral-2",
     "iiSlug": "devstral-2",
     "company": "Mistral",
@@ -1297,34 +1325,6 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-03-02",
     "parameters": 9.65,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 28.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "nova-2-0-pro-reasoning-low",
-    "iiSlug": "nova-2-0-pro-reasoning-low",
-    "company": "Amazon",
-    "origin": "US",
-    "displayName": "Nova 2.0 Pro Preview (low)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 256000,
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 10.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2025-11-27",
-    "benchmarks": {
-      "liveCodeBench": 0.6
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 25.9). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -2621,18 +2621,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-02-24"
   },
-  "gemini-2-5-pro": {
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 10.0,
-      "approx": true
-    },
-    "context": 1000000,
-    "benchmarks": {
-      "liveCodeBench": 0.8
-    },
-    "releaseDate": "2025-06-05"
-  },
   "glm-4-7-non-reasoning": {
     "pricing": {
       "inputPer1M": 0.6,
@@ -2711,6 +2699,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.8
     },
     "releaseDate": "2025-11-11"
+  },
+  "gemini-2-5-pro": {
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 10.0,
+      "approx": true
+    },
+    "context": 1000000,
+    "benchmarks": {
+      "liveCodeBench": 0.8
+    },
+    "releaseDate": "2025-06-05"
   },
   "gemma-4-26b-a4b": {
     "pricing": {
@@ -3339,18 +3339,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 15.0,
     "releaseDate": "2025-11-25"
   },
-  "nova-2-0-lite-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 2.5,
-      "approx": true
-    },
-    "context": 1000000,
-    "benchmarks": {
-      "liveCodeBench": 0.7
-    },
-    "releaseDate": "2025-10-29"
-  },
   "gpt-5-1-non-reasoning": {
     "pricing": {
       "inputPer1M": 1.25,
@@ -3372,18 +3360,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 262144,
     "parameters": 9.65,
     "releaseDate": "2026-03-02"
-  },
-  "magistral-medium-2509": {
-    "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 5.0,
-      "approx": true
-    },
-    "context": 128000,
-    "benchmarks": {
-      "liveCodeBench": 0.8
-    },
-    "releaseDate": "2025-09-18"
   },
   "gemma-4-26b-a4b-non-reasoning": {
     "pricing": {
@@ -3659,6 +3635,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 36.2,
     "releaseDate": "2025-08-20"
   },
+  "nova-2-0-lite-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.3,
+      "outputPer1M": 2.5,
+      "approx": true
+    },
+    "context": 1000000,
+    "benchmarks": {
+      "liveCodeBench": 0.7
+    },
+    "releaseDate": "2025-10-29"
+  },
   "qwen3-235b-a22b-instruct-2507": {
     "pricing": {
       "inputPer1M": 0.2,
@@ -3699,6 +3687,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 33.4,
     "releaseDate": "2025-10-21"
+  },
+  "magistral-medium-2509": {
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 5.0,
+      "approx": true
+    },
+    "context": 128000,
+    "benchmarks": {
+      "liveCodeBench": 0.8
+    },
+    "releaseDate": "2025-09-18"
   },
   "sonar-reasoning-pro": {
     "pricing": {
@@ -4498,19 +4498,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 49.0,
     "releaseDate": "2025-07-25"
   },
-  "claude-3-5-haiku": {
-    "pricing": {
-      "inputPer1M": 0.8,
-      "outputPer1M": 4.0,
-      "approx": true
-    },
-    "context": 200000,
-    "benchmarks": {
-      "liveCodeBench": 0.3,
-      "humanEval": 0.9
-    },
-    "releaseDate": "2024-10-22"
-  },
   "devstral-medium": {
     "pricing": {
       "inputPer1M": 0.4,
@@ -4569,6 +4556,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "humanEval": 0.9
     },
     "releaseDate": "2025-02-05"
+  },
+  "claude-3-5-haiku": {
+    "pricing": {
+      "inputPer1M": 0.8,
+      "outputPer1M": 4.0,
+      "approx": true
+    },
+    "context": 200000,
+    "benchmarks": {
+      "liveCodeBench": 0.3,
+      "humanEval": 0.9
+    },
+    "releaseDate": "2024-10-22"
   },
   "llama-3-3-nemotron-super-49b-reasoning": {
     "pricing": {
@@ -7598,19 +7598,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-h-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.34,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7622,6 +7609,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.35,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.34,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
