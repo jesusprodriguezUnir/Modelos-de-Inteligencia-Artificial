@@ -788,6 +788,35 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 51.5). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "mimo-v2-flash",
+    "iiSlug": "mimo-v2-flash",
+    "company": "Xiaomi",
+    "origin": "China",
+    "displayName": "MiMo-V2-Flash",
+    "kind": "model",
+    "category": [
+      "coding",
+      "agentic",
+      "budget"
+    ],
+    "context": 256000,
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2025-12-16",
+    "parameters": 309.0,
+    "benchmarks": {
+      "liveCodeBench": 0.4
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 49.8). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "nvidia-nemotron-3-ultra-550b-a55b",
     "iiSlug": "nvidia-nemotron-3-ultra-550b-a55b",
     "company": "NVIDIA",
@@ -1299,32 +1328,6 @@ export const autoModels: Model[] = [
       "liveCodeBench": 0.3
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 29.3). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "qwen3-5-9b",
-    "iiSlug": "qwen3-5-9b",
-    "company": "Alibaba",
-    "origin": "China",
-    "displayName": "Qwen3.5 9B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": 262144,
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.15,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-03-02",
-    "parameters": 9.65,
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 28.7). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -2879,6 +2882,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 236.0,
     "releaseDate": "2025-12-31"
   },
+  "mimo-v2-flash": {
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "approx": true
+    },
+    "context": 256000,
+    "benchmarks": {
+      "liveCodeBench": 0.4
+    },
+    "parameters": 309.0,
+    "releaseDate": "2025-12-16"
+  },
   "deepseek-v3-2": {
     "pricing": {
       "inputPer1M": 0.5,
@@ -3009,19 +3025,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 262144,
     "parameters": 36.0,
     "releaseDate": "2026-02-24"
-  },
-  "mimo-v2-flash": {
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.3,
-      "approx": true
-    },
-    "context": 256000,
-    "benchmarks": {
-      "liveCodeBench": 0.4
-    },
-    "parameters": 309.0,
-    "releaseDate": "2025-12-16"
   },
   "gemini-2-5-pro-03-25": {
     "pricing": {
@@ -5842,6 +5845,20 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 32.0,
     "releaseDate": "2024-09-19"
   },
+  "gemma-3-27b": {
+    "pricing": {
+      "inputPer1M": 0.1095,
+      "outputPer1M": 0.25,
+      "approx": true
+    },
+    "context": 128000,
+    "benchmarks": {
+      "liveCodeBench": 0.1,
+      "humanEval": 0.9
+    },
+    "parameters": 27.4,
+    "releaseDate": "2025-03-12"
+  },
   "qwen3-8b-instruct-reasoning": {
     "pricing": {
       "inputPer1M": 0.11,
@@ -6530,20 +6547,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 14.0,
     "releaseDate": "2024-12-12"
-  },
-  "gemma-3-27b": {
-    "pricing": {
-      "inputPer1M": 0.1095,
-      "outputPer1M": 0.25,
-      "approx": true
-    },
-    "context": 128000,
-    "benchmarks": {
-      "liveCodeBench": 0.1,
-      "humanEval": 0.9
-    },
-    "parameters": 27.4,
-    "releaseDate": "2025-03-12"
   },
   "claude-3-sonnet": {
     "pricing": {
@@ -7644,19 +7647,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 3.35,
     "releaseDate": "2026-02-17"
   },
-  "gemma-3n-e2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32000,
-    "benchmarks": {
-      "liveCodeBench": 0.1
-    },
-    "parameters": 5.98,
-    "releaseDate": "2025-06-26"
-  },
   "gemma-3-1b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7670,6 +7660,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 1.0,
     "releaseDate": "2025-03-13"
+  },
+  "gemma-3n-e2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32000,
+    "benchmarks": {
+      "liveCodeBench": 0.1
+    },
+    "parameters": 5.98,
+    "releaseDate": "2025-06-26"
   },
   "qwen3-0.6b-instruct": {
     "pricing": {
