@@ -4610,19 +4610,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.0,
     "releaseDate": "2026-05-25"
   },
-  "magistral-small-2509": {
-    "pricing": {
-      "inputPer1M": 0.5,
-      "outputPer1M": 1.5,
-      "approx": true
-    },
-    "context": 128000,
-    "benchmarks": {
-      "liveCodeBench": 0.7
-    },
-    "parameters": 24.0,
-    "releaseDate": "2025-09-17"
-  },
   "sarvam-105b": {
     "pricing": {
       "inputPer1M": 0.042,
@@ -4716,6 +4703,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-04-17"
   },
+  "qwen3-32b-instruct-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.195,
+      "outputPer1M": 0.52,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.5
+    },
+    "parameters": 32.8,
+    "releaseDate": "2025-04-28"
+  },
   "gemini-2-5-flash-lite-reasoning": {
     "pricing": {
       "inputPer1M": 0.1,
@@ -4728,6 +4728,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "humanEval": 1.0
     },
     "releaseDate": "2025-06-17"
+  },
+  "magistral-small-2509": {
+    "pricing": {
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "approx": true
+    },
+    "context": 128000,
+    "benchmarks": {
+      "liveCodeBench": 0.7
+    },
+    "parameters": 24.0,
+    "releaseDate": "2025-09-17"
   },
   "gpt-4o": {
     "pricing": {
@@ -4873,19 +4886,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.3
     },
     "releaseDate": "2025-11-26"
-  },
-  "qwen3-32b-instruct-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.195,
-      "outputPer1M": 0.52,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.5
-    },
-    "parameters": 32.8,
-    "releaseDate": "2025-04-28"
   },
   "deepseek-v3": {
     "pricing": {
@@ -7647,6 +7647,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 3.35,
     "releaseDate": "2026-02-17"
   },
+  "gemma-3n-e2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32000,
+    "benchmarks": {
+      "liveCodeBench": 0.1
+    },
+    "parameters": 5.98,
+    "releaseDate": "2025-06-26"
+  },
   "gemma-3-1b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7660,19 +7673,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 1.0,
     "releaseDate": "2025-03-13"
-  },
-  "gemma-3n-e2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32000,
-    "benchmarks": {
-      "liveCodeBench": 0.1
-    },
-    "parameters": 5.98,
-    "releaseDate": "2025-06-26"
   },
   "qwen3-0.6b-instruct": {
     "pricing": {
