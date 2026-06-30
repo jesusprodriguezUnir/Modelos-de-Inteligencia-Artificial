@@ -8,7 +8,7 @@
     "intelligence_index_v4_1": 59.8606463217303,
     "coding_index": 76.4911915660979,
     "agentic_index": 52.8147079037801,
-    "gdpval_v2": 1769.15,
+    "gdpval_v2": 1756.16,
     "gdpval_elo": null,
     "omniscience": 40.15,
     "scicode": 0.601851851851852,
@@ -25,23 +25,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 1586.0866666666668,
-      "lower95ci": 1570.7007767563193,
-      "upper95ci": 1601.4725565770143,
+      "elo": 1585.29,
+      "lower95ci": 1570.36,
+      "upper95ci": 1600.88,
       "rubric": {
-        "elo": 1493.23,
-        "lower95ci": 1467.96,
-        "upper95ci": 1518.49
+        "elo": 1492.64,
+        "lower95ci": 1469.12,
+        "upper95ci": 1520.07
       },
       "analyticalQuality": {
-        "elo": 1767.96,
-        "lower95ci": 1737,
-        "upper95ci": 1798.93
+        "elo": 1767.61,
+        "lower95ci": 1737.74,
+        "upper95ci": 1799.96
       },
       "presentation": {
-        "elo": 1497.07,
-        "lower95ci": 1473.98,
-        "upper95ci": 1520.17
+        "elo": 1495.64,
+        "lower95ci": 1473.66,
+        "upper95ci": 1519.06
       },
       "rubricPassRate": 0.5595959595959596,
       "turns": {
@@ -134,7 +134,7 @@
     "intelligence_index_v4_1": 55.6920406995495,
     "coding_index": 74.2535372451103,
     "agentic_index": 47.1756219931271,
-    "gdpval_v2": 1594.71,
+    "gdpval_v2": 1593.83,
     "gdpval_elo": null,
     "omniscience": 27.4333333333333,
     "scicode": 0.534722222222222,
@@ -248,7 +248,7 @@
     "price_1m_output": 25,
     "price_1m_blended_7_2_1": 3.85,
     "cost_per_task_total": 1.7972215258754352,
-    "time_per_task": 398.83898056667334,
+    "time_per_task": 400.3906333869949,
     "output_tokens_per_task": 40910.24738801627
   },
   {
@@ -260,7 +260,7 @@
     "intelligence_index_v4_1": 54.8375984166433,
     "coding_index": 74.8911950339853,
     "agentic_index": 44.8710687285223,
-    "gdpval_v2": 1484.42,
+    "gdpval_v2": 1483.62,
     "gdpval_elo": null,
     "omniscience": 20.0666666666667,
     "scicode": 0.561342592592593,
@@ -374,7 +374,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 1.0283313144512114,
-    "time_per_task": 203.19077548564601,
+    "time_per_task": 202.5451500883254,
     "output_tokens_per_task": 16064.476014126014
   },
   {
@@ -386,7 +386,7 @@
     "intelligence_index_v4_1": 53.5296569524586,
     "coding_index": 73.6020079067832,
     "agentic_index": 44.3863264604811,
-    "gdpval_v2": 1504.58,
+    "gdpval_v2": 1493.33,
     "gdpval_elo": null,
     "omniscience": 26.1666666666667,
     "scicode": 0.545138888888889,
@@ -403,23 +403,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.788439306358382,
     "briefcase": {
-      "elo": 1290.6366666666665,
-      "lower95ci": 1279.8514263664538,
-      "upper95ci": 1301.4219069668793,
+      "elo": 1290.24,
+      "lower95ci": 1280.24,
+      "upper95ci": 1300.69,
       "rubric": {
-        "elo": 1194.91,
-        "lower95ci": 1177.26,
-        "upper95ci": 1212.55
+        "elo": 1194.31,
+        "lower95ci": 1176.91,
+        "upper95ci": 1211.4
       },
       "analyticalQuality": {
-        "elo": 1311.16,
-        "lower95ci": 1292.69,
-        "upper95ci": 1329.64
+        "elo": 1308.83,
+        "lower95ci": 1290.91,
+        "upper95ci": 1327.52
       },
       "presentation": {
-        "elo": 1365.84,
-        "lower95ci": 1345.98,
-        "upper95ci": 1385.69
+        "elo": 1367.58,
+        "lower95ci": 1348.26,
+        "upper95ci": 1387.96
       },
       "rubricPassRate": 0.39337474120082816,
       "turns": {
@@ -500,7 +500,7 @@
     "price_1m_output": 25,
     "price_1m_blended_7_2_1": 3.85,
     "cost_per_task_total": 1.9733096609430143,
-    "time_per_task": 367.2706199225138,
+    "time_per_task": 361.683774047553,
     "output_tokens_per_task": 31466.196433904537
   },
   {
@@ -512,7 +512,7 @@
     "intelligence_index_v4_1": 53.1275095349873,
     "coding_index": 71.5680919683729,
     "agentic_index": 43.4581786941581,
-    "gdpval_v2": 1467.95,
+    "gdpval_v2": 1462.94,
     "gdpval_elo": null,
     "omniscience": 18.3666666666667,
     "scicode": 0.559027777777778,
@@ -529,23 +529,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.810982658959538,
     "briefcase": {
-      "elo": 1101.6133333333335,
-      "lower95ci": 1091.9285442861271,
-      "upper95ci": 1111.2981223805398,
+      "elo": 1103.16,
+      "lower95ci": 1093.75,
+      "upper95ci": 1112.93,
       "rubric": {
-        "elo": 1065.41,
-        "lower95ci": 1049.98,
-        "upper95ci": 1080.83
+        "elo": 1066.49,
+        "lower95ci": 1051.82,
+        "upper95ci": 1081.33
       },
       "analyticalQuality": {
-        "elo": 1156.07,
-        "lower95ci": 1139.57,
-        "upper95ci": 1172.57
+        "elo": 1157.75,
+        "lower95ci": 1141.79,
+        "upper95ci": 1173.21
       },
       "presentation": {
-        "elo": 1083.36,
-        "lower95ci": 1065.09,
-        "upper95ci": 1101.64
+        "elo": 1085.23,
+        "lower95ci": 1067.27,
+        "upper95ci": 1103.44
       },
       "rubricPassRate": 0.30606060606060603,
       "turns": {
@@ -626,7 +626,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.6919686005520624,
-    "time_per_task": 134.56482852985843,
+    "time_per_task": 146.15640005615978,
     "output_tokens_per_task": 10076.460810338755
   },
   {
@@ -638,7 +638,7 @@
     "intelligence_index_v4_1": 51.4012420630147,
     "coding_index": 71.0505097794423,
     "agentic_index": 41.0770927835052,
-    "gdpval_v2": 1393.41,
+    "gdpval_v2": 1384.94,
     "gdpval_elo": null,
     "omniscience": 5.65,
     "scicode": 0.565972222222222,
@@ -667,7 +667,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.8868298551068886,
-    "time_per_task": 223.09997960062458,
+    "time_per_task": 212.42066996966213,
     "output_tokens_per_task": 32653.89086163631
   },
   {
@@ -679,7 +679,7 @@
     "intelligence_index_v4_1": 51.0858347714416,
     "coding_index": 68.7560688028853,
     "agentic_index": 43.0557079037801,
-    "gdpval_v2": 1511.72,
+    "gdpval_v2": 1510.52,
     "gdpval_elo": null,
     "omniscience": 3.96666666666667,
     "scicode": 0.50462962962963,
@@ -696,23 +696,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 1260.73,
-      "lower95ci": 1250.69,
-      "upper95ci": 1271.65,
+      "elo": 1261.94,
+      "lower95ci": 1251.46,
+      "upper95ci": 1273.25,
       "rubric": {
-        "elo": 1156.99,
-        "lower95ci": 1140.17,
-        "upper95ci": 1173.8
+        "elo": 1159.13,
+        "lower95ci": 1142.37,
+        "upper95ci": 1175.16
       },
       "analyticalQuality": {
-        "elo": 1335.18,
-        "lower95ci": 1315.07,
-        "upper95ci": 1355.3
+        "elo": 1335.57,
+        "lower95ci": 1315.14,
+        "upper95ci": 1356.73
       },
       "presentation": {
-        "elo": 1290,
-        "lower95ci": 1269.51,
-        "upper95ci": 1310.48
+        "elo": 1291.12,
+        "lower95ci": 1271.74,
+        "upper95ci": 1312.69
       },
       "rubricPassRate": 0.3606060606060606,
       "turns": {
@@ -793,7 +793,7 @@
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
     "cost_per_task_total": 0.475782357504648,
-    "time_per_task": 279.0827684755967,
+    "time_per_task": 218.8042520455611,
     "output_tokens_per_task": 42790.89116989162
   },
   {
@@ -805,7 +805,7 @@
     "intelligence_index_v4_1": 50.4090068672092,
     "coding_index": 71.5069704535997,
     "agentic_index": 37.7910652920962,
-    "gdpval_v2": 1368.73,
+    "gdpval_v2": 1362.15,
     "gdpval_elo": null,
     "omniscience": 17.2833333333333,
     "scicode": 0.534722222222222,
@@ -919,7 +919,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.4206822071969107,
-    "time_per_task": 67.40563042207845,
+    "time_per_task": 70.71877061150575,
     "output_tokens_per_task": 5132.423404727121
   },
   {
@@ -931,7 +931,7 @@
     "intelligence_index_v4_1": 50.2034858842254,
     "coding_index": 70.1427902621723,
     "agentic_index": 37.4466082474227,
-    "gdpval_v2": 1339.56,
+    "gdpval_v2": 1338.64,
     "gdpval_elo": null,
     "omniscience": 22.6833333333333,
     "scicode": 0.53125,
@@ -1045,7 +1045,7 @@
     "price_1m_output": 9,
     "price_1m_blended_7_2_1": 1.3050000000000002,
     "cost_per_task_total": 0.585545242207561,
-    "time_per_task": 154.77570883035045,
+    "time_per_task": 149.60945194446435,
     "output_tokens_per_task": 27733.34325932782
   },
   {
@@ -1057,7 +1057,7 @@
     "intelligence_index_v4_1": 47.2100024360452,
     "coding_index": 63.0271188791788,
     "agentic_index": 40.7694879725086,
-    "gdpval_v2": 1376.93,
+    "gdpval_v2": 1372.75,
     "gdpval_elo": null,
     "omniscience": 12.3666666666667,
     "scicode": 0.467592592592593,
@@ -1074,23 +1074,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.732947976878613,
     "briefcase": {
-      "elo": 1078.6633333333332,
-      "lower95ci": 1069.2926255751706,
-      "upper95ci": 1088.0340410914957,
+      "elo": 1078.64,
+      "lower95ci": 1069.53,
+      "upper95ci": 1087.22,
       "rubric": {
-        "elo": 1033.36,
-        "lower95ci": 1018.17,
-        "upper95ci": 1048.54
+        "elo": 1034.17,
+        "lower95ci": 1019.45,
+        "upper95ci": 1048.49
       },
       "analyticalQuality": {
-        "elo": 1007.84,
-        "lower95ci": 991.8,
-        "upper95ci": 1023.87
+        "elo": 1005.22,
+        "lower95ci": 989.85,
+        "upper95ci": 1020.64
       },
       "presentation": {
-        "elo": 1194.79,
-        "lower95ci": 1177.39,
-        "upper95ci": 1212.18
+        "elo": 1196.51,
+        "lower95ci": 1179.13,
+        "upper95ci": 1213.49
       },
       "rubricPassRate": 0.289198606271777,
       "turns": {
@@ -1171,7 +1171,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.31,
     "cost_per_task_total": 1.1355620170084484,
-    "time_per_task": 822.5782186418311,
+    "time_per_task": 781.4382838539848,
     "output_tokens_per_task": 50346.050380470966
   },
   {
@@ -1183,7 +1183,7 @@
     "intelligence_index_v4_1": 46.4594206066426,
     "coding_index": 68.825860036066,
     "agentic_index": 21.3959484536082,
-    "gdpval_v2": 963.73,
+    "gdpval_v2": 962.97,
     "gdpval_elo": null,
     "omniscience": 32.9333333333333,
     "scicode": 0.58912037037037,
@@ -1297,7 +1297,7 @@
     "price_1m_output": 12,
     "price_1m_blended_7_2_1": 1.7399999999999998,
     "cost_per_task_total": 0.29113642988035915,
-    "time_per_task": 87.31362977049174,
+    "time_per_task": 90.11409285155241,
     "output_tokens_per_task": 13171.37183133668
   },
   {
@@ -1309,7 +1309,7 @@
     "intelligence_index_v4_1": 45.9937184770221,
     "coding_index": 65.9687543348592,
     "agentic_index": 30.5882783505155,
-    "gdpval_v2": 1272.81,
+    "gdpval_v2": 1272.12,
     "gdpval_elo": null,
     "omniscience": 14.0833333333333,
     "scicode": 0.488425925925926,
@@ -1452,23 +1452,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.838728323699422,
     "briefcase": {
-      "elo": 871.08,
-      "lower95ci": 860.8306062509912,
-      "upper95ci": 881.3293937490089,
+      "elo": 867.81,
+      "lower95ci": 857.69,
+      "upper95ci": 877.86,
       "rubric": {
-        "elo": 998.95,
-        "lower95ci": 983.49,
-        "upper95ci": 1014.4
+        "elo": 998.43,
+        "lower95ci": 983.33,
+        "upper95ci": 1013.59
       },
       "analyticalQuality": {
-        "elo": 711.32,
-        "lower95ci": 692.15,
-        "upper95ci": 730.48
+        "elo": 706.25,
+        "lower95ci": 686.93,
+        "upper95ci": 723.55
       },
       "presentation": {
-        "elo": 902.97,
-        "lower95ci": 884.55,
-        "upper95ci": 921.39
+        "elo": 898.76,
+        "lower95ci": 880.61,
+        "upper95ci": 915.99
       },
       "rubricPassRate": 0.27635619242579323,
       "turns": {
@@ -1561,7 +1561,7 @@
     "intelligence_index_v4_1": 44.4372686326056,
     "coding_index": 58.5691496740186,
     "agentic_index": 35.3635635738832,
-    "gdpval_v2": 1390.36,
+    "gdpval_v2": 1388.88,
     "gdpval_elo": null,
     "omniscience": 1.36666666666667,
     "scicode": 0.453703703703704,
@@ -1578,23 +1578,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.785549132947977,
     "briefcase": {
-      "elo": 1112.87,
-      "lower95ci": 1103.89,
-      "upper95ci": 1122.65,
+      "elo": 1112.35,
+      "lower95ci": 1102.24,
+      "upper95ci": 1122.53,
       "rubric": {
-        "elo": 1057.05,
-        "lower95ci": 1041.38,
-        "upper95ci": 1072.72
+        "elo": 1056.64,
+        "lower95ci": 1041.6,
+        "upper95ci": 1071.24
       },
       "analyticalQuality": {
-        "elo": 1087.75,
-        "lower95ci": 1069.83,
-        "upper95ci": 1105.67
+        "elo": 1086.54,
+        "lower95ci": 1068.76,
+        "upper95ci": 1104.43
       },
       "presentation": {
-        "elo": 1193.69,
-        "lower95ci": 1174.66,
-        "upper95ci": 1212.71
+        "elo": 1193.87,
+        "lower95ci": 1175.87,
+        "upper95ci": 1212.65
       },
       "rubricPassRate": 0.30303030303030304,
       "turns": {
@@ -1675,7 +1675,7 @@
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": 0.12455059919140353,
-    "time_per_task": 274.95931005087175,
+    "time_per_task": 268.8036963497558,
     "output_tokens_per_task": 23963.866202882804
   },
   {
@@ -1687,7 +1687,7 @@
     "intelligence_index_v4_1": 44.2735554261611,
     "coding_index": 59.3632958801498,
     "agentic_index": 36.3637319587629,
-    "gdpval_v2": 1299.8,
+    "gdpval_v2": 1299.1,
     "gdpval_elo": null,
     "omniscience": -10.0166666666667,
     "scicode": 0.5,
@@ -1801,7 +1801,7 @@
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.044843733471261124,
-    "time_per_task": 389.8523517501015,
+    "time_per_task": 338.64718645728635,
     "output_tokens_per_task": 36962.620405911206
   },
   {
@@ -1830,23 +1830,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.784971098265896,
     "briefcase": {
-      "elo": 867.41,
-      "lower95ci": 857.3949760082386,
-      "upper95ci": 877.4250239917613,
+      "elo": 865.06,
+      "lower95ci": 855.46,
+      "upper95ci": 874.34,
       "rubric": {
-        "elo": 904.98,
-        "lower95ci": 889.61,
-        "upper95ci": 920.36
+        "elo": 904.79,
+        "lower95ci": 890.37,
+        "upper95ci": 919.43
       },
       "analyticalQuality": {
-        "elo": 868.38,
-        "lower95ci": 851.45,
-        "upper95ci": 885.3
+        "elo": 863.36,
+        "lower95ci": 845.99,
+        "upper95ci": 879.85
       },
       "presentation": {
-        "elo": 828.87,
-        "lower95ci": 809.38,
-        "upper95ci": 848.36
+        "elo": 827.03,
+        "lower95ci": 808.5,
+        "upper95ci": 844.93
       },
       "rubricPassRate": 0.21818181818181817,
       "turns": {
@@ -1980,7 +1980,7 @@
     "intelligence_index_v4_1": 43.4604883103599,
     "coding_index": 60.9021708974893,
     "agentic_index": 30.4173711340206,
-    "gdpval_v2": 1192.48,
+    "gdpval_v2": 1182.45,
     "gdpval_elo": null,
     "omniscience": 14.6166666666667,
     "scicode": 0.516203703703704,
@@ -2009,7 +2009,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.2180413325292904,
-    "time_per_task": 30.199481058398128,
+    "time_per_task": 30.76492487595115,
     "output_tokens_per_task": 2140.075712378165
   },
   {
@@ -2021,7 +2021,7 @@
     "intelligence_index_v4_1": 43.0555563074727,
     "coding_index": 58.6163996393397,
     "agentic_index": 28.6868762886598,
-    "gdpval_v2": 1150.83,
+    "gdpval_v2": 1142.52,
     "gdpval_elo": null,
     "omniscience": 4.08333333333333,
     "scicode": 0.515046296296296,
@@ -2038,23 +2038,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.805202312138728,
     "briefcase": {
-      "elo": 632.5766666666667,
-      "lower95ci": 620.5314329389404,
-      "upper95ci": 644.621900394393,
+      "elo": 631.35,
+      "lower95ci": 620.26,
+      "upper95ci": 642.55,
       "rubric": {
-        "elo": 821.04,
-        "lower95ci": 805.37,
-        "upper95ci": 836.71
+        "elo": 819.18,
+        "lower95ci": 804.06,
+        "upper95ci": 833.2
       },
       "analyticalQuality": {
-        "elo": 574.85,
-        "lower95ci": 553.61,
-        "upper95ci": 596.09
+        "elo": 569.72,
+        "lower95ci": 548.58,
+        "upper95ci": 590.42
       },
       "presentation": {
-        "elo": 501.84,
-        "lower95ci": 477.16,
-        "upper95ci": 526.52
+        "elo": 505.14,
+        "lower95ci": 482.81,
+        "upper95ci": 526.34
       },
       "rubricPassRate": 0.16767676767676767,
       "turns": {
@@ -2147,7 +2147,7 @@
     "intelligence_index_v4_1": 42.8413910763059,
     "coding_index": 56.0263212650853,
     "agentic_index": 30.2685189003436,
-    "gdpval_v2": 1189.4,
+    "gdpval_v2": 1191.06,
     "gdpval_elo": null,
     "omniscience": 6.41666666666667,
     "scicode": 0.534722222222222,
@@ -2261,7 +2261,7 @@
     "price_1m_output": 4,
     "price_1m_blended_7_2_1": 0.702,
     "cost_per_task_total": 0.3075432697244069,
-    "time_per_task": 425.57840082819473,
+    "time_per_task": 432.5224138408216,
     "output_tokens_per_task": 35021.98631760698
   },
   {
@@ -2290,23 +2290,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.763583815028902,
     "briefcase": {
-      "elo": 1092.42,
-      "lower95ci": 1082.4085536342977,
-      "upper95ci": 1102.4314463657024,
+      "elo": 1091.51,
+      "lower95ci": 1081.46,
+      "upper95ci": 1101.19,
       "rubric": {
-        "elo": 1011.16,
-        "lower95ci": 995.54,
-        "upper95ci": 1026.78
+        "elo": 1010.54,
+        "lower95ci": 994.98,
+        "upper95ci": 1025.56
       },
       "analyticalQuality": {
-        "elo": 1081.67,
-        "lower95ci": 1064.8,
-        "upper95ci": 1098.53
+        "elo": 1080.85,
+        "lower95ci": 1065.03,
+        "upper95ci": 1097.05
       },
       "presentation": {
-        "elo": 1184.43,
-        "lower95ci": 1165.1,
-        "upper95ci": 1203.76
+        "elo": 1183.14,
+        "lower95ci": 1164.34,
+        "upper95ci": 1201.22
       },
       "rubricPassRate": 0.27635619242579323,
       "turns": {
@@ -2399,7 +2399,7 @@
     "intelligence_index_v4_1": 42.2394366693508,
     "coding_index": 60.189520044389,
     "agentic_index": 29.1125979381443,
-    "gdpval_v2": 1271.18,
+    "gdpval_v2": 1261.52,
     "gdpval_elo": null,
     "omniscience": 3.6,
     "scicode": 0.502314814814815,
@@ -2416,23 +2416,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 870.9399999999999,
-      "lower95ci": 860.9993586726006,
-      "upper95ci": 880.8806413273993,
+      "elo": 870.94,
+      "lower95ci": 861.52,
+      "upper95ci": 880.67,
       "rubric": {
-        "elo": 921.03,
-        "lower95ci": 905.77,
-        "upper95ci": 936.3
+        "elo": 919.88,
+        "lower95ci": 904.15,
+        "upper95ci": 934.69
       },
       "analyticalQuality": {
-        "elo": 764.93,
-        "lower95ci": 747.14,
-        "upper95ci": 782.73
+        "elo": 763.96,
+        "lower95ci": 746.32,
+        "upper95ci": 781.23
       },
       "presentation": {
-        "elo": 926.86,
-        "lower95ci": 908.43,
-        "upper95ci": 945.29
+        "elo": 928.97,
+        "lower95ci": 910.93,
+        "upper95ci": 946.82
       },
       "rubricPassRate": 0.21414141414141413,
       "turns": {
@@ -2513,7 +2513,7 @@
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.03139528698492376,
-    "time_per_task": 381.56652070532056,
+    "time_per_task": 356.6102767961784,
     "output_tokens_per_task": 20476.386745754964
   },
   {
@@ -2566,7 +2566,7 @@
     "intelligence_index_v4_1": 41.9493685067994,
     "coding_index": 60.761721459287,
     "agentic_index": 29.5911099656357,
-    "gdpval_v2": 1183.65,
+    "gdpval_v2": 1183.06,
     "gdpval_elo": null,
     "omniscience": -10.7,
     "scicode": 0.474537037037037,
@@ -2607,7 +2607,7 @@
     "intelligence_index_v4_1": 40.9569739949604,
     "coding_index": 59.1209772506589,
     "agentic_index": 31.0280721649485,
-    "gdpval_v2": 1261.92,
+    "gdpval_v2": 1249.45,
     "gdpval_elo": null,
     "omniscience": -27.6166666666667,
     "scicode": 0.417824074074074,
@@ -2636,8 +2636,8 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.525,
     "cost_per_task_total": null,
-    "time_per_task": 309.64995190306104,
-    "output_tokens_per_task": 26894.4596625602
+    "time_per_task": 330.50010080527306,
+    "output_tokens_per_task": 28651.47481407535
   },
   {
     "slug": "deepseek-v4-pro-high",
@@ -2771,7 +2771,7 @@
     "intelligence_index_v4_1": 40.2825017625236,
     "coding_index": 56.1676376751283,
     "agentic_index": 31.0645326460481,
-    "gdpval_v2": 1178.86,
+    "gdpval_v2": 1178.31,
     "gdpval_elo": null,
     "omniscience": -22.9,
     "scicode": 0.449074074074074,
@@ -2885,7 +2885,7 @@
     "price_1m_output": 0.28,
     "price_1m_blended_7_2_1": 0.05796000000000001,
     "cost_per_task_total": 0.01971570690606465,
-    "time_per_task": 376.04412550863526,
+    "time_per_task": 360.7470189018358,
     "output_tokens_per_task": 45276.566290890354
   },
   {
@@ -2897,7 +2897,7 @@
     "intelligence_index_v4_1": 40.1570857627689,
     "coding_index": 55.7818352059925,
     "agentic_index": 29.8734639175258,
-    "gdpval_v2": 1258.93,
+    "gdpval_v2": 1249.97,
     "gdpval_elo": null,
     "omniscience": 1.93333333333333,
     "scicode": 0.4375,
@@ -2914,23 +2914,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 975.2833333333333,
-      "lower95ci": 965.3733909352497,
-      "upper95ci": 985.1932757314169,
+      "elo": 974.83,
+      "lower95ci": 965.41,
+      "upper95ci": 983.78,
       "rubric": {
-        "elo": 996,
-        "lower95ci": 980.79,
-        "upper95ci": 1011.22
+        "elo": 995.27,
+        "lower95ci": 981.27,
+        "upper95ci": 1009.45
       },
       "analyticalQuality": {
-        "elo": 954.38,
-        "lower95ci": 936.46,
-        "upper95ci": 972.3
+        "elo": 955.53,
+        "lower95ci": 938.55,
+        "upper95ci": 970.94
       },
       "presentation": {
-        "elo": 975.47,
-        "lower95ci": 957.27,
-        "upper95ci": 993.67
+        "elo": 973.69,
+        "lower95ci": 956.11,
+        "upper95ci": 990.7
       },
       "rubricPassRate": 0.25757575757575757,
       "turns": {
@@ -3011,7 +3011,7 @@
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
     "cost_per_task_total": 0.22741069810359207,
-    "time_per_task": 320.93515611475436,
+    "time_per_task": 362.57640844324703,
     "output_tokens_per_task": 26390.022977829776
   },
   {
@@ -3146,7 +3146,7 @@
     "intelligence_index_v4_1": 39.9783061419024,
     "coding_index": 56.0787730614509,
     "agentic_index": 30.1670996563574,
-    "gdpval_v2": 1161.23,
+    "gdpval_v2": 1160.68,
     "gdpval_elo": null,
     "omniscience": -18.6833333333333,
     "scicode": 0.498842592592593,
@@ -3260,7 +3260,7 @@
     "price_1m_output": 4.5,
     "price_1m_blended_7_2_1": 0.6525000000000001,
     "cost_per_task_total": 0.47929864085182117,
-    "time_per_task": 433.8787338984244,
+    "time_per_task": 429.49376173069896,
     "output_tokens_per_task": 78121.45616466556
   },
   {
@@ -3272,7 +3272,7 @@
     "intelligence_index_v4_1": 39.8026227264218,
     "coding_index": 51.4504438895825,
     "agentic_index": 28.0356116838488,
-    "gdpval_v2": 1214.9,
+    "gdpval_v2": 1205.76,
     "gdpval_elo": null,
     "omniscience": 7.43333333333333,
     "scicode": 0.502314814814815,
@@ -3313,7 +3313,7 @@
     "intelligence_index_v4_1": 39.5608411628461,
     "coding_index": 54.5290608961021,
     "agentic_index": 27.5522817869416,
-    "gdpval_v2": 1143.84,
+    "gdpval_v2": 1134.11,
     "gdpval_elo": null,
     "omniscience": 2.65,
     "scicode": 0.407407407407407,
@@ -3342,7 +3342,7 @@
     "price_1m_output": 3,
     "price_1m_blended_7_2_1": 0.43499999999999994,
     "cost_per_task_total": 0.31383547131763045,
-    "time_per_task": 384.98141364302853,
+    "time_per_task": 384.95642120159323,
     "output_tokens_per_task": 21402.99325283143
   },
   {
@@ -3477,7 +3477,7 @@
     "intelligence_index_v4_1": 38.9772279786141,
     "coding_index": 55.8611631294216,
     "agentic_index": 20.8054719358534,
-    "gdpval_v2": 940.05,
+    "gdpval_v2": 940.11,
     "gdpval_elo": null,
     "omniscience": 2.36666666666667,
     "scicode": 0.454861111111111,
@@ -3506,7 +3506,7 @@
     "price_1m_output": 1.16,
     "price_1m_blended_7_2_1": 0.252,
     "cost_per_task_total": 0.045502132309623196,
-    "time_per_task": 414.8064995929058,
+    "time_per_task": 408.7400925025513,
     "output_tokens_per_task": 22171.85001333737
   },
   {
@@ -3559,7 +3559,7 @@
     "intelligence_index_v4_1": 38.2417263132715,
     "coding_index": 56.0744382022472,
     "agentic_index": 27.5439759450172,
-    "gdpval_v2": 1096.61,
+    "gdpval_v2": 1096.29,
     "gdpval_elo": null,
     "omniscience": -29.55,
     "scicode": 0.46875,
@@ -3588,7 +3588,7 @@
     "price_1m_output": 1.25,
     "price_1m_blended_7_2_1": 0.179,
     "cost_per_task_total": 0.14548292517280012,
-    "time_per_task": 432.4107157102285,
+    "time_per_task": 459.7097559805978,
     "output_tokens_per_task": 70686.83297032781
   },
   {
@@ -3600,7 +3600,7 @@
     "intelligence_index_v4_1": 38.1344947250387,
     "coding_index": 52.6173879872382,
     "agentic_index": 25.5759931271478,
-    "gdpval_v2": 1165.28,
+    "gdpval_v2": 1156.9,
     "gdpval_elo": null,
     "omniscience": 0.683333333333333,
     "scicode": 0.469907407407407,
@@ -3629,7 +3629,7 @@
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": 0.07415351093539828,
-    "time_per_task": 365.688292375676,
+    "time_per_task": 380.58052980093555,
     "output_tokens_per_task": 18478.30925692363
   },
   {
@@ -3805,7 +3805,7 @@
     "intelligence_index_v4_1": 37.7619546243905,
     "coding_index": 49.2652413649605,
     "agentic_index": 27.3604776632302,
-    "gdpval_v2": 1160.6,
+    "gdpval_v2": 1160.05,
     "gdpval_elo": null,
     "omniscience": -0.833333333333333,
     "scicode": 0.399305555555556,
@@ -3822,23 +3822,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 869.97,
-      "lower95ci": 860.16,
-      "upper95ci": 880.7,
+      "elo": 869.34,
+      "lower95ci": 859.03,
+      "upper95ci": 879.4,
       "rubric": {
-        "elo": 913.86,
-        "lower95ci": 897.35,
-        "upper95ci": 930.37
+        "elo": 914.46,
+        "lower95ci": 898.37,
+        "upper95ci": 930.26
       },
       "analyticalQuality": {
-        "elo": 833.76,
-        "lower95ci": 815.28,
-        "upper95ci": 852.24
+        "elo": 833.04,
+        "lower95ci": 815.55,
+        "upper95ci": 850.62
       },
       "presentation": {
-        "elo": 862.52,
-        "lower95ci": 842.31,
-        "upper95ci": 882.73
+        "elo": 860.52,
+        "lower95ci": 841.95,
+        "upper95ci": 880.25
       },
       "rubricPassRate": 0.2202020202020202,
       "turns": {
@@ -3919,7 +3919,7 @@
     "price_1m_output": 2.675,
     "price_1m_blended_7_2_1": 0.5775,
     "cost_per_task_total": 0.24390316682824711,
-    "time_per_task": 128.69222823332356,
+    "time_per_task": 126.77859524661062,
     "output_tokens_per_task": 22937.528491853147
   },
   {
@@ -3972,7 +3972,7 @@
     "intelligence_index_v4_1": 37.5766393431307,
     "coding_index": 42.2462373422111,
     "agentic_index": 24.0959828178694,
-    "gdpval_v2": 1079.79,
+    "gdpval_v2": 1078.88,
     "gdpval_elo": null,
     "omniscience": 18.3166666666667,
     "scicode": 0.47337962962963,
@@ -4086,7 +4086,7 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.64,
     "cost_per_task_total": 0.15738725933763534,
-    "time_per_task": 103.15169003104033,
+    "time_per_task": 112.20840857445194,
     "output_tokens_per_task": 14365.341912290824
   },
   {
@@ -4139,7 +4139,7 @@
     "intelligence_index_v4_1": 37.0516798775037,
     "coding_index": 53.7210431405188,
     "agentic_index": 27.0255773195876,
-    "gdpval_v2": 1143.31,
+    "gdpval_v2": 1136.21,
     "gdpval_elo": null,
     "omniscience": -19.7833333333333,
     "scicode": 0.398148148148148,
@@ -4156,23 +4156,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.746242774566474,
     "briefcase": {
-      "elo": 807.0433333333334,
-      "lower95ci": 795.6254326700961,
-      "upper95ci": 818.4612339965707,
+      "elo": 804.59,
+      "lower95ci": 793.17,
+      "upper95ci": 814.91,
       "rubric": {
-        "elo": 846.08,
-        "lower95ci": 828.83,
-        "upper95ci": 863.33
+        "elo": 843.64,
+        "lower95ci": 826.68,
+        "upper95ci": 858.94
       },
       "analyticalQuality": {
-        "elo": 659.69,
-        "lower95ci": 638.29,
-        "upper95ci": 681.09
+        "elo": 656.43,
+        "lower95ci": 635.27,
+        "upper95ci": 677.03
       },
       "presentation": {
-        "elo": 915.36,
-        "lower95ci": 894.92,
-        "upper95ci": 935.8
+        "elo": 913.7,
+        "lower95ci": 892.69,
+        "upper95ci": 934.82
       },
       "rubricPassRate": 0.17682926829268292,
       "turns": {
@@ -4253,7 +4253,7 @@
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.26527574515202695,
-    "time_per_task": 468.61989416644883,
+    "time_per_task": 400.3459982636848,
     "output_tokens_per_task": 28640.65456720617
   },
   {
@@ -4634,7 +4634,7 @@
     "intelligence_index_v4_1": 35.3827351786589,
     "coding_index": 56.4784470800389,
     "agentic_index": 25.8018109965636,
-    "gdpval_v2": 1124.67,
+    "gdpval_v2": 1120.25,
     "gdpval_elo": null,
     "omniscience": -5.05,
     "scicode": 0.47337962962963,
@@ -4663,7 +4663,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.17704240542967806,
-    "time_per_task": 23.211486021255705,
+    "time_per_task": 22.65393250389721,
     "output_tokens_per_task": 1586.2783433905659
   },
   {
@@ -4921,7 +4921,7 @@
     "intelligence_index_v4_1": 34.6151280182156,
     "coding_index": 58.8829934803718,
     "agentic_index": 14.8662508591065,
-    "gdpval_v2": 880.69,
+    "gdpval_v2": 884.48,
     "gdpval_elo": null,
     "omniscience": -37.4333333333333,
     "scicode": 0.365740740740741,
@@ -4938,23 +4938,23 @@
     "mmlu_pro": 0.812749335106383,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 589.1933333333333,
-      "lower95ci": 576.3830465597196,
-      "upper95ci": 602.003620106947,
+      "elo": 588.82,
+      "lower95ci": 575.71,
+      "upper95ci": 601.22,
       "rubric": {
-        "elo": 749.4,
-        "lower95ci": 732.62,
-        "upper95ci": 766.18
+        "elo": 748.51,
+        "lower95ci": 730.94,
+        "upper95ci": 764.71
       },
       "analyticalQuality": {
-        "elo": 430.45,
-        "lower95ci": 406.03,
-        "upper95ci": 454.86
+        "elo": 429.23,
+        "lower95ci": 404.1,
+        "upper95ci": 453.02
       },
       "presentation": {
-        "elo": 587.73,
-        "lower95ci": 563.25,
-        "upper95ci": 612.21
+        "elo": 588.72,
+        "lower95ci": 566.09,
+        "upper95ci": 612.6
       },
       "rubricPassRate": 0.13271604938271606,
       "turns": {
@@ -5035,7 +5035,7 @@
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.20869999999999997,
     "cost_per_task_total": 0.041373799048384945,
-    "time_per_task": 53.953754955338496,
+    "time_per_task": 53.938599744258184,
     "output_tokens_per_task": 6102.955570581947
   },
   {
@@ -5334,7 +5334,7 @@
     "intelligence_index_v4_1": 33.6817059499116,
     "coding_index": 48.2118705784436,
     "agentic_index": 19.84535395189,
-    "gdpval_v2": 955.68,
+    "gdpval_v2": 960.41,
     "gdpval_elo": null,
     "omniscience": -29.7833333333333,
     "scicode": 0.420138888888889,
@@ -5351,23 +5351,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.772832369942197,
     "briefcase": {
-      "elo": 545.4466666666666,
-      "lower95ci": 533.2802546830309,
-      "upper95ci": 557.6130786503023,
+      "elo": 545.28,
+      "lower95ci": 532.72,
+      "upper95ci": 556.53,
       "rubric": {
-        "elo": 723.52,
-        "lower95ci": 708.38,
-        "upper95ci": 738.66
+        "elo": 723.31,
+        "lower95ci": 707.97,
+        "upper95ci": 737.99
       },
       "analyticalQuality": {
-        "elo": 358.89,
-        "lower95ci": 334.87,
-        "upper95ci": 382.91
+        "elo": 358.16,
+        "lower95ci": 333.74,
+        "upper95ci": 382.36
       },
       "presentation": {
-        "elo": 553.93,
-        "lower95ci": 530.99,
-        "upper95ci": 576.86
+        "elo": 554.36,
+        "lower95ci": 530.15,
+        "upper95ci": 576.95
       },
       "rubricPassRate": 0.12121212121212122,
       "turns": {
@@ -5448,7 +5448,7 @@
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.3331057741426611,
-    "time_per_task": 309.03655406941095,
+    "time_per_task": 308.87660559623487,
     "output_tokens_per_task": 17184.499605973375
   },
   {
@@ -5911,7 +5911,7 @@
     "intelligence_index_v4_1": 32.2791462784081,
     "coding_index": 45.7149916770703,
     "agentic_index": 20.7174158075601,
-    "gdpval_v2": 973.04,
+    "gdpval_v2": 970.58,
     "gdpval_elo": null,
     "omniscience": -39.5833333333333,
     "scicode": 0.420138888888889,
@@ -6034,7 +6034,7 @@
     "intelligence_index_v4_1": 31.649611240178,
     "coding_index": 41.8838431127757,
     "agentic_index": 21.413264604811,
-    "gdpval_v2": 1050.1,
+    "gdpval_v2": 1044.75,
     "gdpval_elo": null,
     "omniscience": -21.4333333333333,
     "scicode": 0.357638888888889,
@@ -6062,9 +6062,9 @@
     "price_1m_input": 0.248,
     "price_1m_output": 1.485,
     "price_1m_blended_7_2_1": 0.37170000000000003,
-    "cost_per_task_total": 0.17878995078067894,
-    "time_per_task": 158.33829751995688,
-    "output_tokens_per_task": 29715.42702297216
+    "cost_per_task_total": 0.17881593213598196,
+    "time_per_task": 158.06461449551793,
+    "output_tokens_per_task": 29719.130810850947
   },
   {
     "slug": "minimax-m2-1",
@@ -6313,47 +6313,6 @@
     "output_tokens_per_task": null
   },
   {
-    "slug": "claude-4-sonnet-thinking",
-    "name": "Claude 4 Sonnet (Reasoning)",
-    "short_name": "Claude 4 Sonnet",
-    "creator": "Anthropic",
-    "intelligence_index": 30.6673600595344,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": 0.183333333333333,
-    "scicode": 0.400462962962963,
-    "hle": 0.0959221501390176,
-    "gpqa": 0.776767676767677,
-    "critpt": 0.00285714285714286,
-    "lcr": 0.646666666666667,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.546938775510204,
-    "livecodebench": 0.655026455026455,
-    "humaneval": null,
-    "aime": 0.773333333333333,
-    "mmlu_pro": 0.841505984042553,
-    "mmmu_pro": 0.617919075144509,
-    "briefcase": "$undefined",
-    "is_open_weights": false,
-    "context_window_tokens": 1000000,
-    "parameters": null,
-    "activeParams": null,
-    "release_date": "2025-05-22",
-    "reasoning_model": true,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 3,
-    "price_1m_output": 15,
-    "price_1m_blended_7_2_1": 2.31,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
     "slug": "qwen3-5-omni-plus",
     "name": "Qwen3.5 Omni Plus",
     "short_name": "Qwen3.5 Omni Plus",
@@ -6485,7 +6444,7 @@
     "intelligence_index_v4_1": 30.5727263188268,
     "coding_index": 42.8344777361631,
     "agentic_index": 18.8602680412371,
-    "gdpval_v2": 909.88,
+    "gdpval_v2": 913.29,
     "gdpval_elo": null,
     "omniscience": -37.75,
     "scicode": 0.423611111111111,
@@ -6513,9 +6472,9 @@
     "price_1m_input": 0.3,
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
-    "cost_per_task_total": 0.3450427301430217,
-    "time_per_task": 188.85651558179157,
-    "output_tokens_per_task": 27502.6191869677
+    "cost_per_task_total": 0.3451837452945369,
+    "time_per_task": 177.51740807332493,
+    "output_tokens_per_task": 27540.07752030103
   },
   {
     "slug": "o3",
@@ -6608,7 +6567,7 @@
     "intelligence_index_v4_1": 29.947307563003,
     "coding_index": 46.9023096129838,
     "agentic_index": 18.9989965635739,
-    "gdpval_v2": 926.9,
+    "gdpval_v2": 927.93,
     "gdpval_elo": null,
     "omniscience": -36.3166666666667,
     "scicode": 0.395833333333333,
@@ -6722,7 +6681,7 @@
     "price_1m_output": 7.5,
     "price_1m_blended_7_2_1": 1.155,
     "cost_per_task_total": 1.1962136097409157,
-    "time_per_task": 172.37585461645583,
+    "time_per_task": 208.66522658856823,
     "output_tokens_per_task": 25444.977817178908
   },
   {
@@ -6775,7 +6734,7 @@
     "intelligence_index_v4_1": 29.7283976225226,
     "coding_index": 37.3188028852823,
     "agentic_index": 21.5294020618557,
-    "gdpval_v2": 1014.97,
+    "gdpval_v2": 1014.3,
     "gdpval_elo": null,
     "omniscience": -37.55,
     "scicode": 0.400462962962963,
@@ -6804,7 +6763,7 @@
     "price_1m_output": 1.15,
     "price_1m_blended_7_2_1": 0.183,
     "cost_per_task_total": 0.08809745297033102,
-    "time_per_task": 121.22498423961544,
+    "time_per_task": 117.090988135914,
     "output_tokens_per_task": 52094.863386600766
   },
   {
@@ -6816,7 +6775,7 @@
     "intelligence_index_v4_1": 29.5762345971708,
     "coding_index": 43.8921833818837,
     "agentic_index": 16.4030549828179,
-    "gdpval_v2": 899.63,
+    "gdpval_v2": 899.21,
     "gdpval_elo": null,
     "omniscience": -4.21666666666667,
     "scicode": 0.43287037037037,
@@ -6930,7 +6889,7 @@
     "price_1m_output": 5,
     "price_1m_blended_7_2_1": 0.77,
     "cost_per_task_total": 0.23747351037813688,
-    "time_per_task": 178.61970370269825,
+    "time_per_task": 147.32638766545222,
     "output_tokens_per_task": 23537.492383311903
   },
   {
@@ -6983,7 +6942,7 @@
     "intelligence_index_v4_1": 29.3542081371995,
     "coding_index": 43.4313878485227,
     "agentic_index": 14.4475154639175,
-    "gdpval_v2": 780.7,
+    "gdpval_v2": 806.8,
     "gdpval_elo": null,
     "omniscience": -45.4166666666667,
     "scicode": 0.434027777777778,
@@ -7000,23 +6959,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.734104046242775,
     "briefcase": {
-      "elo": 351.3833333333334,
-      "lower95ci": 337.0768234514649,
-      "upper95ci": 365.68984321520185,
+      "elo": 359.98,
+      "lower95ci": 344.99,
+      "upper95ci": 372.33,
       "rubric": {
-        "elo": 641.48,
-        "lower95ci": 625.4,
-        "upper95ci": 657.56
+        "elo": 641.98,
+        "lower95ci": 627.59,
+        "upper95ci": 656.79
       },
       "analyticalQuality": {
-        "elo": 95.65,
-        "lower95ci": 66.13,
-        "upper95ci": 125.17
+        "elo": 108.56,
+        "lower95ci": 80.44,
+        "upper95ci": 133.69
       },
       "presentation": {
-        "elo": 317.02,
-        "lower95ci": 290.33,
-        "upper95ci": 343.7
+        "elo": 329.39,
+        "lower95ci": 304.15,
+        "upper95ci": 352.99
       },
       "rubricPassRate": 0.07777777777777778,
       "turns": {
@@ -7097,7 +7056,7 @@
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
-    "time_per_task": 330.20209688381516,
+    "time_per_task": 330.46940067366734,
     "output_tokens_per_task": 11963.018702339323
   },
   {
@@ -7304,6 +7263,88 @@
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
+  },
+  {
+    "slug": "claude-4-sonnet-thinking",
+    "name": "Claude 4 Sonnet (Reasoning)",
+    "short_name": "Claude 4 Sonnet",
+    "creator": "Anthropic",
+    "intelligence_index": 28.9159672585524,
+    "intelligence_index_v4_1": 28.9159672585524,
+    "coding_index": 37.5684907754196,
+    "agentic_index": 16.6408109965636,
+    "gdpval_v2": 861.18,
+    "gdpval_elo": null,
+    "omniscience": 0.183333333333333,
+    "scicode": 0.400462962962963,
+    "hle": 0.0959221501390176,
+    "gpqa": 0.776767676767677,
+    "critpt": 0.00285714285714286,
+    "lcr": 0.646666666666667,
+    "terminalbench_v2_1": 0.363295880149813,
+    "tau_banking": 0.138144329896907,
+    "ifbench": 0.546938775510204,
+    "livecodebench": 0.655026455026455,
+    "humaneval": null,
+    "aime": 0.773333333333333,
+    "mmlu_pro": 0.841505984042553,
+    "mmmu_pro": 0.617919075144509,
+    "briefcase": "$undefined",
+    "is_open_weights": false,
+    "context_window_tokens": 1000000,
+    "parameters": null,
+    "activeParams": null,
+    "release_date": "2025-05-22",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 3,
+    "price_1m_output": 15,
+    "price_1m_blended_7_2_1": 2.31,
+    "cost_per_task_total": 0.44666997215264714,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": 14702.902915951376
+  },
+  {
+    "slug": "gpt-5-5-instant-06-26",
+    "name": "GPT-5.5 Instant (June 2026)",
+    "short_name": "GPT-5.5 Instant (June 2026)",
+    "creator": "OpenAI",
+    "intelligence_index": 28.8603469587486,
+    "intelligence_index_v4_1": 28.8603469587486,
+    "coding_index": 39.4246774864752,
+    "agentic_index": 11.0214639175258,
+    "gdpval_v2": 714.56,
+    "gdpval_elo": null,
+    "omniscience": 3.48333333333333,
+    "scicode": 0.486111111111111,
+    "hle": 0.185820203892493,
+    "gpqa": 0.823232323232323,
+    "critpt": 0,
+    "lcr": 0.64,
+    "terminalbench_v2_1": 0.348314606741573,
+    "tau_banking": 0.115463917525773,
+    "ifbench": null,
+    "livecodebench": null,
+    "humaneval": null,
+    "aime": null,
+    "mmlu_pro": null,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": false,
+    "context_window_tokens": 400000,
+    "parameters": null,
+    "activeParams": null,
+    "release_date": "2026-06-25",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": false,
+    "price_1m_input": 5,
+    "price_1m_output": 30,
+    "price_1m_blended_7_2_1": 4.35,
+    "cost_per_task_total": null,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": 2493.3140501553007
   },
   {
     "slug": "deepseek-v4-flash-non-reasoning",
@@ -8011,7 +8052,7 @@
     "intelligence_index_v4_1": 25.8175930098627,
     "coding_index": 33.2509710084616,
     "agentic_index": 7.10078350515464,
-    "gdpval_v2": 621.73,
+    "gdpval_v2": 661.13,
     "gdpval_elo": null,
     "omniscience": -14.3,
     "scicode": 0.428240740740741,
@@ -8040,7 +8081,7 @@
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.3375,
     "cost_per_task_total": 0.19782530888396901,
-    "time_per_task": 85.28497987818774,
+    "time_per_task": 87.13250411981304,
     "output_tokens_per_task": 12102.388727019908
   },
   {
@@ -8052,7 +8093,7 @@
     "intelligence_index_v4_1": 25.6946061195095,
     "coding_index": 39.3163060063809,
     "agentic_index": 10.9671924398625,
-    "gdpval_v2": 717.28,
+    "gdpval_v2": 751.88,
     "gdpval_elo": null,
     "omniscience": -48.0666666666667,
     "scicode": 0.400462962962963,
@@ -8298,7 +8339,7 @@
     "intelligence_index_v4_1": 25.4059430700317,
     "coding_index": 37.7163094742683,
     "agentic_index": 8.7233642611684,
-    "gdpval_v2": 657.9,
+    "gdpval_v2": 691.89,
     "gdpval_elo": null,
     "omniscience": -42.0666666666667,
     "scicode": 0.359953703703704,
@@ -8319,9 +8360,9 @@
       "lower95ci": 0,
       "upper95ci": 0,
       "rubric": {
-        "elo": 498.35,
-        "lower95ci": 480.72,
-        "upper95ci": 515.98
+        "elo": 496.45,
+        "lower95ci": 480.37,
+        "upper95ci": 512.71
       },
       "analyticalQuality": {
         "elo": 0,
@@ -8412,7 +8453,7 @@
     "price_1m_output": 0.75,
     "price_1m_blended_7_2_1": 0.275,
     "cost_per_task_total": 0.2520905115547944,
-    "time_per_task": 107.28729016858136,
+    "time_per_task": 112.4383101396252,
     "output_tokens_per_task": 25580.484907731414
   },
   {
@@ -8506,7 +8547,7 @@
     "intelligence_index_v4_1": 25.038457882447,
     "coding_index": 34.6901442641143,
     "agentic_index": 6.17159793814433,
-    "gdpval_v2": 638.82,
+    "gdpval_v2": 640.65,
     "gdpval_elo": null,
     "omniscience": -15.5166666666667,
     "scicode": 0.418981481481481,
@@ -8620,7 +8661,7 @@
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.21749999999999997,
     "cost_per_task_total": 0.041571620355421224,
-    "time_per_task": 68.82329692589641,
+    "time_per_task": 60.068106034198834,
     "output_tokens_per_task": 20216.411617630158
   },
   {
@@ -8755,7 +8796,7 @@
     "intelligence_index_v4_1": 24.7517904486036,
     "coding_index": 35.1830177555833,
     "agentic_index": 22.8129553264605,
-    "gdpval_v2": 1099.11,
+    "gdpval_v2": 1092.5,
     "gdpval_elo": null,
     "omniscience": -32.3,
     "scicode": 0.373842592592593,
@@ -8784,7 +8825,7 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.64,
     "cost_per_task_total": 0.3888732326397479,
-    "time_per_task": 76.30490842614023,
+    "time_per_task": 78.67085610706182,
     "output_tokens_per_task": 9191.750828999455
   },
   {
@@ -8837,7 +8878,7 @@
     "intelligence_index_v4_1": 24.6700650875255,
     "coding_index": 49.8404771813012,
     "agentic_index": 11.9909278350515,
-    "gdpval_v2": 828.8,
+    "gdpval_v2": 822.55,
     "gdpval_elo": null,
     "omniscience": -48.4833333333333,
     "scicode": 0.259259259259259,
@@ -8866,7 +8907,7 @@
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.12000000000000002,
     "cost_per_task_total": 0.3511773843295714,
-    "time_per_task": 273.33782722890857,
+    "time_per_task": 272.86850096085317,
     "output_tokens_per_task": 27074.69841091612
   },
   {
@@ -9042,7 +9083,7 @@
     "intelligence_index_v4_1": 23.8309678073278,
     "coding_index": 30.441115272576,
     "agentic_index": 13.1731638029782,
-    "gdpval_v2": 793.12,
+    "gdpval_v2": 793.79,
     "gdpval_elo": null,
     "omniscience": -50.05,
     "scicode": 0.388888888888889,
@@ -9156,7 +9197,7 @@
     "price_1m_output": 0.6,
     "price_1m_blended_7_2_1": 0.195,
     "cost_per_task_total": 0.06067164425252873,
-    "time_per_task": 111.43869950143493,
+    "time_per_task": 112.5616491378789,
     "output_tokens_per_task": 35619.836725311856
   },
   {
@@ -9947,7 +9988,7 @@
     "intelligence_index_v4_1": 21.7654780663193,
     "coding_index": 33.96145443196,
     "agentic_index": 6.99762199312715,
-    "gdpval_v2": 636.5,
+    "gdpval_v2": 676.56,
     "gdpval_elo": null,
     "omniscience": -48.05,
     "scicode": 0.427083333333333,
@@ -9976,7 +10017,7 @@
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.4684000000000001,
     "cost_per_task_total": 0.1728370588534525,
-    "time_per_task": 94.30736776258678,
+    "time_per_task": 92.89555828319085,
     "output_tokens_per_task": 11652.860286226254
   },
   {
@@ -10849,7 +10890,7 @@
     "intelligence_index_v4_1": 19.6058827132159,
     "coding_index": 25.8695727562769,
     "agentic_index": 6.4193883161512,
-    "gdpval_v2": 601.86,
+    "gdpval_v2": 642.02,
     "gdpval_elo": null,
     "omniscience": -45.7666666666667,
     "scicode": 0.386574074074074,
@@ -10878,7 +10919,7 @@
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
     "cost_per_task_total": 0.21277260985423777,
-    "time_per_task": 38.85649658785832,
+    "time_per_task": 40.72892300574803,
     "output_tokens_per_task": 4915.364012095632
   },
   {
@@ -11095,7 +11136,7 @@
     "intelligence_index_v4_1": 19.1572180630673,
     "coding_index": 31.2586697184075,
     "agentic_index": 10.5734261168385,
-    "gdpval_v2": 714.11,
+    "gdpval_v2": 741.13,
     "gdpval_elo": null,
     "omniscience": -46.1666666666667,
     "scicode": 0.331018518518519,
@@ -11124,7 +11165,7 @@
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 106.11693997211493,
+    "time_per_task": 99.79305613795759,
     "output_tokens_per_task": 5946.382121127844
   },
   {
@@ -11415,6 +11456,47 @@
     "output_tokens_per_task": null
   },
   {
+    "slug": "deepseek-r1-0120",
+    "name": "DeepSeek R1 (Jan '25)",
+    "short_name": "DeepSeek R1 (Jan)",
+    "creator": "DeepSeek",
+    "intelligence_index": 18.5075067596643,
+    "intelligence_index_v4_1": 18.5075067596643,
+    "coding_index": 24.6388443017656,
+    "agentic_index": 3.08858419243986,
+    "gdpval_v2": 528.74,
+    "gdpval_elo": null,
+    "omniscience": -31.3166666666667,
+    "scicode": 0.357142857142857,
+    "hle": 0.0927719821162444,
+    "gpqa": 0.708080808080808,
+    "critpt": 0.00571428571428571,
+    "lcr": 0.523333333333333,
+    "terminalbench_v2_1": 0.191011235955056,
+    "tau_banking": 0.0639175257731959,
+    "ifbench": 0.389795918367347,
+    "livecodebench": 0.616931216931217,
+    "humaneval": 0.976829268292683,
+    "aime": 0.683333333333333,
+    "mmlu_pro": 0.844498005319149,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 128000,
+    "parameters": 685,
+    "activeParams": 37,
+    "release_date": "2025-01-20",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 1.675,
+    "price_1m_output": 4.7,
+    "price_1m_blended_7_2_1": 1.9774999999999998,
+    "cost_per_task_total": 0.24713753983015388,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": 15600.358619692568
+  },
+  {
     "slug": "o3-mini-high",
     "name": "o3-mini (high)",
     "short_name": "o3-mini (high)",
@@ -11546,7 +11628,7 @@
     "intelligence_index_v4_1": 18.1684165088961,
     "coding_index": 23.0436780413372,
     "agentic_index": 3.1260412371134,
-    "gdpval_v2": 525.22,
+    "gdpval_v2": 576.38,
     "gdpval_elo": null,
     "omniscience": -54.1166666666667,
     "scicode": 0.369212962962963,
@@ -11575,7 +11657,7 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.24542698374402477,
-    "time_per_task": 303.056600537412,
+    "time_per_task": 299.20235553568926,
     "output_tokens_per_task": 46190.80343551248
   },
   {
@@ -11710,7 +11792,7 @@
     "intelligence_index_v4_1": 17.8744831166998,
     "coding_index": 21.3184040782356,
     "agentic_index": 1.85567010309278,
-    "gdpval_v2": 357.45,
+    "gdpval_v2": 397.92,
     "gdpval_elo": null,
     "omniscience": -26.2333333333333,
     "scicode": 0.392361111111111,
@@ -11739,7 +11821,7 @@
     "price_1m_output": 5,
     "price_1m_blended_7_2_1": 2.3,
     "cost_per_task_total": 0.7471451276458294,
-    "time_per_task": 208.45350077251243,
+    "time_per_task": 200.24642727680927,
     "output_tokens_per_task": 9060.386460390037
   },
   {
@@ -11915,7 +11997,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 712.21,
+    "gdpval_v2": null,
     "gdpval_elo": null,
     "omniscience": -38.5833333333333,
     "scicode": 0.351851851851852,
@@ -11989,15 +12071,56 @@
     "output_tokens_per_task": null
   },
   {
+    "slug": "devstral-small-2",
+    "name": "Devstral Small 2",
+    "short_name": "Devstral Small 2",
+    "creator": "Mistral",
+    "intelligence_index": 17.4365127569799,
+    "intelligence_index_v4_1": 17.4365127569799,
+    "coding_index": 29.3318248023304,
+    "agentic_index": 10.4729072164948,
+    "gdpval_v2": 717.29,
+    "gdpval_elo": null,
+    "omniscience": -56.7333333333333,
+    "scicode": 0.288194444444444,
+    "hle": 0.0342910101946247,
+    "gpqa": 0.532323232323232,
+    "critpt": 0,
+    "lcr": 0.24,
+    "terminalbench_v2_1": 0.295880149812734,
+    "tau_banking": 0.0969072164948454,
+    "ifbench": 0.31156462585034,
+    "livecodebench": 0.348148148148148,
+    "humaneval": null,
+    "aime": null,
+    "mmlu_pro": 0.677775930851064,
+    "mmmu_pro": 0.446242774566474,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 256000,
+    "parameters": 24,
+    "activeParams": 24,
+    "release_date": "2025-12-09",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": false,
+    "price_1m_input": 0,
+    "price_1m_output": 0,
+    "price_1m_blended_7_2_1": 0,
+    "cost_per_task_total": 0,
+    "time_per_task": 112.07989117267788,
+    "output_tokens_per_task": 6049.720451236727
+  },
+  {
     "slug": "k2-think-v2",
     "name": "K2 Think V2",
     "short_name": "K2 Think V2",
     "creator": "MBZUAI Institute of Foundation Models",
-    "intelligence_index": 17.3883133687917,
-    "intelligence_index_v4_1": null,
+    "intelligence_index": 17.2613662319887,
+    "intelligence_index_v4_1": 17.2613662319887,
     "coding_index": 20.9828859758635,
-    "agentic_index": null,
-    "gdpval_v2": null,
+    "agentic_index": 1.78694158075601,
+    "gdpval_v2": 365.49,
     "gdpval_elo": null,
     "omniscience": -33.9166666666667,
     "scicode": 0.329861111111111,
@@ -12014,13 +12137,13 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 62.04333333333333,
-      "lower95ci": 44.307755937726625,
-      "upper95ci": 79.77891072894003,
+      "elo": 43.59,
+      "lower95ci": 27.27,
+      "upper95ci": 57.26,
       "rubric": {
-        "elo": 585.4,
-        "lower95ci": 568.61,
-        "upper95ci": 602.19
+        "elo": 582.55,
+        "lower95ci": 567.53,
+        "upper95ci": 597.35
       },
       "analyticalQuality": {
         "elo": 0,
@@ -12112,7 +12235,7 @@
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
-    "output_tokens_per_task": null
+    "output_tokens_per_task": 38585.82334600583
   },
   {
     "slug": "longcat-flash-lite",
@@ -12410,7 +12533,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 758.8,
+    "gdpval_v2": 785.53,
     "gdpval_elo": null,
     "omniscience": -45.85,
     "scicode": 0.395833333333333,
@@ -12615,7 +12738,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 498.12,
     "gdpval_elo": null,
     "omniscience": -50.1333333333333,
     "scicode": 0.403935185185185,
@@ -12738,7 +12861,7 @@
     "intelligence_index_v4_1": 15.9300825619952,
     "coding_index": 20.0656297683452,
     "agentic_index": 5.51939862542955,
-    "gdpval_v2": 599.9,
+    "gdpval_v2": 633.37,
     "gdpval_elo": null,
     "omniscience": -39.4333333333333,
     "scicode": 0.362268518518519,
@@ -12767,7 +12890,7 @@
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.6,
     "cost_per_task_total": 0.05988932957210771,
-    "time_per_task": 59.08340136142529,
+    "time_per_task": 59.87386404451077,
     "output_tokens_per_task": 3031.0787016478853
   },
   {
@@ -12807,47 +12930,6 @@
     "price_1m_input": 0.28,
     "price_1m_output": 1.85,
     "price_1m_blended_7_2_1": 0.4370000000000001,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
-    "slug": "deepseek-v3-0324",
-    "name": "DeepSeek V3 0324",
-    "short_name": "DeepSeek V3 0324",
-    "creator": "DeepSeek",
-    "intelligence_index": 15.707696555426,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -37.5666666666667,
-    "scicode": 0.357638888888889,
-    "hle": 0.0521609538002981,
-    "gpqa": 0.654545454545455,
-    "critpt": 0,
-    "lcr": 0.41,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.410204081632653,
-    "livecodebench": 0.405291005291005,
-    "humaneval": 0.921951219512195,
-    "aime": 0.52,
-    "mmlu_pro": 0.819065824468085,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 128000,
-    "parameters": 671,
-    "activeParams": 37,
-    "release_date": "2025-03-25",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 1.1949999999999998,
-    "price_1m_output": 1.25,
-    "price_1m_blended_7_2_1": 1.2005,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -12933,6 +13015,47 @@
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
+  },
+  {
+    "slug": "deepseek-v3-0324",
+    "name": "DeepSeek V3 0324",
+    "short_name": "DeepSeek V3 0324",
+    "creator": "DeepSeek",
+    "intelligence_index": 15.4301213476181,
+    "intelligence_index_v4_1": 15.4301213476181,
+    "coding_index": 21.1597482313774,
+    "agentic_index": 1.51202749140893,
+    "gdpval_v2": 317.86,
+    "gdpval_elo": null,
+    "omniscience": -37.5666666666667,
+    "scicode": 0.357638888888889,
+    "hle": 0.0521609538002981,
+    "gpqa": 0.654545454545455,
+    "critpt": 0,
+    "lcr": 0.41,
+    "terminalbench_v2_1": 0.138576779026217,
+    "tau_banking": 0.045360824742268,
+    "ifbench": 0.410204081632653,
+    "livecodebench": 0.405291005291005,
+    "humaneval": 0.921951219512195,
+    "aime": 0.52,
+    "mmlu_pro": 0.819065824468085,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 128000,
+    "parameters": 671,
+    "activeParams": 37,
+    "release_date": "2025-03-25",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 1.1949999999999998,
+    "price_1m_output": 1.25,
+    "price_1m_blended_7_2_1": 1.2005,
+    "cost_per_task_total": 0.18953428564807268,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": 2670.2992338625077
   },
   {
     "slug": "gpt-5-chatgpt",
@@ -13148,7 +13271,7 @@
     "intelligence_index_v4_1": 14.8851031229075,
     "coding_index": 20.6967852684145,
     "agentic_index": 3.10310309278351,
-    "gdpval_v2": 519.48,
+    "gdpval_v2": 559.07,
     "gdpval_elo": null,
     "omniscience": -63.9166666666667,
     "scicode": 0.34375,
@@ -13169,9 +13292,9 @@
       "lower95ci": 0,
       "upper95ci": 0,
       "rubric": {
-        "elo": 528.68,
-        "lower95ci": 511.82,
-        "upper95ci": 545.54
+        "elo": 525.69,
+        "lower95ci": 510.05,
+        "upper95ci": 542.8
       },
       "analyticalQuality": {
         "elo": 0,
@@ -13262,19 +13385,60 @@
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.06500000000000002,
     "cost_per_task_total": 0.017842778338181632,
-    "time_per_task": 100.0046123314666,
+    "time_per_task": 100.42435701487305,
     "output_tokens_per_task": 22353.429574601836
+  },
+  {
+    "slug": "mistral-small-3-1",
+    "name": "Mistral Small 3.1",
+    "short_name": "Mistral Small 3.1",
+    "creator": "Mistral",
+    "intelligence_index": 14.7448087533968,
+    "intelligence_index_v4_1": 14.7448087533968,
+    "coding_index": 26.3130288528229,
+    "agentic_index": 5.16543642611684,
+    "gdpval_v2": 584.86,
+    "gdpval_elo": null,
+    "omniscience": -50.3166666666667,
+    "scicode": 0.265046296296296,
+    "hle": 0.0476793248945148,
+    "gpqa": 0.453535353535354,
+    "critpt": 0,
+    "lcr": 0.196666666666667,
+    "terminalbench_v2_1": 0.262172284644195,
+    "tau_banking": 0.0701030927835052,
+    "ifbench": 0.299319727891156,
+    "livecodebench": 0.211640211640212,
+    "humaneval": 0.858536585365854,
+    "aime": 0.0933333333333333,
+    "mmlu_pro": 0.659325132978723,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 128000,
+    "parameters": 24,
+    "activeParams": 24,
+    "release_date": "2025-03-17",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0.10500000000000001,
+    "price_1m_output": 0.235,
+    "price_1m_blended_7_2_1": 0.11800000000000002,
+    "cost_per_task_total": 0.04267239759653488,
+    "time_per_task": 28.55410491395398,
+    "output_tokens_per_task": 4757.239734679951
   },
   {
     "slug": "mistral-medium-3-1",
     "name": "Mistral Medium 3.1",
     "short_name": "Mistral Medium 3.1",
     "creator": "Mistral",
-    "intelligence_index": 14.7724846493267,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
+    "intelligence_index": 14.6788898631869,
+    "intelligence_index_v4_1": 14.6788898631869,
+    "coding_index": 20.5038840338466,
+    "agentic_index": 6.16520274914089,
+    "gdpval_v2": 600.67,
     "gdpval_elo": null,
     "omniscience": -45.4666666666667,
     "scicode": 0.337962962962963,
@@ -13282,8 +13446,8 @@
     "gpqa": 0.587878787878788,
     "critpt": 0,
     "lcr": 0.196666666666667,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "terminalbench_v2_1": 0.138576779026217,
+    "tau_banking": 0.0845360824742268,
     "ifbench": 0.397959183673469,
     "livecodebench": 0.406349206349206,
     "humaneval": null,
@@ -13302,9 +13466,9 @@
     "price_1m_input": 0.4,
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.56,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
+    "cost_per_task_total": 0.1448042873568494,
+    "time_per_task": 54.188510086612276,
+    "output_tokens_per_task": 5046.538227948665
   },
   {
     "slug": "minimax-m1-40k",
@@ -13356,7 +13520,7 @@
     "intelligence_index_v4_1": 14.3557330595446,
     "coding_index": 20.8606429463171,
     "agentic_index": 2.85237457044674,
-    "gdpval_v2": 504.45,
+    "gdpval_v2": 555.63,
     "gdpval_elo": null,
     "omniscience": -48.15,
     "scicode": 0.28125,
@@ -13384,9 +13548,9 @@
     "price_1m_input": 1.25,
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
-    "cost_per_task_total": 0.24385303319696,
-    "time_per_task": 25.797657917323495,
-    "output_tokens_per_task": 3595.6152678446383
+    "cost_per_task_total": 0.24556414020453576,
+    "time_per_task": 26.755528881314646,
+    "output_tokens_per_task": 3631.1773890567592
   },
   {
     "slug": "gpt-oss-20b-low",
@@ -13479,7 +13643,7 @@
     "intelligence_index_v4_1": 14.2657978659374,
     "coding_index": 16.2773963101678,
     "agentic_index": 1.30584192439863,
-    "gdpval_v2": -29.48,
+    "gdpval_v2": -13.62,
     "gdpval_elo": null,
     "omniscience": -41.7666666666667,
     "scicode": 0.331018518518519,
@@ -13500,9 +13664,9 @@
       "lower95ci": 0,
       "upper95ci": 0,
       "rubric": {
-        "elo": 498.62,
-        "lower95ci": 482.19,
-        "upper95ci": 515.05
+        "elo": 496.76,
+        "lower95ci": 481.35,
+        "upper95ci": 512.55
       },
       "analyticalQuality": {
         "elo": 0,
@@ -13593,7 +13757,7 @@
     "price_1m_output": 0.85,
     "price_1m_blended_7_2_1": 0.344,
     "cost_per_task_total": 0.03169297992682114,
-    "time_per_task": 19.56484865900961,
+    "time_per_task": 18.231175017265855,
     "output_tokens_per_task": 2088.862457165753
   },
   {
@@ -13687,7 +13851,7 @@
     "intelligence_index_v4_1": 14.1772902141795,
     "coding_index": 14.3709252323484,
     "agentic_index": 1.99312714776632,
-    "gdpval_v2": 428.82,
+    "gdpval_v2": 479.29,
     "gdpval_elo": null,
     "omniscience": -51.6333333333333,
     "scicode": 0.296296296296296,
@@ -13715,9 +13879,9 @@
     "price_1m_input": 0.055,
     "price_1m_output": 0.22,
     "price_1m_blended_7_2_1": 0.0715,
-    "cost_per_task_total": 0.02009833200452247,
-    "time_per_task": 306.8898920761714,
-    "output_tokens_per_task": 26738.071111225014
+    "cost_per_task_total": 0.020143555962855803,
+    "time_per_task": 308.5113817388019,
+    "output_tokens_per_task": 26776.696868800773
   },
   {
     "slug": "gemini-2-5-flash",
@@ -13769,7 +13933,7 @@
     "intelligence_index_v4_1": 14.135866278812,
     "coding_index": 16.2076050769871,
     "agentic_index": 2.68041237113402,
-    "gdpval_v2": 447.77,
+    "gdpval_v2": 488.15,
     "gdpval_elo": null,
     "omniscience": -53.7833333333333,
     "scicode": 0.246527777777778,
@@ -13786,13 +13950,13 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 115.95,
-      "lower95ci": 100.06,
-      "upper95ci": 130.52,
+      "elo": 120.56,
+      "lower95ci": 103.74,
+      "upper95ci": 136.01,
       "rubric": {
-        "elo": 587.65,
-        "lower95ci": 572.04,
-        "upper95ci": 603.26
+        "elo": 587.25,
+        "lower95ci": 571.13,
+        "upper95ci": 602.02
       },
       "analyticalQuality": {
         "elo": 0,
@@ -13800,9 +13964,9 @@
         "upper95ci": 0
       },
       "presentation": {
-        "elo": 10.88,
+        "elo": 9.58,
         "lower95ci": 0,
-        "upper95ci": 39.33
+        "upper95ci": 36.23
       },
       "rubricPassRate": 0.049029622063329927,
       "turns": {
@@ -14092,6 +14256,47 @@
     "output_tokens_per_task": null
   },
   {
+    "slug": "diffusiongemma-26b-a4b",
+    "name": "DiffusionGemma 26B A4B",
+    "short_name": "DiffusionGemma 26B A4B",
+    "creator": "Google",
+    "intelligence_index": 13.45276586506,
+    "intelligence_index_v4_1": 13.45276586506,
+    "coding_index": 19.6594534609516,
+    "agentic_index": 2.19931271477663,
+    "gdpval_v2": 538.79,
+    "gdpval_elo": null,
+    "omniscience": -59.0333333333333,
+    "scicode": 0.342592592592593,
+    "hle": 0.10194624652456,
+    "gpqa": 0.668686868686869,
+    "critpt": 0.00285714285714286,
+    "lcr": 0.143333333333333,
+    "terminalbench_v2_1": 0.123595505617978,
+    "tau_banking": 0.065979381443299,
+    "ifbench": 0.594557823129252,
+    "livecodebench": null,
+    "humaneval": null,
+    "aime": null,
+    "mmlu_pro": null,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 256000,
+    "parameters": 25.2,
+    "activeParams": 3.8,
+    "release_date": "2026-06-10",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": false,
+    "price_1m_input": 0,
+    "price_1m_output": 0,
+    "price_1m_blended_7_2_1": 0,
+    "cost_per_task_total": null,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": 15632.265068122098
+  },
+  {
     "slug": "qwen3-235b-a22b-instruct-reasoning",
     "name": "Qwen3 235B A22B (Reasoning)",
     "short_name": "Qwen3 235B",
@@ -14297,47 +14502,6 @@
     "output_tokens_per_task": null
   },
   {
-    "slug": "devstral-small-2",
-    "name": "Devstral Small 2",
-    "short_name": "Devstral Small 2",
-    "creator": "Mistral",
-    "intelligence_index": 13.1403228017075,
-    "intelligence_index_v4_1": null,
-    "coding_index": 29.3318248023304,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -56.7333333333333,
-    "scicode": 0.288194444444444,
-    "hle": 0.0342910101946247,
-    "gpqa": 0.532323232323232,
-    "critpt": 0,
-    "lcr": 0.24,
-    "terminalbench_v2_1": 0.295880149812734,
-    "tau_banking": 0.0969072164948454,
-    "ifbench": 0.31156462585034,
-    "livecodebench": 0.348148148148148,
-    "humaneval": null,
-    "aime": null,
-    "mmlu_pro": 0.677775930851064,
-    "mmmu_pro": 0.446242774566474,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 256000,
-    "parameters": 24,
-    "activeParams": 24,
-    "release_date": "2025-12-09",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": false,
-    "price_1m_input": 0,
-    "price_1m_output": 0,
-    "price_1m_blended_7_2_1": 0,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
     "slug": "gemini-2-5-flash-lite-preview-09-2025",
     "name": "Gemini 2.5 Flash-Lite Preview (Sep '25) (Non-reasoning)",
     "short_name": "Gemini 2.5 Flash-Lite (Sep)",
@@ -14497,47 +14661,6 @@
     "price_1m_input": 2.5,
     "price_1m_output": 12.5,
     "price_1m_blended_7_2_1": 2.184,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
-    "slug": "deepseek-r1-0120",
-    "name": "DeepSeek R1 (Jan '25)",
-    "short_name": "DeepSeek R1 (Jan)",
-    "creator": "DeepSeek",
-    "intelligence_index": 12.5661334264646,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -31.3166666666667,
-    "scicode": 0.357142857142857,
-    "hle": 0.0927719821162444,
-    "gpqa": 0.708080808080808,
-    "critpt": 0.00571428571428571,
-    "lcr": 0.523333333333333,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.389795918367347,
-    "livecodebench": 0.616931216931217,
-    "humaneval": 0.976829268292683,
-    "aime": 0.683333333333333,
-    "mmlu_pro": 0.844498005319149,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 128000,
-    "parameters": 685,
-    "activeParams": 37,
-    "release_date": "2025-01-20",
-    "reasoning_model": true,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 1.675,
-    "price_1m_output": 4.7,
-    "price_1m_blended_7_2_1": 1.9774999999999998,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -15002,7 +15125,7 @@
     "intelligence_index_v4_1": 12.2608524930908,
     "coding_index": 15.8850915522264,
     "agentic_index": 1.92439862542955,
-    "gdpval_v2": 409.64,
+    "gdpval_v2": 435.82,
     "gdpval_elo": null,
     "omniscience": -23.1833333333333,
     "scicode": 0.274305555555556,
@@ -15494,7 +15617,7 @@
     "intelligence_index_v4_1": 11.5463546671141,
     "coding_index": 15.3011860174782,
     "agentic_index": 1.78694158075601,
-    "gdpval_v2": 266.16,
+    "gdpval_v2": 266.95,
     "gdpval_elo": null,
     "omniscience": -50.5333333333333,
     "scicode": 0.354166666666667,
@@ -15576,7 +15699,7 @@
     "intelligence_index_v4_1": 11.2923034993806,
     "coding_index": 14.7246497433763,
     "agentic_index": 1.44329896907216,
-    "gdpval_v2": 246.53,
+    "gdpval_v2": 247.51,
     "gdpval_elo": null,
     "omniscience": -64.9833333333333,
     "scicode": 0.351851851851852,
@@ -15605,7 +15728,7 @@
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.6,
     "cost_per_task_total": 0.2382247627174546,
-    "time_per_task": 112.90631309043489,
+    "time_per_task": 112.75549936470837,
     "output_tokens_per_task": 9704.507158112809
   },
   {
@@ -15699,7 +15822,7 @@
     "intelligence_index_v4_1": 11.0525122563915,
     "coding_index": 14.3622555139409,
     "agentic_index": 2.19931271477663,
-    "gdpval_v2": 426.41,
+    "gdpval_v2": 473.93,
     "gdpval_elo": null,
     "omniscience": -66.8166666666667,
     "scicode": 0.236111111111111,
@@ -15727,9 +15850,9 @@
     "price_1m_input": 0.2,
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.20000000000000004,
-    "cost_per_task_total": 0.14649304877356845,
-    "time_per_task": 143.20298804976943,
-    "output_tokens_per_task": 11591.479855504585
+    "cost_per_task_total": 0.14918625422811388,
+    "time_per_task": 139.97833035671752,
+    "output_tokens_per_task": 11745.911673686403
   },
   {
     "slug": "deepseek-r1-distill-qwen-32b",
@@ -16066,9 +16189,9 @@
     "creator": "DeepSeek",
     "intelligence_index": 10.3943107867161,
     "intelligence_index_v4_1": null,
-    "coding_index": null,
+    "coding_index": 23.0415106117354,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 216.53,
     "gdpval_elo": null,
     "omniscience": -41.35,
     "scicode": 0.354166666666667,
@@ -16076,7 +16199,7 @@
     "gpqa": 0.556565656565657,
     "critpt": 0,
     "lcr": 0.29,
-    "terminalbench_v2_1": null,
+    "terminalbench_v2_1": 0.168539325842697,
     "tau_banking": null,
     "ifbench": 0.347619047619048,
     "livecodebench": 0.358730158730159,
@@ -16231,8 +16354,8 @@
     "intelligence_index": 10.1460007221028,
     "intelligence_index_v4_1": null,
     "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
+    "agentic_index": 1.78694158075601,
+    "gdpval_v2": 214.9,
     "gdpval_elo": null,
     "omniscience": -49.2333333333333,
     "scicode": 0.315972222222222,
@@ -16241,7 +16364,7 @@
     "critpt": 0,
     "lcr": 0,
     "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "tau_banking": 0.0536082474226804,
     "ifbench": 0.405442176870748,
     "livecodebench": 0.522751322751323,
     "humaneval": 0.963414634146341,
@@ -16314,7 +16437,7 @@
     "intelligence_index_v4_1": 10.0416226283387,
     "coding_index": 8.16817519766958,
     "agentic_index": 1.09965635738832,
-    "gdpval_v2": 85.15,
+    "gdpval_v2": 93.31,
     "gdpval_elo": null,
     "omniscience": -52.3666666666667,
     "scicode": 0.170138888888889,
@@ -16343,7 +16466,7 @@
     "price_1m_output": 0.66,
     "price_1m_blended_7_2_1": 0.21900000000000003,
     "cost_per_task_total": 0.008506397458326823,
-    "time_per_task": 11.819155518993602,
+    "time_per_task": 11.718040262721205,
     "output_tokens_per_task": 1249.1916412587836
   },
   {
@@ -17503,7 +17626,7 @@
     "intelligence_index_v4_1": 8.95728282101135,
     "coding_index": 9.69101123595506,
     "agentic_index": 1.23711340206186,
-    "gdpval_v2": 385.16,
+    "gdpval_v2": 439.22,
     "gdpval_elo": null,
     "omniscience": -67.8333333333333,
     "scicode": 0.208333333333333,
@@ -17532,7 +17655,7 @@
     "price_1m_output": 0.15,
     "price_1m_blended_7_2_1": 0.15,
     "cost_per_task_total": 0.18482442028714433,
-    "time_per_task": 211.28218260645943,
+    "time_per_task": 215.71731625992655,
     "output_tokens_per_task": 15686.163156903367
   },
   {
@@ -17585,7 +17708,7 @@
     "intelligence_index_v4_1": 8.85991944342523,
     "coding_index": 10.3512102926897,
     "agentic_index": 1.30584192439863,
-    "gdpval_v2": 402.55,
+    "gdpval_v2": 422.97,
     "gdpval_elo": null,
     "omniscience": -67.7833333333333,
     "scicode": 0.258101851851852,
@@ -18023,47 +18146,6 @@
     "price_1m_input": 0,
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
-    "slug": "mistral-small-3-1",
-    "name": "Mistral Small 3.1",
-    "short_name": "Mistral Small 3.1",
-    "creator": "Mistral",
-    "intelligence_index": 8.58887133495749,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -50.3166666666667,
-    "scicode": 0.265046296296296,
-    "hle": 0.0476793248945148,
-    "gpqa": 0.453535353535354,
-    "critpt": 0,
-    "lcr": 0.196666666666667,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.299319727891156,
-    "livecodebench": 0.211640211640212,
-    "humaneval": 0.858536585365854,
-    "aime": 0.0933333333333333,
-    "mmlu_pro": 0.659325132978723,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 128000,
-    "parameters": 24,
-    "activeParams": 24,
-    "release_date": "2025-03-17",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0.10500000000000001,
-    "price_1m_output": 0.235,
-    "price_1m_blended_7_2_1": 0.11800000000000002,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -19012,6 +19094,47 @@
     "output_tokens_per_task": null
   },
   {
+    "slug": "llama-3-1-instruct-8b",
+    "name": "Llama 3.1 Instruct 8B",
+    "short_name": "Llama 3.1 8B",
+    "creator": "Meta",
+    "intelligence_index": 7.60997784439173,
+    "intelligence_index_v4_1": 7.60997784439173,
+    "coding_index": 5.39689970869746,
+    "agentic_index": 0.549828178694157,
+    "gdpval_v2": -126.95,
+    "gdpval_elo": null,
+    "omniscience": -30.3333333333333,
+    "scicode": 0.131944444444444,
+    "hle": 0.0514767932489451,
+    "gpqa": 0.258585858585859,
+    "critpt": 0,
+    "lcr": 0.156666666666667,
+    "terminalbench_v2_1": 0.0149812734082397,
+    "tau_banking": 0.0164948453608247,
+    "ifbench": 0.285714285714286,
+    "livecodebench": 0.116402116402116,
+    "humaneval": 0.664634146341463,
+    "aime": 0.0766666666666667,
+    "mmlu_pro": 0.476313164893617,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 128000,
+    "parameters": 8,
+    "activeParams": 8,
+    "release_date": "2024-07-23",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0.1,
+    "price_1m_output": 0.1,
+    "price_1m_blended_7_2_1": 0.10000000000000002,
+    "cost_per_task_total": null,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": null
+  },
+  {
     "slug": "grok-beta",
     "name": "Grok Beta",
     "short_name": "Grok Beta",
@@ -19102,7 +19225,7 @@
     "intelligence_index_v4_1": 7.41891747896191,
     "coding_index": 10.0564398668331,
     "agentic_index": 0.274914089347079,
-    "gdpval_v2": -140.52,
+    "gdpval_v2": -143.81,
     "gdpval_elo": null,
     "omniscience": -65.8833333333333,
     "scicode": 0.211805555555556,
@@ -19184,7 +19307,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": -112.93,
+    "gdpval_v2": -93.2,
     "gdpval_elo": null,
     "omniscience": -69.2166666666667,
     "scicode": 0.230324074074074,
@@ -19264,7 +19387,7 @@
     "creator": "OpenAI",
     "intelligence_index": 7.27331078617213,
     "intelligence_index_v4_1": null,
-    "coding_index": null,
+    "coding_index": 11.1388542100153,
     "agentic_index": null,
     "gdpval_v2": null,
     "gdpval_elo": null,
@@ -19274,8 +19397,8 @@
     "gpqa": 0.512121212121212,
     "critpt": 0,
     "lcr": 0.17,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "terminalbench_v2_1": 0.0374531835205993,
+    "tau_banking": 0.0350515463917526,
     "ifbench": 0.320408163265306,
     "livecodebench": 0.325925925925926,
     "humaneval": 0.876829268292683,
@@ -19471,7 +19594,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": 13.142408,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 222.51,
     "gdpval_elo": null,
     "omniscience": null,
     "scicode": null,
@@ -19791,6 +19914,47 @@
     "output_tokens_per_task": null
   },
   {
+    "slug": "ministral-3-3b",
+    "name": "Ministral 3 3B",
+    "short_name": "Ministral 3 3B",
+    "creator": "Mistral",
+    "intelligence_index": 6.80100025864863,
+    "intelligence_index_v4_1": 6.80100025864863,
+    "coding_index": 4.78395061728395,
+    "agentic_index": 1.5807560137457,
+    "gdpval_v2": 270.55,
+    "gdpval_elo": null,
+    "omniscience": -64.1,
+    "scicode": 0.143518518518519,
+    "hle": 0.0532900834105653,
+    "gpqa": 0.357575757575758,
+    "critpt": 0,
+    "lcr": 0.116666666666667,
+    "terminalbench_v2_1": 0,
+    "tau_banking": 0.0474226804123711,
+    "ifbench": 0.268027210884354,
+    "livecodebench": 0.246560846560847,
+    "humaneval": null,
+    "aime": null,
+    "mmlu_pro": 0.523520611702128,
+    "mmmu_pro": 0.380924855491329,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 256000,
+    "parameters": 3,
+    "activeParams": 3,
+    "release_date": "2025-12-02",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": false,
+    "price_1m_input": 0.1,
+    "price_1m_output": 0.1,
+    "price_1m_blended_7_2_1": 0.10000000000000002,
+    "cost_per_task_total": 0.12619350182313843,
+    "time_per_task": 130.84936384604336,
+    "output_tokens_per_task": 20441.59085947743
+  },
+  {
     "slug": "deepseek-v2-5",
     "name": "DeepSeek-V2.5 (Dec '24)",
     "short_name": "DeepSeek-V2.5 (Dec)",
@@ -19830,47 +19994,6 @@
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
-  },
-  {
-    "slug": "ministral-3-3b",
-    "name": "Ministral 3 3B",
-    "short_name": "Ministral 3 3B",
-    "creator": "Mistral",
-    "intelligence_index": 6.77213427926718,
-    "intelligence_index_v4_1": 6.77213427926718,
-    "coding_index": 4.78395061728395,
-    "agentic_index": 1.51202749140893,
-    "gdpval_v2": 212.8,
-    "gdpval_elo": null,
-    "omniscience": -64.1,
-    "scicode": 0.143518518518519,
-    "hle": 0.0532900834105653,
-    "gpqa": 0.357575757575758,
-    "critpt": 0,
-    "lcr": 0.116666666666667,
-    "terminalbench_v2_1": 0,
-    "tau_banking": 0.045360824742268,
-    "ifbench": 0.268027210884354,
-    "livecodebench": 0.246560846560847,
-    "humaneval": null,
-    "aime": null,
-    "mmlu_pro": 0.523520611702128,
-    "mmmu_pro": 0.380924855491329,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 256000,
-    "parameters": 3,
-    "activeParams": 3,
-    "release_date": "2025-12-02",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": false,
-    "price_1m_input": 0.1,
-    "price_1m_output": 0.1,
-    "price_1m_blended_7_2_1": 0.10000000000000002,
-    "cost_per_task_total": 0.1259763735928979,
-    "time_per_task": 130.56905670119878,
-    "output_tokens_per_task": 20362.852184063493
   },
   {
     "slug": "qwen3-4b-instruct",
@@ -20565,47 +20688,6 @@
     "price_1m_input": 0.15,
     "price_1m_output": 0.15,
     "price_1m_blended_7_2_1": 0.15,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
-    "slug": "llama-3-1-instruct-8b",
-    "name": "Llama 3.1 Instruct 8B",
-    "short_name": "Llama 3.1 8B",
-    "creator": "Meta",
-    "intelligence_index": 6.10201439912549,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -30.3333333333333,
-    "scicode": 0.131944444444444,
-    "hle": 0.0514767932489451,
-    "gpqa": 0.258585858585859,
-    "critpt": 0,
-    "lcr": 0.156666666666667,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.285714285714286,
-    "livecodebench": 0.116402116402116,
-    "humaneval": 0.664634146341463,
-    "aime": 0.0766666666666667,
-    "mmlu_pro": 0.476313164893617,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 128000,
-    "parameters": 8,
-    "activeParams": 8,
-    "release_date": "2024-07-23",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0.1,
-    "price_1m_output": 0.1,
-    "price_1m_blended_7_2_1": 0.10000000000000002,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -21931,7 +22013,7 @@
     "intelligence_index_v4_1": 4.19374442324631,
     "coding_index": 0.694444444444443,
     "agentic_index": 1.44329896907216,
-    "gdpval_v2": -118.9,
+    "gdpval_v2": -108.04,
     "gdpval_elo": null,
     "omniscience": -84.6666666666667,
     "scicode": 0.0208333333333333,
@@ -24512,7 +24594,7 @@
     "creator": "Google",
     "intelligence_index": 1.19081093557055,
     "intelligence_index_v4_1": null,
-    "coding_index": null,
+    "coding_index": 3.19999306422527,
     "agentic_index": null,
     "gdpval_v2": null,
     "gdpval_elo": null,
@@ -24522,8 +24604,8 @@
     "gpqa": 0.295959595959596,
     "critpt": 0,
     "lcr": 0,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "terminalbench_v2_1": 0.00749063670411985,
+    "tau_banking": 0.00206185567010309,
     "ifbench": 0.27891156462585,
     "livecodebench": 0.146031746031746,
     "humaneval": null,
@@ -24875,47 +24957,6 @@
     "output_tokens_per_task": null
   },
   {
-    "slug": "gemma-3n-e2b",
-    "name": "Gemma 3n E2B Instruct",
-    "short_name": "Gemma 3n E2B",
-    "creator": "Google",
-    "intelligence_index": 1,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -79.5833333333333,
-    "scicode": 0.0520833333333333,
-    "hle": 0.0398517145505097,
-    "gpqa": 0.229292929292929,
-    "critpt": 0,
-    "lcr": 0,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.220408163265306,
-    "livecodebench": 0.0952380952380952,
-    "humaneval": null,
-    "aime": 0.09,
-    "mmlu_pro": 0.378158244680851,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 32000,
-    "parameters": 5.98,
-    "activeParams": 2,
-    "release_date": "2025-06-26",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0,
-    "price_1m_output": 0,
-    "price_1m_blended_7_2_1": 0,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
     "slug": "gemma-3-1b",
     "name": "Gemma 3 1B Instruct",
     "short_name": "Gemma 3 1B",
@@ -24946,6 +24987,47 @@
     "parameters": 1,
     "activeParams": 1,
     "release_date": "2025-03-13",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0,
+    "price_1m_output": 0,
+    "price_1m_blended_7_2_1": 0,
+    "cost_per_task_total": null,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": null
+  },
+  {
+    "slug": "gemma-3n-e2b",
+    "name": "Gemma 3n E2B Instruct",
+    "short_name": "Gemma 3n E2B",
+    "creator": "Google",
+    "intelligence_index": 1,
+    "intelligence_index_v4_1": null,
+    "coding_index": null,
+    "agentic_index": null,
+    "gdpval_v2": null,
+    "gdpval_elo": null,
+    "omniscience": -79.5833333333333,
+    "scicode": 0.0520833333333333,
+    "hle": 0.0398517145505097,
+    "gpqa": 0.229292929292929,
+    "critpt": 0,
+    "lcr": 0,
+    "terminalbench_v2_1": null,
+    "tau_banking": null,
+    "ifbench": 0.220408163265306,
+    "livecodebench": 0.0952380952380952,
+    "humaneval": null,
+    "aime": 0.09,
+    "mmlu_pro": 0.378158244680851,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 32000,
+    "parameters": 5.98,
+    "activeParams": 2,
+    "release_date": "2025-06-26",
     "reasoning_model": false,
     "frontier_model": null,
     "deprecated": true,
