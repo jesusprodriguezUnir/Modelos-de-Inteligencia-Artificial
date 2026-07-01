@@ -1,18 +1,18 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-06-30T09:11:50Z
+// No editar a mano. Última actualización: 2026-07-01T09:13:00Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.1 (deducido))
-// Modelos: 519 metadata / 535 con datos.
+// Modelos: 524 metadata / 536 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
 
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-06-30T09:11:50Z",
+  "fetched_at": "2026-07-01T09:13:00Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1 (deducido)",
   "method": "rsc-html",
-  "n_models": 519,
-  "n_default_data": 535,
+  "n_models": 524,
+  "n_default_data": 536,
   "sections_captured": [
     "intelligence_index",
     "sub_evaluations",
@@ -281,7 +281,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 25,
     "price_1m_blended_7_2_1": 3.85,
     "cost_per_task_total": 1.7972215258754352,
-    "time_per_task": 400.3906333869949,
+    "time_per_task": 401.51677991255576,
     "output_tokens_per_task": 40910.24738801627
   },
   {
@@ -407,7 +407,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 1.0283313144512114,
-    "time_per_task": 202.5451500883254,
+    "time_per_task": 206.85421069964642,
     "output_tokens_per_task": 16064.476014126014
   },
   {
@@ -533,8 +533,134 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 25,
     "price_1m_blended_7_2_1": 3.85,
     "cost_per_task_total": 1.9733096609430143,
-    "time_per_task": 361.683774047553,
+    "time_per_task": 367.2706199225138,
     "output_tokens_per_task": 31466.196433904537
+  },
+  {
+    "slug": "claude-sonnet-5",
+    "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+    "short_name": "Claude Sonnet 5 (max)",
+    "creator": "Anthropic",
+    "intelligence_index": 53.3500026989169,
+    "intelligence_index_v4_1": 53.3500026989169,
+    "coding_index": 71.5455507005132,
+    "agentic_index": 46.6941408934708,
+    "gdpval_v2": 1600.47,
+    "gdpval_elo": null,
+    "omniscience": 15.3166666666667,
+    "scicode": 0.53587962962963,
+    "hle": 0.395736793327155,
+    "gpqa": 0.911111111111111,
+    "critpt": 0.168571428571429,
+    "lcr": 0.706666666666667,
+    "terminalbench_v2_1": 0.805243445692884,
+    "tau_banking": 0.282474226804124,
+    "ifbench": null,
+    "livecodebench": null,
+    "humaneval": null,
+    "aime": null,
+    "mmlu_pro": null,
+    "mmmu_pro": 0.772832369942197,
+    "briefcase": {
+      "elo": 1392.7,
+      "lower95ci": 1380.88,
+      "upper95ci": 1404.12,
+      "rubric": {
+        "elo": 1254.56,
+        "lower95ci": 1238.21,
+        "upper95ci": 1271.64
+      },
+      "analyticalQuality": {
+        "elo": 1469.73,
+        "lower95ci": 1449.52,
+        "upper95ci": 1491.33
+      },
+      "presentation": {
+        "elo": 1453.82,
+        "lower95ci": 1430.09,
+        "upper95ci": 1478.71
+      },
+      "rubricPassRate": 0.42323232323232324,
+      "turns": {
+        "total": 16636,
+        "avgPerTask": 182.8131868131868
+      },
+      "totalToolCalls": 17424,
+      "toolCallsByBucket": {
+        "explore": 667,
+        "viewImage": 3550,
+        "read": 7966,
+        "compute": 7479,
+        "write": 6317,
+        "other": 1971
+      },
+      "tokensByFileType": {
+        "xlsx": {
+          "input": 2248918524,
+          "reasoning": 5015614,
+          "answer": 4254126,
+          "total": 2258188264,
+          "numTasks": 38
+        },
+        "pptx": {
+          "input": 930702758,
+          "reasoning": 2226698,
+          "answer": 1768546,
+          "total": 934698002,
+          "numTasks": 22
+        },
+        "pdf": {
+          "input": 625889007,
+          "reasoning": 1269954,
+          "answer": 1017829,
+          "total": 628176790,
+          "numTasks": 12
+        },
+        "docx": {
+          "input": 790724634,
+          "reasoning": 1707148,
+          "answer": 1453431,
+          "total": 793885213,
+          "numTasks": 17
+        },
+        "other": {
+          "input": 39870044,
+          "reasoning": 194071,
+          "answer": 144455,
+          "total": 40208570,
+          "numTasks": 2
+        }
+      },
+      "rubricByFileType": {
+        "xlsx": 0.41818181818181815,
+        "pptx": 0.3877551020408163,
+        "pdf": 0.41379310344827586,
+        "docx": 0.4378698224852071,
+        "other": 0.9
+      },
+      "totalToolMs": 59613666,
+      "turnsPerTaskPercentiles": {
+        "p5": 107,
+        "p25": 141.5,
+        "p50": 183,
+        "p75": 222.5,
+        "p95": 279.5
+      }
+    },
+    "is_open_weights": false,
+    "context_window_tokens": 1000000,
+    "parameters": null,
+    "activeParams": null,
+    "release_date": "2026-06-30",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": false,
+    "price_1m_input": 3,
+    "price_1m_output": 15,
+    "price_1m_blended_7_2_1": 2.31,
+    "cost_per_task_total": 2.2881381720338676,
+    "time_per_task": 511.8759114353167,
+    "output_tokens_per_task": 68735.70748622667
   },
   {
     "slug": "gpt-5-5-high",
@@ -659,7 +785,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.6919686005520624,
-    "time_per_task": 146.15640005615978,
+    "time_per_task": 149.0490871434037,
     "output_tokens_per_task": 10076.460810338755
   },
   {
@@ -700,7 +826,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.8868298551068886,
-    "time_per_task": 212.42066996966213,
+    "time_per_task": 219.71989040556898,
     "output_tokens_per_task": 32653.89086163631
   },
   {
@@ -712,7 +838,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 51.0858347714416,
     "coding_index": 68.7560688028853,
     "agentic_index": 43.0557079037801,
-    "gdpval_v2": 1510.52,
+    "gdpval_v2": 1510.72,
     "gdpval_elo": null,
     "omniscience": 3.96666666666667,
     "scicode": 0.50462962962963,
@@ -826,7 +952,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
     "cost_per_task_total": 0.475782357504648,
-    "time_per_task": 218.8042520455611,
+    "time_per_task": 212.48937631444943,
     "output_tokens_per_task": 42790.89116989162
   },
   {
@@ -952,7 +1078,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.4206822071969107,
-    "time_per_task": 70.71877061150575,
+    "time_per_task": 76.00119087266393,
     "output_tokens_per_task": 5132.423404727121
   },
   {
@@ -1078,7 +1204,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 9,
     "price_1m_blended_7_2_1": 1.3050000000000002,
     "cost_per_task_total": 0.585545242207561,
-    "time_per_task": 149.60945194446435,
+    "time_per_task": 155.30988302671219,
     "output_tokens_per_task": 27733.34325932782
   },
   {
@@ -1204,7 +1330,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.31,
     "cost_per_task_total": 1.1355620170084484,
-    "time_per_task": 781.4382838539848,
+    "time_per_task": 837.1177038642309,
     "output_tokens_per_task": 50346.050380470966
   },
   {
@@ -1330,7 +1456,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 12,
     "price_1m_blended_7_2_1": 1.7399999999999998,
     "cost_per_task_total": 0.29113642988035915,
-    "time_per_task": 90.11409285155241,
+    "time_per_task": 91.87451007804937,
     "output_tokens_per_task": 13171.37183133668
   },
   {
@@ -1456,7 +1582,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 7.5,
     "price_1m_blended_7_2_1": 1.425,
     "cost_per_task_total": 1.061325321467105,
-    "time_per_task": 94.65272700956882,
+    "time_per_task": 96.7669360731575,
     "output_tokens_per_task": 22372.901304564115
   },
   {
@@ -1708,7 +1834,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": 0.12455059919140353,
-    "time_per_task": 268.8036963497558,
+    "time_per_task": 257.6873266965703,
     "output_tokens_per_task": 23963.866202882804
   },
   {
@@ -1834,7 +1960,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.044843733471261124,
-    "time_per_task": 338.64718645728635,
+    "time_per_task": 379.8725552289319,
     "output_tokens_per_task": 36962.620405911206
   },
   {
@@ -2042,7 +2168,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.2180413325292904,
-    "time_per_task": 30.76492487595115,
+    "time_per_task": 32.935649525128525,
     "output_tokens_per_task": 2140.075712378165
   },
   {
@@ -2294,7 +2420,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4,
     "price_1m_blended_7_2_1": 0.702,
     "cost_per_task_total": 0.3075432697244069,
-    "time_per_task": 432.5224138408216,
+    "time_per_task": 555.9656936967692,
     "output_tokens_per_task": 35021.98631760698
   },
   {
@@ -2432,7 +2558,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 42.2394366693508,
     "coding_index": 60.189520044389,
     "agentic_index": 29.1125979381443,
-    "gdpval_v2": 1261.52,
+    "gdpval_v2": 1262.87,
     "gdpval_elo": null,
     "omniscience": 3.6,
     "scicode": 0.502314814814815,
@@ -2546,7 +2672,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.03139528698492376,
-    "time_per_task": 356.6102767961784,
+    "time_per_task": 354.9462692204286,
     "output_tokens_per_task": 20476.386745754964
   },
   {
@@ -2628,7 +2754,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4,
     "price_1m_blended_7_2_1": 0.702,
     "cost_per_task_total": 0.17772103999963917,
-    "time_per_task": 265.2435253519461,
+    "time_per_task": 278.38685867459975,
     "output_tokens_per_task": 17716.081293998985
   },
   {
@@ -2669,7 +2795,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.525,
     "cost_per_task_total": null,
-    "time_per_task": 330.50010080527306,
+    "time_per_task": 333.3045430963004,
     "output_tokens_per_task": 28651.47481407535
   },
   {
@@ -2918,7 +3044,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.28,
     "price_1m_blended_7_2_1": 0.05796000000000001,
     "cost_per_task_total": 0.01971570690606465,
-    "time_per_task": 360.7470189018358,
+    "time_per_task": 361.4636674289615,
     "output_tokens_per_task": 45276.566290890354
   },
   {
@@ -3044,7 +3170,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
     "cost_per_task_total": 0.22741069810359207,
-    "time_per_task": 362.57640844324703,
+    "time_per_task": 389.6687371487567,
     "output_tokens_per_task": 26390.022977829776
   },
   {
@@ -3293,7 +3419,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4.5,
     "price_1m_blended_7_2_1": 0.6525000000000001,
     "cost_per_task_total": 0.47929864085182117,
-    "time_per_task": 429.49376173069896,
+    "time_per_task": 443.4008266803665,
     "output_tokens_per_task": 78121.45616466556
   },
   {
@@ -3334,7 +3460,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.54,
     "cost_per_task_total": 0.21191134533727934,
-    "time_per_task": 198.41472442399552,
+    "time_per_task": 202.886820097954,
     "output_tokens_per_task": 35204.363370547784
   },
   {
@@ -3375,7 +3501,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3,
     "price_1m_blended_7_2_1": 0.43499999999999994,
     "cost_per_task_total": 0.31383547131763045,
-    "time_per_task": 384.95642120159323,
+    "time_per_task": 384.98569644926283,
     "output_tokens_per_task": 21402.99325283143
   },
   {
@@ -3539,7 +3665,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.16,
     "price_1m_blended_7_2_1": 0.252,
     "cost_per_task_total": 0.045502132309623196,
-    "time_per_task": 408.7400925025513,
+    "time_per_task": 398.33207617901445,
     "output_tokens_per_task": 22171.85001333737
   },
   {
@@ -3621,7 +3747,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.25,
     "price_1m_blended_7_2_1": 0.179,
     "cost_per_task_total": 0.14548292517280012,
-    "time_per_task": 459.7097559805978,
+    "time_per_task": 494.0879488899343,
     "output_tokens_per_task": 70686.83297032781
   },
   {
@@ -3662,7 +3788,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": 0.07415351093539828,
-    "time_per_task": 380.58052980093555,
+    "time_per_task": 387.30912650499397,
     "output_tokens_per_task": 18478.30925692363
   },
   {
@@ -3952,7 +4078,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.675,
     "price_1m_blended_7_2_1": 0.5775,
     "cost_per_task_total": 0.24390316682824711,
-    "time_per_task": 126.77859524661062,
+    "time_per_task": 155.31713931532698,
     "output_tokens_per_task": 22937.528491853147
   },
   {
@@ -4119,7 +4245,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.64,
     "cost_per_task_total": 0.15738725933763534,
-    "time_per_task": 112.20840857445194,
+    "time_per_task": 119.35441435554435,
     "output_tokens_per_task": 14365.341912290824
   },
   {
@@ -4286,7 +4412,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.26527574515202695,
-    "time_per_task": 400.3459982636848,
+    "time_per_task": 411.04548884887566,
     "output_tokens_per_task": 28640.65456720617
   },
   {
@@ -4696,7 +4822,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.17704240542967806,
-    "time_per_task": 22.65393250389721,
+    "time_per_task": 23.563401867885137,
     "output_tokens_per_task": 1586.2783433905659
   },
   {
@@ -5068,7 +5194,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.20869999999999997,
     "cost_per_task_total": 0.041373799048384945,
-    "time_per_task": 53.938599744258184,
+    "time_per_task": 54.02696069833017,
     "output_tokens_per_task": 6102.955570581947
   },
   {
@@ -5203,7 +5329,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 1164.85,
     "gdpval_elo": null,
     "omniscience": -34.6,
     "scicode": 0.451388888888889,
@@ -5973,7 +6099,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.2,
     "price_1m_blended_7_2_1": 0.68,
     "cost_per_task_total": 0.24119620563683528,
-    "time_per_task": 105.51006951544763,
+    "time_per_task": 110.12832306347208,
     "output_tokens_per_task": 16966.3356867959
   },
   {
@@ -6096,7 +6222,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.485,
     "price_1m_blended_7_2_1": 0.37170000000000003,
     "cost_per_task_total": 0.17881593213598196,
-    "time_per_task": 158.06461449551793,
+    "time_per_task": 163.6069182639649,
     "output_tokens_per_task": 29719.130810850947
   },
   {
@@ -6506,7 +6632,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.3451837452945369,
-    "time_per_task": 177.51740807332493,
+    "time_per_task": 196.51172923376544,
     "output_tokens_per_task": 27540.07752030103
   },
   {
@@ -6714,7 +6840,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 7.5,
     "price_1m_blended_7_2_1": 1.155,
     "cost_per_task_total": 1.1962136097409157,
-    "time_per_task": 208.66522658856823,
+    "time_per_task": 249.14897494360937,
     "output_tokens_per_task": 25444.977817178908
   },
   {
@@ -6796,7 +6922,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.15,
     "price_1m_blended_7_2_1": 0.183,
     "cost_per_task_total": 0.08809745297033102,
-    "time_per_task": 117.090988135914,
+    "time_per_task": 117.5064086966047,
     "output_tokens_per_task": 52094.863386600766
   },
   {
@@ -6922,7 +7048,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 5,
     "price_1m_blended_7_2_1": 0.77,
     "cost_per_task_total": 0.23747351037813688,
-    "time_per_task": 147.32638766545222,
+    "time_per_task": 186.82571259613846,
     "output_tokens_per_task": 23537.492383311903
   },
   {
@@ -7089,7 +7215,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
-    "time_per_task": 330.46940067366734,
+    "time_per_task": 331.9148241283901,
     "output_tokens_per_task": 11963.018702339323
   },
   {
@@ -7142,7 +7268,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 717.01,
     "gdpval_elo": null,
     "omniscience": -3.98333333333333,
     "scicode": 0.378472222222222,
@@ -8114,7 +8240,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.3375,
     "cost_per_task_total": 0.19782530888396901,
-    "time_per_task": 87.13250411981304,
+    "time_per_task": 89.47214683707689,
     "output_tokens_per_task": 12102.388727019908
   },
   {
@@ -8486,7 +8612,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.75,
     "price_1m_blended_7_2_1": 0.275,
     "cost_per_task_total": 0.2520905115547944,
-    "time_per_task": 112.4383101396252,
+    "time_per_task": 78.04557745496658,
     "output_tokens_per_task": 25580.484907731414
   },
   {
@@ -8538,8 +8664,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index": 25.0519407458266,
     "intelligence_index_v4_1": null,
     "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
+    "agentic_index": 17.6564879725086,
+    "gdpval_v2": 924.54,
     "gdpval_elo": null,
     "omniscience": -41.7333333333333,
     "scicode": 0.384259259259259,
@@ -8548,7 +8674,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "critpt": 0.0114285714285714,
     "lcr": 0.543333333333333,
     "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "tau_banking": 0.105154639175258,
     "ifbench": 0.434013605442177,
     "livecodebench": 0.695238095238095,
     "humaneval": null,
@@ -8694,7 +8820,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.21749999999999997,
     "cost_per_task_total": 0.041571620355421224,
-    "time_per_task": 60.068106034198834,
+    "time_per_task": 60.2830004080209,
     "output_tokens_per_task": 20216.411617630158
   },
   {
@@ -8734,47 +8860,6 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1.2,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 1.6800000000000002,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
-    "slug": "qwen3-5-9b",
-    "name": "Qwen3.5 9B (Reasoning)",
-    "short_name": "Qwen3.5 9B",
-    "creator": "Alibaba",
-    "intelligence_index": 24.9722848423529,
-    "intelligence_index_v4_1": null,
-    "coding_index": 28.6577541961437,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -52.5166666666667,
-    "scicode": 0.275462962962963,
-    "hle": 0.132993512511585,
-    "gpqa": 0.806060606060606,
-    "critpt": 0.00285714285714286,
-    "lcr": 0.59,
-    "terminalbench_v2_1": 0.292134831460674,
-    "tau_banking": 0.0824742268041237,
-    "ifbench": 0.66734693877551,
-    "livecodebench": null,
-    "humaneval": null,
-    "aime": null,
-    "mmlu_pro": null,
-    "mmmu_pro": 0.692485549132948,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 262144,
-    "parameters": 9.65,
-    "activeParams": 9.65,
-    "release_date": "2026-03-02",
-    "reasoning_model": true,
-    "frontier_model": null,
-    "deprecated": false,
-    "price_1m_input": 0.1,
-    "price_1m_output": 0.15,
-    "price_1m_blended_7_2_1": 0.10500000000000001,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -8858,7 +8943,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.64,
     "cost_per_task_total": 0.3888732326397479,
-    "time_per_task": 78.67085610706182,
+    "time_per_task": 89.18482136222187,
     "output_tokens_per_task": 9191.750828999455
   },
   {
@@ -8940,7 +9025,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.12000000000000002,
     "cost_per_task_total": 0.3511773843295714,
-    "time_per_task": 272.86850096085317,
+    "time_per_task": 271.27029184757856,
     "output_tokens_per_task": 27074.69841091612
   },
   {
@@ -9230,7 +9315,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.6,
     "price_1m_blended_7_2_1": 0.195,
     "cost_per_task_total": 0.06067164425252873,
-    "time_per_task": 112.5616491378789,
+    "time_per_task": 119.86106522863552,
     "output_tokens_per_task": 35619.836725311856
   },
   {
@@ -10050,7 +10135,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.4684000000000001,
     "cost_per_task_total": 0.1728370588534525,
-    "time_per_task": 92.89555828319085,
+    "time_per_task": 92.4217690800817,
     "output_tokens_per_task": 11652.860286226254
   },
   {
@@ -10093,6 +10178,47 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
+  },
+  {
+    "slug": "qwen3-5-9b",
+    "name": "Qwen3.5 9B (Reasoning)",
+    "short_name": "Qwen3.5 9B",
+    "creator": "Alibaba",
+    "intelligence_index": 21.4379662021172,
+    "intelligence_index_v4_1": 21.4379662021172,
+    "coding_index": 28.6577541961437,
+    "agentic_index": 7.40947422680412,
+    "gdpval_v2": 639.81,
+    "gdpval_elo": null,
+    "omniscience": -52.5166666666667,
+    "scicode": 0.275462962962963,
+    "hle": 0.132993512511585,
+    "gpqa": 0.806060606060606,
+    "critpt": 0.00285714285714286,
+    "lcr": 0.59,
+    "terminalbench_v2_1": 0.292134831460674,
+    "tau_banking": 0.0824742268041237,
+    "ifbench": 0.66734693877551,
+    "livecodebench": null,
+    "humaneval": null,
+    "aime": null,
+    "mmlu_pro": null,
+    "mmmu_pro": 0.692485549132948,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 262144,
+    "parameters": 9.65,
+    "activeParams": 9.65,
+    "release_date": "2026-03-02",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": false,
+    "price_1m_input": 0.1,
+    "price_1m_output": 0.15,
+    "price_1m_blended_7_2_1": 0.10500000000000001,
+    "cost_per_task_total": 0.15844958949572202,
+    "time_per_task": 539.2838993157694,
+    "output_tokens_per_task": 31814.28251081167
   },
   {
     "slug": "deepseek-v3-1-terminus",
@@ -10513,7 +10639,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 529.66,
     "gdpval_elo": null,
     "omniscience": -49.0666666666667,
     "scicode": 0.381944444444444,
@@ -10952,7 +11078,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
     "cost_per_task_total": 0.21277260985423777,
-    "time_per_task": 40.72892300574803,
+    "time_per_task": 40.78809144331668,
     "output_tokens_per_task": 4915.364012095632
   },
   {
@@ -11198,7 +11324,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 99.79305613795759,
+    "time_per_task": 113.29653924190133,
     "output_tokens_per_task": 5946.382121127844
   },
   {
@@ -11690,7 +11816,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.24542698374402477,
-    "time_per_task": 299.20235553568926,
+    "time_per_task": 303.4548026002404,
     "output_tokens_per_task": 46190.80343551248
   },
   {
@@ -11854,7 +11980,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 5,
     "price_1m_blended_7_2_1": 2.3,
     "cost_per_task_total": 0.7471451276458294,
-    "time_per_task": 200.24642727680927,
+    "time_per_task": 208.54121360803416,
     "output_tokens_per_task": 9060.386460390037
   },
   {
@@ -12141,7 +12267,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 112.07989117267788,
+    "time_per_task": 130.92377808770047,
     "output_tokens_per_task": 6049.720451236727
   },
   {
@@ -12923,7 +13049,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.6,
     "cost_per_task_total": 0.05988932957210771,
-    "time_per_task": 59.87386404451077,
+    "time_per_task": 60.205016772266006,
     "output_tokens_per_task": 3031.0787016478853
   },
   {
@@ -13418,7 +13544,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.06500000000000002,
     "cost_per_task_total": 0.017842778338181632,
-    "time_per_task": 100.42435701487305,
+    "time_per_task": 100.02264655130841,
     "output_tokens_per_task": 22353.429574601836
   },
   {
@@ -13459,7 +13585,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.235,
     "price_1m_blended_7_2_1": 0.11800000000000002,
     "cost_per_task_total": 0.04267239759653488,
-    "time_per_task": 28.55410491395398,
+    "time_per_task": 28.953212384431232,
     "output_tokens_per_task": 4757.239734679951
   },
   {
@@ -13500,7 +13626,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.56,
     "cost_per_task_total": 0.1448042873568494,
-    "time_per_task": 54.188510086612276,
+    "time_per_task": 56.999597991350434,
     "output_tokens_per_task": 5046.538227948665
   },
   {
@@ -13582,7 +13708,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
     "cost_per_task_total": 0.24556414020453576,
-    "time_per_task": 26.755528881314646,
+    "time_per_task": 30.947312633888192,
     "output_tokens_per_task": 3631.1773890567592
   },
   {
@@ -13676,7 +13802,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 14.2657978659374,
     "coding_index": 16.2773963101678,
     "agentic_index": 1.30584192439863,
-    "gdpval_v2": -13.62,
+    "gdpval_v2": -19.07,
     "gdpval_elo": null,
     "omniscience": -41.7666666666667,
     "scicode": 0.331018518518519,
@@ -13790,7 +13916,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.85,
     "price_1m_blended_7_2_1": 0.344,
     "cost_per_task_total": 0.03169297992682114,
-    "time_per_task": 18.231175017265855,
+    "time_per_task": 18.484565488556964,
     "output_tokens_per_task": 2088.862457165753
   },
   {
@@ -13913,8 +14039,49 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.22,
     "price_1m_blended_7_2_1": 0.0715,
     "cost_per_task_total": 0.020143555962855803,
-    "time_per_task": 308.5113817388019,
+    "time_per_task": 284.3014256286442,
     "output_tokens_per_task": 26776.696868800773
+  },
+  {
+    "slug": "deepseek-v3",
+    "name": "DeepSeek V3 (Dec '24)",
+    "short_name": "DeepSeek V3 (Dec)",
+    "creator": "DeepSeek",
+    "intelligence_index": 14.160584979307,
+    "intelligence_index_v4_1": 14.160584979307,
+    "coding_index": 23.0415106117354,
+    "agentic_index": 1.5807560137457,
+    "gdpval_v2": 216.67,
+    "gdpval_elo": null,
+    "omniscience": -41.35,
+    "scicode": 0.354166666666667,
+    "hle": 0.0361400894187779,
+    "gpqa": 0.556565656565657,
+    "critpt": 0,
+    "lcr": 0.29,
+    "terminalbench_v2_1": 0.168539325842697,
+    "tau_banking": 0.0474226804123711,
+    "ifbench": 0.347619047619048,
+    "livecodebench": 0.358730158730159,
+    "humaneval": 0.90609756097561,
+    "aime": 0.253333333333333,
+    "mmlu_pro": 0.752244015957447,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 128000,
+    "parameters": 671,
+    "activeParams": 37,
+    "release_date": "2024-12-26",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0.4,
+    "price_1m_output": 0.89,
+    "price_1m_blended_7_2_1": 0.449,
+    "cost_per_task_total": 0.025364701163106757,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": 2254.3844613568363
   },
   {
     "slug": "gemini-2-5-flash",
@@ -15761,7 +15928,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.6,
     "cost_per_task_total": 0.2382247627174546,
-    "time_per_task": 112.75549936470837,
+    "time_per_task": 112.33343956623132,
     "output_tokens_per_task": 9704.507158112809
   },
   {
@@ -15884,7 +16051,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.20000000000000004,
     "cost_per_task_total": 0.14918625422811388,
-    "time_per_task": 139.97833035671752,
+    "time_per_task": 149.28062439609278,
     "output_tokens_per_task": 11745.911673686403
   },
   {
@@ -16175,6 +16342,47 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": null
   },
   {
+    "slug": "mistral-small-3-2",
+    "name": "Mistral Small 3.2",
+    "short_name": "Mistral Small 3.2",
+    "creator": "Mistral",
+    "intelligence_index": 10.557101536401,
+    "intelligence_index_v4_1": 10.557101536401,
+    "coding_index": 12.5416146483562,
+    "agentic_index": 1.99312714776632,
+    "gdpval_v2": 60.99,
+    "gdpval_elo": null,
+    "omniscience": -50.4166666666667,
+    "scicode": 0.263888888888889,
+    "hle": 0.0430954587581094,
+    "gpqa": 0.505050505050505,
+    "critpt": 0,
+    "lcr": 0.173333333333333,
+    "terminalbench_v2_1": 0.0561797752808989,
+    "tau_banking": 0.0597938144329897,
+    "ifbench": 0.33469387755102,
+    "livecodebench": 0.275132275132275,
+    "humaneval": 0.852439024390244,
+    "aime": 0.323333333333333,
+    "mmlu_pro": 0.680518617021277,
+    "mmmu_pro": 0.479768786127168,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 128000,
+    "parameters": 24,
+    "activeParams": 24,
+    "release_date": "2025-06-20",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0.0875,
+    "price_1m_output": 0.25,
+    "price_1m_blended_7_2_1": 0.10374999999999998,
+    "cost_per_task_total": 0.10821228710431724,
+    "time_per_task": 54.95275051348884,
+    "output_tokens_per_task": 8067.96320030154
+  },
+  {
     "slug": "nova-2-0-omni",
     "name": "Nova 2.0 Omni (Non-reasoning)",
     "short_name": "Nova 2.0 Omni",
@@ -16216,42 +16424,42 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": null
   },
   {
-    "slug": "deepseek-v3",
-    "name": "DeepSeek V3 (Dec '24)",
-    "short_name": "DeepSeek V3 (Dec)",
-    "creator": "DeepSeek",
-    "intelligence_index": 10.3943107867161,
-    "intelligence_index_v4_1": null,
-    "coding_index": 23.0415106117354,
-    "agentic_index": null,
-    "gdpval_v2": 216.53,
+    "slug": "qwen3-14b-instruct-reasoning",
+    "name": "Qwen3 14B (Reasoning)",
+    "short_name": "Qwen3 14B",
+    "creator": "Alibaba",
+    "intelligence_index": 10.3754010792707,
+    "intelligence_index_v4_1": 10.3754010792707,
+    "coding_index": 13.7783499791927,
+    "agentic_index": 1.78694158075601,
+    "gdpval_v2": 217.4,
     "gdpval_elo": null,
-    "omniscience": -41.35,
-    "scicode": 0.354166666666667,
-    "hle": 0.0361400894187779,
-    "gpqa": 0.556565656565657,
+    "omniscience": -49.2333333333333,
+    "scicode": 0.315972222222222,
+    "hle": 0.0430379746835443,
+    "gpqa": 0.604040404040404,
     "critpt": 0,
-    "lcr": 0.29,
-    "terminalbench_v2_1": 0.168539325842697,
-    "tau_banking": null,
-    "ifbench": 0.347619047619048,
-    "livecodebench": 0.358730158730159,
-    "humaneval": 0.90609756097561,
-    "aime": 0.253333333333333,
-    "mmlu_pro": 0.752244015957447,
+    "lcr": 0,
+    "terminalbench_v2_1": 0.048689138576779,
+    "tau_banking": 0.0536082474226804,
+    "ifbench": 0.405442176870748,
+    "livecodebench": 0.522751322751323,
+    "humaneval": 0.963414634146341,
+    "aime": 0.763333333333333,
+    "mmlu_pro": 0.773769946808511,
     "mmmu_pro": null,
     "briefcase": "$undefined",
     "is_open_weights": true,
-    "context_window_tokens": 128000,
-    "parameters": 671,
-    "activeParams": 37,
-    "release_date": "2024-12-26",
-    "reasoning_model": false,
+    "context_window_tokens": 32768,
+    "parameters": 14.8,
+    "activeParams": 14.8,
+    "release_date": "2025-04-28",
+    "reasoning_model": true,
     "frontier_model": null,
     "deprecated": true,
-    "price_1m_input": 0.4,
-    "price_1m_output": 0.89,
-    "price_1m_blended_7_2_1": 0.449,
+    "price_1m_input": 0.235,
+    "price_1m_output": 2.22,
+    "price_1m_blended_7_2_1": 0.4335000000000001,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -16380,47 +16588,6 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": null
   },
   {
-    "slug": "qwen3-14b-instruct-reasoning",
-    "name": "Qwen3 14B (Reasoning)",
-    "short_name": "Qwen3 14B",
-    "creator": "Alibaba",
-    "intelligence_index": 10.1460007221028,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": 1.78694158075601,
-    "gdpval_v2": 214.9,
-    "gdpval_elo": null,
-    "omniscience": -49.2333333333333,
-    "scicode": 0.315972222222222,
-    "hle": 0.0430379746835443,
-    "gpqa": 0.604040404040404,
-    "critpt": 0,
-    "lcr": 0,
-    "terminalbench_v2_1": null,
-    "tau_banking": 0.0536082474226804,
-    "ifbench": 0.405442176870748,
-    "livecodebench": 0.522751322751323,
-    "humaneval": 0.963414634146341,
-    "aime": 0.763333333333333,
-    "mmlu_pro": 0.773769946808511,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 32768,
-    "parameters": 14.8,
-    "activeParams": 14.8,
-    "release_date": "2025-04-28",
-    "reasoning_model": true,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0.235,
-    "price_1m_output": 2.22,
-    "price_1m_blended_7_2_1": 0.4335000000000001,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
     "slug": "nanbeige4-1-3b",
     "name": "Nanbeige4.1-3B",
     "short_name": "Nanbeige4.1-3B",
@@ -16499,7 +16666,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.66,
     "price_1m_blended_7_2_1": 0.21900000000000003,
     "cost_per_task_total": 0.008506397458326823,
-    "time_per_task": 11.718040262721205,
+    "time_per_task": 12.253211259295284,
     "output_tokens_per_task": 1249.1916412587836
   },
   {
@@ -16954,6 +17121,47 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": null
   },
   {
+    "slug": "gpt-4-1-nano",
+    "name": "GPT-4.1 nano",
+    "short_name": "GPT-4.1 nano",
+    "creator": "OpenAI",
+    "intelligence_index": 9.57520479903005,
+    "intelligence_index_v4_1": 9.57520479903005,
+    "coding_index": 11.1388542100153,
+    "agentic_index": 1.16838487972509,
+    "gdpval_v2": 36.57,
+    "gdpval_elo": null,
+    "omniscience": -56.4166666666667,
+    "scicode": 0.259259259259259,
+    "hle": 0.0392405063291139,
+    "gpqa": 0.512121212121212,
+    "critpt": 0,
+    "lcr": 0.17,
+    "terminalbench_v2_1": 0.0374531835205993,
+    "tau_banking": 0.0350515463917526,
+    "ifbench": 0.320408163265306,
+    "livecodebench": 0.325925925925926,
+    "humaneval": 0.876829268292683,
+    "aime": 0.236666666666667,
+    "mmlu_pro": 0.656831781914894,
+    "mmmu_pro": 0.401156069364162,
+    "briefcase": "$undefined",
+    "is_open_weights": false,
+    "context_window_tokens": 1000000,
+    "parameters": null,
+    "activeParams": null,
+    "release_date": "2025-04-14",
+    "reasoning_model": false,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0.1,
+    "price_1m_output": 0.4,
+    "price_1m_blended_7_2_1": 0.07925,
+    "cost_per_task_total": 0.03308199563121945,
+    "time_per_task": 40.97678542348197,
+    "output_tokens_per_task": 6327.039789418577
+  },
+  {
     "slug": "qwen2-5-72b-instruct",
     "name": "Qwen2.5 Instruct 72B",
     "short_name": "Qwen2.5 72B",
@@ -17364,47 +17572,6 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": null
   },
   {
-    "slug": "mistral-small-3-2",
-    "name": "Mistral Small 3.2",
-    "short_name": "Mistral Small 3.2",
-    "creator": "Mistral",
-    "intelligence_index": 9.12256273449119,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -50.4166666666667,
-    "scicode": 0.263888888888889,
-    "hle": 0.0430954587581094,
-    "gpqa": 0.505050505050505,
-    "critpt": 0,
-    "lcr": 0.173333333333333,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.33469387755102,
-    "livecodebench": 0.275132275132275,
-    "humaneval": 0.852439024390244,
-    "aime": 0.323333333333333,
-    "mmlu_pro": 0.680518617021277,
-    "mmmu_pro": 0.479768786127168,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 128000,
-    "parameters": 24,
-    "activeParams": 24,
-    "release_date": "2025-06-20",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0.0875,
-    "price_1m_output": 0.25,
-    "price_1m_blended_7_2_1": 0.10374999999999998,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
     "slug": "llama-3-1-nemotron-ultra-253b-v1-reasoning",
     "name": "Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)",
     "short_name": "Llama Nemotron Ultra",
@@ -17688,7 +17855,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.15,
     "price_1m_blended_7_2_1": 0.15,
     "cost_per_task_total": 0.18482442028714433,
-    "time_per_task": 215.71731625992655,
+    "time_per_task": 202.46830152755135,
     "output_tokens_per_task": 15686.163156903367
   },
   {
@@ -18553,6 +18720,47 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": null
   },
   {
+    "slug": "qwen3-8b-instruct-reasoning",
+    "name": "Qwen3 8B (Reasoning)",
+    "short_name": "Qwen3 8B",
+    "creator": "Alibaba",
+    "intelligence_index": 8.28648432223442,
+    "intelligence_index_v4_1": 8.28648432223442,
+    "coding_index": 9.02127548897212,
+    "agentic_index": 1.51202749140893,
+    "gdpval_v2": 193.59,
+    "gdpval_elo": null,
+    "omniscience": -65.0666666666667,
+    "scicode": 0.225694444444444,
+    "hle": 0.0417287630402385,
+    "gpqa": 0.588888888888889,
+    "critpt": 0,
+    "lcr": 0,
+    "terminalbench_v2_1": 0.0224719101123595,
+    "tau_banking": 0.045360824742268,
+    "ifbench": 0.33469387755102,
+    "livecodebench": 0.406349206349206,
+    "humaneval": null,
+    "aime": 0.746666666666667,
+    "mmlu_pro": 0.743018617021277,
+    "mmmu_pro": null,
+    "briefcase": "$undefined",
+    "is_open_weights": true,
+    "context_window_tokens": 131072,
+    "parameters": 8.19,
+    "activeParams": 8.19,
+    "release_date": "2025-04-28",
+    "reasoning_model": true,
+    "frontier_model": null,
+    "deprecated": true,
+    "price_1m_input": 0.11,
+    "price_1m_output": 1.1500000000000001,
+    "price_1m_blended_7_2_1": 0.21400000000000002,
+    "cost_per_task_total": null,
+    "time_per_task": "$undefined",
+    "output_tokens_per_task": null
+  },
+  {
     "slug": "tulu3-405b",
     "name": "Llama 3.1 Tulu3 405B",
     "short_name": "Tulu3 405B",
@@ -19291,47 +19499,6 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "output_tokens_per_task": 5792.319222449936
   },
   {
-    "slug": "qwen3-8b-instruct-reasoning",
-    "name": "Qwen3 8B (Reasoning)",
-    "short_name": "Qwen3 8B",
-    "creator": "Alibaba",
-    "intelligence_index": 7.39595307449996,
-    "intelligence_index_v4_1": null,
-    "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -65.0666666666667,
-    "scicode": 0.225694444444444,
-    "hle": 0.0417287630402385,
-    "gpqa": 0.588888888888889,
-    "critpt": 0,
-    "lcr": 0,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
-    "ifbench": 0.33469387755102,
-    "livecodebench": 0.406349206349206,
-    "humaneval": null,
-    "aime": 0.746666666666667,
-    "mmlu_pro": 0.743018617021277,
-    "mmmu_pro": null,
-    "briefcase": "$undefined",
-    "is_open_weights": true,
-    "context_window_tokens": 131072,
-    "parameters": 8.19,
-    "activeParams": 8.19,
-    "release_date": "2025-04-28",
-    "reasoning_model": true,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0.11,
-    "price_1m_output": 1.1500000000000001,
-    "price_1m_blended_7_2_1": 0.21400000000000002,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
     "slug": "nvidia-nemotron-3-nano-30b-a3b",
     "name": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
     "short_name": "NVIDIA Nemotron 3 Nano",
@@ -19409,47 +19576,6 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.05,
     "price_1m_output": 0.195,
     "price_1m_blended_7_2_1": 0.0645,
-    "cost_per_task_total": null,
-    "time_per_task": "$undefined",
-    "output_tokens_per_task": null
-  },
-  {
-    "slug": "gpt-4-1-nano",
-    "name": "GPT-4.1 nano",
-    "short_name": "GPT-4.1 nano",
-    "creator": "OpenAI",
-    "intelligence_index": 7.27331078617213,
-    "intelligence_index_v4_1": null,
-    "coding_index": 11.1388542100153,
-    "agentic_index": null,
-    "gdpval_v2": null,
-    "gdpval_elo": null,
-    "omniscience": -56.4166666666667,
-    "scicode": 0.259259259259259,
-    "hle": 0.0392405063291139,
-    "gpqa": 0.512121212121212,
-    "critpt": 0,
-    "lcr": 0.17,
-    "terminalbench_v2_1": 0.0374531835205993,
-    "tau_banking": 0.0350515463917526,
-    "ifbench": 0.320408163265306,
-    "livecodebench": 0.325925925925926,
-    "humaneval": 0.876829268292683,
-    "aime": 0.236666666666667,
-    "mmlu_pro": 0.656831781914894,
-    "mmmu_pro": 0.401156069364162,
-    "briefcase": "$undefined",
-    "is_open_weights": false,
-    "context_window_tokens": 1000000,
-    "parameters": null,
-    "activeParams": null,
-    "release_date": "2025-04-14",
-    "reasoning_model": false,
-    "frontier_model": null,
-    "deprecated": true,
-    "price_1m_input": 0.1,
-    "price_1m_output": 0.4,
-    "price_1m_blended_7_2_1": 0.07925,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": null
@@ -19831,8 +19957,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index": 6.91362949738962,
     "intelligence_index_v4_1": null,
     "coding_index": 11.3842072409488,
-    "agentic_index": null,
-    "gdpval_v2": null,
+    "agentic_index": 0.962199312714777,
+    "gdpval_v2": 215.28,
     "gdpval_elo": null,
     "omniscience": null,
     "scicode": 0.229166666666667,
@@ -22864,7 +22990,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "creator": "Google",
     "intelligence_index": 3.38815135498797,
     "intelligence_index_v4_1": null,
-    "coding_index": null,
+    "coding_index": 5.78703703703704,
     "agentic_index": null,
     "gdpval_v2": null,
     "gdpval_elo": null,
@@ -22874,8 +23000,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "gpqa": 0.349494949494949,
     "critpt": 0,
     "lcr": 0.0666666666666667,
-    "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "terminalbench_v2_1": 0,
+    "tau_banking": 0.00824742268041237,
     "ifbench": 0.36734693877551,
     "livecodebench": 0.136507936507936,
     "humaneval": 0.831707317073171,
