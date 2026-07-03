@@ -919,6 +919,30 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 46.9). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "qwen3-6-27b-non-reasoning",
+    "iiSlug": "qwen3-6-27b-non-reasoning",
+    "company": "Alibaba",
+    "origin": "China",
+    "displayName": "Qwen3.6 27B",
+    "kind": "model",
+    "category": [
+      "coding"
+    ],
+    "context": 262144,
+    "pricing": {
+      "inputPer1M": 0.6,
+      "outputPer1M": 3.6,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-04-22",
+    "parameters": 27.8,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 46.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "qwen3-5-122b-a10b",
     "iiSlug": "qwen3-5-122b-a10b",
     "company": "Alibaba",
@@ -1290,35 +1314,6 @@ export const autoModels: Model[] = [
       "liveCodeBench": 0.8
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 33.3). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "devstral-2",
-    "iiSlug": "devstral-2",
-    "company": "Mistral",
-    "origin": "EU",
-    "displayName": "Devstral 2",
-    "kind": "model",
-    "category": [
-      "coding",
-      "agentic",
-      "budget"
-    ],
-    "context": 256000,
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2025-12-09",
-    "parameters": 125.0,
-    "benchmarks": {
-      "liveCodeBench": 0.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 31.3). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -1705,8 +1700,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gpt-5-4-low": {
     "pricing": {
-      "inputPer1M": 2.625,
-      "outputPer1M": 15.75,
+      "inputPer1M": 2.5,
+      "outputPer1M": 15.0,
       "approx": true
     },
     "context": 1050000,
@@ -1742,7 +1737,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "kimi-k2-5": {
     "pricing": {
-      "inputPer1M": 0.58,
+      "inputPer1M": 0.6,
       "outputPer1M": 3.0,
       "approx": true
     },
@@ -2133,8 +2128,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "deepseek-v3-2-reasoning": {
     "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 0.45,
+      "inputPer1M": 0.28,
+      "outputPer1M": 0.42,
       "approx": true
     },
     "context": 128000,
@@ -2178,18 +2173,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.9
     },
     "releaseDate": "2025-11-18"
-  },
-  "gpt-5-mini": {
-    "pricing": {
-      "inputPer1M": 0.25,
-      "outputPer1M": 2.0,
-      "approx": true
-    },
-    "context": 400000,
-    "benchmarks": {
-      "liveCodeBench": 0.8
-    },
-    "releaseDate": "2025-08-07"
   },
   "kimi-k2-thinking": {
     "pricing": {
@@ -2464,22 +2447,12 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-5-27b-non-reasoning": {
     "pricing": {
       "inputPer1M": 0.3,
-      "outputPer1M": 2.6,
+      "outputPer1M": 2.4,
       "approx": true
     },
     "context": 262144,
     "parameters": 27.8,
     "releaseDate": "2026-02-24"
-  },
-  "command-a-plus": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 192000,
-    "parameters": 218.0,
-    "releaseDate": "2026-05-20"
   },
   "qwen3-6-27b-non-reasoning": {
     "pricing": {
@@ -2598,8 +2571,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gpt-5-4-non-reasoning": {
     "pricing": {
-      "inputPer1M": 2.625,
-      "outputPer1M": 15.75,
+      "inputPer1M": 2.5,
+      "outputPer1M": 15.0,
       "approx": true
     },
     "context": 1050000,
@@ -2794,8 +2767,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "deepseek-v3-2-reasoning-0925": {
     "pricing": {
-      "inputPer1M": 0.275,
-      "outputPer1M": 0.415,
+      "inputPer1M": 0.28,
+      "outputPer1M": 0.42,
       "approx": true
     },
     "context": 128000,
@@ -2823,6 +2796,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 128000,
     "releaseDate": "2026-02-20"
+  },
+  "gpt-5-mini": {
+    "pricing": {
+      "inputPer1M": 0.25,
+      "outputPer1M": 2.0,
+      "approx": true
+    },
+    "context": 400000,
+    "benchmarks": {
+      "liveCodeBench": 0.8
+    },
+    "releaseDate": "2025-08-07"
   },
   "glm-4-6-reasoning": {
     "pricing": {
@@ -2905,8 +2890,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "deepseek-v3-2": {
     "pricing": {
-      "inputPer1M": 0.5,
-      "outputPer1M": 1.6,
+      "inputPer1M": 0.28,
+      "outputPer1M": 0.42,
       "approx": true
     },
     "context": 128000,
@@ -2938,8 +2923,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-max": {
     "pricing": {
-      "inputPer1M": 1.655,
-      "outputPer1M": 7.225,
+      "inputPer1M": 1.2,
+      "outputPer1M": 6.0,
       "approx": true
     },
     "context": 262144,
@@ -3080,6 +3065,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 31.2,
     "releaseDate": "2026-01-19"
   },
+  "command-a-plus": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 192000,
+    "parameters": 218.0,
+    "releaseDate": "2026-05-20"
+  },
   "grok-3-mini-reasoning": {
     "pricing": {
       "inputPer1M": 0.3,
@@ -3114,20 +3109,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "humanEval": 1.0
     },
     "releaseDate": "2025-05-06"
-  },
-  "qwen3-235b-a22b-instruct-2507-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.4,
-      "outputPer1M": 2.15,
-      "approx": true
-    },
-    "context": 256000,
-    "benchmarks": {
-      "liveCodeBench": 0.8,
-      "humanEval": 1.0
-    },
-    "parameters": 235.0,
-    "releaseDate": "2025-07-25"
   },
   "deepseek-v3-2-speciale": {
     "pricing": {
@@ -3232,8 +3213,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "deepseek-v3-2-0925": {
     "pricing": {
-      "inputPer1M": 0.275,
-      "outputPer1M": 0.415,
+      "inputPer1M": 0.28,
+      "outputPer1M": 0.42,
       "approx": true
     },
     "context": 128000,
@@ -3301,16 +3282,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-11-26"
   },
-  "mistral-small-4": {
-    "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 0.6,
-      "approx": true
-    },
-    "context": 256000,
-    "parameters": 119.0,
-    "releaseDate": "2026-03-16"
-  },
   "deepseek-v3-1-reasoning": {
     "pricing": {
       "inputPer1M": 0.59,
@@ -3326,8 +3297,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-vl-235b-a22b-reasoning": {
     "pricing": {
-      "inputPer1M": 0.84,
-      "outputPer1M": 6.175,
+      "inputPer1M": 0.7,
+      "outputPer1M": 8.4,
       "approx": true
     },
     "context": 262144,
@@ -3441,18 +3412,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-08-07"
   },
-  "qwen3-next-80b-a3b-reasoning": {
+  "qwen3-235b-a22b-instruct-2507-reasoning": {
     "pricing": {
-      "inputPer1M": 0.5,
-      "outputPer1M": 6.0,
+      "inputPer1M": 0.7,
+      "outputPer1M": 8.4,
       "approx": true
     },
-    "context": 262144,
+    "context": 256000,
     "benchmarks": {
-      "liveCodeBench": 0.8
+      "liveCodeBench": 0.8,
+      "humanEval": 1.0
     },
-    "parameters": 80.0,
-    "releaseDate": "2025-09-11"
+    "parameters": 235.0,
+    "releaseDate": "2025-07-25"
   },
   "nova-2-0-pro-reasoning-low": {
     "pricing": {
@@ -3465,6 +3437,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.6
     },
     "releaseDate": "2025-11-27"
+  },
+  "mistral-small-4": {
+    "pricing": {
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.6,
+      "approx": true
+    },
+    "context": 256000,
+    "parameters": 119.0,
+    "releaseDate": "2026-03-16"
   },
   "glm-4.5": {
     "pricing": {
@@ -3672,8 +3654,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-235b-a22b-instruct-2507": {
     "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.825,
+      "inputPer1M": 0.7,
+      "outputPer1M": 2.8,
       "approx": true
     },
     "context": 256000,
@@ -3686,8 +3668,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-coder-480b-a35b-instruct": {
     "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 1.8,
+      "inputPer1M": 1.5,
+      "outputPer1M": 7.5,
       "approx": true
     },
     "context": 262144,
@@ -3896,6 +3878,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 256000,
     "parameters": 236.0,
     "releaseDate": "2025-12-31"
+  },
+  "qwen3-next-80b-a3b-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.5,
+      "outputPer1M": 6.0,
+      "approx": true
+    },
+    "context": 262144,
+    "benchmarks": {
+      "liveCodeBench": 0.8
+    },
+    "parameters": 80.0,
+    "releaseDate": "2025-09-11"
   },
   "gpt-5-4-mini-non-reasoning": {
     "pricing": {
@@ -4123,8 +4118,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mistral-small-3-1": {
     "pricing": {
-      "inputPer1M": 0.105,
-      "outputPer1M": 0.235,
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
       "approx": true
     },
     "context": 128000,
@@ -4149,8 +4144,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-30b-a3b-2507-reasoning": {
     "pricing": {
-      "inputPer1M": 0.28,
-      "outputPer1M": 1.85,
+      "inputPer1M": 0.2,
+      "outputPer1M": 2.4,
       "approx": true
     },
     "context": 262144,
@@ -4200,8 +4195,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-vl-235b-a22b-instruct": {
     "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 1.9,
+      "inputPer1M": 0.7,
+      "outputPer1M": 2.8,
       "approx": true
     },
     "context": 262144,
@@ -4338,8 +4333,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-coder-30b-a3b-instruct": {
     "pricing": {
-      "inputPer1M": 0.19,
-      "outputPer1M": 0.8391,
+      "inputPer1M": 0.45,
+      "outputPer1M": 2.25,
       "approx": true
     },
     "context": 262144,
@@ -4399,7 +4394,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-vl-30b-a3b-reasoning": {
     "pricing": {
       "inputPer1M": 0.2,
-      "outputPer1M": 0.75,
+      "outputPer1M": 2.4,
       "approx": true
     },
     "context": 256000,
@@ -4761,8 +4756,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-32b-instruct-reasoning": {
     "pricing": {
-      "inputPer1M": 0.195,
-      "outputPer1M": 0.52,
+      "inputPer1M": 0.7,
+      "outputPer1M": 8.4,
       "approx": true
     },
     "context": 32768,
@@ -4866,8 +4861,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-235b-a22b-instruct": {
     "pricing": {
-      "inputPer1M": 0.45,
-      "outputPer1M": 1.8,
+      "inputPer1M": 0.7,
+      "outputPer1M": 2.8,
       "approx": true
     },
     "context": 32768,
@@ -4933,8 +4928,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mistral-small-3-2": {
     "pricing": {
-      "inputPer1M": 0.0875,
-      "outputPer1M": 0.25,
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
       "approx": true
     },
     "context": 128000,
@@ -4959,8 +4954,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-14b-instruct-reasoning": {
     "pricing": {
-      "inputPer1M": 0.235,
-      "outputPer1M": 2.22,
+      "inputPer1M": 0.35,
+      "outputPer1M": 4.2,
       "approx": true
     },
     "context": 32768,
@@ -4987,8 +4982,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-5-2b": {
     "pricing": {
-      "inputPer1M": 0.02,
-      "outputPer1M": 0.1,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 262144,
@@ -5035,7 +5030,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-vl-30b-a3b-instruct": {
     "pricing": {
       "inputPer1M": 0.2,
-      "outputPer1M": 0.6,
+      "outputPer1M": 0.8,
       "approx": true
     },
     "context": 256000,
@@ -5193,8 +5188,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen2-5-72b-instruct": {
     "pricing": {
-      "inputPer1M": 0.36,
-      "outputPer1M": 0.4,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 131072,
@@ -5230,8 +5225,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-30b-a3b-instruct-reasoning": {
     "pricing": {
-      "inputPer1M": 0.09,
-      "outputPer1M": 0.45,
+      "inputPer1M": 0.2,
+      "outputPer1M": 2.4,
       "approx": true
     },
     "context": 32768,
@@ -5334,8 +5329,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-30b-a3b-2507": {
     "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 0.4,
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.8,
       "approx": true
     },
     "context": 262144,
@@ -5507,8 +5502,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-32b-instruct": {
     "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 0.59,
+      "inputPer1M": 0.7,
+      "outputPer1M": 2.8,
       "approx": true
     },
     "context": 32768,
@@ -5660,6 +5655,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "context": 32768,
+    "parameters": 8.3,
     "releaseDate": "2026-05-28"
   },
   "claude-35-sonnet-june-24": {
@@ -5676,8 +5672,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-8b-instruct-reasoning": {
     "pricing": {
-      "inputPer1M": 0.11,
-      "outputPer1M": 1.15,
+      "inputPer1M": 0.18,
+      "outputPer1M": 2.1,
       "approx": true
     },
     "context": 131072,
@@ -5874,8 +5870,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-3-1-instruct-8b": {
     "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.1,
+      "inputPer1M": 0.075,
+      "outputPer1M": 0.095,
       "approx": true
     },
     "context": 128000,
@@ -5915,8 +5911,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gemma-3-27b": {
     "pricing": {
-      "inputPer1M": 0.1095,
-      "outputPer1M": 0.25,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 128000,
@@ -5996,8 +5992,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-14b-instruct": {
     "pricing": {
-      "inputPer1M": 0.235,
-      "outputPer1M": 0.82,
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.4,
       "approx": true
     },
     "context": 32768,
@@ -6031,8 +6027,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mistral-small-3": {
     "pricing": {
-      "inputPer1M": 0.075,
-      "outputPer1M": 0.19,
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
       "approx": true
     },
     "context": 32000,
@@ -6097,8 +6093,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-30b-a3b-instruct": {
     "pricing": {
-      "inputPer1M": 0.08,
-      "outputPer1M": 0.29,
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.8,
       "approx": true
     },
     "context": 32768,
@@ -6479,7 +6475,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-8b-instruct": {
     "pricing": {
       "inputPer1M": 0.18,
-      "outputPer1M": 0.2,
+      "outputPer1M": 0.7,
       "approx": true
     },
     "context": 32768,
@@ -6531,8 +6527,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-5-0-8b": {
     "pricing": {
-      "inputPer1M": 0.01,
-      "outputPer1M": 0.05,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 262144,
@@ -6696,8 +6692,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-5-0-8b-non-reasoning": {
     "pricing": {
-      "inputPer1M": 0.01,
-      "outputPer1M": 0.05,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 262144,
@@ -7012,8 +7008,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gemma-3-12b": {
     "pricing": {
-      "inputPer1M": 0.09,
-      "outputPer1M": 0.29,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 128000,
@@ -7448,8 +7444,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mistral-7b-instruct": {
     "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.225,
+      "inputPer1M": 0.25,
+      "outputPer1M": 0.25,
       "approx": true
     },
     "context": 8192,
@@ -7593,8 +7589,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gemma-3-4b": {
     "pricing": {
-      "inputPer1M": 0.04,
-      "outputPer1M": 0.08,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 128000,
@@ -7629,19 +7625,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-h-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.34,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7653,6 +7636,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.35,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.34,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
