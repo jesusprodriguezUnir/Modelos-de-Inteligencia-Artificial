@@ -926,7 +926,8 @@ export const autoModels: Model[] = [
     "displayName": "Qwen3.6 27B",
     "kind": "model",
     "category": [
-      "coding"
+      "coding",
+      "agentic"
     ],
     "context": 262144,
     "pricing": {
@@ -1210,6 +1211,57 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 37.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "north-mini-code",
+    "iiSlug": "north-mini-code",
+    "company": "Cohere",
+    "origin": "US",
+    "displayName": "North Mini Code",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": 256000,
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-06-09",
+    "parameters": 30.0,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 36.5). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "qwen3-coder-next",
+    "iiSlug": "qwen3-coder-next",
+    "company": "Alibaba",
+    "origin": "China",
+    "displayName": "Qwen3 Coder Next",
+    "kind": "model",
+    "category": [
+      "coding",
+      "budget"
+    ],
+    "context": 256000,
+    "pricing": {
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.2,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-02-03",
+    "parameters": 79.7,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 36.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "grok-4-3-non-reasoning",
     "iiSlug": "grok-4-3-non-reasoning",
     "company": "xAI",
@@ -1258,62 +1310,6 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-03-03",
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 34.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "nova-2-0-pro-reasoning-medium",
-    "iiSlug": "nova-2-0-pro-reasoning-medium",
-    "company": "Amazon",
-    "origin": "US",
-    "displayName": "Nova 2.0 Pro Preview (medium)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 256000,
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 10.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2025-11-27",
-    "benchmarks": {
-      "liveCodeBench": 0.7
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 34.0). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gemini-2-5-pro",
-    "iiSlug": "gemini-2-5-pro",
-    "company": "Google",
-    "origin": "US",
-    "displayName": "Gemini 2.5 Pro",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 10.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2025-06-05",
-    "benchmarks": {
-      "liveCodeBench": 0.8
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 33.3). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -2361,6 +2357,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1000.0,
     "releaseDate": "2026-05-08"
   },
+  "qwen3-6-27b-non-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.6,
+      "outputPer1M": 3.6,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 27.8,
+    "releaseDate": "2026-04-22"
+  },
   "o3": {
     "pricing": {
       "inputPer1M": 2.0,
@@ -2453,16 +2459,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 262144,
     "parameters": 27.8,
     "releaseDate": "2026-02-24"
-  },
-  "qwen3-6-27b-non-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.6,
-      "outputPer1M": 3.6,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 27.8,
-    "releaseDate": "2026-04-22"
   },
   "claude-4-5-sonnet": {
     "pricing": {
@@ -6390,6 +6386,20 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 8.0,
     "releaseDate": "2024-10-03"
   },
+  "gemma-3-12b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 128000,
+    "benchmarks": {
+      "liveCodeBench": 0.1,
+      "humanEval": 0.8
+    },
+    "parameters": 12.2,
+    "releaseDate": "2025-03-12"
+  },
   "deephermes-3-mistral-24b-preview": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -6597,6 +6607,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "humanEval": 0.8
     },
     "releaseDate": "2024-12-03"
+  },
+  "granite-4-1-3b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 131072,
+    "parameters": 3.0,
+    "releaseDate": "2026-04-29"
   },
   "mistral-small": {
     "pricing": {
@@ -7006,20 +7026,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 72.0,
     "releaseDate": "2023-11-30"
   },
-  "gemma-3-12b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 128000,
-    "benchmarks": {
-      "liveCodeBench": 0.1,
-      "humanEval": 0.8
-    },
-    "parameters": 12.2,
-    "releaseDate": "2025-03-12"
-  },
   "lfm-40b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7056,16 +7062,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 8000,
     "releaseDate": "2023-05-10"
-  },
-  "granite-4-1-3b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 131072,
-    "parameters": 3.0,
-    "releaseDate": "2026-04-29"
   },
   "gemini-1-0-pro": {
     "pricing": {
@@ -7739,10 +7735,10 @@ export const autoCompanies: Record<string, CompanyMeta> = {
     "accent": "#64748b",
     "blurb": "InclusionAI — datos del Artificial Analysis Intelligence Index."
   },
-  "Amazon": {
-    "name": "Amazon",
+  "Cohere": {
+    "name": "Cohere",
     "origin": "US",
     "accent": "#64748b",
-    "blurb": "Amazon — datos del Artificial Analysis Intelligence Index."
+    "blurb": "Cohere — datos del Artificial Analysis Intelligence Index."
   }
 };
