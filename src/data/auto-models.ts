@@ -154,8 +154,8 @@ export const autoModels: Model[] = [
     ],
     "context": 1000000,
     "pricing": {
-      "inputPer1M": 3.0,
-      "outputPer1M": 15.0,
+      "inputPer1M": 2.0,
+      "outputPer1M": 10.0,
       "approx": true
     },
     "modalities": [
@@ -279,8 +279,8 @@ export const autoModels: Model[] = [
     ],
     "context": 1000000,
     "pricing": {
-      "inputPer1M": 3.0,
-      "outputPer1M": 15.0,
+      "inputPer1M": 2.0,
+      "outputPer1M": 10.0,
       "approx": true
     },
     "modalities": [
@@ -314,6 +314,32 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-05-19",
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 66.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "kimi-k2-6",
+    "iiSlug": "kimi-k2-6",
+    "company": "Moonshot",
+    "origin": "China",
+    "displayName": "Kimi K2.6",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 256000,
+    "pricing": {
+      "inputPer1M": 0.95,
+      "outputPer1M": 4.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-04-20",
+    "parameters": 1000.0,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 61.8). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "gpt-5-5-low",
@@ -629,32 +655,6 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-03-17",
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 56.1). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "kimi-k2-6",
-    "iiSlug": "kimi-k2-6",
-    "company": "Moonshot",
-    "origin": "China",
-    "displayName": "Kimi K2.6",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 256000,
-    "pricing": {
-      "inputPer1M": 0.95,
-      "outputPer1M": 4.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-04-20",
-    "parameters": 1000.0,
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 56.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "qwen3-7-plus",
@@ -1245,6 +1245,7 @@ export const autoModels: Model[] = [
     "kind": "model",
     "category": [
       "coding",
+      "agentic",
       "budget"
     ],
     "context": 256000,
@@ -1352,8 +1353,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "claude-sonnet-5": {
     "pricing": {
-      "inputPer1M": 3.0,
-      "outputPer1M": 15.0,
+      "inputPer1M": 2.0,
+      "outputPer1M": 10.0,
       "approx": true
     },
     "context": 1000000,
@@ -1470,6 +1471,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 400000,
     "releaseDate": "2026-02-05"
   },
+  "kimi-k2-6": {
+    "pricing": {
+      "inputPer1M": 0.95,
+      "outputPer1M": 4.0,
+      "approx": true
+    },
+    "context": 256000,
+    "parameters": 1000.0,
+    "releaseDate": "2026-04-20"
+  },
   "claude-opus-4-6-adaptive": {
     "pricing": {
       "inputPer1M": 5.0,
@@ -1496,16 +1507,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 262144,
     "releaseDate": "2026-04-08"
-  },
-  "kimi-k2-6": {
-    "pricing": {
-      "inputPer1M": 0.95,
-      "outputPer1M": 4.0,
-      "approx": true
-    },
-    "context": 256000,
-    "parameters": 1000.0,
-    "releaseDate": "2026-04-20"
   },
   "claude-opus-4-7-non-reasoning": {
     "pricing": {
@@ -1550,8 +1551,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "claude-sonnet-5-non-reasoning": {
     "pricing": {
-      "inputPer1M": 3.0,
-      "outputPer1M": 15.0,
+      "inputPer1M": 2.0,
+      "outputPer1M": 10.0,
       "approx": true
     },
     "context": 1000000,
@@ -1932,7 +1933,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-1-non-reasoning": {
     "pricing": {
-      "inputPer1M": 1.4,
+      "inputPer1M": 1.39,
       "outputPer1M": 4.4,
       "approx": true
     },
@@ -2503,6 +2504,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 400000,
     "releaseDate": "2026-06-25"
   },
+  "glm-4-6-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.55,
+      "outputPer1M": 2.2,
+      "approx": true
+    },
+    "context": 200000,
+    "benchmarks": {
+      "liveCodeBench": 0.7
+    },
+    "parameters": 357.0,
+    "releaseDate": "2025-09-30"
+  },
   "deepseek-v4-flash-non-reasoning": {
     "pricing": {
       "inputPer1M": 0.14,
@@ -2557,8 +2571,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mimo-v2-5-pro-non-reasoning": {
     "pricing": {
-      "inputPer1M": 0.9,
-      "outputPer1M": 2.7,
+      "inputPer1M": 0.661,
+      "outputPer1M": 1.722,
       "approx": true
     },
     "context": 1000000,
@@ -2805,19 +2819,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-08-07"
   },
-  "glm-4-6-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.55,
-      "outputPer1M": 2.2,
-      "approx": true
-    },
-    "context": 200000,
-    "benchmarks": {
-      "liveCodeBench": 0.7
-    },
-    "parameters": 357.0,
-    "releaseDate": "2025-09-30"
-  },
   "gemini-3-1-flash-lite-preview": {
     "pricing": {
       "inputPer1M": 0.25,
@@ -3030,7 +3031,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-4-6": {
     "pricing": {
-      "inputPer1M": 0.6,
+      "inputPer1M": 0.575,
       "outputPer1M": 2.2,
       "approx": true
     },
@@ -3118,16 +3119,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 685.0,
     "releaseDate": "2025-12-01"
-  },
-  "hypernova-60b": {
-    "pricing": {
-      "inputPer1M": 0.04,
-      "outputPer1M": 0.14,
-      "approx": true
-    },
-    "context": 131072,
-    "parameters": 58.7,
-    "releaseDate": "2026-05-26"
   },
   "gemma-4-12b": {
     "pricing": {
@@ -3485,16 +3476,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-04-14"
   },
-  "ling-2-6-flash": {
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.3,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 107.0,
-    "releaseDate": "2026-04-21"
-  },
   "qwen3-max-preview": {
     "pricing": {
       "inputPer1M": 1.2,
@@ -3721,6 +3702,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.5
     },
     "releaseDate": "2025-10-29"
+  },
+  "hypernova-60b": {
+    "pricing": {
+      "inputPer1M": 0.04,
+      "outputPer1M": 0.14,
+      "approx": true
+    },
+    "context": 131072,
+    "parameters": 58.7,
+    "releaseDate": "2026-05-26"
   },
   "gpt-oss-120b-low": {
     "pricing": {
@@ -4243,8 +4234,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "nvidia-nemotron-3-nano-30b-a3b-reasoning": {
     "pricing": {
-      "inputPer1M": 0.055,
-      "outputPer1M": 0.22,
+      "inputPer1M": 0.05,
+      "outputPer1M": 0.2,
       "approx": true
     },
     "context": 1000000,
@@ -4290,6 +4281,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 128000,
     "parameters": 102.0,
     "releaseDate": "2026-04-06"
+  },
+  "ling-2-6-flash": {
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 107.0,
+    "releaseDate": "2026-04-21"
   },
   "o1-mini": {
     "pricing": {
@@ -4536,7 +4537,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-nemotron-super-49b-v1-5-reasoning": {
     "pricing": {
-      "inputPer1M": 0.1,
+      "inputPer1M": 0.4,
       "outputPer1M": 0.4,
       "approx": true
     },
@@ -4975,16 +4976,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 8.19,
     "releaseDate": "2025-05-29"
-  },
-  "qwen3-5-2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 2.27,
-    "releaseDate": "2026-03-02"
   },
   "qwen-2-5-max": {
     "pricing": {
@@ -5476,16 +5467,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-02-25"
   },
-  "nvidia-nemotron-3-nano-4b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262000,
-    "parameters": 3.97,
-    "releaseDate": "2026-03-16"
-  },
   "qwen3-5-2b-non-reasoning": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -5496,9 +5477,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 2.27,
     "releaseDate": "2026-03-02"
   },
+  "nvidia-nemotron-3-nano-4b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262000,
+    "parameters": 3.97,
+    "releaseDate": "2026-03-16"
+  },
   "llama-nemotron-super-49b-v1-5": {
     "pricing": {
-      "inputPer1M": 0.1,
+      "inputPer1M": 0.4,
       "outputPer1M": 0.4,
       "approx": true
     },
@@ -5849,6 +5840,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 111.0,
     "releaseDate": "2025-03-13"
+  },
+  "qwen3-5-2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 2.27,
+    "releaseDate": "2026-03-02"
   },
   "llama-3-1-nemotron-instruct-70b": {
     "pricing": {
@@ -6358,6 +6359,20 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 72.0,
     "releaseDate": "2024-06-07"
   },
+  "phi-4-mini": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 128000,
+    "benchmarks": {
+      "liveCodeBench": 0.1,
+      "humanEval": 0.7
+    },
+    "parameters": 3.84,
+    "releaseDate": "2024-02-26"
+  },
   "exaone-4-0-32b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -6399,6 +6414,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 12.2,
     "releaseDate": "2025-03-12"
+  },
+  "qwen3-5-0-8b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 0.873,
+    "releaseDate": "2026-03-02"
   },
   "deephermes-3-mistral-24b-preview": {
     "pricing": {
@@ -6470,8 +6495,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "hermes-3-llama-3-1-70b": {
     "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 0.3,
+      "inputPer1M": 0.7,
+      "outputPer1M": 0.7,
       "approx": true
     },
     "context": 128000,
@@ -6534,16 +6559,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 398.0,
     "releaseDate": "2025-03-06"
-  },
-  "qwen3-5-0-8b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 0.873,
-    "releaseDate": "2026-03-02"
   },
   "lfm2-24b-a2b": {
     "pricing": {
@@ -7042,8 +7057,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-3-2-instruct-11b-vision": {
     "pricing": {
-      "inputPer1M": 0.245,
-      "outputPer1M": 0.245,
+      "inputPer1M": 0.345,
+      "outputPer1M": 0.345,
       "approx": true
     },
     "context": 128000,
@@ -7102,20 +7117,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 23.6,
     "releaseDate": "2025-05-23"
-  },
-  "phi-4-mini": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 128000,
-    "benchmarks": {
-      "liveCodeBench": 0.1,
-      "humanEval": 0.7
-    },
-    "parameters": 3.84,
-    "releaseDate": "2024-02-26"
   },
   "llama-2-chat-70b": {
     "pricing": {
@@ -7621,19 +7622,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-h-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.34,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7645,6 +7633,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.35,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.34,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
