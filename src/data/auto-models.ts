@@ -790,7 +790,7 @@ export const autoModels: Model[] = [
   {
     "id": "grok-build-0-1-06-16",
     "iiSlug": "grok-build-0-1-06-16",
-    "company": "xAI",
+    "company": "SpaceXAI",
     "origin": "US",
     "displayName": "Grok Build 0.1 0616",
     "kind": "model",
@@ -1055,7 +1055,7 @@ export const autoModels: Model[] = [
   {
     "id": "grok-4-3",
     "iiSlug": "grok-4-3",
-    "company": "xAI",
+    "company": "SpaceXAI",
     "origin": "US",
     "displayName": "Grok 4.3 (high)",
     "kind": "model",
@@ -1265,7 +1265,7 @@ export const autoModels: Model[] = [
   {
     "id": "grok-4-3-non-reasoning",
     "iiSlug": "grok-4-3-non-reasoning",
-    "company": "xAI",
+    "company": "SpaceXAI",
     "origin": "US",
     "displayName": "Grok 4.3 (Non-reasoning)",
     "kind": "model",
@@ -5467,16 +5467,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-02-25"
   },
-  "qwen3-5-2b-non-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 2.27,
-    "releaseDate": "2026-03-02"
-  },
   "nvidia-nemotron-3-nano-4b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -6386,6 +6376,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 32.0,
     "releaseDate": "2025-07-15"
+  },
+  "qwen3-5-2b-non-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 2.27,
+    "releaseDate": "2026-03-02"
   },
   "gemini-1-5-flash-8b": {
     "pricing": {
@@ -7622,19 +7622,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.35,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-h-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7646,6 +7633,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.34,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.35,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
@@ -7668,6 +7668,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 3.35,
     "releaseDate": "2026-02-17"
   },
+  "gemma-3n-e2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32000,
+    "benchmarks": {
+      "liveCodeBench": 0.1
+    },
+    "parameters": 5.98,
+    "releaseDate": "2025-06-26"
+  },
   "gemma-3-1b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7681,19 +7694,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 1.0,
     "releaseDate": "2025-03-13"
-  },
-  "gemma-3n-e2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32000,
-    "benchmarks": {
-      "liveCodeBench": 0.1
-    },
-    "parameters": 5.98,
-    "releaseDate": "2025-06-26"
   },
   "qwen3-0.6b-instruct": {
     "pricing": {
@@ -7723,6 +7723,12 @@ export const autoCompanies: Record<string, CompanyMeta> = {
     "origin": "China",
     "accent": "#64748b",
     "blurb": "KwaiKAT — datos del Artificial Analysis Intelligence Index."
+  },
+  "SpaceXAI": {
+    "name": "SpaceXAI",
+    "origin": "US",
+    "accent": "#64748b",
+    "blurb": "SpaceXAI — datos del Artificial Analysis Intelligence Index."
   },
   "NVIDIA": {
     "name": "NVIDIA",
