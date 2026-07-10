@@ -2,6 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { models, companies } from '../data/models';
 import { fmtCtx } from '../utils/format';
+import { intelligenceIndexMeta } from '../data/intelligence-index';
+
+const fetchedDate = new Date(intelligenceIndexMeta.fetched_at);
+const formattedDate = fetchedDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
 
 // Solo modelos con benchmarks
 const modelsWithBench = models.filter((m) => m.kind === 'model' && m.benchmarks);
@@ -24,7 +28,7 @@ const benchDescs = [
   <header class="hero">
     <div class="wrap">
       <h1>📊 Benchmarks de Coding</h1>
-      <p>Ranking de modelos de IA en los principales benchmarks de programación. Datos recopilados de fuentes públicas a junio de 2026.</p>
+      <p>Ranking de modelos de IA en los principales benchmarks de programación. Datos recopilados de fuentes públicas a {formattedDate}.</p>
       <p class="disclaimer">⚠️ Los benchmarks tienen limitaciones: pueden ser "harness-tuned", contaminados o no representar tu caso de uso específico. Úsalos como orientación, no como verdad absoluta. Verifica con evaluaciones independientes como LMSYS Chatbot Arena o Artificial Analysis.</p>
     </div>
   </header>

@@ -1,4 +1,6 @@
 ---
+import { intelligenceIndexMeta } from '../data/intelligence-index';
+
 interface Props {
   title?: string;
   /** Clave de página para resaltar el enlace activo de la barra superior. */
@@ -14,6 +16,9 @@ const nav = [
   { key: 'buenas-practicas', label: 'Buenas Prácticas', href: './buenas-practicas.html' },
   { key: 'benchmarks', label: 'Benchmarks', href: './benchmarks.html' },
 ];
+
+const fetchedDate = new Date(intelligenceIndexMeta.fetched_at);
+const badgeDate = `${fetchedDate.getFullYear()}.${String(fetchedDate.getMonth() + 1).padStart(2, '0')}`;
 ---
 
 <!doctype html>
@@ -48,7 +53,7 @@ const nav = [
       <a href="./index.html" class="brand">
         <span class="brand-logo"></span>
         <span class="brand-name">AI Models</span>
-        <span class="brand-badge">panel · 2026.06</span>
+        <span class="brand-badge">panel · {badgeDate}</span>
       </a>
       <nav class="topnav">
         {nav.map((n) => (

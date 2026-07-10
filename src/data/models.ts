@@ -7,7 +7,7 @@ import {
 } from './catalog-utils';
 
 // ─────────────────────────────────────────────────────────────────────────
-//  Catálogo de modelos de programación — datos a junio de 2026.
+//  Catálogo de modelos de programación — datos actualizados dinámicamente.
 //  ⚠️  Los precios cambian a menudo. Verifica siempre en la web oficial
 //      (enlace "docs"/"pricing" de cada modelo) antes de presupuestar.
 //

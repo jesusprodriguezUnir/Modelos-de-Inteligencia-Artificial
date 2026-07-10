@@ -4,6 +4,10 @@ import ModelCard from '../components/ModelCard.astro';
 import { models, companies, POPULARITY_TIERS, popularityTier } from '../data/models';
 import type { Model } from '../data/types';
 import { fmtCtx, fmtPrice } from '../utils/format';
+import { intelligenceIndexMeta } from '../data/intelligence-index';
+
+const fetchedDate = new Date(intelligenceIndexMeta.fetched_at);
+const formattedDate = fetchedDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
 
 const catLabels: Record<string, string> = {
   coding: 'Código', reasoning: 'Razonamiento', agentic: 'Agéntico', general: 'General',
@@ -105,7 +109,7 @@ const popularityGroups = POPULARITY_TIERS
     <!-- intro -->
     <div style="margin-bottom:18px;">
       <h1 style="margin:0 0 6px; font-size:clamp(24px,3.4vw,34px); font-weight:700; color:var(--head); letter-spacing:-.5px;">Panel de modelos de IA para programar</h1>
-      <p style="margin:0; color:var(--dim); font-size:14.5px; max-width:680px;">Precios por millón de tokens, ventana de contexto y SWE-bench de los modelos disponibles a junio de 2026. Confirma siempre el precio oficial antes de presupuestar.</p>
+      <p style="margin:0; color:var(--dim); font-size:14.5px; max-width:680px;">Precios por millón de tokens, ventana de contexto y SWE-bench de los modelos disponibles a {formattedDate}. Confirma siempre el precio oficial antes de presupuestar.</p>
     </div>
 
     <!-- search -->
