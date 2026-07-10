@@ -248,7 +248,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 1.0373301565994435,
-    "time_per_task": 191.24660453105247,
+    "time_per_task": 193.36565931810185,
     "output_tokens_per_task": 15346.352247051163
   },
   {
@@ -289,7 +289,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.6824768594725414,
-    "time_per_task": 133.66627183067038,
+    "time_per_task": 138.26210963760607,
     "output_tokens_per_task": 9940.5564010649
   },
   {
@@ -330,7 +330,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.45300942735621286,
-    "time_per_task": 87.90283606060903,
+    "time_per_task": 90.73667830434398,
     "output_tokens_per_task": 6690.308555147785
   },
   {
@@ -497,7 +497,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.5544595173072254,
-    "time_per_task": 121.92004684830322,
+    "time_per_task": 130.85859707411038,
     "output_tokens_per_task": 19369.795192253852
   },
   {
@@ -635,7 +635,7 @@
     "intelligence_index_v4_1": 53.8265951657731,
     "coding_index": 72.4489353585796,
     "agentic_index": 45.6901065292096,
-    "gdpval_v2": 1542.48,
+    "gdpval_v2": 1538.67,
     "gdpval_elo": null,
     "omniscience": 26.3833333333333,
     "scicode": 0.540509259259259,
@@ -652,23 +652,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.804046242774566,
     "briefcase": {
-      "elo": 1328.1,
-      "lower95ci": 1315.53,
-      "upper95ci": 1341.09,
+      "elo": 1326.1,
+      "lower95ci": 1314.58,
+      "upper95ci": 1338.97,
       "rubric": {
-        "elo": 1250.01,
-        "lower95ci": 1232.18,
-        "upper95ci": 1267.87
+        "elo": 1248.98,
+        "lower95ci": 1231.16,
+        "upper95ci": 1268.23
       },
       "analyticalQuality": {
-        "elo": 1396.82,
-        "lower95ci": 1373.2,
-        "upper95ci": 1420.79
+        "elo": 1391.71,
+        "lower95ci": 1370.48,
+        "upper95ci": 1414.63
       },
       "presentation": {
-        "elo": 1337.47,
-        "lower95ci": 1315.27,
-        "upper95ci": 1362.41
+        "elo": 1337.61,
+        "lower95ci": 1313.67,
+        "upper95ci": 1363.18
       },
       "rubricPassRate": 0.4070707070707071,
       "turns": {
@@ -749,7 +749,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 1.35,
     "cost_per_task_total": 0.3110838295302332,
-    "time_per_task": 160.24418514305668,
+    "time_per_task": 157.70373921415262,
     "output_tokens_per_task": 13796.372242837875
   },
   {
@@ -790,7 +790,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.3139844979499344,
-    "time_per_task": 64.50032434917914,
+    "time_per_task": 65.5191233112446,
     "output_tokens_per_task": 4202.72143690891
   },
   {
@@ -802,7 +802,7 @@
     "intelligence_index_v4_1": 53.5296569524586,
     "coding_index": 73.6020079067832,
     "agentic_index": 44.3863264604811,
-    "gdpval_v2": 1500.22,
+    "gdpval_v2": 1499.9,
     "gdpval_elo": null,
     "omniscience": 26.1666666666667,
     "scicode": 0.545138888888889,
@@ -819,23 +819,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.788439306358382,
     "briefcase": {
-      "elo": 1289.35,
-      "lower95ci": 1279.53,
-      "upper95ci": 1299.6,
+      "elo": 1288.25,
+      "lower95ci": 1277.47,
+      "upper95ci": 1298.57,
       "rubric": {
-        "elo": 1191.96,
-        "lower95ci": 1176.12,
-        "upper95ci": 1207.37
+        "elo": 1192.39,
+        "lower95ci": 1176.07,
+        "upper95ci": 1208.31
       },
       "analyticalQuality": {
-        "elo": 1304.63,
-        "lower95ci": 1288.26,
-        "upper95ci": 1322.1
+        "elo": 1300.81,
+        "lower95ci": 1283.85,
+        "upper95ci": 1318.23
       },
       "presentation": {
-        "elo": 1371.45,
-        "lower95ci": 1353.21,
-        "upper95ci": 1391.34
+        "elo": 1371.56,
+        "lower95ci": 1350.9,
+        "upper95ci": 1390.24
       },
       "rubricPassRate": 0.39337474120082816,
       "turns": {
@@ -928,7 +928,7 @@
     "intelligence_index_v4_1": 53.3500026989169,
     "coding_index": 71.5455507005132,
     "agentic_index": 46.6941408934708,
-    "gdpval_v2": 1608.34,
+    "gdpval_v2": 1608.06,
     "gdpval_elo": null,
     "omniscience": 15.3166666666667,
     "scicode": 0.53587962962963,
@@ -945,23 +945,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.772832369942197,
     "briefcase": {
-      "elo": 1390.43,
-      "lower95ci": 1379.19,
-      "upper95ci": 1401.95,
+      "elo": 1389.42,
+      "lower95ci": 1378.24,
+      "upper95ci": 1401.48,
       "rubric": {
-        "elo": 1251.29,
-        "lower95ci": 1235.24,
-        "upper95ci": 1266.85
+        "elo": 1251.93,
+        "lower95ci": 1236.56,
+        "upper95ci": 1268.14
       },
       "analyticalQuality": {
-        "elo": 1463.33,
-        "lower95ci": 1441.63,
-        "upper95ci": 1483.69
+        "elo": 1459.54,
+        "lower95ci": 1440.1,
+        "upper95ci": 1479.92
       },
       "presentation": {
-        "elo": 1456.66,
-        "lower95ci": 1435.91,
-        "upper95ci": 1480.45
+        "elo": 1456.78,
+        "lower95ci": 1434.2,
+        "upper95ci": 1480.37
       },
       "rubricPassRate": 0.42323232323232324,
       "turns": {
@@ -1042,7 +1042,7 @@
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.54,
     "cost_per_task_total": 1.5254254480225784,
-    "time_per_task": 511.0021373263,
+    "time_per_task": 530.6598204283875,
     "output_tokens_per_task": 68735.70748622667
   },
   {
@@ -1209,7 +1209,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.3272368361728899,
-    "time_per_task": 73.74287563208985,
+    "time_per_task": 75.35403419383796,
     "output_tokens_per_task": 11035.729220965757
   },
   {
@@ -1221,7 +1221,7 @@
     "intelligence_index_v4_1": 51.4012420630147,
     "coding_index": 71.0505097794423,
     "agentic_index": 41.0770927835052,
-    "gdpval_v2": 1395.87,
+    "gdpval_v2": 1394.68,
     "gdpval_elo": null,
     "omniscience": 5.65,
     "scicode": 0.565972222222222,
@@ -1250,7 +1250,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.8868298551068886,
-    "time_per_task": 212.79315091239096,
+    "time_per_task": 205.64603422623512,
     "output_tokens_per_task": 32653.89086163631
   },
   {
@@ -1291,7 +1291,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
     "cost_per_task_total": 0.20941332352935085,
-    "time_per_task": 91.06513647924733,
+    "time_per_task": 91.15389600146622,
     "output_tokens_per_task": 18912.005257449488
   },
   {
@@ -1303,7 +1303,7 @@
     "intelligence_index_v4_1": 51.0858347714416,
     "coding_index": 68.7560688028853,
     "agentic_index": 43.0557079037801,
-    "gdpval_v2": 1514.45,
+    "gdpval_v2": 1513.89,
     "gdpval_elo": null,
     "omniscience": 3.96666666666667,
     "scicode": 0.50462962962963,
@@ -1320,23 +1320,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 1260.94,
-      "lower95ci": 1249.9,
-      "upper95ci": 1271.76,
+      "elo": 1259.68,
+      "lower95ci": 1249.46,
+      "upper95ci": 1270.81,
       "rubric": {
-        "elo": 1158.16,
-        "lower95ci": 1142.77,
-        "upper95ci": 1173.93
+        "elo": 1159.14,
+        "lower95ci": 1143.1,
+        "upper95ci": 1174.56
       },
       "analyticalQuality": {
-        "elo": 1333.36,
-        "lower95ci": 1314.71,
-        "upper95ci": 1351.19
+        "elo": 1328.49,
+        "lower95ci": 1309.7,
+        "upper95ci": 1347.25
       },
       "presentation": {
-        "elo": 1291.3,
-        "lower95ci": 1272.16,
-        "upper95ci": 1310.97
+        "elo": 1291.42,
+        "lower95ci": 1272.45,
+        "upper95ci": 1312.21
       },
       "rubricPassRate": 0.3606060606060606,
       "turns": {
@@ -1417,7 +1417,7 @@
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
     "cost_per_task_total": 0.370080167362808,
-    "time_per_task": 199.59159351916247,
+    "time_per_task": 199.9261768682848,
     "output_tokens_per_task": 42790.89116989162
   },
   {
@@ -1710,7 +1710,7 @@
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 0.1974662438526612,
-    "time_per_task": 36.723913077322464,
+    "time_per_task": 37.35409051014415,
     "output_tokens_per_task": 2507.7537132556436
   },
   {
@@ -1751,7 +1751,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
     "cost_per_task_total": 0.13896478816312374,
-    "time_per_task": 65.83761540296076,
+    "time_per_task": 65.91837535582202,
     "output_tokens_per_task": 12492.303981970428
   },
   {
@@ -1792,7 +1792,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.23590588524864192,
-    "time_per_task": 63.271355120765996,
+    "time_per_task": 64.8933706506123,
     "output_tokens_per_task": 7738.32207500883
   },
   {
@@ -1804,7 +1804,7 @@
     "intelligence_index_v4_1": 47.2100024360452,
     "coding_index": 63.0271188791788,
     "agentic_index": 40.7694879725086,
-    "gdpval_v2": 1378.43,
+    "gdpval_v2": 1378,
     "gdpval_elo": null,
     "omniscience": 12.3666666666667,
     "scicode": 0.467592592592593,
@@ -1821,23 +1821,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.732947976878613,
     "briefcase": {
-      "elo": 1078.47,
-      "lower95ci": 1069.17,
-      "upper95ci": 1087.69,
+      "elo": 1077.76,
+      "lower95ci": 1069.07,
+      "upper95ci": 1086.73,
       "rubric": {
-        "elo": 1033.42,
-        "lower95ci": 1019.91,
-        "upper95ci": 1048.28
+        "elo": 1033.12,
+        "lower95ci": 1018.97,
+        "upper95ci": 1046.64
       },
       "analyticalQuality": {
-        "elo": 1005.19,
-        "lower95ci": 988.26,
-        "upper95ci": 1020.32
+        "elo": 1003.25,
+        "lower95ci": 987.63,
+        "upper95ci": 1018.4
       },
       "presentation": {
-        "elo": 1196.81,
-        "lower95ci": 1180.51,
-        "upper95ci": 1213.96
+        "elo": 1196.92,
+        "lower95ci": 1180.95,
+        "upper95ci": 1214.17
       },
       "rubricPassRate": 0.289198606271777,
       "turns": {
@@ -2085,7 +2085,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
     "cost_per_task_total": 0.09476459263707988,
-    "time_per_task": 34.97270310183437,
+    "time_per_task": 35.49013750018043,
     "output_tokens_per_task": 8118.088141888398
   },
   {
@@ -2097,7 +2097,7 @@
     "intelligence_index_v4_1": 45.9937184770221,
     "coding_index": 65.9687543348592,
     "agentic_index": 30.5882783505155,
-    "gdpval_v2": 1272.97,
+    "gdpval_v2": 1273.15,
     "gdpval_elo": null,
     "omniscience": 14.0833333333333,
     "scicode": 0.488425925925926,
@@ -2114,23 +2114,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 906.69,
-      "lower95ci": 897.15,
-      "upper95ci": 915.25,
+      "elo": 908.07,
+      "lower95ci": 899.29,
+      "upper95ci": 917.63,
       "rubric": {
-        "elo": 956.46,
-        "lower95ci": 941.86,
-        "upper95ci": 970.6
+        "elo": 956.48,
+        "lower95ci": 942.23,
+        "upper95ci": 970.71
       },
       "analyticalQuality": {
-        "elo": 800.41,
-        "lower95ci": 783.8,
-        "upper95ci": 816.98
+        "elo": 804.23,
+        "lower95ci": 787.67,
+        "upper95ci": 819.52
       },
       "presentation": {
-        "elo": 963.2,
-        "lower95ci": 946.45,
-        "upper95ci": 979.63
+        "elo": 963.5,
+        "lower95ci": 945.31,
+        "upper95ci": 981.08
       },
       "rubricPassRate": 0.23737373737373738,
       "turns": {
@@ -2252,7 +2252,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.1276399207309507,
-    "time_per_task": 30.69708410747813,
+    "time_per_task": 31.636322954396135,
     "output_tokens_per_task": 3769.086440612571
   },
   {
@@ -2281,23 +2281,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.838728323699422,
     "briefcase": {
-      "elo": 867.7,
-      "lower95ci": 857.63,
-      "upper95ci": 877.3,
+      "elo": 869.29,
+      "lower95ci": 860.07,
+      "upper95ci": 878.93,
       "rubric": {
-        "elo": 998.06,
-        "lower95ci": 983.81,
-        "upper95ci": 1012.36
+        "elo": 999.1,
+        "lower95ci": 985.05,
+        "upper95ci": 1014.1
       },
       "analyticalQuality": {
-        "elo": 707.06,
-        "lower95ci": 689.03,
-        "upper95ci": 725.04
+        "elo": 711.02,
+        "lower95ci": 693.2,
+        "upper95ci": 728.09
       },
       "presentation": {
-        "elo": 897.98,
-        "lower95ci": 881.37,
-        "upper95ci": 917.05
+        "elo": 897.75,
+        "lower95ci": 881.2,
+        "upper95ci": 915.14
       },
       "rubricPassRate": 0.27635619242579323,
       "turns": {
@@ -2390,7 +2390,7 @@
     "intelligence_index_v4_1": 44.4372686326056,
     "coding_index": 58.5691496740186,
     "agentic_index": 35.3635635738832,
-    "gdpval_v2": 1395.27,
+    "gdpval_v2": 1394.83,
     "gdpval_elo": null,
     "omniscience": 1.36666666666667,
     "scicode": 0.453703703703704,
@@ -2407,23 +2407,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.785549132947977,
     "briefcase": {
-      "elo": 1111.27,
-      "lower95ci": 1102.11,
-      "upper95ci": 1120.7,
+      "elo": 1110.45,
+      "lower95ci": 1101.13,
+      "upper95ci": 1120.41,
       "rubric": {
-        "elo": 1056.29,
-        "lower95ci": 1041.13,
-        "upper95ci": 1070.52
+        "elo": 1055.45,
+        "lower95ci": 1041.23,
+        "upper95ci": 1070.21
       },
       "analyticalQuality": {
-        "elo": 1082.35,
-        "lower95ci": 1066.03,
-        "upper95ci": 1100.26
+        "elo": 1080.62,
+        "lower95ci": 1064.02,
+        "upper95ci": 1096.44
       },
       "presentation": {
-        "elo": 1195.17,
-        "lower95ci": 1178.77,
-        "upper95ci": 1214.57
+        "elo": 1195.29,
+        "lower95ci": 1175.89,
+        "upper95ci": 1213.58
       },
       "rubricPassRate": 0.30303030303030304,
       "turns": {
@@ -2504,7 +2504,7 @@
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": 0.12455059919140353,
-    "time_per_task": 250.86186610432577,
+    "time_per_task": 245.6888087440118,
     "output_tokens_per_task": 23963.866202882804
   },
   {
@@ -2516,7 +2516,7 @@
     "intelligence_index_v4_1": 44.2735554261611,
     "coding_index": 59.3632958801498,
     "agentic_index": 36.3637319587629,
-    "gdpval_v2": 1307.01,
+    "gdpval_v2": 1307.21,
     "gdpval_elo": null,
     "omniscience": -10.0166666666667,
     "scicode": 0.5,
@@ -2533,23 +2533,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 931.73,
-      "lower95ci": 922.88,
-      "upper95ci": 940.95,
+      "elo": 932.03,
+      "lower95ci": 922.44,
+      "upper95ci": 941.08,
       "rubric": {
-        "elo": 955.88,
-        "lower95ci": 940.97,
-        "upper95ci": 970.62
+        "elo": 956.36,
+        "lower95ci": 941.55,
+        "upper95ci": 970.39
       },
       "analyticalQuality": {
-        "elo": 898.61,
-        "lower95ci": 883.16,
-        "upper95ci": 913.32
+        "elo": 899.18,
+        "lower95ci": 883.64,
+        "upper95ci": 913.94
       },
       "presentation": {
-        "elo": 940.7,
-        "lower95ci": 924.45,
-        "upper95ci": 958.31
+        "elo": 940.56,
+        "lower95ci": 924.34,
+        "upper95ci": 957.44
       },
       "rubricPassRate": 0.23938679245283018,
       "turns": {
@@ -2659,23 +2659,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.784971098265896,
     "briefcase": {
-      "elo": 863.3,
-      "lower95ci": 853.73,
-      "upper95ci": 872.86,
+      "elo": 864.2,
+      "lower95ci": 853.89,
+      "upper95ci": 874.2,
       "rubric": {
-        "elo": 905.22,
-        "lower95ci": 891.35,
-        "upper95ci": 919.54
+        "elo": 906.14,
+        "lower95ci": 892.53,
+        "upper95ci": 920.88
       },
       "analyticalQuality": {
-        "elo": 863.17,
-        "lower95ci": 846.01,
-        "upper95ci": 880.08
+        "elo": 864.5,
+        "lower95ci": 848.6,
+        "upper95ci": 879.01
       },
       "presentation": {
-        "elo": 821.51,
-        "lower95ci": 803.19,
-        "upper95ci": 840.99
+        "elo": 821.96,
+        "lower95ci": 803.47,
+        "upper95ci": 840.64
       },
       "rubricPassRate": 0.21818181818181817,
       "turns": {
@@ -2768,7 +2768,7 @@
     "intelligence_index_v4_1": 44.2196682298639,
     "coding_index": 61.7691427382439,
     "agentic_index": 30.2685189003436,
-    "gdpval_v2": 1189.81,
+    "gdpval_v2": 1190.39,
     "gdpval_elo": null,
     "omniscience": 6.41666666666667,
     "scicode": 0.534722222222222,
@@ -2785,23 +2785,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.79364161849711,
     "briefcase": {
-      "elo": 809.37,
-      "lower95ci": 799.36,
-      "upper95ci": 818.96,
+      "elo": 810.56,
+      "lower95ci": 800.51,
+      "upper95ci": 819.76,
       "rubric": {
-        "elo": 896.89,
-        "lower95ci": 882.87,
-        "upper95ci": 910.07
+        "elo": 897.54,
+        "lower95ci": 883.58,
+        "upper95ci": 911.52
       },
       "analyticalQuality": {
-        "elo": 780.97,
-        "lower95ci": 764.33,
+        "elo": 783.5,
+        "lower95ci": 766.8,
         "upper95ci": 797.99
       },
       "presentation": {
-        "elo": 750.26,
-        "lower95ci": 731.49,
-        "upper95ci": 767.88
+        "elo": 750.65,
+        "lower95ci": 732.27,
+        "upper95ci": 768.74
       },
       "rubricPassRate": 0.20606060606060606,
       "turns": {
@@ -2976,7 +2976,7 @@
     "intelligence_index_v4_1": 43.0555563074727,
     "coding_index": 58.6163996393397,
     "agentic_index": 28.6868762886598,
-    "gdpval_v2": 1143.2,
+    "gdpval_v2": 1143.69,
     "gdpval_elo": null,
     "omniscience": 4.08333333333333,
     "scicode": 0.515046296296296,
@@ -2993,23 +2993,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.805202312138728,
     "briefcase": {
-      "elo": 629.55,
-      "lower95ci": 618.23,
-      "upper95ci": 640.24,
+      "elo": 631.44,
+      "lower95ci": 620.96,
+      "upper95ci": 642.04,
       "rubric": {
-        "elo": 818.12,
-        "lower95ci": 803.84,
-        "upper95ci": 832.69
+        "elo": 818.89,
+        "lower95ci": 804.5,
+        "upper95ci": 833.31
       },
       "analyticalQuality": {
-        "elo": 572.18,
-        "lower95ci": 552.89,
-        "upper95ci": 592.23
+        "elo": 576.29,
+        "lower95ci": 557.55,
+        "upper95ci": 594.44
       },
       "presentation": {
-        "elo": 498.36,
-        "lower95ci": 476.65,
-        "upper95ci": 518.71
+        "elo": 499.15,
+        "lower95ci": 475.59,
+        "upper95ci": 519.97
       },
       "rubricPassRate": 0.16767676767676767,
       "turns": {
@@ -3119,23 +3119,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.763583815028902,
     "briefcase": {
-      "elo": 1089.85,
-      "lower95ci": 1080.54,
-      "upper95ci": 1099.77,
+      "elo": 1088.75,
+      "lower95ci": 1079.08,
+      "upper95ci": 1098.25,
       "rubric": {
-        "elo": 1009.72,
-        "lower95ci": 994.49,
-        "upper95ci": 1024.18
+        "elo": 1009.97,
+        "lower95ci": 996.65,
+        "upper95ci": 1024.19
       },
       "analyticalQuality": {
-        "elo": 1077.25,
-        "lower95ci": 1061.14,
-        "upper95ci": 1093.95
+        "elo": 1073.54,
+        "lower95ci": 1056.68,
+        "upper95ci": 1089.66
       },
       "presentation": {
-        "elo": 1182.6,
-        "lower95ci": 1165.95,
-        "upper95ci": 1200.4
+        "elo": 1182.73,
+        "lower95ci": 1163.92,
+        "upper95ci": 1202.15
       },
       "rubricPassRate": 0.27635619242579323,
       "turns": {
@@ -3228,7 +3228,7 @@
     "intelligence_index_v4_1": 42.2394366693508,
     "coding_index": 60.189520044389,
     "agentic_index": 29.1125979381443,
-    "gdpval_v2": 1264.81,
+    "gdpval_v2": 1265.4,
     "gdpval_elo": null,
     "omniscience": 3.6,
     "scicode": 0.502314814814815,
@@ -3245,23 +3245,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 871.59,
-      "lower95ci": 861.59,
-      "upper95ci": 880.86,
+      "elo": 872.68,
+      "lower95ci": 862.76,
+      "upper95ci": 881.69,
       "rubric": {
-        "elo": 919.26,
-        "lower95ci": 904.81,
-        "upper95ci": 933.16
+        "elo": 919.52,
+        "lower95ci": 904.43,
+        "upper95ci": 934.64
       },
       "analyticalQuality": {
-        "elo": 767.42,
-        "lower95ci": 750.62,
-        "upper95ci": 784.36
+        "elo": 769.98,
+        "lower95ci": 752.97,
+        "upper95ci": 786.14
       },
       "presentation": {
-        "elo": 928.1,
-        "lower95ci": 911.38,
-        "upper95ci": 946.79
+        "elo": 928.55,
+        "lower95ci": 910.79,
+        "upper95ci": 946.03
       },
       "rubricPassRate": 0.21414141414141413,
       "turns": {
@@ -3342,7 +3342,7 @@
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.03139528698492376,
-    "time_per_task": 426.37369991761454,
+    "time_per_task": 421.5814388521184,
     "output_tokens_per_task": 20476.386745754964
   },
   {
@@ -3395,7 +3395,7 @@
     "intelligence_index_v4_1": 41.9493685067994,
     "coding_index": 60.761721459287,
     "agentic_index": 29.5911099656357,
-    "gdpval_v2": 1186.69,
+    "gdpval_v2": 1186.79,
     "gdpval_elo": null,
     "omniscience": -10.7,
     "scicode": 0.474537037037037,
@@ -3424,7 +3424,7 @@
     "price_1m_output": 4,
     "price_1m_blended_7_2_1": 0.702,
     "cost_per_task_total": 0.17772103999963917,
-    "time_per_task": 383.7884224901376,
+    "time_per_task": 388.25018190254127,
     "output_tokens_per_task": 17716.081293998985
   },
   {
@@ -3436,7 +3436,7 @@
     "intelligence_index_v4_1": 41.7305068119089,
     "coding_index": 66.3909696213067,
     "agentic_index": 33.6958728522337,
-    "gdpval_v2": 1371.48,
+    "gdpval_v2": 1371.85,
     "gdpval_elo": null,
     "omniscience": -1.18333333333333,
     "scicode": 0.486111111111111,
@@ -3518,7 +3518,7 @@
     "intelligence_index_v4_1": 40.9569739949604,
     "coding_index": 59.1209772506589,
     "agentic_index": 31.0280721649485,
-    "gdpval_v2": 1257.78,
+    "gdpval_v2": 1256.87,
     "gdpval_elo": null,
     "omniscience": -27.6166666666667,
     "scicode": 0.417824074074074,
@@ -3547,7 +3547,7 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.525,
     "cost_per_task_total": null,
-    "time_per_task": 210.53351479901568,
+    "time_per_task": 206.39602160156792,
     "output_tokens_per_task": 29537.821026196565
   },
   {
@@ -3559,7 +3559,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 1295.86,
     "gdpval_elo": null,
     "omniscience": -9.7,
     "scicode": 0.46412037037037,
@@ -3670,7 +3670,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.10115788470701273,
-    "time_per_task": 15.76221740030978,
+    "time_per_task": 16.307438415286022,
     "output_tokens_per_task": 2258.385981887234
   },
   {
@@ -3723,7 +3723,7 @@
     "intelligence_index_v4_1": 40.2825017625236,
     "coding_index": 56.1676376751283,
     "agentic_index": 31.0645326460481,
-    "gdpval_v2": 1189.21,
+    "gdpval_v2": 1188.54,
     "gdpval_elo": null,
     "omniscience": -22.9,
     "scicode": 0.449074074074074,
@@ -3740,23 +3740,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 829.17,
-      "lower95ci": 819.51,
-      "upper95ci": 838.73,
+      "elo": 830.58,
+      "lower95ci": 821.57,
+      "upper95ci": 839.78,
       "rubric": {
-        "elo": 862.4,
-        "lower95ci": 848,
-        "upper95ci": 876.99
+        "elo": 863,
+        "lower95ci": 847.99,
+        "upper95ci": 875.97
       },
       "analyticalQuality": {
-        "elo": 752.01,
-        "lower95ci": 733.9,
-        "upper95ci": 769.23
+        "elo": 755.22,
+        "lower95ci": 737.69,
+        "upper95ci": 771.8
       },
       "presentation": {
-        "elo": 873.09,
-        "lower95ci": 855.39,
-        "upper95ci": 890.45
+        "elo": 873.52,
+        "lower95ci": 855.99,
+        "upper95ci": 890.39
       },
       "rubricPassRate": 0.18680203045685279,
       "turns": {
@@ -3849,7 +3849,7 @@
     "intelligence_index_v4_1": 40.1570857627689,
     "coding_index": 55.7818352059925,
     "agentic_index": 29.8734639175258,
-    "gdpval_v2": 1256.89,
+    "gdpval_v2": 1256.68,
     "gdpval_elo": null,
     "omniscience": 1.93333333333333,
     "scicode": 0.4375,
@@ -3866,23 +3866,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 973.3,
-      "lower95ci": 964.47,
-      "upper95ci": 982.61,
+      "elo": 972.57,
+      "lower95ci": 962.93,
+      "upper95ci": 982.6,
       "rubric": {
-        "elo": 994.67,
-        "lower95ci": 980.87,
-        "upper95ci": 1008.65
+        "elo": 994.83,
+        "lower95ci": 980.1,
+        "upper95ci": 1008.75
       },
       "analyticalQuality": {
-        "elo": 953.74,
-        "lower95ci": 936.44,
-        "upper95ci": 971.25
+        "elo": 951.64,
+        "lower95ci": 934.68,
+        "upper95ci": 968.72
       },
       "presentation": {
-        "elo": 971.49,
-        "lower95ci": 954.83,
-        "upper95ci": 988.56
+        "elo": 971.26,
+        "lower95ci": 953.09,
+        "upper95ci": 989.45
       },
       "rubricPassRate": 0.25757575757575757,
       "turns": {
@@ -3963,7 +3963,7 @@
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
     "cost_per_task_total": 0.22589274187412675,
-    "time_per_task": 347.14204262012595,
+    "time_per_task": 349.001670692667,
     "output_tokens_per_task": 26390.022977829776
   },
   {
@@ -4015,8 +4015,8 @@
     "intelligence_index": 40.1358548646523,
     "intelligence_index_v4_1": null,
     "coding_index": null,
-    "agentic_index": null,
-    "gdpval_v2": 1145.26,
+    "agentic_index": 23.7079793814433,
+    "gdpval_v2": 1145.01,
     "gdpval_elo": null,
     "omniscience": -9.33333333333333,
     "scicode": 0.430555555555556,
@@ -4025,7 +4025,7 @@
     "critpt": 0.0371428571428571,
     "lcr": 0.626666666666667,
     "terminalbench_v2_1": null,
-    "tau_banking": null,
+    "tau_banking": 0.065979381443299,
     "ifbench": 0.671428571428571,
     "livecodebench": null,
     "humaneval": null,
@@ -4098,7 +4098,7 @@
     "intelligence_index_v4_1": 39.9783061419024,
     "coding_index": 56.0787730614509,
     "agentic_index": 30.1670996563574,
-    "gdpval_v2": 1169.88,
+    "gdpval_v2": 1170.8,
     "gdpval_elo": null,
     "omniscience": -18.6833333333333,
     "scicode": 0.498842592592593,
@@ -4115,23 +4115,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.732947976878613,
     "briefcase": {
-      "elo": 705.43,
-      "lower95ci": 695.12,
-      "upper95ci": 715.24,
+      "elo": 706.97,
+      "lower95ci": 696.47,
+      "upper95ci": 716.43,
       "rubric": {
-        "elo": 757.96,
-        "lower95ci": 744.26,
-        "upper95ci": 771.58
+        "elo": 758.06,
+        "lower95ci": 743.84,
+        "upper95ci": 771.81
       },
       "analyticalQuality": {
-        "elo": 599.98,
-        "lower95ci": 580.79,
-        "upper95ci": 619.82
+        "elo": 604.34,
+        "lower95ci": 585.46,
+        "upper95ci": 621.8
       },
       "presentation": {
-        "elo": 758.35,
-        "lower95ci": 739.95,
-        "upper95ci": 777.79
+        "elo": 758.5,
+        "lower95ci": 738.07,
+        "upper95ci": 776.7
       },
       "rubricPassRate": 0.1254355400696864,
       "turns": {
@@ -4212,7 +4212,7 @@
     "price_1m_output": 4.5,
     "price_1m_blended_7_2_1": 0.6525000000000001,
     "cost_per_task_total": 0.47929864085182117,
-    "time_per_task": 484.67079030289926,
+    "time_per_task": 492.83366494412314,
     "output_tokens_per_task": 78121.45616466556
   },
   {
@@ -4224,7 +4224,7 @@
     "intelligence_index_v4_1": 39.8026227264218,
     "coding_index": 51.4504438895825,
     "agentic_index": 28.0356116838488,
-    "gdpval_v2": 1211.23,
+    "gdpval_v2": 1211.39,
     "gdpval_elo": null,
     "omniscience": 7.43333333333333,
     "scicode": 0.502314814814815,
@@ -4253,7 +4253,7 @@
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.54,
     "cost_per_task_total": 0.21191134533727934,
-    "time_per_task": 280.19204354455655,
+    "time_per_task": 275.13149286233715,
     "output_tokens_per_task": 35204.363370547784
   },
   {
@@ -4265,7 +4265,7 @@
     "intelligence_index_v4_1": 39.5608411628461,
     "coding_index": 54.5290608961021,
     "agentic_index": 27.5522817869416,
-    "gdpval_v2": 1134.6,
+    "gdpval_v2": 1135.39,
     "gdpval_elo": null,
     "omniscience": 2.65,
     "scicode": 0.407407407407407,
@@ -4429,7 +4429,7 @@
     "intelligence_index_v4_1": 38.9772279786141,
     "coding_index": 55.8611631294216,
     "agentic_index": 20.8054719358534,
-    "gdpval_v2": 934.81,
+    "gdpval_v2": 936.26,
     "gdpval_elo": null,
     "omniscience": 2.36666666666667,
     "scicode": 0.454861111111111,
@@ -4470,7 +4470,7 @@
     "intelligence_index_v4_1": 38.8259688304808,
     "coding_index": 52.4318560133167,
     "agentic_index": 34.9080790378007,
-    "gdpval_v2": 1266.69,
+    "gdpval_v2": 1265.72,
     "gdpval_elo": null,
     "omniscience": -10.1166666666667,
     "scicode": 0.381944444444444,
@@ -4500,7 +4500,7 @@
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
-    "output_tokens_per_task": 13544.68516714788
+    "output_tokens_per_task": 13693.910924723637
   },
   {
     "slug": "gpt-5-4-nano",
@@ -4511,7 +4511,7 @@
     "intelligence_index_v4_1": 38.2417263132715,
     "coding_index": 56.0744382022472,
     "agentic_index": 27.5439759450172,
-    "gdpval_v2": 1099.86,
+    "gdpval_v2": 1099.89,
     "gdpval_elo": null,
     "omniscience": -29.55,
     "scicode": 0.46875,
@@ -4552,7 +4552,7 @@
     "intelligence_index_v4_1": 38.1344947250387,
     "coding_index": 52.6173879872382,
     "agentic_index": 25.5759931271478,
-    "gdpval_v2": 1157.92,
+    "gdpval_v2": 1157.91,
     "gdpval_elo": null,
     "omniscience": 0.683333333333333,
     "scicode": 0.469907407407407,
@@ -4704,7 +4704,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
     "cost_per_task_total": 0.05041697401910826,
-    "time_per_task": 16.673766410591906,
+    "time_per_task": 17.779037492144848,
     "output_tokens_per_task": 3662.8758063762502
   },
   {
@@ -4798,7 +4798,7 @@
     "intelligence_index_v4_1": 37.7619546243905,
     "coding_index": 49.2652413649605,
     "agentic_index": 27.3604776632302,
-    "gdpval_v2": 1163.72,
+    "gdpval_v2": 1163.8,
     "gdpval_elo": null,
     "omniscience": -0.833333333333333,
     "scicode": 0.399305555555556,
@@ -4815,23 +4815,23 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 869.71,
-      "lower95ci": 859.67,
-      "upper95ci": 879.69,
+      "elo": 870.45,
+      "lower95ci": 860.25,
+      "upper95ci": 880.15,
       "rubric": {
-        "elo": 915.6,
-        "lower95ci": 900.19,
-        "upper95ci": 931.56
+        "elo": 915.97,
+        "lower95ci": 900.67,
+        "upper95ci": 931.31
       },
       "analyticalQuality": {
-        "elo": 834.9,
-        "lower95ci": 816.8,
-        "upper95ci": 853.16
+        "elo": 836.8,
+        "lower95ci": 819.29,
+        "upper95ci": 853.3
       },
       "presentation": {
-        "elo": 858.62,
-        "lower95ci": 839.89,
-        "upper95ci": 877.5
+        "elo": 858.57,
+        "lower95ci": 837.82,
+        "upper95ci": 876.68
       },
       "rubricPassRate": 0.2202020202020202,
       "turns": {
@@ -4912,7 +4912,7 @@
     "price_1m_output": 2.675,
     "price_1m_blended_7_2_1": 0.5775,
     "cost_per_task_total": 0.24390316682824711,
-    "time_per_task": 133.48825937741185,
+    "time_per_task": 132.31366841986994,
     "output_tokens_per_task": 22937.528491853147
   },
   {
@@ -4965,7 +4965,7 @@
     "intelligence_index_v4_1": 37.5766393431307,
     "coding_index": 42.2462373422111,
     "agentic_index": 24.0959828178694,
-    "gdpval_v2": 1084.49,
+    "gdpval_v2": 1084.9,
     "gdpval_elo": null,
     "omniscience": 18.3166666666667,
     "scicode": 0.47337962962963,
@@ -4982,23 +4982,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.78092485549133,
     "briefcase": {
-      "elo": 750.3,
-      "lower95ci": 739.25,
-      "upper95ci": 758.96,
+      "elo": 752.16,
+      "lower95ci": 742.56,
+      "upper95ci": 761.47,
       "rubric": {
-        "elo": 834.61,
-        "lower95ci": 818.57,
-        "upper95ci": 848.71
+        "elo": 834.94,
+        "lower95ci": 821.81,
+        "upper95ci": 848.75
       },
       "analyticalQuality": {
-        "elo": 608.53,
-        "lower95ci": 590.27,
-        "upper95ci": 626.48
+        "elo": 612.9,
+        "lower95ci": 594.14,
+        "upper95ci": 628.72
       },
       "presentation": {
-        "elo": 807.76,
-        "lower95ci": 789.96,
-        "upper95ci": 826.12
+        "elo": 808.63,
+        "lower95ci": 791.74,
+        "upper95ci": 826.82
       },
       "rubricPassRate": 0.17272727272727273,
       "turns": {
@@ -5132,7 +5132,7 @@
     "intelligence_index_v4_1": 37.0516798775037,
     "coding_index": 53.7210431405188,
     "agentic_index": 27.0255773195876,
-    "gdpval_v2": 1139.49,
+    "gdpval_v2": 1139.72,
     "gdpval_elo": null,
     "omniscience": -19.7833333333333,
     "scicode": 0.398148148148148,
@@ -5149,23 +5149,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.746242774566474,
     "briefcase": {
-      "elo": 804.67,
-      "lower95ci": 793.91,
-      "upper95ci": 815.38,
+      "elo": 805.96,
+      "lower95ci": 795.53,
+      "upper95ci": 815.6,
       "rubric": {
-        "elo": 841.29,
-        "lower95ci": 825.01,
-        "upper95ci": 856.79
+        "elo": 841.96,
+        "lower95ci": 826.14,
+        "upper95ci": 857.04
       },
       "analyticalQuality": {
-        "elo": 658.85,
-        "lower95ci": 637.41,
-        "upper95ci": 678.42
+        "elo": 661.85,
+        "lower95ci": 641.67,
+        "upper95ci": 679.67
       },
       "presentation": {
-        "elo": 913.86,
-        "lower95ci": 895.06,
-        "upper95ci": 933.68
+        "elo": 914.06,
+        "lower95ci": 894.39,
+        "upper95ci": 932.65
       },
       "rubricPassRate": 0.17682926829268292,
       "turns": {
@@ -5299,7 +5299,7 @@
     "intelligence_index_v4_1": 36.8735132371926,
     "coding_index": 49.3853169649049,
     "agentic_index": 21.0115395189003,
-    "gdpval_v2": 986.87,
+    "gdpval_v2": 987.45,
     "gdpval_elo": null,
     "omniscience": 5.55,
     "scicode": 0.43287037037037,
@@ -5381,7 +5381,7 @@
     "intelligence_index_v4_1": 36.4198423016253,
     "coding_index": 52.0954709391039,
     "agentic_index": 24.5823573883162,
-    "gdpval_v2": 1051.11,
+    "gdpval_v2": 1052.46,
     "gdpval_elo": null,
     "omniscience": 0.333333333333333,
     "scicode": 0.446759259259259,
@@ -5410,7 +5410,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.31,
     "cost_per_task_total": 0.41290380463528553,
-    "time_per_task": 317.6708780389651,
+    "time_per_task": 325.0345139179118,
     "output_tokens_per_task": 15716.419373296281
   },
   {
@@ -5873,7 +5873,7 @@
     "intelligence_index_v4_1": 34.7127335292454,
     "coding_index": 37.7839332778471,
     "agentic_index": 25.7092096219931,
-    "gdpval_v2": 1073.97,
+    "gdpval_v2": 1074.8,
     "gdpval_elo": null,
     "omniscience": -8.08333333333333,
     "scicode": 0.429398148148148,
@@ -5902,7 +5902,7 @@
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.3375,
     "cost_per_task_total": 0.2116516801323397,
-    "time_per_task": 182.51668664440786,
+    "time_per_task": 188.3361969703827,
     "output_tokens_per_task": 15866.194925415524
   },
   {
@@ -5955,7 +5955,7 @@
     "intelligence_index_v4_1": 34.6151280182156,
     "coding_index": 58.8829934803718,
     "agentic_index": 14.8662508591065,
-    "gdpval_v2": 894.29,
+    "gdpval_v2": 895.73,
     "gdpval_elo": null,
     "omniscience": -37.4333333333333,
     "scicode": 0.365740740740741,
@@ -5972,23 +5972,23 @@
     "mmlu_pro": 0.812749335106383,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 589.19,
-      "lower95ci": 576.89,
-      "upper95ci": 601.9,
+      "elo": 591.93,
+      "lower95ci": 579.75,
+      "upper95ci": 603.75,
       "rubric": {
-        "elo": 749.25,
-        "lower95ci": 733.28,
-        "upper95ci": 764.28
+        "elo": 749.93,
+        "lower95ci": 733.73,
+        "upper95ci": 765.49
       },
       "analyticalQuality": {
-        "elo": 434.79,
-        "lower95ci": 412.34,
-        "upper95ci": 458.51
+        "elo": 440.09,
+        "lower95ci": 416.93,
+        "upper95ci": 461.08
       },
       "presentation": {
-        "elo": 583.53,
-        "lower95ci": 560.15,
-        "upper95ci": 607.11
+        "elo": 585.75,
+        "lower95ci": 563.69,
+        "upper95ci": 608.32
       },
       "rubricPassRate": 0.13271604938271606,
       "turns": {
@@ -6069,7 +6069,7 @@
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": null,
-    "time_per_task": 54.28887992390524,
+    "time_per_task": 54.4817249535024,
     "output_tokens_per_task": 6102.955570581947
   },
   {
@@ -6233,7 +6233,7 @@
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.11454060544357351,
-    "time_per_task": 14.676260832941905,
+    "time_per_task": 16.3135272282489,
     "output_tokens_per_task": 2153.9411612854274
   },
   {
@@ -6368,7 +6368,7 @@
     "intelligence_index_v4_1": 33.70492387461,
     "coding_index": 45.258531002913,
     "agentic_index": 25.3919072164948,
-    "gdpval_v2": 1165.68,
+    "gdpval_v2": 1165.3,
     "gdpval_elo": null,
     "omniscience": -34.6,
     "scicode": 0.451388888888889,
@@ -6397,7 +6397,7 @@
     "price_1m_output": 2.2,
     "price_1m_blended_7_2_1": 0.7075,
     "cost_per_task_total": 0.29717889817375276,
-    "time_per_task": 248.62586076764984,
+    "time_per_task": 247.69336468185864,
     "output_tokens_per_task": 23388.131933609413
   },
   {
@@ -6409,7 +6409,7 @@
     "intelligence_index_v4_1": 33.6817059499116,
     "coding_index": 48.2118705784436,
     "agentic_index": 19.84535395189,
-    "gdpval_v2": 960.16,
+    "gdpval_v2": 961.91,
     "gdpval_elo": null,
     "omniscience": -29.7833333333333,
     "scicode": 0.420138888888889,
@@ -6426,23 +6426,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.772832369942197,
     "briefcase": {
-      "elo": 543.74,
-      "lower95ci": 531.53,
-      "upper95ci": 554.91,
+      "elo": 545.89,
+      "lower95ci": 534.9,
+      "upper95ci": 557.2,
       "rubric": {
-        "elo": 720.83,
-        "lower95ci": 706,
-        "upper95ci": 734.94
+        "elo": 721.11,
+        "lower95ci": 705.35,
+        "upper95ci": 735.67
       },
       "analyticalQuality": {
-        "elo": 360.61,
-        "lower95ci": 337.72,
-        "upper95ci": 382.67
+        "elo": 366.45,
+        "lower95ci": 343.08,
+        "upper95ci": 387.9
       },
       "presentation": {
-        "elo": 549.78,
-        "lower95ci": 528.22,
-        "upper95ci": 571.54
+        "elo": 550.11,
+        "lower95ci": 528.86,
+        "upper95ci": 570.65
       },
       "rubricPassRate": 0.12121212121212122,
       "turns": {
@@ -6523,7 +6523,7 @@
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.3331057741426611,
-    "time_per_task": 306.4984719146341,
+    "time_per_task": 305.9774725547171,
     "output_tokens_per_task": 17184.499605973375
   },
   {
@@ -6728,7 +6728,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
     "cost_per_task_total": 0.040455415560607715,
-    "time_per_task": 9.764885746818495,
+    "time_per_task": 9.949569905917402,
     "output_tokens_per_task": 2297.945408709607
   },
   {
@@ -6945,7 +6945,7 @@
     "intelligence_index_v4_1": 32.2791462784081,
     "coding_index": 45.7149916770703,
     "agentic_index": 20.7174158075601,
-    "gdpval_v2": 977.28,
+    "gdpval_v2": 978.02,
     "gdpval_elo": null,
     "omniscience": -39.5833333333333,
     "scicode": 0.420138888888889,
@@ -6974,7 +6974,7 @@
     "price_1m_output": 3.2,
     "price_1m_blended_7_2_1": 0.68,
     "cost_per_task_total": 0.24119620563683528,
-    "time_per_task": 115.69678395527785,
+    "time_per_task": 116.10352652589819,
     "output_tokens_per_task": 16966.3356867959
   },
   {
@@ -6986,7 +6986,7 @@
     "intelligence_index_v4_1": 32.039941106813,
     "coding_index": 44.173949230129,
     "agentic_index": 18.316295532646,
-    "gdpval_v2": 861.01,
+    "gdpval_v2": 865.48,
     "gdpval_elo": null,
     "omniscience": -20.8833333333333,
     "scicode": 0.388888888888889,
@@ -7016,7 +7016,7 @@
     "price_1m_blended_7_2_1": 0.1078,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
-    "output_tokens_per_task": 15339.066725570121
+    "output_tokens_per_task": 15354.436422539819
   },
   {
     "slug": "qwen3-5-397b-a17b-non-reasoning",
@@ -7109,7 +7109,7 @@
     "intelligence_index_v4_1": 31.649611240178,
     "coding_index": 41.8838431127757,
     "agentic_index": 21.413264604811,
-    "gdpval_v2": 1047.33,
+    "gdpval_v2": 1048.67,
     "gdpval_elo": null,
     "omniscience": -21.4333333333333,
     "scicode": 0.357638888888889,
@@ -7519,7 +7519,7 @@
     "intelligence_index_v4_1": 30.5727263188268,
     "coding_index": 42.8344777361631,
     "agentic_index": 18.8602680412371,
-    "gdpval_v2": 917.44,
+    "gdpval_v2": 918.78,
     "gdpval_elo": null,
     "omniscience": -37.75,
     "scicode": 0.423611111111111,
@@ -7548,7 +7548,7 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.3451837452945369,
-    "time_per_task": 204.56256093240407,
+    "time_per_task": 206.69857191757407,
     "output_tokens_per_task": 27540.07752030103
   },
   {
@@ -7560,7 +7560,7 @@
     "intelligence_index_v4_1": 30.4611236934534,
     "coding_index": 46.6300804549868,
     "agentic_index": 23.2881408934708,
-    "gdpval_v2": 1111.94,
+    "gdpval_v2": 1112.72,
     "gdpval_elo": null,
     "omniscience": -52.7833333333333,
     "scicode": 0.372685185185185,
@@ -7601,7 +7601,7 @@
     "intelligence_index_v4_1": 30.4351098355133,
     "coding_index": 43.5042134831461,
     "agentic_index": 18.1354295532646,
-    "gdpval_v2": 887.81,
+    "gdpval_v2": 889.28,
     "gdpval_elo": null,
     "omniscience": -24.3166666666667,
     "scicode": 0.40625,
@@ -7683,7 +7683,7 @@
     "intelligence_index_v4_1": 30.2677234652192,
     "coding_index": 39.5659938965182,
     "agentic_index": 21.5294020618557,
-    "gdpval_v2": 1016.9,
+    "gdpval_v2": 1017.04,
     "gdpval_elo": null,
     "omniscience": -37.55,
     "scicode": 0.400462962962963,
@@ -7765,7 +7765,7 @@
     "intelligence_index_v4_1": 29.947307563003,
     "coding_index": 46.9023096129838,
     "agentic_index": 18.9989965635739,
-    "gdpval_v2": 928.7,
+    "gdpval_v2": 928.95,
     "gdpval_elo": null,
     "omniscience": -36.3166666666667,
     "scicode": 0.395833333333333,
@@ -7782,23 +7782,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.648554913294798,
     "briefcase": {
-      "elo": 503.16,
-      "lower95ci": 490.99,
-      "upper95ci": 514.59,
+      "elo": 506.27,
+      "lower95ci": 493.93,
+      "upper95ci": 516.92,
       "rubric": {
-        "elo": 735.39,
-        "lower95ci": 721.28,
-        "upper95ci": 749.89
+        "elo": 735.73,
+        "lower95ci": 720.96,
+        "upper95ci": 749.51
       },
       "analyticalQuality": {
-        "elo": 312.15,
-        "lower95ci": 287.01,
-        "upper95ci": 334.82
+        "elo": 319.13,
+        "lower95ci": 295.25,
+        "upper95ci": 340.78
       },
       "presentation": {
-        "elo": 461.93,
-        "lower95ci": 438.94,
-        "upper95ci": 482.86
+        "elo": 463.94,
+        "lower95ci": 442.23,
+        "upper95ci": 484.35
       },
       "rubricPassRate": 0.12424242424242424,
       "turns": {
@@ -7879,7 +7879,7 @@
     "price_1m_output": 7.5,
     "price_1m_blended_7_2_1": 1.155,
     "cost_per_task_total": 1.082796913829072,
-    "time_per_task": 183.2689066337518,
+    "time_per_task": 262.50395910828576,
     "output_tokens_per_task": 25444.977817178908
   },
   {
@@ -7932,7 +7932,7 @@
     "intelligence_index_v4_1": 29.5762345971708,
     "coding_index": 43.8921833818837,
     "agentic_index": 16.4030549828179,
-    "gdpval_v2": 905.21,
+    "gdpval_v2": 906.61,
     "gdpval_elo": null,
     "omniscience": -4.21666666666667,
     "scicode": 0.43287037037037,
@@ -7949,23 +7949,23 @@
     "mmlu_pro": 0.759890292553192,
     "mmmu_pro": 0.585549132947977,
     "briefcase": {
-      "elo": 601.36,
-      "lower95ci": 589.38,
-      "upper95ci": 611.36,
+      "elo": 603.45,
+      "lower95ci": 592.15,
+      "upper95ci": 614.36,
       "rubric": {
-        "elo": 720.08,
-        "lower95ci": 705.5,
-        "upper95ci": 733.25
+        "elo": 720.24,
+        "lower95ci": 705.03,
+        "upper95ci": 734.6
       },
       "analyticalQuality": {
-        "elo": 424.39,
-        "lower95ci": 402.12,
-        "upper95ci": 445.34
+        "elo": 429.83,
+        "lower95ci": 407.43,
+        "upper95ci": 450.61
       },
       "presentation": {
-        "elo": 659.61,
-        "lower95ci": 637.74,
-        "upper95ci": 680.26
+        "elo": 660.28,
+        "lower95ci": 639.1,
+        "upper95ci": 679.54
       },
       "rubricPassRate": 0.10808080808080808,
       "turns": {
@@ -8099,7 +8099,7 @@
     "intelligence_index_v4_1": 29.3542081371995,
     "coding_index": 43.4313878485227,
     "agentic_index": 14.4475154639175,
-    "gdpval_v2": 802.09,
+    "gdpval_v2": 804.03,
     "gdpval_elo": null,
     "omniscience": -45.4166666666667,
     "scicode": 0.434027777777778,
@@ -8116,23 +8116,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.734104046242775,
     "briefcase": {
-      "elo": 358.9,
-      "lower95ci": 345.04,
-      "upper95ci": 370.21,
+      "elo": 363.94,
+      "lower95ci": 350.02,
+      "upper95ci": 376.57,
       "rubric": {
-        "elo": 641.6,
-        "lower95ci": 626.87,
-        "upper95ci": 656.21
+        "elo": 641.81,
+        "lower95ci": 626.86,
+        "upper95ci": 655.94
       },
       "analyticalQuality": {
-        "elo": 114.53,
-        "lower95ci": 88.16,
-        "upper95ci": 139.7
+        "elo": 122.98,
+        "lower95ci": 95.81,
+        "upper95ci": 148.71
       },
       "presentation": {
-        "elo": 320.56,
-        "lower95ci": 295.7,
-        "upper95ci": 343.94
+        "elo": 327.04,
+        "lower95ci": 303.19,
+        "upper95ci": 348.51
       },
       "rubricPassRate": 0.07777777777777778,
       "turns": {
@@ -8213,7 +8213,7 @@
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
-    "time_per_task": 329.66569034124706,
+    "time_per_task": 329.8729940884931,
     "output_tokens_per_task": 11963.018702339323
   },
   {
@@ -8348,7 +8348,7 @@
     "intelligence_index_v4_1": 28.9159672585524,
     "coding_index": 37.5684907754196,
     "agentic_index": 16.6408109965636,
-    "gdpval_v2": 859.06,
+    "gdpval_v2": 860.55,
     "gdpval_elo": null,
     "omniscience": 0.183333333333333,
     "scicode": 0.400462962962963,
@@ -8389,7 +8389,7 @@
     "intelligence_index_v4_1": 28.8603469587486,
     "coding_index": 39.4246774864752,
     "agentic_index": 11.0214639175258,
-    "gdpval_v2": 716.83,
+    "gdpval_v2": 718.56,
     "gdpval_elo": null,
     "omniscience": 3.48333333333333,
     "scicode": 0.486111111111111,
@@ -8430,7 +8430,7 @@
     "intelligence_index_v4_1": 28.6958810162247,
     "coding_index": 45.767443473436,
     "agentic_index": 17.6564879725086,
-    "gdpval_v2": 930.71,
+    "gdpval_v2": 933.57,
     "gdpval_elo": null,
     "omniscience": -41.7333333333333,
     "scicode": 0.384259259259259,
@@ -8459,7 +8459,7 @@
     "price_1m_output": 2.2,
     "price_1m_blended_7_2_1": 0.7150000000000001,
     "cost_per_task_total": 0.28294770145479164,
-    "time_per_task": 426.82345272836807,
+    "time_per_task": 417.5748614746151,
     "output_tokens_per_task": 18644.541998501936
   },
   {
@@ -8717,7 +8717,7 @@
     "intelligence_index_v4_1": 27.5952535086828,
     "coding_index": 43.3433902066861,
     "agentic_index": 15.8337216494845,
-    "gdpval_v2": 878.91,
+    "gdpval_v2": 879.91,
     "gdpval_elo": null,
     "omniscience": -53.9,
     "scicode": 0.356481481481482,
@@ -8745,9 +8745,9 @@
     "price_1m_input": 0.4,
     "price_1m_output": 3.2,
     "price_1m_blended_7_2_1": 0.68,
-    "cost_per_task_total": 0.1759826043526814,
-    "time_per_task": 53.7460746181881,
-    "output_tokens_per_task": 8880.120671945648
+    "cost_per_task_total": 0.17743046041328747,
+    "time_per_task": 53.294315410125336,
+    "output_tokens_per_task": 8916.401732551709
   },
   {
     "slug": "grok-4-fast-reasoning",
@@ -8910,7 +8910,7 @@
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
     "cost_per_task_total": 0.05470253606463758,
-    "time_per_task": 9.196813646491599,
+    "time_per_task": 9.984984508995895,
     "output_tokens_per_task": 2110.1426382861237
   },
   {
@@ -9168,7 +9168,7 @@
     "intelligence_index_v4_1": 25.8175930098627,
     "coding_index": 33.2509710084616,
     "agentic_index": 7.10078350515464,
-    "gdpval_v2": 661.63,
+    "gdpval_v2": 665.39,
     "gdpval_elo": null,
     "omniscience": -14.3,
     "scicode": 0.428240740740741,
@@ -9209,7 +9209,7 @@
     "intelligence_index_v4_1": 25.6946061195095,
     "coding_index": 39.3163060063809,
     "agentic_index": 10.9671924398625,
-    "gdpval_v2": 759.35,
+    "gdpval_v2": 761.33,
     "gdpval_elo": null,
     "omniscience": -48.0666666666667,
     "scicode": 0.400462962962963,
@@ -9455,7 +9455,7 @@
     "intelligence_index_v4_1": 25.4059430700317,
     "coding_index": 37.7163094742683,
     "agentic_index": 8.7233642611684,
-    "gdpval_v2": 692.49,
+    "gdpval_v2": 693.25,
     "gdpval_elo": null,
     "omniscience": -42.0666666666667,
     "scicode": 0.359953703703704,
@@ -9476,9 +9476,9 @@
       "lower95ci": 0,
       "upper95ci": 0,
       "rubric": {
-        "elo": 495.17,
-        "lower95ci": 478.33,
-        "upper95ci": 509.79
+        "elo": 495.73,
+        "lower95ci": 479.95,
+        "upper95ci": 510.85
       },
       "analyticalQuality": {
         "elo": 0,
@@ -9569,7 +9569,7 @@
     "price_1m_output": 0.775,
     "price_1m_blended_7_2_1": 0.22725,
     "cost_per_task_total": 0.20551170435365923,
-    "time_per_task": 163.59988798032427,
+    "time_per_task": 164.26948301501199,
     "output_tokens_per_task": 25580.484907731414
   },
   {
@@ -9622,7 +9622,7 @@
     "intelligence_index_v4_1": 25.3051924538853,
     "coding_index": 15.575582605077,
     "agentic_index": 19.368058419244,
-    "gdpval_v2": 936.51,
+    "gdpval_v2": 936.71,
     "gdpval_elo": null,
     "omniscience": -17.1833333333333,
     "scicode": 0.392361111111111,
@@ -9650,9 +9650,9 @@
     "price_1m_input": 0.25,
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.26749999999999996,
-    "cost_per_task_total": 0.029591455320180884,
-    "time_per_task": 114.32690539617658,
-    "output_tokens_per_task": 11073.667157615295
+    "cost_per_task_total": 0.02969510923770121,
+    "time_per_task": 116.04010350669476,
+    "output_tokens_per_task": 11101.68761216075
   },
   {
     "slug": "gemini-3-1-flash-lite-preview",
@@ -9663,7 +9663,7 @@
     "intelligence_index_v4_1": 25.038457882447,
     "coding_index": 34.6901442641143,
     "agentic_index": 6.17159793814433,
-    "gdpval_v2": 640.31,
+    "gdpval_v2": 641.57,
     "gdpval_elo": null,
     "omniscience": -15.5166666666667,
     "scicode": 0.418981481481481,
@@ -9680,13 +9680,13 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.755491329479769,
     "briefcase": {
-      "elo": 214.42,
-      "lower95ci": 198.12,
-      "upper95ci": 227.32,
+      "elo": 221.02,
+      "lower95ci": 206.43,
+      "upper95ci": 234.95,
       "rubric": {
-        "elo": 617.25,
+        "elo": 617.67,
         "lower95ci": 602.24,
-        "upper95ci": 633.16
+        "upper95ci": 633.4
       },
       "analyticalQuality": {
         "elo": 0,
@@ -9694,9 +9694,9 @@
         "upper95ci": 0
       },
       "presentation": {
-        "elo": 140.81,
-        "lower95ci": 112.2,
-        "upper95ci": 167.32
+        "elo": 150.17,
+        "lower95ci": 122.48,
+        "upper95ci": 176.15
       },
       "rubricPassRate": 0.06332992849846783,
       "turns": {
@@ -9828,9 +9828,9 @@
     "creator": "Google",
     "intelligence_index": 24.8488625422228,
     "intelligence_index_v4_1": null,
-    "coding_index": null,
+    "coding_index": 33.1716430850326,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 744.22,
     "gdpval_elo": null,
     "omniscience": -51.35,
     "scicode": 0.41087962962963,
@@ -9838,7 +9838,7 @@
     "gpqa": 0.762626262626263,
     "critpt": 0,
     "lcr": 0.36,
-    "terminalbench_v2_1": null,
+    "terminalbench_v2_1": 0.292134831460674,
     "tau_banking": null,
     "ifbench": 0.53469387755102,
     "livecodebench": null,
@@ -9871,7 +9871,7 @@
     "intelligence_index_v4_1": 24.7517904486036,
     "coding_index": 35.1830177555833,
     "agentic_index": 22.8129553264605,
-    "gdpval_v2": 1094.68,
+    "gdpval_v2": 1095.96,
     "gdpval_elo": null,
     "omniscience": -32.3,
     "scicode": 0.373842592592593,
@@ -9953,7 +9953,7 @@
     "intelligence_index_v4_1": 24.6700650875255,
     "coding_index": 49.8404771813012,
     "agentic_index": 11.9909278350515,
-    "gdpval_v2": 829.45,
+    "gdpval_v2": 833.05,
     "gdpval_elo": null,
     "omniscience": -48.4833333333333,
     "scicode": 0.259259259259259,
@@ -10076,7 +10076,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 1022.7,
     "gdpval_elo": null,
     "omniscience": -59.8333333333333,
     "scicode": 0.0127314814814815,
@@ -10158,7 +10158,7 @@
     "intelligence_index_v4_1": 23.8309678073278,
     "coding_index": 30.441115272576,
     "agentic_index": 13.1731638029782,
-    "gdpval_v2": 796.54,
+    "gdpval_v2": 799.33,
     "gdpval_elo": null,
     "omniscience": -50.05,
     "scicode": 0.388888888888889,
@@ -10177,11 +10177,11 @@
     "briefcase": {
       "elo": 0,
       "lower95ci": 0,
-      "upper95ci": 4.33,
+      "upper95ci": 9.91,
       "rubric": {
-        "elo": 534.96,
-        "lower95ci": 519.6,
-        "upper95ci": 551.04
+        "elo": 535.24,
+        "lower95ci": 519.71,
+        "upper95ci": 550.8
       },
       "analyticalQuality": {
         "elo": 0,
@@ -10272,7 +10272,7 @@
     "price_1m_output": 0.6,
     "price_1m_blended_7_2_1": 0.195,
     "cost_per_task_total": 0.06067164425252872,
-    "time_per_task": 123.74823337242184,
+    "time_per_task": 123.72687209378557,
     "output_tokens_per_task": 35619.836725311856
   },
   {
@@ -10489,7 +10489,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": null,
+    "gdpval_v2": 805.2,
     "gdpval_elo": null,
     "omniscience": -62,
     "scicode": 0.292824074074074,
@@ -10694,7 +10694,7 @@
     "intelligence_index_v4_1": 22.5095334451485,
     "coding_index": 27.8467020391177,
     "agentic_index": 9.15806529209622,
-    "gdpval_v2": 715.24,
+    "gdpval_v2": 715.34,
     "gdpval_elo": null,
     "omniscience": -3.98333333333333,
     "scicode": 0.378472222222222,
@@ -10711,23 +10711,23 @@
     "mmlu_pro": null,
     "mmmu_pro": 0.632369942196532,
     "briefcase": {
-      "elo": 351.46,
-      "lower95ci": 335.4,
-      "upper95ci": 367.36,
+      "elo": 357.47,
+      "lower95ci": 342.05,
+      "upper95ci": 371.23,
       "rubric": {
-        "elo": 627.12,
-        "lower95ci": 611.14,
-        "upper95ci": 641.48
+        "elo": 627.55,
+        "lower95ci": 610.01,
+        "upper95ci": 643.35
       },
       "analyticalQuality": {
-        "elo": 50.77,
-        "lower95ci": 17.02,
-        "upper95ci": 81.35
+        "elo": 60.04,
+        "lower95ci": 27.98,
+        "upper95ci": 90.09
       },
       "presentation": {
-        "elo": 376.48,
-        "lower95ci": 343.78,
-        "upper95ci": 409.22
+        "elo": 384.82,
+        "lower95ci": 355.24,
+        "upper95ci": 411.32
       },
       "rubricPassRate": 0.06917599186164802,
       "turns": {
@@ -10808,7 +10808,7 @@
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 126.95412924298795,
+    "time_per_task": 132.19904176344306,
     "output_tokens_per_task": 20772.993280809515
   },
   {
@@ -11107,7 +11107,7 @@
     "intelligence_index_v4_1": 21.7654780663193,
     "coding_index": 33.96145443196,
     "agentic_index": 6.99762199312715,
-    "gdpval_v2": 676.27,
+    "gdpval_v2": 676.22,
     "gdpval_elo": null,
     "omniscience": -48.05,
     "scicode": 0.427083333333333,
@@ -11189,7 +11189,7 @@
     "intelligence_index_v4_1": 21.4379662021172,
     "coding_index": 28.6577541961437,
     "agentic_index": 7.40947422680412,
-    "gdpval_v2": 633.34,
+    "gdpval_v2": 635.58,
     "gdpval_elo": null,
     "omniscience": -52.5166666666667,
     "scicode": 0.275462962962963,
@@ -11218,7 +11218,7 @@
     "price_1m_output": 0.15,
     "price_1m_blended_7_2_1": 0.10500000000000001,
     "cost_per_task_total": 0.1638454723745099,
-    "time_per_task": 503.813788275982,
+    "time_per_task": 487.77089285651965,
     "output_tokens_per_task": 32622.609783538945
   },
   {
@@ -11394,7 +11394,7 @@
     "intelligence_index_v4_1": 21.1086120792868,
     "coding_index": 36.2320536828964,
     "agentic_index": 8.78654639175257,
-    "gdpval_v2": 710.28,
+    "gdpval_v2": 711.26,
     "gdpval_elo": null,
     "omniscience": -60.7166666666667,
     "scicode": 0.322916666666667,
@@ -11422,9 +11422,9 @@
     "price_1m_input": 0.35,
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.43499999999999994,
-    "cost_per_task_total": 0.3287844020403493,
-    "time_per_task": 151.65302231156832,
-    "output_tokens_per_task": 15488.014936403219
+    "cost_per_task_total": 0.32902581609337966,
+    "time_per_task": 153.52109091524022,
+    "output_tokens_per_task": 15537.806603069886
   },
   {
     "slug": "deepseek-v3-1",
@@ -11599,7 +11599,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": 36.4518310445277,
     "agentic_index": null,
-    "gdpval_v2": 533.02,
+    "gdpval_v2": 534.44,
     "gdpval_elo": null,
     "omniscience": -49.0666666666667,
     "scicode": 0.381944444444444,
@@ -11968,7 +11968,7 @@
     "intelligence_index_v4_1": 19.608297149775,
     "coding_index": 22.1103828547649,
     "agentic_index": 3.83301718213058,
-    "gdpval_v2": 538.17,
+    "gdpval_v2": 540.61,
     "gdpval_elo": null,
     "omniscience": -45.55,
     "scicode": 0.423611111111111,
@@ -11997,7 +11997,7 @@
     "price_1m_output": 8.4,
     "price_1m_blended_7_2_1": 1.47,
     "cost_per_task_total": null,
-    "time_per_task": 291.2403589170191,
+    "time_per_task": 302.2141935061476,
     "output_tokens_per_task": 17599.490864825028
   },
   {
@@ -12009,7 +12009,7 @@
     "intelligence_index_v4_1": 19.6058827132159,
     "coding_index": 25.8695727562769,
     "agentic_index": 6.4193883161512,
-    "gdpval_v2": 643.34,
+    "gdpval_v2": 645.19,
     "gdpval_elo": null,
     "omniscience": -45.7666666666667,
     "scicode": 0.386574074074074,
@@ -12050,7 +12050,7 @@
     "intelligence_index_v4_1": 19.5555163339516,
     "coding_index": 26.6368428353447,
     "agentic_index": 4.69821305841924,
-    "gdpval_v2": 586.39,
+    "gdpval_v2": 587.99,
     "gdpval_elo": null,
     "omniscience": -29.9,
     "scicode": 0.37962962962963,
@@ -12255,7 +12255,7 @@
     "intelligence_index_v4_1": 19.1572180630673,
     "coding_index": 31.2586697184075,
     "agentic_index": 10.5734261168385,
-    "gdpval_v2": 737.13,
+    "gdpval_v2": 739.05,
     "gdpval_elo": null,
     "omniscience": -46.1666666666667,
     "scicode": 0.331018518518519,
@@ -12583,7 +12583,7 @@
     "intelligence_index_v4_1": 18.5075067596643,
     "coding_index": 24.6388443017656,
     "agentic_index": 3.08858419243986,
-    "gdpval_v2": 523.52,
+    "gdpval_v2": 525.05,
     "gdpval_elo": null,
     "omniscience": -31.3166666666667,
     "scicode": 0.357142857142857,
@@ -12735,7 +12735,7 @@
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.24542698374402477,
-    "time_per_task": 326.5424301089394,
+    "time_per_task": 323.29408514897705,
     "output_tokens_per_task": 46190.80343551248
   },
   {
@@ -12870,7 +12870,7 @@
     "intelligence_index_v4_1": 17.8744831166998,
     "coding_index": 21.3184040782356,
     "agentic_index": 1.85567010309278,
-    "gdpval_v2": 401.59,
+    "gdpval_v2": 402.93,
     "gdpval_elo": null,
     "omniscience": -26.2333333333333,
     "scicode": 0.392361111111111,
@@ -12993,7 +12993,7 @@
     "intelligence_index_v4_1": 17.8040703229111,
     "coding_index": 23.2300769870994,
     "agentic_index": 6.68960824742268,
-    "gdpval_v2": 652.6,
+    "gdpval_v2": 653.65,
     "gdpval_elo": null,
     "omniscience": -56.4333333333333,
     "scicode": 0.329861111111111,
@@ -13021,9 +13021,9 @@
     "price_1m_input": 0.04,
     "price_1m_output": 0.14,
     "price_1m_blended_7_2_1": 0.05,
-    "cost_per_task_total": 0.01745736829562579,
-    "time_per_task": 86.09283008408406,
-    "output_tokens_per_task": 30381.572325179186
+    "cost_per_task_total": 0.017954722750171244,
+    "time_per_task": 89.09251625483682,
+    "output_tokens_per_task": 30781.981416088278
   },
   {
     "slug": "gpt-oss-120b-low",
@@ -13198,7 +13198,7 @@
     "intelligence_index_v4_1": 17.4365127569799,
     "coding_index": 29.3318248023304,
     "agentic_index": 10.4729072164948,
-    "gdpval_v2": 728.38,
+    "gdpval_v2": 728.83,
     "gdpval_elo": null,
     "omniscience": -56.7333333333333,
     "scicode": 0.288194444444444,
@@ -13227,7 +13227,7 @@
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 102.63756149046179,
+    "time_per_task": 113.2990736165624,
     "output_tokens_per_task": 6163.913633054909
   },
   {
@@ -13239,7 +13239,7 @@
     "intelligence_index_v4_1": 17.2613662319887,
     "coding_index": 20.9828859758635,
     "agentic_index": 1.78694158075601,
-    "gdpval_v2": 367.11,
+    "gdpval_v2": 369.86,
     "gdpval_elo": null,
     "omniscience": -33.9166666666667,
     "scicode": 0.329861111111111,
@@ -13256,13 +13256,13 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 44.02,
-      "lower95ci": 27.64,
-      "upper95ci": 57.69,
+      "elo": 50.21,
+      "lower95ci": 34.42,
+      "upper95ci": 63.95,
       "rubric": {
-        "elo": 581.94,
-        "lower95ci": 567.56,
-        "upper95ci": 595.64
+        "elo": 582.23,
+        "lower95ci": 567.1,
+        "upper95ci": 597.12
       },
       "analyticalQuality": {
         "elo": 0,
@@ -13652,7 +13652,7 @@
     "intelligence_index_v4_1": 16.7202061501106,
     "coding_index": 17.4187647385213,
     "agentic_index": 2.06185567010309,
-    "gdpval_v2": 366.39,
+    "gdpval_v2": 367.35,
     "gdpval_elo": null,
     "omniscience": -50.5666666666667,
     "scicode": 0.387731481481481,
@@ -13680,9 +13680,9 @@
     "price_1m_input": 0.5,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 1.05,
-    "cost_per_task_total": 0.16573126305097635,
-    "time_per_task": 112.37484292318838,
-    "output_tokens_per_task": 22059.08929074542
+    "cost_per_task_total": 0.1686499528237036,
+    "time_per_task": 112.86530736042515,
+    "output_tokens_per_task": 22221.576411957547
   },
   {
     "slug": "gpt-5-4-mini-non-reasoning",
@@ -13693,7 +13693,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 785.08,
+    "gdpval_v2": 784.31,
     "gdpval_elo": null,
     "omniscience": -45.85,
     "scicode": 0.395833333333333,
@@ -13980,7 +13980,7 @@
     "intelligence_index_v4_1": 15.9300825619952,
     "coding_index": 20.0656297683452,
     "agentic_index": 5.51939862542955,
-    "gdpval_v2": 631.4,
+    "gdpval_v2": 632.51,
     "gdpval_elo": null,
     "omniscience": -39.4333333333333,
     "scicode": 0.362268518518519,
@@ -14021,7 +14021,7 @@
     "intelligence_index_v4_1": 15.6405170188467,
     "coding_index": 16.2581353180754,
     "agentic_index": 1.71821305841924,
-    "gdpval_v2": 466.04,
+    "gdpval_v2": 468.11,
     "gdpval_elo": null,
     "omniscience": -41.3333333333333,
     "scicode": 0.397856419092825,
@@ -14144,7 +14144,7 @@
     "intelligence_index_v4_1": 15.4301213476181,
     "coding_index": 21.1597482313774,
     "agentic_index": 1.51202749140893,
-    "gdpval_v2": 312.74,
+    "gdpval_v2": 314.48,
     "gdpval_elo": null,
     "omniscience": -37.5666666666667,
     "scicode": 0.357638888888889,
@@ -14390,7 +14390,7 @@
     "intelligence_index_v4_1": 14.8851031229075,
     "coding_index": 20.6967852684145,
     "agentic_index": 3.10310309278351,
-    "gdpval_v2": 556.98,
+    "gdpval_v2": 559.03,
     "gdpval_elo": null,
     "omniscience": -63.9166666666667,
     "scicode": 0.34375,
@@ -14411,9 +14411,9 @@
       "lower95ci": 0,
       "upper95ci": 0,
       "rubric": {
-        "elo": 523.4,
-        "lower95ci": 508.48,
-        "upper95ci": 538.94
+        "elo": 523.69,
+        "lower95ci": 508.71,
+        "upper95ci": 538.15
       },
       "analyticalQuality": {
         "elo": 0,
@@ -14504,7 +14504,7 @@
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.06500000000000002,
     "cost_per_task_total": 0.017842778338181632,
-    "time_per_task": 99.12323714785583,
+    "time_per_task": 90.54723278275026,
     "output_tokens_per_task": 22353.429574601836
   },
   {
@@ -14516,7 +14516,7 @@
     "intelligence_index_v4_1": 14.7656334909109,
     "coding_index": 20.2060792065474,
     "agentic_index": 1.71821305841924,
-    "gdpval_v2": 501.47,
+    "gdpval_v2": 502.92,
     "gdpval_elo": null,
     "omniscience": -50.1333333333333,
     "scicode": 0.403935185185185,
@@ -14557,7 +14557,7 @@
     "intelligence_index_v4_1": 14.7448087533968,
     "coding_index": 26.3130288528229,
     "agentic_index": 5.16543642611684,
-    "gdpval_v2": 587.91,
+    "gdpval_v2": 590.15,
     "gdpval_elo": null,
     "omniscience": -50.3166666666667,
     "scicode": 0.265046296296296,
@@ -14586,7 +14586,7 @@
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.12000000000000002,
     "cost_per_task_total": 0.04100283502410408,
-    "time_per_task": 29.670840112066713,
+    "time_per_task": 29.903268349252585,
     "output_tokens_per_task": 4757.239734679951
   },
   {
@@ -14598,7 +14598,7 @@
     "intelligence_index_v4_1": 14.6788898631869,
     "coding_index": 20.5038840338466,
     "agentic_index": 6.16520274914089,
-    "gdpval_v2": 598.64,
+    "gdpval_v2": 599.25,
     "gdpval_elo": null,
     "omniscience": -45.4666666666667,
     "scicode": 0.337962962962963,
@@ -14639,7 +14639,7 @@
     "intelligence_index_v4_1": 14.4377762633027,
     "coding_index": 12.1098626716604,
     "agentic_index": 1.78694158075601,
-    "gdpval_v2": 306.4,
+    "gdpval_v2": 307.72,
     "gdpval_elo": null,
     "omniscience": -56.8666666666667,
     "scicode": 0.333333333333333,
@@ -14668,7 +14668,7 @@
     "price_1m_output": 2.4,
     "price_1m_blended_7_2_1": 0.42000000000000004,
     "cost_per_task_total": 0.07164709339313349,
-    "time_per_task": 151.0212170563629,
+    "time_per_task": 154.65787013993253,
     "output_tokens_per_task": 19474.49120286842
   },
   {
@@ -14721,7 +14721,7 @@
     "intelligence_index_v4_1": 14.3557330595446,
     "coding_index": 20.8606429463171,
     "agentic_index": 2.85237457044674,
-    "gdpval_v2": 552.94,
+    "gdpval_v2": 554.73,
     "gdpval_elo": null,
     "omniscience": -48.15,
     "scicode": 0.28125,
@@ -14750,7 +14750,7 @@
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
     "cost_per_task_total": 0.24556414020453576,
-    "time_per_task": 31.443571653963872,
+    "time_per_task": 32.80170729082376,
     "output_tokens_per_task": 3631.1773890567592
   },
   {
@@ -14844,7 +14844,7 @@
     "intelligence_index_v4_1": 14.2657978659374,
     "coding_index": 16.2773963101678,
     "agentic_index": 1.30584192439863,
-    "gdpval_v2": -18.32,
+    "gdpval_v2": -16.15,
     "gdpval_elo": null,
     "omniscience": -41.7666666666667,
     "scicode": 0.331018518518519,
@@ -14865,9 +14865,9 @@
       "lower95ci": 0,
       "upper95ci": 0,
       "rubric": {
-        "elo": 495.13,
-        "lower95ci": 479.86,
-        "upper95ci": 509.84
+        "elo": 495.46,
+        "lower95ci": 479.78,
+        "upper95ci": 510.02
       },
       "analyticalQuality": {
         "elo": 0,
@@ -14958,7 +14958,7 @@
     "price_1m_output": 0.85,
     "price_1m_blended_7_2_1": 0.344,
     "cost_per_task_total": 0.031591080063049636,
-    "time_per_task": 19.13797382537964,
+    "time_per_task": 19.10297598802673,
     "output_tokens_per_task": 2088.862457165753
   },
   {
@@ -15052,7 +15052,7 @@
     "intelligence_index_v4_1": 14.1772902141795,
     "coding_index": 14.3709252323484,
     "agentic_index": 1.99312714776632,
-    "gdpval_v2": 482.66,
+    "gdpval_v2": 483.84,
     "gdpval_elo": null,
     "omniscience": -51.6333333333333,
     "scicode": 0.296296296296296,
@@ -15081,7 +15081,7 @@
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.06500000000000002,
     "cost_per_task_total": 0.018312323602596187,
-    "time_per_task": 198.36187848715278,
+    "time_per_task": 202.0076587551359,
     "output_tokens_per_task": 26776.696868800773
   },
   {
@@ -15093,7 +15093,7 @@
     "intelligence_index_v4_1": 14.160584979307,
     "coding_index": 23.0415106117354,
     "agentic_index": 1.5807560137457,
-    "gdpval_v2": 215.03,
+    "gdpval_v2": 217.09,
     "gdpval_elo": null,
     "omniscience": -41.35,
     "scicode": 0.354166666666667,
@@ -15175,7 +15175,7 @@
     "intelligence_index_v4_1": 14.135866278812,
     "coding_index": 16.2076050769871,
     "agentic_index": 2.68041237113402,
-    "gdpval_v2": 491.28,
+    "gdpval_v2": 492.55,
     "gdpval_elo": null,
     "omniscience": -53.7833333333333,
     "scicode": 0.246527777777778,
@@ -15192,13 +15192,13 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": {
-      "elo": 121.95,
-      "lower95ci": 107.18,
-      "upper95ci": 135.06,
+      "elo": 128.14,
+      "lower95ci": 112.89,
+      "upper95ci": 142.19,
       "rubric": {
-        "elo": 587,
-        "lower95ci": 572.07,
-        "upper95ci": 601.67
+        "elo": 587.63,
+        "lower95ci": 572.71,
+        "upper95ci": 602.48
       },
       "analyticalQuality": {
         "elo": 0,
@@ -15206,9 +15206,9 @@
         "upper95ci": 0
       },
       "presentation": {
-        "elo": 5.02,
+        "elo": 13.09,
         "lower95ci": 0,
-        "upper95ci": 31.41
+        "upper95ci": 38.45
       },
       "rubricPassRate": 0.049029622063329927,
       "turns": {
@@ -15301,7 +15301,7 @@
     "intelligence_index_v4_1": 14.0546139112372,
     "coding_index": 25.2574906367041,
     "agentic_index": 2.25386597938144,
-    "gdpval_v2": 542.75,
+    "gdpval_v2": 544.69,
     "gdpval_elo": null,
     "omniscience": -65.6833333333333,
     "scicode": 0.270833333333333,
@@ -15330,7 +15330,7 @@
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.064,
     "cost_per_task_total": null,
-    "time_per_task": 69.84678149648616,
+    "time_per_task": 68.91339006844265,
     "output_tokens_per_task": 13070.147374485727
   },
   {
@@ -15547,7 +15547,7 @@
     "intelligence_index_v4_1": 13.45276586506,
     "coding_index": 19.6594534609516,
     "agentic_index": 2.19931271477663,
-    "gdpval_v2": 545.39,
+    "gdpval_v2": 547.26,
     "gdpval_elo": null,
     "omniscience": -59.0333333333333,
     "scicode": 0.342592592592593,
@@ -16408,7 +16408,7 @@
     "intelligence_index_v4_1": 12.2608524930908,
     "coding_index": 15.8850915522264,
     "agentic_index": 1.92439862542955,
-    "gdpval_v2": 442.64,
+    "gdpval_v2": 444.21,
     "gdpval_elo": null,
     "omniscience": -23.1833333333333,
     "scicode": 0.274305555555556,
@@ -16900,7 +16900,7 @@
     "intelligence_index_v4_1": 11.5463546671141,
     "coding_index": 15.3011860174782,
     "agentic_index": 1.78694158075601,
-    "gdpval_v2": 273.09,
+    "gdpval_v2": 274.98,
     "gdpval_elo": null,
     "omniscience": -50.5333333333333,
     "scicode": 0.354166666666667,
@@ -16982,7 +16982,7 @@
     "intelligence_index_v4_1": 11.2923034993806,
     "coding_index": 14.7246497433763,
     "agentic_index": 1.44329896907216,
-    "gdpval_v2": 246.68,
+    "gdpval_v2": 248.36,
     "gdpval_elo": null,
     "omniscience": -64.9833333333333,
     "scicode": 0.351851851851852,
@@ -17064,7 +17064,7 @@
     "intelligence_index_v4_1": 11.0933206880573,
     "coding_index": 9.61521051901497,
     "agentic_index": 0,
-    "gdpval_v2": -143.42,
+    "gdpval_v2": -141.11,
     "gdpval_elo": null,
     "omniscience": -41.9333333333333,
     "scicode": 0.26598440545809,
@@ -17146,7 +17146,7 @@
     "intelligence_index_v4_1": 11.0525122563915,
     "coding_index": 14.3622555139409,
     "agentic_index": 2.19931271477663,
-    "gdpval_v2": 474.75,
+    "gdpval_v2": 475.86,
     "gdpval_elo": null,
     "omniscience": -66.8166666666667,
     "scicode": 0.236111111111111,
@@ -17175,7 +17175,7 @@
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.20000000000000004,
     "cost_per_task_total": 0.1491862542281139,
-    "time_per_task": 152.4347629837104,
+    "time_per_task": 149.41895197747615,
     "output_tokens_per_task": 11745.911673686403
   },
   {
@@ -17474,7 +17474,7 @@
     "intelligence_index_v4_1": 10.557101536401,
     "coding_index": 12.5416146483562,
     "agentic_index": 1.99312714776632,
-    "gdpval_v2": 55.12,
+    "gdpval_v2": 57.17,
     "gdpval_elo": null,
     "omniscience": -50.4166666666667,
     "scicode": 0.263888888888889,
@@ -17556,7 +17556,7 @@
     "intelligence_index_v4_1": 10.3754010792707,
     "coding_index": 13.7783499791927,
     "agentic_index": 1.78694158075601,
-    "gdpval_v2": 220.71,
+    "gdpval_v2": 222.45,
     "gdpval_elo": null,
     "omniscience": -49.2333333333333,
     "scicode": 0.315972222222222,
@@ -17679,7 +17679,7 @@
     "intelligence_index_v4_1": 10.0416226283387,
     "coding_index": 8.16817519766958,
     "agentic_index": 1.09965635738832,
-    "gdpval_v2": 87.47,
+    "gdpval_v2": 89.68,
     "gdpval_elo": null,
     "omniscience": -52.3666666666667,
     "scicode": 0.170138888888889,
@@ -17708,7 +17708,7 @@
     "price_1m_output": 0.66,
     "price_1m_blended_7_2_1": 0.21900000000000003,
     "cost_per_task_total": 0.008506397458326823,
-    "time_per_task": 12.748291469080868,
+    "time_per_task": 12.674650187472409,
     "output_tokens_per_task": 1249.1916412587836
   },
   {
@@ -18171,7 +18171,7 @@
     "intelligence_index_v4_1": 9.57520479903005,
     "coding_index": 11.1388542100153,
     "agentic_index": 1.16838487972509,
-    "gdpval_v2": 39.13,
+    "gdpval_v2": 41.4,
     "gdpval_elo": null,
     "omniscience": -56.4166666666667,
     "scicode": 0.259259259259259,
@@ -18335,7 +18335,7 @@
     "intelligence_index_v4_1": 9.40307621697656,
     "coding_index": 11.9264981273408,
     "agentic_index": 0.34364261168385,
-    "gdpval_v2": 77.56,
+    "gdpval_v2": 79.94,
     "gdpval_elo": null,
     "omniscience": -51.9166666666667,
     "scicode": 0.260416666666667,
@@ -18364,7 +18364,7 @@
     "price_1m_output": 0.71,
     "price_1m_blended_7_2_1": 0.593,
     "cost_per_task_total": 0.07982308899181391,
-    "time_per_task": 19.44983899225061,
+    "time_per_task": 19.38483059024329,
     "output_tokens_per_task": 1685.9178059220214
   },
   {
@@ -18909,7 +18909,7 @@
     "intelligence_index_v4_1": 8.95728282101135,
     "coding_index": 9.69101123595506,
     "agentic_index": 1.23711340206186,
-    "gdpval_v2": 446.29,
+    "gdpval_v2": 448.72,
     "gdpval_elo": null,
     "omniscience": -67.8333333333333,
     "scicode": 0.208333333333333,
@@ -18991,7 +18991,7 @@
     "intelligence_index_v4_1": 8.85991944342523,
     "coding_index": 10.3512102926897,
     "agentic_index": 1.30584192439863,
-    "gdpval_v2": 420.26,
+    "gdpval_v2": 422.01,
     "gdpval_elo": null,
     "omniscience": -67.7833333333333,
     "scicode": 0.258101851851852,
@@ -19155,7 +19155,7 @@
     "intelligence_index_v4_1": 8.7256520912148,
     "coding_index": 7.97527396310168,
     "agentic_index": 2.33676975945017,
-    "gdpval_v2": 190.71,
+    "gdpval_v2": 192.39,
     "gdpval_elo": null,
     "omniscience": -71.5333333333333,
     "scicode": 0.164351851851852,
@@ -19729,7 +19729,7 @@
     "intelligence_index_v4_1": 8.28648432223442,
     "coding_index": 9.02127548897212,
     "agentic_index": 1.51202749140893,
-    "gdpval_v2": 198.22,
+    "gdpval_v2": 200.34,
     "gdpval_elo": null,
     "omniscience": -65.0666666666667,
     "scicode": 0.225694444444444,
@@ -20303,7 +20303,7 @@
     "intelligence_index_v4_1": 7.63705250485793,
     "coding_index": 2.92342904702455,
     "agentic_index": 0.824742268041237,
-    "gdpval_v2": 197.2,
+    "gdpval_v2": 198.86,
     "gdpval_elo": null,
     "omniscience": -47.4833333333333,
     "scicode": 0.0277777777777778,
@@ -20385,7 +20385,7 @@
     "intelligence_index_v4_1": 7.60997784439173,
     "coding_index": 5.39689970869746,
     "agentic_index": 0.549828178694157,
-    "gdpval_v2": -126.02,
+    "gdpval_v2": -123.73,
     "gdpval_elo": null,
     "omniscience": -30.3333333333333,
     "scicode": 0.131944444444444,
@@ -20508,7 +20508,7 @@
     "intelligence_index_v4_1": 7.41891747896191,
     "coding_index": 10.0564398668331,
     "agentic_index": 0.274914089347079,
-    "gdpval_v2": -146.91,
+    "gdpval_v2": -144.46,
     "gdpval_elo": null,
     "omniscience": -65.8833333333333,
     "scicode": 0.211805555555556,
@@ -20549,7 +20549,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": -96.61,
+    "gdpval_v2": -94.34,
     "gdpval_elo": null,
     "omniscience": -69.2166666666667,
     "scicode": 0.230324074074074,
@@ -20795,7 +20795,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": 13.142408,
     "agentic_index": null,
-    "gdpval_v2": 219.33,
+    "gdpval_v2": 221.49,
     "gdpval_elo": null,
     "omniscience": null,
     "scicode": null,
@@ -21000,7 +21000,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": 11.3842072409488,
     "agentic_index": 0.962199312714777,
-    "gdpval_v2": 224,
+    "gdpval_v2": 225.67,
     "gdpval_elo": null,
     "omniscience": null,
     "scicode": 0.229166666666667,
@@ -21123,7 +21123,7 @@
     "intelligence_index_v4_1": 6.80100025864863,
     "coding_index": 4.78395061728395,
     "agentic_index": 1.5807560137457,
-    "gdpval_v2": 271.14,
+    "gdpval_v2": 272.8,
     "gdpval_elo": null,
     "omniscience": -64.1,
     "scicode": 0.143518518518519,
@@ -21152,7 +21152,7 @@
     "price_1m_output": 0.1,
     "price_1m_blended_7_2_1": 0.10000000000000002,
     "cost_per_task_total": 0.12619350182313843,
-    "time_per_task": 120.90915041675633,
+    "time_per_task": 121.51882640373478,
     "output_tokens_per_task": 20441.59085947743
   },
   {
@@ -21984,7 +21984,7 @@
     "intelligence_index_v4_1": 6.01424779795092,
     "coding_index": 3.83765085310029,
     "agentic_index": 0.34364261168385,
-    "gdpval_v2": -147.8,
+    "gdpval_v2": -145.05,
     "gdpval_elo": null,
     "omniscience": -61.0166666666667,
     "scicode": 0.107638888888889,
@@ -22013,8 +22013,8 @@
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 680.0749963313966,
-    "output_tokens_per_task": 31197.313973136737
+    "time_per_task": 683.7256740209903,
+    "output_tokens_per_task": 31364.471548894307
   },
   {
     "slug": "exaone-4-0-32b",
@@ -22066,7 +22066,7 @@
     "intelligence_index_v4_1": 5.61973831305916,
     "coding_index": 2.39084887807516,
     "agentic_index": 0.756013745704467,
-    "gdpval_v2": -105.88,
+    "gdpval_v2": -103.62,
     "gdpval_elo": null,
     "omniscience": -82.8333333333333,
     "scicode": 0.0717254663422547,
@@ -22096,7 +22096,7 @@
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
-    "output_tokens_per_task": 45907.83043271022
+    "output_tokens_per_task": 45827.329675134475
   },
   {
     "slug": "gemini-1-5-flash-8b",
@@ -22148,7 +22148,7 @@
     "intelligence_index_v4_1": 5.50602790343347,
     "coding_index": 5.78703703703704,
     "agentic_index": 0.274914089347079,
-    "gdpval_v2": -146.34,
+    "gdpval_v2": -143.64,
     "gdpval_elo": null,
     "omniscience": -76.9833333333333,
     "scicode": 0.173611111111111,
@@ -22189,7 +22189,7 @@
     "intelligence_index_v4_1": 5.46015730791743,
     "coding_index": 0,
     "agentic_index": 5.696,
-    "gdpval_v2": -127.16,
+    "gdpval_v2": -124.62,
     "gdpval_elo": null,
     "omniscience": -35.1833333333333,
     "scicode": 0,
@@ -22845,7 +22845,7 @@
     "intelligence_index_v4_1": 4.6989056360793,
     "coding_index": 4.72282910251075,
     "agentic_index": 0.41237113402062,
-    "gdpval_v2": 102.03,
+    "gdpval_v2": 103.94,
     "gdpval_elo": null,
     "omniscience": -77.3833333333333,
     "scicode": 0.119212962962963,
@@ -22875,7 +22875,7 @@
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
     "time_per_task": "$undefined",
-    "output_tokens_per_task": 4973.929297846462
+    "output_tokens_per_task": 5069.528540270704
   },
   {
     "slug": "mistral-small",
@@ -23173,7 +23173,7 @@
     "intelligence_index_v4_1": null,
     "coding_index": 1.21419406297683,
     "agentic_index": null,
-    "gdpval_v2": -108.22,
+    "gdpval_v2": -105.66,
     "gdpval_elo": null,
     "omniscience": -89,
     "scicode": 0.0289351851851852,
@@ -23378,7 +23378,7 @@
     "intelligence_index_v4_1": 4.19374442324631,
     "coding_index": 0.694444444444443,
     "agentic_index": 1.44329896907216,
-    "gdpval_v2": -110.63,
+    "gdpval_v2": -108.35,
     "gdpval_elo": null,
     "omniscience": -84.6666666666667,
     "scicode": 0.0208333333333333,
