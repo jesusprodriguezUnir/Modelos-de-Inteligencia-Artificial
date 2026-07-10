@@ -34,10 +34,24 @@ Estrategia:
 Esto evita Playwright (no hace falta navegador) y es rápido y robusto.
 Se mantiene un fallback con Playwright por si Vercel deja de prerenderizar.
 
+Robustez ante cambios de la SPA de artificialanalysis.ai:
+  - La fase 1 (RSC-HTML) depende de dos cosas: (a) que el prerender de Vercel
+    siga embebiendo los bloques `self.__next_f.push([1,"..."])`, y (b) que el
+    stream RSC siga conteniendo los arrays "models" y "defaultData". Si AA cambia
+    su build de Next.js, esos nombres o el formato del stream pueden moverse.
+  - Síntoma típico: la fase RSC-HTML "no tiene éxito" o captura 0 secciones.
+    El script cae automáticamente al fallback Playwright (HTML ya renderizado).
+  - Para validar el fallback sin esperar a que se rompa la fase 1, usar
+    `--force-playwright`. Para diagnosticar el parseo, los payloads crudos
+    quedan en `data/raw/<fecha>/` (gitignored).
+  - `--no-playwright` deja solo la fase 1 (CI rápido o entornos sin navegador):
+    si la fase 1 falla, aborta con código de salida ≠ 0 en vez de tirar de
+    Playwright.
+
 Uso:
   python scripts/fetch_intelligence_index.py [--dry-run] [--sections a,b,c]
-                                             [--no-playwright] [--verbose]
-                                             [--repo-root PATH]
+                                             [--no-playwright | --force-playwright]
+                                             [--verbose] [--repo-root PATH]
 """
 
 from __future__ import annotations
@@ -847,6 +861,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     p.add_argument("--repo-root", default=None, help="Ruta raíz del repo Astro (default: auto)")
     p.add_argument("--dry-run", action="store_true", help="No escribir archivos")
     p.add_argument("--no-playwright", action="store_true", help="Solo RSC-HTML; no usar Playwright como fallback")
+    p.add_argument(
+        "--force-playwright",
+        action="store_true",
+        help="Forzar el fallback Playwright (ignora RSC-HTML); útil para validar el fallback",
+    )
     p.add_argument("--sections", default=None, help="Lista de secciones separadas por coma (default: todas)")
     p.add_argument("--verbose", action="store_true", help="Log detallado")
     return p.parse_args(argv)
@@ -882,8 +901,16 @@ def main(argv: list[str] | None = None) -> int:
         ALL_SECTIONS = [s for s in ALL_SECTIONS if s in wanted]
         SECTION_SLIM_FIELDS = {k: v for k, v in SECTION_SLIM_FIELDS.items() if k in wanted}
 
-    # Fase 1: RSC-HTML.
-    html = fetch_html()
+    if args.force_playwright and args.no_playwright:
+        log.error("--force-playwright y --no-playwright son incompatibles.")
+        return 2
+
+    # Fase 1: RSC-HTML (se omite si se fuerza el fallback Playwright).
+    if args.force_playwright:
+        log.info("--force-playwright: se omite la fase RSC-HTML.")
+        html = None
+    else:
+        html = fetch_html()
     snap: Snapshot | None = None
     models_meta: list | None = None
     default_data: list | None = None

@@ -34,9 +34,9 @@ const nav = [
     <script is:inline>
       (function () {
         try {
-          var t = localStorage.getItem('dsh-theme') || 'dark';
+          const t = localStorage.getItem('dsh-theme') || 'dark';
           document.documentElement.setAttribute('data-theme', t);
-        } catch (e) {
+        } catch {
           document.documentElement.setAttribute('data-theme', 'dark');
         }
       })();
@@ -87,17 +87,17 @@ const nav = [
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script is:inline>
       (function () {
-        var btn = document.getElementById('theme-toggle');
+        const btn = document.getElementById('theme-toggle');
         function label() {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+          const dark = document.documentElement.getAttribute('data-theme') === 'dark';
           if (btn) btn.textContent = dark ? '☀ Claro' : '☾ Oscuro';
         }
         label();
         if (btn) {
           btn.addEventListener('click', function () {
-            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
-            try { localStorage.setItem('dsh-theme', next); } catch (e) {}
+            try { localStorage.setItem('dsh-theme', next); } catch { /* almacenamiento no disponible */ }
             label();
             // Notificar a la página (p. ej. el catálogo recolorea barras inline)
             window.dispatchEvent(new CustomEvent('themechange', { detail: next }));

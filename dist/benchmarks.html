@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Catálogo de modelos de IA para programación agrupados por empresa: precios, contexto, ejemplos de uso, playgrounds y vídeos."><meta name="author" content="Jesús P. Rodríguez"><title>Benchmarks de Coding — Catálogo de Modelos de IA</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><!-- Resaltado de código (estático, vía CDN) --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"><!-- Fijar el tema antes del primer paint para evitar parpadeo --><script>
       (function () {
         try {
-          var t = localStorage.getItem('dsh-theme') || 'dark';
+          const t = localStorage.getItem('dsh-theme') || 'dark';
           document.documentElement.setAttribute('data-theme', t);
-        } catch (e) {
+        } catch {
           document.documentElement.setAttribute('data-theme', 'dark');
         }
       })();
@@ -17,17 +17,17 @@ jesus.dev
 Creado por <a href="https://web-personal-sandy.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600;" class="dlink">Jesús P. Rodríguez</a> — Senior Dev · .NET & IA
 </div> <div style="display: flex; gap: 14px; font-size: 12.5px;"> <a href="https://github.com/jesusprodriguezunir" target="_blank" rel="noopener noreferrer" style="color: var(--dim);" class="dlink">GitHub</a> <a href="https://www.linkedin.com/in/jes%C3%BAs-pedro-rodr%C3%ADguez-castro-b746394a/" target="_blank" rel="noopener noreferrer" style="color: var(--dim);" class="dlink">LinkedIn</a> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> <script>
       (function () {
-        var btn = document.getElementById('theme-toggle');
+        const btn = document.getElementById('theme-toggle');
         function label() {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+          const dark = document.documentElement.getAttribute('data-theme') === 'dark';
           if (btn) btn.textContent = dark ? '☀ Claro' : '☾ Oscuro';
         }
         label();
         if (btn) {
           btn.addEventListener('click', function () {
-            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
-            try { localStorage.setItem('dsh-theme', next); } catch (e) {}
+            try { localStorage.setItem('dsh-theme', next); } catch { /* almacenamiento no disponible */ }
             label();
             // Notificar a la página (p. ej. el catálogo recolorea barras inline)
             window.dispatchEvent(new CustomEvent('themechange', { detail: next }));

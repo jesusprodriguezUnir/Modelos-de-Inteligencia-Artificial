@@ -1,0 +1,10 @@
+dist/
+.astro/
+node_modules/
+# Datos y autogenerados (ver CLAUDE.md): no se formatean a mano.
+data/
+docs/intelligence-index.md
+src/data/intelligence-index.ts
+src/data/intelligence-index-types.ts
+src/data/auto-models.ts
+package-lock.json
