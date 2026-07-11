@@ -366,6 +366,31 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 71.4). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "muse-spark-1-1",
+    "iiSlug": "muse-spark-1-1",
+    "company": "Meta",
+    "origin": "Open",
+    "displayName": "Muse Spark 1.1 (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1048576,
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 4.25,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-09",
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 71.3). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-5-6-terra-xhigh",
     "iiSlug": "gpt-5-6-terra-xhigh",
     "company": "OpenAI",
@@ -929,6 +954,33 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 58.1). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "mimo-v2-5-0424",
+    "iiSlug": "mimo-v2-5-0424",
+    "company": "Xiaomi",
+    "origin": "China",
+    "displayName": "MiMo-V2.5",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic",
+      "budget"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.28,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-04-22",
+    "parameters": 310.0,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 56.8). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-5-5-non-reasoning",
     "iiSlug": "gpt-5-5-non-reasoning",
     "company": "OpenAI",
@@ -1233,60 +1285,6 @@ export const autoModels: Model[] = [
     ],
     "openWeight": false,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 51.5). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-5-6-luna-medium",
-    "iiSlug": "gpt-5-6-luna-medium",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-5.6 Luna (medium)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 1.0,
-      "outputPer1M": 6.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-09",
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 50.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "mimo-v2-flash",
-    "iiSlug": "mimo-v2-flash",
-    "company": "Xiaomi",
-    "origin": "China",
-    "displayName": "MiMo-V2-Flash",
-    "kind": "model",
-    "category": [
-      "coding",
-      "agentic",
-      "budget"
-    ],
-    "context": 256000,
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.3,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2025-12-16",
-    "parameters": 309.0,
-    "benchmarks": {
-      "liveCodeBench": 0.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 49.8). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -1435,6 +1433,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 1000000,
     "parameters": 753.0,
     "releaseDate": "2026-06-16"
+  },
+  "muse-spark-1-1": {
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 4.25,
+      "approx": true
+    },
+    "context": 1048576,
+    "releaseDate": "2026-07-09"
   },
   "gpt-5-5-medium": {
     "pricing": {
@@ -1739,16 +1746,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 400000,
     "releaseDate": "2025-12-11"
   },
-  "mimo-v2-5-0424": {
-    "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.28,
-      "approx": true
-    },
-    "context": 1000000,
-    "parameters": 310.0,
-    "releaseDate": "2026-04-22"
-  },
   "qwen3-6-max": {
     "pricing": {
       "inputPer1M": 1.3,
@@ -1941,6 +1938,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 1000000,
     "parameters": 284.0,
     "releaseDate": "2026-04-24"
+  },
+  "mimo-v2-5-0424": {
+    "pricing": {
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.28,
+      "approx": true
+    },
+    "context": 1000000,
+    "parameters": 310.0,
+    "releaseDate": "2026-04-22"
   },
   "qwen3-6-27b": {
     "pricing": {
@@ -2164,6 +2171,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1000000,
     "releaseDate": "2026-02-17"
+  },
+  "glm-5-2-non-reasoning": {
+    "pricing": {
+      "inputPer1M": 2.09,
+      "outputPer1M": 6.38,
+      "approx": true
+    },
+    "context": 1000000,
+    "parameters": 753.0,
+    "releaseDate": "2026-06-16"
   },
   "gpt-5-6-terra-non-reasoning": {
     "pricing": {
@@ -2996,16 +3013,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-11-03"
   },
-  "gemma-4-31b-non-reasoning": {
-    "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.4,
-      "approx": true
-    },
-    "context": 256000,
-    "parameters": 30.7,
-    "releaseDate": "2026-04-02"
-  },
   "grok-4-3-non-reasoning": {
     "pricing": {
       "inputPer1M": 1.25,
@@ -3306,6 +3313,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 2000000,
     "releaseDate": "2026-04-07"
+  },
+  "gemma-4-31b-non-reasoning": {
+    "pricing": {
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.4,
+      "approx": true
+    },
+    "context": 256000,
+    "parameters": 30.7,
+    "releaseDate": "2026-04-02"
   },
   "nova-2-0-pro-reasoning-medium": {
     "pricing": {
@@ -7824,19 +7841,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 3.35,
     "releaseDate": "2026-02-17"
   },
-  "gemma-3n-e2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32000,
-    "benchmarks": {
-      "liveCodeBench": 0.1
-    },
-    "parameters": 5.98,
-    "releaseDate": "2025-06-26"
-  },
   "gemma-3-1b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7850,6 +7854,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 1.0,
     "releaseDate": "2025-03-13"
+  },
+  "gemma-3n-e2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32000,
+    "benchmarks": {
+      "liveCodeBench": 0.1
+    },
+    "parameters": 5.98,
+    "releaseDate": "2025-06-26"
   },
   "qwen3-0.6b-instruct": {
     "pricing": {
