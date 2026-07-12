@@ -7795,19 +7795,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-h-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.34,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7819,6 +7806,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.35,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.34,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
