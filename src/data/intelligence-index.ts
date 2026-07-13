@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-07-12T09:50:28Z
+// No editar a mano. Última actualización: 2026-07-13T11:09:52Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.1 (deducido))
 // Modelos: 572 metadata / 559 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
@@ -7,7 +7,7 @@
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-07-12T09:50:28Z",
+  "fetched_at": "2026-07-13T11:09:52Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1 (deducido)",
   "method": "rsc-html",
@@ -155,7 +155,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 50,
     "price_1m_blended_7_2_1": 7.7,
     "cost_per_task_total": 2.7498239008825984,
-    "time_per_task": 330.43748200332914,
+    "time_per_task": 318.18864560189706,
     "output_tokens_per_task": 33127.0472670529
   },
   {
@@ -281,7 +281,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
     "cost_per_task_total": 1.0373301565994435,
-    "time_per_task": 206.5847775410582,
+    "time_per_task": 213.14297561715787,
     "output_tokens_per_task": 15346.352247051163
   },
   {
@@ -321,8 +321,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.6824768594725414,
-    "time_per_task": 144.03776472214545,
+    "cost_per_task_total": null,
+    "time_per_task": 146.04394301092728,
     "output_tokens_per_task": 9940.5564010649
   },
   {
@@ -362,8 +362,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.45300942735621286,
-    "time_per_task": 102.2521621376841,
+    "cost_per_task_total": null,
+    "time_per_task": 100.85774175448924,
     "output_tokens_per_task": 6690.308555147785
   },
   {
@@ -489,7 +489,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 25,
     "price_1m_blended_7_2_1": 3.85,
     "cost_per_task_total": 1.7972215258754352,
-    "time_per_task": 428.1633847181827,
+    "time_per_task": 414.27383112226835,
     "output_tokens_per_task": 40910.24738801627
   },
   {
@@ -530,7 +530,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.5544595173072254,
-    "time_per_task": 136.74274460880534,
+    "time_per_task": 132.09091661966525,
     "output_tokens_per_task": 19369.795192253852
   },
   {
@@ -655,8 +655,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.8627064537302028,
-    "time_per_task": 237.68367151714259,
+    "cost_per_task_total": 0.9924637781010264,
+    "time_per_task": 208.9003625622615,
     "output_tokens_per_task": 16064.476014126014
   },
   {
@@ -782,7 +782,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 1.35,
     "cost_per_task_total": 0.3110838295302332,
-    "time_per_task": 121.70502969616054,
+    "time_per_task": 118.78914840600582,
     "output_tokens_per_task": 13796.372242837875
   },
   {
@@ -822,8 +822,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.3139844979499344,
-    "time_per_task": 67.87947667994744,
+    "cost_per_task_total": null,
+    "time_per_task": 67.72848501224813,
     "output_tokens_per_task": 4202.72143690891
   },
   {
@@ -949,7 +949,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 25,
     "price_1m_blended_7_2_1": 3.85,
     "cost_per_task_total": 1.9733096609430143,
-    "time_per_task": 368.08327160459066,
+    "time_per_task": 367.81468310423173,
     "output_tokens_per_task": 31466.196433904537
   },
   {
@@ -1075,7 +1075,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.54,
     "cost_per_task_total": 1.5254254480225784,
-    "time_per_task": 516.957022067618,
+    "time_per_task": 518.3378882209124,
     "output_tokens_per_task": 68735.70748622667
   },
   {
@@ -1200,8 +1200,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.6095853425706699,
-    "time_per_task": 149.91806997595882,
+    "cost_per_task_total": 0.668057792071965,
+    "time_per_task": 131.9407010486616,
     "output_tokens_per_task": 10076.460810338755
   },
   {
@@ -1242,7 +1242,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.3272368361728899,
-    "time_per_task": 86.4404409485569,
+    "time_per_task": 85.103601174293,
     "output_tokens_per_task": 11035.729220965757
   },
   {
@@ -1283,7 +1283,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.8868298551068886,
-    "time_per_task": 209.5667559987502,
+    "time_per_task": 197.10139850742925,
     "output_tokens_per_task": 32653.89086163631
   },
   {
@@ -1323,8 +1323,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
-    "cost_per_task_total": 0.20941332352935085,
-    "time_per_task": 90.97654964496121,
+    "cost_per_task_total": null,
+    "time_per_task": 82.52973378396106,
     "output_tokens_per_task": 18912.005257449488
   },
   {
@@ -1449,8 +1449,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1.4,
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
-    "cost_per_task_total": 0.370080167362808,
-    "time_per_task": 201.29871502187333,
+    "cost_per_task_total": 0.3758425161131201,
+    "time_per_task": 184.57678253091112,
     "output_tokens_per_task": 42790.89116989162
   },
   {
@@ -1576,7 +1576,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4.25,
     "price_1m_blended_7_2_1": 0.78,
     "cost_per_task_total": 0.2610220700233032,
-    "time_per_task": 177.55235781775283,
+    "time_per_task": 163.5443768457375,
     "output_tokens_per_task": 21610.314480543228
   },
   {
@@ -1701,8 +1701,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.34412566885902274,
-    "time_per_task": 82.91423367029266,
+    "cost_per_task_total": 0.4061167899400016,
+    "time_per_task": 80.13540241265662,
     "output_tokens_per_task": 5132.423404727121
   },
   {
@@ -1828,7 +1828,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 9,
     "price_1m_blended_7_2_1": 1.3050000000000002,
     "cost_per_task_total": 0.585545242207561,
-    "time_per_task": 169.11679340906585,
+    "time_per_task": 167.77754296211194,
     "output_tokens_per_task": 27733.34325932782
   },
   {
@@ -1868,8 +1868,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.1974662438526612,
-    "time_per_task": 38.82730409433459,
+    "cost_per_task_total": null,
+    "time_per_task": 40.127110961263135,
     "output_tokens_per_task": 2507.7537132556436
   },
   {
@@ -1909,8 +1909,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
-    "cost_per_task_total": 0.13896478816312374,
-    "time_per_task": 61.10854031297664,
+    "cost_per_task_total": null,
+    "time_per_task": 60.177565267817215,
     "output_tokens_per_task": 12492.303981970428
   },
   {
@@ -2077,7 +2077,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.31,
     "cost_per_task_total": 1.1355620170084484,
-    "time_per_task": 590.5680800437533,
+    "time_per_task": 578.2341108199806,
     "output_tokens_per_task": 50346.050380470966
   },
   {
@@ -2203,7 +2203,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 12,
     "price_1m_blended_7_2_1": 1.7399999999999998,
     "cost_per_task_total": 0.29113642988035915,
-    "time_per_task": 94.54740122803679,
+    "time_per_task": 90.92722408256678,
     "output_tokens_per_task": 13171.37183133668
   },
   {
@@ -2243,8 +2243,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
-    "cost_per_task_total": 0.09476459263707988,
-    "time_per_task": 39.69625623466159,
+    "cost_per_task_total": null,
+    "time_per_task": 39.56081991405704,
     "output_tokens_per_task": 8118.088141888398
   },
   {
@@ -2369,8 +2369,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 2.5,
     "price_1m_output": 7.5,
     "price_1m_blended_7_2_1": 1.425,
-    "cost_per_task_total": 1.061325321467105,
-    "time_per_task": 99.89550042901016,
+    "cost_per_task_total": 0.9849971557584272,
+    "time_per_task": 96.2330208712097,
     "output_tokens_per_task": 22372.901304564115
   },
   {
@@ -2411,7 +2411,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.1276399207309507,
-    "time_per_task": 32.641369677816215,
+    "time_per_task": 33.017094262994384,
     "output_tokens_per_task": 3769.086440612571
   },
   {
@@ -2663,7 +2663,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": 0.12455059919140353,
-    "time_per_task": 210.8046567410707,
+    "time_per_task": 212.7563272466736,
     "output_tokens_per_task": 23963.866202882804
   },
   {
@@ -2789,7 +2789,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.044843733471261124,
-    "time_per_task": 562.0878078921975,
+    "time_per_task": 482.6167928976416,
     "output_tokens_per_task": 36962.620405911206
   },
   {
@@ -3040,8 +3040,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.95,
     "price_1m_output": 4,
     "price_1m_blended_7_2_1": 0.702,
-    "cost_per_task_total": 0.34554319749943396,
-    "time_per_task": 804.1855005436217,
+    "cost_per_task_total": null,
+    "time_per_task": 732.7897520596879,
     "output_tokens_per_task": 38136.32526891783
   },
   {
@@ -3122,8 +3122,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.19300784226111395,
-    "time_per_task": 36.28633761231723,
+    "cost_per_task_total": 0.21087234510039837,
+    "time_per_task": 35.7373118659338,
     "output_tokens_per_task": 2140.075712378165
   },
   {
@@ -3501,7 +3501,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.87,
     "price_1m_blended_7_2_1": 0.17652,
     "cost_per_task_total": 0.03139528698492376,
-    "time_per_task": 396.24801234082304,
+    "time_per_task": 329.97151559841376,
     "output_tokens_per_task": 20476.386745754964
   },
   {
@@ -3582,8 +3582,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.95,
     "price_1m_output": 4,
     "price_1m_blended_7_2_1": 0.702,
-    "cost_per_task_total": 0.17772103999963917,
-    "time_per_task": 357.91275282134194,
+    "cost_per_task_total": null,
+    "time_per_task": 338.3804718881364,
     "output_tokens_per_task": 17716.081293998985
   },
   {
@@ -3623,8 +3623,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 2,
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.54,
-    "cost_per_task_total": null,
-    "time_per_task": 93.25164150029387,
+    "cost_per_task_total": 0.3745280868419511,
+    "time_per_task": 87.82618276074771,
     "output_tokens_per_task": 9709.061334517113
   },
   {
@@ -3664,7 +3664,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.2004446148307233,
+    "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": 2073.895225376513
   },
@@ -3706,7 +3706,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.525,
     "cost_per_task_total": null,
-    "time_per_task": 203.17190065342308,
+    "time_per_task": 209.06064907240778,
     "output_tokens_per_task": 29537.821026196565
   },
   {
@@ -3829,7 +3829,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
     "cost_per_task_total": 0.10115788470701273,
-    "time_per_task": 19.40107997593033,
+    "time_per_task": 19.93834745100439,
     "output_tokens_per_task": 2258.385981887234
   },
   {
@@ -3996,7 +3996,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.28,
     "price_1m_blended_7_2_1": 0.05796000000000001,
     "cost_per_task_total": 0.0222818336454049,
-    "time_per_task": 409.3286700745431,
+    "time_per_task": 392.95958103974016,
     "output_tokens_per_task": 45276.566290890354
   },
   {
@@ -4121,8 +4121,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1.4,
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 0.9019999999999999,
-    "cost_per_task_total": 0.22589274187412675,
-    "time_per_task": 323.34126319642223,
+    "cost_per_task_total": 0.24694312377186614,
+    "time_per_task": 288.1003061181097,
     "output_tokens_per_task": 26390.022977829776
   },
   {
@@ -4329,8 +4329,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.75,
     "price_1m_output": 4.5,
     "price_1m_blended_7_2_1": 0.6525000000000001,
-    "cost_per_task_total": 0.47929864085182117,
-    "time_per_task": 501.7548904892416,
+    "cost_per_task_total": 0.45222268374819774,
+    "time_per_task": 462.18532786684403,
     "output_tokens_per_task": 78121.45616466556
   },
   {
@@ -4371,7 +4371,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.54,
     "cost_per_task_total": 0.21191134533727934,
-    "time_per_task": 258.74820674128165,
+    "time_per_task": 206.52767489526968,
     "output_tokens_per_task": 35204.363370547784
   },
   {
@@ -4412,7 +4412,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3,
     "price_1m_blended_7_2_1": 0.43499999999999994,
     "cost_per_task_total": 0.31383547131763045,
-    "time_per_task": 384.3212851828583,
+    "time_per_task": 384.1483142374331,
     "output_tokens_per_task": 21402.99325283143
   },
   {
@@ -4575,8 +4575,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.4,
     "price_1m_output": 1.6,
     "price_1m_blended_7_2_1": 0.268,
-    "cost_per_task_total": 0.21943570508240284,
-    "time_per_task": 398.237193318455,
+    "cost_per_task_total": 0.19519718362030988,
+    "time_per_task": 398.55427096190715,
     "output_tokens_per_task": 22171.85001333737
   },
   {
@@ -4657,8 +4657,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.2,
     "price_1m_output": 1.25,
     "price_1m_blended_7_2_1": 0.179,
-    "cost_per_task_total": 0.12724692856512554,
-    "time_per_task": 410.507112837928,
+    "cost_per_task_total": null,
+    "time_per_task": 414.6084826643005,
     "output_tokens_per_task": 70686.83297032781
   },
   {
@@ -4699,7 +4699,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": null,
-    "time_per_task": 367.00440901784043,
+    "time_per_task": 304.36473437007965,
     "output_tokens_per_task": 18478.30925692363
   },
   {
@@ -4821,8 +4821,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
-    "cost_per_task_total": 0.05041697401910826,
-    "time_per_task": 18.34859174838973,
+    "cost_per_task_total": null,
+    "time_per_task": 18.17956554606203,
     "output_tokens_per_task": 3662.8758063762502
   },
   {
@@ -5029,8 +5029,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.675,
     "price_1m_output": 2.675,
     "price_1m_blended_7_2_1": 0.5775,
-    "cost_per_task_total": 0.24390316682824711,
-    "time_per_task": 120.64952927937959,
+    "cost_per_task_total": 0.2339604134365895,
+    "time_per_task": 107.65250139597413,
     "output_tokens_per_task": 22937.528491853147
   },
   {
@@ -5197,7 +5197,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.64,
     "cost_per_task_total": 0.13850067515455958,
-    "time_per_task": 133.73347437300964,
+    "time_per_task": 128.34509532003287,
     "output_tokens_per_task": 14365.341912290824
   },
   {
@@ -5279,7 +5279,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.28,
     "price_1m_blended_7_2_1": 0.05796000000000001,
     "cost_per_task_total": 0.009753224056302287,
-    "time_per_task": 206.02656050182244,
+    "time_per_task": 185.35573109664813,
     "output_tokens_per_task": 17219.665987092423
   },
   {
@@ -5405,7 +5405,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.26527574515202695,
-    "time_per_task": 419.5287545690592,
+    "time_per_task": 404.421859055453,
     "output_tokens_per_task": 28640.65456720617
   },
   {
@@ -5486,8 +5486,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1.25,
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.3375,
-    "cost_per_task_total": 0.2690906889061637,
-    "time_per_task": 216.61158431020414,
+    "cost_per_task_total": null,
+    "time_per_task": 208.69316025395707,
     "output_tokens_per_task": 21704.885166172997
   },
   {
@@ -5569,7 +5569,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.31,
     "cost_per_task_total": 0.41290380463528553,
-    "time_per_task": 305.92580568093706,
+    "time_per_task": 298.0870537276657,
     "output_tokens_per_task": 15716.419373296281
   },
   {
@@ -5855,8 +5855,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": 0.15146641561230662,
-    "time_per_task": 26.624425317425803,
+    "cost_per_task_total": 0.17101364725394147,
+    "time_per_task": 26.0847271554913,
     "output_tokens_per_task": 1586.2783433905659
   },
   {
@@ -6060,8 +6060,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1.25,
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.3375,
-    "cost_per_task_total": 0.2116516801323397,
-    "time_per_task": 182.17129303048821,
+    "cost_per_task_total": 0.23800170775318213,
+    "time_per_task": 169.12966517188772,
     "output_tokens_per_task": 15866.194925415524
   },
   {
@@ -6228,7 +6228,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.22199999999999998,
     "cost_per_task_total": null,
-    "time_per_task": 56.03272908942093,
+    "time_per_task": 55.315620023223154,
     "output_tokens_per_task": 6102.955570581947
   },
   {
@@ -6432,8 +6432,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 2.5,
     "price_1m_output": 15,
     "price_1m_blended_7_2_1": 2.175,
-    "cost_per_task_total": 0.11454060544357351,
-    "time_per_task": 18.264253244122784,
+    "cost_per_task_total": null,
+    "time_per_task": 18.380324973783523,
     "output_tokens_per_task": 2153.9411612854274
   },
   {
@@ -6596,8 +6596,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.6,
     "price_1m_output": 2.2,
     "price_1m_blended_7_2_1": 0.7075,
-    "cost_per_task_total": 0.29717889817375276,
-    "time_per_task": 159.68739038242788,
+    "cost_per_task_total": 0.29743764385810484,
+    "time_per_task": 148.63340648917517,
     "output_tokens_per_task": 23388.131933609413
   },
   {
@@ -6723,7 +6723,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.3331057741426611,
-    "time_per_task": 259.1484424923162,
+    "time_per_task": 231.9006984599667,
     "output_tokens_per_task": 17184.499605973375
   },
   {
@@ -6927,8 +6927,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
-    "cost_per_task_total": 0.040455415560607715,
-    "time_per_task": 11.845472240178111,
+    "cost_per_task_total": null,
+    "time_per_task": 12.04653220517247,
     "output_tokens_per_task": 2297.945408709607
   },
   {
@@ -7174,7 +7174,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.2,
     "price_1m_blended_7_2_1": 0.68,
     "cost_per_task_total": 0.24119620563683528,
-    "time_per_task": 110.57767622774767,
+    "time_per_task": 106.89651298682071,
     "output_tokens_per_task": 16966.3356867959
   },
   {
@@ -7338,7 +7338,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.485,
     "price_1m_blended_7_2_1": 0.37170000000000003,
     "cost_per_task_total": 0.17881593213598196,
-    "time_per_task": 163.02174872169752,
+    "time_per_task": 152.07033594615277,
     "output_tokens_per_task": 29719.130810850947
   },
   {
@@ -7748,7 +7748,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.3451837452945369,
-    "time_per_task": 202.7280254205543,
+    "time_per_task": 192.81297972632495,
     "output_tokens_per_task": 27540.07752030103
   },
   {
@@ -7789,7 +7789,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.6,
     "price_1m_blended_7_2_1": 0.9,
     "cost_per_task_total": 0.35928391524532766,
-    "time_per_task": 190.23441291002734,
+    "time_per_task": 195.54357620436627,
     "output_tokens_per_task": 11702.263602374345
   },
   {
@@ -7912,7 +7912,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.15,
     "price_1m_blended_7_2_1": 0.183,
     "cost_per_task_total": null,
-    "time_per_task": 115.77860020364783,
+    "time_per_task": 108.99693212489623,
     "output_tokens_per_task": 49827.45514690039
   },
   {
@@ -8078,8 +8078,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1.5,
     "price_1m_output": 7.5,
     "price_1m_blended_7_2_1": 1.155,
-    "cost_per_task_total": 1.082796913829072,
-    "time_per_task": 170.9849497621267,
+    "cost_per_task_total": 1.1962136097409157,
+    "time_per_task": 161.28845404853232,
     "output_tokens_per_task": 25444.977817178908
   },
   {
@@ -8245,8 +8245,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 5,
     "price_1m_blended_7_2_1": 0.77,
-    "cost_per_task_total": 0.23747351037813688,
-    "time_per_task": 167.29591591694694,
+    "cost_per_task_total": 0.2716109087882064,
+    "time_per_task": 168.61194994173272,
     "output_tokens_per_task": 23537.492383311903
   },
   {
@@ -8413,7 +8413,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": null,
-    "time_per_task": 330.3866770068303,
+    "time_per_task": 331.2848136988812,
     "output_tokens_per_task": 11963.018702339323
   },
   {
@@ -8617,7 +8617,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 5,
     "price_1m_output": 30,
     "price_1m_blended_7_2_1": 4.35,
-    "cost_per_task_total": null,
+    "cost_per_task_total": 0.7108087581976272,
     "time_per_task": "$undefined",
     "output_tokens_per_task": 2493.3140501553007
   },
@@ -8659,7 +8659,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.2,
     "price_1m_blended_7_2_1": 0.7150000000000001,
     "cost_per_task_total": 0.28294770145479164,
-    "time_per_task": 378.80966126903616,
+    "time_per_task": 376.47115786607327,
     "output_tokens_per_task": 18644.541998501936
   },
   {
@@ -8946,7 +8946,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 3.2,
     "price_1m_blended_7_2_1": 0.68,
     "cost_per_task_total": 0.17743046041328747,
-    "time_per_task": 53.10550229586928,
+    "time_per_task": 51.753535725906985,
     "output_tokens_per_task": 8916.401732551709
   },
   {
@@ -9109,8 +9109,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 1,
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 0.8699999999999999,
-    "cost_per_task_total": 0.05470253606463758,
-    "time_per_task": 10.920911275623865,
+    "cost_per_task_total": null,
+    "time_per_task": 10.912539648031798,
     "output_tokens_per_task": 2110.1426382861237
   },
   {
@@ -9397,7 +9397,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.3375,
     "cost_per_task_total": 0.19782530888396901,
-    "time_per_task": 86.51288952469754,
+    "time_per_task": 81.71682452124249,
     "output_tokens_per_task": 12102.388727019908
   },
   {
@@ -9437,7 +9437,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.13,
     "price_1m_output": 0.4,
     "price_1m_blended_7_2_1": 0.1255,
-    "cost_per_task_total": 0.02940972218693016,
+    "cost_per_task_total": 0.02941342816635502,
     "time_per_task": "$undefined",
     "output_tokens_per_task": 20282.671846771198
   },
@@ -9769,7 +9769,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.775,
     "price_1m_blended_7_2_1": 0.22725,
     "cost_per_task_total": 0.20551170435365923,
-    "time_per_task": 138.6127140382802,
+    "time_per_task": 100.54054613244723,
     "output_tokens_per_task": 25580.484907731414
   },
   {
@@ -9850,8 +9850,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.25,
     "price_1m_output": 2,
     "price_1m_blended_7_2_1": 0.26749999999999996,
-    "cost_per_task_total": 0.02969510923770121,
-    "time_per_task": 110.78642630719182,
+    "cost_per_task_total": null,
+    "time_per_task": 109.47944757398936,
     "output_tokens_per_task": 11101.68761216075
   },
   {
@@ -9977,7 +9977,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.21749999999999997,
     "cost_per_task_total": 0.041571620355421224,
-    "time_per_task": 72.5533142003929,
+    "time_per_task": 64.81585141937427,
     "output_tokens_per_task": 20216.411617630158
   },
   {
@@ -10059,7 +10059,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.64,
     "cost_per_task_total": 0.29295162234785854,
-    "time_per_task": 80.71032460686271,
+    "time_per_task": 78.63118077982189,
     "output_tokens_per_task": 9191.750828999455
   },
   {
@@ -10140,7 +10140,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.1,
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.12000000000000002,
-    "cost_per_task_total": 0.3511773843295714,
+    "cost_per_task_total": null,
     "time_per_task": "$undefined",
     "output_tokens_per_task": 27074.69841091612
   },
@@ -10431,7 +10431,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.6,
     "price_1m_blended_7_2_1": 0.195,
     "cost_per_task_total": 0.06067164425252872,
-    "time_per_task": 112.98123198223182,
+    "time_per_task": 113.1858998290187,
     "output_tokens_per_task": 35619.836725311856
   },
   {
@@ -10967,7 +10967,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 135.87169619255897,
+    "time_per_task": 118.27304826380129,
     "output_tokens_per_task": 20772.993280809515
   },
   {
@@ -11295,7 +11295,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.4,
     "price_1m_blended_7_2_1": 0.166,
     "cost_per_task_total": 0.034332261679026484,
-    "time_per_task": 85.79399231130114,
+    "time_per_task": 81.924082257689,
     "output_tokens_per_task": 4536.779000923613
   },
   {
@@ -11336,7 +11336,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 1.4684000000000001,
     "cost_per_task_total": 0.1728370588534525,
-    "time_per_task": 93.85805413748906,
+    "time_per_task": 90.64634647973,
     "output_tokens_per_task": 11652.860286226254
   },
   {
@@ -11418,7 +11418,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.15,
     "price_1m_blended_7_2_1": 0.10500000000000001,
     "cost_per_task_total": 0.1638454723745099,
-    "time_per_task": 483.2747004920069,
+    "time_per_task": 457.88355626692135,
     "output_tokens_per_task": 32622.609783538945
   },
   {
@@ -11623,7 +11623,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.2,
     "price_1m_blended_7_2_1": 0.43499999999999994,
     "cost_per_task_total": 0.32902581609337966,
-    "time_per_task": 145.17801531049156,
+    "time_per_task": 141.27864002542046,
     "output_tokens_per_task": 15537.806603069886
   },
   {
@@ -12197,7 +12197,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 8.4,
     "price_1m_blended_7_2_1": 1.47,
     "cost_per_task_total": null,
-    "time_per_task": 299.9867866562445,
+    "time_per_task": 293.71675096693633,
     "output_tokens_per_task": 17599.490864825028
   },
   {
@@ -12238,7 +12238,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
     "cost_per_task_total": 0.21277260985423777,
-    "time_per_task": 40.99036883545996,
+    "time_per_task": 39.200630374829686,
     "output_tokens_per_task": 4915.364012095632
   },
   {
@@ -12279,7 +12279,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.6,
     "price_1m_blended_7_2_1": 0.195,
     "cost_per_task_total": null,
-    "time_per_task": 108.65842832335103,
+    "time_per_task": 103.46123543367807,
     "output_tokens_per_task": 15649.794613363068
   },
   {
@@ -12484,7 +12484,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 97.32224130483918,
+    "time_per_task": 82.05409516094775,
     "output_tokens_per_task": 5946.382121127844
   },
   {
@@ -12935,7 +12935,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.5,
     "price_1m_blended_7_2_1": 0.52,
     "cost_per_task_total": 0.24542698374402477,
-    "time_per_task": 282.3048474965859,
+    "time_per_task": 281.4764482921001,
     "output_tokens_per_task": 46190.80343551248
   },
   {
@@ -13099,7 +13099,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 5,
     "price_1m_blended_7_2_1": 2.3,
     "cost_per_task_total": 0.7471451276458294,
-    "time_per_task": 195.36058952318928,
+    "time_per_task": 202.07804258994875,
     "output_tokens_per_task": 9060.386460390037
   },
   {
@@ -13222,7 +13222,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.14,
     "price_1m_blended_7_2_1": 0.05,
     "cost_per_task_total": 0.017954722750171244,
-    "time_per_task": 82.85993593809091,
+    "time_per_task": 79.51142543669881,
     "output_tokens_per_task": 30781.981416088278
   },
   {
@@ -13427,7 +13427,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 113.2990736165624,
+    "time_per_task": 77.39778014665166,
     "output_tokens_per_task": 6163.913633054909
   },
   {
@@ -13881,7 +13881,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 6,
     "price_1m_blended_7_2_1": 1.05,
     "cost_per_task_total": 0.1686499528237036,
-    "time_per_task": 108.90696581129981,
+    "time_per_task": 109.01431253164148,
     "output_tokens_per_task": 22221.576411957547
   },
   {
@@ -14209,7 +14209,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.6,
     "cost_per_task_total": 0.05988932957210771,
-    "time_per_task": 64.79060431260487,
+    "time_per_task": 60.52580907049921,
     "output_tokens_per_task": 3031.0787016478853
   },
   {
@@ -14250,7 +14250,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 4.4,
     "price_1m_blended_7_2_1": 1.0450000000000002,
     "cost_per_task_total": null,
-    "time_per_task": 16.804208230095544,
+    "time_per_task": 15.174395238749005,
     "output_tokens_per_task": 14739.362031236513
   },
   {
@@ -14704,7 +14704,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.06500000000000002,
     "cost_per_task_total": 0.017842778338181632,
-    "time_per_task": 83.27471858037426,
+    "time_per_task": 82.86013884767792,
     "output_tokens_per_task": 22353.429574601836
   },
   {
@@ -14744,8 +14744,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.4,
     "price_1m_output": 1.6,
     "price_1m_blended_7_2_1": 0.31,
-    "cost_per_task_total": 0.05779363242556173,
-    "time_per_task": 36.900489726016495,
+    "cost_per_task_total": 0.06370503454354323,
+    "time_per_task": 39.0259460645262,
     "output_tokens_per_task": 2957.0813278033247
   },
   {
@@ -14786,7 +14786,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.12000000000000002,
     "cost_per_task_total": 0.04100283502410408,
-    "time_per_task": 30.082778085594526,
+    "time_per_task": 29.153496917872456,
     "output_tokens_per_task": 4757.239734679951
   },
   {
@@ -14868,7 +14868,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 2.4,
     "price_1m_blended_7_2_1": 0.42000000000000004,
     "cost_per_task_total": 0.07164709339313349,
-    "time_per_task": 153.26751333663546,
+    "time_per_task": 157.80718509900993,
     "output_tokens_per_task": 19474.49120286842
   },
   {
@@ -14950,7 +14950,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 10,
     "price_1m_blended_7_2_1": 2.125,
     "cost_per_task_total": 0.24556414020453576,
-    "time_per_task": 33.213055853970566,
+    "time_per_task": 29.792921579898078,
     "output_tokens_per_task": 3631.1773890567592
   },
   {
@@ -15158,7 +15158,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.85,
     "price_1m_blended_7_2_1": 0.344,
     "cost_per_task_total": 0.031591080063049636,
-    "time_per_task": 17.76106559071112,
+    "time_per_task": 17.834688163135723,
     "output_tokens_per_task": 2088.862457165753
   },
   {
@@ -15281,7 +15281,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.06500000000000002,
     "cost_per_task_total": 0.018312323602596187,
-    "time_per_task": 240.73194919935185,
+    "time_per_task": 248.38725626495273,
     "output_tokens_per_task": 26776.696868800773
   },
   {
@@ -15530,7 +15530,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.064,
     "cost_per_task_total": null,
-    "time_per_task": 72.1464985488119,
+    "time_per_task": 72.48542624852334,
     "output_tokens_per_task": 13070.147374485727
   },
   {
@@ -17210,8 +17210,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.5,
     "price_1m_output": 1.5,
     "price_1m_blended_7_2_1": 0.6,
-    "cost_per_task_total": 0.2539985763538183,
-    "time_per_task": 113.23149727543655,
+    "cost_per_task_total": null,
+    "time_per_task": 113.71442101926156,
     "output_tokens_per_task": 9958.963218718869
   },
   {
@@ -17375,7 +17375,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.2,
     "price_1m_blended_7_2_1": 0.20000000000000004,
     "cost_per_task_total": 0.1491862542281139,
-    "time_per_task": 138.75430066557905,
+    "time_per_task": 133.32556435831955,
     "output_tokens_per_task": 11745.911673686403
   },
   {
@@ -17702,8 +17702,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.1,
     "price_1m_output": 0.3,
     "price_1m_blended_7_2_1": 0.12000000000000002,
-    "cost_per_task_total": 0.12378644187922402,
-    "time_per_task": 52.39832839365143,
+    "cost_per_task_total": 0.12378644187922404,
+    "time_per_task": 51.9877277306532,
     "output_tokens_per_task": 8067.96320030154
   },
   {
@@ -17908,7 +17908,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.66,
     "price_1m_blended_7_2_1": 0.21900000000000003,
     "cost_per_task_total": 0.008506397458326823,
-    "time_per_task": 11.108766910106082,
+    "time_per_task": 11.042776401493139,
     "output_tokens_per_task": 1249.1916412587836
   },
   {
@@ -18399,8 +18399,8 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_input": 0.1,
     "price_1m_output": 0.4,
     "price_1m_blended_7_2_1": 0.0775,
-    "cost_per_task_total": null,
-    "time_per_task": 41.15874127163878,
+    "cost_per_task_total": 0.03990804499935565,
+    "time_per_task": 40.237518683429975,
     "output_tokens_per_task": 6327.039789418577
   },
   {
@@ -19138,7 +19138,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.15,
     "price_1m_blended_7_2_1": 0.15,
     "cost_per_task_total": 0.18482442028714433,
-    "time_per_task": 172.74916682366805,
+    "time_per_task": 139.78186738774994,
     "output_tokens_per_task": 15686.163156903367
   },
   {
@@ -21352,7 +21352,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0.1,
     "price_1m_blended_7_2_1": 0.10000000000000002,
     "cost_per_task_total": 0.12619350182313843,
-    "time_per_task": 113.57325828488516,
+    "time_per_task": 112.49801722105771,
     "output_tokens_per_task": 20441.59085947743
   },
   {
@@ -22213,7 +22213,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "price_1m_output": 0,
     "price_1m_blended_7_2_1": 0,
     "cost_per_task_total": 0,
-    "time_per_task": 667.9252253541915,
+    "time_per_task": 681.0439175297123,
     "output_tokens_per_task": 31364.471548894307
   },
   {

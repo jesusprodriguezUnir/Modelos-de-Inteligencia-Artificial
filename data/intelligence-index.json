@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-12T09:50:28Z",
+  "fetched_at": "2026-07-13T11:09:52Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1 (deducido)",
   "method": "rsc-html",
@@ -41155,22 +41155,22 @@
         "name": "GPT-5.5 (low)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 358.1707625538829,
-          "input_cost": 154.2788825538829,
+          "total_cost": 375.23018994095116,
+          "input_cost": 171.33830994095118,
           "non_cache_input_cost": 59.498810000000006,
-          "cache_read_cost": 24.4365713829019,
-          "cache_write_cost": 70.343501170981,
+          "cache_read_cost": 22.541079451005423,
+          "cache_write_cost": 89.29842048994576,
           "reasoning_cost": 138.69840000000002,
           "answer_cost": 65.19348,
           "output_cost": 203.89188000000001
         },
         "intelligence_index_per_m_output_tokens": 6.394637438777832,
         "evalCost": {
-          "total": 358.1707625538829,
-          "input": 154.2788825538829,
+          "total": 375.23018994095116,
+          "input": 171.33830994095118,
           "nonCacheInput": 59.498810000000006,
-          "cacheRead": 24.4365713829019,
-          "cacheWrite": 70.343501170981,
+          "cacheRead": 22.541079451005423,
+          "cacheWrite": 89.29842048994576,
           "output": 203.89188000000001,
           "reasoning": 138.69840000000002,
           "answer": 65.19348
@@ -41191,22 +41191,22 @@
         "name": "GPT-5.5 (high)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 1654.5879017149896,
-          "input_cost": 369.6990917149898,
+          "total_cost": 1719.1614806271946,
+          "input_cost": 434.27267062719454,
           "non_cache_input_cost": 62.498355,
-          "cache_read_cost": 94.11916036500112,
-          "cache_write_cost": 213.08157634998864,
+          "cache_read_cost": 86.94431826364506,
+          "cache_write_cost": 284.82999736354947,
           "reasoning_cost": 1166.03919,
           "answer_cost": 118.84961999999999,
           "output_cost": 1284.88881
         },
         "intelligence_index_per_m_output_tokens": 1.240438296018485,
         "evalCost": {
-          "total": 1654.5879017149896,
-          "input": 369.6990917149898,
+          "total": 1719.1614806271946,
+          "input": 434.27267062719454,
           "nonCacheInput": 62.498355,
-          "cacheRead": 94.11916036500112,
-          "cacheWrite": 213.08157634998864,
+          "cacheRead": 86.94431826364506,
+          "cacheWrite": 284.82999736354947,
           "output": 1284.88881,
           "reasoning": 1166.03919,
           "answer": 118.84961999999999
@@ -41218,22 +41218,22 @@
         "name": "GPT-5.5 (Non-reasoning)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 192.91132714075914,
-          "input_cost": 126.78526714075915,
+          "total_cost": 211.108561232046,
+          "input_cost": 144.982501232046,
           "non_cache_input_cost": 59.49731,
-          "cache_read_cost": 20.50146365102676,
-          "cache_write_cost": 46.786493489732386,
+          "cache_read_cost": 18.47954875199489,
+          "cache_write_cost": 67.0056424800511,
           "reasoning_cost": 0,
           "answer_cost": 66.12606,
           "output_cost": 66.12606
         },
         "intelligence_index_per_m_output_tokens": 16.052401358250695,
         "evalCost": {
-          "total": 192.91132714075914,
-          "input": 126.78526714075915,
+          "total": 211.108561232046,
+          "input": 144.982501232046,
           "nonCacheInput": 59.49731,
-          "cacheRead": 20.50146365102676,
-          "cacheWrite": 46.786493489732386,
+          "cacheRead": 18.47954875199489,
+          "cacheWrite": 67.0056424800511,
           "output": 66.12606,
           "reasoning": 0,
           "answer": 66.12606
@@ -41245,22 +41245,22 @@
         "name": "GPT-5.5 (medium)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 869.9057044386701,
-          "input_cost": 230.91893443867002,
+          "total_cost": 935.7674958905204,
+          "input_cost": 296.7807258905204,
           "non_cache_input_cost": 61.61127,
-          "cache_read_cost": 58.27104672903666,
-          "cache_write_cost": 111.03661770963336,
+          "cache_read_cost": 50.9530699010533,
+          "cache_write_cost": 184.21638598946708,
           "reasoning_cost": 540.2006700000001,
           "answer_cost": 98.7861,
           "output_cost": 638.9867700000001
         },
         "intelligence_index_per_m_output_tokens": 2.3666690407632007,
         "evalCost": {
-          "total": 869.9057044386701,
-          "input": 230.91893443867002,
+          "total": 935.7674958905204,
+          "input": 296.7807258905204,
           "nonCacheInput": 61.61127,
-          "cacheRead": 58.27104672903666,
-          "cacheWrite": 111.03661770963336,
+          "cacheRead": 50.9530699010533,
+          "cacheWrite": 184.21638598946708,
           "output": 638.9867700000001,
           "reasoning": 540.2006700000001,
           "answer": 98.7861
@@ -41272,22 +41272,22 @@
         "name": "GPT-5.5 (xhigh)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 2630.037206075943,
-          "input_cost": 460.98512607594284,
+          "total_cost": 2777.91267321098,
+          "input_cost": 608.8605932109801,
           "non_cache_input_cost": 62.47511,
-          "cache_read_cost": 151.0194848804508,
-          "cache_write_cost": 247.49053119549205,
+          "cache_read_cost": 134.5888774210022,
+          "cache_write_cost": 411.7966057899779,
           "reasoning_cost": 2037.2752500000001,
           "answer_cost": 131.77683,
           "output_cost": 2169.05208
         },
         "intelligence_index_per_m_output_tokens": 0.7584547958384195,
         "evalCost": {
-          "total": 2630.037206075943,
-          "input": 460.98512607594284,
+          "total": 2777.91267321098,
+          "input": 608.8605932109801,
           "nonCacheInput": 62.47511,
-          "cacheRead": 151.0194848804508,
-          "cacheWrite": 247.49053119549205,
+          "cacheRead": 134.5888774210022,
+          "cacheWrite": 411.7966057899779,
           "output": 2169.05208,
           "reasoning": 2037.2752500000001,
           "answer": 131.77683
@@ -41298,27 +41298,9 @@
         "slug": "gpt-5-4-nano",
         "name": "GPT-5.4 nano (xhigh)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 271.56828239211177,
-          "input_cost": 44.076433642111795,
-          "non_cache_input_cost": 2.359461,
-          "cache_read_cost": 19.38649726198758,
-          "cache_write_cost": 22.33047538012422,
-          "reasoning_cost": 218.58745,
-          "answer_cost": 8.90439875,
-          "output_cost": 227.49184875
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.2101269041253478,
-        "evalCost": {
-          "total": 271.56828239211177,
-          "input": 44.076433642111795,
-          "nonCacheInput": 2.359461,
-          "cacheRead": 19.38649726198758,
-          "cacheWrite": 22.33047538012422,
-          "output": 227.49184875,
-          "reasoning": 218.58745,
-          "answer": 8.90439875
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41326,22 +41308,22 @@
         "name": "GPT-5.4 mini (xhigh)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 1127.4359095629068,
-          "input_cost": 153.4656025629069,
+          "total_cost": 1095.4286040534348,
+          "input_cost": 121.45829705343488,
           "non_cache_input_cost": 8.81514675,
-          "cache_read_cost": 42.18475704856589,
-          "cache_write_cost": 102.465698764341,
+          "cache_read_cost": 45.74112432739613,
+          "cache_write_cost": 66.90202597603874,
           "reasoning_cost": 952.0490295,
           "answer_cost": 21.9212775,
           "output_cost": 973.9703069999999
         },
         "intelligence_index_per_m_output_tokens": 0.18471033084436814,
         "evalCost": {
-          "total": 1127.4359095629068,
-          "input": 153.4656025629069,
+          "total": 1095.4286040534348,
+          "input": 121.45829705343488,
           "nonCacheInput": 8.81514675,
-          "cacheRead": 42.18475704856589,
-          "cacheWrite": 102.465698764341,
+          "cacheRead": 45.74112432739613,
+          "cacheWrite": 66.90202597603874,
           "output": 973.9703069999999,
           "reasoning": 952.0490295,
           "answer": 21.9212775
@@ -41361,54 +41343,18 @@
         "slug": "gpt-5-6-luna-non-reasoning",
         "name": "GPT-5.6 Luna (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 51.41380129269878,
-          "input_cost": 37.26953329269878,
-          "non_cache_input_cost": 11.83893,
-          "cache_read_cost": 15.912026670200106,
-          "cache_write_cost": 9.51857662249868,
-          "reasoning_cost": 0,
-          "answer_cost": 14.144268,
-          "output_cost": 14.144268
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 11.266803682251764,
-        "evalCost": {
-          "total": 51.41380129269878,
-          "input": 37.26953329269878,
-          "nonCacheInput": 11.83893,
-          "cacheRead": 15.912026670200106,
-          "cacheWrite": 9.51857662249868,
-          "output": 14.144268,
-          "reasoning": 0,
-          "answer": 14.144268
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
         "slug": "gpt-5-6-sol-xhigh",
         "name": "GPT-5.6 Sol (xhigh)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 1542.5249316860813,
-          "input_cost": 480.5761416860813,
-          "non_cache_input_cost": 61.12972,
-          "cache_read_cost": 245.37851550555814,
-          "cache_write_cost": 174.06790618052318,
-          "reasoning_cost": 894.22575,
-          "answer_cost": 167.72304,
-          "output_cost": 1061.94879
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 1.6287180005006172,
-        "evalCost": {
-          "total": 1542.5249316860813,
-          "input": 480.5761416860813,
-          "nonCacheInput": 61.12972,
-          "cacheRead": 245.37851550555814,
-          "cacheWrite": 174.06790618052318,
-          "output": 1061.94879,
-          "reasoning": 894.22575,
-          "answer": 167.72304
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41469,9 +41415,27 @@
         "slug": "gpt-5-5-instant-06-26",
         "name": "GPT-5.5 Instant (June 2026)",
         "creator": "OpenAI",
-        "intelligence_index_cost": "$undefined",
+        "intelligence_index_cost": {
+          "total_cost": 528.0811447088156,
+          "input_cost": 401.3106847088156,
+          "non_cache_input_cost": 58.94536000000001,
+          "cache_read_cost": 87.88435336568716,
+          "cache_write_cost": 254.48097134312843,
+          "reasoning_cost": 38.036730000000006,
+          "answer_cost": 88.73373,
+          "output_cost": 126.77046
+        },
         "intelligence_index_per_m_output_tokens": 6.82974889230865,
-        "evalCost": "$undefined",
+        "evalCost": {
+          "total": 528.0811447088156,
+          "input": 401.3106847088156,
+          "nonCacheInput": 58.94536000000001,
+          "cacheRead": 87.88435336568716,
+          "cacheWrite": 254.48097134312843,
+          "output": 126.77046,
+          "reasoning": 38.036730000000006,
+          "answer": 88.73373
+        },
         "indexCompute": null
       },
       {
@@ -41514,27 +41478,9 @@
         "slug": "gpt-5-6-luna-high",
         "name": "GPT-5.6 Luna (high)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 275.01794040394276,
-          "input_cost": 52.81007640394273,
-          "non_cache_input_cost": 11.889623,
-          "cache_read_cost": 25.14441992139629,
-          "cache_write_cost": 15.776033482546435,
-          "reasoning_cost": 197.21515800000003,
-          "answer_cost": 24.992706,
-          "output_cost": 222.20786400000003
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 1.2436739970706672,
-        "evalCost": {
-          "total": 275.01794040394276,
-          "input": 52.81007640394273,
-          "nonCacheInput": 11.889623,
-          "cacheRead": 25.14441992139629,
-          "cacheWrite": 15.776033482546435,
-          "output": 222.20786400000003,
-          "reasoning": 197.21515800000003,
-          "answer": 24.992706
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41568,54 +41514,18 @@
         "slug": "gpt-5-6-terra-non-reasoning",
         "name": "GPT-5.6 Terra (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 123.64142646620346,
-          "input_cost": 85.01300646620345,
-          "non_cache_input_cost": 29.57772,
-          "cache_read_cost": 29.813610959460572,
-          "cache_write_cost": 25.621675506742882,
-          "reasoning_cost": 0,
-          "answer_cost": 38.62842,
-          "output_cost": 38.62842
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 13.189995678338345,
-        "evalCost": {
-          "total": 123.64142646620346,
-          "input": 85.01300646620345,
-          "nonCacheInput": 29.57772,
-          "cacheRead": 29.813610959460572,
-          "cacheWrite": 25.621675506742882,
-          "output": 38.62842,
-          "reasoning": 0,
-          "answer": 38.62842
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
         "slug": "gpt-5-6-sol-high",
         "name": "GPT-5.6 Sol (high)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 955.5499374665286,
-          "input_cost": 318.0878574665286,
-          "non_cache_input_cost": 59.712125,
-          "cache_read_cost": 156.2965998942149,
-          "cache_write_cost": 102.0791325723137,
-          "reasoning_cost": 500.39054999999996,
-          "answer_cost": 137.07153,
-          "output_cost": 637.46208
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 2.629168473700558,
-        "evalCost": {
-          "total": 955.5499374665286,
-          "input": 318.0878574665286,
-          "nonCacheInput": 59.712125,
-          "cacheRead": 156.2965998942149,
-          "cacheWrite": 102.0791325723137,
-          "output": 637.46208,
-          "reasoning": 500.39054999999996,
-          "answer": 137.07153
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41631,27 +41541,9 @@
         "slug": "gpt-5-6-luna-xhigh",
         "name": "GPT-5.6 Luna (xhigh)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 479.36828339340707,
-          "input_cost": 78.95569739340708,
-          "non_cache_input_cost": 15.884568,
-          "cache_read_cost": 41.86216222666025,
-          "cache_write_cost": 21.20896716674682,
-          "reasoning_cost": 370.76097,
-          "answer_cost": 29.651616,
-          "output_cost": 400.412586
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.7352576872536029,
-        "evalCost": {
-          "total": 479.36828339340707,
-          "input": 78.95569739340708,
-          "nonCacheInput": 15.884568,
-          "cacheRead": 41.86216222666025,
-          "cacheWrite": 21.20896716674682,
-          "output": 400.412586,
-          "reasoning": 370.76097,
-          "answer": 29.651616
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41685,54 +41577,18 @@
         "slug": "gpt-5-6-sol-non-reasoning",
         "name": "GPT-5.6 Sol (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 241.50767053376404,
-          "input_cost": 162.05585053376404,
-          "non_cache_input_cost": 59.28798,
-          "cache_read_cost": 44.274081910107476,
-          "cache_write_cost": 58.49378862365656,
-          "reasoning_cost": 0,
-          "answer_cost": 79.45182,
-          "output_cost": 79.45182
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 15.55788842783045,
-        "evalCost": {
-          "total": 241.50767053376404,
-          "input": 162.05585053376404,
-          "nonCacheInput": 59.28798,
-          "cacheRead": 44.274081910107476,
-          "cacheWrite": 58.49378862365656,
-          "output": 79.45182,
-          "reasoning": 0,
-          "answer": 79.45182
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
         "slug": "gpt-5-6-sol-medium",
         "name": "GPT-5.6 Sol (medium)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 593.0381807024285,
-          "input_cost": 233.73205070242852,
-          "non_cache_input_cost": 59.24144,
-          "cache_read_cost": 79.88266048239751,
-          "cache_write_cost": 94.60795022003099,
-          "reasoning_cost": 253.22747999999999,
-          "answer_cost": 106.07865,
-          "output_cost": 359.30613
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 4.474360202528841,
-        "evalCost": {
-          "total": 593.0381807024285,
-          "input": 233.73205070242852,
-          "nonCacheInput": 59.24144,
-          "cacheRead": 79.88266048239751,
-          "cacheWrite": 94.60795022003099,
-          "output": 359.30613,
-          "reasoning": 253.22747999999999,
-          "answer": 106.07865
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41748,54 +41604,18 @@
         "slug": "gpt-5-6-luna-medium",
         "name": "GPT-5.6 Luna (medium)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 105.8384024527498,
-          "input_cost": 30.95924245274979,
-          "non_cache_input_cost": 11.961277,
-          "cache_read_cost": 10.681409417152192,
-          "cache_write_cost": 8.316556035597598,
-          "reasoning_cost": 58.07412600000001,
-          "answer_cost": 16.805034,
-          "output_cost": 74.87916000000001
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 3.0489592873700664,
-        "evalCost": {
-          "total": 105.8384024527498,
-          "input": 30.95924245274979,
-          "nonCacheInput": 11.961277,
-          "cacheRead": 10.681409417152192,
-          "cacheWrite": 8.316556035597598,
-          "output": 74.87916000000001,
-          "reasoning": 58.07412600000001,
-          "answer": 16.805034
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 870.2972898705949,
-          "input_cost": 120.23017987059492,
-          "non_cache_input_cost": 22.5512,
-          "cache_read_cost": 68.95756696777435,
-          "cache_write_cost": 28.721412902820557,
-          "reasoning_cost": 714.989334,
-          "answer_cost": 35.077776,
-          "output_cost": 750.06711
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.40985079198956004,
-        "evalCost": {
-          "total": 870.2972898705949,
-          "input": 120.23017987059492,
-          "nonCacheInput": 22.5512,
-          "cacheRead": 68.95756696777435,
-          "cacheWrite": 28.721412902820557,
-          "output": 750.06711,
-          "reasoning": 714.989334,
-          "answer": 35.077776
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -41829,54 +41649,18 @@
         "slug": "gpt-5-6-sol-low",
         "name": "GPT-5.6 Sol (low)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 353.48821704247973,
-          "input_cost": 155.95762704247971,
-          "non_cache_input_cost": 59.16245,
-          "cache_read_cost": 35.97200906152351,
-          "cache_write_cost": 60.82316798095621,
-          "reasoning_cost": 120.67415999999999,
-          "answer_cost": 76.85643,
-          "output_cost": 197.53059
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 7.509324054729143,
-        "evalCost": {
-          "total": 353.48821704247973,
-          "input": 155.95762704247971,
-          "nonCacheInput": 59.16245,
-          "cacheRead": 35.97200906152351,
-          "cacheWrite": 60.82316798095621,
-          "output": 197.53059,
-          "reasoning": 120.67415999999999,
-          "answer": 76.85643
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
         "slug": "gpt-5-6-luna-low",
         "name": "GPT-5.6 Luna (low)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 68.8027339310563,
-          "input_cost": 26.974351931056297,
-          "non_cache_input_cost": 11.844062,
-          "cache_read_cost": 9.265874788603801,
-          "cache_write_cost": 5.864415142452496,
-          "reasoning_cost": 28.985087999999998,
-          "answer_cost": 12.843294,
-          "output_cost": 41.828382
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 4.771488821378068,
-        "evalCost": {
-          "total": 68.8027339310563,
-          "input": 26.974351931056297,
-          "nonCacheInput": 11.844062,
-          "cacheRead": 9.265874788603801,
-          "cacheWrite": 5.864415142452496,
-          "output": 41.828382,
-          "reasoning": 28.985087999999998,
-          "answer": 12.843294
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -42055,22 +41839,22 @@
         "name": "Gemma 4 26B A4B (Reasoning)",
         "creator": "Google",
         "intelligence_index_cost": {
-          "total_cost": 51.917683007742106,
-          "input_cost": 22.181991407742103,
+          "total_cost": 51.92143109372129,
+          "input_cost": 22.185739493721286,
           "non_cache_input_cost": 1.52308663,
-          "cache_read_cost": 14.460838335376026,
-          "cache_write_cost": 6.198066442366079,
+          "cache_read_cost": 14.453758617415348,
+          "cache_write_cost": 6.2088942463059364,
           "reasoning_cost": 27.4816284,
           "answer_cost": 2.2540632,
           "output_cost": 29.735691600000003
         },
         "intelligence_index_per_m_output_tokens": 0.34563993284769606,
         "evalCost": {
-          "total": 51.917683007742106,
-          "input": 22.181991407742103,
+          "total": 51.92143109372129,
+          "input": 22.185739493721286,
           "nonCacheInput": 1.52308663,
-          "cacheRead": 14.460838335376026,
-          "cacheWrite": 6.198066442366079,
+          "cacheRead": 14.453758617415348,
+          "cacheWrite": 6.2088942463059364,
           "output": 29.735691600000003,
           "reasoning": 27.4816284,
           "answer": 2.2540632
@@ -42094,8 +41878,8 @@
           "total_cost": 28.97847402,
           "input_cost": 26.24282122,
           "non_cache_input_cost": 1.8825030000000003,
-          "cache_read_cost": 18.722562109583365,
-          "cache_write_cost": 5.637756110416636,
+          "cache_read_cost": 19.24297941742536,
+          "cache_write_cost": 5.117338802574641,
           "reasoning_cost": 0,
           "answer_cost": 2.7356528000000004,
           "output_cost": 2.7356528000000004
@@ -42105,8 +41889,8 @@
           "total": 28.97847402,
           "input": 26.24282122,
           "nonCacheInput": 1.8825030000000003,
-          "cacheRead": 18.722562109583365,
-          "cacheWrite": 5.637756110416636,
+          "cacheRead": 19.24297941742536,
+          "cacheWrite": 5.117338802574641,
           "output": 2.7356528000000004,
           "reasoning": 0,
           "answer": 2.7356528000000004
@@ -42298,22 +42082,22 @@
         "name": "Claude 4.5 Haiku (Reasoning)",
         "creator": "Anthropic",
         "intelligence_index_cost": {
-          "total_cost": 539.0420164053902,
-          "input_cost": 98.37391640539013,
+          "total_cost": 563.5089486807195,
+          "input_cost": 122.8408486807195,
           "non_cache_input_cost": 13.03874,
-          "cache_read_cost": 22.698606182139986,
-          "cache_write_cost": 62.63657022325014,
+          "cache_read_cost": 20.57104685385048,
+          "cache_write_cost": 89.23106182686902,
           "reasoning_cost": 402.01882500000005,
           "answer_cost": 38.649274999999996,
           "output_cost": 440.66810000000004
         },
         "intelligence_index_per_m_output_tokens": 0.3355840211393881,
         "evalCost": {
-          "total": 539.0420164053902,
-          "input": 98.37391640539013,
+          "total": 563.5089486807195,
+          "input": 122.8408486807195,
           "nonCacheInput": 13.03874,
-          "cacheRead": 22.698606182139986,
-          "cacheWrite": 62.63657022325014,
+          "cacheRead": 20.57104685385048,
+          "cacheWrite": 89.23106182686902,
           "output": 440.66810000000004,
           "reasoning": 402.01882500000005,
           "answer": 38.649274999999996
@@ -42324,9 +42108,27 @@
         "slug": "claude-sonnet-5-non-reasoning",
         "name": "Claude Sonnet 5 (Non-reasoning, High Effort)",
         "creator": "Anthropic",
-        "intelligence_index_cost": "$undefined",
+        "intelligence_index_cost": {
+          "total_cost": 427.3276306773449,
+          "input_cost": 286.56853067734494,
+          "non_cache_input_cost": 35.984948,
+          "cache_read_cost": 185.16319020197,
+          "cache_write_cost": 65.42039247537497,
+          "reasoning_cost": 0,
+          "answer_cost": 140.7591,
+          "output_cost": 140.7591
+        },
         "intelligence_index_per_m_output_tokens": 2.9646755919801207,
-        "evalCost": "$undefined",
+        "evalCost": {
+          "total": 427.3276306773449,
+          "input": 286.56853067734494,
+          "nonCacheInput": 35.984948,
+          "cacheRead": 185.16319020197,
+          "cacheWrite": 65.42039247537497,
+          "output": 140.7591,
+          "reasoning": 0,
+          "answer": 140.7591
+        },
         "indexCompute": null
       },
       {
@@ -42532,22 +42334,22 @@
         "name": "Ministral 3 3B",
         "creator": "Mistral",
         "intelligence_index_cost": {
-          "total_cost": 91.7844799,
-          "input_cost": 89.0492161,
+          "total_cost": 91.78447990000001,
+          "input_cost": 89.04921610000001,
           "non_cache_input_cost": 1.2819872,
-          "cache_read_cost": 63.199249838154266,
-          "cache_write_cost": 24.567979061845733,
+          "cache_read_cost": 77.3736040734019,
+          "cache_write_cost": 10.393624826598101,
           "reasoning_cost": 0,
           "answer_cost": 2.7352638000000002,
           "output_cost": 2.7352638000000002
         },
         "intelligence_index_per_m_output_tokens": 0.24864147504341738,
         "evalCost": {
-          "total": 91.7844799,
-          "input": 89.0492161,
+          "total": 91.78447990000001,
+          "input": 89.04921610000001,
           "nonCacheInput": 1.2819872,
-          "cacheRead": 63.199249838154266,
-          "cacheWrite": 24.567979061845733,
+          "cacheRead": 77.3736040734019,
+          "cacheWrite": 10.393624826598101,
           "output": 2.7352638000000002,
           "reasoning": 0,
           "answer": 2.7352638000000002
@@ -42595,22 +42397,22 @@
         "name": "Ministral 3 8B",
         "creator": "Mistral",
         "intelligence_index_cost": {
-          "total_cost": 113.47784744999998,
-          "input_cost": 110.66038259999999,
+          "total_cost": 113.47784745,
+          "input_cost": 110.6603826,
           "non_cache_input_cost": 1.8611035499999997,
-          "cache_read_cost": 83.22117901750669,
-          "cache_write_cost": 25.578100032493314,
+          "cache_read_cost": 93.12189607101335,
+          "cache_write_cost": 15.677382978986659,
           "reasoning_cost": 0,
           "answer_cost": 2.81746485,
           "output_cost": 2.81746485
         },
         "intelligence_index_per_m_output_tokens": 0.47687992386194367,
         "evalCost": {
-          "total": 113.47784744999998,
-          "input": 110.66038259999999,
+          "total": 113.47784745,
+          "input": 110.6603826,
           "nonCacheInput": 1.8611035499999997,
-          "cacheRead": 83.22117901750669,
-          "cacheWrite": 25.578100032493314,
+          "cacheRead": 93.12189607101335,
+          "cacheWrite": 15.677382978986659,
           "output": 2.81746485,
           "reasoning": 0,
           "answer": 2.81746485
@@ -42649,22 +42451,22 @@
         "name": "Mistral Medium 3.5",
         "creator": "Mistral",
         "intelligence_index_cost": {
-          "total_cost": 1394.6034522953298,
-          "input_cost": 710.7972447953297,
+          "total_cost": 1483.4021295000002,
+          "input_cost": 799.5959220000001,
           "non_cache_input_cost": 19.505827500000002,
-          "cache_read_cost": 9.86651968940781,
-          "cache_write_cost": 681.4248976059218,
+          "cache_read_cost": 0,
+          "cache_write_cost": 780.0900945000001,
           "reasoning_cost": 630.0631350000001,
           "answer_cost": 53.7430725,
           "output_cost": 683.8062075000001
         },
         "intelligence_index_per_m_output_tokens": 0.3284626612906589,
         "evalCost": {
-          "total": 1394.6034522953298,
-          "input": 710.7972447953297,
+          "total": 1483.4021295000002,
+          "input": 799.5959220000001,
           "nonCacheInput": 19.505827500000002,
-          "cacheRead": 9.86651968940781,
-          "cacheWrite": 681.4248976059218,
+          "cacheRead": 0,
+          "cacheWrite": 780.0900945000001,
           "output": 683.8062075000001,
           "reasoning": 630.0631350000001,
           "answer": 53.7430725
@@ -42702,27 +42504,9 @@
         "slug": "magistral-small-2509",
         "name": "Magistral Small 1.2",
         "creator": "Mistral",
-        "intelligence_index_cost": {
-          "total_cost": 294.64357249999995,
-          "input_cost": 246.53219449999995,
-          "non_cache_input_cost": 5.8156105,
-          "cache_read_cost": 192.9885152154131,
-          "cache_write_cost": 47.728068784586874,
-          "reasoning_cost": 39.9438465,
-          "answer_cost": 8.167531499999999,
-          "output_cost": 48.111378
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.3520675556013153,
-        "evalCost": {
-          "total": 294.64357249999995,
-          "input": 246.53219449999995,
-          "nonCacheInput": 5.8156105,
-          "cacheRead": 192.9885152154131,
-          "cacheWrite": 47.728068784586874,
-          "output": 48.111378,
-          "reasoning": 39.9438465,
-          "answer": 8.167531499999999
-        },
+        "evalCost": "$undefined",
         "indexCompute": 3136.4911152
       },
       {
@@ -43351,22 +43135,22 @@
         "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
         "creator": "NVIDIA",
         "intelligence_index_cost": {
-          "total_cost": 443.06889920540624,
-          "input_cost": 154.60985958040624,
+          "total_cost": 435.06494722211386,
+          "input_cost": 146.60590759711386,
           "non_cache_input_cost": 8.99135505,
-          "cache_read_cost": 63.356794879172796,
-          "cache_write_cost": 82.26170965123346,
+          "cache_read_cost": 68.06500192816833,
+          "cache_write_cost": 69.54955061894552,
           "reasoning_cost": 254.9132797,
           "answer_cost": 33.545759925,
           "output_cost": 288.459039625
         },
         "intelligence_index_per_m_output_tokens": 0.35018222605040533,
         "evalCost": {
-          "total": 443.06889920540624,
-          "input": 154.60985958040624,
+          "total": 435.06494722211386,
+          "input": 146.60590759711386,
           "nonCacheInput": 8.99135505,
-          "cacheRead": 63.356794879172796,
-          "cacheWrite": 82.26170965123346,
+          "cacheRead": 68.06500192816833,
+          "cacheWrite": 69.54955061894552,
           "output": 288.459039625,
           "reasoning": 254.9132797,
           "answer": 33.545759925
@@ -43530,27 +43314,9 @@
         "slug": "kimi-k2-6",
         "name": "Kimi K2.6",
         "creator": "Kimi",
-        "intelligence_index_cost": {
-          "total_cost": 851.6340396518642,
-          "input_cost": 191.0975356518643,
-          "non_cache_input_cost": 11.16486265,
-          "cache_read_cost": 65.4737920705085,
-          "cache_write_cost": 114.45888093135581,
-          "reasoning_cost": 635.547972,
-          "answer_cost": 24.988532,
-          "output_cost": 660.5365039999999
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.26778031471135105,
-        "evalCost": {
-          "total": 851.6340396518642,
-          "input": 191.0975356518643,
-          "nonCacheInput": 11.16486265,
-          "cacheRead": 65.4737920705085,
-          "cacheWrite": 114.45888093135581,
-          "output": 660.5365039999999,
-          "reasoning": 635.547972,
-          "answer": 24.988532
-        },
+        "evalCost": "$undefined",
         "indexCompute": 8749.55104
       },
       {
@@ -43566,27 +43332,9 @@
         "slug": "kimi-k2-7-code",
         "name": "Kimi K2.7 Code",
         "creator": "Kimi",
-        "intelligence_index_cost": {
-          "total_cost": 524.5600213600001,
-          "input_cost": 109.77084536000001,
-          "non_cache_input_cost": 11.3309407,
-          "cache_read_cost": 74.20090736,
-          "cache_write_cost": 24.2389973,
-          "reasoning_cost": 390.508976,
-          "answer_cost": 24.2802,
-          "output_cost": 414.789176
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.40453677129510635,
-        "evalCost": {
-          "total": 524.5600213600001,
-          "input": 109.77084536000001,
-          "nonCacheInput": 11.3309407,
-          "cacheRead": 74.20090736,
-          "cacheWrite": 24.2389973,
-          "output": 414.789176,
-          "reasoning": 390.508976,
-          "answer": 24.2802
-        },
+        "evalCost": "$undefined",
         "indexCompute": 6525.9787584
       },
       {
@@ -43980,27 +43728,9 @@
         "slug": "mimo-v2-flash",
         "name": "MiMo-V2-Flash (Non-reasoning)",
         "creator": "Xiaomi",
-        "intelligence_index_cost": {
-          "total_cost": 409.66168600000003,
-          "input_cost": 398.24291020000004,
-          "non_cache_input_cost": 1.3281772,
-          "cache_read_cost": 383.803312472412,
-          "cache_write_cost": 13.111420527587981,
-          "reasoning_cost": 0,
-          "answer_cost": 11.4187758,
-          "output_cost": 11.4187758
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.6481447447508033,
-        "evalCost": {
-          "total": 409.66168600000003,
-          "input": 398.24291020000004,
-          "nonCacheInput": 1.3281772,
-          "cacheRead": 383.803312472412,
-          "cacheWrite": 13.111420527587981,
-          "output": 11.4187758,
-          "reasoning": 0,
-          "answer": 11.4187758
-        },
+        "evalCost": "$undefined",
         "indexCompute": 12518.226096
       },
       {
@@ -44323,22 +44053,22 @@
         "name": "GLM-5.2 (max)",
         "creator": "Z AI",
         "intelligence_index_cost": {
-          "total_cost": 820.3840342068177,
-          "input_cost": 201.22513340681775,
+          "total_cost": 826.5058202762576,
+          "input_cost": 207.34691947625768,
           "non_cache_input_cost": 17.707790799999998,
-          "cache_read_cost": 128.20078558441,
-          "cache_write_cost": 55.316557022407764,
+          "cache_read_cost": 126.80458876155525,
+          "cache_write_cost": 62.83453991470244,
           "reasoning_cost": 586.2232948,
           "answer_cost": 32.935606,
           "output_cost": 619.1589008
         },
         "intelligence_index_per_m_output_tokens": 0.36303713425408785,
         "evalCost": {
-          "total": 820.3840342068177,
-          "input": 201.22513340681775,
+          "total": 826.5058202762576,
+          "input": 207.34691947625768,
           "nonCacheInput": 17.707790799999998,
-          "cacheRead": 128.20078558441,
-          "cacheWrite": 55.316557022407764,
+          "cacheRead": 126.80458876155525,
+          "cacheWrite": 62.83453991470244,
           "output": 619.1589008,
           "reasoning": 586.2232948,
           "answer": 32.935606
@@ -44350,22 +44080,22 @@
         "name": "GLM-5.1 (Reasoning)",
         "creator": "Z AI",
         "intelligence_index_cost": {
-          "total_cost": 658.9766025176309,
-          "input_cost": 121.77778211763085,
+          "total_cost": 680.7431502422169,
+          "input_cost": 143.54432984221683,
           "non_cache_input_cost": 16.760071999999997,
-          "cache_read_cost": 61.23271825036489,
-          "cache_write_cost": 43.78499186726596,
+          "cache_read_cost": 56.268417892125996,
+          "cache_write_cost": 70.51583995009082,
           "reasoning_cost": 496.815,
           "answer_cost": 40.383820400000005,
           "output_cost": 537.1988204
         },
         "intelligence_index_per_m_output_tokens": 0.32891207248857757,
         "evalCost": {
-          "total": 658.9766025176309,
-          "input": 121.77778211763085,
+          "total": 680.7431502422169,
+          "input": 143.54432984221683,
           "nonCacheInput": 16.760071999999997,
-          "cacheRead": 61.23271825036489,
-          "cacheWrite": 43.78499186726596,
+          "cacheRead": 56.268417892125996,
+          "cacheWrite": 70.51583995009082,
           "output": 537.1988204,
           "reasoning": 496.815,
           "answer": 40.383820400000005
@@ -44557,22 +44287,22 @@
         "name": "Qwen3.7 Max",
         "creator": "Alibaba",
         "intelligence_index_cost": {
-          "total_cost": 1631.3504971502557,
-          "input_cost": 859.6015321502559,
+          "total_cost": 1559.3787494793073,
+          "input_cost": 787.6297844793073,
           "non_cache_input_cost": 33.1299275,
-          "cache_read_cost": 5.814852584760357,
-          "cache_write_cost": 820.6567520654955,
+          "cache_read_cost": 12.073265425712417,
+          "cache_write_cost": 742.4265915535949,
           "reasoning_cost": 724.1328599999999,
           "answer_cost": 47.616105,
           "output_cost": 771.7489649999999
         },
         "intelligence_index_per_m_output_tokens": 0.4469755117555172,
         "evalCost": {
-          "total": 1631.3504971502557,
-          "input": 859.6015321502559,
+          "total": 1559.3787494793073,
+          "input": 787.6297844793073,
           "nonCacheInput": 33.1299275,
-          "cacheRead": 5.814852584760357,
-          "cacheWrite": 820.6567520654955,
+          "cacheRead": 12.073265425712417,
+          "cacheWrite": 742.4265915535949,
           "output": 771.7489649999999,
           "reasoning": 724.1328599999999,
           "answer": 47.616105
@@ -44917,22 +44647,22 @@
         "name": "Qwen3.7 Plus",
         "creator": "Alibaba",
         "intelligence_index_cost": {
-          "total_cost": 320.33822171244503,
-          "input_cost": 138.64966011244502,
+          "total_cost": 302.65069437049306,
+          "input_cost": 120.96213277049307,
           "non_cache_input_cost": 5.3356580000000005,
-          "cache_read_cost": 0.9068633815265206,
-          "cache_write_cost": 132.4071387309185,
+          "cache_read_cost": 2.4449092373484276,
+          "cache_write_cost": 113.18156553314465,
           "reasoning_cost": 174.16782880000002,
           "answer_cost": 7.520732800000001,
           "output_cost": 181.6885616
         },
         "intelligence_index_per_m_output_tokens": 0.3432443089239723,
         "evalCost": {
-          "total": 320.33822171244503,
-          "input": 138.64966011244502,
+          "total": 302.65069437049306,
+          "input": 120.96213277049307,
           "nonCacheInput": 5.3356580000000005,
-          "cacheRead": 0.9068633815265206,
-          "cacheWrite": 132.4071387309185,
+          "cacheRead": 2.4449092373484276,
+          "cacheWrite": 113.18156553314465,
           "output": 181.6885616,
           "reasoning": 174.16782880000002,
           "answer": 7.520732800000001
@@ -45133,22 +44863,22 @@
         "name": "GPT-5 (high)",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 781.4482331526665,
-          "input_cost": 67.22581315266655,
+          "total_cost": 813.0461276711862,
+          "input_cost": 98.82370767118633,
           "non_cache_input_cost": 15.23766375,
-          "cache_read_cost": 23.671662705259276,
-          "cache_write_cost": 28.316486697407267,
+          "cache_read_cost": 20.16078553653485,
+          "cache_write_cost": 63.42525838465147,
           "reasoning_cost": 668.35943,
           "answer_cost": 45.86299,
           "output_cost": 714.2224199999999
         },
         "intelligence_index_per_m_output_tokens": 0.4860213367321261,
         "evalCost": {
-          "total": 781.4482331526665,
-          "input": 67.22581315266655,
+          "total": 813.0461276711862,
+          "input": 98.82370767118633,
           "nonCacheInput": 15.23766375,
-          "cacheRead": 23.671662705259276,
-          "cacheWrite": 28.316486697407267,
+          "cacheRead": 20.16078553653485,
+          "cacheWrite": 63.42525838465147,
           "output": 714.2224199999999,
           "reasoning": 668.35943,
           "answer": 45.86299
@@ -45186,27 +44916,9 @@
         "slug": "gpt-5-mini",
         "name": "GPT-5 mini (high)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 130.61078457325982,
-          "input_cost": 10.253330573259827,
-          "non_cache_input_cost": 3.0639415,
-          "cache_read_cost": 3.5388094640822416,
-          "cache_write_cost": 3.650579609177585,
-          "reasoning_cost": 113.833388,
-          "answer_cost": 6.524066,
-          "output_cost": 120.357454
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.4205006273044842,
-        "evalCost": {
-          "total": 130.61078457325982,
-          "input": 10.253330573259827,
-          "nonCacheInput": 3.0639415,
-          "cacheRead": 3.5388094640822416,
-          "cacheWrite": 3.650579609177585,
-          "output": 120.357454,
-          "reasoning": 113.833388,
-          "answer": 6.524066
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -45231,9 +44943,27 @@
         "slug": "gpt-4-1-nano",
         "name": "GPT-4.1 nano",
         "creator": "OpenAI",
-        "intelligence_index_cost": "$undefined",
+        "intelligence_index_cost": {
+          "total_cost": 48.66022745977035,
+          "input_cost": 45.18142985977035,
+          "non_cache_input_cost": 1.1520740999999999,
+          "cache_read_cost": 22.12927484674322,
+          "cache_write_cost": 21.900080913027125,
+          "reasoning_cost": 0,
+          "answer_cost": 3.4787976,
+          "output_cost": 3.4787976
+        },
         "intelligence_index_per_m_output_tokens": 1.100978659871451,
-        "evalCost": "$undefined",
+        "evalCost": {
+          "total": 48.66022745977035,
+          "input": 45.18142985977035,
+          "nonCacheInput": 1.1520740999999999,
+          "cacheRead": 22.12927484674322,
+          "cacheWrite": 21.900080913027125,
+          "output": 3.4787976,
+          "reasoning": 0,
+          "answer": 3.4787976
+        },
         "indexCompute": null
       },
       {
@@ -45313,22 +45043,22 @@
         "name": "GPT-4.1 mini",
         "creator": "OpenAI",
         "intelligence_index_cost": {
-          "total_cost": 68.1882457252249,
-          "input_cost": 59.912986525224895,
+          "total_cost": 74.66657720190258,
+          "input_cost": 66.39131800190259,
           "non_cache_input_cost": 4.8381108,
-          "cache_read_cost": 36.82169889159171,
-          "cache_write_cost": 18.253176833633187,
+          "cache_read_cost": 34.66225506603247,
+          "cache_write_cost": 26.890952135870112,
           "reasoning_cost": 0,
           "answer_cost": 8.2752592,
           "output_cost": 8.2752592
         },
         "intelligence_index_per_m_output_tokens": 2.854897111314343,
         "evalCost": {
-          "total": 68.1882457252249,
-          "input": 59.912986525224895,
+          "total": 74.66657720190258,
+          "input": 66.39131800190259,
           "nonCacheInput": 4.8381108,
-          "cacheRead": 36.82169889159171,
-          "cacheWrite": 18.253176833633187,
+          "cacheRead": 34.66225506603247,
+          "cacheWrite": 26.890952135870112,
           "output": 8.2752592,
           "reasoning": 0,
           "answer": 8.2752592
@@ -45366,27 +45096,9 @@
         "slug": "gpt-5-1",
         "name": "GPT-5.1 (high)",
         "creator": "OpenAI",
-        "intelligence_index_cost": {
-          "total_cost": 778.1361142582324,
-          "input_cost": 59.26536425823249,
-          "non_cache_input_cost": 15.21595,
-          "cache_read_cost": 17.988395221307503,
-          "cache_write_cost": 26.061019036924982,
-          "reasoning_cost": 663.52785,
-          "answer_cost": 55.3429,
-          "output_cost": 718.8707499999999
-        },
+        "intelligence_index_cost": "$undefined",
         "intelligence_index_per_m_output_tokens": 0.5129366195132101,
-        "evalCost": {
-          "total": 778.1361142582324,
-          "input": 59.26536425823249,
-          "nonCacheInput": 15.21595,
-          "cacheRead": 17.988395221307503,
-          "cacheWrite": 26.061019036924982,
-          "output": 718.8707499999999,
-          "reasoning": 663.52785,
-          "answer": 55.3429
-        },
+        "evalCost": "$undefined",
         "indexCompute": null
       },
       {
@@ -46333,8 +46045,8 @@
           "total_cost": 131.5947016,
           "input_cost": 114.30674560000001,
           "non_cache_input_cost": 3.0723004,
-          "cache_read_cost": 41.87364539001429,
-          "cache_write_cost": 69.36079980998572,
+          "cache_read_cost": 81.03778676620591,
+          "cache_write_cost": 30.1966584337941,
           "reasoning_cost": 0,
           "answer_cost": 17.287956,
           "output_cost": 17.287956
@@ -46344,8 +46056,8 @@
           "total": 131.5947016,
           "input": 114.30674560000001,
           "nonCacheInput": 3.0723004,
-          "cacheRead": 41.87364539001429,
-          "cacheWrite": 69.36079980998572,
+          "cacheRead": 81.03778676620591,
+          "cacheWrite": 30.1966584337941,
           "output": 17.287956,
           "reasoning": 0,
           "answer": 17.287956
@@ -46358,10 +46070,10 @@
         "creator": "Mistral",
         "intelligence_index_cost": {
           "total_cost": 127.5115878,
-          "input_cost": 124.9936353,
+          "input_cost": 124.99363530000001,
           "non_cache_input_cost": 1.1934921,
-          "cache_read_cost": 32.36813113430005,
-          "cache_write_cost": 91.43201206569995,
+          "cache_read_cost": 40.797441537238484,
+          "cache_write_cost": 83.00270166276152,
           "reasoning_cost": 0,
           "answer_cost": 2.5179525,
           "output_cost": 2.5179525
@@ -46369,10 +46081,10 @@
         "intelligence_index_per_m_output_tokens": 1.257819780524176,
         "evalCost": {
           "total": 127.5115878,
-          "input": 124.9936353,
+          "input": 124.99363530000001,
           "nonCacheInput": 1.1934921,
-          "cacheRead": 32.36813113430005,
-          "cacheWrite": 91.43201206569995,
+          "cacheRead": 40.797441537238484,
+          "cacheWrite": 83.00270166276152,
           "output": 2.5179525,
           "reasoning": 0,
           "answer": 2.5179525
@@ -46465,22 +46177,22 @@
         "name": "DeepSeek V3 (Dec '24)",
         "creator": "DeepSeek",
         "intelligence_index_cost": {
-          "total_cost": 21.716144930000002,
-          "input_cost": 18.778542400000003,
+          "total_cost": 21.71614493,
+          "input_cost": 18.7785424,
           "non_cache_input_cost": 4.743875200000001,
-          "cache_read_cost": 9.807374389586627,
-          "cache_write_cost": 4.227292810413374,
+          "cache_read_cost": 4.903687194793314,
+          "cache_write_cost": 9.130980005206686,
           "reasoning_cost": 0,
           "answer_cost": 2.93760253,
           "output_cost": 2.93760253
         },
         "intelligence_index_per_m_output_tokens": 4.290206215060426,
         "evalCost": {
-          "total": 21.716144930000002,
-          "input": 18.778542400000003,
+          "total": 21.71614493,
+          "input": 18.7785424,
           "nonCacheInput": 4.743875200000001,
-          "cacheRead": 9.807374389586627,
-          "cacheWrite": 4.227292810413374,
+          "cacheRead": 4.903687194793314,
+          "cacheWrite": 9.130980005206686,
           "output": 2.93760253,
           "reasoning": 0,
           "answer": 2.93760253
@@ -46603,8 +46315,8 @@
           "total_cost": 137.78945643999998,
           "input_cost": 132.08877768999997,
           "non_cache_input_cost": 14.314178439999997,
-          "cache_read_cost": 85.45653355215437,
-          "cache_write_cost": 32.31806569784561,
+          "cache_read_cost": 90.49848846660277,
+          "cache_write_cost": 27.27611078339721,
           "reasoning_cost": 0,
           "answer_cost": 5.70067875,
           "output_cost": 5.70067875
@@ -46614,8 +46326,8 @@
           "total": 137.78945643999998,
           "input": 132.08877768999997,
           "nonCacheInput": 14.314178439999997,
-          "cacheRead": 85.45653355215437,
-          "cacheWrite": 32.31806569784561,
+          "cacheRead": 90.49848846660277,
+          "cacheWrite": 27.27611078339721,
           "output": 5.70067875,
           "reasoning": 0,
           "answer": 5.70067875
@@ -47230,22 +46942,22 @@
         "name": "GLM-4.7 (Reasoning)",
         "creator": "Z AI",
         "intelligence_index_cost": {
-          "total_cost": 582.2186145852468,
-          "input_cost": 205.57654218524667,
+          "total_cost": 582.4299247603446,
+          "input_cost": 205.78785236034463,
           "non_cache_input_cost": 7.175616,
-          "cache_read_cost": 145.64501150327345,
-          "cache_write_cost": 52.755914681973216,
+          "cache_read_cost": 144.1658402775875,
+          "cache_write_cost": 54.44639608275713,
           "reasoning_cost": 360.0404192000001,
           "answer_cost": 16.6016532,
           "output_cost": 376.6420724000001
         },
         "intelligence_index_per_m_output_tokens": 0.19687347207826697,
         "evalCost": {
-          "total": 582.2186145852468,
-          "input": 205.57654218524667,
+          "total": 582.4299247603446,
+          "input": 205.78785236034463,
           "nonCacheInput": 7.175616,
-          "cacheRead": 145.64501150327345,
-          "cacheWrite": 52.755914681973216,
+          "cacheRead": 144.1658402775875,
+          "cacheWrite": 54.44639608275713,
           "output": 376.6420724000001,
           "reasoning": 360.0404192000001,
           "answer": 16.6016532
@@ -47969,7 +47681,7 @@
         "slug": "gpt-oss-20b",
         "name": "gpt-oss-20b (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 83.27471858037426,
+        "intelligenceIndexTimePerTask": 82.86013884767792,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48004,14 +47716,14 @@
         "slug": "gpt-oss-120b",
         "name": "gpt-oss-120b (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 112.98123198223182,
+        "intelligenceIndexTimePerTask": 113.1858998290187,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-low",
         "name": "GPT-5.5 (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 36.28633761231723,
+        "intelligenceIndexTimePerTask": 35.7373118659338,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48025,42 +47737,42 @@
         "slug": "gpt-5-5-high",
         "name": "GPT-5.5 (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 149.91806997595882,
+        "intelligenceIndexTimePerTask": 131.9407010486616,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-non-reasoning",
         "name": "GPT-5.5 (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 26.624425317425803,
+        "intelligenceIndexTimePerTask": 26.0847271554913,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-medium",
         "name": "GPT-5.5 (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 82.91423367029266,
+        "intelligenceIndexTimePerTask": 80.13540241265662,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5",
         "name": "GPT-5.5 (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 237.68367151714259,
+        "intelligenceIndexTimePerTask": 208.9003625622615,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-4-nano",
         "name": "GPT-5.4 nano (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 410.507112837928,
+        "intelligenceIndexTimePerTask": 414.6084826643005,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-4-mini",
         "name": "GPT-5.4 mini (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 501.7548904892416,
+        "intelligenceIndexTimePerTask": 462.18532786684403,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48074,28 +47786,28 @@
         "slug": "gpt-5-6-luna-non-reasoning",
         "name": "GPT-5.6 Luna (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 10.920911275623865,
+        "intelligenceIndexTimePerTask": 10.912539648031798,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-xhigh",
         "name": "GPT-5.6 Sol (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 144.03776472214545,
+        "intelligenceIndexTimePerTask": 146.04394301092728,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol",
         "name": "GPT-5.6 Sol (max)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 206.5847775410582,
+        "intelligenceIndexTimePerTask": 213.14297561715787,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-low",
         "name": "GPT-5.6 Terra (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 19.40107997593033,
+        "intelligenceIndexTimePerTask": 19.93834745100439,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48116,35 +47828,35 @@
         "slug": "gpt-5-6-terra",
         "name": "GPT-5.6 Terra (max)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 136.74274460880534,
+        "intelligenceIndexTimePerTask": 132.09091661966525,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna-high",
         "name": "GPT-5.6 Luna (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 39.69625623466159,
+        "intelligenceIndexTimePerTask": 39.56081991405704,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-xhigh",
         "name": "GPT-5.6 Terra (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 86.4404409485569,
+        "intelligenceIndexTimePerTask": 85.103601174293,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-non-reasoning",
         "name": "GPT-5.6 Terra (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 18.264253244122784,
+        "intelligenceIndexTimePerTask": 18.380324973783523,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-high",
         "name": "GPT-5.6 Sol (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 102.2521621376841,
+        "intelligenceIndexTimePerTask": 100.85774175448924,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48158,7 +47870,7 @@
         "slug": "gpt-5-6-luna-xhigh",
         "name": "GPT-5.6 Luna (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 61.10854031297664,
+        "intelligenceIndexTimePerTask": 60.177565267817215,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48179,7 +47891,7 @@
         "slug": "gpt-5-6-sol-medium",
         "name": "GPT-5.6 Sol (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 67.87947667994744,
+        "intelligenceIndexTimePerTask": 67.72848501224813,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48193,35 +47905,35 @@
         "slug": "gpt-5-6-luna-medium",
         "name": "GPT-5.6 Luna (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 18.34859174838973,
+        "intelligenceIndexTimePerTask": 18.17956554606203,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 90.97654964496121,
+        "intelligenceIndexTimePerTask": 82.52973378396106,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-medium",
         "name": "GPT-5.6 Terra (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 32.641369677816215,
+        "intelligenceIndexTimePerTask": 33.017094262994384,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-low",
         "name": "GPT-5.6 Sol (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 38.82730409433459,
+        "intelligenceIndexTimePerTask": 40.127110961263135,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna-low",
         "name": "GPT-5.6 Luna (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 11.845472240178111,
+        "intelligenceIndexTimePerTask": 12.04653220517247,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48256,21 +47968,21 @@
         "slug": "llama-4-scout",
         "name": "Llama 4 Scout",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 11.108766910106082,
+        "intelligenceIndexTimePerTask": 11.042776401493139,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "llama-4-maverick",
         "name": "Llama 4 Maverick",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 17.76106559071112,
+        "intelligenceIndexTimePerTask": 17.834688163135723,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "muse-spark-1-1",
         "name": "Muse Spark 1.1 (xhigh)",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 177.55235781775283,
+        "intelligenceIndexTimePerTask": 163.5443768457375,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48284,7 +47996,7 @@
         "slug": "gemma-4-31b",
         "name": "Gemma 4 31B (Reasoning)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 330.3866770068303,
+        "intelligenceIndexTimePerTask": 331.2848136988812,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48319,7 +48031,7 @@
         "slug": "gemma-4-31b-non-reasoning",
         "name": "Gemma 4 31B (Non-reasoning)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 85.79399231130114,
+        "intelligenceIndexTimePerTask": 81.924082257689,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48354,14 +48066,14 @@
         "slug": "gemini-3-1-pro-preview",
         "name": "Gemini 3.1 Pro Preview",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 94.54740122803679,
+        "intelligenceIndexTimePerTask": 90.92722408256678,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gemini-3-1-flash-lite-preview",
         "name": "Gemini 3.1 Flash-Lite",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 72.5533142003929,
+        "intelligenceIndexTimePerTask": 64.81585141937427,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48375,7 +48087,7 @@
         "slug": "gemini-2-5-pro",
         "name": "Gemini 2.5 Pro",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 86.51288952469754,
+        "intelligenceIndexTimePerTask": 81.71682452124249,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48403,21 +48115,21 @@
         "slug": "gemini-3-5-flash",
         "name": "Gemini 3.5 Flash (high)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 169.11679340906585,
+        "intelligenceIndexTimePerTask": 167.77754296211194,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-4-5-haiku-reasoning",
         "name": "Claude 4.5 Haiku (Reasoning)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 167.29591591694694,
+        "intelligenceIndexTimePerTask": 168.61194994173272,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-sonnet-5-non-reasoning",
         "name": "Claude Sonnet 5 (Non-reasoning, High Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 93.25164150029387,
+        "intelligenceIndexTimePerTask": 87.82618276074771,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48431,28 +48143,28 @@
         "slug": "claude-sonnet-5",
         "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 516.957022067618,
+        "intelligenceIndexTimePerTask": 518.3378882209124,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-4-8",
         "name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 428.1633847181827,
+        "intelligenceIndexTimePerTask": 414.27383112226835,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 330.43748200332914,
+        "intelligenceIndexTimePerTask": 318.18864560189706,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-4-7",
         "name": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 368.08327160459066,
+        "intelligenceIndexTimePerTask": 367.81468310423173,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48473,28 +48185,28 @@
         "slug": "mistral-small-4",
         "name": "Mistral Small 4 (Reasoning)",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 108.65842832335103,
+        "intelligenceIndexTimePerTask": 103.46123543367807,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "devstral-2",
         "name": "Devstral 2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 97.32224130483918,
+        "intelligenceIndexTimePerTask": 82.05409516094775,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "mistral-large-3",
         "name": "Mistral Large 3",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 64.79060431260487,
+        "intelligenceIndexTimePerTask": 60.52580907049921,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ministral-3-3b",
         "name": "Ministral 3 3B",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 113.57325828488516,
+        "intelligenceIndexTimePerTask": 112.49801722105771,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48508,42 +48220,42 @@
         "slug": "devstral-small-2",
         "name": "Devstral Small 2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 113.2990736165624,
+        "intelligenceIndexTimePerTask": 77.39778014665166,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ministral-3-8b",
         "name": "Ministral 3 8B",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 172.74916682366805,
+        "intelligenceIndexTimePerTask": 139.78186738774994,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ministral-3-14b",
         "name": "Ministral 3 14B",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 138.75430066557905,
+        "intelligenceIndexTimePerTask": 133.32556435831955,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "mistral-medium-3-5",
         "name": "Mistral Medium 3.5",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 170.9849497621267,
+        "intelligenceIndexTimePerTask": 161.28845404853232,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "magistral-medium-2509",
         "name": "Magistral Medium 1.2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 195.36058952318928,
+        "intelligenceIndexTimePerTask": 202.07804258994875,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "magistral-small-2509",
         "name": "Magistral Small 1.2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 113.23149727543655,
+        "intelligenceIndexTimePerTask": 113.71442101926156,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48564,14 +48276,14 @@
         "slug": "deepseek-v4-flash",
         "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
         "creator": "DeepSeek",
-        "intelligenceIndexTimePerTask": 409.3286700745431,
+        "intelligenceIndexTimePerTask": 392.95958103974016,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "deepseek-v4-pro",
         "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
         "creator": "DeepSeek",
-        "intelligenceIndexTimePerTask": 562.0878078921975,
+        "intelligenceIndexTimePerTask": 482.6167928976416,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48613,21 +48325,21 @@
         "slug": "grok-4-3",
         "name": "Grok 4.3 (high)",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 133.73347437300964,
+        "intelligenceIndexTimePerTask": 128.34509532003287,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "grok-4-3-non-reasoning",
         "name": "Grok 4.3 (Non-reasoning)",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 80.71032460686271,
+        "intelligenceIndexTimePerTask": 78.63118077982189,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "grok-4-5",
         "name": "Grok 4.5 (high)",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 121.70502969616054,
+        "intelligenceIndexTimePerTask": 118.78914840600582,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48641,7 +48353,7 @@
         "slug": "grok-build-0-1-06-16",
         "name": "Grok Build 0.1 0616",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 258.74820674128165,
+        "intelligenceIndexTimePerTask": 206.52767489526968,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48662,7 +48374,7 @@
         "slug": "nova-2-0-pro-reasoning-medium",
         "name": "Nova 2.0 Pro Preview (medium)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 93.85805413748906,
+        "intelligenceIndexTimePerTask": 90.64634647973,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48676,7 +48388,7 @@
         "slug": "nova-2-0-lite-reasoning",
         "name": "Nova 2.0 Lite (high)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 282.3048474965859,
+        "intelligenceIndexTimePerTask": 281.4764482921001,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48697,7 +48409,7 @@
         "slug": "nova-2-0-pro",
         "name": "Nova 2.0 Pro Preview (Non-reasoning)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 33.213055853970566,
+        "intelligenceIndexTimePerTask": 29.792921579898078,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48718,7 +48430,7 @@
         "slug": "nova-2-0-pro-reasoning-low",
         "name": "Nova 2.0 Pro Preview (low)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 40.99036883545996,
+        "intelligenceIndexTimePerTask": 39.200630374829686,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48739,7 +48451,7 @@
         "slug": "phi-4-mini",
         "name": "Phi-4 Mini Instruct",
         "creator": "Microsoft",
-        "intelligenceIndexTimePerTask": 667.9252253541915,
+        "intelligenceIndexTimePerTask": 681.0439175297123,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48837,14 +48549,14 @@
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
-        "intelligenceIndexTimePerTask": 210.8046567410707,
+        "intelligenceIndexTimePerTask": 212.7563272466736,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "minimax-m2-7",
         "name": "MiniMax-M2.7",
         "creator": "MiniMax",
-        "intelligenceIndexTimePerTask": 367.00440901784043,
+        "intelligenceIndexTimePerTask": 304.36473437007965,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48865,7 +48577,7 @@
         "slug": "nvidia-nemotron-3-ultra-550b-a55b",
         "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
         "creator": "NVIDIA",
-        "intelligenceIndexTimePerTask": 120.64952927937959,
+        "intelligenceIndexTimePerTask": 107.65250139597413,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48935,14 +48647,14 @@
         "slug": "nvidia-nemotron-3-nano-30b-a3b-reasoning",
         "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
         "creator": "NVIDIA",
-        "intelligenceIndexTimePerTask": 240.73194919935185,
+        "intelligenceIndexTimePerTask": 248.38725626495273,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "nvidia-nemotron-3-super-120b-a12b",
         "name": "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)",
         "creator": "NVIDIA",
-        "intelligenceIndexTimePerTask": 138.6127140382802,
+        "intelligenceIndexTimePerTask": 100.54054613244723,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48963,7 +48675,7 @@
         "slug": "kimi-k2-6",
         "name": "Kimi K2.6",
         "creator": "Kimi",
-        "intelligenceIndexTimePerTask": 804.1855005436217,
+        "intelligenceIndexTimePerTask": 732.7897520596879,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48977,7 +48689,7 @@
         "slug": "kimi-k2-7-code",
         "name": "Kimi K2.7 Code",
         "creator": "Kimi",
-        "intelligenceIndexTimePerTask": 357.91275282134194,
+        "intelligenceIndexTimePerTask": 338.3804718881364,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -48998,7 +48710,7 @@
         "slug": "step-3-7-flash",
         "name": "Step 3.7 Flash",
         "creator": "StepFun",
-        "intelligenceIndexTimePerTask": 115.77860020364783,
+        "intelligenceIndexTimePerTask": 108.99693212489623,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49222,7 +48934,7 @@
         "slug": "mimo-v2-5-pro",
         "name": "MiMo-V2.5-Pro",
         "creator": "Xiaomi",
-        "intelligenceIndexTimePerTask": 396.24801234082304,
+        "intelligenceIndexTimePerTask": 329.97151559841376,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49236,7 +48948,7 @@
         "slug": "mimo-v2-5-0424",
         "name": "MiMo-V2.5",
         "creator": "Xiaomi",
-        "intelligenceIndexTimePerTask": 206.02656050182244,
+        "intelligenceIndexTimePerTask": 185.35573109664813,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49299,7 +49011,7 @@
         "slug": "hypernova-60b",
         "name": "HyperNova 60B 2605",
         "creator": "Multiverse Computing",
-        "intelligenceIndexTimePerTask": 82.85993593809091,
+        "intelligenceIndexTimePerTask": 79.51142543669881,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49327,7 +49039,7 @@
         "slug": "kat-coder-pro-v1",
         "name": "KAT-Coder-Pro V1",
         "creator": "KwaiKAT",
-        "intelligenceIndexTimePerTask": 56.03272908942093,
+        "intelligenceIndexTimePerTask": 55.315620023223154,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49481,7 +49193,7 @@
         "slug": "nex-n2-pro",
         "name": "Nex-N2-Pro",
         "creator": "Nex AGI",
-        "intelligenceIndexTimePerTask": 203.17190065342308,
+        "intelligenceIndexTimePerTask": 209.06064907240778,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49495,14 +49207,14 @@
         "slug": "glm-5-2",
         "name": "GLM-5.2 (max)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 201.29871502187333,
+        "intelligenceIndexTimePerTask": 184.57678253091112,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "glm-5-1",
         "name": "GLM-5.1 (Reasoning)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 323.34126319642223,
+        "intelligenceIndexTimePerTask": 288.1003061181097,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49544,7 +49256,7 @@
         "slug": "command-a-plus",
         "name": "Command A+",
         "creator": "Cohere",
-        "intelligenceIndexTimePerTask": 135.87169619255897,
+        "intelligenceIndexTimePerTask": 118.27304826380129,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49586,14 +49298,14 @@
         "slug": "qwen3-6-27b",
         "name": "Qwen3.6 27B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 419.5287545690592,
+        "intelligenceIndexTimePerTask": 404.421859055453,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-6-35b-a3b",
         "name": "Qwen3.6 35B A3B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 163.02174872169752,
+        "intelligenceIndexTimePerTask": 152.07033594615277,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49607,7 +49319,7 @@
         "slug": "qwen3-7-max",
         "name": "Qwen3.7 Max",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 99.89550042901016,
+        "intelligenceIndexTimePerTask": 96.2330208712097,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49628,14 +49340,14 @@
         "slug": "qwen3-5-9b",
         "name": "Qwen3.5 9B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 483.2747004920069,
+        "intelligenceIndexTimePerTask": 457.88355626692135,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-5-397b-a17b",
         "name": "Qwen3.5 397B A17B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 259.1484424923162,
+        "intelligenceIndexTimePerTask": 231.9006984599667,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49656,14 +49368,14 @@
         "slug": "qwen3-next-80b-a3b-reasoning",
         "name": "Qwen3 Next 80B A3B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 108.90696581129981,
+        "intelligenceIndexTimePerTask": 109.01431253164148,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-6-27b-non-reasoning",
         "name": "Qwen3.6 27B (Non-reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 190.23441291002734,
+        "intelligenceIndexTimePerTask": 195.54357620436627,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49677,7 +49389,7 @@
         "slug": "qwen3-5-122b-a10b-non-reasoning",
         "name": "Qwen3.5 122B A10B (Non-reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 53.10550229586928,
+        "intelligenceIndexTimePerTask": 51.753535725906985,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49705,7 +49417,7 @@
         "slug": "qwen3-5-122b-a10b",
         "name": "Qwen3.5 122B A10B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 110.57767622774767,
+        "intelligenceIndexTimePerTask": 106.89651298682071,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49726,14 +49438,14 @@
         "slug": "qwen3-coder-next",
         "name": "Qwen3 Coder Next",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 145.17801531049156,
+        "intelligenceIndexTimePerTask": 141.27864002542046,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-6-plus",
         "name": "Qwen3.6 Plus",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 384.3212851828583,
+        "intelligenceIndexTimePerTask": 384.1483142374331,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49761,7 +49473,7 @@
         "slug": "qwen3-7-plus",
         "name": "Qwen3.7 Plus",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 398.237193318455,
+        "intelligenceIndexTimePerTask": 398.55427096190715,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49782,14 +49494,14 @@
         "slug": "ling-2-6-flash",
         "name": "Ling 2.6 Flash",
         "creator": "InclusionAI",
-        "intelligenceIndexTimePerTask": 72.1464985488119,
+        "intelligenceIndexTimePerTask": 72.48542624852334,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ring-2-6-1t",
         "name": "Ring-2.6-1T",
         "creator": "InclusionAI",
-        "intelligenceIndexTimePerTask": 202.7280254205543,
+        "intelligenceIndexTimePerTask": 192.81297972632495,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49901,7 +49613,7 @@
         "slug": "gpt-5",
         "name": "GPT-5 (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 182.17129303048821,
+        "intelligenceIndexTimePerTask": 169.12966517188772,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49929,7 +49641,7 @@
         "slug": "gpt-5-mini",
         "name": "GPT-5 mini (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 110.78642630719182,
+        "intelligenceIndexTimePerTask": 109.47944757398936,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49950,7 +49662,7 @@
         "slug": "gpt-4-1-nano",
         "name": "GPT-4.1 nano",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 41.15874127163878,
+        "intelligenceIndexTimePerTask": 40.237518683429975,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -49978,7 +49690,7 @@
         "slug": "o3-mini-high",
         "name": "o3-mini (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 16.804208230095544,
+        "intelligenceIndexTimePerTask": 15.174395238749005,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50013,21 +49725,21 @@
         "slug": "gpt-4-1-mini",
         "name": "GPT-4.1 mini",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 36.900489726016495,
+        "intelligenceIndexTimePerTask": 39.0259460645262,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-4",
         "name": "GPT-5.4 (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 209.5667559987502,
+        "intelligenceIndexTimePerTask": 197.10139850742925,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-1",
         "name": "GPT-5.1 (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 216.61158431020414,
+        "intelligenceIndexTimePerTask": 208.69316025395707,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50566,7 +50278,7 @@
         "slug": "claude-4-5-sonnet-thinking",
         "name": "Claude 4.5 Sonnet (Reasoning)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 305.92580568093706,
+        "intelligenceIndexTimePerTask": 298.0870537276657,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50608,7 +50320,7 @@
         "slug": "claude-sonnet-4-6-adaptive",
         "name": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 590.5680800437533,
+        "intelligenceIndexTimePerTask": 578.2341108199806,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50706,7 +50418,7 @@
         "slug": "mistral-small-3-1",
         "name": "Mistral Small 3.1",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 30.082778085594526,
+        "intelligenceIndexTimePerTask": 29.153496917872456,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50727,7 +50439,7 @@
         "slug": "mistral-small-3-2",
         "name": "Mistral Small 3.2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 52.39832839365143,
+        "intelligenceIndexTimePerTask": 51.9877277306532,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51350,7 +51062,7 @@
         "slug": "glm-4-7",
         "name": "GLM-4.7 (Reasoning)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 159.68739038242788,
+        "intelligenceIndexTimePerTask": 148.63340648917517,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51371,7 +51083,7 @@
         "slug": "glm-4-6-reasoning",
         "name": "GLM-4.6 (Reasoning)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 378.80966126903616,
+        "intelligenceIndexTimePerTask": 376.47115786607327,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51553,7 +51265,7 @@
         "slug": "qwen3-30b-a3b-2507-reasoning",
         "name": "Qwen3 30B A3B 2507 (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 153.26751333663546,
+        "intelligenceIndexTimePerTask": 157.80718509900993,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51616,7 +51328,7 @@
         "slug": "qwen3-235b-a22b-instruct-2507-reasoning",
         "name": "Qwen3 235B A22B 2507 (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 299.9867866562445,
+        "intelligenceIndexTimePerTask": 293.71675096693633,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -74869,7 +74581,7 @@
         "price_1m_output": 50,
         "price_1m_blended_7_2_1": 7.7,
         "cost_per_task_total": 2.7498239008825984,
-        "time_per_task": 330.43748200332914,
+        "time_per_task": 318.18864560189706,
         "output_tokens_per_task": 33127.0472670529
       },
       {
@@ -74995,7 +74707,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 1.0373301565994435,
-        "time_per_task": 206.5847775410582,
+        "time_per_task": 213.14297561715787,
         "output_tokens_per_task": 15346.352247051163
       },
       {
@@ -75035,8 +74747,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.6824768594725414,
-        "time_per_task": 144.03776472214545,
+        "cost_per_task_total": null,
+        "time_per_task": 146.04394301092728,
         "output_tokens_per_task": 9940.5564010649
       },
       {
@@ -75076,8 +74788,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.45300942735621286,
-        "time_per_task": 102.2521621376841,
+        "cost_per_task_total": null,
+        "time_per_task": 100.85774175448924,
         "output_tokens_per_task": 6690.308555147785
       },
       {
@@ -75203,7 +74915,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 1.7972215258754352,
-        "time_per_task": 428.1633847181827,
+        "time_per_task": 414.27383112226835,
         "output_tokens_per_task": 40910.24738801627
       },
       {
@@ -75244,7 +74956,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
         "cost_per_task_total": 0.5544595173072254,
-        "time_per_task": 136.74274460880534,
+        "time_per_task": 132.09091661966525,
         "output_tokens_per_task": 19369.795192253852
       },
       {
@@ -75369,8 +75081,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.8627064537302028,
-        "time_per_task": 237.68367151714259,
+        "cost_per_task_total": 0.9924637781010264,
+        "time_per_task": 208.9003625622615,
         "output_tokens_per_task": 16064.476014126014
       },
       {
@@ -75496,7 +75208,7 @@
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 1.35,
         "cost_per_task_total": 0.3110838295302332,
-        "time_per_task": 121.70502969616054,
+        "time_per_task": 118.78914840600582,
         "output_tokens_per_task": 13796.372242837875
       },
       {
@@ -75536,8 +75248,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.3139844979499344,
-        "time_per_task": 67.87947667994744,
+        "cost_per_task_total": null,
+        "time_per_task": 67.72848501224813,
         "output_tokens_per_task": 4202.72143690891
       },
       {
@@ -75663,7 +75375,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 1.9733096609430143,
-        "time_per_task": 368.08327160459066,
+        "time_per_task": 367.81468310423173,
         "output_tokens_per_task": 31466.196433904537
       },
       {
@@ -75789,7 +75501,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.54,
         "cost_per_task_total": 1.5254254480225784,
-        "time_per_task": 516.957022067618,
+        "time_per_task": 518.3378882209124,
         "output_tokens_per_task": 68735.70748622667
       },
       {
@@ -75914,8 +75626,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.6095853425706699,
-        "time_per_task": 149.91806997595882,
+        "cost_per_task_total": 0.668057792071965,
+        "time_per_task": 131.9407010486616,
         "output_tokens_per_task": 10076.460810338755
       },
       {
@@ -75956,7 +75668,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
         "cost_per_task_total": 0.3272368361728899,
-        "time_per_task": 86.4404409485569,
+        "time_per_task": 85.103601174293,
         "output_tokens_per_task": 11035.729220965757
       },
       {
@@ -75997,7 +75709,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
         "cost_per_task_total": 0.8868298551068886,
-        "time_per_task": 209.5667559987502,
+        "time_per_task": 197.10139850742925,
         "output_tokens_per_task": 32653.89086163631
       },
       {
@@ -76037,8 +75749,8 @@
         "price_1m_input": 1,
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 0.8699999999999999,
-        "cost_per_task_total": 0.20941332352935085,
-        "time_per_task": 90.97654964496121,
+        "cost_per_task_total": null,
+        "time_per_task": 82.52973378396106,
         "output_tokens_per_task": 18912.005257449488
       },
       {
@@ -76163,8 +75875,8 @@
         "price_1m_input": 1.4,
         "price_1m_output": 4.4,
         "price_1m_blended_7_2_1": 0.9019999999999999,
-        "cost_per_task_total": 0.370080167362808,
-        "time_per_task": 201.29871502187333,
+        "cost_per_task_total": 0.3758425161131201,
+        "time_per_task": 184.57678253091112,
         "output_tokens_per_task": 42790.89116989162
       },
       {
@@ -76290,7 +76002,7 @@
         "price_1m_output": 4.25,
         "price_1m_blended_7_2_1": 0.78,
         "cost_per_task_total": 0.2610220700233032,
-        "time_per_task": 177.55235781775283,
+        "time_per_task": 163.5443768457375,
         "output_tokens_per_task": 21610.314480543228
       },
       {
@@ -76415,8 +76127,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.34412566885902274,
-        "time_per_task": 82.91423367029266,
+        "cost_per_task_total": 0.4061167899400016,
+        "time_per_task": 80.13540241265662,
         "output_tokens_per_task": 5132.423404727121
       },
       {
@@ -76542,7 +76254,7 @@
         "price_1m_output": 9,
         "price_1m_blended_7_2_1": 1.3050000000000002,
         "cost_per_task_total": 0.585545242207561,
-        "time_per_task": 169.11679340906585,
+        "time_per_task": 167.77754296211194,
         "output_tokens_per_task": 27733.34325932782
       },
       {
@@ -76582,8 +76294,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.1974662438526612,
-        "time_per_task": 38.82730409433459,
+        "cost_per_task_total": null,
+        "time_per_task": 40.127110961263135,
         "output_tokens_per_task": 2507.7537132556436
       },
       {
@@ -76623,8 +76335,8 @@
         "price_1m_input": 1,
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 0.8699999999999999,
-        "cost_per_task_total": 0.13896478816312374,
-        "time_per_task": 61.10854031297664,
+        "cost_per_task_total": null,
+        "time_per_task": 60.177565267817215,
         "output_tokens_per_task": 12492.303981970428
       },
       {
@@ -76791,7 +76503,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.31,
         "cost_per_task_total": 1.1355620170084484,
-        "time_per_task": 590.5680800437533,
+        "time_per_task": 578.2341108199806,
         "output_tokens_per_task": 50346.050380470966
       },
       {
@@ -76917,7 +76629,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.29113642988035915,
-        "time_per_task": 94.54740122803679,
+        "time_per_task": 90.92722408256678,
         "output_tokens_per_task": 13171.37183133668
       },
       {
@@ -76957,8 +76669,8 @@
         "price_1m_input": 1,
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 0.8699999999999999,
-        "cost_per_task_total": 0.09476459263707988,
-        "time_per_task": 39.69625623466159,
+        "cost_per_task_total": null,
+        "time_per_task": 39.56081991405704,
         "output_tokens_per_task": 8118.088141888398
       },
       {
@@ -77083,8 +76795,8 @@
         "price_1m_input": 2.5,
         "price_1m_output": 7.5,
         "price_1m_blended_7_2_1": 1.425,
-        "cost_per_task_total": 1.061325321467105,
-        "time_per_task": 99.89550042901016,
+        "cost_per_task_total": 0.9849971557584272,
+        "time_per_task": 96.2330208712097,
         "output_tokens_per_task": 22372.901304564115
       },
       {
@@ -77125,7 +76837,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
         "cost_per_task_total": 0.1276399207309507,
-        "time_per_task": 32.641369677816215,
+        "time_per_task": 33.017094262994384,
         "output_tokens_per_task": 3769.086440612571
       },
       {
@@ -77377,7 +77089,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": 0.12455059919140353,
-        "time_per_task": 210.8046567410707,
+        "time_per_task": 212.7563272466736,
         "output_tokens_per_task": 23963.866202882804
       },
       {
@@ -77503,7 +77215,7 @@
         "price_1m_output": 0.87,
         "price_1m_blended_7_2_1": 0.17652,
         "cost_per_task_total": 0.044843733471261124,
-        "time_per_task": 562.0878078921975,
+        "time_per_task": 482.6167928976416,
         "output_tokens_per_task": 36962.620405911206
       },
       {
@@ -77754,8 +77466,8 @@
         "price_1m_input": 0.95,
         "price_1m_output": 4,
         "price_1m_blended_7_2_1": 0.702,
-        "cost_per_task_total": 0.34554319749943396,
-        "time_per_task": 804.1855005436217,
+        "cost_per_task_total": null,
+        "time_per_task": 732.7897520596879,
         "output_tokens_per_task": 38136.32526891783
       },
       {
@@ -77836,8 +77548,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.19300784226111395,
-        "time_per_task": 36.28633761231723,
+        "cost_per_task_total": 0.21087234510039837,
+        "time_per_task": 35.7373118659338,
         "output_tokens_per_task": 2140.075712378165
       },
       {
@@ -78215,7 +77927,7 @@
         "price_1m_output": 0.87,
         "price_1m_blended_7_2_1": 0.17652,
         "cost_per_task_total": 0.03139528698492376,
-        "time_per_task": 396.24801234082304,
+        "time_per_task": 329.97151559841376,
         "output_tokens_per_task": 20476.386745754964
       },
       {
@@ -78296,8 +78008,8 @@
         "price_1m_input": 0.95,
         "price_1m_output": 4,
         "price_1m_blended_7_2_1": 0.702,
-        "cost_per_task_total": 0.17772103999963917,
-        "time_per_task": 357.91275282134194,
+        "cost_per_task_total": null,
+        "time_per_task": 338.3804718881364,
         "output_tokens_per_task": 17716.081293998985
       },
       {
@@ -78337,8 +78049,8 @@
         "price_1m_input": 2,
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.54,
-        "cost_per_task_total": null,
-        "time_per_task": 93.25164150029387,
+        "cost_per_task_total": 0.3745280868419511,
+        "time_per_task": 87.82618276074771,
         "output_tokens_per_task": 9709.061334517113
       },
       {
@@ -78378,7 +78090,7 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.2004446148307233,
+        "cost_per_task_total": null,
         "time_per_task": "$undefined",
         "output_tokens_per_task": 2073.895225376513
       },
@@ -78420,7 +78132,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.525,
         "cost_per_task_total": null,
-        "time_per_task": 203.17190065342308,
+        "time_per_task": 209.06064907240778,
         "output_tokens_per_task": 29537.821026196565
       },
       {
@@ -78543,7 +78255,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
         "cost_per_task_total": 0.10115788470701273,
-        "time_per_task": 19.40107997593033,
+        "time_per_task": 19.93834745100439,
         "output_tokens_per_task": 2258.385981887234
       },
       {
@@ -78710,7 +78422,7 @@
         "price_1m_output": 0.28,
         "price_1m_blended_7_2_1": 0.05796000000000001,
         "cost_per_task_total": 0.0222818336454049,
-        "time_per_task": 409.3286700745431,
+        "time_per_task": 392.95958103974016,
         "output_tokens_per_task": 45276.566290890354
       },
       {
@@ -78835,8 +78547,8 @@
         "price_1m_input": 1.4,
         "price_1m_output": 4.4,
         "price_1m_blended_7_2_1": 0.9019999999999999,
-        "cost_per_task_total": 0.22589274187412675,
-        "time_per_task": 323.34126319642223,
+        "cost_per_task_total": 0.24694312377186614,
+        "time_per_task": 288.1003061181097,
         "output_tokens_per_task": 26390.022977829776
       },
       {
@@ -79043,8 +78755,8 @@
         "price_1m_input": 0.75,
         "price_1m_output": 4.5,
         "price_1m_blended_7_2_1": 0.6525000000000001,
-        "cost_per_task_total": 0.47929864085182117,
-        "time_per_task": 501.7548904892416,
+        "cost_per_task_total": 0.45222268374819774,
+        "time_per_task": 462.18532786684403,
         "output_tokens_per_task": 78121.45616466556
       },
       {
@@ -79085,7 +78797,7 @@
         "price_1m_output": 2,
         "price_1m_blended_7_2_1": 0.54,
         "cost_per_task_total": 0.21191134533727934,
-        "time_per_task": 258.74820674128165,
+        "time_per_task": 206.52767489526968,
         "output_tokens_per_task": 35204.363370547784
       },
       {
@@ -79126,7 +78838,7 @@
         "price_1m_output": 3,
         "price_1m_blended_7_2_1": 0.43499999999999994,
         "cost_per_task_total": 0.31383547131763045,
-        "time_per_task": 384.3212851828583,
+        "time_per_task": 384.1483142374331,
         "output_tokens_per_task": 21402.99325283143
       },
       {
@@ -79289,8 +79001,8 @@
         "price_1m_input": 0.4,
         "price_1m_output": 1.6,
         "price_1m_blended_7_2_1": 0.268,
-        "cost_per_task_total": 0.21943570508240284,
-        "time_per_task": 398.237193318455,
+        "cost_per_task_total": 0.19519718362030988,
+        "time_per_task": 398.55427096190715,
         "output_tokens_per_task": 22171.85001333737
       },
       {
@@ -79371,8 +79083,8 @@
         "price_1m_input": 0.2,
         "price_1m_output": 1.25,
         "price_1m_blended_7_2_1": 0.179,
-        "cost_per_task_total": 0.12724692856512554,
-        "time_per_task": 410.507112837928,
+        "cost_per_task_total": null,
+        "time_per_task": 414.6084826643005,
         "output_tokens_per_task": 70686.83297032781
       },
       {
@@ -79413,7 +79125,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": null,
-        "time_per_task": 367.00440901784043,
+        "time_per_task": 304.36473437007965,
         "output_tokens_per_task": 18478.30925692363
       },
       {
@@ -79535,8 +79247,8 @@
         "price_1m_input": 1,
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 0.8699999999999999,
-        "cost_per_task_total": 0.05041697401910826,
-        "time_per_task": 18.34859174838973,
+        "cost_per_task_total": null,
+        "time_per_task": 18.17956554606203,
         "output_tokens_per_task": 3662.8758063762502
       },
       {
@@ -79743,8 +79455,8 @@
         "price_1m_input": 0.675,
         "price_1m_output": 2.675,
         "price_1m_blended_7_2_1": 0.5775,
-        "cost_per_task_total": 0.24390316682824711,
-        "time_per_task": 120.64952927937959,
+        "cost_per_task_total": 0.2339604134365895,
+        "time_per_task": 107.65250139597413,
         "output_tokens_per_task": 22937.528491853147
       },
       {
@@ -79911,7 +79623,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.64,
         "cost_per_task_total": 0.13850067515455958,
-        "time_per_task": 133.73347437300964,
+        "time_per_task": 128.34509532003287,
         "output_tokens_per_task": 14365.341912290824
       },
       {
@@ -79993,7 +79705,7 @@
         "price_1m_output": 0.28,
         "price_1m_blended_7_2_1": 0.05796000000000001,
         "cost_per_task_total": 0.009753224056302287,
-        "time_per_task": 206.02656050182244,
+        "time_per_task": 185.35573109664813,
         "output_tokens_per_task": 17219.665987092423
       },
       {
@@ -80119,7 +79831,7 @@
         "price_1m_output": 3.6,
         "price_1m_blended_7_2_1": 0.9,
         "cost_per_task_total": 0.26527574515202695,
-        "time_per_task": 419.5287545690592,
+        "time_per_task": 404.421859055453,
         "output_tokens_per_task": 28640.65456720617
       },
       {
@@ -80200,8 +79912,8 @@
         "price_1m_input": 1.25,
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.3375,
-        "cost_per_task_total": 0.2690906889061637,
-        "time_per_task": 216.61158431020414,
+        "cost_per_task_total": null,
+        "time_per_task": 208.69316025395707,
         "output_tokens_per_task": 21704.885166172997
       },
       {
@@ -80283,7 +79995,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.31,
         "cost_per_task_total": 0.41290380463528553,
-        "time_per_task": 305.92580568093706,
+        "time_per_task": 298.0870537276657,
         "output_tokens_per_task": 15716.419373296281
       },
       {
@@ -80569,8 +80281,8 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": 0.15146641561230662,
-        "time_per_task": 26.624425317425803,
+        "cost_per_task_total": 0.17101364725394147,
+        "time_per_task": 26.0847271554913,
         "output_tokens_per_task": 1586.2783433905659
       },
       {
@@ -80774,8 +80486,8 @@
         "price_1m_input": 1.25,
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.3375,
-        "cost_per_task_total": 0.2116516801323397,
-        "time_per_task": 182.17129303048821,
+        "cost_per_task_total": 0.23800170775318213,
+        "time_per_task": 169.12966517188772,
         "output_tokens_per_task": 15866.194925415524
       },
       {
@@ -80942,7 +80654,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": null,
-        "time_per_task": 56.03272908942093,
+        "time_per_task": 55.315620023223154,
         "output_tokens_per_task": 6102.955570581947
       },
       {
@@ -81146,8 +80858,8 @@
         "price_1m_input": 2.5,
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
-        "cost_per_task_total": 0.11454060544357351,
-        "time_per_task": 18.264253244122784,
+        "cost_per_task_total": null,
+        "time_per_task": 18.380324973783523,
         "output_tokens_per_task": 2153.9411612854274
       },
       {
@@ -81310,8 +81022,8 @@
         "price_1m_input": 0.6,
         "price_1m_output": 2.2,
         "price_1m_blended_7_2_1": 0.7075,
-        "cost_per_task_total": 0.29717889817375276,
-        "time_per_task": 159.68739038242788,
+        "cost_per_task_total": 0.29743764385810484,
+        "time_per_task": 148.63340648917517,
         "output_tokens_per_task": 23388.131933609413
       },
       {
@@ -81437,7 +81149,7 @@
         "price_1m_output": 3.6,
         "price_1m_blended_7_2_1": 0.9,
         "cost_per_task_total": 0.3331057741426611,
-        "time_per_task": 259.1484424923162,
+        "time_per_task": 231.9006984599667,
         "output_tokens_per_task": 17184.499605973375
       },
       {
@@ -81641,8 +81353,8 @@
         "price_1m_input": 1,
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 0.8699999999999999,
-        "cost_per_task_total": 0.040455415560607715,
-        "time_per_task": 11.845472240178111,
+        "cost_per_task_total": null,
+        "time_per_task": 12.04653220517247,
         "output_tokens_per_task": 2297.945408709607
       },
       {
@@ -81888,7 +81600,7 @@
         "price_1m_output": 3.2,
         "price_1m_blended_7_2_1": 0.68,
         "cost_per_task_total": 0.24119620563683528,
-        "time_per_task": 110.57767622774767,
+        "time_per_task": 106.89651298682071,
         "output_tokens_per_task": 16966.3356867959
       },
       {
@@ -82052,7 +81764,7 @@
         "price_1m_output": 1.485,
         "price_1m_blended_7_2_1": 0.37170000000000003,
         "cost_per_task_total": 0.17881593213598196,
-        "time_per_task": 163.02174872169752,
+        "time_per_task": 152.07033594615277,
         "output_tokens_per_task": 29719.130810850947
       },
       {
@@ -82462,7 +82174,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.52,
         "cost_per_task_total": 0.3451837452945369,
-        "time_per_task": 202.7280254205543,
+        "time_per_task": 192.81297972632495,
         "output_tokens_per_task": 27540.07752030103
       },
       {
@@ -82503,7 +82215,7 @@
         "price_1m_output": 3.6,
         "price_1m_blended_7_2_1": 0.9,
         "cost_per_task_total": 0.35928391524532766,
-        "time_per_task": 190.23441291002734,
+        "time_per_task": 195.54357620436627,
         "output_tokens_per_task": 11702.263602374345
       },
       {
@@ -82626,7 +82338,7 @@
         "price_1m_output": 1.15,
         "price_1m_blended_7_2_1": 0.183,
         "cost_per_task_total": null,
-        "time_per_task": 115.77860020364783,
+        "time_per_task": 108.99693212489623,
         "output_tokens_per_task": 49827.45514690039
       },
       {
@@ -82792,8 +82504,8 @@
         "price_1m_input": 1.5,
         "price_1m_output": 7.5,
         "price_1m_blended_7_2_1": 1.155,
-        "cost_per_task_total": 1.082796913829072,
-        "time_per_task": 170.9849497621267,
+        "cost_per_task_total": 1.1962136097409157,
+        "time_per_task": 161.28845404853232,
         "output_tokens_per_task": 25444.977817178908
       },
       {
@@ -82959,8 +82671,8 @@
         "price_1m_input": 1,
         "price_1m_output": 5,
         "price_1m_blended_7_2_1": 0.77,
-        "cost_per_task_total": 0.23747351037813688,
-        "time_per_task": 167.29591591694694,
+        "cost_per_task_total": 0.2716109087882064,
+        "time_per_task": 168.61194994173272,
         "output_tokens_per_task": 23537.492383311903
       },
       {
@@ -83127,7 +82839,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": null,
-        "time_per_task": 330.3866770068303,
+        "time_per_task": 331.2848136988812,
         "output_tokens_per_task": 11963.018702339323
       },
       {
@@ -83331,7 +83043,7 @@
         "price_1m_input": 5,
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
-        "cost_per_task_total": null,
+        "cost_per_task_total": 0.7108087581976272,
         "time_per_task": "$undefined",
         "output_tokens_per_task": 2493.3140501553007
       },
@@ -83373,7 +83085,7 @@
         "price_1m_output": 2.2,
         "price_1m_blended_7_2_1": 0.7150000000000001,
         "cost_per_task_total": 0.28294770145479164,
-        "time_per_task": 378.80966126903616,
+        "time_per_task": 376.47115786607327,
         "output_tokens_per_task": 18644.541998501936
       },
       {
@@ -83660,7 +83372,7 @@
         "price_1m_output": 3.2,
         "price_1m_blended_7_2_1": 0.68,
         "cost_per_task_total": 0.17743046041328747,
-        "time_per_task": 53.10550229586928,
+        "time_per_task": 51.753535725906985,
         "output_tokens_per_task": 8916.401732551709
       },
       {
@@ -83823,8 +83535,8 @@
         "price_1m_input": 1,
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 0.8699999999999999,
-        "cost_per_task_total": 0.05470253606463758,
-        "time_per_task": 10.920911275623865,
+        "cost_per_task_total": null,
+        "time_per_task": 10.912539648031798,
         "output_tokens_per_task": 2110.1426382861237
       },
       {
@@ -84111,7 +83823,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.3375,
         "cost_per_task_total": 0.19782530888396901,
-        "time_per_task": 86.51288952469754,
+        "time_per_task": 81.71682452124249,
         "output_tokens_per_task": 12102.388727019908
       },
       {
@@ -84151,7 +83863,7 @@
         "price_1m_input": 0.13,
         "price_1m_output": 0.4,
         "price_1m_blended_7_2_1": 0.1255,
-        "cost_per_task_total": 0.02940972218693016,
+        "cost_per_task_total": 0.02941342816635502,
         "time_per_task": "$undefined",
         "output_tokens_per_task": 20282.671846771198
       },
@@ -84483,7 +84195,7 @@
         "price_1m_output": 0.775,
         "price_1m_blended_7_2_1": 0.22725,
         "cost_per_task_total": 0.20551170435365923,
-        "time_per_task": 138.6127140382802,
+        "time_per_task": 100.54054613244723,
         "output_tokens_per_task": 25580.484907731414
       },
       {
@@ -84564,8 +84276,8 @@
         "price_1m_input": 0.25,
         "price_1m_output": 2,
         "price_1m_blended_7_2_1": 0.26749999999999996,
-        "cost_per_task_total": 0.02969510923770121,
-        "time_per_task": 110.78642630719182,
+        "cost_per_task_total": null,
+        "time_per_task": 109.47944757398936,
         "output_tokens_per_task": 11101.68761216075
       },
       {
@@ -84691,7 +84403,7 @@
         "price_1m_output": 1.5,
         "price_1m_blended_7_2_1": 0.21749999999999997,
         "cost_per_task_total": 0.041571620355421224,
-        "time_per_task": 72.5533142003929,
+        "time_per_task": 64.81585141937427,
         "output_tokens_per_task": 20216.411617630158
       },
       {
@@ -84773,7 +84485,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.64,
         "cost_per_task_total": 0.29295162234785854,
-        "time_per_task": 80.71032460686271,
+        "time_per_task": 78.63118077982189,
         "output_tokens_per_task": 9191.750828999455
       },
       {
@@ -84854,7 +84566,7 @@
         "price_1m_input": 0.1,
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.12000000000000002,
-        "cost_per_task_total": 0.3511773843295714,
+        "cost_per_task_total": null,
         "time_per_task": "$undefined",
         "output_tokens_per_task": 27074.69841091612
       },
@@ -85145,7 +84857,7 @@
         "price_1m_output": 0.6,
         "price_1m_blended_7_2_1": 0.195,
         "cost_per_task_total": 0.06067164425252872,
-        "time_per_task": 112.98123198223182,
+        "time_per_task": 113.1858998290187,
         "output_tokens_per_task": 35619.836725311856
       },
       {
@@ -85681,7 +85393,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 135.87169619255897,
+        "time_per_task": 118.27304826380129,
         "output_tokens_per_task": 20772.993280809515
       },
       {
@@ -86009,7 +85721,7 @@
         "price_1m_output": 0.4,
         "price_1m_blended_7_2_1": 0.166,
         "cost_per_task_total": 0.034332261679026484,
-        "time_per_task": 85.79399231130114,
+        "time_per_task": 81.924082257689,
         "output_tokens_per_task": 4536.779000923613
       },
       {
@@ -86050,7 +85762,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.4684000000000001,
         "cost_per_task_total": 0.1728370588534525,
-        "time_per_task": 93.85805413748906,
+        "time_per_task": 90.64634647973,
         "output_tokens_per_task": 11652.860286226254
       },
       {
@@ -86132,7 +85844,7 @@
         "price_1m_output": 0.15,
         "price_1m_blended_7_2_1": 0.10500000000000001,
         "cost_per_task_total": 0.1638454723745099,
-        "time_per_task": 483.2747004920069,
+        "time_per_task": 457.88355626692135,
         "output_tokens_per_task": 32622.609783538945
       },
       {
@@ -86337,7 +86049,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.43499999999999994,
         "cost_per_task_total": 0.32902581609337966,
-        "time_per_task": 145.17801531049156,
+        "time_per_task": 141.27864002542046,
         "output_tokens_per_task": 15537.806603069886
       },
       {
@@ -86911,7 +86623,7 @@
         "price_1m_output": 8.4,
         "price_1m_blended_7_2_1": 1.47,
         "cost_per_task_total": null,
-        "time_per_task": 299.9867866562445,
+        "time_per_task": 293.71675096693633,
         "output_tokens_per_task": 17599.490864825028
       },
       {
@@ -86952,7 +86664,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 2.125,
         "cost_per_task_total": 0.21277260985423777,
-        "time_per_task": 40.99036883545996,
+        "time_per_task": 39.200630374829686,
         "output_tokens_per_task": 4915.364012095632
       },
       {
@@ -86993,7 +86705,7 @@
         "price_1m_output": 0.6,
         "price_1m_blended_7_2_1": 0.195,
         "cost_per_task_total": null,
-        "time_per_task": 108.65842832335103,
+        "time_per_task": 103.46123543367807,
         "output_tokens_per_task": 15649.794613363068
       },
       {
@@ -87198,7 +86910,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 97.32224130483918,
+        "time_per_task": 82.05409516094775,
         "output_tokens_per_task": 5946.382121127844
       },
       {
@@ -87649,7 +87361,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.52,
         "cost_per_task_total": 0.24542698374402477,
-        "time_per_task": 282.3048474965859,
+        "time_per_task": 281.4764482921001,
         "output_tokens_per_task": 46190.80343551248
       },
       {
@@ -87813,7 +87525,7 @@
         "price_1m_output": 5,
         "price_1m_blended_7_2_1": 2.3,
         "cost_per_task_total": 0.7471451276458294,
-        "time_per_task": 195.36058952318928,
+        "time_per_task": 202.07804258994875,
         "output_tokens_per_task": 9060.386460390037
       },
       {
@@ -87936,7 +87648,7 @@
         "price_1m_output": 0.14,
         "price_1m_blended_7_2_1": 0.05,
         "cost_per_task_total": 0.017954722750171244,
-        "time_per_task": 82.85993593809091,
+        "time_per_task": 79.51142543669881,
         "output_tokens_per_task": 30781.981416088278
       },
       {
@@ -88141,7 +87853,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 113.2990736165624,
+        "time_per_task": 77.39778014665166,
         "output_tokens_per_task": 6163.913633054909
       },
       {
@@ -88595,7 +88307,7 @@
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 1.05,
         "cost_per_task_total": 0.1686499528237036,
-        "time_per_task": 108.90696581129981,
+        "time_per_task": 109.01431253164148,
         "output_tokens_per_task": 22221.576411957547
       },
       {
@@ -88923,7 +88635,7 @@
         "price_1m_output": 1.5,
         "price_1m_blended_7_2_1": 0.6,
         "cost_per_task_total": 0.05988932957210771,
-        "time_per_task": 64.79060431260487,
+        "time_per_task": 60.52580907049921,
         "output_tokens_per_task": 3031.0787016478853
       },
       {
@@ -88964,7 +88676,7 @@
         "price_1m_output": 4.4,
         "price_1m_blended_7_2_1": 1.0450000000000002,
         "cost_per_task_total": null,
-        "time_per_task": 16.804208230095544,
+        "time_per_task": 15.174395238749005,
         "output_tokens_per_task": 14739.362031236513
       },
       {
@@ -89418,7 +89130,7 @@
         "price_1m_output": 0.2,
         "price_1m_blended_7_2_1": 0.06500000000000002,
         "cost_per_task_total": 0.017842778338181632,
-        "time_per_task": 83.27471858037426,
+        "time_per_task": 82.86013884767792,
         "output_tokens_per_task": 22353.429574601836
       },
       {
@@ -89458,8 +89170,8 @@
         "price_1m_input": 0.4,
         "price_1m_output": 1.6,
         "price_1m_blended_7_2_1": 0.31,
-        "cost_per_task_total": 0.05779363242556173,
-        "time_per_task": 36.900489726016495,
+        "cost_per_task_total": 0.06370503454354323,
+        "time_per_task": 39.0259460645262,
         "output_tokens_per_task": 2957.0813278033247
       },
       {
@@ -89500,7 +89212,7 @@
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.12000000000000002,
         "cost_per_task_total": 0.04100283502410408,
-        "time_per_task": 30.082778085594526,
+        "time_per_task": 29.153496917872456,
         "output_tokens_per_task": 4757.239734679951
       },
       {
@@ -89582,7 +89294,7 @@
         "price_1m_output": 2.4,
         "price_1m_blended_7_2_1": 0.42000000000000004,
         "cost_per_task_total": 0.07164709339313349,
-        "time_per_task": 153.26751333663546,
+        "time_per_task": 157.80718509900993,
         "output_tokens_per_task": 19474.49120286842
       },
       {
@@ -89664,7 +89376,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 2.125,
         "cost_per_task_total": 0.24556414020453576,
-        "time_per_task": 33.213055853970566,
+        "time_per_task": 29.792921579898078,
         "output_tokens_per_task": 3631.1773890567592
       },
       {
@@ -89872,7 +89584,7 @@
         "price_1m_output": 0.85,
         "price_1m_blended_7_2_1": 0.344,
         "cost_per_task_total": 0.031591080063049636,
-        "time_per_task": 17.76106559071112,
+        "time_per_task": 17.834688163135723,
         "output_tokens_per_task": 2088.862457165753
       },
       {
@@ -89995,7 +89707,7 @@
         "price_1m_output": 0.2,
         "price_1m_blended_7_2_1": 0.06500000000000002,
         "cost_per_task_total": 0.018312323602596187,
-        "time_per_task": 240.73194919935185,
+        "time_per_task": 248.38725626495273,
         "output_tokens_per_task": 26776.696868800773
       },
       {
@@ -90244,7 +89956,7 @@
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.064,
         "cost_per_task_total": null,
-        "time_per_task": 72.1464985488119,
+        "time_per_task": 72.48542624852334,
         "output_tokens_per_task": 13070.147374485727
       },
       {
@@ -91924,8 +91636,8 @@
         "price_1m_input": 0.5,
         "price_1m_output": 1.5,
         "price_1m_blended_7_2_1": 0.6,
-        "cost_per_task_total": 0.2539985763538183,
-        "time_per_task": 113.23149727543655,
+        "cost_per_task_total": null,
+        "time_per_task": 113.71442101926156,
         "output_tokens_per_task": 9958.963218718869
       },
       {
@@ -92089,7 +91801,7 @@
         "price_1m_output": 0.2,
         "price_1m_blended_7_2_1": 0.20000000000000004,
         "cost_per_task_total": 0.1491862542281139,
-        "time_per_task": 138.75430066557905,
+        "time_per_task": 133.32556435831955,
         "output_tokens_per_task": 11745.911673686403
       },
       {
@@ -92416,8 +92128,8 @@
         "price_1m_input": 0.1,
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.12000000000000002,
-        "cost_per_task_total": 0.12378644187922402,
-        "time_per_task": 52.39832839365143,
+        "cost_per_task_total": 0.12378644187922404,
+        "time_per_task": 51.9877277306532,
         "output_tokens_per_task": 8067.96320030154
       },
       {
@@ -92622,7 +92334,7 @@
         "price_1m_output": 0.66,
         "price_1m_blended_7_2_1": 0.21900000000000003,
         "cost_per_task_total": 0.008506397458326823,
-        "time_per_task": 11.108766910106082,
+        "time_per_task": 11.042776401493139,
         "output_tokens_per_task": 1249.1916412587836
       },
       {
@@ -93113,8 +92825,8 @@
         "price_1m_input": 0.1,
         "price_1m_output": 0.4,
         "price_1m_blended_7_2_1": 0.0775,
-        "cost_per_task_total": null,
-        "time_per_task": 41.15874127163878,
+        "cost_per_task_total": 0.03990804499935565,
+        "time_per_task": 40.237518683429975,
         "output_tokens_per_task": 6327.039789418577
       },
       {
@@ -93852,7 +93564,7 @@
         "price_1m_output": 0.15,
         "price_1m_blended_7_2_1": 0.15,
         "cost_per_task_total": 0.18482442028714433,
-        "time_per_task": 172.74916682366805,
+        "time_per_task": 139.78186738774994,
         "output_tokens_per_task": 15686.163156903367
       },
       {
@@ -96066,7 +95778,7 @@
         "price_1m_output": 0.1,
         "price_1m_blended_7_2_1": 0.10000000000000002,
         "cost_per_task_total": 0.12619350182313843,
-        "time_per_task": 113.57325828488516,
+        "time_per_task": 112.49801722105771,
         "output_tokens_per_task": 20441.59085947743
       },
       {
@@ -96927,7 +96639,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 667.9252253541915,
+        "time_per_task": 681.0439175297123,
         "output_tokens_per_task": 31364.471548894307
       },
       {
