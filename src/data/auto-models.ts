@@ -1709,6 +1709,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-11-24"
   },
+  "inkling": {
+    "pricing": {
+      "inputPer1M": 1.87,
+      "outputPer1M": 4.68,
+      "approx": true
+    },
+    "context": 1000000,
+    "parameters": 975.0,
+    "releaseDate": "2026-07-15"
+  },
   "gpt-5-6-terra-low": {
     "pricing": {
       "inputPer1M": 2.5,
@@ -3488,16 +3498,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 235.0,
     "releaseDate": "2025-09-23"
   },
-  "north-mini-code": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 256000,
-    "parameters": 30.0,
-    "releaseDate": "2026-06-09"
-  },
   "apriel-v1-6-15b-thinker": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -3591,6 +3591,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.8
     },
     "releaseDate": "2025-08-07"
+  },
+  "north-mini-code": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 256000,
+    "parameters": 30.0,
+    "releaseDate": "2026-06-09"
   },
   "qwen3-235b-a22b-instruct-2507-reasoning": {
     "pricing": {
