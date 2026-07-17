@@ -166,6 +166,32 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 76.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "kimi-k3",
+    "iiSlug": "kimi-k3",
+    "company": "Moonshot",
+    "origin": "China",
+    "displayName": "Kimi K3",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1048576,
+    "pricing": {
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-16",
+    "parameters": 2800.0,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 76.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-5-5",
     "iiSlug": "gpt-5-5",
     "company": "OpenAI",
@@ -1261,30 +1287,6 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-07-09",
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 52.4). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-5-6-terra-non-reasoning",
-    "iiSlug": "gpt-5-6-terra-non-reasoning",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-5.6 Terra (Non-reasoning)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "agentic"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 2.5,
-      "outputPer1M": 15.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-09",
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 52.3). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -1315,6 +1317,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1000000,
     "releaseDate": "2026-07-09"
+  },
+  "kimi-k3": {
+    "pricing": {
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
+      "approx": true
+    },
+    "context": 1048576,
+    "parameters": 2800.0,
+    "releaseDate": "2026-07-16"
   },
   "gpt-5-6-sol-high": {
     "pricing": {
@@ -7825,19 +7837,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.35,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-h-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7849,6 +7848,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.34,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.35,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
