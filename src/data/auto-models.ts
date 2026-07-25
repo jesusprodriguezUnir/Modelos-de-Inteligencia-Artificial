@@ -41,6 +41,31 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 78.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "claude-opus-5",
+    "iiSlug": "claude-opus-5",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (max)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 78.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-5-6-sol",
     "iiSlug": "gpt-5-6-sol",
     "company": "OpenAI",
@@ -91,6 +116,31 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 77.2). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "claude-opus-5-xhigh",
+    "iiSlug": "claude-opus-5-xhigh",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 77.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-5-6-terra",
     "iiSlug": "gpt-5-6-terra",
     "company": "OpenAI",
@@ -114,6 +164,31 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-07-09",
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 76.7). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-opus-5-high",
+    "iiSlug": "claude-opus-5-high",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 76.5). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "claude-fable-5",
@@ -190,6 +265,31 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-07-16",
     "parameters": 2800.0,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 76.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-opus-5-medium",
+    "iiSlug": "claude-opus-5-medium",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (medium)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 74.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "claude-opus-4-8",
@@ -518,6 +618,31 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 67.1). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "claude-opus-5-low",
+    "iiSlug": "claude-opus-5-low",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (low)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 66.9). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "claude-sonnet-5-non-reasoning",
     "iiSlug": "claude-sonnet-5-non-reasoning",
     "company": "Anthropic",
@@ -839,7 +964,7 @@ export const autoModels: Model[] = [
       "agentic",
       "budget"
     ],
-    "context": 262144,
+    "context": 1000000,
     "pricing": {
       "inputPer1M": 0.45,
       "outputPer1M": 0.9,
@@ -1164,143 +1289,28 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-07-15",
     "parameters": 975.0,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 52.1). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "deepseek-v4-flash-high",
-    "iiSlug": "deepseek-v4-flash-high",
-    "company": "DeepSeek",
-    "origin": "China",
-    "displayName": "DeepSeek V4 Flash (high)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic",
-      "budget"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.28,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-04-24",
-    "parameters": 284.0,
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 52.0). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-5-6-luna-medium",
-    "iiSlug": "gpt-5-6-luna-medium",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-5.6 Luna (medium)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 1.0,
-      "outputPer1M": 6.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-09",
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 50.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "mimo-v2-flash",
-    "iiSlug": "mimo-v2-flash",
-    "company": "Xiaomi",
-    "origin": "China",
-    "displayName": "MiMo-V2-Flash",
-    "kind": "model",
-    "category": [
-      "coding",
-      "agentic",
-      "budget"
-    ],
-    "context": 256000,
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2025-12-16",
-    "parameters": 309.0,
-    "benchmarks": {
-      "liveCodeBench": 0.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 49.8). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gemini-3-5-flash-lite",
-    "iiSlug": "gemini-3-5-flash-lite",
-    "company": "Google",
-    "origin": "US",
-    "displayName": "Gemini 3.5 Flash-Lite",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic",
-      "budget"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 2.5,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-21",
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 49.3). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "nvidia-nemotron-3-ultra-550b-a55b",
-    "iiSlug": "nvidia-nemotron-3-ultra-550b-a55b",
-    "company": "NVIDIA",
-    "origin": "US",
-    "displayName": "Nemotron 3 Ultra",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 262144,
-    "pricing": {
-      "inputPer1M": 0.675,
-      "outputPer1M": 2.675,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-06-04",
-    "parameters": 550.0,
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 49.3). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
 export const autoSpecs: Record<string, AutoSpec> = {
+  "claude-opus-5": {
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "context": 1000000,
+    "releaseDate": "2026-07-24"
+  },
+  "claude-opus-5-xhigh": {
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "context": 1000000,
+    "releaseDate": "2026-07-24"
+  },
   "claude-fable-5": {
     "pricing": {
       "inputPer1M": 10.0,
@@ -1318,6 +1328,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1000000,
     "releaseDate": "2026-07-09"
+  },
+  "claude-opus-5-high": {
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "context": 1000000,
+    "releaseDate": "2026-07-24"
   },
   "gpt-5-6-sol-xhigh": {
     "pricing": {
@@ -1337,6 +1356,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 1048576,
     "parameters": 2800.0,
     "releaseDate": "2026-07-16"
+  },
+  "claude-opus-5-medium": {
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "context": 1000000,
+    "releaseDate": "2026-07-24"
   },
   "gpt-5-6-sol-high": {
     "pricing": {
@@ -1464,6 +1492,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1048576,
     "releaseDate": "2026-07-09"
+  },
+  "claude-opus-5-low": {
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "context": 1000000,
+    "releaseDate": "2026-07-24"
   },
   "gpt-5-5-medium": {
     "pricing": {
@@ -1790,7 +1827,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-1": {
     "pricing": {
-      "inputPer1M": 1.4,
+      "inputPer1M": 1.39,
       "outputPer1M": 4.4,
       "approx": true
     },
@@ -1899,7 +1936,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "outputPer1M": 0.9,
       "approx": true
     },
-    "context": 262144,
+    "context": 1000000,
     "releaseDate": "2026-07-24"
   },
   "gpt-5-4-nano": {
@@ -2141,7 +2178,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-1-non-reasoning": {
     "pricing": {
-      "inputPer1M": 1.4,
+      "inputPer1M": 1.38,
       "outputPer1M": 4.4,
       "approx": true
     },
@@ -2234,8 +2271,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-2-non-reasoning": {
     "pricing": {
-      "inputPer1M": 1.4,
-      "outputPer1M": 4.4,
+      "inputPer1M": 1.351,
+      "outputPer1M": 4.25,
       "approx": true
     },
     "context": 1000000,
@@ -2330,8 +2367,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "hy3-preview": {
     "pricing": {
-      "inputPer1M": 0.123,
-      "outputPer1M": 0.43,
+      "inputPer1M": 0.0645,
+      "outputPer1M": 0.235,
       "approx": true
     },
     "context": 256000,
@@ -2359,8 +2396,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "grok-4": {
     "pricing": {
-      "inputPer1M": 5.5,
-      "outputPer1M": 27.5,
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
       "approx": true
     },
     "context": 256000,
@@ -2829,8 +2866,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mimo-v2-5-pro-non-reasoning": {
     "pricing": {
-      "inputPer1M": 0.661,
-      "outputPer1M": 1.722,
+      "inputPer1M": 0.435,
+      "outputPer1M": 0.87,
       "approx": true
     },
     "context": 1000000,
@@ -2917,8 +2954,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "hy3-non-reasoning": {
     "pricing": {
-      "inputPer1M": 0.123,
-      "outputPer1M": 0.43,
+      "inputPer1M": 0.0645,
+      "outputPer1M": 0.235,
       "approx": true
     },
     "context": 256000,
@@ -3264,16 +3301,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 357.0,
     "releaseDate": "2025-09-30"
   },
-  "exaone-4-5-33b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 34.4,
-    "releaseDate": "2026-04-09"
-  },
   "glm-4-7-flash": {
     "pricing": {
       "inputPer1M": 0.07,
@@ -3422,8 +3449,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-5-9b": {
     "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.15,
+      "inputPer1M": 0.135,
+      "outputPer1M": 0.2,
       "approx": true
     },
     "context": 262144,
@@ -3573,6 +3600,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 262144,
     "parameters": 9.65,
     "releaseDate": "2026-03-02"
+  },
+  "exaone-4-5-33b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 34.4,
+    "releaseDate": "2026-04-09"
   },
   "gemma-4-26b-a4b-non-reasoning": {
     "pricing": {
@@ -4469,7 +4506,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-4-maverick": {
     "pricing": {
-      "inputPer1M": 0.31,
+      "inputPer1M": 0.27,
       "outputPer1M": 0.85,
       "approx": true
     },
@@ -5497,7 +5534,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "llama-3-3-instruct-70b": {
     "pricing": {
       "inputPer1M": 0.59,
-      "outputPer1M": 0.71,
+      "outputPer1M": 0.72,
       "approx": true
     },
     "context": 128000,
@@ -7233,8 +7270,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mistral-small-2402": {
     "pricing": {
-      "inputPer1M": 1.0,
-      "outputPer1M": 3.0,
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.6,
       "approx": true
     },
     "context": 32768,
@@ -7246,8 +7283,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "mistral-medium": {
     "pricing": {
-      "inputPer1M": 2.75,
-      "outputPer1M": 8.1,
+      "inputPer1M": 1.5,
+      "outputPer1M": 7.5,
       "approx": true
     },
     "context": 32768,
@@ -7834,8 +7871,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gemma-3n-e4b": {
     "pricing": {
-      "inputPer1M": 0.02,
-      "outputPer1M": 0.04,
+      "inputPer1M": 0.06,
+      "outputPer1M": 0.12,
       "approx": true
     },
     "context": 32000,
@@ -8027,11 +8064,5 @@ export const autoCompanies: Record<string, CompanyMeta> = {
     "origin": "US",
     "accent": "#64748b",
     "blurb": "Thinking Machines — datos del Artificial Analysis Intelligence Index."
-  },
-  "NVIDIA": {
-    "name": "NVIDIA",
-    "origin": "US",
-    "accent": "#64748b",
-    "blurb": "NVIDIA — datos del Artificial Analysis Intelligence Index."
   }
 };

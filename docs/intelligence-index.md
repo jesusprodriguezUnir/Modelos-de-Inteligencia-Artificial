@@ -1,11 +1,11 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-07-24T10:15:27Z`
+- **Última actualización:** `2026-07-25T09:46:04Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1 (deducido)
 - **Método de extracción:** `rsc-html`
-- **Modelos (metadata):** 581
-- **Entradas con datos:** 568
+- **Modelos (metadata):** 586
+- **Entradas con datos:** 573
 - **Secciones capturadas:** intelligence_index, sub_evaluations, coding_agent_index, aa_briefcase, aa_omniscience, gdpval_aa_v2, openness_index, cost_per_task, time_per_task, output_tokens, speed_latency, price_cost, metadata
 - **Secciones NO capturadas:** —
 
@@ -27,31 +27,31 @@
 
 | # | Modelo | Creador | II | Coding | Agentic | GDPval v2 (Elo) | Omniscience | Open | Contexto |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 59.86 | 76.49 | 52.81 | — | 40.15 | — | 1M |
-| 2 | GPT-5.6 Sol (max) | OpenAI | 58.89 | 77.39 | 54.00 | — | 21.70 | — | 1M |
-| 3 | GPT-5.6 Sol (xhigh) | OpenAI | 57.65 | 78.35 | 51.80 | — | 20.55 | — | 1M |
-| 4 | Kimi K3 | Kimi | 57.11 | 76.24 | 50.07 | — | 18.42 | — | 1M |
-| 5 | GPT-5.6 Sol (high) | OpenAI | 55.87 | 77.16 | 48.53 | — | 19.75 | — | 1M |
-| 6 | Claude Opus 4.8 (Adaptive Reasoning, Max Effort) | Anthropic | 55.69 | 74.25 | 47.18 | — | 27.43 | — | 1M |
-| 7 | GPT-5.6 Terra (max) | OpenAI | 54.95 | 76.66 | 47.38 | — | -0.22 | — | 1M |
-| 8 | GPT-5.5 (xhigh) | OpenAI | 54.84 | 74.89 | 44.87 | — | 20.07 | — | 922K |
-| 9 | Grok 4.5 (high) | SpaceXAI | 53.83 | 72.45 | 45.69 | — | 26.38 | — | 500K |
-| 10 | GPT-5.6 Sol (medium) | OpenAI | 53.59 | 76.26 | 44.55 | — | 18.95 | — | 1M |
-| 11 | Claude Opus 4.7 (Adaptive Reasoning, Max Effort) | Anthropic | 53.53 | 73.60 | 44.39 | — | 26.17 | — | 1M |
-| 12 | Claude Sonnet 5 (Adaptive Reasoning, Max Effort) | Anthropic | 53.35 | 71.55 | 46.69 | — | 15.32 | — | 1M |
-| 13 | GPT-5.5 (high) | OpenAI | 53.13 | 71.57 | 43.46 | — | 18.37 | — | 922K |
-| 14 | GPT-5.6 Terra (xhigh) | OpenAI | 51.60 | 70.64 | 44.70 | — | -3.30 | — | 1M |
-| 15 | GPT-5.4 (xhigh) | OpenAI | 51.40 | 71.05 | 41.08 | — | 5.65 | — | 1M |
-| 16 | GPT-5.6 Luna (max) | OpenAI | 51.24 | 71.45 | 45.60 | — | -11.23 | — | 1M |
-| 17 | GLM-5.2 (max) | Z AI | 51.09 | 68.76 | 43.06 | — | 3.97 | ✓ | 1M |
-| 18 | Muse Spark 1.1 (xhigh) | Meta | 50.62 | 71.34 | 37.54 | — | 18 | — | 1M |
-| 19 | GPT-5.5 (medium) | OpenAI | 50.41 | 71.51 | 37.79 | — | 17.28 | — | 922K |
-| 20 | Gemini 3.5 Flash (high) | Google | 50.20 | 70.14 | 37.45 | — | 22.68 | — | 1M |
-| 21 | Gemini 3.6 Flash (high) | Google | 50.07 | 69.24 | 38.72 | — | 23.53 | — | 1M |
-| 22 | GPT-5.6 Sol (low) | OpenAI | 49.44 | 69.67 | 40.00 | — | 18.40 | — | 1M |
-| 23 | GPT-5.6 Luna (xhigh) | OpenAI | 49.07 | 68.60 | 42.92 | — | -11.60 | — | 1M |
-| 24 | GPT-5.6 Terra (high) | OpenAI | 48.95 | 67.14 | 41.33 | — | -4.07 | — | 1M |
-| 25 | Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort) | Anthropic | 47.21 | 63.03 | 40.77 | — | 12.37 | — | 1M |
+| 1 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 60.69 | 77.98 | 55.26 | — | 31.27 | — | 1M |
+| 2 | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 60.07 | 77.00 | 54.53 | — | 29.80 | — | 1M |
+| 3 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 59.86 | 76.49 | 52.81 | — | 40.15 | — | 1M |
+| 4 | GPT-5.6 Sol (max) | OpenAI | 58.89 | 77.39 | 54.00 | — | 21.70 | — | 1M |
+| 5 | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 58.86 | 76.52 | 52.07 | — | 28.08 | — | 1M |
+| 6 | GPT-5.6 Sol (xhigh) | OpenAI | 57.65 | 78.35 | 51.80 | — | 20.55 | — | 1M |
+| 7 | Kimi K3 | Kimi | 57.11 | 76.24 | 50.07 | 1685.84 | 18.42 | — | 1M |
+| 8 | Claude Opus 5 (Adaptive Reasoning, Medium Effort) | Anthropic | 56.28 | 74.33 | 47.08 | — | 25.63 | — | 1M |
+| 9 | GPT-5.6 Sol (high) | OpenAI | 55.87 | 77.16 | 48.53 | — | 19.75 | — | 1M |
+| 10 | Claude Opus 4.8 (Adaptive Reasoning, Max Effort) | Anthropic | 55.69 | 74.25 | 47.18 | — | 27.43 | — | 1M |
+| 11 | GPT-5.6 Terra (max) | OpenAI | 54.95 | 76.66 | 47.38 | — | -0.22 | — | 1M |
+| 12 | GPT-5.5 (xhigh) | OpenAI | 54.84 | 74.89 | 44.87 | — | 20.07 | — | 922K |
+| 13 | Grok 4.5 (high) | SpaceXAI | 53.83 | 72.45 | 45.69 | — | 26.38 | — | 500K |
+| 14 | GPT-5.6 Sol (medium) | OpenAI | 53.59 | 76.26 | 44.55 | — | 18.95 | — | 1M |
+| 15 | Claude Opus 4.7 (Adaptive Reasoning, Max Effort) | Anthropic | 53.53 | 73.60 | 44.39 | — | 26.17 | — | 1M |
+| 16 | Claude Sonnet 5 (Adaptive Reasoning, Max Effort) | Anthropic | 53.35 | 71.55 | 46.69 | — | 15.32 | — | 1M |
+| 17 | GPT-5.5 (high) | OpenAI | 53.13 | 71.57 | 43.46 | — | 18.37 | — | 922K |
+| 18 | GPT-5.6 Terra (xhigh) | OpenAI | 51.60 | 70.64 | 44.70 | — | -3.30 | — | 1M |
+| 19 | GPT-5.4 (xhigh) | OpenAI | 51.40 | 71.05 | 41.08 | — | 5.65 | — | 1M |
+| 20 | GPT-5.6 Luna (max) | OpenAI | 51.24 | 71.45 | 45.60 | — | -11.23 | — | 1M |
+| 21 | GLM-5.2 (max) | Z AI | 51.09 | 68.76 | 43.06 | — | 3.97 | ✓ | 1M |
+| 22 | Muse Spark 1.1 (xhigh) | Meta | 50.62 | 71.34 | 37.54 | — | 18 | — | 1M |
+| 23 | Claude Opus 5 (Adaptive Reasoning, Low Effort) | Anthropic | 50.61 | 66.95 | 39.79 | — | 23.18 | — | 1M |
+| 24 | GPT-5.5 (medium) | OpenAI | 50.41 | 71.51 | 37.79 | — | 17.28 | — | 922K |
+| 25 | Gemini 3.5 Flash (high) | Google | 50.20 | 70.14 | 37.45 | — | 22.68 | — | 1M |
 
 ## `intelligence_index`
 
@@ -88,7 +88,7 @@
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | 6.23248078186836 | — | — | — | — |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | 3.33410234569925 | — | — | — | 1.66666666666667 |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `sub_evaluations`
 
@@ -99,7 +99,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | — | — | — | — | 0.340277777777778 | 0.0505097312326228 | 0.611111111111111 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 410.01 | 410.01 | 0.0288659793814433 | 0.138576779026217 | 0.359953703703704 | 0.0523632993512512 | 0.671717171717172 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.68 | 801.68 | 0.120274914089347 | 0.262172284644195 | 0.388888888888889 | 0.184893419833179 | 0.781818181818182 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1735.75 | 1735.75 | 0.329896907216495 | 0.880149812734082 | 0.561342592592593 | 0.471733086190918 | 0.941414141414141 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1735.32 | 1735.32 | 0.329896907216495 | 0.880149812734082 | 0.561342592592593 | 0.471733086190918 | 0.941414141414141 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1582.7 | 1582.7 | 0.317525773195876 | 0.880149812734082 | 0.539351851851852 | 0.417979610750695 | 0.925252525252525 |
 | grok-1 | Grok-1 | SpaceXAI | — | — | — | — | — | — | — |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 1690.15 | 1690.15 | 0.326460481099656 | 0.895131086142322 | 0.560185185185185 | 0.447173308619092 | 0.931313131313131 |
@@ -125,7 +125,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — | — | — | — | 0.239583333333333 | 0.0491803278688525 | 0.432323232323232 |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | — | — | — | — | 0.112268518518519 | 0.0517883755588674 | 0.221212121212121 |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `coding_agent_index`
 
@@ -162,7 +162,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — | — |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | — | — |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `aa_briefcase`
 
@@ -173,7 +173,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | $undefined |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | {"elo": 6.98, "lower95ci": 0, "upper95ci": 22.2, "rubric": {"elo": 538.31, "lowe |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"elo": 1504.82, "lower95ci": 1494.03, "upper95ci": 1515.65, "rubric": {"elo": 1 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"elo": 1503.38, "lower95ci": 1492.79, "upper95ci": 1514.37, "rubric": {"elo": 1 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | $undefined |
 | grok-1 | Grok-1 | SpaceXAI | $undefined |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | $undefined |
@@ -199,7 +199,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | $undefined |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | $undefined |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 453 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `aa_omniscience`
 
@@ -236,7 +236,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | -63.0833333333333 |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `gdpval_aa_v2`
 
@@ -247,7 +247,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | — | $undefined |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 410.01 | 0 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.68 | 0.15083999999999997 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1735.75 | 0.617875 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1735.32 | 0.61766 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1582.7 | 0.54135 |
 | grok-1 | Grok-1 | SpaceXAI | — | $undefined |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 1690.15 | 0.595075 |
@@ -273,7 +273,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — | $undefined |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | — | $undefined |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `openness_index`
 
@@ -310,7 +310,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | True | True | LLAMA 3.2 COMMUNITY LICENSE AGREEMENT | https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | True | True | LLAMA 3.2 COMMUNITY LICENSE AGREEMENT | https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `cost_per_task`
 
@@ -342,49 +342,49 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | {"total_cost": 275.01794040394276, "input_cost": 52.81007640394273, "non_cache_i | 1.2436739970706672 | {"total": 275.01794040394276, "input": 52.81007640394273, "nonCacheInput": 11.88 | — |
 | gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | {"total_cost": 105.8384024527498, "input_cost": 30.95924245274979, "non_cache_in | 3.0489592873700664 | {"total": 105.8384024527498, "input": 30.95924245274979, "nonCacheInput": 11.961 | — |
 | gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | {"total_cost": 68.8027339310563, "input_cost": 26.974351931056297, "non_cache_in | 4.771488821378068 | {"total": 68.8027339310563, "input": 26.974351931056297, "nonCacheInput": 11.844 | — |
-| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | {"total_cost": 79.27354227999999, "input_cost": 76.59466257999999, "non_cache_in | 2.492155252082935 | {"total": 79.27354227999999, "input": 76.59466257999999, "nonCacheInput": 7.0467 | 2081.615368 |
+| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | {"total_cost": 79.31127297999998, "input_cost": 76.59466257999999, "non_cache_in | 2.492155252082935 | {"total": 79.31127297999998, "input": 76.59466257999999, "nonCacheInput": 7.0467 | 2081.615368 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | $undefined | 0 | $undefined | — |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | $undefined | 0 | $undefined | — |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | $undefined | 0 | $undefined | — |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `time_per_task`
 
 | slug | name | creator | intelligenceIndexTimePerTask | evalTimePerTask |
 | --- | --- | --- | --- | --- |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 95.84394830910058 | $undefined |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 106.89512983348538 | $undefined |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 85.48691419254517 | $undefined |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 113.24314689156492 | $undefined |
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined | $undefined |
-| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 7.850007271069931 | $undefined |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 129.57895778245253 | $undefined |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 231.3767964612237 | $undefined |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 135.40488875492613 | $undefined |
+| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 7.91525483444863 | $undefined |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 126.01599062067403 | $undefined |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 233.1420112740007 | $undefined |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 141.97894119124973 | $undefined |
 | grok-1 | Grok-1 | SpaceXAI | $undefined | $undefined |
-| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 143.57649704283585 | $undefined |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 100.61199801146903 | $undefined |
-| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 17.820905620156847 | $undefined |
-| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 37.086388201961064 | $undefined |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 61.752260759007555 | $undefined |
+| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 161.6226381930542 | $undefined |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 104.46888982344765 | $undefined |
+| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 20.30613864031188 | $undefined |
+| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 37.842806410830406 | $undefined |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 68.90144996788148 | $undefined |
 | o3 | o3 | OpenAI | $undefined | $undefined |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 18.902888377199467 | $undefined |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 68.52167212875067 | $undefined |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 21.583637559156085 | $undefined |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 76.28184889155264 | $undefined |
 | gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | $undefined | $undefined |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 29.40230916344559 | $undefined |
-| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 44.331133119349516 | $undefined |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 12.383592442822282 | $undefined |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 35.435038364048246 | $undefined |
+| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 46.74223829531286 | $undefined |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 13.6119855824314 | $undefined |
 | gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | $undefined | $undefined |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 88.17790485313215 | $undefined |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 69.27745949259489 | $undefined |
-| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 47.71681855111826 | $undefined |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 21.844830078862902 | $undefined |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 15.03581208511634 | $undefined |
-| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 21.36613043432108 | $undefined |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 93.21299136774164 | $undefined |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 75.47889308476259 | $undefined |
+| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 52.00131227616757 | $undefined |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 22.9012567837295 | $undefined |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 15.441080789236658 | $undefined |
+| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 20.598215023039586 | $undefined |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | $undefined | $undefined |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | $undefined | $undefined |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | $undefined | $undefined |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `output_tokens`
 
@@ -421,7 +421,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | — |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `speed_latency`
 
@@ -439,16 +439,16 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | {"type": "median"} |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | o3 | o3 | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/o3/prov |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | {"type": "median"} |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-3 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | {"type": "median"} |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-5 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | {"type": "median"} |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
@@ -458,7 +458,7 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | {"type": "median"} |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | {"type": "median"} |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `price_cost`
 
@@ -490,12 +490,12 @@ _…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 1 | 6 | 0.8699999999999999 | 0.1 | 0.9 |
 | gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 1 | 6 | 0.8699999999999999 | 0.1 | 0.9 |
 | gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 1 | 6 | 0.8699999999999999 | 0.1 | 0.9 |
-| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 0.59 | 0.71 | 0.602 | 0.59 | 0.5 |
+| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 0.59 | 0.72 | 0.603 | 0.59 | 0.5 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | 2.5 | 10 | 3.25 | — | — |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | 2.04 | 2.04 | 2.04 | — | — |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | 0.3575 | 0.3575 | 0.3575 | — | — |
 
-_…y 538 filas más. Ver JSON completo en `data/intelligence-index.json`._
+_…y 543 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ---
 _Generado automáticamente por `scripts/fetch_intelligence_index.py`._
