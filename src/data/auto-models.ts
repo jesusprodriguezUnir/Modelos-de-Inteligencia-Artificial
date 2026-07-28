@@ -261,7 +261,7 @@ export const autoModels: Model[] = [
     "modalities": [
       "text"
     ],
-    "openWeight": false,
+    "openWeight": true,
     "releaseDate": "2026-07-16",
     "parameters": 2800.0,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 76.2). Precios aproximados; verifica en la web oficial del proveedor."
@@ -939,8 +939,8 @@ export const autoModels: Model[] = [
     ],
     "context": 256000,
     "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.58,
+      "inputPer1M": 0.136,
+      "outputPer1M": 0.5568,
       "approx": true
     },
     "modalities": [
@@ -1748,8 +1748,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "hy3": {
     "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.58,
+      "inputPer1M": 0.136,
+      "outputPer1M": 0.5568,
       "approx": true
     },
     "context": 256000,
@@ -1827,7 +1827,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-1": {
     "pricing": {
-      "inputPer1M": 1.39,
+      "inputPer1M": 1.38,
       "outputPer1M": 4.4,
       "approx": true
     },
@@ -2386,8 +2386,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "longcat-2-0": {
     "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
+      "inputPer1M": 0.75,
+      "outputPer1M": 2.95,
       "approx": true
     },
     "context": 1000000,
@@ -5511,16 +5511,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2025-01-21"
   },
-  "gemma-4-e2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 128000,
-    "parameters": 5.1,
-    "releaseDate": "2026-04-02"
-  },
   "step-3-vl-10b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -5530,6 +5520,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 65536,
     "parameters": 10.2,
     "releaseDate": "2026-01-20"
+  },
+  "gemma-4-e2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 128000,
+    "parameters": 5.1,
+    "releaseDate": "2026-04-02"
   },
   "llama-3-3-instruct-70b": {
     "pricing": {
@@ -6278,6 +6278,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 32.0,
     "releaseDate": "2024-11-11"
   },
+  "qwen3-5-2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 2.27,
+    "releaseDate": "2026-03-02"
+  },
   "qwen3-14b-instruct": {
     "pricing": {
       "inputPer1M": 0.35,
@@ -6378,16 +6388,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 70.6,
     "releaseDate": "2025-08-27"
-  },
-  "qwen3-5-2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 2.27,
-    "releaseDate": "2026-03-02"
   },
   "qwen3-30b-a3b-instruct": {
     "pricing": {
@@ -6497,19 +6497,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 32.2,
     "releaseDate": "2026-01-13"
   },
-  "ministral-3-3b": {
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.1,
-      "approx": true
-    },
-    "context": 256000,
-    "benchmarks": {
-      "liveCodeBench": 0.2
-    },
-    "parameters": 3.0,
-    "releaseDate": "2025-12-02"
-  },
   "mistral-saba": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -6582,6 +6569,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 128000,
     "parameters": 671.0,
     "releaseDate": "2025-02-18"
+  },
+  "ministral-3-3b": {
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.1,
+      "approx": true
+    },
+    "context": 256000,
+    "benchmarks": {
+      "liveCodeBench": 0.2
+    },
+    "parameters": 3.0,
+    "releaseDate": "2025-12-02"
   },
   "qwen-turbo": {
     "pricing": {
@@ -6712,16 +6712,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 8.0,
     "releaseDate": "2024-10-03"
   },
-  "qwen3-5-0-8b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 262144,
-    "parameters": 0.873,
-    "releaseDate": "2026-03-02"
-  },
   "gemma-3-12b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -6735,6 +6725,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 12.2,
     "releaseDate": "2025-03-12"
+  },
+  "qwen3-5-0-8b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 262144,
+    "parameters": 0.873,
+    "releaseDate": "2026-03-02"
   },
   "deephermes-3-mistral-24b-preview": {
     "pricing": {
