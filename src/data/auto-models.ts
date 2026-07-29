@@ -292,31 +292,6 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 74.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "claude-opus-4-8",
-    "iiSlug": "claude-opus-4-8",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Opus 4.8 (max)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "agentic"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 5.0,
-      "outputPer1M": 25.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-05-28",
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 74.3). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "grok-4-5",
     "iiSlug": "grok-4-5",
     "company": "SpaceXAI",
@@ -1289,6 +1264,33 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-07-15",
     "parameters": 975.0,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 52.1). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "deepseek-v4-flash-high",
+    "iiSlug": "deepseek-v4-flash-high",
+    "company": "DeepSeek",
+    "origin": "China",
+    "displayName": "DeepSeek V4 Flash (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "agentic",
+      "budget"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.28,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-04-24",
+    "parameters": 284.0,
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 52.0). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -3091,8 +3093,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "nvidia-nemotron-3-super-120b-a12b": {
     "pricing": {
-      "inputPer1M": 0.25,
-      "outputPer1M": 0.775,
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.8,
       "approx": true
     },
     "context": 1000000,
@@ -4324,8 +4326,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gpt-5-chatgpt": {
     "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 10.0,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 128000,
@@ -4585,8 +4587,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "solar-pro-3": {
     "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.6,
       "approx": true
     },
     "context": 128000,
@@ -5533,7 +5535,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-3-3-instruct-70b": {
     "pricing": {
-      "inputPer1M": 0.59,
+      "inputPer1M": 0.595,
       "outputPer1M": 0.72,
       "approx": true
     },
@@ -6611,8 +6613,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-3-2-instruct-90b-vision": {
     "pricing": {
-      "inputPer1M": 2.04,
-      "outputPer1M": 2.04,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 128000,
@@ -7358,8 +7360,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-3-2-instruct-11b-vision": {
     "pricing": {
-      "inputPer1M": 0.3575,
-      "outputPer1M": 0.3575,
+      "inputPer1M": 0.345,
+      "outputPer1M": 0.345,
       "approx": true
     },
     "context": 128000,
@@ -7933,19 +7935,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.6,
     "releaseDate": "2026-01-05"
   },
-  "granite-4-0-h-350m": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32768,
-    "benchmarks": {
-      "liveCodeBench": 0.0
-    },
-    "parameters": 0.34,
-    "releaseDate": "2025-10-28"
-  },
   "granite-4-0-350m": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -7957,6 +7946,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "liveCodeBench": 0.0
     },
     "parameters": 0.35,
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32768,
+    "benchmarks": {
+      "liveCodeBench": 0.0
+    },
+    "parameters": 0.34,
     "releaseDate": "2025-10-28"
   },
   "apertus-8b-instruct": {
