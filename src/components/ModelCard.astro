@@ -18,12 +18,17 @@ const { m } = Astro.props;
   data-kind={m.kind}
   data-pop={m.popularity}
   data-tier={m.tierKey}
-  style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-5);"
+  style={`background:${m.highlightBadge ? 'linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))' : 'var(--panel)'}; border:${m.highlightBadge ? '1px solid var(--accent)' : '1px solid var(--border)'}; border-radius:var(--radius-lg); padding:var(--space-5); box-shadow:${m.highlightBadge ? '0 10px 30px rgba(0,0,0,0.12)' : 'none'};`}
 >
   <div style="display:flex; align-items:center; gap:var(--space-2);">
     <span style={`width:9px; height:9px; border-radius:50%; background:${m.accent};`}></span>
     <span style="font-size:var(--fs-xs); letter-spacing:.5px; text-transform:uppercase; color:var(--dim);">{m.companyName}</span>
-    <span style="margin-left:auto; font-size:var(--fs-xs); color:var(--dim); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{m.kindLabel}</span>
+    <div style="margin-left:auto; display:flex; align-items:center; gap:var(--space-2);">
+      {m.highlightBadge && (
+        <span style="font-size:var(--fs-xs); color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:var(--space-1) var(--space-2);">{m.highlightBadge}</span>
+      )}
+      <span style="font-size:var(--fs-xs); color:var(--dim); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{m.kindLabel}</span>
+    </div>
   </div>
   <div style="display:flex; align-items:baseline; gap:var(--space-2); margin-top:var(--space-3);">
     <h3 style="margin:0; font-size:var(--fs-2xl); font-weight:600; color:var(--head);">{m.displayName}</h3>
@@ -61,7 +66,11 @@ const { m } = Astro.props;
     {m.cats.map((cat: string) => (
       <span style="font-size:var(--fs-base-lg); color:var(--dim); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{cat}</span>
     ))}
-    {m.openWeight && <span style="font-size:var(--fs-base-lg); color:var(--pos); border:1px solid var(--pos); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">open</span>}
+    {m.openWeight && <span style="font-size:var(--fs-base-lg); color:var(--pos); border:1px solid var(--pos); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">open-weight</span>}
+    {m.swe != null && m.swe >= 70 && <span style="font-size:var(--fs-base-lg); color:var(--pos); border:1px solid var(--pos); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">SWE ≥ 70</span>}
+    {m.pricing.inputPer1M != null && m.pricing.inputPer1M <= 3 && <span style="font-size:var(--fs-base-lg); color:var(--accent2); border:1px solid var(--accent2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">barato</span>}
+    {m.context != null && m.context >= 1_000_000 && <span style="font-size:var(--fs-base-lg); color:var(--warn); border:1px solid var(--warn); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">1M+ contexto</span>}
+    {m.isRecent && <span style="font-size:var(--fs-base-lg); color:var(--accent); border:1px solid var(--accent); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">novedad</span>}
   </div>
 
   <div style="display:flex; gap:var(--space-2); margin-top:var(--space-4);">

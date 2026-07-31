@@ -23,3 +23,9 @@ test('cada empresa tiene los campos mínimos (name y accent)', () => {
     .map(([key]) => key);
   assert.deepEqual(broken, [], `empresas con campos faltantes: ${broken.join(', ')}`);
 });
+
+test('incluye modelos recientes pedidos por el usuario como Claude Opus 5 y Kimi K3', () => {
+  const ids = new Set(models.map((m) => m.id));
+  assert.ok(ids.has('claude-opus-5'), 'falta Claude Opus 5 en el catálogo');
+  assert.ok(ids.has('kimi-k3'), 'falta Kimi K3 en el catálogo');
+});

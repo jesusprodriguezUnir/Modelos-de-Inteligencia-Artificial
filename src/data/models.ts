@@ -131,6 +131,22 @@ const rawModels: Model[] = [
     benchmarks: { sweBenchPro: 79.4 },
   },
   {
+    id: 'claude-opus-5',
+    company: 'Anthropic', origin: 'US', kind: 'model',
+    displayName: 'Claude Opus 5',
+    category: ['coding', 'reasoning', 'agentic'],
+    context: 1_000_000,
+    pricing: { inputPer1M: null, outputPer1M: null, currency: 'USD', approx: true, note: 'Precio pendiente de confirmar en la web oficial del proveedor.' },
+    modalities: ['text', 'image'],
+    apiModelString: 'claude-opus-5',
+    playgroundUrl: 'https://console.anthropic.com/workbench',
+    docsUrl: 'https://docs.claude.com',
+    videos: [
+      { title: 'Claude Opus 5: revisión de coding y razonamiento', url: 'https://www.youtube.com/results?search_query=claude+opus+5+coding+review', source: 'YouTube' },
+    ],
+    notes: 'Modelo reciente de Anthropic; aparece en el catálogo como una referencia destacada para coding agéntico y razonamiento profundo. Confirma precio/contexto en la web oficial.',
+  },
+  {
     id: 'claude-sonnet-4-6',
     company: 'Anthropic', origin: 'US', kind: 'model',
     displayName: 'Claude Sonnet 4.6',
@@ -636,6 +652,22 @@ const rawModels: Model[] = [
   },
 
   // ── China: MiniMax ───────────────────────────────────────────────────────
+  {
+    id: 'kimi-k3',
+    company: 'Moonshot', origin: 'China', kind: 'model',
+    displayName: 'Kimi K3',
+    category: ['agentic', 'coding', 'reasoning'],
+    context: 262_000,
+    pricing: { inputPer1M: null, outputPer1M: null, currency: 'USD', approx: true, note: 'Precio pendiente de confirmar en la web oficial del proveedor.' },
+    modalities: ['text'],
+    apiModelString: 'kimi-k3',
+    playgroundUrl: 'https://platform.moonshot.ai',
+    docsUrl: 'https://platform.moonshot.ai/docs',
+    videos: [
+      { title: 'Kimi K3: revisión para coding agéntico', url: 'https://www.youtube.com/results?search_query=kimi+k3+coding+agentic+review', source: 'YouTube' },
+    ],
+    notes: 'Versión reciente de la familia Kimi. Se incorpora al catálogo para que sea visible junto a otros modelos de coding agéntico y contexto largo.',
+  },
   {
     id: 'minimax-m2-5',
     company: 'MiniMax', origin: 'China', kind: 'model',

@@ -22,6 +22,28 @@ const benchDescs = [
   { name: 'HumanEval', desc: 'Benchmark clásico de generación de código Python: 164 problemas de programación con tests unitarios. Mide la capacidad de escribir funciones correctas a partir de docstrings.', url: 'https://github.com/openai/human-eval' },
   { name: 'LiveCodeBench', desc: 'Benchmark dinámico con problemas de competiciones de programación recientes (post-entrenamiento). Evita contaminación de datos.', url: 'https://livecodebench.github.io' },
 ];
+
+const rankedModels = [...allModels]
+  .filter((m) => m.benchmarks?.sweBenchPro != null)
+  .sort((a, b) => (b.benchmarks!.sweBenchPro! - a.benchmarks!.sweBenchPro!) || (b.context - a.context));
+
+const bestOverall = rankedModels[0];
+const bestBudget = [...allModels]
+  .filter((m) => m.pricing.inputPer1M != null && m.benchmarks?.sweBenchPro != null)
+  .sort((a, b) => (a.pricing.inputPer1M! - b.pricing.inputPer1M!) || (b.benchmarks!.sweBenchPro! - a.benchmarks!.sweBenchPro!))[0];
+const bestContext = [...allModels]
+  .filter((m) => m.context != null)
+  .sort((a, b) => (b.context - a.context))[0];
+const bestOpen = [...allModels]
+  .filter((m) => m.openWeight && m.benchmarks?.sweBenchPro != null)
+  .sort((a, b) => (b.benchmarks!.sweBenchPro! - a.benchmarks!.sweBenchPro!) || (b.context - a.context))[0];
+
+const quickPicks = [
+  { title: 'Mejor equilibrio', model: bestOverall?.displayName ?? '—', detail: 'El modelo con mejor combinación de benchmark y contexto.', accent: bestOverall ? companies[bestOverall.company].accent : 'var(--brand)' },
+  { title: 'Más barato', model: bestBudget?.displayName ?? '—', detail: 'Aporta resultados sólidos sin disparar el coste por millón de tokens.', accent: bestBudget ? companies[bestBudget.company].accent : 'var(--pos)' },
+  { title: 'Mayor contexto', model: bestContext?.displayName ?? '—', detail: 'Ideal para repos grandes, documentos largos o flujos largos.', accent: bestContext ? companies[bestContext.company].accent : 'var(--accent2)' },
+  { title: 'Mejor open-weight', model: bestOpen?.displayName ?? '—', detail: 'Combina apertura y rendimiento en tareas de coding.', accent: bestOpen ? companies[bestOpen.company].accent : 'var(--warn)' },
+];
 ---
 
 <Layout title="Benchmarks de Coding — Catálogo de Modelos de IA" active="benchmarks">
@@ -66,6 +88,22 @@ const benchDescs = [
             </div>
           );
         })}
+      </div>
+    </section>
+
+    <!-- Picks rápidos -->
+    <section>
+      <h2>⚡ Elección rápida por objetivo</h2>
+      <p class="bench-subtitle">Si no quieres leer todo el ranking, empieza por el perfil más cercano al tuyo.</p>
+      <div class="quick-picks-grid">
+        {quickPicks.map((pick) => (
+          <div class="quick-pick-card">
+            <div class="quick-pick-title">{pick.title}</div>
+            <div class="quick-pick-model">{pick.model}</div>
+            <p>{pick.detail}</p>
+            <span class="quick-pick-accent" style={`background:${pick.accent}`}></span>
+          </div>
+        ))}
       </div>
     </section>
 
@@ -183,6 +221,46 @@ const benchDescs = [
   .bench-page section { margin: 36px 0; }
   .bench-page h2 { font-size: 24px; font-weight: 700; margin: 0 0 12px; letter-spacing: -0.01em; }
   .bench-subtitle { color: var(--text-dim); font-size: 15px; margin: 0 0 20px; }
+
+  .quick-picks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .quick-pick-card {
+    position: relative;
+    padding: 16px 18px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .quick-pick-card p {
+    margin: 8px 0 0;
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .quick-pick-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .quick-pick-model {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .quick-pick-accent {
+    display: block;
+    width: 46px;
+    height: 4px;
+    border-radius: 999px;
+    margin-top: 12px;
+  }
 
   /* ── Rank chart ─────────────────────────────── */
   .rank-chart { display: flex; flex-direction: column; gap: 8px; }

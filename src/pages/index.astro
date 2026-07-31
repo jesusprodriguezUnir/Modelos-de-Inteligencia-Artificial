@@ -5,6 +5,7 @@ import { models, companies, POPULARITY_TIERS, popularityTier } from '../data/mod
 import type { Model } from '../data/types';
 import { fmtCtx, fmtPrice } from '../utils/format';
 import { intelligenceIndexMeta } from '../data/intelligence-index';
+import { getBenchScore, getHighlightBadge, getPopularityScore } from '../utils/ranking';
 
 const fetchedDate = new Date(intelligenceIndexMeta.fetched_at);
 const formattedDate = fetchedDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
@@ -41,6 +42,8 @@ function decorate(m: Model) {
   const priceText = (pIn == null && pOut == null) ? 'suscr.' : (`$${pIn}/$${pOut}${m.pricing.approx ? '~' : ''}`);
   const swe = m.benchmarks?.sweBenchPro ?? null;
   const tier = popularityTier(m.popularity);
+  const releaseDate = m.releaseDate ? new Date(m.releaseDate) : null;
+  const isRecent = releaseDate ? (Date.now() - releaseDate.getTime()) <= 180 * 24 * 60 * 60 * 1000 : false;
   return {
     ...m,
     accent: c.accent,
@@ -65,10 +68,93 @@ function decorate(m: Model) {
     popularity: m.popularity ?? 0,
     tierKey: tier.key,
     tierLabel: tier.label,
+    isRecent,
+    highlightBadge: getHighlightBadge(m.popularity, m.benchmarks?.sweBenchPro, m.releaseDate),
   };
 }
 
 const decorated = onlyModels.map(decorate);
+const sortedDecorated = [...decorated].sort((a, b) => {
+  const badgeA = a.highlightBadge ? 1 : 0;
+  const badgeB = b.highlightBadge ? 1 : 0;
+  if (badgeA !== badgeB) return badgeB - badgeA;
+
+  const scoreA = getPopularityScore(a.popularity, a.releaseDate);
+  const scoreB = getPopularityScore(b.popularity, b.releaseDate);
+  if (scoreA !== scoreB) return scoreB - scoreA;
+
+  return (b.popularity ?? 0) - (a.popularity ?? 0);
+});
+const recentModels = [...decorated]
+  .filter((m) => m.releaseDate)
+  .sort((a, b) => {
+    const scoreA = getPopularityScore(a.popularity, a.releaseDate);
+    const scoreB = getPopularityScore(b.popularity, b.releaseDate);
+    if (scoreA !== scoreB) return scoreB - scoreA;
+    return new Date(b.releaseDate!).getTime() - new Date(a.releaseDate!).getTime();
+  })
+  .slice(0, 4);
+const budgetPick = [...decorated]
+  .filter((m) => m.pricing.inputPer1M != null && m.pricing.inputPer1M <= 3)
+  .sort((a, b) => (a.pricing.inputPer1M ?? 999) - (b.pricing.inputPer1M ?? 999))[0];
+const longContextPick = [...decorated]
+  .filter((m) => m.context != null && m.context >= 1_000_000)
+  .sort((a, b) => (b.context ?? 0) - (a.context ?? 0))[0];
+const openPick = [...decorated]
+  .filter((m) => m.openWeight)
+  .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))[0];
+const benchmarkPick = [...decorated]
+  .filter((m) => m.swe != null)
+  .sort((a, b) => (b.swe ?? 0) - (a.swe ?? 0))[0];
+const quickPicks = [
+  { title: 'Más barato', subtitle: 'Ideal para empezar con presupuesto ajustado', model: budgetPick },
+  { title: 'Mayor contexto', subtitle: 'Para repos grandes y trabajo multi-archivo', model: longContextPick },
+  { title: 'Open-weight', subtitle: 'Para privacidad, hosting propio y bajo coste', model: openPick },
+  { title: 'Mejor benchmark', subtitle: 'Para tareas de ingeniería de software más exigentes', model: benchmarkPick },
+].filter((item) => item.model);
+
+const useCaseRecommendations = [
+  {
+    title: 'Para coding agéntico',
+    subtitle: 'Cuando lo importante es resolver tareas reales de ingeniería',
+    model: benchmarkPick,
+    reason: 'Prioriza SWE-bench alto y buen rendimiento en flujos complejos.',
+    badge: 'SWE',
+    accent: 'var(--pos)',
+  },
+  {
+    title: 'Para repos grandes',
+    subtitle: 'Cuando necesitas retener mucho contexto de una base de código',
+    model: longContextPick,
+    reason: 'Elige el modelo con mayor ventana de contexto del catálogo.',
+    badge: '1M+',
+    accent: 'var(--accent)',
+  },
+  {
+    title: 'Para empezar con poco presupuesto',
+    subtitle: 'Ideal si quieres probar modelos sin subir costes',
+    model: budgetPick,
+    reason: 'Se centra en el precio de entrada más bajo del catálogo.',
+    badge: '$',
+    accent: 'var(--accent2)',
+  },
+  {
+    title: 'Para hosting propio',
+    subtitle: 'Cuando la privacidad y la autonomía importan',
+    model: openPick,
+    reason: 'Apuesta por modelos open-weight con buena adopción.',
+    badge: 'Open',
+    accent: 'var(--warn)',
+  },
+  {
+    title: 'Para lo más reciente',
+    subtitle: 'Si quieres ver las novedades primero',
+    model: recentModels[0],
+    reason: 'Destaca el modelo más nuevo del top de relevancia actual.',
+    badge: 'Novedad',
+    accent: 'var(--accent)',
+  },
+].filter((item) => item.model);
 
 // ── KPIs ──────────────────────────────────────────────────────────────────
 const withSwe = decorated.filter((m) => m.swe != null);
@@ -87,9 +173,15 @@ const originDist = (['US', 'China', 'EU', 'Open'] as const).map((o) => {
 });
 
 // ── Leaderboards / agrupaciones ────────────────────────────────────────────
-const topPopularity = [...decorated].sort((a, b) => b.popularity - a.popularity).slice(0, 8);
-const maxPop = topPopularity[0]?.popularity || 100;
-const leaderboardSwe = [...withSwe].sort((a, b) => (b.swe! - a.swe!)).slice(0, 7);
+const topPopularity = [...decorated]
+  .map((m) => ({ ...m, score: getPopularityScore(m.popularity, m.releaseDate) }))
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 8);
+const maxPop = topPopularity[0]?.score || 100;
+const leaderboardSwe = [...withSwe]
+  .map((m) => ({ ...m, score: getBenchScore(m.swe, m.releaseDate) }))
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 7);
 
 // Agrupación por empresa (respeta el orden de `companies`, solo modelos).
 const companyGroups = Object.keys(companies)
@@ -110,6 +202,56 @@ const popularityGroups = POPULARITY_TIERS
     <div style="margin-bottom:18px;">
       <h1 style="margin:0 0 6px; font-size:clamp(24px,3.4vw,34px); font-weight:700; color:var(--head); letter-spacing:-.5px;">Panel de modelos de IA para programar</h1>
       <p style="margin:0; color:var(--dim); font-size:14.5px; max-width:680px;">Precios por millón de tokens, ventana de contexto y SWE-bench de los modelos disponibles a {formattedDate}. Confirma siempre el precio oficial antes de presupuestar.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:var(--space-3); margin-bottom:var(--space-5);">
+      {recentModels.map((m) => (
+        <div style="background:linear-gradient(135deg,var(--panel),var(--panel2)); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-4);">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-2);">
+            <span style={`width:10px; height:10px; border-radius:50%; background:${m.accent}; flex:none;`}></span>
+            <span style="font-size:var(--fs-xs); letter-spacing:.5px; text-transform:uppercase; color:var(--accent);">Novedad</span>
+          </div>
+          <div style="font-size:var(--fs-sm); color:var(--head); font-weight:600; margin-top:var(--space-2);">{m.displayName}</div>
+          <div style="font-size:var(--fs-base-lg); color:var(--dim); margin-top:var(--space-1);">{m.companyName}</div>
+          <div style="display:flex; flex-wrap:wrap; gap:var(--space-2); margin-top:var(--space-3);">
+            <span style="font-size:var(--fs-xs); color:var(--text); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{m.contextText}</span>
+            <span style="font-size:var(--fs-xs); color:var(--accent); background:var(--panel2); border-radius:var(--radius-sm); padding:var(--space-1) var(--space-2);">{m.priceInText}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:var(--space-3); margin-bottom:var(--space-5);">
+      {quickPicks.map((item) => (
+        <div style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-4);">
+          <div style="font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.5px; color:var(--dim);">{item.title}</div>
+          <div style="font-size:var(--fs-base-lg); color:var(--head); font-weight:600; margin-top:var(--space-2);">{item.model.displayName}</div>
+          <div style="font-size:var(--fs-sm); color:var(--dim); margin-top:var(--space-1);">{item.subtitle}</div>
+        </div>
+      ))}
+    </div>
+
+    <div style="background:linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-5); margin-bottom:var(--space-5);">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-3); flex-wrap:wrap; margin-bottom:var(--space-4);">
+        <div>
+          <div style="font-size:var(--fs-xs); letter-spacing:.6px; text-transform:uppercase; color:var(--accent); font-weight:600;">Recomendaciones por caso de uso</div>
+          <h2 style="margin:var(--space-1) 0 0; font-size:var(--fs-2xl); color:var(--head); font-weight:600;">Elige según el problema que quieres resolver</h2>
+        </div>
+        <div style="font-size:var(--fs-sm); color:var(--dim); max-width:340px;">Una guía rápida para empezar si no sabes por dónde orientar la comparación.</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:var(--space-3);">
+        {useCaseRecommendations.map((item) => (
+          <div style="background:var(--panel); border:1px solid var(--border); border-radius:var(--radius-md); padding:var(--space-4);">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-2);">
+              <span style={`font-size:var(--fs-xs); color:${item.accent}; border:1px solid ${item.accent}; border-radius:999px; padding:var(--space-1) var(--space-2);`}>{item.badge}</span>
+              <span style="font-size:var(--fs-xs); color:var(--dim);">{item.title}</span>
+            </div>
+            <div style="font-size:var(--fs-base-lg); color:var(--head); font-weight:600; margin-top:var(--space-3);">{item.model.displayName}</div>
+            <div style="font-size:var(--fs-sm); color:var(--dim); margin-top:var(--space-1);">{item.subtitle}</div>
+            <div style="font-size:var(--fs-base-lg); color:var(--text); margin-top:var(--space-3);">{item.reason}</div>
+          </div>
+        ))}
+      </div>
     </div>
 
     <!-- search -->
@@ -164,8 +306,8 @@ const popularityGroups = POPULARITY_TIERS
           {topPopularity.map((m) => (
             <button data-action="detail" data-id={m.id} type="button" aria-label={`Ver detalles de ${m.displayName}`} style="display:flex; align-items:center; gap:12px; cursor:pointer; background:none; border:none; padding:0; text-align:left; font-family:inherit;">
               <span style="width:130px; flex:none; font-size:12.5px; color:var(--head); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style={`display:inline-block;width:7px;height:7px;border-radius:50%;background:${m.accent};margin-right:7px;`}></span>{m.displayName}</span>
-              <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;"><span style={`display:block; height:100%; width:${(m.popularity / maxPop) * 100}%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;`}></span></div>
-              <span style="width:34px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--accent);">{m.popularity}</span>
+              <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;"><span style={`display:block; height:100%; width:${(m.score / maxPop) * 100}%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;`}></span></div>
+              <span style="width:48px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--accent);">{Math.round(m.score)}</span>
             </button>
           ))}
         </div>
@@ -181,7 +323,7 @@ const popularityGroups = POPULARITY_TIERS
             <button data-action="detail" data-id={m.id} type="button" aria-label={`Ver detalles de ${m.displayName}`} style="display:flex; align-items:center; gap:12px; cursor:pointer; background:none; border:none; padding:0; text-align:left; font-family:inherit;">
               <span style="width:130px; flex:none; font-size:12.5px; color:var(--head); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style={`display:inline-block;width:7px;height:7px;border-radius:50%;background:${m.accent};margin-right:7px;`}></span>{m.displayName}</span>
               <div style="flex:1; height:13px; background:var(--panel2); border-radius:4px; overflow:hidden;"><span style={`display:block; height:100%; width:${m.barSwePct}; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:4px;`}></span></div>
-              <span style="width:48px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--pos);">{m.sweText}</span>
+              <span style="width:60px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--pos);">{m.sweText}</span>
             </button>
           ))}
         </div>
@@ -221,6 +363,30 @@ const popularityGroups = POPULARITY_TIERS
           <button class="dpill" data-cat={c} data-active={c === 'all' ? 'true' : 'false'} style={`font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid ${c === 'all' ? 'var(--accent)' : 'var(--border2)'}; background:${c === 'all' ? 'var(--accent)' : 'transparent'}; color:${c === 'all' ? '#fff' : 'var(--text)'};`}>{c === 'all' ? 'Todas' : (catLabels[c] || c)}</button>
         ))}
       </div>
+      <label style="display:inline-flex; align-items:center; gap:var(--space-2); font-size:var(--fs-base-lg); color:var(--text); background:var(--panel2); border:1px solid var(--border2); border-radius:var(--radius-md); padding:var(--space-2) var(--space-3);">
+        <input id="open-only" type="checkbox" />
+        <span>Open-weight</span>
+      </label>
+      <select id="price-select" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid var(--border2); background:var(--panel2); color:var(--text);">
+        <option value="all">Precio: cualquier</option>
+        <option value="3">≤ $3 /1M</option>
+        <option value="5">≤ $5 /1M</option>
+        <option value="10">≤ $10 /1M</option>
+      </select>
+      <select id="context-select" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid var(--border2); background:var(--panel2); color:var(--text);">
+        <option value="all">Contexto: cualquier</option>
+        <option value="128k">≥ 128k</option>
+        <option value="256k">≥ 256k</option>
+        <option value="500k">≥ 500k</option>
+        <option value="1m">≥ 1M</option>
+        <option value="2m">≥ 2M</option>
+      </select>
+      <select id="benchmark-select" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border-radius:var(--radius-md); border:1px solid var(--border2); background:var(--panel2); color:var(--text);">
+        <option value="all">Bench: cualquier</option>
+        <option value="swe70">SWE ≥ 70</option>
+        <option value="swe80">SWE ≥ 80</option>
+        <option value="human90">HumanEval ≥ 90</option>
+      </select>
       <div id="view-toggle" role="tablist" style="margin-left:auto; display:flex; gap:0; border:1px solid var(--border2); border-radius:var(--radius-md); overflow:hidden;">
         <button role="tab" aria-selected="true" aria-controls="view-grid" class="dbtn vbtn" data-view="grid" type="button" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; background:var(--accent); color:#fff;">▦ Tarjetas</button>
         <button role="tab" aria-selected="false" aria-controls="view-table" class="dbtn vbtn" data-view="table" type="button" style="font-family:inherit; font-size:var(--fs-base-lg); padding:var(--space-2) var(--space-3); border:none; border-left:1px solid var(--border2); background:transparent; color:var(--text);">≣ Tabla</button>
@@ -235,7 +401,7 @@ const popularityGroups = POPULARITY_TIERS
     <!-- GRID view -->
     <div id="view-grid" class="view">
       <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:14px; margin-top:18px;">
-        {decorated.map((m) => <ModelCard m={m} />)}
+        {sortedDecorated.map((m) => <ModelCard m={m} />)}
       </div>
     </div>
 
@@ -255,9 +421,17 @@ const popularityGroups = POPULARITY_TIERS
             </tr>
           </thead>
           <tbody>
-            {decorated.map((m) => (
+            {sortedDecorated.map((m) => (
               <tr class="drow" data-id={m.id} data-name={m.displayName.toLowerCase()} data-company={m.company.toLowerCase()} data-api={(m.apiModelString ?? '').toLowerCase()} data-notes={(m.notes ?? '').toLowerCase()} data-origin={m.origin} data-cats={m.categoryKeys.join(' ')} data-kind={m.kind} data-pop={m.popularity} data-tier={m.tierKey} style="border-bottom:1px solid var(--border); cursor:pointer;">
-                <td style="padding:11px 16px;"><span style={`display:inline-block; width:8px; height:8px; border-radius:50%; background:${m.accent}; margin-right:9px;`}></span><span style="color:var(--head); font-weight:500;">{m.displayName}</span></td>
+                <td style={`padding:11px 16px; ${m.highlightBadge ? 'background:linear-gradient(90deg, rgba(255,255,255,0.04), transparent);' : ''}`}>
+                  <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                    <span style={`display:inline-block; width:8px; height:8px; border-radius:50%; background:${m.accent}; flex:none;`}></span>
+                    <span style="color:var(--head); font-weight:500;">{m.displayName}</span>
+                    {m.highlightBadge && (
+                      <span style="font-size:10px; text-transform:uppercase; letter-spacing:.5px; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:1px 7px;">{m.highlightBadge}</span>
+                    )}
+                  </div>
+                </td>
                 <td style="padding:11px 16px; color:var(--dim);">{m.companyName}</td>
                 <td style="padding:11px 16px; color:var(--text);">{m.originLabel}</td>
                 <td style="padding:11px 16px; text-align:right; font-family:'IBM Plex Mono',monospace; color:var(--text);">{m.priceInText}</td>
@@ -269,11 +443,16 @@ const popularityGroups = POPULARITY_TIERS
           </tbody>
         </table>
         <div class="table-cards">
-          {decorated.map((m) => (
-            <div class="table-card-row">
+          {sortedDecorated.map((m) => (
+            <div class="table-card-row" style={m.highlightBadge ? 'border-left:3px solid var(--accent); background:rgba(255,255,255,0.03);' : ''}>
               <div class="table-card-cell" data-label="Modelo">
-                <span style={`display:inline-block; width:7px; height:7px; border-radius:50%; background:${m.accent}; margin-right:6px;`}></span>
-                {m.displayName}
+                <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span style={`display:inline-block; width:7px; height:7px; border-radius:50%; background:${m.accent}; flex:none;`}></span>
+                  <span>{m.displayName}</span>
+                  {m.highlightBadge && (
+                    <span style="font-size:10px; text-transform:uppercase; letter-spacing:.5px; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:1px 7px;">{m.highlightBadge}</span>
+                  )}
+                </div>
               </div>
               <div class="table-card-cell" data-label="Empresa">{m.companyName}</div>
               <div class="table-card-cell" data-label="Origen">{m.originLabel}</div>
@@ -386,6 +565,7 @@ const popularityGroups = POPULARITY_TIERS
 
     // Importamos las funciones de formato desde el módulo centralizado
     const { fmtCtx, fmtPrice, fmtDate, esc } = await import('../utils/format.js');
+    const { getDefaultModelFilters, matchesModelFilters } = await import('../utils/model-filters.js');
 
     function decorate(m) {
       const c = C[m.company] || { name: m.company, accent: '#888888' };
@@ -416,8 +596,10 @@ const popularityGroups = POPULARITY_TIERS
     }
 
     // ── Filtros y vistas ───────────────────────────────────────────────
-    let q = '', origin = 'all', cat = 'all', view = 'grid';
+    let q = '';
+    let view = 'grid';
     let companyPick = null; // clave de empresa seleccionada en la vista Empresa (null = paso 1)
+    let filters = getDefaultModelFilters();
     const searchInput = document.getElementById('search');
     const resultLabel = document.getElementById('result-label');
     const empty = document.getElementById('empty');
@@ -429,11 +611,9 @@ const popularityGroups = POPULARITY_TIERS
     };
 
     function matches(el) {
-      const hay = `${el.dataset.name || ''} ${el.dataset.company || ''} ${el.dataset.api || ''} ${el.dataset.notes || ''}`;
-      if (q && !hay.includes(q)) return false;
-      if (origin !== 'all' && el.dataset.origin !== origin) return false;
-      if (cat !== 'all' && !(el.dataset.cats || '').split(' ').includes(cat)) return false;
-      return true;
+      const model = byId[el.dataset.id];
+      if (!model) return false;
+      return matchesModelFilters(model, q, filters);
     }
 
     function applyFilters() {
@@ -516,11 +696,27 @@ const popularityGroups = POPULARITY_TIERS
     searchInput.addEventListener('input', (e) => { q = e.target.value.toLowerCase().trim(); applyFilters(); });
     document.getElementById('origin-chips').addEventListener('click', (e) => {
       const b = e.target.closest('.dpill'); if (!b) return;
-      origin = b.dataset.origin; setPills(e.currentTarget, origin, 'origin'); applyFilters();
+      filters.origin = b.dataset.origin; setPills(e.currentTarget, filters.origin, 'origin'); applyFilters();
     });
     document.getElementById('cat-chips').addEventListener('click', (e) => {
       const b = e.target.closest('.dpill'); if (!b) return;
-      cat = b.dataset.cat; setPills(e.currentTarget, cat, 'cat'); applyFilters();
+      filters.cat = b.dataset.cat; setPills(e.currentTarget, filters.cat, 'cat'); applyFilters();
+    });
+    document.getElementById('open-only').addEventListener('change', (e) => {
+      filters.openOnly = e.target.checked;
+      applyFilters();
+    });
+    document.getElementById('price-select').addEventListener('change', (e) => {
+      filters.maxPrice = e.target.value;
+      applyFilters();
+    });
+    document.getElementById('context-select').addEventListener('change', (e) => {
+      filters.minContext = e.target.value;
+      applyFilters();
+    });
+    document.getElementById('benchmark-select').addEventListener('change', (e) => {
+      filters.benchmark = e.target.value;
+      applyFilters();
     });
     document.getElementById('view-toggle').addEventListener('click', (e) => {
       const b = e.target.closest('.vbtn'); if (!b) return;

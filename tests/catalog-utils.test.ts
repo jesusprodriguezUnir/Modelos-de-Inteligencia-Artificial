@@ -7,6 +7,7 @@ import {
   popularityTier,
   refreshCuratedModel,
 } from '../src/data/catalog-utils';
+import { sortModelsByMode } from '../src/utils/ranking';
 import type { Model } from '../src/data/types';
 
 const mkModel = (over: Partial<Model> & Pick<Model, 'id'>): Model => ({
@@ -19,6 +20,17 @@ const mkModel = (over: Partial<Model> & Pick<Model, 'id'>): Model => ({
   pricing: { inputPer1M: 1, outputPer1M: 2, currency: 'USD' },
   modalities: ['text'],
   ...over,
+});
+
+test('sortModelsByMode prioritizes quality-price with lower input cost', () => {
+  const models = [
+    { id: 'expensive', popularity: 90, swe: 90, context: 1_000_000, inputPrice: 10, releaseDate: '2025-03-01' },
+    { id: 'cheap', popularity: 70, swe: 80, context: 500_000, inputPrice: 1, releaseDate: '2024-04-01' },
+  ];
+
+  const sorted = sortModelsByMode(models, 'value');
+
+  assert.deepEqual(sorted.map((m) => m.id), ['cheap', 'expensive']);
 });
 
 test('refreshCuratedModel only fills missing specs and preserves curated values', () => {
