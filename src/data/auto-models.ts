@@ -540,7 +540,7 @@ export const autoModels: Model[] = [
     "modalities": [
       "text"
     ],
-    "openWeight": false,
+    "openWeight": true,
     "releaseDate": "2026-07-31",
     "parameters": 284.0,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 69.1). Precios aproximados; verifica en la web oficial del proveedor."
@@ -1231,7 +1231,7 @@ export const autoModels: Model[] = [
       "agentic",
       "budget"
     ],
-    "context": 262144,
+    "context": 1000000,
     "pricing": {
       "inputPer1M": 0.3,
       "outputPer1M": 1.2,
@@ -1856,7 +1856,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "outputPer1M": 1.2,
       "approx": true
     },
-    "context": 262144,
+    "context": 1000000,
     "parameters": 266.0,
     "releaseDate": "2026-07-30"
   },
@@ -5052,6 +5052,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 23.6,
     "releaseDate": "2025-05-21"
+  },
+  "celeris-1": {
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 6.0,
+      "approx": true
+    },
+    "context": 131072,
+    "releaseDate": "2026-07-24"
   },
   "claude-3-opus": {
     "pricing": {
