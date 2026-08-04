@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-03T11:21:45Z`
+- **Última actualización:** `2026-08-04T10:37:44Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1 (deducido)
 - **Método de extracción:** `rsc-html`
@@ -57,32 +57,32 @@
 
 | slug | name | creator | intelligence_index | intelligence_index_v4_1 | agentic_index | coding_index | math_index |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | 14.3436508339187 | — | — | — | 62.3333333333333 |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 14.8851031229075 | 14.8851031229075 | 3.10310309278351 | 20.6967852684145 | 89.3333333333333 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 23.8309678073278 | 23.8309678073278 | 13.1731638029782 | 30.441115272576 | 93.4416666666667 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 14.9110137509579 | 14.9110137509579 | 0.962199312714777 | 21.2369087252046 | 66.6666666666667 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | 14.3436508339187 | — | — | — | 62.3333333333333 |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 57.653836996095 | 57.653836996095 | 51.7983493699885 | 78.3482452489943 | — |
-| o3 | o3 | OpenAI | 30.4025993972201 | — | — | — | 88.3333333333333 |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 14.8851031229075 | 14.8851031229075 | 3.10310309278351 | 20.6967852684145 | 89.3333333333333 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 55.8665067971861 | 55.8665067971861 | 48.5313974799542 | 77.158759883479 | — |
 | grok-1 | Grok-1 | SpaceXAI | 6.03973277802473 | — | — | — | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 48.9549359759828 | 48.9549359759828 | 41.3273470790378 | 67.1422007213206 | — |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 28.8603469587486 | 28.8603469587486 | 11.0214639175258 | 39.4246774864752 | — |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 40.4657478147168 | 40.4657478147168 | 30.604824742268 | 58.0944825912054 | — |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 53.5888349532218 | 53.5888349532218 | 44.5478270332188 | 76.2553752254127 | — |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 44.2682925707506 | — | — | — | — |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 51.2359331798034 | 51.2359331798034 | 45.5974982817869 | 71.4480163684284 | — |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 51.6046369461818 | 51.6046369461818 | 44.7046323024055 | 70.6399986128451 | — |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 45.5742165575207 | 45.5742165575207 | 37.037147766323 | 64.7406887224303 | — |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 49.444040367728 | 49.444040367728 | 39.9962084765178 | 69.6659557497573 | — |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 33.2639428548886 | 33.2639428548886 | 25.4012542955326 | 44.1644125398807 | — |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 26.5601151308593 | 26.5601151308593 | 22.0113883161512 | 39.2777257594673 | — |
+| o3 | o3 | OpenAI | 30.4025993972201 | — | — | — | 88.3333333333333 |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 53.5888349532218 | 53.5888349532218 | 44.5478270332188 | 76.2553752254127 | — |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 55.8665067971861 | 55.8665067971861 | 48.5313974799542 | 77.158759883479 | — |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 58.889831189723 | 58.889831189723 | 54.0035635738832 | 77.3880739353586 | — |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 51.2359331798034 | 51.2359331798034 | 45.5974982817869 | 71.4480163684284 | — |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 54.9528567569231 | 54.9528567569231 | 47.3835257731959 | 76.6550492440005 | — |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 38.0505850520782 | 38.0505850520782 | 30.9875773195876 | 50.7334581772784 | — |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 49.0677386549324 | 49.0677386549324 | 42.9209656357388 | 68.6017478152309 | — |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 48.9549359759828 | 48.9549359759828 | 41.3273470790378 | 67.1422007213206 | — |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 40.4657478147168 | 40.4657478147168 | 30.604824742268 | 58.0944825912054 | — |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 44.2682925707506 | — | — | — | — |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 45.5742165575207 | 45.5742165575207 | 37.037147766323 | 64.7406887224303 | — |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 26.5601151308593 | 26.5601151308593 | 22.0113883161512 | 39.2777257594673 | — |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 51.6046369461818 | 51.6046369461818 | 44.7046323024055 | 70.6399986128451 | — |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 33.9672461907359 | 33.9672461907359 | 29.3340206185567 | 52.3065785823277 | — |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 41.2034183649356 | 41.2034183649356 | 34.8531580756014 | 65.1403627410182 | — |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 49.0677386549324 | 49.0677386549324 | 42.9209656357388 | 68.6017478152309 | — |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 46.0590237335692 | 46.0590237335692 | 40.0720137457045 | 63.3400957136912 | — |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 58.889831189723 | 58.889831189723 | 54.0035635738832 | 77.3880739353586 | — |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 38.0505850520782 | 38.0505850520782 | 30.9875773195876 | 50.7334581772784 | — |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 33.2639428548886 | 33.2639428548886 | 25.4012542955326 | 44.1644125398807 | — |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 28.8603469587486 | 28.8603469587486 | 11.0214639175258 | 39.4246774864752 | — |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 9.40307621697656 | 9.40307621697656 | 0.34364261168385 | 11.9264981273408 | 7.66666666666667 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | 8.5 | — | — | — | 3 |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | 6.23248078186836 | — | — | — | — |
@@ -94,33 +94,33 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | gdpval | gdpval_v2 | tau_banking | terminalbench_v2_1 | scicode | hle | gpqa |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 562.3 | 562.3 | 0.0701030927835052 | 0.138576779026217 | 0.34375 | 0.097775718257646 | 0.687878787878788 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 797.98 | 797.98 | 0.120274914089347 | 0.262172284644195 | 0.388888888888889 | 0.184893419833179 | 0.781818181818182 |
+| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 408.56 | 408.56 | 0.0288659793814433 | 0.138576779026217 | 0.359953703703704 | 0.0523632993512512 | 0.671717171717172 |
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | — | — | — | — | 0.340277777777778 | 0.0505097312326228 | 0.611111111111111 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.68 | 801.68 | 0.120274914089347 | 0.262172284644195 | 0.388888888888889 | 0.184893419833179 | 0.781818181818182 |
-| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 410.01 | 410.01 | 0.0288659793814433 | 0.138576779026217 | 0.359953703703704 | 0.0523632993512512 | 0.671717171717172 |
-| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 1689.5 | 1689.5 | 0.326460481099656 | 0.895131086142322 | 0.560185185185185 | 0.447173308619092 | 0.931313131313131 |
-| o3 | o3 | OpenAI | — | — | — | — | 0.409722222222222 | 0.200447093889717 | 0.827272727272727 |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 564.23 | 564.23 | 0.0701030927835052 | 0.138576779026217 | 0.34375 | 0.097775718257646 | 0.687878787878788 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 1625.91 | 1625.91 | 0.305841924398625 | 0.872659176029963 | 0.569444444444444 | 0.440685820203893 | 0.928282828282828 |
+| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 1683.16 | 1683.16 | 0.326460481099656 | 0.895131086142322 | 0.560185185185185 | 0.447173308619092 | 0.931313131313131 |
 | grok-1 | Grok-1 | SpaceXAI | — | — | — | — | — | — | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 1510.48 | 1510.48 | 0.222680412371134 | 0.756554307116105 | 0.501157407407407 | 0.367006487488415 | 0.895959595959596 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 721.65 | 721.65 | 0.115463917525773 | 0.348314606741573 | 0.486111111111111 | 0.185820203892493 | 0.823232323232323 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 1253.23 | 1253.23 | 0.160824742268041 | 0.625468164794007 | 0.491898148148148 | 0.27386468952734 | 0.843434343434343 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 1552.64 | 1552.64 | 0.264604810996564 | 0.861423220973783 | 0.564814814814815 | 0.397126969416126 | 0.926262626262626 |
+| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 1441.17 | 1441.17 | 0.243986254295533 | 0.767790262172285 | 0.554398148148148 | 0.365616311399444 | 0.897979797979798 |
+| o3 | o3 | OpenAI | — | — | — | — | 0.409722222222222 | 0.200447093889717 | 0.827272727272727 |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 1552.54 | 1552.54 | 0.264604810996564 | 0.861423220973783 | 0.564814814814815 | 0.397126969416126 | 0.926262626262626 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 1622.86 | 1622.86 | 0.305841924398625 | 0.872659176029963 | 0.569444444444444 | 0.440685820203893 | 0.928282828282828 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1729.89 | 1729.89 | 0.329896907216495 | 0.880149812734082 | 0.561342592592593 | 0.471733086190918 | 0.941414141414141 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1578.35 | 1578.35 | 0.272164948453608 | 0.808988764044944 | 0.525462962962963 | 0.372103799814643 | 0.911111111111111 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1577.12 | 1577.12 | 0.317525773195876 | 0.880149812734082 | 0.539351851851852 | 0.417979610750695 | 0.925252525252525 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 1509.73 | 1509.73 | 0.222680412371134 | 0.756554307116105 | 0.501157407407407 | 0.367006487488415 | 0.895959595959596 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 1253.9 | 1253.9 | 0.160824742268041 | 0.625468164794007 | 0.491898148148148 | 0.27386468952734 | 0.843434343434343 |
 | gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | — | — | — | — | 0.532407407407407 | 0.398980537534754 | 0.915151515151515 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1579.17 | 1579.17 | 0.272164948453608 | 0.808988764044944 | 0.525462962962963 | 0.372103799814643 | 0.911111111111111 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 1572.3 | 1572.3 | 0.243298969072165 | 0.801498127340824 | 0.516203703703704 | 0.400370713623726 | 0.908080808080808 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 1405.29 | 1405.29 | 0.193814432989691 | 0.722846441947566 | 0.496527777777778 | 0.315569972196478 | 0.871717171717172 |
-| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 1442.04 | 1442.04 | 0.243986254295533 | 0.767790262172285 | 0.554398148148148 | 0.365616311399444 | 0.897979797979798 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 1154.44 | 1154.44 | 0.119587628865979 | 0.434456928838951 | 0.456018518518519 | 0.188137164040778 | 0.835353535353535 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 1073.32 | 1073.32 | 0.0907216494845361 | 0.389513108614232 | 0.399305555555556 | 0.067191844300278 | 0.645454545454546 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1582.7 | 1582.7 | 0.317525773195876 | 0.880149812734082 | 0.539351851851852 | 0.417979610750695 | 0.925252525252525 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 1274.12 | 1274.12 | 0.152577319587629 | 0.531835205992509 | 0.458333333333333 | 0.244670991658943 | 0.858585858585859 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 1529.73 | 1529.73 | 0.243298969072165 | 0.779026217228464 | 0.5 | 0.355885078776645 | 0.894949494949495 |
-| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 1242.59 | 1242.59 | 0.134020618556701 | 0.561797752808989 | 0.445601851851852 | 0.110287303058387 | 0.746464646464646 |
-| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 1377.38 | 1377.38 | 0.160824742268041 | 0.741573033707865 | 0.471064814814815 | 0.158480074142725 | 0.78989898989899 |
-| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 1467.83 | 1467.83 | 0.222680412371134 | 0.696629213483146 | 0.506944444444444 | 0.315569972196478 | 0.891919191919192 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1732.5 | 1732.5 | 0.329896907216495 | 0.880149812734082 | 0.561342592592593 | 0.471733086190918 | 0.941414141414141 |
-| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 98.59 | 98.59 | 0.0103092783505155 | 0.048689138576779 | 0.260416666666667 | 0.0398658718330849 | 0.497979797979798 |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 1404.18 | 1404.18 | 0.193814432989691 | 0.722846441947566 | 0.496527777777778 | 0.315569972196478 | 0.871717171717172 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 1073.27 | 1073.27 | 0.0907216494845361 | 0.389513108614232 | 0.399305555555556 | 0.067191844300278 | 0.645454545454546 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 1570.73 | 1570.73 | 0.243298969072165 | 0.801498127340824 | 0.516203703703704 | 0.400370713623726 | 0.908080808080808 |
+| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 1242.58 | 1242.58 | 0.134020618556701 | 0.561797752808989 | 0.445601851851852 | 0.110287303058387 | 0.746464646464646 |
+| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 1377.61 | 1377.61 | 0.160824742268041 | 0.741573033707865 | 0.471064814814815 | 0.158480074142725 | 0.78989898989899 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 1527.26 | 1527.26 | 0.243298969072165 | 0.779026217228464 | 0.5 | 0.355885078776645 | 0.894949494949495 |
+| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 1466.79 | 1466.79 | 0.222680412371134 | 0.696629213483146 | 0.506944444444444 | 0.315569972196478 | 0.891919191919192 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 1274.99 | 1274.99 | 0.152577319587629 | 0.531835205992509 | 0.458333333333333 | 0.244670991658943 | 0.858585858585859 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 1154.06 | 1154.06 | 0.119587628865979 | 0.434456928838951 | 0.456018518518519 | 0.188137164040778 | 0.835353535353535 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 713.55 | 713.55 | 0.115463917525773 | 0.348314606741573 | 0.486111111111111 | 0.185820203892493 | 0.823232323232323 |
+| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 95.57 | 95.57 | 0.0103092783505155 | 0.048689138576779 | 0.260416666666667 | 0.0398658718330849 | 0.497979797979798 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | — | — | — | — | 0.298611111111111 | 0.0424739195230999 | 0.515151515151515 |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — | — | — | — | 0.239583333333333 | 0.0491803278688525 | 0.432323232323232 |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | — | — | — | — | 0.112268518518519 | 0.0517883755588674 | 0.221212121212121 |
@@ -131,32 +131,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | coding_index | agentic_index |
 | --- | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | — | — |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 20.6967852684145 | 3.10310309278351 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 30.441115272576 | 13.1731638029782 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 21.2369087252046 | 0.962199312714777 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | — | — |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 78.3482452489943 | 51.7983493699885 |
-| o3 | o3 | OpenAI | — | — |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 20.6967852684145 | 3.10310309278351 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 77.158759883479 | 48.5313974799542 |
 | grok-1 | Grok-1 | SpaceXAI | — | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 67.1422007213206 | 41.3273470790378 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 39.4246774864752 | 11.0214639175258 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 58.0944825912054 | 30.604824742268 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 76.2553752254127 | 44.5478270332188 |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | — | — |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 71.4480163684284 | 45.5974982817869 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 70.6399986128451 | 44.7046323024055 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 64.7406887224303 | 37.037147766323 |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 69.6659557497573 | 39.9962084765178 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 44.1644125398807 | 25.4012542955326 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 39.2777257594673 | 22.0113883161512 |
+| o3 | o3 | OpenAI | — | — |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 76.2553752254127 | 44.5478270332188 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 77.158759883479 | 48.5313974799542 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 77.3880739353586 | 54.0035635738832 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 71.4480163684284 | 45.5974982817869 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 76.6550492440005 | 47.3835257731959 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 50.7334581772784 | 30.9875773195876 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 68.6017478152309 | 42.9209656357388 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 67.1422007213206 | 41.3273470790378 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 58.0944825912054 | 30.604824742268 |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | — | — |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 64.7406887224303 | 37.037147766323 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 39.2777257594673 | 22.0113883161512 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 70.6399986128451 | 44.7046323024055 |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 52.3065785823277 | 29.3340206185567 |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 65.1403627410182 | 34.8531580756014 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 68.6017478152309 | 42.9209656357388 |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 63.3400957136912 | 40.0720137457045 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 77.3880739353586 | 54.0035635738832 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 50.7334581772784 | 30.9875773195876 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 44.1644125398807 | 25.4012542955326 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 39.4246774864752 | 11.0214639175258 |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 11.9264981273408 | 0.34364261168385 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | — | — |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — | — |
@@ -168,32 +168,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | briefcase |
 | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | {"elo": 6.98, "lower95ci": 0, "upper95ci": 22.2, "rubric": {"elo": 538.31, "lowe |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | {"elo": 0, "lower95ci": 0, "upper95ci": 0, "rubric": {"elo": 522.49, "lower95ci" |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | {"elo": 7.65, "lower95ci": 0, "upper95ci": 20.57, "rubric": {"elo": 537.24, "low |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | $undefined |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | $undefined |
-| o3 | o3 | OpenAI | $undefined |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | {"elo": 0, "lower95ci": 0, "upper95ci": 0, "rubric": {"elo": 522.96, "lower95ci" |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | $undefined |
 | grok-1 | Grok-1 | SpaceXAI | $undefined |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | $undefined |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | $undefined |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | $undefined |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | $undefined |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | {"elo": 868.58, "lower95ci": 860.06, "upper95ci": 877.07, "rubric": {"elo": 909. |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | $undefined |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | $undefined |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | $undefined |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | $undefined |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | $undefined |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | $undefined |
+| o3 | o3 | OpenAI | $undefined |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | $undefined |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | $undefined |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"elo": 1502.41, "lower95ci": 1493.08, "upper95ci": 1512.52, "rubric": {"elo": 1 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | $undefined |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | $undefined |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | $undefined |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | $undefined |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | $undefined |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | $undefined |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | {"elo": 870.01, "lower95ci": 861.16, "upper95ci": 878.07, "rubric": {"elo": 908. |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | $undefined |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | $undefined |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | $undefined |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | $undefined |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | $undefined |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | $undefined |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | $undefined |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"elo": 1503.5, "lower95ci": 1493.78, "upper95ci": 1514.41, "rubric": {"elo": 12 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | $undefined |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | $undefined |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | $undefined |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | $undefined |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | $undefined |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | $undefined |
@@ -205,32 +205,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | omniscience |
 | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | -60.1333333333333 |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | -63.9166666666667 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | -50.05 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | -50.15 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | -60.1333333333333 |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 20.55 |
-| o3 | o3 | OpenAI | -15.2666666666667 |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | -63.9166666666667 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 19.75 |
 | grok-1 | Grok-1 | SpaceXAI | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | -4.06666666666667 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 3.48333333333333 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | -7.11666666666667 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 18.95 |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 9.88333333333333 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | -11.2333333333333 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | -3.3 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | -5.16666666666667 |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 18.4 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | -15.2 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | -25.1166666666667 |
+| o3 | o3 | OpenAI | -15.2666666666667 |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 18.95 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 19.75 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 21.7 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | -11.2333333333333 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | -0.216666666666667 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | -13.8166666666667 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | -11.6 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | -4.06666666666667 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | -7.11666666666667 |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 9.88333333333333 |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | -5.16666666666667 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | -25.1166666666667 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | -3.3 |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | -23.4666666666667 |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 0.85 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | -11.6 |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | -12.45 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 21.7 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | -13.8166666666667 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | -15.2 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 3.48333333333333 |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | -51.9166666666667 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | -17.3 |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — |
@@ -242,33 +242,33 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | gdpval_v2 | gdpval_normalized |
 | --- | --- | --- | --- | --- |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 562.3 | 0.031149999999999976 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 797.98 | 0.14899 |
+| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 408.56 | 0 |
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | — | $undefined |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.68 | 0.15083999999999997 |
-| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 410.01 | 0 |
-| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 1689.5 | 0.59475 |
-| o3 | o3 | OpenAI | — | $undefined |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 564.23 | 0.03211500000000001 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 1625.91 | 0.5629550000000001 |
+| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 1683.16 | 0.59158 |
 | grok-1 | Grok-1 | SpaceXAI | — | $undefined |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 1510.48 | 0.50524 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 721.65 | 0.11082499999999999 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 1253.23 | 0.37661500000000003 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 1552.64 | 0.52632 |
+| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 1441.17 | 0.47058500000000003 |
+| o3 | o3 | OpenAI | — | $undefined |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 1552.54 | 0.52627 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 1622.86 | 0.56143 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1729.89 | 0.6149450000000001 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1578.35 | 0.539175 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1577.12 | 0.5385599999999999 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 1509.73 | 0.504865 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 1253.9 | 0.37695000000000006 |
 | gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | — | $undefined |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1579.17 | 0.539585 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 1572.3 | 0.53615 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 1405.29 | 0.45264499999999996 |
-| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 1442.04 | 0.47102 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 1154.44 | 0.32722 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 1073.32 | 0.28665999999999997 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1582.7 | 0.54135 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 1274.12 | 0.38705999999999996 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 1529.73 | 0.514865 |
-| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 1242.59 | 0.371295 |
-| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 1377.38 | 0.4386900000000001 |
-| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 1467.83 | 0.483915 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1732.5 | 0.61625 |
-| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 98.59 | 0 |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 1404.18 | 0.45209000000000005 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 1073.27 | 0.286635 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 1570.73 | 0.535365 |
+| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 1242.58 | 0.37128999999999995 |
+| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 1377.61 | 0.43880499999999995 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 1527.26 | 0.51363 |
+| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 1466.79 | 0.48339499999999996 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 1274.99 | 0.387495 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 1154.06 | 0.32703 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 713.55 | 0.10677499999999998 |
+| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 95.57 | 0 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | — | $undefined |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — | $undefined |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | — | $undefined |
@@ -279,32 +279,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | is_open_weights | commercial_allowed | license_name | license_url |
 | --- | --- | --- | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | False | — | — | — |
-| o3 | o3 | OpenAI | False | — | — | — |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | False | — | — | — |
 | grok-1 | Grok-1 | SpaceXAI | True | True | Apache 2.0 | https://www.apache.org/licenses/LICENSE-2.0 |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | False | — | — | — |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | False | — | — | — |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | False | — | — | — |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | False | — | — | — |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | False | — | — | — |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | False | — | — | — |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | False | — | — | — |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | False | — | — | — |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | False | — | — | — |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | False | — | — | — |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | False | — | — | — |
+| o3 | o3 | OpenAI | False | — | — | — |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | False | — | — | — |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | False | — | — | — |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | False | — | — | — |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | False | — | — | — |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | False | — | — | — |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | False | — | — | — |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | False | — | — | — |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | False | — | — | — |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | False | — | — | — |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | False | — | — | — |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | False | — | — | — |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | False | — | — | — |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | False | — | — | — |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | False | — | — | — |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | False | — | — | — |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | False | — | — | — |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | False | — | — | — |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | False | — | — | — |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | False | — | — | — |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | False | — | — | — |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | False | — | — | — |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | True | True | LLAMA 3.3 COMMUNITY LICENSE AGREEMENT | https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | True | True | LLAMA 3.1 COMMUNITY LICENSE AGREEMENT | https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | True | True | LLAMA 3.2 COMMUNITY LICENSE AGREEMENT | https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE |
@@ -316,32 +316,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | intelligence_index_cost | intelligence_index_per_m_output_tokens | evalCost | indexCompute |
 | --- | --- | --- | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined | 0 | $undefined | — |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | {"total_cost": 36.43363566000001, "input_cost": 22.966675060000004, "non_cache_i | 0.2210610629232479 | {"total": 36.43363566000001, "input": 22.966675060000004, "nonCacheInput": 0.830 | 478.63394856 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | {"total_cost": 96.276024, "input_cost": 43.8453252, "non_cache_input_cost": 1.81 | 0.2727139063879248 | {"total": 96.276024, "input": 43.8453252, "nonCacheInput": 1.8105514499999997, " | 743.8091511599999 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | {"total_cost": 24.198467315, "input_cost": 19.962330899999998, "non_cache_input_ | 2.0943738144041686 | {"total": 24.198467315, "input": 19.962330899999998, "nonCacheInput": 1.78999695 | 172.05359081999998 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined | 0 | $undefined | — |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | {"total_cost": 1542.5249316860813, "input_cost": 480.5761416860813, "non_cache_i | 1.6287180005006172 | {"total": 1542.5249316860813, "input": 480.5761416860813, "nonCacheInput": 61.12 | — |
-| o3 | o3 | OpenAI | $undefined | 0 | $undefined | — |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | {"total_cost": 36.43363566000001, "input_cost": 22.966675060000004, "non_cache_i | 0.2210610629232479 | {"total": 36.43363566000001, "input": 22.966675060000004, "nonCacheInput": 0.830 | 478.63394856 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | {"total_cost": 955.5499374665286, "input_cost": 318.0878574665286, "non_cache_in | 2.629168473700558 | {"total": 955.5499374665286, "input": 318.0878574665286, "nonCacheInput": 59.712 | — |
 | grok-1 | Grok-1 | SpaceXAI | $undefined | 0 | $undefined | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | {"total_cost": 396.61911651124313, "input_cost": 112.99707651124315, "non_cache_ | 2.071274967600521 | {"total": 396.61911651124313, "input": 112.99707651124315, "nonCacheInput": 23.7 | — |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | {"total_cost": 433.3253282514638, "input_cost": 306.5548682514638, "non_cache_in | 6.82974889230865 | {"total": 433.3253282514638, "input": 306.5548682514638, "nonCacheInput": 58.945 | — |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | {"total_cost": 128.52145261570462, "input_cost": 57.26080861570461, "non_cache_i | 6.814265862887818 | {"total": 128.52145261570462, "input": 57.26080861570461, "nonCacheInput": 23.66 | — |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | {"total_cost": 593.0381807024285, "input_cost": 233.73205070242852, "non_cache_i | 4.474360202528841 | {"total": 593.0381807024285, "input": 233.73205070242852, "nonCacheInput": 59.24 | — |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | $undefined | 0 | $undefined | — |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | {"total_cost": 174.05945797411897, "input_cost": 24.046035974118983, "non_cache_ | 0.40985079198956004 | {"total": 174.05945797411897, "input": 24.046035974118983, "nonCacheInput": 4.51 | — |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | {"total_cost": 592.1702336847807, "input_cost": 155.77957768478063, "non_cache_i | 1.4190396490849282 | {"total": 592.1702336847807, "input": 155.77957768478063, "nonCacheInput": 26.10 | — |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | {"total_cost": 192.18217366352607, "input_cost": 67.10989366352607, "non_cache_i | 4.372596379391568 | {"total": 192.18217366352607, "input": 67.10989366352607, "nonCacheInput": 23.67 | — |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | {"total_cost": 353.48821704247973, "input_cost": 155.95762704247971, "non_cache_ | 7.509324054729143 | {"total": 353.48821704247973, "input": 155.95762704247971, "nonCacheInput": 59.1 | — |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | {"total_cost": 13.76054678621126, "input_cost": 5.3948703862112595, "non_cache_i | 4.771488821378068 | {"total": 13.76054678621126, "input": 5.3948703862112595, "nonCacheInput": 2.368 | — |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | {"total_cost": 10.282760258539758, "input_cost": 7.453906658539758, "non_cache_i | 11.266803682251764 | {"total": 10.282760258539758, "input": 7.453906658539758, "nonCacheInput": 2.367 | — |
+| o3 | o3 | OpenAI | $undefined | 0 | $undefined | — |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | {"total_cost": 593.0381807024285, "input_cost": 233.73205070242852, "non_cache_i | 4.474360202528841 | {"total": 593.0381807024285, "input": 233.73205070242852, "nonCacheInput": 59.24 | — |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | {"total_cost": 955.5499374665286, "input_cost": 318.0878574665286, "non_cache_in | 2.629168473700558 | {"total": 955.5499374665286, "input": 318.0878574665286, "nonCacheInput": 59.712 | — |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"total_cost": 2824.1811935690976, "input_cost": 721.6095335690973, "non_cache_i | 0.8402543272611644 | {"total": 2824.1811935690976, "input": 721.6095335690973, "nonCacheInput": 60.97 | — |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | {"total_cost": 174.05945797411897, "input_cost": 24.046035974118983, "non_cache_ | 0.40985079198956004 | {"total": 174.05945797411897, "input": 24.046035974118983, "nonCacheInput": 4.51 | — |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | {"total_cost": 1403.154417374973, "input_cost": 257.0425893749731, "non_cache_in | 0.5753664389222909 | {"total": 1403.154417374973, "input": 257.0425893749731, "nonCacheInput": 39.030 | — |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | {"total_cost": 21.16768049054996, "input_cost": 6.191848490549958, "non_cache_in | 3.0489592873700664 | {"total": 21.16768049054996, "input": 6.191848490549958, "nonCacheInput": 2.3922 | — |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | {"total_cost": 95.87365667868141, "input_cost": 15.791139478681416, "non_cache_i | 0.7352576872536029 | {"total": 95.87365667868141, "input": 15.791139478681416, "nonCacheInput": 3.176 | — |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | {"total_cost": 396.61911651124313, "input_cost": 112.99707651124315, "non_cache_ | 2.071274967600521 | {"total": 396.61911651124313, "input": 112.99707651124315, "nonCacheInput": 23.7 | — |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | {"total_cost": 128.52145261570462, "input_cost": 57.26080861570461, "non_cache_i | 6.814265862887818 | {"total": 128.52145261570462, "input": 57.26080861570461, "nonCacheInput": 23.66 | — |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | $undefined | 0 | $undefined | — |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | {"total_cost": 192.18217366352607, "input_cost": 67.10989366352607, "non_cache_i | 4.372596379391568 | {"total": 192.18217366352607, "input": 67.10989366352607, "nonCacheInput": 23.67 | — |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | {"total_cost": 10.282760258539758, "input_cost": 7.453906658539758, "non_cache_i | 11.266803682251764 | {"total": 10.282760258539758, "input": 7.453906658539758, "nonCacheInput": 2.367 | — |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | {"total_cost": 592.1702336847807, "input_cost": 155.77957768478063, "non_cache_i | 1.4190396490849282 | {"total": 592.1702336847807, "input": 155.77957768478063, "nonCacheInput": 26.10 | — |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | {"total_cost": 98.91314117296277, "input_cost": 68.01040517296276, "non_cache_in | 13.189995678338345 | {"total": 98.91314117296277, "input": 68.01040517296276, "nonCacheInput": 23.662 | — |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | {"total_cost": 241.50767053376404, "input_cost": 162.05585053376404, "non_cache_ | 15.55788842783045 | {"total": 241.50767053376404, "input": 162.05585053376404, "nonCacheInput": 59.2 | — |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | {"total_cost": 95.87365667868141, "input_cost": 15.791139478681416, "non_cache_i | 0.7352576872536029 | {"total": 95.87365667868141, "input": 15.791139478681416, "nonCacheInput": 3.176 | — |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | {"total_cost": 55.003588080788546, "input_cost": 10.562015280788545, "non_cache_ | 1.2436739970706672 | {"total": 55.003588080788546, "input": 10.562015280788545, "nonCacheInput": 2.37 | — |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"total_cost": 2824.1811935690976, "input_cost": 721.6095335690973, "non_cache_i | 0.8402543272611644 | {"total": 2824.1811935690976, "input": 721.6095335690973, "nonCacheInput": 60.97 | — |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | {"total_cost": 21.16768049054996, "input_cost": 6.191848490549958, "non_cache_in | 3.0489592873700664 | {"total": 21.16768049054996, "input": 6.191848490549958, "nonCacheInput": 2.3922 | — |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | {"total_cost": 13.76054678621126, "input_cost": 5.3948703862112595, "non_cache_i | 4.771488821378068 | {"total": 13.76054678621126, "input": 5.3948703862112595, "nonCacheInput": 2.368 | — |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | {"total_cost": 433.3253282514638, "input_cost": 306.5548682514638, "non_cache_in | 6.82974889230865 | {"total": 433.3253282514638, "input": 306.5548682514638, "nonCacheInput": 58.945 | — |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | {"total_cost": 80.6094876, "input_cost": 77.8928772, "non_cache_input_cost": 7.1 | 2.492155252082935 | {"total": 80.6094876, "input": 77.8928772, "nonCacheInput": 7.166170800000001, " | 2081.615368 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | $undefined | 0 | $undefined | — |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | $undefined | 0 | $undefined | — |
@@ -353,33 +353,33 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | intelligenceIndexTimePerTask | evalTimePerTask |
 | --- | --- | --- | --- | --- |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 98.86002850140959 | $undefined |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 186.75561562796688 | $undefined |
+| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 10.265678157071262 | $undefined |
 | gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | $undefined | $undefined |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 170.6129969983148 | $undefined |
-| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 10.177115139003618 | $undefined |
-| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 159.839860763439 | $undefined |
-| o3 | o3 | OpenAI | $undefined | $undefined |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 112.62820383616656 | $undefined |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 122.68647026413778 | $undefined |
+| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 152.34899055448128 | $undefined |
 | grok-1 | Grok-1 | SpaceXAI | $undefined | $undefined |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 77.94154320592664 | $undefined |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | $undefined | $undefined |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 23.823303346379742 | $undefined |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 74.36678977826774 | $undefined |
+| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 42.02517570923421 | $undefined |
+| o3 | o3 | OpenAI | $undefined | $undefined |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 72.99570511009111 | $undefined |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 114.60106482654464 | $undefined |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 235.29223780237163 | $undefined |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 111.20459997494746 | $undefined |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 142.37385793765463 | $undefined |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 71.74279868190159 | $undefined |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 21.185300348400602 | $undefined |
 | gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | $undefined | $undefined |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 112.18298027130554 | $undefined |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 108.92153500361746 | $undefined |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 40.095905638085064 | $undefined |
-| gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 46.8959664463243 | $undefined |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 17.05230017296898 | $undefined |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 13.86655784296604 | $undefined |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 159.77152438535703 | $undefined |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 26.335651357178097 | $undefined |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 83.2157144068992 | $undefined |
-| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 22.863375970225157 | $undefined |
-| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 36.162935031446125 | $undefined |
-| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 54.53798366989249 | $undefined |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 244.73658219760367 | $undefined |
-| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 20.63341131337741 | $undefined |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 34.86826273681194 | $undefined |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 13.631018663205552 | $undefined |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 97.56006719043275 | $undefined |
+| gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 20.36261500791706 | $undefined |
+| gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 36.083385293616494 | $undefined |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 80.09329668130499 | $undefined |
+| gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 52.74139940015179 | $undefined |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 24.63921670370945 | $undefined |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 15.888395135314695 | $undefined |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 11.508240352182936 | $undefined |
+| llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 20.637772448924103 | $undefined |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | $undefined | $undefined |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | $undefined | $undefined |
 | llama-3-2-instruct-11b-vision | Llama 3.2 Instruct 11B (Vision) | Meta | $undefined | $undefined |
@@ -390,32 +390,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | output_tokens |
 | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | 131072 |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 131072 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 131071 |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 131072 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | 131072 |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 128000 |
-| o3 | o3 | OpenAI | 100000 |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 131072 |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 128000 |
 | grok-1 | Grok-1 | SpaceXAI | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 128000 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 128000 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 128000 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 128000 |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 128000 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 128000 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 128000 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 128000 |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 128000 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 128000 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 128000 |
+| o3 | o3 | OpenAI | 100000 |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 128000 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 128000 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 128000 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 128000 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 128000 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 128000 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 128000 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 128000 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 128000 |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 128000 |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 128000 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 128000 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 128000 |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 128000 |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 128000 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 128000 |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 128000 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 128000 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 128000 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 128000 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 128000 |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | — |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | — |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | — |
@@ -427,32 +427,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | performanceDataSource |
 | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | {"type": "median"} |
+| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | {"type": "median"} |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | {"type": "median"} |
 | gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | {"type": "median"} |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | {"type": "median"} |
 | gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| o3 | o3 | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/o3/prov |
-| gpt-oss-20b | gpt-oss-20b (high) | OpenAI | {"type": "median"} |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | grok-1 | Grok-1 | SpaceXAI | {"type": "median"} |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-5 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-3 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| o3 | o3 | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/o3/prov |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-3 |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-6 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | {"type": "firstParty", "providerName": "OpenAI", "providerUrl": "/models/gpt-5-5 |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | {"type": "median"} |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | {"type": "median"} |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | {"type": "median"} |
@@ -464,32 +464,32 @@ _…y 548 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 | slug | name | creator | price_1m_input_tokens | price_1m_output_tokens | price_1m_blended_7_2_1 | cache_hit_price | cache_hit_discount_percent |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | 0.07 | 0.225 | 0.0855 | — | — |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 0.15 | 0.6 | 0.195 | 0.15 | 0.47500000000000003 |
-| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 0.15 | 0.595 | 0.1945 | 0.15 | 0.6333333333333333 |
-| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
-| o3 | o3 | OpenAI | 2 | 8 | 1.55 | 0.5 | 0.75 |
 | gpt-oss-20b | gpt-oss-20b (high) | OpenAI | 0.07 | 0.2 | 0.083 | — | — |
-| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 0.15 | 0.6 | 0.195 | 0.15 | 0.47500000000000003 |
+| gpt-oss-120b-low | gpt-oss-120b (low) | OpenAI | 0.15 | 0.595 | 0.1945 | 0.15 | 0.45000000000000007 |
+| gpt-oss-20b-low | gpt-oss-20b (low) | OpenAI | 0.07 | 0.225 | 0.0855 | — | — |
+| gpt-5-6-sol-xhigh | GPT-5.6 Sol (xhigh) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
 | grok-1 | Grok-1 | SpaceXAI | 0 | 0 | 0 | — | — |
-| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
-| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
-| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
-| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
-| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 1.75 | 14 | 1.8725 | 0.175 | 0.9 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
-| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
-| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
 | gpt-5-6-sol-low | GPT-5.6 Sol (low) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
-| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
-| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
+| o3 | o3 | OpenAI | 2 | 8 | 1.55 | 0.5 | 0.75 |
+| gpt-5-6-sol-medium | GPT-5.6 Sol (medium) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
+| gpt-5-6-sol-high | GPT-5.6 Sol (high) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
-| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
-| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
+| gpt-5-6-terra-high | GPT-5.6 Terra (high) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
+| gpt-5-6-terra-low | GPT-5.6 Terra (low) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
+| gpt-5-3-codex | GPT-5.3 Codex (xhigh) | OpenAI | 1.75 | 14 | 1.8725 | 0.175 | 0.9 |
+| gpt-5-6-terra-medium | GPT-5.6 Terra (medium) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
+| gpt-5-6-luna-non-reasoning | GPT-5.6 Luna (Non-reasoning) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
+| gpt-5-6-terra-xhigh | GPT-5.6 Terra (xhigh) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
 | gpt-5-6-terra-non-reasoning | GPT-5.6 Terra (Non-reasoning) | OpenAI | 2 | 12 | 1.7399999999999998 | 0.2 | 0.9 |
 | gpt-5-6-sol-non-reasoning | GPT-5.6 Sol (Non-reasoning) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
+| gpt-5-6-luna-xhigh | GPT-5.6 Luna (xhigh) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
 | gpt-5-6-luna-high | GPT-5.6 Luna (high) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
+| gpt-5-6-luna-medium | GPT-5.6 Luna (medium) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
+| gpt-5-6-luna-low | GPT-5.6 Luna (low) | OpenAI | 0.2 | 1.2 | 0.174 | 0.02 | 0.9 |
+| gpt-5-5-instant-06-26 | GPT-5.5 Instant (June 2026) | OpenAI | 5 | 30 | 4.35 | 0.5 | 0.9 |
 | llama-3-3-instruct-70b | Llama 3.3 Instruct 70B | Meta | 0.6 | 0.72 | 0.612 | 0.6 | 0.5 |
 | llama-3-1-instruct-405b | Llama 3.1 Instruct 405B | Meta | 2.5 | 10 | 3.25 | — | — |
 | llama-3-2-instruct-90b-vision | Llama 3.2 Instruct 90B (Vision) | Meta | 0 | 0 | 0 | — | — |

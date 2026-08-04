@@ -584,8 +584,8 @@ export const autoModels: Model[] = [
     ],
     "context": 1000000,
     "pricing": {
-      "inputPer1M": 1.4,
-      "outputPer1M": 4.4,
+      "inputPer1M": 1.351,
+      "outputPer1M": 4.29,
       "approx": true
     },
     "modalities": [
@@ -1481,8 +1481,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-2": {
     "pricing": {
-      "inputPer1M": 1.4,
-      "outputPer1M": 4.4,
+      "inputPer1M": 1.351,
+      "outputPer1M": 4.29,
       "approx": true
     },
     "context": 1000000,
@@ -1814,8 +1814,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "inkling": {
     "pricing": {
-      "inputPer1M": 1.87,
-      "outputPer1M": 4.68,
+      "inputPer1M": 1.0,
+      "outputPer1M": 4.05,
       "approx": true
     },
     "context": 1000000,
@@ -2034,8 +2034,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "nvidia-nemotron-3-ultra-550b-a55b": {
     "pricing": {
-      "inputPer1M": 0.675,
-      "outputPer1M": 2.675,
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.75,
       "approx": true
     },
     "context": 262144,
@@ -2095,8 +2095,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "grok-4-20": {
     "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
+      "inputPer1M": 1.25,
+      "outputPer1M": 2.5,
       "approx": true
     },
     "context": 2000000,
@@ -2402,8 +2402,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "hy3-preview": {
     "pricing": {
-      "inputPer1M": 0.0645,
-      "outputPer1M": 0.235,
+      "inputPer1M": 0.063,
+      "outputPer1M": 0.21,
       "approx": true
     },
     "context": 256000,
@@ -2999,8 +2999,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "hy3-non-reasoning": {
     "pricing": {
-      "inputPer1M": 0.0645,
-      "outputPer1M": 0.235,
+      "inputPer1M": 0.063,
+      "outputPer1M": 0.21,
       "approx": true
     },
     "context": 256000,
@@ -3441,8 +3441,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "grok-4-20-non-reasoning": {
     "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
+      "inputPer1M": 1.25,
+      "outputPer1M": 2.5,
       "approx": true
     },
     "context": 2000000,
@@ -3460,7 +3460,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gemma-4-31b-non-reasoning": {
     "pricing": {
-      "inputPer1M": 0.14,
+      "inputPer1M": 0.145,
       "outputPer1M": 0.4,
       "approx": true
     },
@@ -4552,7 +4552,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "llama-4-maverick": {
     "pricing": {
       "inputPer1M": 0.27,
-      "outputPer1M": 0.85,
+      "outputPer1M": 0.91,
       "approx": true
     },
     "context": 1000000,
@@ -5065,8 +5065,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "celeris-1": {
     "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.7,
       "approx": true
     },
     "context": 131072,
@@ -8033,6 +8033,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 3.35,
     "releaseDate": "2026-02-17"
   },
+  "gemma-3n-e2b": {
+    "pricing": {
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
+      "approx": true
+    },
+    "context": 32000,
+    "benchmarks": {
+      "liveCodeBench": 0.1
+    },
+    "parameters": 5.98,
+    "releaseDate": "2025-06-26"
+  },
   "gemma-3-1b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -8046,19 +8059,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 1.0,
     "releaseDate": "2025-03-13"
-  },
-  "gemma-3n-e2b": {
-    "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
-      "approx": true
-    },
-    "context": 32000,
-    "benchmarks": {
-      "liveCodeBench": 0.1
-    },
-    "parameters": 5.98,
-    "releaseDate": "2025-06-26"
   },
   "qwen3-0.6b-instruct": {
     "pricing": {
