@@ -540,7 +540,7 @@ export const autoModels: Model[] = [
     "modalities": [
       "text"
     ],
-    "openWeight": true,
+    "openWeight": false,
     "releaseDate": "2026-07-31",
     "parameters": 284.0,
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Coding Index 69.1). Precios aproximados; verifica en la web oficial del proveedor."
@@ -1231,7 +1231,7 @@ export const autoModels: Model[] = [
       "agentic",
       "budget"
     ],
-    "context": 1000000,
+    "context": 262144,
     "pricing": {
       "inputPer1M": 0.3,
       "outputPer1M": 1.2,
@@ -1856,7 +1856,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "outputPer1M": 1.2,
       "approx": true
     },
-    "context": 1000000,
+    "context": 262144,
     "parameters": 266.0,
     "releaseDate": "2026-07-30"
   },

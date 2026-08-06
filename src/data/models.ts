@@ -34,6 +34,9 @@ const curatedCompanies: Record<string, CompanyMeta> = {
   Baidu: { name: 'Baidu', origin: 'China', accent: '#2932e1', blurb: 'Familia ERNIE. Gran ecosistema en China.' },
   Tencent: { name: 'Tencent', origin: 'China', accent: '#0052d9', blurb: 'Familia Hunyuan. Multimodal e integrado en su nube.' },
   StepFun: { name: 'StepFun', origin: 'China', accent: '#7c3aed', blurb: 'Familia Step. Flash económico y multimodal.' },
+  Poolside: { name: 'Poolside', origin: 'US', accent: '#0ea5e9', blurb: 'Familia Laguna. Modelos especializados en código.' },
+  ThinkingMachines: { name: 'Thinking Machines', origin: 'US', accent: '#14b8a6', blurb: 'Familia Inkling. MoE open-weight multimodales.' },
+  Meituan: { name: 'Meituan', origin: 'China', accent: '#ffc107', blurb: 'Familia LongCat. MoE masivos para coding con contexto largo.' },
   // Herramientas / Agentes
   OpenCode: { name: 'OpenCode', origin: 'Open', accent: '#22c55e', blurb: 'Agente de código open-source para terminal. Agnóstico de modelo.' },
   Cursor: { name: 'Cursor', origin: 'US', accent: '#8b5cf6', blurb: 'IDE AI-native (fork VS Code). El estándar de facto para coding con IA.' },
@@ -108,6 +111,27 @@ resp = client.chat.completions.create(
 )
 print(resp.choices[0].message.content)`;
 
+const pyZhipu = (model: string) => `from zhipuai import ZhipuAI
+
+client = ZhipuAI(api_key="$ZHIPU_API_KEY")
+resp = client.chat.completions.create(
+    model="${model}",
+    messages=[{"role": "user", "content": "Refactoriza este componente React..."}],
+)
+print(resp.choices[0].message.content)`;
+
+const pyMoonshot = (model: string) => `from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://api.moonshot.cn/v1",
+    api_key="$MOONSHOT_API_KEY",
+)
+resp = client.chat.completions.create(
+    model="${model}",
+    messages=[{"role": "user", "content": "Escribe un script para scrapear esta web..."}],
+)
+print(resp.choices[0].message.content)`;
+
 const rawModels: Model[] = [
   // ── Anthropic ──────────────────────────────────────────────────────────
   {
@@ -134,17 +158,21 @@ const rawModels: Model[] = [
     id: 'claude-opus-5',
     company: 'Anthropic', origin: 'US', kind: 'model',
     displayName: 'Claude Opus 5',
+    iiSlug: 'claude-opus-5',
     category: ['coding', 'reasoning', 'agentic'],
     context: 1_000_000,
-    pricing: { inputPer1M: null, outputPer1M: null, currency: 'USD', approx: true, note: 'Precio pendiente de confirmar en la web oficial del proveedor.' },
+    pricing: { inputPer1M: 5, outputPer1M: 25, currency: 'USD' },
     modalities: ['text', 'image'],
+    releaseDate: '2026-07-23',
     apiModelString: 'claude-opus-5',
     playgroundUrl: 'https://console.anthropic.com/workbench',
     docsUrl: 'https://docs.claude.com',
+    examples: [{ lang: 'python', title: 'SDK Python', code: pyAnthropic('claude-opus-5') }],
     videos: [
       { title: 'Claude Opus 5: revisión de coding y razonamiento', url: 'https://www.youtube.com/results?search_query=claude+opus+5+coding+review', source: 'YouTube' },
     ],
-    notes: 'Modelo reciente de Anthropic; aparece en el catálogo como una referencia destacada para coding agéntico y razonamiento profundo. Confirma precio/contexto en la web oficial.',
+    notes: 'Modelo insignia de Anthropic (jul-2026). Líder en intelligence_index (60.7) y coding_index (78.0). Contexto 1M, razonamiento adaptativo y "Fast Mode" a 2× precio para menor latencia.',
+    benchmarks: { sweBenchPro: 79.4 },
   },
   {
     id: 'claude-sonnet-4-6',
@@ -420,7 +448,7 @@ const rawModels: Model[] = [
     videos: [
       { title: 'Grok 3: review completa y benchmark', url: 'https://www.youtube.com/results?search_query=grok+3+xai+coding+review+benchmark', source: 'YouTube' },
     ],
-    notes: 'Modelo potente con API compatible OpenAI. Buen rendimiento en razonamiento y código a precio competitivo.',
+    notes: 'Modelo potente con API compatible OpenAI. Reemplazado por Grok 4.5 como flagship de xAI/SpaceXAI (jul-2026).',
   },
   {
     id: 'grok-3-mini',
@@ -534,10 +562,10 @@ const rawModels: Model[] = [
     company: 'DeepSeek', origin: 'China', kind: 'model',
     displayName: 'DeepSeek V4 Flash',
     category: ['budget', 'fast', 'coding'],
-    context: 128_000,
-    pricing: { inputPer1M: 0.14, outputPer1M: 0.5, currency: 'USD', approx: true },
+    context: 1_048_576,
+    pricing: { inputPer1M: 0.09, outputPer1M: 0.18, currency: 'USD' },
     modalities: ['text'],
-    releaseDate: '2026-04-01',
+    releaseDate: '2026-07-31',
     apiModelString: 'deepseek-v4-flash',
     playgroundUrl: 'https://platform.deepseek.com',
     docsUrl: 'https://api-docs.deepseek.com',
@@ -545,7 +573,7 @@ const rawModels: Model[] = [
     videos: [
       { title: 'DeepSeek V4 Flash: el modelo más barato del mercado', url: 'https://www.youtube.com/results?search_query=deepseek+v4+flash+cheapest+model+coding', source: 'YouTube' },
     ],
-    notes: 'El flagship más barato del mercado: 0,14$/M entrada. Ideal para alto volumen. Salida aproximada.',
+    notes: 'El flagship más barato del mercado: 0,09$/M entrada. Contexto 1M tokens. Coding Index 69.1. MoE 284B (13B activos). Razonamiento incluido.',
   },
   {
     id: 'deepseek-v3',
@@ -570,6 +598,24 @@ const rawModels: Model[] = [
   },
 
   // ── China: Alibaba / Qwen ────────────────────────────────────────────────
+  {
+    id: 'qwen-3-8-max',
+    company: 'Alibaba', origin: 'China', kind: 'model',
+    displayName: 'Qwen 3.8 Max',
+    category: ['coding', 'reasoning', 'multimodal'],
+    context: 1_000_000,
+    pricing: { inputPer1M: 2, outputPer1M: 10, currency: 'USD' },
+    modalities: ['text', 'image'],
+    releaseDate: '2026-08-01',
+    apiModelString: 'qwen-3.8-max',
+    playgroundUrl: 'https://chat.qwen.ai',
+    docsUrl: 'https://www.alibabacloud.com/help/en/model-studio/',
+    examples: [{ lang: 'python', title: 'SDK Python (OpenAI-compatible)', code: pyQwen('qwen-3.8-max') }],
+    videos: [
+      { title: 'Qwen 3.8 Max: líder open-weight en reasoning', url: 'https://www.youtube.com/results?search_query=qwen+3.8+max+coding+reasoning+review+2026', source: 'YouTube' },
+    ],
+    notes: 'Nuevo flagship de Alibaba (agosto 2026). Mejora masiva en razonamiento y contexto largo.',
+  },
   {
     id: 'qwen-3-6-plus',
     company: 'Alibaba', origin: 'China', kind: 'model',
@@ -611,6 +657,25 @@ const rawModels: Model[] = [
   },
 
   // ── China: Zhipu / GLM ───────────────────────────────────────────────────
+  {
+    id: 'glm-5-2',
+    company: 'Zhipu', origin: 'China', kind: 'model',
+    displayName: 'GLM-5.2',
+    category: ['coding', 'agentic', 'reasoning'],
+    context: 1_000_000,
+    pricing: { inputPer1M: 1.5, outputPer1M: 5, currency: 'USD' },
+    modalities: ['text', 'image'],
+    openWeight: true,
+    releaseDate: '2026-07-20',
+    apiModelString: 'glm-5.2',
+    playgroundUrl: 'https://chat.z.ai',
+    docsUrl: 'https://docs.z.ai',
+    examples: [{ lang: 'python', title: 'SDK Python', code: pyZhipu('glm-5.2') }],
+    videos: [
+      { title: 'GLM-5.2: contexto 1M y tool-calling avanzado', url: 'https://www.youtube.com/results?search_query=glm+5.2+zhipu+coding+agentic', source: 'YouTube' },
+    ],
+    notes: 'Actualización importante sobre GLM-5. Soporta contexto de 1M tokens nativo, líder en tool-calling open-weight.',
+  },
   {
     id: 'glm-5',
     company: 'Zhipu', origin: 'China', kind: 'model',
@@ -657,16 +722,20 @@ const rawModels: Model[] = [
     company: 'Moonshot', origin: 'China', kind: 'model',
     displayName: 'Kimi K3',
     category: ['agentic', 'coding', 'reasoning'],
-    context: 262_000,
-    pricing: { inputPer1M: null, outputPer1M: null, currency: 'USD', approx: true, note: 'Precio pendiente de confirmar en la web oficial del proveedor.' },
-    modalities: ['text'],
+    context: 1_048_576,
+    pricing: { inputPer1M: 3, outputPer1M: 15, currency: 'USD' },
+    modalities: ['text', 'image'],
+    releaseDate: '2026-07-15',
     apiModelString: 'kimi-k3',
     playgroundUrl: 'https://platform.moonshot.ai',
     docsUrl: 'https://platform.moonshot.ai/docs',
+    examples: [{ lang: 'python', title: 'SDK Python (OpenAI-compatible)', code: pyMoonshot('kimi-k3') }],
+    parameters: 2800,
+    openWeight: true,
     videos: [
       { title: 'Kimi K3: revisión para coding agéntico', url: 'https://www.youtube.com/results?search_query=kimi+k3+coding+agentic+review', source: 'YouTube' },
     ],
-    notes: 'Versión reciente de la familia Kimi. Se incorpora al catálogo para que sea visible junto a otros modelos de coding agéntico y contexto largo.',
+    notes: 'MoE de 2.8T parámetros, open-weight. Coding Index 76.2, líder en Design Arena (código Elo >1400). Contexto 1M y razonamiento profundo. Sucesor de K2.6.',
   },
   {
     id: 'minimax-m2-5',
