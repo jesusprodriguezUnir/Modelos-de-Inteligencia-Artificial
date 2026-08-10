@@ -218,8 +218,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "glm-5-2": {
     "pricing": {
-      "inputPer1M": 1.351,
-      "outputPer1M": 4.29,
+      "inputPer1M": 1.4,
+      "outputPer1M": 4.4,
       "approx": true
     },
     "context": 1000000,

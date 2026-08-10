@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T08:15:51Z",
+  "fetched_at": "2026-08-10T08:35:03Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1 (deducido)",
   "method": "rsc-html",
@@ -45859,25 +45859,25 @@
         "name": "GLM-5.2 (max)",
         "creator": "Z AI",
         "intelligence_index_cost": {
-          "total_cost": 714.5226932926432,
-          "input_cost": 109.98922232264326,
-          "non_cache_input_cost": 17.088018122,
-          "cache_read_cost": 92.90120420064325,
+          "total_cost": 720.0864340529961,
+          "input_cost": 100.05210485299614,
+          "non_cache_input_cost": 17.707790799999998,
+          "cache_read_cost": 82.34431405299614,
           "cache_write_cost": 0,
-          "reasoning_cost": 572.4406673699999,
-          "answer_cost": 32.092803599999996,
-          "output_cost": 604.5334709699999
+          "reasoning_cost": 587.1186332,
+          "answer_cost": 32.915696000000004,
+          "output_cost": 620.0343292
         },
         "intelligence_index_per_m_output_tokens": 0.37356029660502454,
         "evalCost": {
-          "total": 714.5226932926432,
-          "input": 109.98922232264326,
-          "nonCacheInput": 17.088018122,
-          "cacheRead": 92.90120420064325,
+          "total": 720.0864340529961,
+          "input": 100.05210485299614,
+          "nonCacheInput": 17.707790799999998,
+          "cacheRead": 82.34431405299614,
           "cacheWrite": 0,
-          "output": 604.5334709699999,
-          "reasoning": 572.4406673699999,
-          "answer": 32.092803599999996
+          "output": 620.0343292,
+          "reasoning": 587.1186332,
+          "answer": 32.915696000000004
         },
         "indexCompute": 9986.548144
       },
@@ -50414,21 +50414,21 @@
         "slug": "gpt-oss-20b",
         "name": "gpt-oss-20b (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 158.49723239592808,
+        "intelligenceIndexTimePerTask": 168.94955218065584,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-oss-120b",
         "name": "gpt-oss-120b (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 203.2207117985387,
+        "intelligenceIndexTimePerTask": 199.34638098540648,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-oss-120b-low",
         "name": "gpt-oss-120b (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 11.16729857158376,
+        "intelligenceIndexTimePerTask": 11.120517323086089,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50449,7 +50449,7 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 108.57314694957881,
+        "intelligenceIndexTimePerTask": 103.81753486627467,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50463,98 +50463,98 @@
         "slug": "gpt-5-6-sol-medium",
         "name": "GPT-5.6 Sol (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 73.29945680727836,
+        "intelligenceIndexTimePerTask": 68.85365323315561,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra",
         "name": "GPT-5.6 Terra (max)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 150.4114677675381,
+        "intelligenceIndexTimePerTask": 139.4520251515063,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol",
         "name": "GPT-5.6 Sol (max)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 258.2697546015168,
+        "intelligenceIndexTimePerTask": 245.3093520349403,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna-non-reasoning",
         "name": "GPT-5.6 Luna (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 12.904707793665677,
+        "intelligenceIndexTimePerTask": 12.063774231339412,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-xhigh",
         "name": "GPT-5.6 Sol (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 167.4493559476414,
+        "intelligenceIndexTimePerTask": 156.80188054117716,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-low",
         "name": "GPT-5.6 Terra (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 19.974601482635112,
+        "intelligenceIndexTimePerTask": 17.8339015033333,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-instant-06-26",
         "name": "GPT-5.5 Instant (June 2026)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 15.807822586755124,
+        "intelligenceIndexTimePerTask": 15.620383805864074,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna-high",
         "name": "GPT-5.6 Luna (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 48.01715103359253,
+        "intelligenceIndexTimePerTask": 44.9781074540597,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-xhigh",
         "name": "GPT-5.6 Terra (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 95.37737167563414,
+        "intelligenceIndexTimePerTask": 89.32737391949692,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-non-reasoning",
         "name": "GPT-5.6 Terra (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 20.286654036437305,
+        "intelligenceIndexTimePerTask": 17.874564515618687,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-high",
         "name": "GPT-5.6 Sol (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 124.83000652808002,
+        "intelligenceIndexTimePerTask": 112.01879830358676,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna-xhigh",
         "name": "GPT-5.6 Luna (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 76.50493843363556,
+        "intelligenceIndexTimePerTask": 72.8659720429621,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-high",
         "name": "GPT-5.6 Terra (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 67.90663224275927,
+        "intelligenceIndexTimePerTask": 60.6611977003557,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-non-reasoning",
         "name": "GPT-5.6 Sol (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 40.826482205094194,
+        "intelligenceIndexTimePerTask": 35.89755011006078,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50568,35 +50568,35 @@
         "slug": "gpt-5-6-luna-medium",
         "name": "GPT-5.6 Luna (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 21.247708522459536,
+        "intelligenceIndexTimePerTask": 20.835379802516677,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-terra-medium",
         "name": "GPT-5.6 Terra (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 32.537532088815176,
+        "intelligenceIndexTimePerTask": 31.32184910124966,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-sol-low",
         "name": "GPT-5.6 Sol (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 43.60149074991843,
+        "intelligenceIndexTimePerTask": 40.77862504221816,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-6-luna-low",
         "name": "GPT-5.6 Luna (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 14.819490665547729,
+        "intelligenceIndexTimePerTask": 13.744612390734614,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "llama-3-3-instruct-70b",
         "name": "Llama 3.3 Instruct 70B",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 21.435165284092935,
+        "intelligenceIndexTimePerTask": 20.77661061630314,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50624,14 +50624,14 @@
         "slug": "llama-4-maverick",
         "name": "Llama 4 Maverick",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 18.10843187907107,
+        "intelligenceIndexTimePerTask": 17.66826261046676,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "llama-4-scout",
         "name": "Llama 4 Scout",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 13.464658215179385,
+        "intelligenceIndexTimePerTask": 13.692701540539275,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50645,7 +50645,7 @@
         "slug": "gemma-4-31b",
         "name": "Gemma 4 31B (Reasoning)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 345.9611922276426,
+        "intelligenceIndexTimePerTask": 347.1687326818062,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50659,7 +50659,7 @@
         "slug": "gemma-4-e4b",
         "name": "Gemma 4 E4B (Reasoning)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 111.62241268261502,
+        "intelligenceIndexTimePerTask": 109.09490162644965,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50694,7 +50694,7 @@
         "slug": "gemma-4-12b",
         "name": "Gemma 4 12B (Reasoning)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 256.56512341579827,
+        "intelligenceIndexTimePerTask": 229.48585628645566,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50729,21 +50729,21 @@
         "slug": "gemini-3-5-flash-lite",
         "name": "Gemini 3.5 Flash-Lite",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 35.23997389972957,
+        "intelligenceIndexTimePerTask": 33.76189884122241,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gemini-3-6-flash",
         "name": "Gemini 3.6 Flash (high)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 103.76249331051785,
+        "intelligenceIndexTimePerTask": 106.4350771739119,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gemini-3-1-pro-preview",
         "name": "Gemini 3.1 Pro Preview",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 96.50119303495562,
+        "intelligenceIndexTimePerTask": 94.24609878102503,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50771,63 +50771,63 @@
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 325.76307062083066,
+        "intelligenceIndexTimePerTask": 315.28256956336827,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-4-5-haiku-reasoning",
         "name": "Claude 4.5 Haiku (Reasoning)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 212.55761982304526,
+        "intelligenceIndexTimePerTask": 192.44348345880826,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 448.2822679440946,
+        "intelligenceIndexTimePerTask": 420.98278008196434,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-sonnet-5",
         "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 593.7030929129177,
+        "intelligenceIndexTimePerTask": 490.4414016374408,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-5-low",
         "name": "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 69.63849018192646,
+        "intelligenceIndexTimePerTask": 70.50799942756213,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-5-high",
         "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 228.5539940071568,
+        "intelligenceIndexTimePerTask": 224.21201773640706,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-sonnet-5-non-reasoning",
         "name": "Claude Sonnet 5 (Non-reasoning, High Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 97.121858527599,
+        "intelligenceIndexTimePerTask": 91.31893349369955,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-5-xhigh",
         "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 333.3064366011562,
+        "intelligenceIndexTimePerTask": 331.95717687830023,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-opus-5-medium",
         "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 134.21121957730418,
+        "intelligenceIndexTimePerTask": 131.67790268365366,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50841,63 +50841,63 @@
         "slug": "mistral-medium-3-5",
         "name": "Mistral Medium 3.5",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 192.37702871971777,
+        "intelligenceIndexTimePerTask": 183.98809343427305,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ministral-3-14b",
         "name": "Ministral 3 14B",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 127.82957586261846,
+        "intelligenceIndexTimePerTask": 115.89444429769961,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "magistral-small-2509",
         "name": "Magistral Small 1.2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 75.71356651239789,
+        "intelligenceIndexTimePerTask": 70.53560372948712,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "mistral-small-4",
         "name": "Mistral Small 4 (Reasoning)",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 100.25986613944957,
+        "intelligenceIndexTimePerTask": 99.40313056607336,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "mistral-large-3",
         "name": "Mistral Large 3",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 67.21299611679122,
+        "intelligenceIndexTimePerTask": 66.68723342349749,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ministral-3-3b",
         "name": "Ministral 3 3B",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 96.7519697413201,
+        "intelligenceIndexTimePerTask": 101.18229968750796,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "devstral-small-2",
         "name": "Devstral Small 2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 67.00336708191426,
+        "intelligenceIndexTimePerTask": 49.260664317311885,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "devstral-2",
         "name": "Devstral 2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 120.34000444502234,
+        "intelligenceIndexTimePerTask": 122.35815245726576,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ministral-3-8b",
         "name": "Ministral 3 8B",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 123.15705245652877,
+        "intelligenceIndexTimePerTask": 115.91427155385398,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50911,28 +50911,28 @@
         "slug": "magistral-medium-2509",
         "name": "Magistral Medium 1.2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 83.38552070042276,
+        "intelligenceIndexTimePerTask": 67.5390694886391,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "deepseek-v4-pro",
         "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
         "creator": "DeepSeek",
-        "intelligenceIndexTimePerTask": 392.42079224331724,
+        "intelligenceIndexTimePerTask": 372.0971475830474,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "deepseek-v4-flash",
         "name": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
         "creator": "DeepSeek",
-        "intelligenceIndexTimePerTask": 304.1624865367955,
+        "intelligenceIndexTimePerTask": 266.3954986324972,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "deepseek-v4-pro-high",
         "name": "DeepSeek V4 Pro (Reasoning, High Effort)",
         "creator": "DeepSeek",
-        "intelligenceIndexTimePerTask": 336.17382849392635,
+        "intelligenceIndexTimePerTask": 305.44064406651296,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -50981,14 +50981,14 @@
         "slug": "grok-4-5",
         "name": "Grok 4.5 (high)",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 259.7948580321556,
+        "intelligenceIndexTimePerTask": 244.59590565852912,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "grok-4-3-non-reasoning",
         "name": "Grok 4.3 (Non-reasoning)",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 92.1011608001558,
+        "intelligenceIndexTimePerTask": 80.45649108094081,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51016,7 +51016,7 @@
         "slug": "nova-2-0-pro-reasoning-low",
         "name": "Nova 2.0 Pro Preview (low)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 42.5605594704553,
+        "intelligenceIndexTimePerTask": 40.27336430801307,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51044,21 +51044,21 @@
         "slug": "nova-2-0-lite-reasoning",
         "name": "Nova 2.0 Lite (high)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 296.8549308707275,
+        "intelligenceIndexTimePerTask": 310.9363751279112,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "nova-2-0-pro",
         "name": "Nova 2.0 Pro Preview (Non-reasoning)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 40.55394254253631,
+        "intelligenceIndexTimePerTask": 36.31823138303305,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "nova-2-0-pro-reasoning-medium",
         "name": "Nova 2.0 Pro Preview (medium)",
         "creator": "Amazon",
-        "intelligenceIndexTimePerTask": 101.20257267117832,
+        "intelligenceIndexTimePerTask": 98.74218870021042,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51093,7 +51093,7 @@
         "slug": "phi-4-mini",
         "name": "Phi-4 Mini Instruct",
         "creator": "Microsoft",
-        "intelligenceIndexTimePerTask": 778.2583491060155,
+        "intelligenceIndexTimePerTask": 777.7010047073721,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51163,14 +51163,14 @@
         "slug": "solar-pro-3",
         "name": "Solar Pro 3",
         "creator": "Upstage",
-        "intelligenceIndexTimePerTask": 353.02090015167175,
+        "intelligenceIndexTimePerTask": 355.80862921906987,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
-        "intelligenceIndexTimePerTask": 216.38989719170533,
+        "intelligenceIndexTimePerTask": 228.0185844737115,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51191,7 +51191,7 @@
         "slug": "nvidia-nemotron-3-ultra-550b-a55b",
         "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
         "creator": "NVIDIA",
-        "intelligenceIndexTimePerTask": 141.00727748237145,
+        "intelligenceIndexTimePerTask": 124.9521771642496,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51254,7 +51254,7 @@
         "slug": "nvidia-nemotron-3-super-120b-a12b",
         "name": "Nemotron 3 Super 120B A12B (Reasoning)",
         "creator": "NVIDIA",
-        "intelligenceIndexTimePerTask": 185.3638082044931,
+        "intelligenceIndexTimePerTask": 184.50116725792873,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51275,7 +51275,7 @@
         "slug": "nvidia-nemotron-3-nano-30b-a3b-reasoning",
         "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
         "creator": "NVIDIA",
-        "intelligenceIndexTimePerTask": 115.97897205830033,
+        "intelligenceIndexTimePerTask": 131.54560058458796,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51289,7 +51289,7 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "intelligenceIndexTimePerTask": 576.0373345213583,
+        "intelligenceIndexTimePerTask": 536.2894470682182,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51310,7 +51310,7 @@
         "slug": "kimi-k3-low",
         "name": "Kimi K3 (low)",
         "creator": "Kimi",
-        "intelligenceIndexTimePerTask": 92.57670578818492,
+        "intelligenceIndexTimePerTask": 90.41790687840522,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51436,7 +51436,7 @@
         "slug": "mercury-2",
         "name": "Mercury 2",
         "creator": "Inception",
-        "intelligenceIndexTimePerTask": 37.33890589714264,
+        "intelligenceIndexTimePerTask": 27.101998698034276,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51541,7 +51541,7 @@
         "slug": "mimo-v2-5-pro",
         "name": "MiMo-V2.5-Pro",
         "creator": "Xiaomi",
-        "intelligenceIndexTimePerTask": 255.59650993126792,
+        "intelligenceIndexTimePerTask": 246.28343014180197,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51562,7 +51562,7 @@
         "slug": "mimo-v2-5-0424",
         "name": "MiMo-V2.5",
         "creator": "Xiaomi",
-        "intelligenceIndexTimePerTask": 192.97522383665154,
+        "intelligenceIndexTimePerTask": 180.31252654525818,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51618,21 +51618,21 @@
         "slug": "hypernova-60b",
         "name": "HyperNova 60B 2605",
         "creator": "Multiverse Computing",
-        "intelligenceIndexTimePerTask": 90.6689077265024,
+        "intelligenceIndexTimePerTask": 92.25944326418012,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "hy3",
         "name": "Hy3",
         "creator": "Tencent",
-        "intelligenceIndexTimePerTask": 432.75142472811035,
+        "intelligenceIndexTimePerTask": 426.29757925909723,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "kat-coder-pro-v2",
         "name": "KAT Coder Pro V2",
         "creator": "KwaiKAT",
-        "intelligenceIndexTimePerTask": 60.700126063999264,
+        "intelligenceIndexTimePerTask": 60.077412788391605,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51709,7 +51709,7 @@
         "slug": "longcat-2-0",
         "name": "LongCat 2.0",
         "creator": "LongCat",
-        "intelligenceIndexTimePerTask": 435.59147487317676,
+        "intelligenceIndexTimePerTask": 418.40902618261254,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51765,7 +51765,7 @@
         "slug": "trinity-large-thinking",
         "name": "Trinity Large Thinking",
         "creator": "Arcee AI",
-        "intelligenceIndexTimePerTask": 209.4363548284095,
+        "intelligenceIndexTimePerTask": 207.07360175308327,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51793,21 +51793,21 @@
         "slug": "nex-n2-pro",
         "name": "Nex-N2-Pro",
         "creator": "Nex AGI",
-        "intelligenceIndexTimePerTask": 219.1648752436849,
+        "intelligenceIndexTimePerTask": 216.71577561654053,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "inkling",
         "name": "Inkling (xhigh)",
         "creator": "Thinking Machines",
-        "intelligenceIndexTimePerTask": 347.44322009126074,
+        "intelligenceIndexTimePerTask": 316.6253526223379,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "inkling-small",
         "name": "Inkling Small",
         "creator": "Thinking Machines",
-        "intelligenceIndexTimePerTask": 162.14467280052543,
+        "intelligenceIndexTimePerTask": 164.52208954501606,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51828,7 +51828,7 @@
         "slug": "glm-5-2",
         "name": "GLM-5.2 (max)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 333.62460587411744,
+        "intelligenceIndexTimePerTask": 263.97406649837063,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51842,7 +51842,7 @@
         "slug": "north-mini-code",
         "name": "North Mini Code",
         "creator": "Cohere",
-        "intelligenceIndexTimePerTask": 618.5220325452356,
+        "intelligenceIndexTimePerTask": 614.6569920747881,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51863,7 +51863,7 @@
         "slug": "command-a-plus",
         "name": "Command A+",
         "creator": "Cohere",
-        "intelligenceIndexTimePerTask": 110.81825256100822,
+        "intelligenceIndexTimePerTask": 120.22343982410975,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51898,28 +51898,28 @@
         "slug": "qwen3-5-122b-a10b",
         "name": "Qwen3.5 122B A10B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 118.95537867720536,
+        "intelligenceIndexTimePerTask": 115.27147722280893,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-6-35b-a3b",
         "name": "Qwen3.6 35B A3B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 224.96457370724693,
+        "intelligenceIndexTimePerTask": 202.07118024962307,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-5-397b-a17b",
         "name": "Qwen3.5 397B A17B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 196.25339992006465,
+        "intelligenceIndexTimePerTask": 192.8950321969825,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-next-80b-a3b-reasoning",
         "name": "Qwen3 Next 80B A3B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 102.17276064846874,
+        "intelligenceIndexTimePerTask": 104.61891251216929,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51933,35 +51933,35 @@
         "slug": "qwen3-6-35b-a3b-non-reasoning",
         "name": "Qwen3.6 35B A3B (Non-reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 106.91018800071632,
+        "intelligenceIndexTimePerTask": 94.56152484631659,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-6-27b",
         "name": "Qwen3.6 27B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 452.51471132552473,
+        "intelligenceIndexTimePerTask": 432.6055489106598,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-coder-next",
         "name": "Qwen3 Coder Next",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 102.01478142681597,
+        "intelligenceIndexTimePerTask": 99.88051866686547,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-5-9b",
         "name": "Qwen3.5 9B (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 340.28332488499245,
+        "intelligenceIndexTimePerTask": 326.4986958833019,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "qwen3-6-27b-non-reasoning",
         "name": "Qwen3.6 27B (Non-reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 206.69363586466247,
+        "intelligenceIndexTimePerTask": 195.35617659231468,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51982,7 +51982,7 @@
         "slug": "qwen3-8-max",
         "name": "Qwen3.8 Max",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 329.32881428709175,
+        "intelligenceIndexTimePerTask": 320.241217230688,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -51996,7 +51996,7 @@
         "slug": "qwen3-5-122b-a10b-non-reasoning",
         "name": "Qwen3.5 122B A10B (Non-reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 60.72093573279586,
+        "intelligenceIndexTimePerTask": 59.4888283087997,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52017,7 +52017,7 @@
         "slug": "qwen3-7-plus",
         "name": "Qwen3.7 Plus",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 383.4531163321655,
+        "intelligenceIndexTimePerTask": 383.6259376892027,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52031,7 +52031,7 @@
         "slug": "qwen3-5-35b-a3b-non-reasoning",
         "name": "Qwen3.5 35B A3B (Non-reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 74.6721128423595,
+        "intelligenceIndexTimePerTask": 73.88724886741352,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52080,7 +52080,7 @@
         "slug": "ling-3-0-flash",
         "name": "Ling 3.0 Flash",
         "creator": "InclusionAI",
-        "intelligenceIndexTimePerTask": 80.00961274491569,
+        "intelligenceIndexTimePerTask": 73.0713018977895,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52094,14 +52094,14 @@
         "slug": "ling-3-0-tiny",
         "name": "Ling 3.0 Tiny",
         "creator": "InclusionAI",
-        "intelligenceIndexTimePerTask": 254.29253481545103,
+        "intelligenceIndexTimePerTask": 241.80895594614577,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "ring-2-6-1t",
         "name": "Ring-2.6-1T",
         "creator": "InclusionAI",
-        "intelligenceIndexTimePerTask": 182.92697308740617,
+        "intelligenceIndexTimePerTask": 182.59716982884004,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52115,14 +52115,14 @@
         "slug": "agnes-2-5-pro-alpha",
         "name": "Agnes 2.5 Pro Alpha",
         "creator": "Sapiens AI",
-        "intelligenceIndexTimePerTask": 170.31002846008948,
+        "intelligenceIndexTimePerTask": 170.45405066569862,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "celeris-1",
         "name": "Celeris-1",
         "creator": "Celeris",
-        "intelligenceIndexTimePerTask": 9.582926111638425,
+        "intelligenceIndexTimePerTask": 10.194573123425648,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52199,21 +52199,21 @@
         "slug": "gpt-5-4-mini",
         "name": "GPT-5.4 mini (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 463.44249592711924,
+        "intelligenceIndexTimePerTask": 452.74082992741097,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-4-nano",
         "name": "GPT-5.4 nano (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 485.2044031870686,
+        "intelligenceIndexTimePerTask": 482.44512595000117,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5",
         "name": "GPT-5.5 (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 209.34689956679807,
+        "intelligenceIndexTimePerTask": 179.5772077440482,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52234,35 +52234,35 @@
         "slug": "gpt-5-5-medium",
         "name": "GPT-5.5 (medium)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 75.55712678034175,
+        "intelligenceIndexTimePerTask": 63.32528569547708,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-non-reasoning",
         "name": "GPT-5.5 (Non-reasoning)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 24.207512778081146,
+        "intelligenceIndexTimePerTask": 19.271076872968997,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-4",
         "name": "GPT-5.4 (xhigh)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 245.54575165234436,
+        "intelligenceIndexTimePerTask": 215.81952983101877,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-high",
         "name": "GPT-5.5 (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 138.90626239054603,
+        "intelligenceIndexTimePerTask": 119.56300880904467,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-5-low",
         "name": "GPT-5.5 (low)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 30.78829822338186,
+        "intelligenceIndexTimePerTask": 27.053347645471835,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52290,14 +52290,14 @@
         "slug": "o3-mini-high",
         "name": "o3-mini (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 72.1474226282376,
+        "intelligenceIndexTimePerTask": 69.14938143156621,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gpt-5-mini",
         "name": "GPT-5 mini (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 141.32983959519757,
+        "intelligenceIndexTimePerTask": 125.39798444148855,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52325,7 +52325,7 @@
         "slug": "gpt-5",
         "name": "GPT-5 (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 169.3623823984405,
+        "intelligenceIndexTimePerTask": 152.98980157851005,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52339,7 +52339,7 @@
         "slug": "gpt-5-1",
         "name": "GPT-5.1 (high)",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 239.9084214144889,
+        "intelligenceIndexTimePerTask": 185.37930952009856,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52388,7 +52388,7 @@
         "slug": "gpt-4-1-nano",
         "name": "GPT-4.1 nano",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 49.311955237941255,
+        "intelligenceIndexTimePerTask": 41.809835322585535,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52430,7 +52430,7 @@
         "slug": "gpt-4-1-mini",
         "name": "GPT-4.1 mini",
         "creator": "OpenAI",
-        "intelligenceIndexTimePerTask": 44.46582411479243,
+        "intelligenceIndexTimePerTask": 44.303958086409864,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52584,7 +52584,7 @@
         "slug": "muse-spark-1-1",
         "name": "Muse Spark 1.1 (xhigh)",
         "creator": "Meta",
-        "intelligenceIndexTimePerTask": 86.8347021255143,
+        "intelligenceIndexTimePerTask": 79.11456169966966,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52808,14 +52808,14 @@
         "slug": "gemini-2-5-pro",
         "name": "Gemini 2.5 Pro",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 83.43582151362175,
+        "intelligenceIndexTimePerTask": 79.26984549820017,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "gemini-3-5-flash",
         "name": "Gemini 3.5 Flash (high)",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 164.14047155644892,
+        "intelligenceIndexTimePerTask": 154.51204984606008,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52864,7 +52864,7 @@
         "slug": "gemini-3-1-flash-lite-preview",
         "name": "Gemini 3.1 Flash-Lite",
         "creator": "Google",
-        "intelligenceIndexTimePerTask": 57.09400226202734,
+        "intelligenceIndexTimePerTask": 58.68794229824054,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52948,14 +52948,14 @@
         "slug": "claude-opus-4-7",
         "name": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 392.03794030144917,
+        "intelligenceIndexTimePerTask": 379.2746056996234,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "claude-4-5-sonnet-thinking",
         "name": "Claude 4.5 Sonnet (Reasoning)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 348.062633144927,
+        "intelligenceIndexTimePerTask": 315.38540572532855,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -52976,7 +52976,7 @@
         "slug": "claude-opus-4-8",
         "name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 474.2314168179039,
+        "intelligenceIndexTimePerTask": 461.8322107484565,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53060,7 +53060,7 @@
         "slug": "claude-sonnet-4-6-adaptive",
         "name": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "intelligenceIndexTimePerTask": 950.1219084960038,
+        "intelligenceIndexTimePerTask": 801.8617947993074,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53151,7 +53151,7 @@
         "slug": "mistral-small-3-1",
         "name": "Mistral Small 3.1",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 34.46631756502027,
+        "intelligenceIndexTimePerTask": 32.96213507442041,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53179,7 +53179,7 @@
         "slug": "mistral-small-3-2",
         "name": "Mistral Small 3.2",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 58.06608976613947,
+        "intelligenceIndexTimePerTask": 53.95295017106833,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53200,7 +53200,7 @@
         "slug": "mistral-medium-3-1",
         "name": "Mistral Medium 3.1",
         "creator": "Mistral",
-        "intelligenceIndexTimePerTask": 56.49379960833034,
+        "intelligenceIndexTimePerTask": 57.94600280122355,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53466,7 +53466,7 @@
         "slug": "grok-build-0-1-06-16",
         "name": "Grok Build 0.1 0616",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 203.90691713115442,
+        "intelligenceIndexTimePerTask": 194.75923875893227,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53494,7 +53494,7 @@
         "slug": "grok-4-3",
         "name": "Grok 4.3 (high)",
         "creator": "SpaceXAI",
-        "intelligenceIndexTimePerTask": 123.88598719931146,
+        "intelligenceIndexTimePerTask": 110.73384665505702,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53669,7 +53669,7 @@
         "slug": "minimax-m2-7",
         "name": "MiniMax-M2.7",
         "creator": "MiniMax",
-        "intelligenceIndexTimePerTask": 289.3231250934109,
+        "intelligenceIndexTimePerTask": 291.6308105600457,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53725,7 +53725,7 @@
         "slug": "kimi-k2-6",
         "name": "Kimi K2.6",
         "creator": "Kimi",
-        "intelligenceIndexTimePerTask": 647.2111568076064,
+        "intelligenceIndexTimePerTask": 650.8577532822467,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53739,7 +53739,7 @@
         "slug": "kimi-k2-5",
         "name": "Kimi K2.5 (Reasoning)",
         "creator": "Kimi",
-        "intelligenceIndexTimePerTask": 198.43568974535603,
+        "intelligenceIndexTimePerTask": 194.11271481530406,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53900,14 +53900,14 @@
         "slug": "glm-4-7",
         "name": "GLM-4.7 (Reasoning)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 210.04216965354922,
+        "intelligenceIndexTimePerTask": 201.6165480252477,
         "evalTimePerTask": "$undefined"
       },
       {
         "slug": "glm-5-1",
         "name": "GLM-5.1 (Reasoning)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 334.5915326514836,
+        "intelligenceIndexTimePerTask": 336.93734256129915,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -53970,7 +53970,7 @@
         "slug": "glm-4-6-reasoning",
         "name": "GLM-4.6 (Reasoning)",
         "creator": "Z AI",
-        "intelligenceIndexTimePerTask": 407.97215319126406,
+        "intelligenceIndexTimePerTask": 369.1081831807551,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -54103,7 +54103,7 @@
         "slug": "qwen3-6-plus",
         "name": "Qwen3.6 Plus",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 385.61060832024623,
+        "intelligenceIndexTimePerTask": 385.55648450916834,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -54166,7 +54166,7 @@
         "slug": "qwen3-235b-a22b-instruct-2507-reasoning",
         "name": "Qwen3 235B A22B 2507 (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 323.51100111573186,
+        "intelligenceIndexTimePerTask": 284.7336139784753,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -54299,7 +54299,7 @@
         "slug": "qwen3-30b-a3b-2507-reasoning",
         "name": "Qwen3 30B A3B 2507 (Reasoning)",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 134.4384214131121,
+        "intelligenceIndexTimePerTask": 120.75283895315945,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -54313,7 +54313,7 @@
         "slug": "qwen3-7-max",
         "name": "Qwen3.7 Max",
         "creator": "Alibaba",
-        "intelligenceIndexTimePerTask": 95.6748221707238,
+        "intelligenceIndexTimePerTask": 95.67676916327622,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -54467,7 +54467,7 @@
         "slug": "ling-2-6-flash",
         "name": "Ling 2.6 Flash",
         "creator": "InclusionAI",
-        "intelligenceIndexTimePerTask": 127.15357406183222,
+        "intelligenceIndexTimePerTask": 119.92903175509383,
         "evalTimePerTask": "$undefined"
       },
       {
@@ -65184,10 +65184,10 @@
         "slug": "glm-5-2",
         "name": "GLM-5.2 (max)",
         "creator": "Z AI",
-        "price_1m_input_tokens": 1.351,
-        "price_1m_output_tokens": 4.29,
-        "price_1m_blended_7_2_1": 0.8602000000000001,
-        "cache_hit_price": 0.23,
+        "price_1m_input_tokens": 1.4,
+        "price_1m_output_tokens": 4.4,
+        "price_1m_blended_7_2_1": 0.8600000000000001,
+        "cache_hit_price": 0.2,
         "cache_hit_discount_percent": 0.8147345612134345
       },
       {
@@ -78419,7 +78419,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 2.3368592081245625,
-        "time_per_task": 448.2822679440946,
+        "time_per_task": 420.98278008196434,
         "output_tokens_per_task": 40249.45888773877
       },
       {
@@ -78545,7 +78545,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 1.8011966745825487,
-        "time_per_task": 333.3064366011562,
+        "time_per_task": 331.95717687830023,
         "output_tokens_per_task": 31184.91849320489
       },
       {
@@ -78671,7 +78671,7 @@
         "price_1m_output": 50,
         "price_1m_blended_7_2_1": 7.7,
         "cost_per_task_total": 3.139584292089737,
-        "time_per_task": 325.76307062083066,
+        "time_per_task": 315.28256956336827,
         "output_tokens_per_task": 35565.27884360447
       },
       {
@@ -78797,7 +78797,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 1.2267615279355861,
-        "time_per_task": 228.5539940071568,
+        "time_per_task": 224.21201773640706,
         "output_tokens_per_task": 21352.828532929227
       },
       {
@@ -78923,7 +78923,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 1.2312110558767355,
-        "time_per_task": 258.2697546015168,
+        "time_per_task": 245.3093520349403,
         "output_tokens_per_task": 16878.794951920758
       },
       {
@@ -79049,7 +79049,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.31,
         "cost_per_task_total": 0.8374574917584584,
-        "time_per_task": 576.0373345213583,
+        "time_per_task": 536.2894470682182,
         "output_tokens_per_task": 25474.338257877254
       },
       {
@@ -79090,7 +79090,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.8071812433530292,
-        "time_per_task": 167.4493559476414,
+        "time_per_task": 156.80188054117716,
         "output_tokens_per_task": 11098.193273419683
       },
       {
@@ -79216,7 +79216,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 0.7242784395479823,
-        "time_per_task": 134.21121957730418,
+        "time_per_task": 131.67790268365366,
         "output_tokens_per_task": 12459.397934231489
       },
       {
@@ -79257,7 +79257,7 @@
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 1.175,
         "cost_per_task_total": 1.1320379078897653,
-        "time_per_task": 329.32881428709175,
+        "time_per_task": 320.241217230688,
         "output_tokens_per_task": 38287.42316084256
       },
       {
@@ -79298,7 +79298,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.5477303914853746,
-        "time_per_task": 124.83000652808002,
+        "time_per_task": 112.01879830358676,
         "output_tokens_per_task": 7545.35135446015
       },
       {
@@ -79424,7 +79424,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 2.0315015630110187,
-        "time_per_task": 474.2314168179039,
+        "time_per_task": 461.8322107484565,
         "output_tokens_per_task": 44687.49081958091
       },
       {
@@ -79591,7 +79591,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.5080188911299259,
-        "time_per_task": 150.4114677675381,
+        "time_per_task": 139.4520251515063,
         "output_tokens_per_task": 20837.51476741585
       },
       {
@@ -79717,7 +79717,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 1.1747069315889214,
-        "time_per_task": 209.34689956679807,
+        "time_per_task": 179.5772077440482,
         "output_tokens_per_task": 16893.35236092457
       },
       {
@@ -79843,7 +79843,7 @@
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 1.21,
         "cost_per_task_total": 0.3600867355990034,
-        "time_per_task": 259.7948580321556,
+        "time_per_task": 244.59590565852912,
         "output_tokens_per_task": 14795.222974492684
       },
       {
@@ -79884,7 +79884,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.3716708124374881,
-        "time_per_task": 73.29945680727836,
+        "time_per_task": 68.85365323315561,
         "output_tokens_per_task": 4758.110680650922
       },
       {
@@ -80010,7 +80010,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.54,
         "cost_per_task_total": 1.717266743264445,
-        "time_per_task": 593.7030929129177,
+        "time_per_task": 490.4414016374408,
         "output_tokens_per_task": 72341.94211086382
       },
       {
@@ -80136,7 +80136,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 2.228527139241646,
-        "time_per_task": 392.03794030144917,
+        "time_per_task": 379.2746056996234,
         "output_tokens_per_task": 33556.999974861385
       },
       {
@@ -80262,7 +80262,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.8033108539821016,
-        "time_per_task": 138.90626239054603,
+        "time_per_task": 119.56300880904467,
         "output_tokens_per_task": 10717.28890594544
       },
       {
@@ -80388,7 +80388,7 @@
         "price_1m_output": 4.25,
         "price_1m_blended_7_2_1": 0.78,
         "cost_per_task_total": 0.2923366107461809,
-        "time_per_task": 86.8347021255143,
+        "time_per_task": 79.11456169966966,
         "output_tokens_per_task": 22395.59956865046
       },
       {
@@ -80429,7 +80429,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.175,
         "cost_per_task_total": 1.103797371493454,
-        "time_per_task": 245.54575165234436,
+        "time_per_task": 215.81952983101877,
         "output_tokens_per_task": 34419.66412779129
       },
       {
@@ -80470,7 +80470,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.30502229139154546,
-        "time_per_task": 95.37737167563414,
+        "time_per_task": 89.32737391949692,
         "output_tokens_per_task": 12106.520579122427
       },
       {
@@ -80592,11 +80592,11 @@
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,
-        "price_1m_input": 1.351,
-        "price_1m_output": 4.29,
-        "price_1m_blended_7_2_1": 0.8602000000000001,
-        "cost_per_task_total": 0.3108122288087876,
-        "time_per_task": 333.62460587411744,
+        "price_1m_input": 1.4,
+        "price_1m_output": 4.4,
+        "price_1m_blended_7_2_1": 0.8600000000000001,
+        "cost_per_task_total": 0.30414851309612173,
+        "time_per_task": 263.97406649837063,
         "output_tokens_per_task": 45684.85462525153
       },
       {
@@ -80722,7 +80722,7 @@
         "price_1m_output": 25,
         "price_1m_blended_7_2_1": 3.85,
         "cost_per_task_total": 0.4251600668384285,
-        "time_per_task": 69.63849018192646,
+        "time_per_task": 70.50799942756213,
         "output_tokens_per_task": 6572.525691126314
       },
       {
@@ -80763,7 +80763,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.174,
         "cost_per_task_total": 0.047127533600050245,
-        "time_per_task": 108.57314694957881,
+        "time_per_task": 103.81753486627467,
         "output_tokens_per_task": 20045.82145684595
       },
       {
@@ -80889,7 +80889,7 @@
         "price_1m_output": 9,
         "price_1m_blended_7_2_1": 1.3050000000000002,
         "cost_per_task_total": 0.6933894858433166,
-        "time_per_task": 164.14047155644892,
+        "time_per_task": 154.51204984606008,
         "output_tokens_per_task": 31224.409191560146
       },
       {
@@ -81015,7 +81015,7 @@
         "price_1m_output": 0.28,
         "price_1m_blended_7_2_1": 0.05796000000000001,
         "cost_per_task_total": 0.02713494901667504,
-        "time_per_task": 304.1624865367955,
+        "time_per_task": 266.3954986324972,
         "output_tokens_per_task": 46351.69814503076
       },
       {
@@ -81141,7 +81141,7 @@
         "price_1m_output": 7.5,
         "price_1m_blended_7_2_1": 1.155,
         "cost_per_task_total": 0.5573241144944094,
-        "time_per_task": 103.76249331051785,
+        "time_per_task": 106.4350771739119,
         "output_tokens_per_task": 25719.02113782727
       },
       {
@@ -81267,7 +81267,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.5001688613249757,
-        "time_per_task": 75.55712678034175,
+        "time_per_task": 63.32528569547708,
         "output_tokens_per_task": 5575.704935267184
       },
       {
@@ -81308,7 +81308,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.2311009469900179,
-        "time_per_task": 43.60149074991843,
+        "time_per_task": 40.77862504221816,
         "output_tokens_per_task": 2834.4776659437875
       },
       {
@@ -81349,7 +81349,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.2182820129982924,
-        "time_per_task": 67.90663224275927,
+        "time_per_task": 60.6611977003557,
         "output_tokens_per_task": 8485.761924904447
       },
       {
@@ -81390,7 +81390,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.174,
         "cost_per_task_total": 0.03163714141003623,
-        "time_per_task": 76.50493843363556,
+        "time_per_task": 72.8659720429621,
         "output_tokens_per_task": 13335.727833587189
       },
       {
@@ -81516,7 +81516,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.31,
         "cost_per_task_total": 1.2181995651943702,
-        "time_per_task": 950.1219084960038,
+        "time_per_task": 801.8617947993074,
         "output_tokens_per_task": 51642.69448146582
       },
       {
@@ -81557,7 +81557,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.31,
         "cost_per_task_total": 0.2419185646571798,
-        "time_per_task": 92.57670578818492,
+        "time_per_task": 90.41790687840522,
         "output_tokens_per_task": 4197.320756477432
       },
       {
@@ -81683,7 +81683,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.3345647504982565,
-        "time_per_task": 96.50119303495562,
+        "time_per_task": 94.24609878102503,
         "output_tokens_per_task": 13689.899469798303
       },
       {
@@ -81724,7 +81724,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.174,
         "cost_per_task_total": 0.021586508695259323,
-        "time_per_task": 48.01715103359253,
+        "time_per_task": 44.9781074540597,
         "output_tokens_per_task": 8727.077062323455
       },
       {
@@ -81765,7 +81765,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.11902405207946289,
-        "time_per_task": 32.537532088815176,
+        "time_per_task": 31.32184910124966,
         "output_tokens_per_task": 4143.371710260795
       },
       {
@@ -81891,7 +81891,7 @@
         "price_1m_output": 7.5,
         "price_1m_blended_7_2_1": 1.6,
         "cost_per_task_total": 0.5413305226923919,
-        "time_per_task": 95.6748221707238,
+        "time_per_task": 95.67676916327622,
         "output_tokens_per_task": 23144.247962784546
       },
       {
@@ -82269,7 +82269,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": 0.13870974901890812,
-        "time_per_task": 216.38989719170533,
+        "time_per_task": 228.0185844737115,
         "output_tokens_per_task": 25266.379017860272
       },
       {
@@ -82395,7 +82395,7 @@
         "price_1m_output": 0.87,
         "price_1m_blended_7_2_1": 0.17652,
         "cost_per_task_total": 0.04740253881573738,
-        "time_per_task": 392.42079224331724,
+        "time_per_task": 372.0971475830474,
         "output_tokens_per_task": 37314.59900673193
       },
       {
@@ -82521,7 +82521,7 @@
         "price_1m_output": 4,
         "price_1m_blended_7_2_1": 0.702,
         "cost_per_task_total": 0.3653205286462706,
-        "time_per_task": 647.2111568076064,
+        "time_per_task": 650.8577532822467,
         "output_tokens_per_task": 38280.589989211345
       },
       {
@@ -82644,7 +82644,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.25886610221753775,
-        "time_per_task": 30.78829822338186,
+        "time_per_task": 27.053347645471835,
         "output_tokens_per_task": 2327.111540490349
       },
       {
@@ -82811,7 +82811,7 @@
         "price_1m_output": 0.87,
         "price_1m_blended_7_2_1": 0.17652,
         "cost_per_task_total": 0.043202295785401766,
-        "time_per_task": 336.17382849392635,
+        "time_per_task": 305.44064406651296,
         "output_tokens_per_task": 27680.62605746366
       },
       {
@@ -83145,7 +83145,7 @@
         "price_1m_output": 0.87,
         "price_1m_blended_7_2_1": 0.17652,
         "cost_per_task_total": 0.03390845289072561,
-        "time_per_task": 255.59650993126792,
+        "time_per_task": 246.28343014180197,
         "output_tokens_per_task": 20978.58759832402
       },
       {
@@ -83186,7 +83186,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.54,
         "cost_per_task_total": 0.4169463665330755,
-        "time_per_task": 97.121858527599,
+        "time_per_task": 91.31893349369955,
         "output_tokens_per_task": 10700.775288090514
       },
       {
@@ -83312,7 +83312,7 @@
         "price_1m_output": 4.05,
         "price_1m_blended_7_2_1": 0.724,
         "cost_per_task_total": 0.3388848141344296,
-        "time_per_task": 347.44322009126074,
+        "time_per_task": 316.6253526223379,
         "output_tokens_per_task": 25908.82332927204
       },
       {
@@ -83353,7 +83353,7 @@
         "price_1m_output": 0.5568,
         "price_1m_blended_7_2_1": 0.10668,
         "cost_per_task_total": 0.03582877254133875,
-        "time_per_task": 432.75142472811035,
+        "time_per_task": 426.29757925909723,
         "output_tokens_per_task": 31451.351353215527
       },
       {
@@ -83520,7 +83520,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.23655299915860634,
-        "time_per_task": 40.826482205094194,
+        "time_per_task": 35.89755011006078,
         "output_tokens_per_task": 2304.3155750681067
       },
       {
@@ -83602,7 +83602,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.525,
         "cost_per_task_total": null,
-        "time_per_task": 219.1648752436849,
+        "time_per_task": 216.71577561654053,
         "output_tokens_per_task": 31781.574046442052
       },
       {
@@ -83684,7 +83684,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.09394666975942793,
-        "time_per_task": 19.974601482635112,
+        "time_per_task": 17.8339015033333,
         "output_tokens_per_task": 2504.2084076539186
       },
       {
@@ -83851,7 +83851,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": 0.07353375676315574,
-        "time_per_task": 162.14467280052543,
+        "time_per_task": 164.52208954501606,
         "output_tokens_per_task": 24684.856695028313
       },
       {
@@ -84018,7 +84018,7 @@
         "price_1m_output": 4.4,
         "price_1m_blended_7_2_1": 0.898,
         "cost_per_task_total": 0.27461980720806817,
-        "time_per_task": 334.5915326514836,
+        "time_per_task": 336.93734256129915,
         "output_tokens_per_task": 27069.61960698275
       },
       {
@@ -84144,7 +84144,7 @@
         "price_1m_output": 4.5,
         "price_1m_blended_7_2_1": 0.6525000000000001,
         "cost_per_task_total": 0.49475962823531655,
-        "time_per_task": 463.44249592711924,
+        "time_per_task": 452.74082992741097,
         "output_tokens_per_task": 79937.76453288681
       },
       {
@@ -84185,7 +84185,7 @@
         "price_1m_output": 2,
         "price_1m_blended_7_2_1": 0.54,
         "cost_per_task_total": 0.2251704451024012,
-        "time_per_task": 203.90691713115442,
+        "time_per_task": 194.75923875893227,
         "output_tokens_per_task": 35743.66538118042
       },
       {
@@ -84308,7 +84308,7 @@
         "price_1m_output": 3,
         "price_1m_blended_7_2_1": 0.43499999999999994,
         "cost_per_task_total": 0.3568972800744663,
-        "time_per_task": 385.61060832024623,
+        "time_per_task": 385.55648450916834,
         "output_tokens_per_task": 22729.464902287058
       },
       {
@@ -84431,7 +84431,7 @@
         "price_1m_output": 1.25,
         "price_1m_blended_7_2_1": 0.179,
         "cost_per_task_total": 0.14926530473721847,
-        "time_per_task": 485.2044031870686,
+        "time_per_task": 482.44512595000117,
         "output_tokens_per_task": 74806.11759771607
       },
       {
@@ -84472,7 +84472,7 @@
         "price_1m_output": 0.9,
         "price_1m_blended_7_2_1": 0.18266,
         "cost_per_task_total": null,
-        "time_per_task": 170.31002846008948,
+        "time_per_task": 170.45405066569862,
         "output_tokens_per_task": 23814.669059360655
       },
       {
@@ -84513,7 +84513,7 @@
         "price_1m_output": 1.6,
         "price_1m_blended_7_2_1": 0.268,
         "cost_per_task_total": 0.2424146847014958,
-        "time_per_task": 383.4531163321655,
+        "time_per_task": 383.6259376892027,
         "output_tokens_per_task": 22600.68652639338
       },
       {
@@ -84677,7 +84677,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.174,
         "cost_per_task_total": 0.011269349861463487,
-        "time_per_task": 21.247708522459536,
+        "time_per_task": 20.835379802516677,
         "output_tokens_per_task": 3940.1152296038617
       },
       {
@@ -84718,7 +84718,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": 0.07772914284734003,
-        "time_per_task": 289.3231250934109,
+        "time_per_task": 291.6308105600457,
         "output_tokens_per_task": 19056.38194006749
       },
       {
@@ -84926,7 +84926,7 @@
         "price_1m_output": 2.75,
         "price_1m_blended_7_2_1": 0.5349999999999999,
         "cost_per_task_total": 0.38266237297499145,
-        "time_per_task": 141.00727748237145,
+        "time_per_task": 124.9521771642496,
         "output_tokens_per_task": 23667.783698945655
       },
       {
@@ -84967,7 +84967,7 @@
         "price_1m_output": 0.28,
         "price_1m_blended_7_2_1": 0.05796000000000001,
         "cost_per_task_total": 0.010359306953646182,
-        "time_per_task": 192.97522383665154,
+        "time_per_task": 180.31252654525818,
         "output_tokens_per_task": 17577.59886775868
       },
       {
@@ -85134,7 +85134,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.64,
         "cost_per_task_total": 0.14540460679814457,
-        "time_per_task": 123.88598719931146,
+        "time_per_task": 110.73384665505702,
         "output_tokens_per_task": 14658.385622865731
       },
       {
@@ -85175,7 +85175,7 @@
         "price_1m_output": 0.22,
         "price_1m_blended_7_2_1": 0.0475,
         "cost_per_task_total": 0.03756588250201917,
-        "time_per_task": 80.00961274491569,
+        "time_per_task": 73.0713018977895,
         "output_tokens_per_task": 35773.774649065934
       },
       {
@@ -85301,7 +85301,7 @@
         "price_1m_output": 3.6,
         "price_1m_blended_7_2_1": 0.9,
         "cost_per_task_total": 0.2918118565938443,
-        "time_per_task": 452.51471132552473,
+        "time_per_task": 432.6055489106598,
         "output_tokens_per_task": 29346.782159834896
       },
       {
@@ -85342,7 +85342,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.3375,
         "cost_per_task_total": 0.3040344476114555,
-        "time_per_task": 239.9084214144889,
+        "time_per_task": 185.37930952009856,
         "output_tokens_per_task": 23592.094077182832
       },
       {
@@ -85468,7 +85468,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.331,
         "cost_per_task_total": 0.09652503867210623,
-        "time_per_task": 35.23997389972957,
+        "time_per_task": 33.76189884122241,
         "output_tokens_per_task": 13789.62537635852
       },
       {
@@ -85550,7 +85550,7 @@
         "price_1m_output": 15,
         "price_1m_blended_7_2_1": 2.31,
         "cost_per_task_total": 0.4643396345842265,
-        "time_per_task": 348.062633144927,
+        "time_per_task": 315.38540572532855,
         "output_tokens_per_task": 16504.702752666217
       },
       {
@@ -85837,7 +85837,7 @@
         "price_1m_output": 3,
         "price_1m_blended_7_2_1": 0.49000000000000005,
         "cost_per_task_total": 0.09638405919581741,
-        "time_per_task": 198.43568974535603,
+        "time_per_task": 194.11271481530406,
         "output_tokens_per_task": 14364.91022092557
       },
       {
@@ -85960,7 +85960,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.20831543994088222,
-        "time_per_task": 24.207512778081146,
+        "time_per_task": 19.271076872968997,
         "output_tokens_per_task": 1737.1996720167056
       },
       {
@@ -86165,7 +86165,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.3375,
         "cost_per_task_total": 0.2571588117812766,
-        "time_per_task": 169.3623823984405,
+        "time_per_task": 152.98980157851005,
         "output_tokens_per_task": 17302.088134022146
       },
       {
@@ -86288,7 +86288,7 @@
         "price_1m_output": 12,
         "price_1m_blended_7_2_1": 1.7399999999999998,
         "cost_per_task_total": 0.10253908741173154,
-        "time_per_task": 20.286654036437305,
+        "time_per_task": 17.874564515618687,
         "output_tokens_per_task": 2354.2082360336353
       },
       {
@@ -86493,7 +86493,7 @@
         "price_1m_output": 2.2,
         "price_1m_blended_7_2_1": 0.76,
         "cost_per_task_total": 0.35855330354652254,
-        "time_per_task": 210.04216965354922,
+        "time_per_task": 201.6165480252477,
         "output_tokens_per_task": 24435.26401384474
       },
       {
@@ -86701,7 +86701,7 @@
         "price_1m_output": 3.6,
         "price_1m_blended_7_2_1": 0.9,
         "cost_per_task_total": 0.3574183787147242,
-        "time_per_task": 196.25339992006465,
+        "time_per_task": 192.8950321969825,
         "output_tokens_per_task": 17441.525468032472
       },
       {
@@ -86824,7 +86824,7 @@
         "price_1m_output": 2.95,
         "price_1m_blended_7_2_1": 0.45549999999999996,
         "cost_per_task_total": 0.12197011689885887,
-        "time_per_task": 435.59147487317676,
+        "time_per_task": 418.40902618261254,
         "output_tokens_per_task": 21601.08959081621
       },
       {
@@ -86865,7 +86865,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.22199999999999998,
         "cost_per_task_total": null,
-        "time_per_task": 60.700126063999264,
+        "time_per_task": 60.077412788391605,
         "output_tokens_per_task": 6805.732658779988
       },
       {
@@ -86947,7 +86947,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.174,
         "cost_per_task_total": 0.008794987674524354,
-        "time_per_task": 14.819490665547729,
+        "time_per_task": 13.744612390734614,
         "output_tokens_per_task": 2478.093487394024
       },
       {
@@ -87111,7 +87111,7 @@
         "price_1m_output": 3.2,
         "price_1m_blended_7_2_1": 0.68,
         "cost_per_task_total": 0.2527348611871819,
-        "time_per_task": 118.95537867720536,
+        "time_per_task": 115.27147722280893,
         "output_tokens_per_task": 17324.88791630626
       },
       {
@@ -87275,7 +87275,7 @@
         "price_1m_output": 1.485,
         "price_1m_blended_7_2_1": 0.37170000000000003,
         "cost_per_task_total": 0.19458317637034483,
-        "time_per_task": 224.96457370724693,
+        "time_per_task": 202.07118024962307,
         "output_tokens_per_task": 30591.019674012037
       },
       {
@@ -87685,7 +87685,7 @@
         "price_1m_output": 3.6,
         "price_1m_blended_7_2_1": 0.9,
         "cost_per_task_total": 0.39821128146513035,
-        "time_per_task": 206.69363586466247,
+        "time_per_task": 195.35617659231468,
         "output_tokens_per_task": 12407.454126695491
       },
       {
@@ -87767,7 +87767,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.52,
         "cost_per_task_total": 0.36541662609876285,
-        "time_per_task": 182.92697308740617,
+        "time_per_task": 182.59716982884004,
         "output_tokens_per_task": 28101.503478533043
       },
       {
@@ -88098,7 +88098,7 @@
         "price_1m_output": 7.5,
         "price_1m_blended_7_2_1": 1.155,
         "cost_per_task_total": 0.46373844110033047,
-        "time_per_task": 192.37702871971777,
+        "time_per_task": 183.98809343427305,
         "output_tokens_per_task": 25944.689159974412
       },
       {
@@ -88388,7 +88388,7 @@
         "price_1m_output": 5,
         "price_1m_blended_7_2_1": 0.77,
         "cost_per_task_total": 0.21744836065145692,
-        "time_per_task": 212.55761982304526,
+        "time_per_task": 192.44348345880826,
         "output_tokens_per_task": 23760.20580250614
       },
       {
@@ -88555,7 +88555,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 345.9611922276426,
+        "time_per_task": 347.1687326818062,
         "output_tokens_per_task": 12567.130713383525
       },
       {
@@ -88596,7 +88596,7 @@
         "price_1m_output": 2.2,
         "price_1m_blended_7_2_1": 0.7150000000000001,
         "cost_per_task_total": 0.3046379957719733,
-        "time_per_task": 407.97215319126406,
+        "time_per_task": 369.1081831807551,
         "output_tokens_per_task": 18941.88969115424
       },
       {
@@ -88678,7 +88678,7 @@
         "price_1m_output": 30,
         "price_1m_blended_7_2_1": 4.35,
         "cost_per_task_total": 0.5364391468291534,
-        "time_per_task": 15.807822586755124,
+        "time_per_task": 15.620383805864074,
         "output_tokens_per_task": 2515.924467493044
       },
       {
@@ -89050,7 +89050,7 @@
         "price_1m_output": 3.2,
         "price_1m_blended_7_2_1": 0.68,
         "cost_per_task_total": 0.19528182624342885,
-        "time_per_task": 60.72093573279586,
+        "time_per_task": 59.4888283087997,
         "output_tokens_per_task": 9515.686999706997
       },
       {
@@ -89255,7 +89255,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.174,
         "cost_per_task_total": 0.011731427324057237,
-        "time_per_task": 12.904707793665677,
+        "time_per_task": 12.063774231339412,
         "output_tokens_per_task": 2238.456537253273
       },
       {
@@ -89747,7 +89747,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.3375,
         "cost_per_task_total": 0.2164358387887161,
-        "time_per_task": 83.43582151362175,
+        "time_per_task": 79.26984549820017,
         "output_tokens_per_task": 12380.572345594956
       },
       {
@@ -89788,7 +89788,7 @@
         "price_1m_output": 2,
         "price_1m_blended_7_2_1": 0.26749999999999996,
         "cost_per_task_total": 0.0359721566725055,
-        "time_per_task": 141.32983959519757,
+        "time_per_task": 125.39798444148855,
         "output_tokens_per_task": 13196.945968644548
       },
       {
@@ -89914,7 +89914,7 @@
         "price_1m_output": 0.8,
         "price_1m_blended_7_2_1": 0.26000000000000006,
         "cost_per_task_total": 0.22856096347482535,
-        "time_per_task": 185.3638082044931,
+        "time_per_task": 184.50116725792873,
         "output_tokens_per_task": 27231.510189536253
       },
       {
@@ -90040,7 +90040,7 @@
         "price_1m_output": 1.5,
         "price_1m_blended_7_2_1": 0.21749999999999997,
         "cost_per_task_total": 0.04324611147116286,
-        "time_per_task": 57.09400226202734,
+        "time_per_task": 58.68794229824054,
         "output_tokens_per_task": 20055.473089194867
       },
       {
@@ -90163,7 +90163,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.64,
         "cost_per_task_total": 0.2947228850735739,
-        "time_per_task": 92.1011608001558,
+        "time_per_task": 80.45649108094081,
         "output_tokens_per_task": 9608.820655258409
       },
       {
@@ -90245,7 +90245,7 @@
         "price_1m_output": 2.25,
         "price_1m_blended_7_2_1": 0.5625,
         "cost_per_task_total": 0.6319295871530172,
-        "time_per_task": 106.91018800071632,
+        "time_per_task": 94.56152484631659,
         "output_tokens_per_task": 18772.063784673028
       },
       {
@@ -90286,7 +90286,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 254.29253481545103,
+        "time_per_task": 241.80895594614577,
         "output_tokens_per_task": 50676.322010425356
       },
       {
@@ -90368,7 +90368,7 @@
         "price_1m_output": 2,
         "price_1m_blended_7_2_1": 0.425,
         "cost_per_task_total": 0.24113745250085764,
-        "time_per_task": 74.6721128423595,
+        "time_per_task": 73.88724886741352,
         "output_tokens_per_task": 13522.692699059115
       },
       {
@@ -90576,7 +90576,7 @@
         "price_1m_output": 0.59,
         "price_1m_blended_7_2_1": 0.15899999999999997,
         "cost_per_task_total": 0.07235653924470202,
-        "time_per_task": 203.2207117985387,
+        "time_per_task": 199.34638098540648,
         "output_tokens_per_task": 36885.37700320829
       },
       {
@@ -91030,7 +91030,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 110.81825256100822,
+        "time_per_task": 120.22343982410975,
         "output_tokens_per_task": 21188.328153138522
       },
       {
@@ -91235,7 +91235,7 @@
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.12000000000000002,
         "cost_per_task_total": 0.07631015155223188,
-        "time_per_task": 256.56512341579827,
+        "time_per_task": 229.48585628645566,
         "output_tokens_per_task": 24830.85368690766
       },
       {
@@ -91358,7 +91358,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 1.4684000000000001,
         "cost_per_task_total": 0.18346641025847,
-        "time_per_task": 101.20257267117832,
+        "time_per_task": 98.74218870021042,
         "output_tokens_per_task": 12043.06337805743
       },
       {
@@ -91440,7 +91440,7 @@
         "price_1m_output": 0.75,
         "price_1m_blended_7_2_1": 0.14250000000000002,
         "cost_per_task_total": 0.07980739221178208,
-        "time_per_task": 37.33890589714264,
+        "time_per_task": 27.101998698034276,
         "output_tokens_per_task": 29060.83512011075
       },
       {
@@ -91481,7 +91481,7 @@
         "price_1m_output": 0.2,
         "price_1m_blended_7_2_1": 0.14150000000000001,
         "cost_per_task_total": 0.24156678283905325,
-        "time_per_task": 340.28332488499245,
+        "time_per_task": 326.4986958833019,
         "output_tokens_per_task": 34258.47158533328
       },
       {
@@ -91686,7 +91686,7 @@
         "price_1m_output": 1.2,
         "price_1m_blended_7_2_1": 0.43499999999999994,
         "cost_per_task_total": 0.3370541823589229,
-        "time_per_task": 102.01478142681597,
+        "time_per_task": 99.88051866686547,
         "output_tokens_per_task": 15926.14603341757
       },
       {
@@ -92263,7 +92263,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 618.5220325452356,
+        "time_per_task": 614.6569920747881,
         "output_tokens_per_task": 16479.537881383018
       },
       {
@@ -92345,7 +92345,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 2.125,
         "cost_per_task_total": 0.22657867511901866,
-        "time_per_task": 42.5605594704553,
+        "time_per_task": 40.27336430801307,
         "output_tokens_per_task": 5158.7569452762855
       },
       {
@@ -92386,7 +92386,7 @@
         "price_1m_output": 8.4,
         "price_1m_blended_7_2_1": 1.47,
         "cost_per_task_total": 0.22142998770661806,
-        "time_per_task": 323.51100111573186,
+        "time_per_task": 284.7336139784753,
         "output_tokens_per_task": 19641.376221764152
       },
       {
@@ -92468,7 +92468,7 @@
         "price_1m_output": 0.6,
         "price_1m_blended_7_2_1": 0.195,
         "cost_per_task_total": 0.10028509623773213,
-        "time_per_task": 100.25986613944957,
+        "time_per_task": 99.40313056607336,
         "output_tokens_per_task": 15634.578398859803
       },
       {
@@ -92632,7 +92632,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 120.34000444502234,
+        "time_per_task": 122.35815245726576,
         "output_tokens_per_task": 6222.274885017499
       },
       {
@@ -92960,7 +92960,7 @@
         "price_1m_output": 0.875,
         "price_1m_blended_7_2_1": 0.24299999999999997,
         "cost_per_task_total": 0.16448501660985854,
-        "time_per_task": 209.4363548284095,
+        "time_per_task": 207.07360175308327,
         "output_tokens_per_task": 40119.315095662416
       },
       {
@@ -93124,7 +93124,7 @@
         "price_1m_output": 2.5,
         "price_1m_blended_7_2_1": 0.52,
         "cost_per_task_total": 0.24149821316277362,
-        "time_per_task": 296.8549308707275,
+        "time_per_task": 310.9363751279112,
         "output_tokens_per_task": 46105.78100193452
       },
       {
@@ -93206,7 +93206,7 @@
         "price_1m_output": 0.14,
         "price_1m_blended_7_2_1": 0.05,
         "cost_per_task_total": 0.024330704339470863,
-        "time_per_task": 90.6689077265024,
+        "time_per_task": 92.25944326418012,
         "output_tokens_per_task": 35097.67630564905
       },
       {
@@ -93329,7 +93329,7 @@
         "price_1m_output": 5,
         "price_1m_blended_7_2_1": 2.3,
         "cost_per_task_total": 0.8917966872009524,
-        "time_per_task": 83.38552070042276,
+        "time_per_task": 67.5390694886391,
         "output_tokens_per_task": 9318.72964288166
       },
       {
@@ -93616,7 +93616,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 67.00336708191426,
+        "time_per_task": 49.260664317311885,
         "output_tokens_per_task": 6535.685698791758
       },
       {
@@ -94070,7 +94070,7 @@
         "price_1m_output": 6,
         "price_1m_blended_7_2_1": 1.05,
         "cost_per_task_total": 0.18869002620901437,
-        "time_per_task": 102.17276064846874,
+        "time_per_task": 104.61891251216929,
         "output_tokens_per_task": 24568.191670012555
       },
       {
@@ -94439,7 +94439,7 @@
         "price_1m_output": 1.5,
         "price_1m_blended_7_2_1": 0.6,
         "cost_per_task_total": 0.08060848587375948,
-        "time_per_task": 67.21299611679122,
+        "time_per_task": 66.68723342349749,
         "output_tokens_per_task": 3365.703472982158
       },
       {
@@ -94521,7 +94521,7 @@
         "price_1m_output": 4.4,
         "price_1m_blended_7_2_1": 1.0450000000000002,
         "cost_per_task_total": null,
-        "time_per_task": 72.1474226282376,
+        "time_per_task": 69.14938143156621,
         "output_tokens_per_task": 16406.270590919296
       },
       {
@@ -94811,7 +94811,7 @@
         "price_1m_output": 0.19,
         "price_1m_blended_7_2_1": 0.073,
         "cost_per_task_total": 0.02498068399823657,
-        "time_per_task": 158.49723239592808,
+        "time_per_task": 168.94955218065584,
         "output_tokens_per_task": 24065.764560570406
       },
       {
@@ -94975,7 +94975,7 @@
         "price_1m_output": 0.5449999999999999,
         "price_1m_blended_7_2_1": 0.1895,
         "cost_per_task_total": 0.02006045989208148,
-        "time_per_task": 11.16729857158376,
+        "time_per_task": 11.120517323086089,
         "output_tokens_per_task": 2761.713256532797
       },
       {
@@ -95016,7 +95016,7 @@
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.12000000000000002,
         "cost_per_task_total": 0.04431742828316981,
-        "time_per_task": 34.46631756502027,
+        "time_per_task": 32.96213507442041,
         "output_tokens_per_task": 5038.358490518512
       },
       {
@@ -95057,7 +95057,7 @@
         "price_1m_output": 1.6,
         "price_1m_blended_7_2_1": 0.31,
         "cost_per_task_total": 0.06377356770974578,
-        "time_per_task": 44.46582411479243,
+        "time_per_task": 44.303958086409864,
         "output_tokens_per_task": 3124.064850898465
       },
       {
@@ -95098,7 +95098,7 @@
         "price_1m_output": 2,
         "price_1m_blended_7_2_1": 0.56,
         "cost_per_task_total": 0.16648638466689472,
-        "time_per_task": 56.49379960833034,
+        "time_per_task": 57.94600280122355,
         "output_tokens_per_task": 5289.287374279972
       },
       {
@@ -95139,7 +95139,7 @@
         "price_1m_output": 2.4,
         "price_1m_blended_7_2_1": 0.42000000000000004,
         "cost_per_task_total": 0.07865134202745959,
-        "time_per_task": 134.4384214131121,
+        "time_per_task": 120.75283895315945,
         "output_tokens_per_task": 21425.095628029565
       },
       {
@@ -95180,7 +95180,7 @@
         "price_1m_output": 0.2,
         "price_1m_blended_7_2_1": 0.06500000000000002,
         "cost_per_task_total": 0.024889427328985605,
-        "time_per_task": 115.97897205830033,
+        "time_per_task": 131.54560058458796,
         "output_tokens_per_task": 31368.560705465385
       },
       {
@@ -95306,7 +95306,7 @@
         "price_1m_output": 0.6,
         "price_1m_blended_7_2_1": 0.10049999999999999,
         "cost_per_task_total": 0.14574779093524276,
-        "time_per_task": 353.02090015167175,
+        "time_per_task": 355.80862921906987,
         "output_tokens_per_task": 51843.50376906038
       },
       {
@@ -95432,7 +95432,7 @@
         "price_1m_output": 0.85,
         "price_1m_blended_7_2_1": 0.314,
         "cost_per_task_total": 0.03571225576796443,
-        "time_per_task": 18.10843187907107,
+        "time_per_task": 17.66826261046676,
         "output_tokens_per_task": 2332.45711570193
       },
       {
@@ -95514,7 +95514,7 @@
         "price_1m_output": 10,
         "price_1m_blended_7_2_1": 2.125,
         "cost_per_task_total": 0.25922913387001884,
-        "time_per_task": 40.55394254253631,
+        "time_per_task": 36.31823138303305,
         "output_tokens_per_task": 3843.0786102704965
       },
       {
@@ -95760,7 +95760,7 @@
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.064,
         "cost_per_task_total": null,
-        "time_per_task": 127.15357406183222,
+        "time_per_task": 119.92903175509383,
         "output_tokens_per_task": 13707.244302374153
       },
       {
@@ -96498,7 +96498,7 @@
         "price_1m_output": 0.7,
         "price_1m_blended_7_2_1": 0.25,
         "cost_per_task_total": 0.2581747847563107,
-        "time_per_task": 9.582926111638425,
+        "time_per_task": 10.194573123425648,
         "output_tokens_per_task": 18440.87564385811
       },
       {
@@ -96785,7 +96785,7 @@
         "price_1m_output": 0.1,
         "price_1m_blended_7_2_1": 0.028000000000000004,
         "cost_per_task_total": 0.014907261791550967,
-        "time_per_task": 111.62241268261502,
+        "time_per_task": 109.09490162644965,
         "output_tokens_per_task": 8330.383029474177
       },
       {
@@ -97441,7 +97441,7 @@
         "price_1m_output": 1.5,
         "price_1m_blended_7_2_1": 0.6,
         "cost_per_task_total": 0.29501826486216093,
-        "time_per_task": 75.71356651239789,
+        "time_per_task": 70.53560372948712,
         "output_tokens_per_task": 10626.731131821147
       },
       {
@@ -97564,7 +97564,7 @@
         "price_1m_output": 0.2,
         "price_1m_blended_7_2_1": 0.20000000000000004,
         "cost_per_task_total": 0.158416847618502,
-        "time_per_task": 127.82957586261846,
+        "time_per_task": 115.89444429769961,
         "output_tokens_per_task": 11861.261915267532
       },
       {
@@ -97851,7 +97851,7 @@
         "price_1m_output": 0.3,
         "price_1m_blended_7_2_1": 0.12000000000000002,
         "cost_per_task_total": 0.14034071064871564,
-        "time_per_task": 58.06608976613947,
+        "time_per_task": 53.95295017106833,
         "output_tokens_per_task": 8731.319879577284
       },
       {
@@ -98179,7 +98179,7 @@
         "price_1m_output": 0.66,
         "price_1m_blended_7_2_1": 0.22800000000000004,
         "cost_per_task_total": 0.010572033777914776,
-        "time_per_task": 13.464658215179385,
+        "time_per_task": 13.692701540539275,
         "output_tokens_per_task": 1311.8271308118428
       },
       {
@@ -98630,7 +98630,7 @@
         "price_1m_output": 0.4,
         "price_1m_blended_7_2_1": 0.0775,
         "cost_per_task_total": 0.034921991054275854,
-        "time_per_task": 49.311955237941255,
+        "time_per_task": 41.809835322585535,
         "output_tokens_per_task": 7226.959601098868
       },
       {
@@ -98917,7 +98917,7 @@
         "price_1m_output": 0.72,
         "price_1m_blended_7_2_1": 0.6615,
         "cost_per_task_total": 0.0983830506273672,
-        "time_per_task": 21.435165284092935,
+        "time_per_task": 20.77661061630314,
         "output_tokens_per_task": 1779.2018630201405
       },
       {
@@ -99204,7 +99204,7 @@
         "price_1m_output": 0.15,
         "price_1m_blended_7_2_1": 0.15,
         "cost_per_task_total": 0.1845786443050869,
-        "time_per_task": 123.15705245652877,
+        "time_per_task": 115.91427155385398,
         "output_tokens_per_task": 15657.150934282341
       },
       {
@@ -101172,7 +101172,7 @@
         "price_1m_output": 0.1,
         "price_1m_blended_7_2_1": 0.10000000000000002,
         "cost_per_task_total": 0.1296786899668952,
-        "time_per_task": 96.7519697413201,
+        "time_per_task": 101.18229968750796,
         "output_tokens_per_task": 21731.017243842474
       },
       {
@@ -101992,7 +101992,7 @@
         "price_1m_output": 0,
         "price_1m_blended_7_2_1": 0,
         "cost_per_task_total": 0,
-        "time_per_task": 778.2583491060155,
+        "time_per_task": 777.7010047073721,
         "output_tokens_per_task": 34549.35779448631
       },
       {
