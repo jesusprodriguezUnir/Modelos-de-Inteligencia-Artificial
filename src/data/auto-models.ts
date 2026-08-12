@@ -1053,8 +1053,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "muse-glimmer": {
     "pricing": {
-      "inputPer1M": 0.0,
-      "outputPer1M": 0.0,
+      "inputPer1M": 0.325,
+      "outputPer1M": 1.35,
       "approx": true
     },
     "context": 256000,
@@ -1986,6 +1986,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "context": 262144,
+    "parameters": 7.9,
     "releaseDate": "2026-08-06"
   },
   "qwen3-max": {
@@ -2085,6 +2086,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "humanEval": 1.0
     },
     "releaseDate": "2024-12-05"
+  },
+  "nemotron-3-5-lightning": {
+    "pricing": {
+      "inputPer1M": 0.05,
+      "outputPer1M": 0.2,
+      "approx": true
+    },
+    "context": 1000000,
+    "parameters": 31.6,
+    "releaseDate": "2026-08-11"
   },
   "gemini-2-5-pro-03-25": {
     "pricing": {
@@ -5572,8 +5583,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "jamba-1-7-large": {
     "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 8.0,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 256000,
@@ -5679,8 +5690,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "jamba-1-6-large": {
     "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 8.0,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 256000,
@@ -5730,8 +5741,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "claude-3-sonnet": {
     "pricing": {
-      "inputPer1M": 3.0,
-      "outputPer1M": 15.0,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 200000,
@@ -6461,8 +6472,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "jamba-1-6-mini": {
     "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.4,
+      "inputPer1M": 0.0,
+      "outputPer1M": 0.0,
       "approx": true
     },
     "context": 256000,
@@ -6745,6 +6756,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 1.0,
     "releaseDate": "2024-09-25"
   },
+  "gemma-3n-e4b": {
+    "pricing": {
+      "inputPer1M": 0.06,
+      "outputPer1M": 0.12,
+      "approx": true
+    },
+    "context": 32000,
+    "benchmarks": {
+      "liveCodeBench": 0.1
+    },
+    "parameters": 8.39,
+    "releaseDate": "2025-06-26"
+  },
   "gemma-3n-e2b": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -6785,19 +6809,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 4.3,
     "releaseDate": "2025-03-12"
-  },
-  "gemma-3n-e4b": {
-    "pricing": {
-      "inputPer1M": 0.06,
-      "outputPer1M": 0.12,
-      "approx": true
-    },
-    "context": 32000,
-    "benchmarks": {
-      "liveCodeBench": 0.1
-    },
-    "parameters": 8.39,
-    "releaseDate": "2025-06-26"
   },
   "lfm2-1-2b": {
     "pricing": {
