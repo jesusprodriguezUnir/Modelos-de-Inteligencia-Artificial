@@ -1,5 +1,8 @@
 /node_modules
 /package-lock.json
+/.next/
+/out/
+/next-env.d.ts
 
 # Skill update-intelligence-index: payloads crudos diarios (auditoría local).
 # Se suben como artifact efímero del GitHub Action en su lugar.

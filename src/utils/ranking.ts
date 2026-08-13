@@ -1,4 +1,4 @@
-﻿export type ModelSortMode = 'relevance' | 'value' | 'context' | 'benchmark';
+﻿export type ModelSortMode = 'relevance' | 'value' | 'context' | 'benchmark' | 'price' | 'recency';
 
 export function getRecencyBonus(releaseDate?: string | null): number {
   if (!releaseDate) return 0;
@@ -48,6 +48,18 @@ export function getHighlightBadge(popularity?: number, sweBenchPro?: number, rel
 export function sortModelsByMode<T extends { highlightBadge?: string | null; popularity?: number | null; releaseDate?: string | null; context?: number | null; swe?: number | null; valueScore?: number | null; inputPrice?: number | null; pricing?: { inputPer1M?: number | null } | null }>(models: T[], mode: ModelSortMode = 'relevance'): T[] {
   const normalized = [...models];
   normalized.sort((a, b) => {
+    if (mode === 'price') {
+      const priceA = getInputPriceValue(a);
+      const priceB = getInputPriceValue(b);
+      const rankedA = priceA == null ? Number.POSITIVE_INFINITY : priceA;
+      const rankedB = priceB == null ? Number.POSITIVE_INFINITY : priceB;
+      if (rankedA !== rankedB) return rankedA - rankedB;
+    }
+    if (mode === 'recency') {
+      const dateA = a.releaseDate ? new Date(a.releaseDate).getTime() : 0;
+      const dateB = b.releaseDate ? new Date(b.releaseDate).getTime() : 0;
+      if (dateA !== dateB) return dateB - dateA;
+    }
     if (mode === 'value') {
       const valueA = a.valueScore ?? getValueScore(a.popularity ?? 0, a.swe ?? 0, a.context ?? 0, getInputPriceValue(a));
       const valueB = b.valueScore ?? getValueScore(b.popularity ?? 0, b.swe ?? 0, b.context ?? 0, getInputPriceValue(b));

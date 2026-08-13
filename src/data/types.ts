@@ -46,6 +46,34 @@ export interface Benchmarks {
   humanEval?: number;
 }
 
+export type BadgeKind =
+  | 'new'
+  | 'open'
+  | 'cheap'
+  | 'context'
+  | 'swe'
+  | 'sponsored'
+  | 'popular'
+  | 'multimodal';
+
+export interface PricingTier {
+  name: string;
+  inputPer1M: number | null;
+  outputPer1M: number | null;
+  note?: string;
+}
+
+export interface AffiliateLink {
+  provider: string;
+  label: string;
+  url: string;
+}
+
+export interface ModelChange {
+  date: string;
+  summary: string;
+}
+
 export interface Model {
   id: string;
   company: string;
@@ -79,6 +107,24 @@ export interface Model {
   iiSlug?: string;
   /** true si el modelo se importó automáticamente del Intelligence Index. */
   autoImported?: boolean;
+  /** Fortalezas curadas. Si faltan, la UI deriva un resumen a partir de specs. */
+  strengths?: string[];
+  /** Debilidades o matices curados. */
+  weaknesses?: string[];
+  /** Casos de uso recomendados. */
+  useCases?: string[];
+  /** Enlaces de afiliado (OpenRouter, consola del proveedor, etc.). */
+  affiliateLinks?: AffiliateLink[];
+  /** Historial breve de cambios de ficha. */
+  changelog?: ModelChange[];
+  /** Última revisión humana de la ficha (ISO). */
+  updatedAt?: string;
+  /** Reserva de slot patrocinado en catálogo / detalle. */
+  sponsored?: boolean;
+  /** VRAM aproximada (GB) para modelos open-weight locales. */
+  vramGB?: number;
+  /** Tiers de precio (cached, batch, etc.) cuando el proveedor los publica. */
+  pricingTiers?: PricingTier[];
 }
 
 export interface CompanyMeta {

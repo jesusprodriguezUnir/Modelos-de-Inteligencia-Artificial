@@ -7,6 +7,8 @@ export interface ModelFilterState {
   maxPrice: string;
   minContext: string;
   benchmark: string;
+  company?: string;
+  weight?: 'all' | 'open' | 'closed';
 }
 
 const DEFAULT_FILTERS: ModelFilterState = {
@@ -42,6 +44,18 @@ export function matchesModelFilters(model: Model, query: string, filters: ModelF
   }
 
   if (filters.cat !== 'all' && !model.category.includes(filters.cat as Model['category'][number])) {
+    return false;
+  }
+
+  if (filters.company && filters.company !== 'all' && model.company !== filters.company) {
+    return false;
+  }
+
+  const weight = filters.weight ?? (filters.openOnly ? 'open' : 'all');
+  if (weight === 'open' && !model.openWeight) {
+    return false;
+  }
+  if (weight === 'closed' && model.openWeight) {
     return false;
   }
 

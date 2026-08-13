@@ -4,7 +4,7 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 ## Qué es esto
 
-Web estática (Astro 4 SSG + TypeScript, **sin backend**) que cataloga modelos de IA para programación, agrupados por empresa, con precios, contexto, ejemplos de código, enlaces a playground/docs y vídeos. El build genera HTML plano en `/dist`, desplegable en cualquier hosting de archivos.
+Web estática (Next.js App Router + Tailwind + TypeScript, **sin backend**) que cataloga modelos de IA para programación, agrupados por empresa, con precios, contexto, ejemplos de código, enlaces a playground/docs y vídeos. El build genera el sitio en `.next` (Vercel) listo para `modelosia.org`.
 
 Idioma del proyecto: **español** (UI, comentarios y datos). Mantén tildes y signos correctos.
 
@@ -12,9 +12,9 @@ Idioma del proyecto: **español** (UI, comentarios y datos). Mantén tildes y si
 
 ```bash
 npm install
-npm run dev      # desarrollo en http://localhost:4321
-npm run build    # genera /dist estático
-npm run preview  # sirve el build
+npm run dev      # desarrollo en http://localhost:3000
+npm run build    # build de producción Next.js
+npm run preview  # sirve el build (next start)
 
 # Actualizar datos del Intelligence Index y refrescar los modelos más recientes en la web (requiere Python 3.12)
 pip install -r requirements-scripts.txt
@@ -23,7 +23,7 @@ python scripts/fetch_intelligence_index.py --dry-run          # no escribe nada
 python scripts/fetch_intelligence_index.py --sections intelligence_index,price_cost
 ```
 
-Tests: `npm test` corre 3 tests de `catalog-utils.test.ts`. Validación real: `npm run build` (Astro hace type-check de los `.astro` y de `src/data/*.ts`).
+Tests: `npm test` corre los tests de `tests/`. Validación real: `npm run build` (Next type-check de App Router y de `src/data/*.ts`).
 
 ## ⚠️ Archivos autogenerados — NO mergear a mano
 
@@ -83,14 +83,14 @@ Dos fuentes de datos que **se fusionan** en tiempo de build (sin fetch en client
 - Los tipos viven en [src/data/intelligence-index-types.ts](src/data/intelligence-index-types.ts); usa `MasterRow`/`master_table` para acceder a métricas por modelo con tipado.
 - Se actualiza solo a diario vía GitHub Action [.github/workflows/update-daily.yml](.github/workflows/update-daily.yml) (08:00 UTC): raspa el Index, luego corre `build_auto_catalog.py` para regenerar `auto-models.ts`, y commitea todo en un único commit del bot.
 
-### Páginas — `src/pages/*.astro`
+### Páginas — `src/app/` (App Router)
 
-Cuatro páginas estáticas que comparten [src/layouts/Layout.astro](src/layouts/Layout.astro) (recibe `active` para marcar la pestaña):
-- `index.astro` — catálogo principal (tarjetas/tabla, buscador, filtros, comparador). La interactividad es JS vanilla inline en la página, operando sobre datos ya renderizados en HTML.
-- `benchmarks.astro` — ranking por benchmarks de coding (lee `m.benchmarks` de los modelos curados).
-- `local.astro`, `tools.astro` — modelos open-weight locales y herramientas/agentes.
+Comparten header/footer vía `SiteFrame`. El catálogo vive en datos de `src/data` y se proyecta a cards en `src/lib/catalog.ts`.
+- `/` — homepage + catálogo (hero, highlights, filtros, cards, comparador).
+- `/modelos/[slug]` — ficha individual (precios, benches, fortalezas, afiliados).
+- `/locales`, `/benchmarks`, `/herramientas`, `/guia`, `/blog`.
 
-`astro.config.mjs` usa `build.format: 'file'` (genera `pagina.html`, no `pagina/index.html`). Para desplegar en subruta (GitHub Pages) hay que descomentar `site`/`base`.
+Dominio canónico: `https://modelosia.org`.
 
 ## Convenciones
 
