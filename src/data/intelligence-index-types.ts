@@ -37,7 +37,7 @@ export interface MasterRow {
   aime?: number | null;
   mmlu_pro?: number | null;
   mmmu_pro?: number | null;
-  briefcase?: number | Record<string, unknown> | null;
+  briefcase?: number | null;
   is_open_weights?: boolean | null;
   context_window_tokens?: number | null;
   parameters?: number | null;
