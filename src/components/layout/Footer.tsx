@@ -59,6 +59,9 @@ export function Footer({ updatedLabel }: { updatedLabel: string }) {
           <span>Hecho para elegir más rápido, no para vender un único modelo.</span>
         </div>
       </div>
+      <div className="text-center p-4 text-xs text-faint mt-auto w-full bg-black/10">
+        <p>Web creada por <a href="https://webdespega.com" target="_blank" rel="noopener noreferrer" className="text-current underline hover:text-head transition-colors">webdespega</a></p>
+      </div>
     </footer>
   );
 }

@@ -6,7 +6,7 @@ export const SITE = {
   description:
     'Compara precios por millón de tokens, ventana de contexto y SWE-bench de los modelos de IA para desarrollo. Catálogo actualizado para programadores.',
   author: 'Jesús P. Rodríguez',
-  authorUrl: 'https://web-personal-sandy.vercel.app/',
+  authorUrl: 'https://www.jesusprodriguez.com/',
   github: 'https://github.com/jesusprodriguezunir',
   linkedin: 'https://www.linkedin.com/in/jes%C3%BAs-pedro-rodr%C3%ADguez-castro-b746394a/',
   version: '3.0.0',

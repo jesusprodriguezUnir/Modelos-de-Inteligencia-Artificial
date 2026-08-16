@@ -44,6 +44,14 @@ export interface Benchmarks {
   liveCodeBench?: number;
   /** % en HumanEval. */
   humanEval?: number;
+  /** % en Terminal-Bench v2.1. */
+  terminalBench?: number;
+  /** % en SciCode. */
+  sciCode?: number;
+  /** Score en Intelligence Index de Artificial Analysis. */
+  intelligenceIndex?: number;
+  /** Elo medio en Design Arena (coding). */
+  designArenaElo?: number;
 }
 
 export type BadgeKind =

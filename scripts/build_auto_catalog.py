@@ -3,10 +3,11 @@
 
 Lee ``data/intelligence-index-master.json`` (generado a diario por
 ``scripts/fetch_intelligence_index.py``; este script NO vuelve a raspar la web)
-y emite ``src/data/auto-models.ts`` con tres exports consumidos por la capa de
+y opcionalmente ``data/multi-source-enrichment.json`` para emitir
+``src/data/auto-models.ts`` con tres exports consumidos por la capa de
 fusión de ``src/data/models.ts``:
 
-  - ``autoModels``    : top N modelos por ``coding_index`` mapeados al tipo Model.
+  - ``autoModels``    : top N modelos por ranking de coding mapeados al tipo Model.
   - ``autoSpecs``     : specs frescas (precio/contexto/benchmarks/…) por slug, de
                         TODO el master, para refrescar los modelos ya curados.
   - ``autoCompanies`` : metadatos de empresas (creators) que aún no existen en el
@@ -37,17 +38,26 @@ CREATOR_TO_COMPANY: dict[str, str] = {
     "Google": "Google",
     "Microsoft": "Microsoft",
     "xAI": "xAI",
+    "SpaceXAI": "xAI",
     "Meta": "Meta",
     "Mistral": "Mistral",
     "DeepSeek": "DeepSeek",
     "Alibaba": "Alibaba",
     "Z AI": "Zhipu",          # Z AI = Zhipu / familia GLM
+    "Zhipu": "Zhipu",
     "Kimi": "Moonshot",       # Kimi = Moonshot AI
+    "Moonshot": "Moonshot",
     "MiniMax": "MiniMax",
     "Xiaomi": "Xiaomi",       # familia MiMo
     "Baidu": "Baidu",         # familia ERNIE
     "Tencent": "Tencent",     # familia Hunyuan
     "StepFun": "StepFun",
+    "ByteDance": "ByteDance",
+    "ByteDance Seed": "ByteDance",
+    "Thinking Machines": "ThinkingMachines",
+    "Poolside": "Poolside",
+    "Meituan": "Meituan",
+    "LongCat": "Meituan",
 }
 
 # Origen (nacionalidad de la empresa) para los creators autogenerados.
@@ -59,7 +69,7 @@ CREATOR_ORIGIN: dict[str, str] = {
     "Prime Intellect": "US", "AI21 Labs": "EU", "Mistral": "EU",
     "Swiss AI Initiative": "EU", "Multiverse Computing": "EU", "TII UAE": "EU",
     "InclusionAI": "China", "KwaiKAT": "China", "China Mobile": "China",
-    "ByteDance Seed": "China", "OpenBMB": "China", "LongCat": "China",
+    "ByteDance Seed": "China", "ByteDance": "China", "OpenBMB": "China", "LongCat": "China",
     "Nanbeige": "China", "Motif Technologies": "China", "Trillion Labs": "China",
     "LG AI Research": "US", "Upstage": "US", "Naver": "US", "Korea Telecom": "US",
     "Sarvam": "US", "MBZUAI Institute of Foundation Models": "EU",
@@ -122,20 +132,62 @@ def derive_categories(row: dict[str, Any]) -> list[str]:
     return cats
 
 
-def build_spec(row: dict[str, Any]) -> dict[str, Any] | None:
+def coding_rank_score(r: dict[str, Any]) -> float:
+    """Calcula un score de coding para ordenar los modelos del master."""
+    if r.get("coding_index") is not None:
+        return float(r["coding_index"])
+    score = 0.0
+    # Terminal-Bench (máxima señal para terminal/código)
+    if r.get("terminalbench_v2_1") is not None:
+        score += float(r["terminalbench_v2_1"]) * 60.0
+    # SciCode (código científico/complejo)
+    if r.get("scicode") is not None:
+        score += float(r["scicode"]) * 40.0
+    # Agentic Index
+    if r.get("agentic_index") is not None:
+        score += float(r["agentic_index"]) * 0.3
+    # Intelligence Index
+    if r.get("intelligence_index") is not None:
+        score += float(r["intelligence_index"]) * 0.5
+    return score
+
+
+def build_spec(row: dict[str, Any], enrichment: dict[str, Any] | None = None) -> dict[str, Any] | None:
     """Specs frescas para refrescar un modelo curado. None si no hay nada útil."""
     spec: dict[str, Any] = {}
     pin, pout = num(row.get("price_1m_input")), num(row.get("price_1m_output"))
+    
+    slug = row.get("slug", "")
+    enr = enrichment.get(slug) if enrichment else None
+    if enr and enr.get("pricing"):
+        epin = enr["pricing"].get("inputPer1M")
+        epout = enr["pricing"].get("outputPer1M")
+        if epin is not None or epout is not None:
+            pin, pout = epin, epout
+
     if pin is not None or pout is not None:
         spec["pricing"] = {"inputPer1M": pin, "outputPer1M": pout, "approx": True}
+    
     ctx = num(row.get("context_window_tokens"))
+    if (ctx is None or ctx == 0) and enr and enr.get("context"):
+        ctx = num(enr["context"])
     if ctx is not None:
         spec["context"] = int(ctx)
+        
     bench: dict[str, float] = {}
     if round1(row.get("livecodebench")) is not None:
         bench["liveCodeBench"] = round1(row.get("livecodebench"))
     if round1(row.get("humaneval")) is not None:
         bench["humanEval"] = round1(row.get("humaneval"))
+    if row.get("terminalbench_v2_1") is not None:
+        bench["terminalBench"] = round1(float(row["terminalbench_v2_1"]) * 100.0)
+    if row.get("scicode") is not None:
+        bench["sciCode"] = round1(float(row["scicode"]) * 100.0)
+    if round1(row.get("intelligence_index")) is not None:
+        bench["intelligenceIndex"] = round1(row.get("intelligence_index"))
+    if enr and enr.get("design_arena_avg_elo"):
+        bench["designArenaElo"] = round1(enr["design_arena_avg_elo"])
+
     if bench:
         spec["benchmarks"] = bench
     params = num(row.get("parameters"))
@@ -147,21 +199,31 @@ def build_spec(row: dict[str, Any]) -> dict[str, Any] | None:
     return spec or None
 
 
-def build_model(row: dict[str, Any], company_key: str, origin: str) -> dict[str, Any]:
+def build_model(row: dict[str, Any], company_key: str, origin: str, enrichment: dict[str, Any] | None = None) -> dict[str, Any]:
     pin, pout = num(row.get("price_1m_input")), num(row.get("price_1m_output"))
+    slug = row.get("slug", "")
+    enr = enrichment.get(slug) if enrichment else None
+    if enr and enr.get("pricing"):
+        epin = enr["pricing"].get("inputPer1M")
+        epout = enr["pricing"].get("outputPer1M")
+        if epin is not None or epout is not None:
+            pin, pout = epin, epout
+
+    ctx = num(row.get("context_window_tokens"))
+    if (ctx is None or ctx == 0) and enr and enr.get("context"):
+        ctx = num(enr["context"])
+
     model: dict[str, Any] = {
-        "id": row["slug"],
-        "iiSlug": row["slug"],
+        "id": slug,
+        "iiSlug": slug,
         "company": company_key,
         "origin": origin,
         "displayName": display_name(row),
         "kind": "model",
         "category": derive_categories(row),
-        "context": int(num(row.get("context_window_tokens")))
-        if num(row.get("context_window_tokens")) is not None
-        else None,
+        "context": int(ctx) if ctx is not None else None,
         "pricing": {"inputPer1M": pin, "outputPer1M": pout, "approx": True},
-        "modalities": ["text"],
+        "modalities": enr.get("modalities", ["text"]) if enr else ["text"],
         "openWeight": bool(row.get("is_open_weights")) or False,
     }
     rel = row.get("release_date")
@@ -170,16 +232,28 @@ def build_model(row: dict[str, Any], company_key: str, origin: str) -> dict[str,
     params = num(row.get("parameters"))
     if params is not None:
         model["parameters"] = params
+        
     bench: dict[str, float] = {}
     if round1(row.get("livecodebench")) is not None:
         bench["liveCodeBench"] = round1(row.get("livecodebench"))
     if round1(row.get("humaneval")) is not None:
         bench["humanEval"] = round1(row.get("humaneval"))
+    if row.get("terminalbench_v2_1") is not None:
+        bench["terminalBench"] = round1(float(row["terminalbench_v2_1"]) * 100.0)
+    if row.get("scicode") is not None:
+        bench["sciCode"] = round1(float(row["scicode"]) * 100.0)
+    if round1(row.get("intelligence_index")) is not None:
+        bench["intelligenceIndex"] = round1(row.get("intelligence_index"))
+    if enr and enr.get("design_arena_avg_elo"):
+        bench["designArenaElo"] = round1(enr["design_arena_avg_elo"])
+
     if bench:
         model["benchmarks"] = bench
+        
+    rank_score = coding_rank_score(row)
     model["notes"] = (
         f"Importado automáticamente del Artificial Analysis Intelligence Index "
-        f"(Coding Index {round1(row.get('coding_index'))}). Precios aproximados; "
+        f"(Score {round1(rank_score)}). Precios aproximados; "
         f"verifica en la web oficial del proveedor."
     )
     return model
@@ -201,6 +275,7 @@ _KNOWN_ORIGIN = {
     "xAI": "US", "Meta": "Open", "Mistral": "EU", "DeepSeek": "China",
     "Alibaba": "China", "Zhipu": "China", "Moonshot": "China", "MiniMax": "China",
     "Xiaomi": "China", "Baidu": "China", "Tencent": "China", "StepFun": "China",
+    "ByteDance": "China", "ThinkingMachines": "US", "Poolside": "US", "Meituan": "China",
 }
 
 
@@ -228,6 +303,7 @@ def main() -> int:
 
     repo = find_repo_root(args.repo_root)
     master_path = repo / "data" / "intelligence-index-master.json"
+    enrichment_path = repo / "data" / "multi-source-enrichment.json"
     out_path = repo / "src" / "data" / "auto-models.ts"
     log.info("Repo root: %s", repo)
     log.info("Master:    %s", master_path)
@@ -239,27 +315,41 @@ def main() -> int:
     rows: list[dict[str, Any]] = json.loads(master_path.read_text(encoding="utf-8"))
     log.info("Filas en el master: %d", len(rows))
 
+    enrichment: dict[str, Any] = {}
+    if enrichment_path.exists():
+        try:
+            enr_data = json.loads(enrichment_path.read_text(encoding="utf-8"))
+            enrichment = enr_data.get("models", {})
+            log.info("Enriquecimiento cargado: %d modelos", len(enrichment))
+        except Exception as e:
+            log.warning("No se pudo leer multi-source-enrichment.json: %s", e)
+
     # 1) autoSpecs: TODO el master con slug y algo útil.
     auto_specs: dict[str, Any] = {}
     for r in rows:
         slug = r.get("slug")
         if not slug:
             continue
-        spec = build_spec(r)
+        spec = build_spec(r, enrichment)
         if spec is not None:
             auto_specs[slug] = spec
     log.info("autoSpecs: %d modelos con specs", len(auto_specs))
 
-    # 2) autoModels: top N por coding_index, no deprecados, con slug.
+    # 2) autoModels: top N por score de coding/inteligencia, no deprecados, con slug.
     candidates = [
         r for r in rows
         if r.get("slug")
-        and r.get("coding_index") is not None
         and not r.get("deprecated")
+        and (
+            r.get("coding_index") is not None
+            or r.get("terminalbench_v2_1") is not None
+            or r.get("scicode") is not None
+            or r.get("intelligence_index") is not None
+        )
     ]
-    candidates.sort(key=lambda r: r["coding_index"], reverse=True)
+    candidates.sort(key=coding_rank_score, reverse=True)
     selected = candidates[: args.top]
-    log.info("Candidatos con coding_index (no deprecados): %d", len(candidates))
+    log.info("Candidatos con métricas (no deprecados): %d", len(candidates))
     log.info("Seleccionados (top %d): %d", args.top, len(selected))
 
     auto_models: list[dict[str, Any]] = []
@@ -269,7 +359,7 @@ def main() -> int:
         creator = r.get("creator")
         company_key, origin = company_for(creator)
         creator_counts[creator or "?"] = creator_counts.get(creator or "?", 0) + 1
-        auto_models.append(build_model(r, company_key, origin))
+        auto_models.append(build_model(r, company_key, origin, enrichment))
         # ¿Empresa desconocida? -> generar metadato.
         if company_key not in KNOWN_COMPANY_KEYS and company_key not in auto_companies:
             auto_companies[company_key] = {
@@ -294,7 +384,14 @@ def main() -> int:
         + "export interface AutoSpec {\n"
         + "  pricing?: { inputPer1M: number | null; outputPer1M: number | null; approx: true };\n"
         + "  context?: number;\n"
-        + "  benchmarks?: { liveCodeBench?: number; humanEval?: number };\n"
+        + "  benchmarks?: {\n"
+        + "    liveCodeBench?: number;\n"
+        + "    humanEval?: number;\n"
+        + "    terminalBench?: number;\n"
+        + "    sciCode?: number;\n"
+        + "    intelligenceIndex?: number;\n"
+        + "    designArenaElo?: number;\n"
+        + "  };\n"
         + "  parameters?: number;\n"
         + "  releaseDate?: string;\n"
         + "}\n\n"
