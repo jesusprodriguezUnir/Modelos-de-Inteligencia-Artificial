@@ -9,6 +9,8 @@
     "start": "next start",
     "preview": "next start",
     "test": "node --import tsx --test tests/**/*.test.ts",
+    "update:models": "python scripts/fetch_intelligence_index.py && python scripts/fetch_multi_sources.py && python scripts/build_auto_catalog.py",
+    "update:all": "npm run update:models && npm test && npm run build",
     "lint": "eslint src tests",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

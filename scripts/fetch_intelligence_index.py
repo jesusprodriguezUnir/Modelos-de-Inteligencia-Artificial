@@ -77,6 +77,7 @@ except ImportError:  # pragma: no cover
 # ---------------------------------------------------------------------------
 
 TARGET_URL = "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"
+MODELS_URL = "https://artificialanalysis.ai/models"
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
@@ -221,6 +222,13 @@ def slugify(s: str) -> str:
     return s or "payload"
 
 
+def _get_field(entry: dict, *keys: str) -> Any:
+    for k in keys:
+        if k in entry and entry[k] is not None:
+            return entry[k]
+    return None
+
+
 # ---------------------------------------------------------------------------
 # Resultado
 # ---------------------------------------------------------------------------
@@ -267,30 +275,27 @@ def fetch_html(timeout: float = 30.0) -> str | None:
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
     }
+    html_parts: list[str] = []
     try:
         with httpx.Client(headers=headers, timeout=timeout, follow_redirects=True) as client:
-            r = client.get(TARGET_URL)
-            if r.status_code != 200:
-                log.error("HTTP %s al descargar la página", r.status_code)
+            for url in (TARGET_URL, MODELS_URL):
+                try:
+                    r = client.get(url)
+                    if r.status_code == 200 and "text/html" in r.headers.get("content-type", "").lower():
+                        log.info("HTML descargado de %s: %d bytes", url, len(r.text))
+                        html_parts.append(r.text)
+                except Exception as ex:
+                    log.warning("Fallo al descargar %s: %s", url, ex)
+            if not html_parts:
                 return None
-            if "text/html" not in r.headers.get("content-type", "").lower():
-                log.error("Content-Type inesperado: %s", r.headers.get("content-type"))
-                return None
-            log.info("HTML descargado: %d bytes", len(r.text))
-            return r.text
+            return "\n<!-- PAGE_SPLIT -->\n".join(html_parts)
     except Exception as e:
         log.error("Error descargando HTML: %s", e)
         return None
 
 
 def extract_next_f_stream(html: str) -> str:
-    """Extrae y decodifica los bloques self.__next_f.push([1,"..."]) del HTML.
-
-    Next.js RSC streaming embebe el payload en múltiples pushes; cada string
-    está escapado con \\\" y \\\\. Los concatenamos para reconstruir el stream.
-    """
-    # Patrón: self.__next_f.push([1,"..."])
-    # El string interno puede contener \" y \\ escapados.
+    """Extrae y decodifica los bloques self.__next_f.push([1,"..."]) del HTML."""
     pattern = re.compile(r'self\.__next_f\.push\(\[\s*1,\s*"((?:[^"\\]|\\.)*)"\s*\]\)', re.S)
     pushes = pattern.findall(html)
     log.info("Encontrados %d bloques __next_f.push", len(pushes))
@@ -298,11 +303,6 @@ def extract_next_f_stream(html: str) -> str:
         return ""
     parts: list[str] = []
     for p in pushes:
-        # Desescapar solo secuencias JS string: \" -> " y \\ -> \.
-        # NO tocar \n/\t/\r: en el RSC son separadores de fila Y escapes JSON
-        # (json.loads los maneja dentro de los arrays). Convertirlos a reales
-        # rompería los strings JSON. Verificado: con solo estos dos reemplazos
-        # la extracción de defaultData/models funciona correctamente.
         decoded = p.replace('\\"', '"').replace("\\\\", "\\")
         parts.append(decoded)
     return "\n".join(parts)
@@ -340,20 +340,17 @@ def extract_balanced_array(stream: str, key: str) -> list | None:
 
 
 def extract_index_version(html: str, stream: str) -> str | None:
-    # Buscar "Intelligence Index vX.Y" en el HTML visible o en el stream.
     for text in (html, stream):
         m = re.search(r"Intelligence Index\s*(v[\d.]+)", text)
         if m:
             return m.group(1)
-    # Si existen campos *_v4_1 en defaultData, deducir v4.1 (el HTML prerender
-    # de Vercel no incluye el literal "v4.1" hasta hidratar).
-    if re.search(r'"intelligence_index_v4_1"\s*:', stream):
+    if re.search(r'"intelligence_index_v4_1"\s*:', stream) or re.search(r'"intelligenceIndex"\s*:', stream):
         return "v4.1 (deducido)"
     return None
 
 
 def parse_rsc_html(html: str) -> tuple[Snapshot | None, list | None, list | None]:
-    """Fase principal: extrae models + defaultData del HTML RSC.
+    """Fase principal: extrae models + defaultData/initialModels del HTML RSC.
 
     Devuelve (snapshot, models_meta, default_data) o (None, None, None).
     """
@@ -364,43 +361,106 @@ def parse_rsc_html(html: str) -> tuple[Snapshot | None, list | None, list | None
     log.info("Stream RSC unificado: %d bytes", len(stream))
 
     models_meta = extract_balanced_array(stream, "models")
-    default_data = extract_balanced_array(stream, "defaultData")
+    default_data = extract_balanced_array(stream, "defaultData") or extract_balanced_array(stream, "initialModels") or []
 
-    if not default_data:
-        log.error("No se encontró 'defaultData' en el stream.")
+    if not default_data and not models_meta:
+        log.error("No se encontró ni 'defaultData' ni 'initialModels' ni 'models' en el stream.")
         return None, None, None
-    log.info("models (metadata): %d | defaultData: %d", len(models_meta or []), len(default_data))
 
-    # Indexar metadata por id para enriquecer defaultData.
+    # Consolidar por slug
+    consolidated_by_slug: dict[str, dict] = {}
+    for entry in default_data:
+        if isinstance(entry, dict) and entry.get("slug"):
+            consolidated_by_slug[entry["slug"]] = dict(entry)
+
+    # Indexar metadata por id y slug para enriquecer
     meta_by_id: dict[str, dict] = {}
+    meta_by_slug: dict[str, dict] = {}
     if models_meta:
         for mm in models_meta:
-            mid = mm.get("id")
-            if mid:
-                meta_by_id[mid] = mm
+            if isinstance(mm, dict):
+                mid = mm.get("id")
+                mslug = mm.get("slug")
+                if mid:
+                    meta_by_id[mid] = mm
+                if mslug:
+                    meta_by_slug[mslug] = mm
+                if mslug and mslug not in consolidated_by_slug:
+                    consolidated_by_slug[mslug] = {
+                        "slug": mslug,
+                        "name": mm.get("name"),
+                        "deprecated": mm.get("deprecated", False),
+                        "isReasoning": mm.get("isReasoning", False),
+                        "releaseDate": mm.get("releaseDate"),
+                        "creator": mm.get("creator"),
+                    }
+
+    full_default_data = list(consolidated_by_slug.values())
+    log.info("models (metadata): %d | entradas consolidadas: %d", len(models_meta or []), len(full_default_data))
 
     # Construir snapshot por secciones (SLIM: solo escalares clave).
     data: dict[str, Any] = {}
     captured: set[str] = set()
 
-    for entry in default_data:
+    for entry in full_default_data:
         if not isinstance(entry, dict):
             continue
         slug = entry.get("slug")
         name = entry.get("name") or entry.get("short_name") or slug
-        creator = entry.get("model_creators") or meta_by_id.get(entry.get("id", ""), {}).get("creator")
-        creator_name: str | None = None
-        if isinstance(creator, dict):
-            creator_name = creator.get("name")
-        elif isinstance(creator, list) and creator:
-            creator_name = creator[0].get("name") if isinstance(creator[0], dict) else str(creator[0])
+        creator_name = _creator_name(entry, meta_by_id)
+
+        # Mapeo universal de campos (soporta camelCase y snake_case)
+        normalized_fields = {
+            "intelligence_index": _get_field(entry, "intelligence_index", "intelligenceIndex", "intelligence_index_v4_1"),
+            "intelligence_index_v4_1": _get_field(entry, "intelligence_index_v4_1", "intelligenceIndex"),
+            "coding_index": _get_field(entry, "coding_index", "codingIndex"),
+            "agentic_index": _get_field(entry, "agentic_index", "agenticIndex"),
+            "gdpval": _get_field(entry, "gdpval", "gdpval_v2", "gdpvalV2"),
+            "gdpval_v2": _get_field(entry, "gdpval_v2", "gdpvalV2", "gdpval"),
+            "gdpval_normalized": _get_field(entry, "gdpval_normalized", "gdpvalNormalized"),
+            "tau_banking": _get_field(entry, "tau_banking", "tauBanking", "tau2"),
+            "terminalbench_v2_1": _get_field(entry, "terminalbench_v2_1", "terminalbenchV21", "terminalbenchHard"),
+            "scicode": _get_field(entry, "scicode", "sciCode"),
+            "hle": _get_field(entry, "hle"),
+            "gpqa": _get_field(entry, "gpqa"),
+            "critpt": _get_field(entry, "critpt"),
+            "lcr": _get_field(entry, "lcr"),
+            "omniscience": _get_field(entry, "omniscience"),
+            "ifbench": _get_field(entry, "ifbench", "ifBench"),
+            "livecodebench": _get_field(entry, "livecodebench", "liveCodeBench"),
+            "humaneval": _get_field(entry, "humaneval", "humanEval"),
+            "aime": _get_field(entry, "aime", "aime25"),
+            "mmlu_pro": _get_field(entry, "mmlu_pro", "mmluPro"),
+            "mmmu_pro": _get_field(entry, "mmmu_pro", "mmmuPro"),
+            "math_500": _get_field(entry, "math_500", "math500"),
+            "briefcase": _get_field(entry, "briefcase", "briefcaseElo"),
+            "is_open_weights": _get_field(entry, "is_open_weights", "isOpenWeights"),
+            "commercial_allowed": _get_field(entry, "commercial_allowed", "commercialAllowed"),
+            "license_name": _get_field(entry, "license_name", "licenseName"),
+            "license_url": _get_field(entry, "license_url", "licenseUrl"),
+            "context_window_tokens": _get_field(entry, "context_window_tokens", "contextWindowTokens"),
+            "parameters": _get_field(entry, "parameters"),
+            "activeParams": _get_field(entry, "activeParams", "inferenceParametersActiveBillions"),
+            "release_date": _get_field(entry, "release_date", "releaseDate"),
+            "knowledge_cutoff_date": _get_field(entry, "knowledge_cutoff_date", "knowledgeCutoffDate"),
+            "reasoning_model": _get_field(entry, "reasoning_model", "isReasoning"),
+            "frontier_model": _get_field(entry, "frontier_model", "frontierModel"),
+            "deprecated": _get_field(entry, "deprecated"),
+            "price_1m_input_tokens": _get_field(entry, "price_1m_input_tokens", "price1mInputTokens"),
+            "price_1m_output_tokens": _get_field(entry, "price_1m_output_tokens", "price1mOutputTokens"),
+            "price_1m_blended_7_2_1": _get_field(entry, "price_1m_blended_7_2_1", "price1mBlended7To2To1"),
+            "cache_hit_price": _get_field(entry, "cache_hit_price", "cacheHitPrice"),
+            "cache_hit_discount_percent": _get_field(entry, "cache_hit_discount_percent", "cacheHitDiscountPercent"),
+            "performanceDataSource": _get_field(entry, "performanceDataSource"),
+        }
 
         for section, fields in SECTION_SLIM_FIELDS.items():
             row: dict[str, Any] = {"slug": slug, "name": name, "creator": creator_name}
             has_any = False
             for f in fields:
-                if f in entry:
-                    row[f] = entry[f]
+                val = normalized_fields.get(f)
+                if val is not None:
+                    row[f] = val
                     has_any = True
             if has_any:
                 data.setdefault(section, []).append(row)
@@ -408,49 +468,53 @@ def parse_rsc_html(html: str) -> tuple[Snapshot | None, list | None, list | None
 
     # Tabla maestra: todas las métricas clave por modelo en una sola lista.
     master_rows: list[dict] = []
-    for entry in default_data:
+    for entry in full_default_data:
         if not isinstance(entry, dict):
             continue
+        gdpval_elo = (entry.get("gdpval_breakdown") or {}).get("elo") if isinstance(entry.get("gdpval_breakdown"), dict) else None
+        cost_total = (entry.get("intelligenceIndexCostPerTask") or {}).get("cost", {}).get("total") if isinstance(entry.get("intelligenceIndexCostPerTask"), dict) else None
+        output_total = (entry.get("intelligenceIndexOutputTokensPerTask") or {}).get("output") if isinstance(entry.get("intelligenceIndexOutputTokensPerTask"), dict) else None
+
         row = {
             "slug": entry.get("slug"),
             "name": entry.get("name"),
             "short_name": entry.get("short_name"),
             "creator": _creator_name(entry, meta_by_id),
-            "intelligence_index": entry.get("intelligence_index"),
-            "intelligence_index_v4_1": entry.get("intelligence_index_v4_1"),
-            "coding_index": entry.get("coding_index"),
-            "agentic_index": entry.get("agentic_index"),
-            "gdpval_v2": entry.get("gdpval_v2"),
-            "gdpval_elo": (entry.get("gdpval_breakdown") or {}).get("elo") if isinstance(entry.get("gdpval_breakdown"), dict) else None,
-            "omniscience": entry.get("omniscience"),
-            "scicode": entry.get("scicode"),
-            "hle": entry.get("hle"),
-            "gpqa": entry.get("gpqa"),
-            "critpt": entry.get("critpt"),
-            "lcr": entry.get("lcr"),
-            "terminalbench_v2_1": entry.get("terminalbench_v2_1"),
-            "tau_banking": entry.get("tau_banking"),
-            "ifbench": entry.get("ifbench"),
-            "livecodebench": entry.get("livecodebench"),
-            "humaneval": entry.get("humaneval"),
-            "aime": entry.get("aime"),
-            "mmlu_pro": entry.get("mmlu_pro"),
-            "mmmu_pro": entry.get("mmmu_pro"),
-            "briefcase": entry.get("briefcase"),
-            "is_open_weights": entry.get("is_open_weights"),
-            "context_window_tokens": entry.get("context_window_tokens"),
-            "parameters": entry.get("parameters"),
-            "activeParams": entry.get("activeParams"),
-            "release_date": entry.get("release_date"),
-            "reasoning_model": entry.get("reasoning_model"),
-            "frontier_model": entry.get("frontier_model"),
-            "deprecated": entry.get("deprecated"),
-            "price_1m_input": entry.get("price_1m_input_tokens"),
-            "price_1m_output": entry.get("price_1m_output_tokens"),
-            "price_1m_blended_7_2_1": entry.get("price_1m_blended_7_2_1"),
-            "cost_per_task_total": (entry.get("intelligenceIndexCostPerTask") or {}).get("cost", {}).get("total") if isinstance(entry.get("intelligenceIndexCostPerTask"), dict) else None,
-            "time_per_task": entry.get("intelligenceIndexTimePerTask"),
-            "output_tokens_per_task": (entry.get("intelligenceIndexOutputTokensPerTask") or {}).get("output") if isinstance(entry.get("intelligenceIndexOutputTokensPerTask"), dict) else None,
+            "intelligence_index": _get_field(entry, "intelligence_index", "intelligenceIndex", "intelligence_index_v4_1"),
+            "intelligence_index_v4_1": _get_field(entry, "intelligence_index_v4_1", "intelligenceIndex"),
+            "coding_index": _get_field(entry, "coding_index", "codingIndex"),
+            "agentic_index": _get_field(entry, "agentic_index", "agenticIndex"),
+            "gdpval_v2": _get_field(entry, "gdpval_v2", "gdpvalV2", "gdpval"),
+            "gdpval_elo": gdpval_elo,
+            "omniscience": _get_field(entry, "omniscience"),
+            "scicode": _get_field(entry, "scicode", "sciCode"),
+            "hle": _get_field(entry, "hle"),
+            "gpqa": _get_field(entry, "gpqa"),
+            "critpt": _get_field(entry, "critpt"),
+            "lcr": _get_field(entry, "lcr"),
+            "terminalbench_v2_1": _get_field(entry, "terminalbench_v2_1", "terminalbenchV21", "terminalbenchHard"),
+            "tau_banking": _get_field(entry, "tau_banking", "tauBanking", "tau2"),
+            "ifbench": _get_field(entry, "ifbench", "ifBench"),
+            "livecodebench": _get_field(entry, "livecodebench", "liveCodeBench"),
+            "humaneval": _get_field(entry, "humaneval", "humanEval"),
+            "aime": _get_field(entry, "aime", "aime25"),
+            "mmlu_pro": _get_field(entry, "mmlu_pro", "mmluPro"),
+            "mmmu_pro": _get_field(entry, "mmmu_pro", "mmmuPro"),
+            "briefcase": _get_field(entry, "briefcase", "briefcaseElo"),
+            "is_open_weights": _get_field(entry, "is_open_weights", "isOpenWeights"),
+            "context_window_tokens": _get_field(entry, "context_window_tokens", "contextWindowTokens"),
+            "parameters": _get_field(entry, "parameters"),
+            "activeParams": _get_field(entry, "activeParams", "inferenceParametersActiveBillions"),
+            "release_date": _get_field(entry, "release_date", "releaseDate"),
+            "reasoning_model": _get_field(entry, "reasoning_model", "isReasoning"),
+            "frontier_model": _get_field(entry, "frontier_model", "frontierModel"),
+            "deprecated": _get_field(entry, "deprecated"),
+            "price_1m_input": _get_field(entry, "price_1m_input_tokens", "price1mInputTokens", "price_1m_input"),
+            "price_1m_output": _get_field(entry, "price_1m_output_tokens", "price1mOutputTokens", "price_1m_output"),
+            "price_1m_blended_7_2_1": _get_field(entry, "price_1m_blended_7_2_1", "price1mBlended7To2To1"),
+            "cost_per_task_total": cost_total or _get_field(entry, "intelligence_index_cost"),
+            "time_per_task": _get_field(entry, "intelligenceIndexTimePerTask", "time_per_task"),
+            "output_tokens_per_task": output_total or _get_field(entry, "output_tokens"),
         }
         master_rows.append(row)
     # Ordenar por intelligence_index desc (None al final).
@@ -467,21 +531,21 @@ def parse_rsc_html(html: str) -> tuple[Snapshot | None, list | None, list | None
         index_version=extract_index_version(html, stream),
         method="rsc-html",
         n_models=len(models_meta or []),
-        n_default_data=len(default_data),
+        n_default_data=len(full_default_data),
         sections_captured=sections_captured,
         sections_failed=sections_failed,
         data=data,
     )
-    return snap, models_meta, default_data
+    return snap, models_meta, full_default_data
 
 
 def _creator_name(entry: dict, meta_by_id: dict) -> str | None:
-    c = entry.get("model_creators")
+    c = entry.get("creator") or entry.get("model_creators")
+    if isinstance(c, dict):
+        return c.get("name")
     if isinstance(c, list) and c:
         first = c[0]
         return first.get("name") if isinstance(first, dict) else str(first)
-    if isinstance(c, dict):
-        return c.get("name")
     meta = meta_by_id.get(entry.get("id", ""), {})
     cc = meta.get("creator")
     if isinstance(cc, dict):

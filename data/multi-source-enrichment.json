@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-16T06:28:38.144079+00:00",
+  "fetched_at": "2026-08-18T17:03:07.533888+00:00",
   "source": "openrouter",
   "total_models": 315,
   "models": {
@@ -39,7 +39,7 @@
         "coding_index": 76.1,
         "agentic_index": 45.1
       },
-      "design_arena_avg_elo": 1328.0,
+      "design_arena_avg_elo": 1341.8,
       "is_reasoning": true
     },
     "seed-2-1-turbo": {
@@ -70,6 +70,11 @@
       "modalities": [
         "text"
       ],
+      "aa_benchmarks": {
+        "intelligence_index": 57.7,
+        "coding_index": 71.9,
+        "agentic_index": 57.1
+      },
       "is_reasoning": true
     },
     "seed-2.0-code": {
@@ -93,8 +98,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.",
       "pricing": {
-        "inputPer1M": 0.435,
-        "outputPer1M": 0.87
+        "inputPer1M": 0.66,
+        "outputPer1M": 1.98
       },
       "context": 1048576,
       "modalities": [
@@ -125,7 +130,7 @@
         "coding_index": 76.8,
         "agentic_index": 58.7
       },
-      "design_arena_avg_elo": 1336.7,
+      "design_arena_avg_elo": 1331.6,
       "is_reasoning": true
     },
     "nemotron-3.5-lightning": {
@@ -133,8 +138,8 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that",
       "pricing": {
-        "inputPer1M": 0.1,
-        "outputPer1M": 0.25
+        "inputPer1M": 0.08,
+        "outputPer1M": 0.2
       },
       "context": 1000000,
       "modalities": [
@@ -179,7 +184,7 @@
         "coding_index": 52.7,
         "agentic_index": 33.6
       },
-      "design_arena_avg_elo": 1149.3,
+      "design_arena_avg_elo": 1153.5,
       "is_reasoning": false
     },
     "muse-glimmer-30b": {
@@ -212,7 +217,12 @@
         "text",
         "video"
       ],
-      "design_arena_avg_elo": 1348.7,
+      "aa_benchmarks": {
+        "intelligence_index": 56.8,
+        "coding_index": 72.2,
+        "agentic_index": 49.3
+      },
+      "design_arena_avg_elo": 1347.5,
       "is_reasoning": true
     },
     "qwen3.8-max": {
@@ -234,7 +244,7 @@
         "coding_index": 71.8,
         "agentic_index": 58.4
       },
-      "design_arena_avg_elo": 1328.0,
+      "design_arena_avg_elo": 1328.8,
       "is_reasoning": true
     },
     "deepseek-v4-flash-0731": {
@@ -245,7 +255,7 @@
         "inputPer1M": 0.14,
         "outputPer1M": 0.28
       },
-      "context": 1048576,
+      "context": 1310720,
       "modalities": [
         "text"
       ],
@@ -254,7 +264,7 @@
         "coding_index": 69.1,
         "agentic_index": 48.4
       },
-      "design_arena_avg_elo": 1246.7,
+      "design_arena_avg_elo": 1245.8,
       "is_reasoning": true
     },
     "inkling-small": {
@@ -327,7 +337,7 @@
         "coding_index": 78,
         "agentic_index": 59.2
       },
-      "design_arena_avg_elo": 1364.3,
+      "design_arena_avg_elo": 1361.1,
       "is_reasoning": true
     },
     "ling-3.0-flash": {
@@ -383,7 +393,7 @@
         "coding_index": 69.2,
         "agentic_index": 40.5
       },
-      "design_arena_avg_elo": 1316.0,
+      "design_arena_avg_elo": 1319.7,
       "is_reasoning": true
     },
     "gemini-3.5-flash-lite": {
@@ -420,6 +430,9 @@
       "modalities": [
         "text"
       ],
+      "aa_benchmarks": {
+        "coding_index": 45.3
+      },
       "is_reasoning": true
     },
     "inkling": {
@@ -441,7 +454,7 @@
         "coding_index": 52.1,
         "agentic_index": 34.1
       },
-      "design_arena_avg_elo": 1207.8,
+      "design_arena_avg_elo": 1208.0,
       "is_reasoning": true
     },
     "kimi-k3": {
@@ -463,7 +476,7 @@
         "coding_index": 76.2,
         "agentic_index": 54.3
       },
-      "design_arena_avg_elo": 1393.6,
+      "design_arena_avg_elo": 1394.1,
       "is_reasoning": true
     },
     "muse-spark-1.1": {
@@ -486,7 +499,7 @@
         "coding_index": 71.3,
         "agentic_index": 39.7
       },
-      "design_arena_avg_elo": 1302.5,
+      "design_arena_avg_elo": 1301.8,
       "is_reasoning": true
     },
     "kat-coder-air-v2.5": {
@@ -594,8 +607,8 @@
       "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
       "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn",
       "pricing": {
-        "inputPer1M": 2.5,
-        "outputPer1M": 15.0
+        "inputPer1M": 1.25,
+        "outputPer1M": 7.5
       },
       "context": 1050000,
       "modalities": [
@@ -610,8 +623,8 @@
       "name": "OpenAI: GPT-5.6 Sol (batch)",
       "description": "GPT-5.6 Sol is the flagship model in OpenAI's GPT-5.6 series. It is suited for complex reasoning, coding, and agentic workflows, and is particularly strong at command-line and multi-step coding tasks.",
       "pricing": {
-        "inputPer1M": 2.5,
-        "outputPer1M": 15.0
+        "inputPer1M": 1.25,
+        "outputPer1M": 7.5
       },
       "context": 1050000,
       "modalities": [
@@ -644,7 +657,7 @@
         "coding_index": 72.4,
         "agentic_index": 48.9
       },
-      "design_arena_avg_elo": 1298.6,
+      "design_arena_avg_elo": 1298.4,
       "is_reasoning": true
     },
     "hy3": {
@@ -659,7 +672,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1189.2,
+      "design_arena_avg_elo": 1188.5,
       "is_reasoning": true
     },
     "laguna-xs-2.1": {
@@ -694,7 +707,7 @@
         "coding_index": 71.5,
         "agentic_index": 49.7
       },
-      "design_arena_avg_elo": 1283.8,
+      "design_arena_avg_elo": 1282.5,
       "is_reasoning": true
     },
     "gemini-3.1-flash-lite-image": {
@@ -790,7 +803,7 @@
         "coding_index": 68.8,
         "agentic_index": 45.7
       },
-      "design_arena_avg_elo": 1314.4,
+      "design_arena_avg_elo": 1311.0,
       "is_reasoning": true
     },
     "kimi-k2.7-code": {
@@ -811,7 +824,7 @@
         "coding_index": 60.8,
         "agentic_index": 30.3
       },
-      "design_arena_avg_elo": 1262.8,
+      "design_arena_avg_elo": 1262.9,
       "is_reasoning": true
     },
     "claude-fable-5": {
@@ -832,7 +845,7 @@
         "coding_index": 76.5,
         "agentic_index": 56.6
       },
-      "design_arena_avg_elo": 1347.0,
+      "design_arena_avg_elo": 1346.4,
       "is_reasoning": true
     },
     "nex-n2-pro": {
@@ -851,7 +864,7 @@
       "aa_benchmarks": {
         "coding_index": 59.1
       },
-      "design_arena_avg_elo": 1240.2,
+      "design_arena_avg_elo": 1238.2,
       "is_reasoning": false
     },
     "nemotron-3-ultra-550b-a55b": {
@@ -871,7 +884,7 @@
         "coding_index": 49.3,
         "agentic_index": 27.5
       },
-      "design_arena_avg_elo": 1145.9,
+      "design_arena_avg_elo": 1145.6,
       "is_reasoning": true
     },
     "qwen3.7-plus": {
@@ -892,7 +905,7 @@
         "coding_index": 55.9,
         "agentic_index": 20.7
       },
-      "design_arena_avg_elo": 1267.7,
+      "design_arena_avg_elo": 1263.0,
       "is_reasoning": true
     },
     "minimax-m3": {
@@ -914,7 +927,7 @@
         "coding_index": 58.6,
         "agentic_index": 36.1
       },
-      "design_arena_avg_elo": 1248.6,
+      "design_arena_avg_elo": 1247.6,
       "is_reasoning": false
     },
     "step-3.7-flash": {
@@ -936,7 +949,7 @@
         "coding_index": 39.6,
         "agentic_index": 21.7
       },
-      "design_arena_avg_elo": 1181.5,
+      "design_arena_avg_elo": 1182.1,
       "is_reasoning": true
     },
     "claude-opus-4.8-fast": {
@@ -972,7 +985,7 @@
         "coding_index": 74.3,
         "agentic_index": 49.4
       },
-      "design_arena_avg_elo": 1268.1,
+      "design_arena_avg_elo": 1268.5,
       "is_reasoning": false
     },
     "qwen3.7-max": {
@@ -992,7 +1005,7 @@
         "coding_index": 66,
         "agentic_index": 30.9
       },
-      "design_arena_avg_elo": 1289.6,
+      "design_arena_avg_elo": 1289.8,
       "is_reasoning": true
     },
     "grok-build-0.1": {
@@ -1035,7 +1048,7 @@
         "coding_index": 70.1,
         "agentic_index": 39.7
       },
-      "design_arena_avg_elo": 1286.4,
+      "design_arena_avg_elo": 1285.9,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-01-01"
     },
@@ -1136,7 +1149,7 @@
         "coding_index": 42.2,
         "agentic_index": 24.2
       },
-      "design_arena_avg_elo": 1189.6,
+      "design_arena_avg_elo": 1188.6,
       "is_reasoning": true
     },
     "granite-4.1-8b": {
@@ -1212,7 +1225,7 @@
       "name": "Qwen: Qwen3.6 35B A3B",
       "description": "Qwen3.6-35B-A3B is an open-weight multimodal model from Alibaba Cloud with 35 billion total parameters and 3 billion active parameters per token. It uses a hybrid sparse mixture-of-experts architectur",
       "pricing": {
-        "inputPer1M": 0.15,
+        "inputPer1M": 0.14,
         "outputPer1M": 1.0
       },
       "context": 262144,
@@ -1247,8 +1260,8 @@
       "name": "Qwen: Qwen3.6 27B",
       "description": "Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. It features hybrid multimodal capabilities — accepting text, image, and video inputs..",
       "pricing": {
-        "inputPer1M": 0.3,
-        "outputPer1M": 2.0
+        "inputPer1M": 0.289,
+        "outputPer1M": 2.4
       },
       "context": 262144,
       "modalities": [
@@ -1297,23 +1310,28 @@
         "coding_index": 74.9,
         "agentic_index": 47.4
       },
-      "design_arena_avg_elo": 1281.6,
+      "design_arena_avg_elo": 1281.5,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-12-01"
     },
     "deepseek-v4-pro": {
       "openrouter_id": "deepseek/deepseek-v4-pro",
-      "name": "DeepSeek: DeepSeek V4 Pro",
+      "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reaso",
       "pricing": {
-        "inputPer1M": 1.168,
-        "outputPer1M": 2.336
+        "inputPer1M": 0.66,
+        "outputPer1M": 1.98
       },
       "context": 1048576,
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1239.6,
+      "aa_benchmarks": {
+        "intelligence_index": 45.3,
+        "coding_index": 59.4,
+        "agentic_index": 37.8
+      },
+      "design_arena_avg_elo": 1239.4,
       "is_reasoning": false
     },
     "deepseek-v4-flash": {
@@ -1321,14 +1339,19 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fa",
       "pricing": {
-        "inputPer1M": 0.0615,
-        "outputPer1M": 0.1229
+        "inputPer1M": 0.0798,
+        "outputPer1M": 0.1596
       },
       "context": 1048576,
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1199.1,
+      "aa_benchmarks": {
+        "intelligence_index": 42.1,
+        "coding_index": 56.2,
+        "agentic_index": 33.7
+      },
+      "design_arena_avg_elo": 1198.5,
       "is_reasoning": false
     },
     "ling-2.6-1t": {
@@ -1380,7 +1403,7 @@
         "coding_index": 60.2,
         "agentic_index": 29.5
       },
-      "design_arena_avg_elo": 1269.5,
+      "design_arena_avg_elo": 1269.4,
       "is_reasoning": false
     },
     "mimo-v2.5": {
@@ -1403,7 +1426,7 @@
         "coding_index": 56.8,
         "agentic_index": 24.4
       },
-      "design_arena_avg_elo": 1255.4,
+      "design_arena_avg_elo": 1254.9,
       "is_reasoning": false
     },
     "gpt-5.4-image-2": {
@@ -1444,8 +1467,8 @@
       "name": "MoonshotAI: Kimi K2.6",
       "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks",
       "pricing": {
-        "inputPer1M": 0.5415,
-        "outputPer1M": 2.28
+        "inputPer1M": 0.5605,
+        "outputPer1M": 2.36
       },
       "context": 262144,
       "modalities": [
@@ -1457,7 +1480,7 @@
         "coding_index": 61.8,
         "agentic_index": 31.2
       },
-      "design_arena_avg_elo": 1272.2,
+      "design_arena_avg_elo": 1269.9,
       "is_reasoning": true
     },
     "claude-opus-4.7": {
@@ -1478,7 +1501,7 @@
         "coding_index": 73.6,
         "agentic_index": 46.3
       },
-      "design_arena_avg_elo": 1308.0,
+      "design_arena_avg_elo": 1308.8,
       "is_reasoning": false
     },
     "glm-5.1": {
@@ -1498,7 +1521,7 @@
         "coding_index": 55.8,
         "agentic_index": 30.6
       },
-      "design_arena_avg_elo": 1288.1,
+      "design_arena_avg_elo": 1287.1,
       "is_reasoning": true
     },
     "gemma-4-26b-a4b-it": {
@@ -1506,8 +1529,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B qual",
       "pricing": {
-        "inputPer1M": 0.12,
-        "outputPer1M": 0.4
+        "inputPer1M": 0.07,
+        "outputPer1M": 0.34
       },
       "context": 262144,
       "modalities": [
@@ -1562,7 +1585,7 @@
         "coding_index": 54.5,
         "agentic_index": 29
       },
-      "design_arena_avg_elo": 1233.2,
+      "design_arena_avg_elo": 1232.6,
       "is_reasoning": false
     },
     "glm-5v-turbo": {
@@ -1579,7 +1602,7 @@
         "text",
         "video"
       ],
-      "design_arena_avg_elo": 1224.8,
+      "design_arena_avg_elo": 1223.9,
       "is_reasoning": true
     },
     "trinity-large-thinking": {
@@ -1597,7 +1620,7 @@
       "aa_benchmarks": {
         "coding_index": 25.8
       },
-      "design_arena_avg_elo": 1106.9,
+      "design_arena_avg_elo": 1106.1,
       "is_reasoning": true
     },
     "grok-4.20-multi-agent": {
@@ -1629,7 +1652,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1229.9,
+      "design_arena_avg_elo": 1229.4,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-09-01"
     },
@@ -1710,7 +1733,7 @@
         "coding_index": 52.6,
         "agentic_index": 25.9
       },
-      "design_arena_avg_elo": 1230.1,
+      "design_arena_avg_elo": 1229.8,
       "is_reasoning": true
     },
     "gpt-5.4-nano": {
@@ -1787,7 +1810,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1270.9,
+      "design_arena_avg_elo": 1270.4,
       "is_reasoning": true
     },
     "nemotron-3-super-120b-a12b": {
@@ -1879,7 +1902,7 @@
         "coding_index": 71.1,
         "agentic_index": 44.2
       },
-      "design_arena_avg_elo": 1235.2,
+      "design_arena_avg_elo": 1234.6,
       "is_reasoning": false
     },
     "mercury-2": {
@@ -1899,7 +1922,7 @@
         "coding_index": 31.1,
         "agentic_index": 9.5
       },
-      "design_arena_avg_elo": 1017.5,
+      "design_arena_avg_elo": 1017.0,
       "is_reasoning": true
     },
     "gemini-3.1-flash-lite-preview": {
@@ -1922,7 +1945,7 @@
         "coding_index": 34.7,
         "agentic_index": 6.5
       },
-      "design_arena_avg_elo": 1101.1,
+      "design_arena_avg_elo": 1100.6,
       "is_reasoning": true
     },
     "seed-2.0-mini": {
@@ -1954,7 +1977,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1285.3,
+      "design_arena_avg_elo": 1285.7,
       "is_reasoning": true
     },
     "qwen3.5-35b-a3b": {
@@ -2061,7 +2084,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1163.1,
+      "design_arena_avg_elo": 1162.6,
       "is_reasoning": false
     },
     "gemini-3.1-pro-preview": {
@@ -2084,7 +2107,7 @@
         "coding_index": 68.8,
         "agentic_index": 23
       },
-      "design_arena_avg_elo": 1281.2,
+      "design_arena_avg_elo": 1280.6,
       "is_reasoning": true
     },
     "claude-sonnet-4.6": {
@@ -2105,7 +2128,7 @@
         "coding_index": 63,
         "agentic_index": 42.1
       },
-      "design_arena_avg_elo": 1285.0,
+      "design_arena_avg_elo": 1284.2,
       "is_reasoning": false
     },
     "qwen3.5-plus-02-15": {
@@ -2122,7 +2145,7 @@
         "text",
         "video"
       ],
-      "design_arena_avg_elo": 1166.8,
+      "design_arena_avg_elo": 1166.2,
       "is_reasoning": false
     },
     "qwen3.5-397b-a17b": {
@@ -2144,7 +2167,7 @@
         "coding_index": 48.2,
         "agentic_index": 19.8
       },
-      "design_arena_avg_elo": 1194.0,
+      "design_arena_avg_elo": 1193.4,
       "is_reasoning": false
     },
     "minimax-m2.5": {
@@ -2159,7 +2182,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1211.1,
+      "design_arena_avg_elo": 1210.6,
       "is_reasoning": true
     },
     "glm-5": {
@@ -2174,7 +2197,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1247.4,
+      "design_arena_avg_elo": 1246.8,
       "is_reasoning": true
     },
     "qwen3-max-thinking": {
@@ -2204,7 +2227,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1303.0,
+      "design_arena_avg_elo": 1302.4,
       "is_reasoning": false
     },
     "qwen3-coder-next": {
@@ -2257,7 +2280,7 @@
         "coding_index": 46.8,
         "agentic_index": 21.7
       },
-      "design_arena_avg_elo": 1239.4,
+      "design_arena_avg_elo": 1238.6,
       "is_reasoning": true
     },
     "solar-pro-3": {
@@ -2345,7 +2368,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1170.6,
+      "design_arena_avg_elo": 1170.1,
       "is_reasoning": true
     },
     "gpt-5.2-codex": {
@@ -2407,7 +2430,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1208.7,
+      "design_arena_avg_elo": 1208.1,
       "is_reasoning": true
     },
     "glm-4.7": {
@@ -2427,7 +2450,7 @@
         "coding_index": 45.3,
         "agentic_index": 26.2
       },
-      "design_arena_avg_elo": 1221.4,
+      "design_arena_avg_elo": 1220.9,
       "is_reasoning": true
     },
     "gemini-3-flash-preview": {
@@ -2445,7 +2468,7 @@
         "text",
         "video"
       ],
-      "design_arena_avg_elo": 1214.2,
+      "design_arena_avg_elo": 1213.5,
       "is_reasoning": false
     },
     "nemotron-3-nano-30b-a3b": {
@@ -2509,7 +2532,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1194.5,
+      "design_arena_avg_elo": 1193.8,
       "is_reasoning": false
     },
     "relace-search": {
@@ -2593,7 +2616,7 @@
         "coding_index": 14.4,
         "agentic_index": 2.2
       },
-      "design_arena_avg_elo": 1074.0
+      "design_arena_avg_elo": 1073.5
     },
     "ministral-8b-2512": {
       "openrouter_id": "mistralai/ministral-8b-2512",
@@ -2613,7 +2636,7 @@
         "coding_index": 9.7,
         "agentic_index": 1.2
       },
-      "design_arena_avg_elo": 1065.2
+      "design_arena_avg_elo": 1064.8
     },
     "ministral-3b-2512": {
       "openrouter_id": "mistralai/ministral-3b-2512",
@@ -2633,7 +2656,7 @@
         "coding_index": 4.8,
         "agentic_index": 1.6
       },
-      "design_arena_avg_elo": 1017.8
+      "design_arena_avg_elo": 1017.0
     },
     "mistral-large-2512": {
       "openrouter_id": "mistralai/mistral-large-2512",
@@ -2653,7 +2676,7 @@
         "coding_index": 20.1,
         "agentic_index": 5.5
       },
-      "design_arena_avg_elo": 1127.9
+      "design_arena_avg_elo": 1127.5
     },
     "deepseek-v3.2": {
       "openrouter_id": "deepseek/deepseek-v3.2",
@@ -2670,7 +2693,7 @@
       "aa_benchmarks": {
         "coding_index": 44.2
       },
-      "design_arena_avg_elo": 1157.4,
+      "design_arena_avg_elo": 1156.9,
       "is_reasoning": false
     },
     "claude-opus-4.5": {
@@ -2686,7 +2709,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1253.4,
+      "design_arena_avg_elo": 1252.6,
       "is_reasoning": false
     },
     "olmo-3-32b-think": {
@@ -2751,7 +2774,7 @@
         "coding_index": 49.4,
         "agentic_index": 21.6
       },
-      "design_arena_avg_elo": 1184.8,
+      "design_arena_avg_elo": 1184.1,
       "is_reasoning": true
     },
     "gpt-5.1-codex": {
@@ -2767,7 +2790,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1204.2,
+      "design_arena_avg_elo": 1203.8,
       "is_reasoning": true
     },
     "gpt-5.1-codex-mini": {
@@ -2783,7 +2806,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1098.0,
+      "design_arena_avg_elo": 1097.4,
       "is_reasoning": false
     },
     "kimi-k2-thinking": {
@@ -2874,7 +2897,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1153.3,
+      "design_arena_avg_elo": 1152.6,
       "is_reasoning": true
     },
     "qwen3-vl-32b-instruct": {
@@ -2938,7 +2961,7 @@
         "coding_index": 43.9,
         "agentic_index": 16.5
       },
-      "design_arena_avg_elo": 1130.1,
+      "design_arena_avg_elo": 1129.4,
       "is_reasoning": false
     },
     "qwen3-vl-8b-thinking": {
@@ -3054,8 +3077,8 @@
       "name": "Z.ai: GLM 4.6",
       "description": "Compared with GLM-4.5, this generation brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex.",
       "pricing": {
-        "inputPer1M": 0.55,
-        "outputPer1M": 2.2
+        "inputPer1M": 0.5,
+        "outputPer1M": 2.0
       },
       "context": 204800,
       "modalities": [
@@ -3066,7 +3089,7 @@
         "coding_index": 45.8,
         "agentic_index": 18.6
       },
-      "design_arena_avg_elo": 1177.4,
+      "design_arena_avg_elo": 1176.9,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-03-31"
     },
@@ -3088,7 +3111,7 @@
         "coding_index": 52.1,
         "agentic_index": 26.4
       },
-      "design_arena_avg_elo": 1199.5,
+      "design_arena_avg_elo": 1198.8,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-01-31"
     },
@@ -3104,7 +3127,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1171.4,
+      "design_arena_avg_elo": 1170.9,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-07-31"
     },
@@ -3156,8 +3179,8 @@
       "name": "Qwen: Qwen3 VL 235B A22B Instruct",
       "description": "Qwen3-VL-235B-A22B Instruct is an open-weight multimodal model that unifies strong text generation with visual understanding across images and video. The Instruct model targets general vision-language",
       "pricing": {
-        "inputPer1M": 0.26,
-        "outputPer1M": 1.04
+        "inputPer1M": 0.21,
+        "outputPer1M": 1.9
       },
       "context": 262144,
       "modalities": [
@@ -3178,7 +3201,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1118.8,
+      "design_arena_avg_elo": 1118.1,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-06-30"
     },
@@ -3219,7 +3242,7 @@
       "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language cons",
       "pricing": {
         "inputPer1M": 0.27,
-        "outputPer1M": 0.95
+        "outputPer1M": 1.0
       },
       "context": 163840,
       "modalities": [
@@ -3228,7 +3251,7 @@
       "aa_benchmarks": {
         "coding_index": 43.5
       },
-      "design_arena_avg_elo": 1178.7,
+      "design_arena_avg_elo": 1178.1,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-03-31"
     },
@@ -3327,7 +3350,7 @@
         "coding_index": 12.1,
         "agentic_index": 1.8
       },
-      "design_arena_avg_elo": 944.0,
+      "design_arena_avg_elo": 942.5,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-06-30"
     },
@@ -3373,7 +3396,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1107.1,
+      "design_arena_avg_elo": 1106.4,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-03-31"
     },
@@ -3395,7 +3418,7 @@
         "coding_index": 20.5,
         "agentic_index": 6.1
       },
-      "design_arena_avg_elo": 1109.8,
+      "design_arena_avg_elo": 1109.2,
       "knowledge_cutoff": "2025-06-30"
     },
     "glm-4.5v": {
@@ -3446,7 +3469,7 @@
         "coding_index": 37.8,
         "agentic_index": 26.5
       },
-      "design_arena_avg_elo": 1194.6,
+      "design_arena_avg_elo": 1194.0,
       "is_reasoning": true,
       "knowledge_cutoff": "2024-09-30"
     },
@@ -3468,7 +3491,7 @@
         "coding_index": 15.6,
         "agentic_index": 19.6
       },
-      "design_arena_avg_elo": 1136.5,
+      "design_arena_avg_elo": 1135.8,
       "is_reasoning": true,
       "knowledge_cutoff": "2024-05-31"
     },
@@ -3485,7 +3508,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1081.7,
+      "design_arena_avg_elo": 1080.8,
       "is_reasoning": true,
       "knowledge_cutoff": "2024-05-31"
     },
@@ -3506,7 +3529,7 @@
         "coding_index": 30.4,
         "agentic_index": 13.4
       },
-      "design_arena_avg_elo": 984.8,
+      "design_arena_avg_elo": 984.0,
       "is_reasoning": true,
       "knowledge_cutoff": "2024-06-30"
     },
@@ -3527,7 +3550,7 @@
         "coding_index": 20.7,
         "agentic_index": 3.1
       },
-      "design_arena_avg_elo": 908.5,
+      "design_arena_avg_elo": 908.0,
       "is_reasoning": true,
       "knowledge_cutoff": "2024-06-30"
     },
@@ -3544,7 +3567,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1194.8,
+      "design_arena_avg_elo": 1194.4,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-01-31"
     },
@@ -3560,7 +3583,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1035.8,
+      "design_arena_avg_elo": 1034.7,
       "knowledge_cutoff": "2025-03-31"
     },
     "qwen3-coder-30b-a3b-instruct": {
@@ -3575,7 +3598,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1092.3,
+      "design_arena_avg_elo": 1091.7,
       "knowledge_cutoff": "2025-06-30"
     },
     "qwen3-30b-a3b-instruct-2507": {
@@ -3604,7 +3627,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1179.1,
+      "design_arena_avg_elo": 1178.6,
       "is_reasoning": false,
       "knowledge_cutoff": "2024-12-31"
     },
@@ -3620,7 +3643,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1155.1,
+      "design_arena_avg_elo": 1154.7,
       "is_reasoning": false,
       "knowledge_cutoff": "2024-12-31"
     },
@@ -3641,7 +3664,7 @@
         "coding_index": 22.1,
         "agentic_index": 3.8
       },
-      "design_arena_avg_elo": 1017.5,
+      "design_arena_avg_elo": 1016.8,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-06-30"
     },
@@ -3657,7 +3680,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1142.6,
+      "design_arena_avg_elo": 1142.4,
       "knowledge_cutoff": "2025-06-30"
     },
     "ui-tars-1.5-7b": {
@@ -3705,7 +3728,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1041.5,
+      "design_arena_avg_elo": 1040.5,
       "knowledge_cutoff": "2025-06-30"
     },
     "kimi-k2": {
@@ -3720,7 +3743,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1044.6,
+      "design_arena_avg_elo": 1044.0,
       "knowledge_cutoff": "2024-12-31"
     },
     "dolphin-mistral-24b-venice-edition": {
@@ -3807,7 +3830,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 928.6,
+      "design_arena_avg_elo": 928.2,
       "knowledge_cutoff": "2023-10-31"
     },
     "minimax-m1": {
@@ -3815,7 +3838,7 @@
       "name": "MiniMax: MiniMax M1",
       "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"",
       "pricing": {
-        "inputPer1M": 0.4,
+        "inputPer1M": 0.55,
         "outputPer1M": 2.2
       },
       "context": 1000000,
@@ -3840,7 +3863,7 @@
         "text",
         "video"
       ],
-      "design_arena_avg_elo": 1115.1,
+      "design_arena_avg_elo": 1114.7,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-01-31"
     },
@@ -3864,7 +3887,7 @@
         "coding_index": 33.3,
         "agentic_index": 7.2
       },
-      "design_arena_avg_elo": 1174.2,
+      "design_arena_avg_elo": 1173.0,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-01-31"
     },
@@ -3913,7 +3936,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1146.4,
+      "design_arena_avg_elo": 1145.9,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-03-31"
     },
@@ -3930,7 +3953,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1180.9,
+      "design_arena_avg_elo": 1180.3,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-01-31"
     },
@@ -3952,7 +3975,7 @@
         "coding_index": 37.6,
         "agentic_index": 17.6
       },
-      "design_arena_avg_elo": 1162.6,
+      "design_arena_avg_elo": 1162.0,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-01-31"
     },
@@ -3986,7 +4009,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1080.0,
+      "design_arena_avg_elo": 1078.8,
       "knowledge_cutoff": "2025-03-31"
     },
     "gemini-2.5-pro-preview-05-06": {
@@ -4048,7 +4071,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 965.0,
+      "design_arena_avg_elo": 964.4,
       "is_reasoning": true,
       "knowledge_cutoff": "2025-03-31"
     },
@@ -4124,7 +4147,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 990.8,
+      "design_arena_avg_elo": 989.8,
       "is_reasoning": false,
       "knowledge_cutoff": "2025-03-31"
     },
@@ -4174,7 +4197,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 993.8,
+      "design_arena_avg_elo": 993.0,
       "is_reasoning": false,
       "knowledge_cutoff": "2024-06-30"
     },
@@ -4191,7 +4214,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 1044.3,
+      "design_arena_avg_elo": 1043.7,
       "knowledge_cutoff": "2024-06-30"
     },
     "gpt-4.1-mini": {
@@ -4212,7 +4235,7 @@
         "coding_index": 20.2,
         "agentic_index": 1.8
       },
-      "design_arena_avg_elo": 1010.5,
+      "design_arena_avg_elo": 1009.7,
       "knowledge_cutoff": "2024-06-30"
     },
     "gpt-4.1-nano": {
@@ -4233,7 +4256,7 @@
         "coding_index": 11.1,
         "agentic_index": 1.2
       },
-      "design_arena_avg_elo": 968.2,
+      "design_arena_avg_elo": 967.2,
       "knowledge_cutoff": "2024-06-30"
     },
     "llama-4-maverick": {
@@ -4254,7 +4277,7 @@
         "coding_index": 16.3,
         "agentic_index": 1.2
       },
-      "design_arena_avg_elo": 907.0,
+      "design_arena_avg_elo": 905.7,
       "knowledge_cutoff": "2024-08-31"
     },
     "llama-4-scout": {
@@ -4275,7 +4298,7 @@
         "coding_index": 8.2,
         "agentic_index": 1.1
       },
-      "design_arena_avg_elo": 818.6,
+      "design_arena_avg_elo": 818.2,
       "knowledge_cutoff": "2024-08-31"
     },
     "deepseek-chat-v3-0324": {
@@ -4516,8 +4539,8 @@
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
       "description": "Qwen2.5-VL is proficient in recognizing common objects such as flowers, birds, fish, and insects. It is also highly capable of analyzing texts, charts, icons, graphics, and layouts within images.",
       "pricing": {
-        "inputPer1M": 0.25,
-        "outputPer1M": 0.75
+        "inputPer1M": 0.8,
+        "outputPer1M": 1.0
       },
       "context": 128000,
       "modalities": [
@@ -4659,7 +4682,7 @@
       "modalities": [
         "text"
       ],
-      "design_arena_avg_elo": 1104.7,
+      "design_arena_avg_elo": 1104.0,
       "knowledge_cutoff": "2024-07-31"
     },
     "l3.3-euryale-70b": {
@@ -5117,7 +5140,7 @@
         "image",
         "text"
       ],
-      "design_arena_avg_elo": 896.7,
+      "design_arena_avg_elo": 895.7,
       "knowledge_cutoff": "2023-10-31"
     },
     "gpt-4o-2024-05-13": {
