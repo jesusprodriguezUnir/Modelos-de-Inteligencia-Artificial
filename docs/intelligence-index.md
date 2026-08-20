@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-19T08:13:06Z`
+- **Última actualización:** `2026-08-20T08:13:56Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
@@ -119,7 +119,7 @@
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 933.5 | 933.5 | 0.150515463917526 | 0.50561797752809 | 0.395833333333333 | 0.137627432808156 | 0.748484848484849 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 913.45 | 913.45 | 0.0927835051546392 | 0.441947565543071 | 0.43287037037037 | 0.103799814643188 | 0.671717171717172 |
 | nvidia-nemotron-3-super-120b-a12b | Nemotron 3 Super 120B A12B (Reasoning) | NVIDIA | 698.06 | 698.06 | 0.103092783505155 | 0.385767790262172 | 0.359953703703704 | 0.207599629286376 | 0.8 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 800.21 | 800.21 | 0.127835051546392 | 0.262172284644195 | 0.388888888888889 | 0.196014828544949 | 0.781818181818182 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 800.94 | 800.94 | 0.127835051546392 | 0.262172284644195 | 0.388888888888889 | 0.196014828544949 | 0.781818181818182 |
 | nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 823.59 | 823.59 | 0.088659793814433 | 0.243445692883895 | 0.315972222222222 | 0.105653382761817 | 0.743434343434343 |
 | command-a-plus | Command A+ | Cohere | 716.88 | 716.88 | 0.0597938144329897 | 0.228464419475655 | 0.378472222222222 | 0.119555143651529 | 0.760606060606061 |
 
@@ -144,7 +144,7 @@
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 516.65 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 611.5 |
 | nvidia-nemotron-3-super-120b-a12b | Nemotron 3 Super 120B A12B (Reasoning) | NVIDIA | 0 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 7.8 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 10.05 |
 | command-a-plus | Command A+ | Cohere | 369.34 |
 
 ## `aa_omniscience`
@@ -213,7 +213,7 @@
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 933.5 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 913.45 |
 | nvidia-nemotron-3-super-120b-a12b | Nemotron 3 Super 120B A12B (Reasoning) | NVIDIA | 698.06 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 800.21 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 800.94 |
 | nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 823.59 |
 | command-a-plus | Command A+ | Cohere | 716.88 |
 
@@ -270,7 +270,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 0.75 | 3.75 | 0.075 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1.32 | 3.96 | 0.044 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 0.2 | 1.2 | 0.02 |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | 0.45 | 3.2 | 0.05 |
+| qwen3-8-27b | Qwen3.8 27B | Alibaba | 0.42500000000000004 | 3.1 | 0.045 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 0.3 | 1.2 | 0.06 |
 | inkling | Inkling (xhigh) | Thinking Machines | 1 | 4.05 | 0.17 |
 | nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 0.6 | 2.75 | 0.2 |
