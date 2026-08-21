@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-20T08:13:56Z`
+- **Última actualización:** `2026-08-21T08:14:41Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
@@ -35,7 +35,7 @@
 | 6 | Grok 4.6 (high) | SpaceXAI | 60.92 | — | — | — | 30.48 | — | — |
 | 7 | Kimi K3 (max) | Kimi | 59.70 | — | — | — | 19.70 | ✓ | — |
 | 8 | GLM-5.3 (max) | Z AI | 59.51 | — | — | — | 14.30 | — | — |
-| 9 | Qwen3.8 Max | Alibaba | 58.08 | — | — | — | 3.40 | — | — |
+| 9 | Qwen3.8 2.4T A95B | Alibaba | 57.70 | — | — | — | 4.32 | ✓ | — |
 | 10 | Muse Spark 1.2 (xhigh) | Meta | 56.76 | — | — | — | 27.20 | — | — |
 | 11 | GPT-5.6 Terra (max) | OpenAI | 56.58 | — | — | — | 0.05 | — | — |
 | 12 | Gemini 3.7 Flash (high) | Google | 56.03 | — | — | — | 26.48 | — | — |
@@ -65,7 +65,7 @@
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 60.92297113115 | 60.92297113115 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 59.6994671342592 | 59.6994671342592 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 59.5134408119521 | 59.5134408119521 |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | 58.0774404479668 | 58.0774404479668 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 57.7043243271128 | 57.7043243271128 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 56.7615911905642 | 56.7615911905642 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 56.5755675890213 | 56.5755675890213 |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 56.0301180773699 | 56.0301180773699 |
@@ -98,9 +98,9 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1732.84 | 1732.84 | 0.447422680412371 | 0.876404494382023 | 0.542824074074074 | 0.528266913809083 | 0.937373737373737 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1722.96 | 1722.96 | 0.443298969072165 | 0.880149812734082 | 0.561342592592593 | 0.494902687673772 | 0.941414141414141 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1747.45 | 1747.45 | 0.507216494845361 | 0.883895131086142 | 0.53587962962963 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1681.09 | 1681.09 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1678.55 | 1678.55 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1769 | 1769 | 0.503092783505155 | 0.838951310861423 | 0.564814814814815 | 0.422613531047266 | 0.917171717171717 |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | 1735.19 | 1735.19 | 0.51340206185567 | 0.812734082397004 | 0.528935185185185 | 0.430491195551437 | 0.927272727272727 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1720.39 | 1720.39 | 0.490721649484536 | 0.820224719101124 | 0.516203703703704 | 0.424467099165894 | 0.935353535353535 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1628 | 1628 | 0.348453608247423 | 0.801498127340824 | 0.563657407407407 | 0.454587581093605 | 0.904040404040404 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1576.3 | 1576.3 | 0.402061855670103 | 0.880149812734082 | 0.539351851851852 | 0.429101019462465 | 0.925252525252525 |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1531.55 | 1531.55 | 0.327835051546392 | 0.857677902621723 | 0.568287037037037 | 0.478683966635774 | 0.945454545454545 |
@@ -133,8 +133,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1606.91 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1503.25 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1577.7 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1542.79 |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | 1420.93 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1542.19 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1358.29 |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1130.87 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 1106.54 |
@@ -159,7 +158,7 @@
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 30.4833333333333 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 19.7 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 14.3 |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | 3.4 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 4.31666666666667 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 27.2 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 0.05 |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 26.4833333333333 |
@@ -192,9 +191,9 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1732.84 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1722.96 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1747.45 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1681.09 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1678.55 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1769 |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | 1735.19 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1720.39 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1628 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1576.3 |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1531.55 |
@@ -229,7 +228,7 @@
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | False |
 | kimi-k3 | Kimi K3 (max) | Kimi | True |
 | glm-5-3 | GLM-5.3 (max) | Z AI | False |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | False |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | True |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | False |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | False |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | False |
@@ -264,7 +263,7 @@
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 2 | 6 | 0.5 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 3 | 15 | 0.3 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1.4 | 4.4 | 0.26 |
-| qwen3-8-max | Qwen3.8 Max | Alibaba | 2 | 6 | 0.25 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 2 | 6 | 0.25 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1.25 | 4.25 | 0.15 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 2 | 12 | 0.2 |
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 0.75 | 3.75 | 0.075 |
