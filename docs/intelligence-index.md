@@ -1,11 +1,11 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-21T08:14:41Z`
+- **Última actualización:** `2026-08-22T08:07:43Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
-- **Modelos (metadata):** 610
-- **Entradas con datos:** 610
+- **Modelos (metadata):** 616
+- **Entradas con datos:** 616
 - **Secciones capturadas:** intelligence_index, sub_evaluations, aa_briefcase, aa_omniscience, gdpval_aa_v2, openness_index, price_cost, metadata
 - **Secciones NO capturadas:** coding_agent_index, cost_per_task, time_per_task, output_tokens, speed_latency
 
@@ -41,7 +41,7 @@
 | 12 | Gemini 3.7 Flash (high) | Google | 56.03 | — | — | — | 26.48 | — | — |
 | 13 | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 53.20 | — | — | — | 0.83 | ✓ | — |
 | 14 | GPT-5.6 Luna (max) | OpenAI | 52.32 | — | — | — | -10.28 | — | — |
-| 15 | Qwen3.8 27B | Alibaba | 52.02 | — | — | — | -9.98 | ✓ | — |
+| 15 | Qwen3.8 27B (xhigh) | Alibaba | 52.02 | — | — | — | -9.98 | ✓ | — |
 | 16 | Motif 3 | Motif Technologies | 47.36 | — | — | — | 10.18 | ✓ | — |
 | 17 | MiniMax-M3 | MiniMax | 45.40 | — | — | — | 1.35 | ✓ | — |
 | 18 | Inkling (xhigh) | Thinking Machines | 42.29 | — | — | — | 2 | ✓ | — |
@@ -71,7 +71,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 56.0301180773699 | 56.0301180773699 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 53.1976849297815 | 53.1976849297815 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 52.3180827840984 | 52.3180827840984 |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | 52.0246606497206 | 52.0246606497206 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 52.0246606497206 | 52.0246606497206 |
 | motif-3 | Motif 3 | Motif Technologies | 47.3602493365956 | 47.3602493365956 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 45.3968506399702 | 45.3968506399702 |
 | inkling | Inkling (xhigh) | Thinking Machines | 42.2947721285326 | 42.2947721285326 |
@@ -98,7 +98,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1732.84 | 1732.84 | 0.447422680412371 | 0.876404494382023 | 0.542824074074074 | 0.528266913809083 | 0.937373737373737 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1722.96 | 1722.96 | 0.443298969072165 | 0.880149812734082 | 0.561342592592593 | 0.494902687673772 | 0.941414141414141 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1747.45 | 1747.45 | 0.507216494845361 | 0.883895131086142 | 0.53587962962963 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1678.55 | 1678.55 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1678.24 | 1678.24 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1769 | 1769 | 0.503092783505155 | 0.838951310861423 | 0.564814814814815 | 0.422613531047266 | 0.917171717171717 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1720.39 | 1720.39 | 0.490721649484536 | 0.820224719101124 | 0.516203703703704 | 0.424467099165894 | 0.935353535353535 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1628 | 1628 | 0.348453608247423 | 0.801498127340824 | 0.563657407407407 | 0.454587581093605 | 0.904040404040404 |
@@ -106,7 +106,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1531.55 | 1531.55 | 0.327835051546392 | 0.857677902621723 | 0.568287037037037 | 0.478683966635774 | 0.945454545454545 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1590.38 | 1590.38 | 0.395876288659794 | 0.786516853932584 | 0.491898148148148 | 0.410101946246525 | 0.928282828282828 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1578.3 | 1578.3 | 0.311340206185567 | 0.808988764044944 | 0.525462962962963 | 0.394810009267841 | 0.911111111111111 |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | 1545.91 | 1545.91 | 0.480412371134021 | 0.797752808988764 | 0.446759259259259 | 0.33920296570899 | 0.905050505050505 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1545.91 | 1545.91 | 0.480412371134021 | 0.797752808988764 | 0.446759259259259 | 0.33920296570899 | 0.905050505050505 |
 | motif-3 | Motif 3 | Motif Technologies | 1274.54 | 1274.54 | 0.352577319587629 | 0.749063670411985 | 0.40625 | 0.369786839666358 | 0.834343434343434 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 1386.93 | 1386.93 | 0.152577319587629 | 0.651685393258427 | 0.453703703703704 | 0.389712696941613 | 0.929292929292929 |
 | inkling | Inkling (xhigh) | Thinking Machines | 1238.67 | 1238.67 | 0.290721649484536 | 0.550561797752809 | 0.460648148148148 | 0.318813716404078 | 0.871717171717172 |
@@ -164,7 +164,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 26.4833333333333 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 0.833333333333333 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | -10.2833333333333 |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | -9.98333333333333 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | -9.98333333333333 |
 | motif-3 | Motif 3 | Motif Technologies | 10.1833333333333 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 1.35 |
 | inkling | Inkling (xhigh) | Thinking Machines | 2 |
@@ -191,7 +191,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1732.84 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1722.96 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1747.45 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1678.55 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1678.24 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1769 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1720.39 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1628 |
@@ -199,7 +199,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1531.55 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1590.38 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1578.3 |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | 1545.91 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1545.91 |
 | motif-3 | Motif 3 | Motif Technologies | 1274.54 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 1386.93 |
 | inkling | Inkling (xhigh) | Thinking Machines | 1238.67 |
@@ -234,7 +234,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | False |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | True |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | False |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | True |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | True |
 | motif-3 | Motif 3 | Motif Technologies | True |
 | minimax-m3 | MiniMax-M3 | MiniMax | True |
 | inkling | Inkling (xhigh) | Thinking Machines | True |
@@ -269,7 +269,7 @@
 | gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 0.75 | 3.75 | 0.075 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1.32 | 3.96 | 0.044 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 0.2 | 1.2 | 0.02 |
-| qwen3-8-27b | Qwen3.8 27B | Alibaba | 0.42500000000000004 | 3.1 | 0.045 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 0.5 | 3 | 0.05 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 0.3 | 1.2 | 0.06 |
 | inkling | Inkling (xhigh) | Thinking Machines | 1 | 4.05 | 0.17 |
 | nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 0.6 | 2.75 | 0.2 |
