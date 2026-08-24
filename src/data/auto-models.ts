@@ -1462,6 +1462,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "claude-instant": {
     "releaseDate": "2023-03-14"
   },
+  "claude-sonnet-5-low": {
+    "releaseDate": "2026-06-30"
+  },
   "claude-sonnet-5-medium": {
     "releaseDate": "2026-06-30"
   },
@@ -1469,9 +1472,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "releaseDate": "2026-06-30"
   },
   "claude-sonnet-5-xhigh": {
-    "releaseDate": "2026-06-30"
-  },
-  "claude-sonnet-5-low": {
     "releaseDate": "2026-06-30"
   },
   "gpt-5-6-sol-xhigh": {
@@ -1837,17 +1837,17 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gpt-5-5-pro": {
     "releaseDate": "2026-04-23"
   },
+  "gpt-5-4-pro": {
+    "releaseDate": "2026-03-05"
+  },
+  "gpt-4o-mini-realtime-dec-2024": {
+    "releaseDate": "2024-12-17"
+  },
   "gpt-3-5-turbo-0613": {
     "releaseDate": "2023-06-13"
   },
   "gpt-4o-realtime-dec-2024": {
     "releaseDate": "2024-12-17"
-  },
-  "gpt-4o-mini-realtime-dec-2024": {
-    "releaseDate": "2024-12-17"
-  },
-  "gpt-5-4-pro": {
-    "releaseDate": "2026-03-05"
   },
   "grok-4-6-xhigh": {
     "releaseDate": "2026-08-12"
@@ -2626,17 +2626,17 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gemma-3-270m": {
     "releaseDate": "2025-08-14"
   },
+  "gemma-3n-e2b": {
+    "releaseDate": "2025-06-26"
+  },
+  "gemma-3-1b": {
+    "releaseDate": "2025-03-13"
+  },
   "gemma-3n-e4b": {
     "releaseDate": "2025-06-26"
   },
   "gemma-3-4b": {
     "releaseDate": "2025-03-12"
-  },
-  "gemma-3-1b": {
-    "releaseDate": "2025-03-13"
-  },
-  "gemma-3n-e2b": {
-    "releaseDate": "2025-06-26"
   },
   "gemini-3-deep-think": {
     "releaseDate": "2026-02-05"

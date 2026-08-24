@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-23T08:08:32Z`
+- **Última actualización:** `2026-08-24T08:17:49Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
@@ -98,7 +98,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1732.84 | 1732.84 | 0.447422680412371 | 0.876404494382023 | 0.542824074074074 | 0.528266913809083 | 0.937373737373737 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1722.96 | 1722.96 | 0.443298969072165 | 0.880149812734082 | 0.561342592592593 | 0.494902687673772 | 0.941414141414141 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1747.45 | 1747.45 | 0.507216494845361 | 0.883895131086142 | 0.53587962962963 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1678.24 | 1678.24 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1676.93 | 1676.93 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1769 | 1769 | 0.503092783505155 | 0.838951310861423 | 0.564814814814815 | 0.422613531047266 | 0.917171717171717 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1720.39 | 1720.39 | 0.490721649484536 | 0.820224719101124 | 0.516203703703704 | 0.424467099165894 | 0.935353535353535 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1628 | 1628 | 0.348453608247423 | 0.801498127340824 | 0.563657407407407 | 0.454587581093605 | 0.904040404040404 |
@@ -191,7 +191,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1732.84 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1722.96 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1747.45 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1678.24 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1676.93 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1769 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1720.39 |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1628 |
