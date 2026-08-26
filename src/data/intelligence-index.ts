@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-08-25T08:16:43Z
+// No editar a mano. Última actualización: 2026-08-26T08:16:37Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.1.1)
 // Modelos: 618 metadata / 618 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
@@ -7,7 +7,7 @@
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-08-25T08:16:43Z",
+  "fetched_at": "2026-08-26T08:16:37Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1.1",
   "method": "rsc-html",
@@ -370,7 +370,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 57.7043243271128,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1716.91,
+    "gdpval_v2": 1719.21,
     "gdpval_elo": null,
     "omniscience": 4.31666666666667,
     "scicode": 0.516203703703704,
@@ -616,7 +616,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 52.0246606497206,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1541.23,
+    "gdpval_v2": 1540.17,
     "gdpval_elo": null,
     "omniscience": -9.98333333333333,
     "scicode": 0.446759259259259,
@@ -821,7 +821,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 37.4387063722681,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1140.01,
+    "gdpval_v2": 1138.45,
     "gdpval_elo": null,
     "omniscience": 5.23333333333333,
     "scicode": 0.408564814814815,
@@ -903,7 +903,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 35.0641823105374,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 955.94,
+    "gdpval_v2": 957.31,
     "gdpval_elo": null,
     "omniscience": -32.85,
     "scicode": 0.436342592592593,
@@ -1067,7 +1067,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 29.8919353345764,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 913.63,
+    "gdpval_v2": 914.44,
     "gdpval_elo": null,
     "omniscience": -4.36666666666667,
     "scicode": 0.43287037037037,
@@ -1108,7 +1108,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 25.6684845978586,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 698.64,
+    "gdpval_v2": 699.28,
     "gdpval_elo": null,
     "omniscience": -41.5,
     "scicode": 0.359953703703704,
@@ -1186,11 +1186,11 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "name": "Nemotron 3.5 Lightning",
     "short_name": null,
     "creator": "NVIDIA",
-    "intelligence_index": 23.632637599256,
-    "intelligence_index_v4_1": 23.632637599256,
+    "intelligence_index": 23.606237599256,
+    "intelligence_index_v4_1": 23.606237599256,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 826.12,
+    "gdpval_v2": 826.2,
     "gdpval_elo": null,
     "omniscience": -17.7166666666667,
     "scicode": 0.315972222222222,
@@ -1231,7 +1231,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 22.7702225702102,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 713.76,
+    "gdpval_v2": 714.29,
     "gdpval_elo": null,
     "omniscience": -4.01666666666667,
     "scicode": 0.378472222222222,

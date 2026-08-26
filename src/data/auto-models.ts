@@ -935,7 +935,7 @@ export const autoModels: Model[] = [
       "sciCode": 31.6,
       "intelligenceIndex": 23.6
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 39.1). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 39.0). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
