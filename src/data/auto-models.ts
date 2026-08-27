@@ -381,6 +381,37 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 98.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "glm-5-3-flash",
+    "iiSlug": "glm-5-3-flash",
+    "company": "Zhipu",
+    "origin": "China",
+    "displayName": "GLM-5.3-Flash",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.5,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-08-26",
+    "parameters": 320.0,
+    "benchmarks": {
+      "terminalBench": 84.3,
+      "sciCode": 46.1,
+      "intelligenceIndex": 57.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 97.7). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-5-6-luna",
     "iiSlug": "gpt-5-6-luna",
     "company": "OpenAI",
@@ -812,37 +843,6 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 56.2). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "nvidia-nemotron-3-super-120b-a12b",
-    "iiSlug": "nvidia-nemotron-3-super-120b-a12b",
-    "company": "NVIDIA",
-    "origin": "US",
-    "displayName": "Nemotron 3 Super 120B A12B (Reasoning)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.8,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-03-11",
-    "parameters": 120.6,
-    "benchmarks": {
-      "terminalBench": 38.6,
-      "sciCode": 36.0,
-      "intelligenceIndex": 25.7
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 50.4). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "gpt-oss-120b",
     "iiSlug": "gpt-oss-120b",
     "company": "OpenAI",
@@ -1066,6 +1066,20 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 2400.0,
     "releaseDate": "2026-08-12"
   },
+  "glm-5-3-flash": {
+    "pricing": {
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.5,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 84.3,
+      "sciCode": 46.1,
+      "intelligenceIndex": 57.5
+    },
+    "parameters": 320.0,
+    "releaseDate": "2026-08-26"
+  },
   "muse-spark-1-2": {
     "pricing": {
       "inputPer1M": 1.25,
@@ -1285,20 +1299,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 29.9
     },
     "releaseDate": "2025-10-15"
-  },
-  "nvidia-nemotron-3-super-120b-a12b": {
-    "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.8,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 38.6,
-      "sciCode": 36.0,
-      "intelligenceIndex": 25.7
-    },
-    "parameters": 120.6,
-    "releaseDate": "2026-03-11"
   },
   "gpt-oss-120b": {
     "pricing": {
@@ -2080,6 +2080,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-8-max": {
     "releaseDate": "2026-08-03"
   },
+  "qwen3-8-flash-next": {
+    "releaseDate": "2026-08-26"
+  },
   "qwen3-7-max": {
     "releaseDate": "2026-05-19"
   },
@@ -2764,6 +2767,12 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "deepseek-llm-67b-chat": {
     "releaseDate": "2023-11-29"
   },
+  "agnes-2-5-pro-beta": {
+    "releaseDate": "2026-08-26"
+  },
+  "agnes-2-5-pro-alpha": {
+    "releaseDate": "2026-07-24"
+  },
   "motif-0714": {
     "releaseDate": "2026-07-14"
   },
@@ -2917,8 +2926,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "jt-mini": {
     "releaseDate": "2026-04-15"
   },
-  "agnes-2-5-pro-alpha": {
-    "releaseDate": "2026-07-24"
+  "nvidia-nemotron-3-super-120b-a12b": {
+    "releaseDate": "2026-03-11"
   },
   "nemotron-cascade-2-30b-a3b": {
     "releaseDate": "2026-03-19"
@@ -3271,6 +3280,42 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "apriel-v1-6-15b-thinker": {
     "releaseDate": "2025-11-25"
   },
+  "granite-4-2-8b": {
+    "releaseDate": "2026-08-25"
+  },
+  "granite-4-2-3b": {
+    "releaseDate": "2026-08-25"
+  },
+  "granite-4-1-30b": {
+    "releaseDate": "2026-04-29"
+  },
+  "granite-4-1-8b": {
+    "releaseDate": "2026-04-29"
+  },
+  "granite-4-0-h-small": {
+    "releaseDate": "2025-09-22"
+  },
+  "granite-4-1-3b": {
+    "releaseDate": "2026-04-29"
+  },
+  "granite-4-0-h-nano-1b": {
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-micro": {
+    "releaseDate": "2025-09-22"
+  },
+  "granite-4-0-nano-1b": {
+    "releaseDate": "2025-10-28"
+  },
+  "granite-3-3-8b-instruct": {
+    "releaseDate": "2025-04-16"
+  },
+  "granite-4-0-350m": {
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "releaseDate": "2025-10-28"
+  },
   "trinity-large-thinking": {
     "pricing": {
       "inputPer1M": 0.22,
@@ -3426,36 +3471,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "falcon-h1r-7b": {
     "releaseDate": "2026-01-04"
-  },
-  "granite-4-1-30b": {
-    "releaseDate": "2026-04-29"
-  },
-  "granite-4-1-8b": {
-    "releaseDate": "2026-04-29"
-  },
-  "granite-4-0-h-small": {
-    "releaseDate": "2025-09-22"
-  },
-  "granite-4-1-3b": {
-    "releaseDate": "2026-04-29"
-  },
-  "granite-4-0-h-nano-1b": {
-    "releaseDate": "2025-10-28"
-  },
-  "granite-4-0-micro": {
-    "releaseDate": "2025-09-22"
-  },
-  "granite-4-0-nano-1b": {
-    "releaseDate": "2025-10-28"
-  },
-  "granite-3-3-8b-instruct": {
-    "releaseDate": "2025-04-16"
-  },
-  "granite-4-0-350m": {
-    "releaseDate": "2025-10-28"
-  },
-  "granite-4-0-h-350m": {
-    "releaseDate": "2025-10-28"
   },
   "tulu3-405b": {
     "releaseDate": "2025-01-30"
