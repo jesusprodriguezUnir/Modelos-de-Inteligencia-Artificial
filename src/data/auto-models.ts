@@ -3193,6 +3193,45 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "seed-oss-36b-instruct": {
     "releaseDate": "2025-08-20"
   },
+  "granite-4-2-30b": {
+    "releaseDate": "2026-08-25"
+  },
+  "granite-4-2-8b": {
+    "releaseDate": "2026-08-25"
+  },
+  "granite-4-2-3b": {
+    "releaseDate": "2026-08-25"
+  },
+  "granite-4-1-30b": {
+    "releaseDate": "2026-04-29"
+  },
+  "granite-4-1-8b": {
+    "releaseDate": "2026-04-29"
+  },
+  "granite-4-0-h-small": {
+    "releaseDate": "2025-09-22"
+  },
+  "granite-4-1-3b": {
+    "releaseDate": "2026-04-29"
+  },
+  "granite-4-0-h-nano-1b": {
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-micro": {
+    "releaseDate": "2025-09-22"
+  },
+  "granite-4-0-nano-1b": {
+    "releaseDate": "2025-10-28"
+  },
+  "granite-3-3-8b-instruct": {
+    "releaseDate": "2025-04-16"
+  },
+  "granite-4-0-350m": {
+    "releaseDate": "2025-10-28"
+  },
+  "granite-4-0-h-350m": {
+    "releaseDate": "2025-10-28"
+  },
   "north-mini-code": {
     "releaseDate": "2026-06-09"
   },
@@ -3279,42 +3318,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "apriel-v1-6-15b-thinker": {
     "releaseDate": "2025-11-25"
-  },
-  "granite-4-2-8b": {
-    "releaseDate": "2026-08-25"
-  },
-  "granite-4-2-3b": {
-    "releaseDate": "2026-08-25"
-  },
-  "granite-4-1-30b": {
-    "releaseDate": "2026-04-29"
-  },
-  "granite-4-1-8b": {
-    "releaseDate": "2026-04-29"
-  },
-  "granite-4-0-h-small": {
-    "releaseDate": "2025-09-22"
-  },
-  "granite-4-1-3b": {
-    "releaseDate": "2026-04-29"
-  },
-  "granite-4-0-h-nano-1b": {
-    "releaseDate": "2025-10-28"
-  },
-  "granite-4-0-micro": {
-    "releaseDate": "2025-09-22"
-  },
-  "granite-4-0-nano-1b": {
-    "releaseDate": "2025-10-28"
-  },
-  "granite-3-3-8b-instruct": {
-    "releaseDate": "2025-04-16"
-  },
-  "granite-4-0-350m": {
-    "releaseDate": "2025-10-28"
-  },
-  "granite-4-0-h-350m": {
-    "releaseDate": "2025-10-28"
   },
   "trinity-large-thinking": {
     "pricing": {

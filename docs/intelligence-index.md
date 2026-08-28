@@ -1,11 +1,11 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-27T11:26:05Z`
+- **Última actualización:** `2026-08-28T11:53:53Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
-- **Modelos (metadata):** 623
-- **Entradas con datos:** 623
+- **Modelos (metadata):** 624
+- **Entradas con datos:** 624
 - **Secciones capturadas:** intelligence_index, sub_evaluations, aa_briefcase, aa_omniscience, gdpval_aa_v2, openness_index, price_cost, metadata
 - **Secciones NO capturadas:** coding_agent_index, cost_per_task, time_per_task, output_tokens, speed_latency
 
@@ -92,56 +92,59 @@
 
 | slug | name | creator | gdpval | gdpval_v2 | tau_banking | terminalbench_v2_1 | scicode | hle | gpqa |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1831.05 | 1831.05 | 0.420618556701031 | 0.891385767790262 | 0.556712962962963 | 0.548656163113994 | 0.932323232323232 |
+| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1823.94 | 1823.94 | 0.420618556701031 | 0.891385767790262 | 0.556712962962963 | 0.548656163113994 | 0.932323232323232 |
 | claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1797.1 | 1797.1 | 0.43298969072165 | 0.880149812734082 | 0.549768518518518 | 0.544022242817424 | 0.937373737373737 |
 | claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1722.99 | 1722.99 | 0.381443298969072 | 0.846441947565543 | 0.601851851851852 | 0.554680259499537 | 0.926262626262626 |
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1718.97 | 1718.97 | 0.447422680412371 | 0.876404494382023 | 0.542824074074074 | 0.528266913809083 | 0.937373737373737 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1711.42 | 1711.42 | 0.443298969072165 | 0.880149812734082 | 0.561342592592593 | 0.494902687673772 | 0.941414141414141 |
-| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1731.19 | 1731.19 | 0.507216494845361 | 0.883895131086142 | 0.53587962962963 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1675.01 | 1675.01 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1762.97 | 1762.97 | 0.503092783505155 | 0.838951310861423 | 0.564814814814815 | 0.422613531047266 | 0.917171717171717 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1717.3 | 1717.3 | 0.490721649484536 | 0.820224719101124 | 0.516203703703704 | 0.424467099165894 | 0.935353535353535 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1769.05 | 1769.05 | 0.472164948453608 | 0.842696629213483 | 0.460648148148148 | 0.398517145505097 | 0.912121212121212 |
-| muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1619.03 | 1619.03 | 0.348453608247423 | 0.801498127340824 | 0.563657407407407 | 0.454587581093605 | 0.904040404040404 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1568.8 | 1568.8 | 0.402061855670103 | 0.880149812734082 | 0.539351851851852 | 0.429101019462465 | 0.925252525252525 |
-| gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1522.56 | 1522.56 | 0.327835051546392 | 0.857677902621723 | 0.568287037037037 | 0.478683966635774 | 0.945454545454545 |
-| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1582.23 | 1582.23 | 0.395876288659794 | 0.786516853932584 | 0.491898148148148 | 0.410101946246525 | 0.928282828282828 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1573.66 | 1573.66 | 0.311340206185567 | 0.808988764044944 | 0.525462962962963 | 0.394810009267841 | 0.911111111111111 |
-| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1538.98 | 1538.98 | 0.480412371134021 | 0.797752808988764 | 0.446759259259259 | 0.33920296570899 | 0.905050505050505 |
-| motif-3 | Motif 3 | Motif Technologies | 1272.2 | 1272.2 | 0.352577319587629 | 0.749063670411985 | 0.40625 | 0.369786839666358 | 0.834343434343434 |
-| minimax-m3 | MiniMax-M3 | MiniMax | 1381.59 | 1381.59 | 0.152577319587629 | 0.651685393258427 | 0.453703703703704 | 0.389712696941613 | 0.929292929292929 |
-| inkling | Inkling (xhigh) | Thinking Machines | 1236.27 | 1236.27 | 0.290721649484536 | 0.550561797752809 | 0.460648148148148 | 0.318813716404078 | 0.871717171717172 |
-| nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 1161.98 | 1161.98 | 0.142268041237113 | 0.539325842696629 | 0.399305555555556 | 0.284059314179796 | 0.866666666666667 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1710.14 | 1710.14 | 0.443298969072165 | 0.880149812734082 | 0.561342592592593 | 0.494902687673772 | 0.941414141414141 |
+| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1729.93 | 1729.93 | 0.507216494845361 | 0.883895131086142 | 0.53587962962963 | 0.429101019462465 | 0.94949494949495 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1667.97 | 1667.97 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1758.29 | 1758.29 | 0.503092783505155 | 0.838951310861423 | 0.564814814814815 | 0.422613531047266 | 0.917171717171717 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1718.42 | 1718.42 | 0.490721649484536 | 0.820224719101124 | 0.516203703703704 | 0.424467099165894 | 0.935353535353535 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1764.66 | 1764.66 | 0.472164948453608 | 0.842696629213483 | 0.460648148148148 | 0.398517145505097 | 0.912121212121212 |
+| muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1615.02 | 1615.02 | 0.348453608247423 | 0.801498127340824 | 0.563657407407407 | 0.454587581093605 | 0.904040404040404 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1565.62 | 1565.62 | 0.402061855670103 | 0.880149812734082 | 0.539351851851852 | 0.429101019462465 | 0.925252525252525 |
+| gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1515.97 | 1515.97 | 0.327835051546392 | 0.857677902621723 | 0.568287037037037 | 0.478683966635774 | 0.945454545454545 |
+| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1576.83 | 1576.83 | 0.395876288659794 | 0.786516853932584 | 0.491898148148148 | 0.410101946246525 | 0.928282828282828 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1569.11 | 1569.11 | 0.311340206185567 | 0.808988764044944 | 0.525462962962963 | 0.394810009267841 | 0.911111111111111 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1542.97 | 1542.97 | 0.480412371134021 | 0.797752808988764 | 0.446759259259259 | 0.33920296570899 | 0.905050505050505 |
+| motif-3 | Motif 3 | Motif Technologies | 1272.47 | 1272.47 | 0.352577319587629 | 0.749063670411985 | 0.40625 | 0.369786839666358 | 0.834343434343434 |
+| minimax-m3 | MiniMax-M3 | MiniMax | 1379.75 | 1379.75 | 0.152577319587629 | 0.651685393258427 | 0.453703703703704 | 0.389712696941613 | 0.929292929292929 |
+| inkling | Inkling (xhigh) | Thinking Machines | 1234.29 | 1234.29 | 0.290721649484536 | 0.550561797752809 | 0.460648148148148 | 0.318813716404078 | 0.871717171717172 |
+| nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 1161.92 | 1161.92 | 0.142268041237113 | 0.539325842696629 | 0.399305555555556 | 0.284059314179796 | 0.866666666666667 |
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1137.53 | 1137.53 | 0.175257731958763 | 0.535580524344569 | 0.408564814814815 | 0.188137164040778 | 0.838383838383838 |
-| solar-open2-250b | Solar Open2 250B | Upstage | 1121.93 | 1121.93 | 0.216494845360825 | 0.441947565543071 | 0.456018518518519 | 0.285449490268767 | 0.856565656565657 |
-| muse-glimmer | Muse Glimmer (high) | Meta | 955.1 | 955.1 | 0.235051546391753 | 0.51685393258427 | 0.436342592592593 | 0.219647822057461 | 0.835353535353535 |
-| a-x-k2 | A.X-K2 | SK Telecom | 1112.23 | 1112.23 | 0.160824742268041 | 0.389513108614232 | 0.385416666666667 | 0.295644114921223 | 0.856565656565657 |
+| solar-open2-250b | Solar Open2 250B | Upstage | 1122.36 | 1122.36 | 0.216494845360825 | 0.441947565543071 | 0.456018518518519 | 0.285449490268767 | 0.856565656565657 |
+| muse-glimmer | Muse Glimmer (high) | Meta | 955.34 | 955.34 | 0.235051546391753 | 0.51685393258427 | 0.436342592592593 | 0.219647822057461 | 0.835353535353535 |
+| a-x-k2 | A.X-K2 | SK Telecom | 1112.21 | 1112.21 | 0.160824742268041 | 0.389513108614232 | 0.385416666666667 | 0.295644114921223 | 0.856565656565657 |
 | k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | 979.87 | 979.87 | 0.115463917525773 | 0.404494382022472 | 0.409722222222222 | 0.185820203892493 | 0.829292929292929 |
-| mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.22 | 935.22 | 0.150515463917526 | 0.50561797752809 | 0.395833333333333 | 0.137627432808156 | 0.748484848484849 |
+| mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.65 | 935.65 | 0.150515463917526 | 0.50561797752809 | 0.395833333333333 | 0.137627432808156 | 0.748484848484849 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 914.95 | 914.95 | 0.0927835051546392 | 0.441947565543071 | 0.43287037037037 | 0.103799814643188 | 0.671717171717172 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.53 | 801.53 | 0.127835051546392 | 0.262172284644195 | 0.388888888888889 | 0.196014828544949 | 0.781818181818182 |
-| nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 824.99 | 824.99 | 0.088659793814433 | 0.243445692883895 | 0.315972222222222 | 0.105653382761817 | 0.743434343434343 |
+| nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 824.58 | 824.58 | 0.088659793814433 | 0.243445692883895 | 0.315972222222222 | 0.105653382761817 | 0.743434343434343 |
 | command-a-plus | Command A+ | Cohere | 714.68 | 714.68 | 0.0597938144329897 | 0.228464419475655 | 0.378472222222222 | 0.119555143651529 | 0.760606060606061 |
 
 ## `aa_briefcase`
 
 | slug | name | creator | briefcase |
 | --- | --- | --- | --- |
-| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1710.22 |
+| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1684.96 |
 | claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1686.73 |
 | claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1571.79 |
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1606.44 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1501.66 |
-| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1562.04 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1542.54 |
-| muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1363.37 |
-| gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1132.45 |
-| minimax-m3 | MiniMax-M3 | MiniMax | 1106.58 |
-| inkling | Inkling (xhigh) | Thinking Machines | 838.03 |
-| nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 875.44 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1493.92 |
+| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1562.44 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1528.2 |
+| muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1364.23 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1349.73 |
+| gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1133.16 |
+| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1286.37 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1359.76 |
+| minimax-m3 | MiniMax-M3 | MiniMax | 1107.16 |
+| inkling | Inkling (xhigh) | Thinking Machines | 840.52 |
+| nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 876.84 |
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 636.95 |
-| mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 517.49 |
-| claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 612.7 |
+| mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 519.11 |
+| claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 614.41 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 8.9 |
 | command-a-plus | Command A+ | Cohere | 371.04 |
 
@@ -184,35 +187,35 @@
 
 | slug | name | creator | gdpval_v2 |
 | --- | --- | --- | --- |
-| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1831.05 |
+| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1823.94 |
 | claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1797.1 |
 | claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1722.99 |
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1718.97 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1711.42 |
-| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1731.19 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1675.01 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1762.97 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1717.3 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1769.05 |
-| muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1619.03 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1568.8 |
-| gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1522.56 |
-| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1582.23 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1573.66 |
-| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1538.98 |
-| motif-3 | Motif 3 | Motif Technologies | 1272.2 |
-| minimax-m3 | MiniMax-M3 | MiniMax | 1381.59 |
-| inkling | Inkling (xhigh) | Thinking Machines | 1236.27 |
-| nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 1161.98 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1710.14 |
+| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1729.93 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1667.97 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1758.29 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1718.42 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1764.66 |
+| muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | 1615.02 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1565.62 |
+| gemini-3-7-flash | Gemini 3.7 Flash (high) | Google | 1515.97 |
+| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1576.83 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1569.11 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1542.97 |
+| motif-3 | Motif 3 | Motif Technologies | 1272.47 |
+| minimax-m3 | MiniMax-M3 | MiniMax | 1379.75 |
+| inkling | Inkling (xhigh) | Thinking Machines | 1234.29 |
+| nvidia-nemotron-3-ultra-550b-a55b | Nemotron 3 Ultra 550B A55B (Reasoning) | NVIDIA | 1161.92 |
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1137.53 |
-| solar-open2-250b | Solar Open2 250B | Upstage | 1121.93 |
-| muse-glimmer | Muse Glimmer (high) | Meta | 955.1 |
-| a-x-k2 | A.X-K2 | SK Telecom | 1112.23 |
+| solar-open2-250b | Solar Open2 250B | Upstage | 1122.36 |
+| muse-glimmer | Muse Glimmer (high) | Meta | 955.34 |
+| a-x-k2 | A.X-K2 | SK Telecom | 1112.21 |
 | k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | 979.87 |
-| mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.22 |
+| mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.65 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 914.95 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.53 |
-| nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 824.99 |
+| nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 824.58 |
 | command-a-plus | Command A+ | Cohere | 714.68 |
 
 ## `openness_index`
