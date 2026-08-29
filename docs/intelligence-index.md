@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-28T11:53:53Z`
+- **Última actualización:** `2026-08-29T08:13:13Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
@@ -34,7 +34,7 @@
 | 5 | GPT-5.6 Sol (max) | OpenAI | 60.93 | — | — | — | 21.97 | — | — |
 | 6 | Grok 4.6 (high) | SpaceXAI | 60.92 | — | — | — | 30.48 | — | — |
 | 7 | Kimi K3 (max) | Kimi | 59.70 | — | — | — | 19.70 | ✓ | — |
-| 8 | GLM-5.3 (max) | Z AI | 59.51 | — | — | — | 14.30 | — | — |
+| 8 | GLM-5.3 (max) | Z AI | 59.51 | — | — | — | 14.30 | ✓ | — |
 | 9 | Qwen3.8 2.4T A95B | Alibaba | 57.70 | — | — | — | 4.32 | ✓ | — |
 | 10 | GLM-5.3-Flash | Z AI | 57.46 | — | — | — | 7.47 | ✓ | — |
 | 11 | Muse Spark 1.2 (xhigh) | Meta | 56.76 | — | — | — | 27.20 | — | — |
@@ -51,7 +51,7 @@
 | 22 | Solar Open2 250B | Upstage | 37.43 | — | — | — | -1.77 | ✓ | — |
 | 23 | Muse Glimmer (high) | Meta | 35.06 | — | — | — | -32.85 | ✓ | — |
 | 24 | A.X-K2 | SK Telecom | 35.01 | — | — | — | -8.23 | ✓ | — |
-| 25 | K-EXAONE 2.0 0803 | LG AI Research | 30.98 | — | — | — | -6.60 | ✓ | — |
+| 25 | K-EXAONE 2.0 | LG AI Research | 30.98 | — | — | — | -6.60 | ✓ | — |
 
 ## `intelligence_index`
 
@@ -81,7 +81,7 @@
 | solar-open2-250b | Solar Open2 250B | Upstage | 37.4265535921632 | 37.4265535921632 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 35.0641823105374 | 35.0641823105374 |
 | a-x-k2 | A.X-K2 | SK Telecom | 35.0147941618563 | 35.0147941618563 |
-| k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | 30.9845435318094 | 30.9845435318094 |
+| k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | 30.9845435318094 | 30.9845435318094 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 30.3922256057425 | 30.3922256057425 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 29.8919353345764 | 29.8919353345764 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 24.126439151808 | 24.126439151808 |
@@ -116,7 +116,7 @@
 | solar-open2-250b | Solar Open2 250B | Upstage | 1122.36 | 1122.36 | 0.216494845360825 | 0.441947565543071 | 0.456018518518519 | 0.285449490268767 | 0.856565656565657 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 955.34 | 955.34 | 0.235051546391753 | 0.51685393258427 | 0.436342592592593 | 0.219647822057461 | 0.835353535353535 |
 | a-x-k2 | A.X-K2 | SK Telecom | 1112.21 | 1112.21 | 0.160824742268041 | 0.389513108614232 | 0.385416666666667 | 0.295644114921223 | 0.856565656565657 |
-| k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | 979.87 | 979.87 | 0.115463917525773 | 0.404494382022472 | 0.409722222222222 | 0.185820203892493 | 0.829292929292929 |
+| k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | 979.87 | 979.87 | 0.115463917525773 | 0.404494382022472 | 0.409722222222222 | 0.185820203892493 | 0.829292929292929 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.65 | 935.65 | 0.150515463917526 | 0.50561797752809 | 0.395833333333333 | 0.137627432808156 | 0.748484848484849 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 914.95 | 914.95 | 0.0927835051546392 | 0.441947565543071 | 0.43287037037037 | 0.103799814643188 | 0.671717171717172 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.53 | 801.53 | 0.127835051546392 | 0.262172284644195 | 0.388888888888889 | 0.196014828544949 | 0.781818181818182 |
@@ -176,7 +176,7 @@
 | solar-open2-250b | Solar Open2 250B | Upstage | -1.76666666666667 |
 | muse-glimmer | Muse Glimmer (high) | Meta | -32.85 |
 | a-x-k2 | A.X-K2 | SK Telecom | -8.23333333333333 |
-| k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | -6.6 |
+| k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | -6.6 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | -36.8 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | -4.36666666666667 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | -49.25 |
@@ -211,7 +211,7 @@
 | solar-open2-250b | Solar Open2 250B | Upstage | 1122.36 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 955.34 |
 | a-x-k2 | A.X-K2 | SK Telecom | 1112.21 |
-| k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | 979.87 |
+| k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | 979.87 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.65 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 914.95 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.53 |
@@ -229,7 +229,7 @@
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | False |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | False |
 | kimi-k3 | Kimi K3 (max) | Kimi | True |
-| glm-5-3 | GLM-5.3 (max) | Z AI | False |
+| glm-5-3 | GLM-5.3 (max) | Z AI | True |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | True |
 | glm-5-3-flash | GLM-5.3-Flash | Z AI | True |
 | muse-spark-1-2 | Muse Spark 1.2 (xhigh) | Meta | False |
@@ -246,7 +246,7 @@
 | solar-open2-250b | Solar Open2 250B | Upstage | True |
 | muse-glimmer | Muse Glimmer (high) | Meta | True |
 | a-x-k2 | A.X-K2 | SK Telecom | True |
-| k-exaone-2-0-0803 | K-EXAONE 2.0 0803 | LG AI Research | True |
+| k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | True |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | True |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | False |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | True |

@@ -312,7 +312,7 @@
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": null,
-    "is_open_weights": false,
+    "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 753,
     "activeParams": 40,
@@ -985,7 +985,7 @@
   },
   {
     "slug": "k-exaone-2-0-0803",
-    "name": "K-EXAONE 2.0 0803",
+    "name": "K-EXAONE 2.0",
     "short_name": null,
     "creator": "LG AI Research",
     "intelligence_index": 30.9845435318094,

@@ -253,7 +253,7 @@ export const autoModels: Model[] = [
     "modalities": [
       "text"
     ],
-    "openWeight": false,
+    "openWeight": true,
     "releaseDate": "2026-08-18",
     "parameters": 753.0,
     "benchmarks": {
@@ -817,7 +817,7 @@ export const autoModels: Model[] = [
     "iiSlug": "k-exaone-2-0-0803",
     "company": "LGAIResearch",
     "origin": "US",
-    "displayName": "K-EXAONE 2.0 0803",
+    "displayName": "K-EXAONE 2.0",
     "kind": "model",
     "category": [
       "coding",

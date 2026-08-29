@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-08-28T11:53:53Z
+// No editar a mano. Última actualización: 2026-08-29T08:13:13Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.1.1)
 // Modelos: 624 metadata / 624 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
@@ -7,7 +7,7 @@
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-08-28T11:53:53Z",
+  "fetched_at": "2026-08-29T08:13:13Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1.1",
   "method": "rsc-html",
@@ -346,7 +346,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "mmlu_pro": null,
     "mmmu_pro": null,
     "briefcase": null,
-    "is_open_weights": false,
+    "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 753,
     "activeParams": 40,
@@ -1019,7 +1019,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
   },
   {
     "slug": "k-exaone-2-0-0803",
-    "name": "K-EXAONE 2.0 0803",
+    "name": "K-EXAONE 2.0",
     "short_name": null,
     "creator": "LG AI Research",
     "intelligence_index": 30.9845435318094,
