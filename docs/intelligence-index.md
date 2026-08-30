@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-08-29T08:13:13Z`
+- **Última actualización:** `2026-08-30T08:13:55Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.1.1
 - **Método de extracción:** `rsc-html`
@@ -98,7 +98,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1718.97 | 1718.97 | 0.447422680412371 | 0.876404494382023 | 0.542824074074074 | 0.528266913809083 | 0.937373737373737 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1710.14 | 1710.14 | 0.443298969072165 | 0.880149812734082 | 0.561342592592593 | 0.494902687673772 | 0.941414141414141 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1729.93 | 1729.93 | 0.507216494845361 | 0.883895131086142 | 0.53587962962963 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1667.97 | 1667.97 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1643.66 | 1643.66 | 0.45979381443299 | 0.850187265917603 | 0.586805555555556 | 0.468952734012975 | 0.935353535353535 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1758.29 | 1758.29 | 0.503092783505155 | 0.838951310861423 | 0.564814814814815 | 0.422613531047266 | 0.917171717171717 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1718.42 | 1718.42 | 0.490721649484536 | 0.820224719101124 | 0.516203703703704 | 0.424467099165894 | 0.935353535353535 |
 | glm-5-3-flash | GLM-5.3-Flash | Z AI | 1764.66 | 1764.66 | 0.472164948453608 | 0.842696629213483 | 0.460648148148148 | 0.398517145505097 | 0.912121212121212 |
@@ -119,7 +119,7 @@
 | k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | 979.87 | 979.87 | 0.115463917525773 | 0.404494382022472 | 0.409722222222222 | 0.185820203892493 | 0.829292929292929 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.65 | 935.65 | 0.150515463917526 | 0.50561797752809 | 0.395833333333333 | 0.137627432808156 | 0.748484848484849 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 914.95 | 914.95 | 0.0927835051546392 | 0.441947565543071 | 0.43287037037037 | 0.103799814643188 | 0.671717171717172 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.53 | 801.53 | 0.127835051546392 | 0.262172284644195 | 0.388888888888889 | 0.196014828544949 | 0.781818181818182 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 802.63 | 802.63 | 0.127835051546392 | 0.262172284644195 | 0.388888888888889 | 0.196014828544949 | 0.781818181818182 |
 | nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 824.58 | 824.58 | 0.088659793814433 | 0.243445692883895 | 0.315972222222222 | 0.105653382761817 | 0.743434343434343 |
 | command-a-plus | Command A+ | Cohere | 714.68 | 714.68 | 0.0597938144329897 | 0.228464419475655 | 0.378472222222222 | 0.119555143651529 | 0.760606060606061 |
 
@@ -145,7 +145,7 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 636.95 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 519.11 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 614.41 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 8.9 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 10.58 |
 | command-a-plus | Command A+ | Cohere | 371.04 |
 
 ## `aa_omniscience`
@@ -193,7 +193,7 @@
 | claude-opus-5-high | Claude Opus 5 (Adaptive Reasoning, High Effort) | Anthropic | 1718.97 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1710.14 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1729.93 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1667.97 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1643.66 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1758.29 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1718.42 |
 | glm-5-3-flash | GLM-5.3-Flash | Z AI | 1764.66 |
@@ -214,7 +214,7 @@
 | k-exaone-2-0-0803 | K-EXAONE 2.0 | LG AI Research | 979.87 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 935.65 |
 | claude-4-5-haiku-reasoning | Claude 4.5 Haiku (Reasoning) | Anthropic | 914.95 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 801.53 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 802.63 |
 | nemotron-3-5-lightning | Nemotron 3.5 Lightning | NVIDIA | 824.58 |
 | command-a-plus | Command A+ | Cohere | 714.68 |
 

@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-08-29T08:13:13Z
+// No editar a mano. Última actualización: 2026-08-30T08:13:55Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.1.1)
 // Modelos: 624 metadata / 624 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
@@ -7,7 +7,7 @@
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-08-29T08:13:13Z",
+  "fetched_at": "2026-08-30T08:13:55Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1.1",
   "method": "rsc-html",
@@ -288,7 +288,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 59.6994671342592,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1667.97,
+    "gdpval_v2": 1643.66,
     "gdpval_elo": null,
     "omniscience": 19.7,
     "scicode": 0.586805555555556,
@@ -1149,7 +1149,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 24.126439151808,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 801.53,
+    "gdpval_v2": 802.63,
     "gdpval_elo": null,
     "omniscience": -49.25,
     "scicode": 0.388888888888889,
@@ -1165,7 +1165,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "aime": 0.934416666666667,
     "mmlu_pro": 0.807928856382979,
     "mmmu_pro": null,
-    "briefcase": 8.9,
+    "briefcase": 10.58,
     "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 117,

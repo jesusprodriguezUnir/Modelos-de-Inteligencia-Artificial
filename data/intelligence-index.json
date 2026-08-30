@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-29T08:13:13Z",
+  "fetched_at": "2026-08-30T08:13:55Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1.1",
   "method": "rsc-html",
@@ -336,8 +336,8 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval": 1667.97,
-        "gdpval_v2": 1667.97,
+        "gdpval": 1643.66,
+        "gdpval_v2": 1643.66,
         "tau_banking": 0.45979381443299,
         "terminalbench_v2_1": 0.850187265917603,
         "scicode": 0.586805555555556,
@@ -670,8 +670,8 @@
         "slug": "gpt-oss-120b",
         "name": "gpt-oss-120b (high)",
         "creator": "OpenAI",
-        "gdpval": 801.53,
-        "gdpval_v2": 801.53,
+        "gdpval": 802.63,
+        "gdpval_v2": 802.63,
         "tau_banking": 0.127835051546392,
         "terminalbench_v2_1": 0.262172284644195,
         "scicode": 0.388888888888889,
@@ -831,7 +831,7 @@
         "slug": "gpt-oss-120b",
         "name": "gpt-oss-120b (high)",
         "creator": "OpenAI",
-        "briefcase": 8.9
+        "briefcase": 10.58
       },
       {
         "slug": "command-a-plus",
@@ -1063,7 +1063,7 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval_v2": 1667.97
+        "gdpval_v2": 1643.66
       },
       {
         "slug": "glm-5-3",
@@ -1189,7 +1189,7 @@
         "slug": "gpt-oss-120b",
         "name": "gpt-oss-120b (high)",
         "creator": "OpenAI",
-        "gdpval_v2": 801.53
+        "gdpval_v2": 802.63
       },
       {
         "slug": "nemotron-3-5-lightning",
@@ -6881,7 +6881,7 @@
         "intelligence_index_v4_1": 59.6994671342592,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1667.97,
+        "gdpval_v2": 1643.66,
         "gdpval_elo": null,
         "omniscience": 19.7,
         "scicode": 0.586805555555556,
@@ -7742,7 +7742,7 @@
         "intelligence_index_v4_1": 24.126439151808,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 801.53,
+        "gdpval_v2": 802.63,
         "gdpval_elo": null,
         "omniscience": -49.25,
         "scicode": 0.388888888888889,
@@ -7758,7 +7758,7 @@
         "aime": 0.934416666666667,
         "mmlu_pro": 0.807928856382979,
         "mmmu_pro": null,
-        "briefcase": 8.9,
+        "briefcase": 10.58,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 117,
