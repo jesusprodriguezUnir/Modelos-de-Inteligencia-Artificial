@@ -2806,6 +2806,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "minimax-m1-40k": {
     "releaseDate": "2025-06-17"
   },
+  "apodex-1-1": {
+    "releaseDate": "2026-08-30"
+  },
   "mimo-v2-5-pro": {
     "releaseDate": "2026-04-22"
   },
