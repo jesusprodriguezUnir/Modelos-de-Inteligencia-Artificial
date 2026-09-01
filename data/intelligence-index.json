@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-08-31T08:18:17Z",
+  "fetched_at": "2026-09-01T08:16:57Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1.1",
   "method": "rsc-html",
-  "n_models": 625,
-  "n_default_data": 625,
+  "n_models": 626,
+  "n_default_data": 626,
   "sections_captured": [
     "intelligence_index",
     "sub_evaluations",
@@ -321,8 +321,8 @@
         "slug": "grok-4-6",
         "name": "Grok 4.6 (high)",
         "creator": "SpaceXAI",
-        "gdpval": 1701.94,
-        "gdpval_v2": 1701.94,
+        "gdpval": 1729.93,
+        "gdpval_v2": 1729.93,
         "tau_banking": 0.507216494845361,
         "terminalbench_v2_1": 0.883895131086142,
         "scicode": 0.53587962962963,
@@ -336,8 +336,8 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval": 1643.69,
-        "gdpval_v2": 1643.69,
+        "gdpval": 1667.97,
+        "gdpval_v2": 1667.97,
         "tau_banking": 0.45979381443299,
         "terminalbench_v2_1": 0.850187265917603,
         "scicode": 0.586805555555556,
@@ -429,8 +429,8 @@
         "slug": "gemini-3-7-flash",
         "name": "Gemini 3.7 Flash (high)",
         "creator": "Google",
-        "gdpval": 1482.82,
-        "gdpval_v2": 1482.82,
+        "gdpval": 1515.97,
+        "gdpval_v2": 1515.97,
         "tau_banking": 0.327835051546392,
         "terminalbench_v2_1": 0.857677902621723,
         "scicode": 0.568287037037037,
@@ -460,8 +460,8 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "gdpval": 1543.88,
-        "gdpval_v2": 1543.88,
+        "gdpval": 1569.11,
+        "gdpval_v2": 1569.11,
         "tau_banking": 0.311340206185567,
         "terminalbench_v2_1": 0.808988764044944,
         "scicode": 0.525462962962963,
@@ -556,8 +556,8 @@
         "slug": "gemini-3-5-flash-lite",
         "name": "Gemini 3.5 Flash-Lite",
         "creator": "Google",
-        "gdpval": 1109.09,
-        "gdpval_v2": 1109.09,
+        "gdpval": 1136.31,
+        "gdpval_v2": 1136.31,
         "tau_banking": 0.175257731958763,
         "terminalbench_v2_1": 0.535580524344569,
         "scicode": 0.408564814814815,
@@ -753,7 +753,7 @@
         "slug": "grok-4-6",
         "name": "Grok 4.6 (high)",
         "creator": "SpaceXAI",
-        "briefcase": 1553.05
+        "briefcase": 1551.24
       },
       {
         "slug": "kimi-k3",
@@ -762,22 +762,28 @@
         "briefcase": 1516.62
       },
       {
+        "slug": "qwen3-8-2-4t-a95b",
+        "name": "Qwen3.8 2.4T A95B",
+        "creator": "Alibaba",
+        "briefcase": 1456.98
+      },
+      {
         "slug": "muse-spark-1-2",
         "name": "Muse Spark 1.2 (xhigh)",
         "creator": "Meta",
-        "briefcase": 1364.23
+        "briefcase": 1361.34
       },
       {
         "slug": "gpt-5-6-terra",
         "name": "GPT-5.6 Terra (max)",
         "creator": "OpenAI",
-        "briefcase": 1349.73
+        "briefcase": 1344.17
       },
       {
         "slug": "gemini-3-7-flash",
         "name": "Gemini 3.7 Flash (high)",
         "creator": "Google",
-        "briefcase": 1133.51
+        "briefcase": 1134.41
       },
       {
         "slug": "deepseek-v4-pro",
@@ -792,28 +798,40 @@
         "briefcase": 1353.59
       },
       {
+        "slug": "qwen3-8-27b",
+        "name": "Qwen3.8 27B (xhigh)",
+        "creator": "Alibaba",
+        "briefcase": 1412.93
+      },
+      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
-        "briefcase": 1107.16
+        "briefcase": 1107.01
       },
       {
         "slug": "inkling",
         "name": "Inkling (xhigh)",
         "creator": "Thinking Machines",
-        "briefcase": 840.52
+        "briefcase": 844.25
       },
       {
         "slug": "nvidia-nemotron-3-ultra-550b-a55b",
         "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
         "creator": "NVIDIA",
-        "briefcase": 876.84
+        "briefcase": 879.27
       },
       {
         "slug": "gemini-3-5-flash-lite",
         "name": "Gemini 3.5 Flash-Lite",
         "creator": "Google",
         "briefcase": 640.83
+      },
+      {
+        "slug": "muse-glimmer",
+        "name": "Muse Glimmer (high)",
+        "creator": "Meta",
+        "briefcase": 484.27
       },
       {
         "slug": "mistral-medium-3-5",
@@ -831,7 +849,7 @@
         "slug": "gpt-oss-120b",
         "name": "gpt-oss-120b (high)",
         "creator": "OpenAI",
-        "briefcase": 10.58
+        "briefcase": 6.58
       },
       {
         "slug": "command-a-plus",
@@ -1057,13 +1075,13 @@
         "slug": "grok-4-6",
         "name": "Grok 4.6 (high)",
         "creator": "SpaceXAI",
-        "gdpval_v2": 1701.94
+        "gdpval_v2": 1729.93
       },
       {
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval_v2": 1643.69
+        "gdpval_v2": 1667.97
       },
       {
         "slug": "glm-5-3",
@@ -1099,7 +1117,7 @@
         "slug": "gemini-3-7-flash",
         "name": "Gemini 3.7 Flash (high)",
         "creator": "Google",
-        "gdpval_v2": 1482.82
+        "gdpval_v2": 1515.97
       },
       {
         "slug": "deepseek-v4-pro",
@@ -1111,7 +1129,7 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "gdpval_v2": 1543.88
+        "gdpval_v2": 1569.11
       },
       {
         "slug": "qwen3-8-27b",
@@ -1147,7 +1165,7 @@
         "slug": "gemini-3-5-flash-lite",
         "name": "Gemini 3.5 Flash-Lite",
         "creator": "Google",
-        "gdpval_v2": 1109.09
+        "gdpval_v2": 1136.31
       },
       {
         "slug": "solar-open2-250b",
@@ -1535,9 +1553,9 @@
         "slug": "nvidia-nemotron-3-ultra-550b-a55b",
         "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
         "creator": "NVIDIA",
-        "price_1m_input_tokens": 0.6,
-        "price_1m_output_tokens": 2.75,
-        "cache_hit_price": 0.2
+        "price_1m_input_tokens": 0.675,
+        "price_1m_output_tokens": 2.675,
+        "cache_hit_price": 0.25
       },
       {
         "slug": "gemini-3-5-flash-lite",
@@ -4937,6 +4955,22 @@
         "deprecated": false
       },
       {
+        "slug": "quasar-438b",
+        "name": "Quasar 438B",
+        "creator": "Multiverse Computing",
+        "reasoning_model": true,
+        "release_date": "2026-08-10",
+        "deprecated": false
+      },
+      {
+        "slug": "hypernova-60b",
+        "name": "HyperNova 60B 2605",
+        "creator": "Multiverse Computing",
+        "reasoning_model": true,
+        "release_date": "2026-05-26",
+        "deprecated": false
+      },
+      {
         "slug": "mimo-v2-5-pro",
         "name": "MiMo-V2.5-Pro",
         "creator": "Xiaomi",
@@ -6065,14 +6099,6 @@
         "deprecated": false
       },
       {
-        "slug": "hypernova-60b",
-        "name": "HyperNova 60B 2605",
-        "creator": "Multiverse Computing",
-        "reasoning_model": true,
-        "release_date": "2026-05-26",
-        "deprecated": false
-      },
-      {
         "slug": "sonar-reasoning-pro",
         "name": "Sonar Reasoning Pro",
         "creator": "Perplexity",
@@ -6848,7 +6874,7 @@
         "intelligence_index_v4_1": 60.92297113115,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1701.94,
+        "gdpval_v2": 1729.93,
         "gdpval_elo": null,
         "omniscience": 30.4833333333333,
         "scicode": 0.53587962962963,
@@ -6864,7 +6890,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1553.05,
+        "briefcase": 1551.24,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -6889,7 +6915,7 @@
         "intelligence_index_v4_1": 59.6994671342592,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1643.69,
+        "gdpval_v2": 1667.97,
         "gdpval_elo": null,
         "omniscience": 19.7,
         "scicode": 0.586805555555556,
@@ -6987,7 +7013,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": null,
+        "briefcase": 1456.98,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 2400,
@@ -7069,7 +7095,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1364.23,
+        "briefcase": 1361.34,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7110,7 +7136,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.806936416184971,
-        "briefcase": 1349.73,
+        "briefcase": 1344.17,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7135,7 +7161,7 @@
         "intelligence_index_v4_1": 56.0301180773699,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1482.82,
+        "gdpval_v2": 1515.97,
         "gdpval_elo": null,
         "omniscience": 26.4833333333333,
         "scicode": 0.568287037037037,
@@ -7151,7 +7177,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.854913294797688,
-        "briefcase": 1133.51,
+        "briefcase": 1134.41,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7217,7 +7243,7 @@
         "intelligence_index_v4_1": 52.3180827840984,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1543.88,
+        "gdpval_v2": 1569.11,
         "gdpval_elo": null,
         "omniscience": -10.2833333333333,
         "scicode": 0.525462962962963,
@@ -7274,7 +7300,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.763005780346821,
-        "briefcase": null,
+        "briefcase": 1412.93,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 27,
@@ -7356,7 +7382,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.785549132947977,
-        "briefcase": 1107.16,
+        "briefcase": 1107.01,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 428,
@@ -7397,7 +7423,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.734682080924856,
-        "briefcase": 840.52,
+        "briefcase": 844.25,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 975,
@@ -7438,7 +7464,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 876.84,
+        "briefcase": 879.27,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 550,
@@ -7447,8 +7473,8 @@
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,
-        "price_1m_input": 0.6,
-        "price_1m_output": 2.75,
+        "price_1m_input": 0.675,
+        "price_1m_output": 2.675,
         "price_1m_blended_7_2_1": null,
         "cost_per_task_total": null,
         "time_per_task": null,
@@ -7463,7 +7489,7 @@
         "intelligence_index_v4_1": 37.4387063722681,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1109.09,
+        "gdpval_v2": 1136.31,
         "gdpval_elo": null,
         "omniscience": 5.23333333333333,
         "scicode": 0.408564814814815,
@@ -7561,7 +7587,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.743352601156069,
-        "briefcase": null,
+        "briefcase": 484.27,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 30,
@@ -7766,7 +7792,7 @@
         "aime": 0.934416666666667,
         "mmlu_pro": 0.807928856382979,
         "mmmu_pro": null,
-        "briefcase": 10.58,
+        "briefcase": 6.58,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 117,
@@ -23568,6 +23594,88 @@
         "output_tokens_per_task": null
       },
       {
+        "slug": "quasar-438b",
+        "name": "Quasar 438B",
+        "short_name": null,
+        "creator": "Multiverse Computing",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-08-10",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "hypernova-60b",
+        "name": "HyperNova 60B 2605",
+        "short_name": null,
+        "creator": "Multiverse Computing",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-05-26",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "mimo-v2-5-pro",
         "name": "MiMo-V2.5-Pro",
         "short_name": null,
@@ -29338,47 +29446,6 @@
         "parameters": null,
         "activeParams": null,
         "release_date": "2026-04-01",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": null,
-        "price_1m_output": null,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
-        "slug": "hypernova-60b",
-        "name": "HyperNova 60B 2605",
-        "short_name": null,
-        "creator": "Multiverse Computing",
-        "intelligence_index": null,
-        "intelligence_index_v4_1": null,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": null,
-        "gdpval_elo": null,
-        "omniscience": null,
-        "scicode": null,
-        "hle": null,
-        "gpqa": null,
-        "critpt": null,
-        "lcr": null,
-        "terminalbench_v2_1": null,
-        "tau_banking": null,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": null,
-        "is_open_weights": null,
-        "context_window_tokens": null,
-        "parameters": null,
-        "activeParams": null,
-        "release_date": "2026-05-26",
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,

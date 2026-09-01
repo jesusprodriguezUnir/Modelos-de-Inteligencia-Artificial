@@ -613,8 +613,8 @@ export const autoModels: Model[] = [
     ],
     "context": null,
     "pricing": {
-      "inputPer1M": 0.6,
-      "outputPer1M": 2.75,
+      "inputPer1M": 0.675,
+      "outputPer1M": 2.675,
       "approx": true
     },
     "modalities": [
@@ -1205,8 +1205,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "nvidia-nemotron-3-ultra-550b-a55b": {
     "pricing": {
-      "inputPer1M": 0.6,
-      "outputPer1M": 2.75,
+      "inputPer1M": 0.675,
+      "outputPer1M": 2.675,
       "approx": true
     },
     "benchmarks": {
@@ -2809,6 +2809,12 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "apodex-1-1": {
     "releaseDate": "2026-08-30"
   },
+  "quasar-438b": {
+    "releaseDate": "2026-08-10"
+  },
+  "hypernova-60b": {
+    "releaseDate": "2026-05-26"
+  },
   "mimo-v2-5-pro": {
     "releaseDate": "2026-04-22"
   },
@@ -3333,9 +3339,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "designArenaElo": 1106.1
     },
     "releaseDate": "2026-04-01"
-  },
-  "hypernova-60b": {
-    "releaseDate": "2026-05-26"
   },
   "sonar-reasoning-pro": {
     "pricing": {
