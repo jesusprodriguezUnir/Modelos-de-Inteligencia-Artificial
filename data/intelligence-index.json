@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-01T08:16:57Z",
+  "fetched_at": "2026-09-02T08:16:43Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.1.1",
   "method": "rsc-html",
-  "n_models": 626,
-  "n_default_data": 626,
+  "n_models": 631,
+  "n_default_data": 631,
   "sections_captured": [
     "intelligence_index",
     "sub_evaluations",
@@ -25,6 +25,20 @@
   "data": {
     "intelligence_index": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "intelligence_index": 65.6528630094377,
+        "intelligence_index_v4_1": 65.6528630094377
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "intelligence_index": 64.8015742258595,
+        "intelligence_index_v4_1": 64.8015742258595
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -39,18 +53,18 @@
         "intelligence_index_v4_1": 62.52047429879
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "intelligence_index": 62.4807148804427,
+        "intelligence_index_v4_1": 62.4807148804427
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "intelligence_index": 62.0726622017462,
         "intelligence_index_v4_1": 62.0726622017462
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "intelligence_index": 61.4751191473465,
-        "intelligence_index_v4_1": 61.4751191473465
       },
       {
         "slug": "gpt-5-6-sol",
@@ -137,13 +151,6 @@
         "intelligence_index_v4_1": 52.0246606497206
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "creator": "Motif Technologies",
-        "intelligence_index": 47.3602493365956,
-        "intelligence_index_v4_1": 47.3602493365956
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
@@ -172,32 +179,11 @@
         "intelligence_index_v4_1": 37.4387063722681
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "creator": "Upstage",
-        "intelligence_index": 37.4265535921632,
-        "intelligence_index_v4_1": 37.4265535921632
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "creator": "Meta",
         "intelligence_index": 35.0641823105374,
         "intelligence_index_v4_1": 35.0641823105374
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "creator": "SK Telecom",
-        "intelligence_index": 35.0147941618563,
-        "intelligence_index_v4_1": 35.0147941618563
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "creator": "LG AI Research",
-        "intelligence_index": 30.9845435318094,
-        "intelligence_index_v4_1": 30.9845435318094
       },
       {
         "slug": "mistral-medium-3-5",
@@ -237,6 +223,36 @@
     ],
     "sub_evaluations": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "gdpval": 1853.05,
+        "gdpval_v2": 1853.05,
+        "tau_banking": 0.472164948453608,
+        "terminalbench_v2_1": 0.913857677902622,
+        "scicode": 0.62037037037037,
+        "hle": 0.591288229842447,
+        "gpqa": 0.937373737373737,
+        "critpt": 0.297142857142857,
+        "lcr": 0.8,
+        "omniscience": 43.45
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "gdpval": 1835.05,
+        "gdpval_v2": 1835.05,
+        "tau_banking": 0.457731958762887,
+        "terminalbench_v2_1": 0.910112359550562,
+        "scicode": 0.600694444444444,
+        "hle": 0.587117701575533,
+        "gpqa": 0.934343434343434,
+        "critpt": 0.311428571428571,
+        "lcr": 0.78,
+        "omniscience": 42.3833333333333
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -269,6 +285,21 @@
         "mmmu_pro": 0.839884393063584
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "gdpval": 1742.75,
+        "gdpval_v2": 1742.75,
+        "tau_banking": 0.430927835051546,
+        "terminalbench_v2_1": 0.898876404494382,
+        "scicode": 0.576388888888889,
+        "hle": 0.559314179796108,
+        "gpqa": 0.906060606060606,
+        "critpt": 0.302857142857143,
+        "lcr": 0.77,
+        "omniscience": 40.8
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
@@ -283,22 +314,6 @@
         "lcr": 0.766666666666667,
         "omniscience": 43.3,
         "ifbench": 0.63469387755102
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "gdpval": 1718.97,
-        "gdpval_v2": 1718.97,
-        "tau_banking": 0.447422680412371,
-        "terminalbench_v2_1": 0.876404494382023,
-        "scicode": 0.542824074074074,
-        "hle": 0.528266913809083,
-        "gpqa": 0.937373737373737,
-        "critpt": 0.282857142857143,
-        "lcr": 0.763333333333333,
-        "omniscience": 33.7166666666667,
-        "mmmu_pro": 0.824277456647399
       },
       {
         "slug": "gpt-5-6-sol",
@@ -489,21 +504,6 @@
         "mmmu_pro": 0.763005780346821
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "creator": "Motif Technologies",
-        "gdpval": 1272.47,
-        "gdpval_v2": 1272.47,
-        "tau_banking": 0.352577319587629,
-        "terminalbench_v2_1": 0.749063670411985,
-        "scicode": 0.40625,
-        "hle": 0.369786839666358,
-        "gpqa": 0.834343434343434,
-        "critpt": 0.0657142857142857,
-        "lcr": 0.723333333333333,
-        "omniscience": 10.1833333333333
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
@@ -569,21 +569,6 @@
         "mmmu_pro": 0.790173410404624
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "creator": "Upstage",
-        "gdpval": 1122.36,
-        "gdpval_v2": 1122.36,
-        "tau_banking": 0.216494845360825,
-        "terminalbench_v2_1": 0.441947565543071,
-        "scicode": 0.456018518518519,
-        "hle": 0.285449490268767,
-        "gpqa": 0.856565656565657,
-        "critpt": 0.0571428571428571,
-        "lcr": 0.683333333333333,
-        "omniscience": -1.76666666666667
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "creator": "Meta",
@@ -598,36 +583,6 @@
         "lcr": 0.8,
         "omniscience": -32.85,
         "mmmu_pro": 0.743352601156069
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "creator": "SK Telecom",
-        "gdpval": 1112.21,
-        "gdpval_v2": 1112.21,
-        "tau_banking": 0.160824742268041,
-        "terminalbench_v2_1": 0.389513108614232,
-        "scicode": 0.385416666666667,
-        "hle": 0.295644114921223,
-        "gpqa": 0.856565656565657,
-        "critpt": 0.0885714285714286,
-        "lcr": 0.66,
-        "omniscience": -8.23333333333333
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "creator": "LG AI Research",
-        "gdpval": 979.87,
-        "gdpval_v2": 979.87,
-        "tau_banking": 0.115463917525773,
-        "terminalbench_v2_1": 0.404494382022472,
-        "scicode": 0.409722222222222,
-        "hle": 0.185820203892493,
-        "gpqa": 0.829292929292929,
-        "critpt": 0.00857142857142857,
-        "lcr": 0.576666666666667,
-        "omniscience": -6.6
       },
       {
         "slug": "mistral-medium-3-5",
@@ -720,6 +675,18 @@
     ],
     "aa_briefcase": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "briefcase": 1694.37
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "briefcase": 1685.5
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -732,16 +699,16 @@
         "briefcase": 1686.73
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "briefcase": 1611.14
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "briefcase": 1571.79
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "briefcase": 1606.44
       },
       {
         "slug": "gpt-5-6-sol",
@@ -760,6 +727,12 @@
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
         "briefcase": 1516.62
+      },
+      {
+        "slug": "glm-5-3",
+        "name": "GLM-5.3 (max)",
+        "creator": "Z AI",
+        "briefcase": 1528.85
       },
       {
         "slug": "qwen3-8-2-4t-a95b",
@@ -860,6 +833,18 @@
     ],
     "aa_omniscience": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "omniscience": 43.45
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "omniscience": 42.3833333333333
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -872,16 +857,16 @@
         "omniscience": 35.3833333333333
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "omniscience": 40.8
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "omniscience": 43.3
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "omniscience": 33.7166666666667
       },
       {
         "slug": "gpt-5-6-sol",
@@ -956,12 +941,6 @@
         "omniscience": -9.98333333333333
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "creator": "Motif Technologies",
-        "omniscience": 10.1833333333333
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
@@ -986,28 +965,10 @@
         "omniscience": 5.23333333333333
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "creator": "Upstage",
-        "omniscience": -1.76666666666667
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "creator": "Meta",
         "omniscience": -32.85
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "creator": "SK Telecom",
-        "omniscience": -8.23333333333333
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "creator": "LG AI Research",
-        "omniscience": -6.6
       },
       {
         "slug": "mistral-medium-3-5",
@@ -1042,6 +1003,18 @@
     ],
     "gdpval_aa_v2": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "gdpval_v2": 1853.05
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "gdpval_v2": 1835.05
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -1054,16 +1027,16 @@
         "gdpval_v2": 1797.1
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "gdpval_v2": 1742.75
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "gdpval_v2": 1722.99
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "gdpval_v2": 1718.97
       },
       {
         "slug": "gpt-5-6-sol",
@@ -1138,12 +1111,6 @@
         "gdpval_v2": 1542.97
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "creator": "Motif Technologies",
-        "gdpval_v2": 1272.47
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
@@ -1168,28 +1135,10 @@
         "gdpval_v2": 1136.31
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "creator": "Upstage",
-        "gdpval_v2": 1122.36
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "creator": "Meta",
         "gdpval_v2": 955.34
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "creator": "SK Telecom",
-        "gdpval_v2": 1112.21
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "creator": "LG AI Research",
-        "gdpval_v2": 979.87
       },
       {
         "slug": "mistral-medium-3-5",
@@ -1224,6 +1173,18 @@
     ],
     "openness_index": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "is_open_weights": false
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "is_open_weights": false
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -1236,14 +1197,14 @@
         "is_open_weights": false
       },
       {
-        "slug": "claude-fable-5",
-        "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
         "creator": "Anthropic",
         "is_open_weights": false
       },
       {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+        "slug": "claude-fable-5",
+        "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "is_open_weights": false
       },
@@ -1320,12 +1281,6 @@
         "is_open_weights": true
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "creator": "Motif Technologies",
-        "is_open_weights": true
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
@@ -1350,27 +1305,9 @@
         "is_open_weights": false
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "creator": "Upstage",
-        "is_open_weights": true
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "creator": "Meta",
-        "is_open_weights": true
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "creator": "SK Telecom",
-        "is_open_weights": true
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "creator": "LG AI Research",
         "is_open_weights": true
       },
       {
@@ -1406,6 +1343,22 @@
     ],
     "price_cost": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "price_1m_input_tokens": 10,
+        "price_1m_output_tokens": 50,
+        "cache_hit_price": 0.25
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "price_1m_input_tokens": 10,
+        "price_1m_output_tokens": 50,
+        "cache_hit_price": 0.25
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -1422,20 +1375,20 @@
         "cache_hit_price": 0.5
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "price_1m_input_tokens": 10,
+        "price_1m_output_tokens": 50,
+        "cache_hit_price": 0.25
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "price_1m_input_tokens": 10,
         "price_1m_output_tokens": 50,
         "cache_hit_price": 1
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "price_1m_input_tokens": 5,
-        "price_1m_output_tokens": 25,
-        "cache_hit_price": 0.5
       },
       {
         "slug": "gpt-5-6-sol",
@@ -1615,6 +1568,22 @@
     ],
     "metadata": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "reasoning_model": true,
+        "release_date": "2026-09-01",
+        "deprecated": false
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "reasoning_model": true,
+        "release_date": "2026-09-01",
+        "deprecated": false
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
@@ -1631,19 +1600,19 @@
         "deprecated": false
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "reasoning_model": true,
+        "release_date": "2026-09-01",
+        "deprecated": false
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "creator": "Anthropic",
         "reasoning_model": true,
         "release_date": "2026-06-09",
-        "deprecated": false
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "creator": "Anthropic",
-        "reasoning_model": true,
-        "release_date": "2026-07-24",
         "deprecated": false
       },
       {
@@ -1755,16 +1724,6 @@
         "deprecated": false
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "creator": "Motif Technologies",
-        "parameters": 314,
-        "activeParams": 13.2,
-        "reasoning_model": true,
-        "release_date": "2026-08-12",
-        "deprecated": false
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "creator": "MiniMax",
@@ -1803,16 +1762,6 @@
         "deprecated": false
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "creator": "Upstage",
-        "parameters": 250,
-        "activeParams": 15,
-        "reasoning_model": true,
-        "release_date": "2026-08-12",
-        "deprecated": false
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "creator": "Meta",
@@ -1820,26 +1769,6 @@
         "activeParams": 30,
         "reasoning_model": true,
         "release_date": "2026-08-10",
-        "deprecated": false
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "creator": "SK Telecom",
-        "parameters": 692,
-        "activeParams": 33,
-        "reasoning_model": true,
-        "release_date": "2026-08-12",
-        "deprecated": false
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "creator": "LG AI Research",
-        "parameters": 750,
-        "activeParams": 37,
-        "reasoning_model": true,
-        "release_date": "2026-08-12",
         "deprecated": false
       },
       {
@@ -1891,11 +1820,35 @@
         "deprecated": false
       },
       {
+        "slug": "claude-opus-5-high",
+        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+        "creator": "Anthropic",
+        "reasoning_model": true,
+        "release_date": "2026-07-24",
+        "deprecated": false
+      },
+      {
+        "slug": "claude-fable-5-1-medium",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "reasoning_model": true,
+        "release_date": "2026-09-01",
+        "deprecated": false
+      },
+      {
         "slug": "claude-opus-5-medium",
         "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
         "creator": "Anthropic",
         "reasoning_model": true,
         "release_date": "2026-07-24",
+        "deprecated": false
+      },
+      {
+        "slug": "claude-fable-5-1-low",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+        "creator": "Anthropic",
+        "reasoning_model": true,
+        "release_date": "2026-09-01",
         "deprecated": false
       },
       {
@@ -4883,6 +4836,14 @@
         "deprecated": false
       },
       {
+        "slug": "motif-3",
+        "name": "Motif 3",
+        "creator": "Motif Technologies",
+        "reasoning_model": true,
+        "release_date": "2026-08-12",
+        "deprecated": false
+      },
+      {
         "slug": "motif-0714",
         "name": "Motif 3 (Beta)",
         "creator": "Motif Technologies",
@@ -5088,6 +5049,14 @@
         "creator": "Upstage",
         "reasoning_model": true,
         "release_date": "2026-08-06",
+        "deprecated": false
+      },
+      {
+        "slug": "solar-open2-250b",
+        "name": "Solar Open2 250B",
+        "creator": "Upstage",
+        "reasoning_model": true,
+        "release_date": "2026-08-12",
         "deprecated": false
       },
       {
@@ -5387,6 +5356,14 @@
         "deprecated": true
       },
       {
+        "slug": "a-x-k2",
+        "name": "A.X-K2",
+        "creator": "SK Telecom",
+        "reasoning_model": true,
+        "release_date": "2026-08-12",
+        "deprecated": false
+      },
+      {
         "slug": "g9v3-39a5b",
         "name": "G9v3-39A5B",
         "creator": "AI9Stars",
@@ -5433,6 +5410,14 @@
         "reasoning_model": false,
         "release_date": "2025-11-11",
         "deprecated": true
+      },
+      {
+        "slug": "k-exaone-2-0-0803",
+        "name": "K-EXAONE 2.0",
+        "creator": "LG AI Research",
+        "reasoning_model": true,
+        "release_date": "2026-08-12",
+        "deprecated": false
       },
       {
         "slug": "k-exaone",
@@ -6661,6 +6646,88 @@
     ],
     "master_table": [
       {
+        "slug": "claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "short_name": null,
+        "creator": "Anthropic",
+        "intelligence_index": 65.6528630094377,
+        "intelligence_index_v4_1": 65.6528630094377,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": 1853.05,
+        "gdpval_elo": null,
+        "omniscience": 43.45,
+        "scicode": 0.62037037037037,
+        "hle": 0.591288229842447,
+        "gpqa": 0.937373737373737,
+        "critpt": 0.297142857142857,
+        "lcr": 0.8,
+        "terminalbench_v2_1": 0.913857677902622,
+        "tau_banking": 0.472164948453608,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": 1694.37,
+        "is_open_weights": false,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-01",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": 10,
+        "price_1m_output": 50,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "claude-fable-5-1-xhigh",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+        "short_name": null,
+        "creator": "Anthropic",
+        "intelligence_index": 64.8015742258595,
+        "intelligence_index_v4_1": 64.8015742258595,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": 1835.05,
+        "gdpval_elo": null,
+        "omniscience": 42.3833333333333,
+        "scicode": 0.600694444444444,
+        "hle": 0.587117701575533,
+        "gpqa": 0.934343434343434,
+        "critpt": 0.311428571428571,
+        "lcr": 0.78,
+        "terminalbench_v2_1": 0.910112359550562,
+        "tau_banking": 0.457731958762887,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": 1685.5,
+        "is_open_weights": false,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-01",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": 10,
+        "price_1m_output": 50,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "short_name": null,
@@ -6743,6 +6810,47 @@
         "output_tokens_per_task": null
       },
       {
+        "slug": "claude-fable-5-1-high",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+        "short_name": null,
+        "creator": "Anthropic",
+        "intelligence_index": 62.4807148804427,
+        "intelligence_index_v4_1": 62.4807148804427,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": 1742.75,
+        "gdpval_elo": null,
+        "omniscience": 40.8,
+        "scicode": 0.576388888888889,
+        "hle": 0.559314179796108,
+        "gpqa": 0.906060606060606,
+        "critpt": 0.302857142857143,
+        "lcr": 0.77,
+        "terminalbench_v2_1": 0.898876404494382,
+        "tau_banking": 0.430927835051546,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": 1611.14,
+        "is_open_weights": false,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-01",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": 10,
+        "price_1m_output": 50,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "short_name": null,
@@ -6778,47 +6886,6 @@
         "deprecated": false,
         "price_1m_input": 10,
         "price_1m_output": 50,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
-        "slug": "claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "short_name": null,
-        "creator": "Anthropic",
-        "intelligence_index": 61.4751191473465,
-        "intelligence_index_v4_1": 61.4751191473465,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": 1718.97,
-        "gdpval_elo": null,
-        "omniscience": 33.7166666666667,
-        "scicode": 0.542824074074074,
-        "hle": 0.528266913809083,
-        "gpqa": 0.937373737373737,
-        "critpt": 0.282857142857143,
-        "lcr": 0.763333333333333,
-        "terminalbench_v2_1": 0.876404494382023,
-        "tau_banking": 0.447422680412371,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": 0.824277456647399,
-        "briefcase": 1606.44,
-        "is_open_weights": false,
-        "context_window_tokens": null,
-        "parameters": null,
-        "activeParams": null,
-        "release_date": "2026-07-24",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": 5,
-        "price_1m_output": 25,
         "price_1m_blended_7_2_1": null,
         "cost_per_task_total": null,
         "time_per_task": null,
@@ -6972,7 +7039,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": null,
+        "briefcase": 1528.85,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 753,
@@ -7317,47 +7384,6 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "motif-3",
-        "name": "Motif 3",
-        "short_name": null,
-        "creator": "Motif Technologies",
-        "intelligence_index": 47.3602493365956,
-        "intelligence_index_v4_1": 47.3602493365956,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": 1272.47,
-        "gdpval_elo": null,
-        "omniscience": 10.1833333333333,
-        "scicode": 0.40625,
-        "hle": 0.369786839666358,
-        "gpqa": 0.834343434343434,
-        "critpt": 0.0657142857142857,
-        "lcr": 0.723333333333333,
-        "terminalbench_v2_1": 0.749063670411985,
-        "tau_banking": 0.352577319587629,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": null,
-        "is_open_weights": true,
-        "context_window_tokens": null,
-        "parameters": 314,
-        "activeParams": 13.2,
-        "release_date": "2026-08-12",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": null,
-        "price_1m_output": null,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
         "slug": "minimax-m3",
         "name": "MiniMax-M3",
         "short_name": null,
@@ -7522,47 +7548,6 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "solar-open2-250b",
-        "name": "Solar Open2 250B",
-        "short_name": null,
-        "creator": "Upstage",
-        "intelligence_index": 37.4265535921632,
-        "intelligence_index_v4_1": 37.4265535921632,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": 1122.36,
-        "gdpval_elo": null,
-        "omniscience": -1.76666666666667,
-        "scicode": 0.456018518518519,
-        "hle": 0.285449490268767,
-        "gpqa": 0.856565656565657,
-        "critpt": 0.0571428571428571,
-        "lcr": 0.683333333333333,
-        "terminalbench_v2_1": 0.441947565543071,
-        "tau_banking": 0.216494845360825,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": null,
-        "is_open_weights": true,
-        "context_window_tokens": null,
-        "parameters": 250,
-        "activeParams": 15,
-        "release_date": "2026-08-12",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": null,
-        "price_1m_output": null,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
         "slug": "muse-glimmer",
         "name": "Muse Glimmer (high)",
         "short_name": null,
@@ -7598,88 +7583,6 @@
         "deprecated": false,
         "price_1m_input": 0.32499999999999996,
         "price_1m_output": 1.35,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
-        "slug": "a-x-k2",
-        "name": "A.X-K2",
-        "short_name": null,
-        "creator": "SK Telecom",
-        "intelligence_index": 35.0147941618563,
-        "intelligence_index_v4_1": 35.0147941618563,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": 1112.21,
-        "gdpval_elo": null,
-        "omniscience": -8.23333333333333,
-        "scicode": 0.385416666666667,
-        "hle": 0.295644114921223,
-        "gpqa": 0.856565656565657,
-        "critpt": 0.0885714285714286,
-        "lcr": 0.66,
-        "terminalbench_v2_1": 0.389513108614232,
-        "tau_banking": 0.160824742268041,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": null,
-        "is_open_weights": true,
-        "context_window_tokens": null,
-        "parameters": 692,
-        "activeParams": 33,
-        "release_date": "2026-08-12",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": null,
-        "price_1m_output": null,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
-        "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
-        "short_name": null,
-        "creator": "LG AI Research",
-        "intelligence_index": 30.9845435318094,
-        "intelligence_index_v4_1": 30.9845435318094,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": 979.87,
-        "gdpval_elo": null,
-        "omniscience": -6.6,
-        "scicode": 0.409722222222222,
-        "hle": 0.185820203892493,
-        "gpqa": 0.829292929292929,
-        "critpt": 0.00857142857142857,
-        "lcr": 0.576666666666667,
-        "terminalbench_v2_1": 0.404494382022472,
-        "tau_banking": 0.115463917525773,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": null,
-        "is_open_weights": true,
-        "context_window_tokens": null,
-        "parameters": 750,
-        "activeParams": 37,
-        "release_date": "2026-08-12",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": null,
-        "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
         "cost_per_task_total": null,
         "time_per_task": null,
@@ -7891,6 +7794,88 @@
         "output_tokens_per_task": null
       },
       {
+        "slug": "claude-opus-5-high",
+        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+        "short_name": null,
+        "creator": "Anthropic",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-07-24",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "claude-fable-5-1-medium",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+        "short_name": null,
+        "creator": "Anthropic",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-01",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "claude-opus-5-medium",
         "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
         "short_name": null,
@@ -7921,6 +7906,47 @@
         "parameters": null,
         "activeParams": null,
         "release_date": "2026-07-24",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "claude-fable-5-1-low",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+        "short_name": null,
+        "creator": "Anthropic",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-01",
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,
@@ -23225,6 +23251,47 @@
         "output_tokens_per_task": null
       },
       {
+        "slug": "motif-3",
+        "name": "Motif 3",
+        "short_name": null,
+        "creator": "Motif Technologies",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-08-12",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "motif-0714",
         "name": "Motif 3 (Beta)",
         "short_name": null,
@@ -24280,6 +24347,47 @@
         "parameters": null,
         "activeParams": null,
         "release_date": "2026-08-06",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "solar-open2-250b",
+        "name": "Solar Open2 250B",
+        "short_name": null,
+        "creator": "Upstage",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-08-12",
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,
@@ -25808,6 +25916,47 @@
         "output_tokens_per_task": null
       },
       {
+        "slug": "a-x-k2",
+        "name": "A.X-K2",
+        "short_name": null,
+        "creator": "SK Telecom",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-08-12",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "g9v3-39a5b",
         "name": "G9v3-39A5B",
         "short_name": null,
@@ -26046,6 +26195,47 @@
         "reasoning_model": false,
         "frontier_model": null,
         "deprecated": true,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "k-exaone-2-0-0803",
+        "name": "K-EXAONE 2.0",
+        "short_name": null,
+        "creator": "LG AI Research",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-08-12",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,

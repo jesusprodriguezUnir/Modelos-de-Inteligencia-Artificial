@@ -23,6 +23,93 @@ export interface AutoSpec {
 
 export const autoModels: Model[] = [
   {
+    "id": "claude-fable-5-1",
+    "iiSlug": "claude-fable-5-1",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
+    "benchmarks": {
+      "terminalBench": 91.4,
+      "sciCode": 62.0,
+      "intelligenceIndex": 65.7
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 112.5). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-fable-5-1-xhigh",
+    "iiSlug": "claude-fable-5-1-xhigh",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
+    "benchmarks": {
+      "terminalBench": 91.0,
+      "sciCode": 60.1,
+      "intelligenceIndex": 64.8
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 111.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-fable-5-1-high",
+    "iiSlug": "claude-fable-5-1-high",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
+    "benchmarks": {
+      "terminalBench": 89.9,
+      "sciCode": 57.6,
+      "intelligenceIndex": 62.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 108.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "claude-opus-5",
     "iiSlug": "claude-opus-5",
     "company": "Anthropic",
@@ -141,35 +228,6 @@ export const autoModels: Model[] = [
       "intelligenceIndex": 60.9
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "claude-opus-5-high",
-    "iiSlug": "claude-opus-5-high",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 5.0,
-      "outputPer1M": 25.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-24",
-    "benchmarks": {
-      "terminalBench": 87.6,
-      "sciCode": 54.3,
-      "intelligenceIndex": 61.5
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "grok-4-6",
@@ -504,36 +562,6 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 91.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "motif-3",
-    "iiSlug": "motif-3",
-    "company": "MotifTechnologies",
-    "origin": "China",
-    "displayName": "Motif 3",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": null,
-      "outputPer1M": null,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-12",
-    "parameters": 314.0,
-    "benchmarks": {
-      "terminalBench": 74.9,
-      "sciCode": 40.6,
-      "intelligenceIndex": 47.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 84.9). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "minimax-m3",
     "iiSlug": "minimax-m3",
     "company": "MiniMax",
@@ -692,36 +720,6 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 66.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "solar-open2-250b",
-    "iiSlug": "solar-open2-250b",
-    "company": "Upstage",
-    "origin": "US",
-    "displayName": "Solar Open2 250B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": null,
-      "outputPer1M": null,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-12",
-    "parameters": 250.0,
-    "benchmarks": {
-      "terminalBench": 44.2,
-      "sciCode": 45.6,
-      "intelligenceIndex": 37.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 63.5). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "mistral-medium-3-5",
     "iiSlug": "mistral-medium-3-5",
     "company": "Mistral",
@@ -781,66 +779,6 @@ export const autoModels: Model[] = [
       "intelligenceIndex": 29.9
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 58.8). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "a-x-k2",
-    "iiSlug": "a-x-k2",
-    "company": "SKTelecom",
-    "origin": "US",
-    "displayName": "A.X-K2",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": null,
-      "outputPer1M": null,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-12",
-    "parameters": 692.0,
-    "benchmarks": {
-      "terminalBench": 39.0,
-      "sciCode": 38.5,
-      "intelligenceIndex": 35.0
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 56.3). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "k-exaone-2-0-0803",
-    "iiSlug": "k-exaone-2-0-0803",
-    "company": "LGAIResearch",
-    "origin": "US",
-    "displayName": "K-EXAONE 2.0",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": null,
-      "outputPer1M": null,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-12",
-    "parameters": 750.0,
-    "benchmarks": {
-      "terminalBench": 40.4,
-      "sciCode": 41.0,
-      "intelligenceIndex": 31.0
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 56.2). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "gpt-oss-120b",
@@ -940,6 +878,32 @@ export const autoModels: Model[] = [
 ];
 
 export const autoSpecs: Record<string, AutoSpec> = {
+  "claude-fable-5-1": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 91.4,
+      "sciCode": 62.0,
+      "intelligenceIndex": 65.7
+    },
+    "releaseDate": "2026-09-01"
+  },
+  "claude-fable-5-1-xhigh": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 91.0,
+      "sciCode": 60.1,
+      "intelligenceIndex": 64.8
+    },
+    "releaseDate": "2026-09-01"
+  },
   "claude-opus-5": {
     "pricing": {
       "inputPer1M": 2.5,
@@ -968,6 +932,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-07-24"
   },
+  "claude-fable-5-1-high": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 89.9,
+      "sciCode": 57.6,
+      "intelligenceIndex": 62.5
+    },
+    "releaseDate": "2026-09-01"
+  },
   "claude-fable-5": {
     "pricing": {
       "inputPer1M": 5.0,
@@ -982,19 +959,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "designArenaElo": 1346.4
     },
     "releaseDate": "2026-06-09"
-  },
-  "claude-opus-5-high": {
-    "pricing": {
-      "inputPer1M": 5.0,
-      "outputPer1M": 25.0,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 87.6,
-      "sciCode": 54.3,
-      "intelligenceIndex": 61.5
-    },
-    "releaseDate": "2026-07-24"
   },
   "gpt-5-6-sol": {
     "pricing": {
@@ -1162,15 +1126,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 27.0,
     "releaseDate": "2026-08-14"
   },
-  "motif-3": {
-    "benchmarks": {
-      "terminalBench": 74.9,
-      "sciCode": 40.6,
-      "intelligenceIndex": 47.4
-    },
-    "parameters": 314.0,
-    "releaseDate": "2026-08-12"
-  },
   "minimax-m3": {
     "pricing": {
       "inputPer1M": 0.15,
@@ -1230,15 +1185,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-07-21"
   },
-  "solar-open2-250b": {
-    "benchmarks": {
-      "terminalBench": 44.2,
-      "sciCode": 45.6,
-      "intelligenceIndex": 37.4
-    },
-    "parameters": 250.0,
-    "releaseDate": "2026-08-12"
-  },
   "muse-glimmer": {
     "pricing": {
       "inputPer1M": 0.325,
@@ -1252,24 +1198,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 30.0,
     "releaseDate": "2026-08-10"
-  },
-  "a-x-k2": {
-    "benchmarks": {
-      "terminalBench": 39.0,
-      "sciCode": 38.5,
-      "intelligenceIndex": 35.0
-    },
-    "parameters": 692.0,
-    "releaseDate": "2026-08-12"
-  },
-  "k-exaone-2-0-0803": {
-    "benchmarks": {
-      "terminalBench": 40.4,
-      "sciCode": 41.0,
-      "intelligenceIndex": 31.0
-    },
-    "parameters": 750.0,
-    "releaseDate": "2026-08-12"
   },
   "mistral-medium-3-5": {
     "pricing": {
@@ -1345,8 +1273,17 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 218.0,
     "releaseDate": "2026-05-20"
   },
+  "claude-opus-5-high": {
+    "releaseDate": "2026-07-24"
+  },
+  "claude-fable-5-1-medium": {
+    "releaseDate": "2026-09-01"
+  },
   "claude-opus-5-medium": {
     "releaseDate": "2026-07-24"
+  },
+  "claude-fable-5-1-low": {
+    "releaseDate": "2026-09-01"
   },
   "claude-opus-4-8": {
     "releaseDate": "2026-05-28"
@@ -2773,6 +2710,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "agnes-2-5-pro-alpha": {
     "releaseDate": "2026-07-24"
   },
+  "motif-3": {
+    "releaseDate": "2026-08-12"
+  },
   "motif-0714": {
     "releaseDate": "2026-07-14"
   },
@@ -2899,6 +2839,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-08-06"
   },
+  "solar-open2-250b": {
+    "releaseDate": "2026-08-12"
+  },
   "solar-open-100b-reasoning": {
     "releaseDate": "2025-12-17"
   },
@@ -3016,6 +2959,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "ling-mini-2-0": {
     "releaseDate": "2025-09-09"
   },
+  "a-x-k2": {
+    "releaseDate": "2026-08-12"
+  },
   "g9v3-39a5b": {
     "releaseDate": "2026-08-20"
   },
@@ -3039,6 +2985,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "kat-coder-pro-v1": {
     "releaseDate": "2025-11-11"
+  },
+  "k-exaone-2-0-0803": {
+    "releaseDate": "2026-08-12"
   },
   "k-exaone": {
     "releaseDate": "2025-12-31"
@@ -3589,35 +3538,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
 };
 
 export const autoCompanies: Record<string, CompanyMeta> = {
-  "MotifTechnologies": {
-    "name": "Motif Technologies",
-    "origin": "China",
-    "accent": "#64748b",
-    "blurb": "Motif Technologies — datos del Artificial Analysis Intelligence Index."
-  },
   "NVIDIA": {
     "name": "NVIDIA",
     "origin": "US",
     "accent": "#64748b",
     "blurb": "NVIDIA — datos del Artificial Analysis Intelligence Index."
-  },
-  "Upstage": {
-    "name": "Upstage",
-    "origin": "US",
-    "accent": "#64748b",
-    "blurb": "Upstage — datos del Artificial Analysis Intelligence Index."
-  },
-  "SKTelecom": {
-    "name": "SK Telecom",
-    "origin": "US",
-    "accent": "#64748b",
-    "blurb": "SK Telecom — datos del Artificial Analysis Intelligence Index."
-  },
-  "LGAIResearch": {
-    "name": "LG AI Research",
-    "origin": "US",
-    "accent": "#64748b",
-    "blurb": "LG AI Research — datos del Artificial Analysis Intelligence Index."
   },
   "Cohere": {
     "name": "Cohere",
