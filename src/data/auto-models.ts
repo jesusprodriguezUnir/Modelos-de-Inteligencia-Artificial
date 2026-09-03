@@ -230,6 +230,122 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "muse-spark-1-3",
+    "iiSlug": "muse-spark-1-3",
+    "company": "Meta",
+    "origin": "Open",
+    "displayName": "Muse Spark 1.3 (max)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": null,
+      "outputPer1M": null,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-02",
+    "benchmarks": {
+      "terminalBench": 85.8,
+      "sciCode": 57.3,
+      "intelligenceIndex": 62.1
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.4). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-fable-5-1-medium",
+    "iiSlug": "claude-fable-5-1-medium",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
+    "benchmarks": {
+      "terminalBench": 88.0,
+      "sciCode": 55.3,
+      "intelligenceIndex": 60.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "muse-spark-1-3-xhigh",
+    "iiSlug": "muse-spark-1-3-xhigh",
+    "company": "Meta",
+    "origin": "Open",
+    "displayName": "Muse Spark 1.3 (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 4.25,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-02",
+    "benchmarks": {
+      "terminalBench": 85.4,
+      "sciCode": 58.6,
+      "intelligenceIndex": 60.8
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.1). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-opus-5-high",
+    "iiSlug": "claude-opus-5-high",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "benchmarks": {
+      "terminalBench": 87.6,
+      "sciCode": 54.3,
+      "intelligenceIndex": 61.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "grok-4-6",
     "iiSlug": "grok-4-6",
     "company": "xAI",
@@ -292,6 +408,35 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 104.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "gemini-3-8-flash",
+    "iiSlug": "gemini-3-8-flash",
+    "company": "Google",
+    "origin": "US",
+    "displayName": "Gemini 3.8 Flash (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.75,
+      "outputPer1M": 3.75,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-02",
+    "benchmarks": {
+      "terminalBench": 87.6,
+      "sciCode": 53.6,
+      "intelligenceIndex": 58.7
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 103.4). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "glm-5-3",
     "iiSlug": "glm-5-3",
     "company": "Zhipu",
@@ -349,64 +494,6 @@ export const autoModels: Model[] = [
       "intelligenceIndex": 56.6
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 102.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gemini-3-7-flash",
-    "iiSlug": "gemini-3-7-flash",
-    "company": "Google",
-    "origin": "US",
-    "displayName": "Gemini 3.7 Flash (high)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.75,
-      "outputPer1M": 3.75,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-08-13",
-    "benchmarks": {
-      "terminalBench": 85.8,
-      "sciCode": 56.8,
-      "intelligenceIndex": 56.0
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 102.2). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "muse-spark-1-2",
-    "iiSlug": "muse-spark-1-2",
-    "company": "Meta",
-    "origin": "Open",
-    "displayName": "Muse Spark 1.2 (xhigh)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 4.25,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-08-05",
-    "benchmarks": {
-      "terminalBench": 80.1,
-      "sciCode": 56.4,
-      "intelligenceIndex": 56.8
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 99.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "qwen3-8-2-4t-a95b",
@@ -945,6 +1032,14 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-09-01"
   },
+  "muse-spark-1-3": {
+    "benchmarks": {
+      "terminalBench": 85.8,
+      "sciCode": 57.3,
+      "intelligenceIndex": 62.1
+    },
+    "releaseDate": "2026-09-02"
+  },
   "claude-fable-5": {
     "pricing": {
       "inputPer1M": 5.0,
@@ -959,6 +1054,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "designArenaElo": 1346.4
     },
     "releaseDate": "2026-06-09"
+  },
+  "claude-opus-5-high": {
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 25.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 87.6,
+      "sciCode": 54.3,
+      "intelligenceIndex": 61.5
+    },
+    "releaseDate": "2026-07-24"
   },
   "gpt-5-6-sol": {
     "pricing": {
@@ -985,6 +1093,32 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 60.9
     },
     "releaseDate": "2026-08-12"
+  },
+  "muse-spark-1-3-xhigh": {
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 4.25,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 85.4,
+      "sciCode": 58.6,
+      "intelligenceIndex": 60.8
+    },
+    "releaseDate": "2026-09-02"
+  },
+  "claude-fable-5-1-medium": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 88.0,
+      "sciCode": 55.3,
+      "intelligenceIndex": 60.5
+    },
+    "releaseDate": "2026-09-01"
   },
   "kimi-k3": {
     "pricing": {
@@ -1016,6 +1150,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 753.0,
     "releaseDate": "2026-08-18"
   },
+  "gemini-3-8-flash": {
+    "pricing": {
+      "inputPer1M": 0.75,
+      "outputPer1M": 3.75,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 87.6,
+      "sciCode": 53.6,
+      "intelligenceIndex": 58.7
+    },
+    "releaseDate": "2026-09-02"
+  },
   "qwen3-8-2-4t-a95b": {
     "pricing": {
       "inputPer1M": 2.0,
@@ -1044,19 +1191,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 320.0,
     "releaseDate": "2026-08-26"
   },
-  "muse-spark-1-2": {
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 4.25,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 80.1,
-      "sciCode": 56.4,
-      "intelligenceIndex": 56.8
-    },
-    "releaseDate": "2026-08-05"
-  },
   "gpt-5-6-terra": {
     "pricing": {
       "inputPer1M": 2.0,
@@ -1069,19 +1203,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 56.6
     },
     "releaseDate": "2026-07-09"
-  },
-  "gemini-3-7-flash": {
-    "pricing": {
-      "inputPer1M": 0.75,
-      "outputPer1M": 3.75,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 85.8,
-      "sciCode": 56.8,
-      "intelligenceIndex": 56.0
-    },
-    "releaseDate": "2026-08-13"
   },
   "deepseek-v4-pro": {
     "pricing": {
@@ -1273,12 +1394,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 218.0,
     "releaseDate": "2026-05-20"
   },
-  "claude-opus-5-high": {
-    "releaseDate": "2026-07-24"
-  },
-  "claude-fable-5-1-medium": {
-    "releaseDate": "2026-09-01"
-  },
   "claude-opus-5-medium": {
     "releaseDate": "2026-07-24"
   },
@@ -1410,6 +1525,81 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "claude-sonnet-5-low": {
     "releaseDate": "2026-06-30"
+  },
+  "muse-spark-1-2": {
+    "releaseDate": "2026-08-05"
+  },
+  "muse-spark-1-1": {
+    "releaseDate": "2026-07-09"
+  },
+  "muse-spark": {
+    "releaseDate": "2026-04-08"
+  },
+  "llama-4-maverick": {
+    "pricing": {
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.8,
+      "approx": true
+    },
+    "context": 1048576,
+    "benchmarks": {
+      "designArenaElo": 905.7
+    },
+    "releaseDate": "2025-04-05"
+  },
+  "llama-4-scout": {
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "approx": true
+    },
+    "context": 1310720,
+    "benchmarks": {
+      "designArenaElo": 818.2
+    },
+    "releaseDate": "2025-04-05"
+  },
+  "llama-3-3-instruct-70b": {
+    "releaseDate": "2024-12-06"
+  },
+  "llama-3-1-instruct-405b": {
+    "releaseDate": "2024-07-23"
+  },
+  "llama-3-1-instruct-8b": {
+    "releaseDate": "2024-07-23"
+  },
+  "llama-3-1-instruct-70b": {
+    "releaseDate": "2024-07-23"
+  },
+  "llama-3-2-instruct-90b-vision": {
+    "releaseDate": "2024-09-25"
+  },
+  "llama-2-chat-7b": {
+    "releaseDate": "2023-07-18"
+  },
+  "llama-3-2-instruct-3b": {
+    "releaseDate": "2024-09-25"
+  },
+  "llama-3-instruct-70b": {
+    "releaseDate": "2024-04-18"
+  },
+  "llama-3-2-instruct-11b-vision": {
+    "releaseDate": "2024-09-25"
+  },
+  "llama-2-chat-70b": {
+    "releaseDate": "2023-07-18"
+  },
+  "llama-2-chat-13b": {
+    "releaseDate": "2023-07-18"
+  },
+  "llama-65b": {
+    "releaseDate": "2023-02-24"
+  },
+  "llama-3-instruct-8b": {
+    "releaseDate": "2024-04-18"
+  },
+  "llama-3-2-instruct-1b": {
+    "releaseDate": "2024-09-25"
   },
   "gpt-5-6-sol-xhigh": {
     "releaseDate": "2026-07-09"
@@ -2014,6 +2204,195 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "glm-4-5v": {
     "releaseDate": "2025-08-11"
   },
+  "gemini-3-8-flash-medium": {
+    "releaseDate": "2026-09-02"
+  },
+  "gemini-3-7-flash": {
+    "releaseDate": "2026-08-13"
+  },
+  "gemini-3-7-flash-medium": {
+    "releaseDate": "2026-08-13"
+  },
+  "gemini-3-5-flash": {
+    "releaseDate": "2026-05-19"
+  },
+  "gemini-3-8-flash-low": {
+    "releaseDate": "2026-09-02"
+  },
+  "gemini-3-6-flash": {
+    "releaseDate": "2026-07-21"
+  },
+  "gemini-3-7-flash-low": {
+    "releaseDate": "2026-08-13"
+  },
+  "gemini-3-1-pro-preview": {
+    "releaseDate": "2026-02-19"
+  },
+  "gemini-3-5-flash-medium": {
+    "releaseDate": "2026-05-19"
+  },
+  "gemini-3-pro": {
+    "releaseDate": "2025-11-18"
+  },
+  "gemini-3-flash-reasoning": {
+    "releaseDate": "2025-12-17"
+  },
+  "gemini-3-5-flash-minimal": {
+    "releaseDate": "2026-05-19"
+  },
+  "gemini-3-pro-low": {
+    "releaseDate": "2025-11-18"
+  },
+  "gemma-4-31b": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-3-flash": {
+    "releaseDate": "2025-12-17"
+  },
+  "gemma-4-26b-a4b": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-2-5-pro": {
+    "releaseDate": "2025-06-05"
+  },
+  "gemini-3-1-flash-lite-preview": {
+    "releaseDate": "2026-03-03"
+  },
+  "gemini-2-5-flash-preview-09-2025-reasoning": {
+    "releaseDate": "2025-09-25"
+  },
+  "gemini-2-5-pro-03-25": {
+    "releaseDate": "2025-03-25"
+  },
+  "gemini-2-5-pro-05-06": {
+    "releaseDate": "2025-05-06"
+  },
+  "gemma-4-31b-non-reasoning": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemma-4-12b": {
+    "releaseDate": "2026-06-03"
+  },
+  "gemma-4-26b-a4b-non-reasoning": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-2-5-flash-reasoning": {
+    "releaseDate": "2025-05-20"
+  },
+  "gemini-2-5-flash-preview-09-2025": {
+    "releaseDate": "2025-09-25"
+  },
+  "gemini-2-5-flash-reasoning-04-2025": {
+    "releaseDate": "2025-04-17"
+  },
+  "gemini-2-5-flash-lite-preview-09-2025-reasoning": {
+    "releaseDate": "2025-09-08"
+  },
+  "gemini-2-5-flash": {
+    "releaseDate": "2025-05-20"
+  },
+  "diffusiongemma-26b-a4b": {
+    "releaseDate": "2026-06-10"
+  },
+  "gemini-2-0-flash-thinking-exp-0121": {
+    "releaseDate": "2025-01-21"
+  },
+  "gemma-4-12b-non-reasoning": {
+    "releaseDate": "2026-06-03"
+  },
+  "gemini-2-5-flash-lite-preview-09-2025": {
+    "releaseDate": "2025-09-25"
+  },
+  "gemini-2-0-flash": {
+    "releaseDate": "2025-02-05"
+  },
+  "gemma-4-e4b": {
+    "releaseDate": "2026-04-03"
+  },
+  "gemini-2-0-pro-experimental-02-05": {
+    "releaseDate": "2025-02-05"
+  },
+  "gemini-2-5-flash-04-2025": {
+    "releaseDate": "2025-04-17"
+  },
+  "gemini-2-5-flash-lite-reasoning": {
+    "releaseDate": "2025-06-17"
+  },
+  "gemini-2-0-flash-experimental": {
+    "releaseDate": "2024-12-11"
+  },
+  "gemini-1-5-pro": {
+    "releaseDate": "2024-09-24"
+  },
+  "gemma-4-e2b": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemma-4-e4b-non-reasoning": {
+    "releaseDate": "2026-04-03"
+  },
+  "gemini-2-0-flash-lite-001": {
+    "releaseDate": "2025-02-25"
+  },
+  "gemini-2-0-flash-lite-preview": {
+    "releaseDate": "2025-02-05"
+  },
+  "gemini-1-5-flash": {
+    "releaseDate": "2024-09-24"
+  },
+  "gemma-3-27b": {
+    "releaseDate": "2025-03-12"
+  },
+  "gemini-2-5-flash-lite": {
+    "releaseDate": "2025-06-17"
+  },
+  "gemini-2-0-flash-thinking-exp-1219": {
+    "releaseDate": "2024-12-19"
+  },
+  "gemma-4-e2b-non-reasoning": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-1-5-pro-may-2024": {
+    "releaseDate": "2024-05-15"
+  },
+  "gemma-3-12b": {
+    "releaseDate": "2025-03-12"
+  },
+  "gemini-1-5-flash-8b": {
+    "releaseDate": "2024-10-03"
+  },
+  "gemini-1-5-flash-may-2024": {
+    "releaseDate": "2024-05-14"
+  },
+  "gemini-1-0-ultra": {
+    "releaseDate": "2023-12-06"
+  },
+  "gemma-3n-e4b-preview-0520": {
+    "releaseDate": "2025-05-20"
+  },
+  "palm-2": {
+    "releaseDate": "2023-05-10"
+  },
+  "gemini-1-0-pro": {
+    "releaseDate": "2023-12-06"
+  },
+  "gemma-3-270m": {
+    "releaseDate": "2025-08-14"
+  },
+  "gemma-3-1b": {
+    "releaseDate": "2025-03-13"
+  },
+  "gemma-3-4b": {
+    "releaseDate": "2025-03-12"
+  },
+  "gemma-3n-e2b": {
+    "releaseDate": "2025-06-26"
+  },
+  "gemma-3n-e4b": {
+    "releaseDate": "2025-06-26"
+  },
+  "gemini-3-deep-think": {
+    "releaseDate": "2026-02-05"
+  },
   "qwen3-8-max": {
     "releaseDate": "2026-08-03"
   },
@@ -2331,258 +2710,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-0.6b-instruct-reasoning": {
     "releaseDate": "2025-04-28"
-  },
-  "muse-spark-1-1": {
-    "releaseDate": "2026-07-09"
-  },
-  "muse-spark": {
-    "releaseDate": "2026-04-08"
-  },
-  "llama-4-maverick": {
-    "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 0.8,
-      "approx": true
-    },
-    "context": 1048576,
-    "benchmarks": {
-      "designArenaElo": 905.7
-    },
-    "releaseDate": "2025-04-05"
-  },
-  "llama-4-scout": {
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 0.3,
-      "approx": true
-    },
-    "context": 1310720,
-    "benchmarks": {
-      "designArenaElo": 818.2
-    },
-    "releaseDate": "2025-04-05"
-  },
-  "llama-3-3-instruct-70b": {
-    "releaseDate": "2024-12-06"
-  },
-  "llama-3-1-instruct-405b": {
-    "releaseDate": "2024-07-23"
-  },
-  "llama-3-1-instruct-8b": {
-    "releaseDate": "2024-07-23"
-  },
-  "llama-3-1-instruct-70b": {
-    "releaseDate": "2024-07-23"
-  },
-  "llama-3-2-instruct-90b-vision": {
-    "releaseDate": "2024-09-25"
-  },
-  "llama-2-chat-7b": {
-    "releaseDate": "2023-07-18"
-  },
-  "llama-3-2-instruct-3b": {
-    "releaseDate": "2024-09-25"
-  },
-  "llama-3-instruct-70b": {
-    "releaseDate": "2024-04-18"
-  },
-  "llama-3-2-instruct-11b-vision": {
-    "releaseDate": "2024-09-25"
-  },
-  "llama-2-chat-70b": {
-    "releaseDate": "2023-07-18"
-  },
-  "llama-2-chat-13b": {
-    "releaseDate": "2023-07-18"
-  },
-  "llama-65b": {
-    "releaseDate": "2023-02-24"
-  },
-  "llama-3-instruct-8b": {
-    "releaseDate": "2024-04-18"
-  },
-  "llama-3-2-instruct-1b": {
-    "releaseDate": "2024-09-25"
-  },
-  "gemini-3-7-flash-medium": {
-    "releaseDate": "2026-08-13"
-  },
-  "gemini-3-5-flash": {
-    "releaseDate": "2026-05-19"
-  },
-  "gemini-3-6-flash": {
-    "releaseDate": "2026-07-21"
-  },
-  "gemini-3-7-flash-low": {
-    "releaseDate": "2026-08-13"
-  },
-  "gemini-3-1-pro-preview": {
-    "releaseDate": "2026-02-19"
-  },
-  "gemini-3-5-flash-medium": {
-    "releaseDate": "2026-05-19"
-  },
-  "gemini-3-pro": {
-    "releaseDate": "2025-11-18"
-  },
-  "gemini-3-flash-reasoning": {
-    "releaseDate": "2025-12-17"
-  },
-  "gemini-3-5-flash-minimal": {
-    "releaseDate": "2026-05-19"
-  },
-  "gemini-3-pro-low": {
-    "releaseDate": "2025-11-18"
-  },
-  "gemma-4-31b": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-3-flash": {
-    "releaseDate": "2025-12-17"
-  },
-  "gemma-4-26b-a4b": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-2-5-pro": {
-    "releaseDate": "2025-06-05"
-  },
-  "gemini-3-1-flash-lite-preview": {
-    "releaseDate": "2026-03-03"
-  },
-  "gemini-2-5-flash-preview-09-2025-reasoning": {
-    "releaseDate": "2025-09-25"
-  },
-  "gemini-2-5-pro-03-25": {
-    "releaseDate": "2025-03-25"
-  },
-  "gemini-2-5-pro-05-06": {
-    "releaseDate": "2025-05-06"
-  },
-  "gemma-4-31b-non-reasoning": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemma-4-12b": {
-    "releaseDate": "2026-06-03"
-  },
-  "gemma-4-26b-a4b-non-reasoning": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-2-5-flash-reasoning": {
-    "releaseDate": "2025-05-20"
-  },
-  "gemini-2-5-flash-preview-09-2025": {
-    "releaseDate": "2025-09-25"
-  },
-  "gemini-2-5-flash-reasoning-04-2025": {
-    "releaseDate": "2025-04-17"
-  },
-  "gemini-2-5-flash-lite-preview-09-2025-reasoning": {
-    "releaseDate": "2025-09-08"
-  },
-  "gemini-2-5-flash": {
-    "releaseDate": "2025-05-20"
-  },
-  "diffusiongemma-26b-a4b": {
-    "releaseDate": "2026-06-10"
-  },
-  "gemini-2-0-flash-thinking-exp-0121": {
-    "releaseDate": "2025-01-21"
-  },
-  "gemma-4-12b-non-reasoning": {
-    "releaseDate": "2026-06-03"
-  },
-  "gemini-2-5-flash-lite-preview-09-2025": {
-    "releaseDate": "2025-09-25"
-  },
-  "gemini-2-0-flash": {
-    "releaseDate": "2025-02-05"
-  },
-  "gemma-4-e4b": {
-    "releaseDate": "2026-04-03"
-  },
-  "gemini-2-0-pro-experimental-02-05": {
-    "releaseDate": "2025-02-05"
-  },
-  "gemini-2-5-flash-04-2025": {
-    "releaseDate": "2025-04-17"
-  },
-  "gemini-2-5-flash-lite-reasoning": {
-    "releaseDate": "2025-06-17"
-  },
-  "gemini-2-0-flash-experimental": {
-    "releaseDate": "2024-12-11"
-  },
-  "gemini-1-5-pro": {
-    "releaseDate": "2024-09-24"
-  },
-  "gemma-4-e2b": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemma-4-e4b-non-reasoning": {
-    "releaseDate": "2026-04-03"
-  },
-  "gemini-2-0-flash-lite-001": {
-    "releaseDate": "2025-02-25"
-  },
-  "gemini-2-0-flash-lite-preview": {
-    "releaseDate": "2025-02-05"
-  },
-  "gemini-1-5-flash": {
-    "releaseDate": "2024-09-24"
-  },
-  "gemma-3-27b": {
-    "releaseDate": "2025-03-12"
-  },
-  "gemini-2-5-flash-lite": {
-    "releaseDate": "2025-06-17"
-  },
-  "gemini-2-0-flash-thinking-exp-1219": {
-    "releaseDate": "2024-12-19"
-  },
-  "gemma-4-e2b-non-reasoning": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-1-5-pro-may-2024": {
-    "releaseDate": "2024-05-15"
-  },
-  "gemma-3-12b": {
-    "releaseDate": "2025-03-12"
-  },
-  "gemini-1-5-flash-8b": {
-    "releaseDate": "2024-10-03"
-  },
-  "gemini-1-5-flash-may-2024": {
-    "releaseDate": "2024-05-14"
-  },
-  "gemini-1-0-ultra": {
-    "releaseDate": "2023-12-06"
-  },
-  "gemma-3n-e4b-preview-0520": {
-    "releaseDate": "2025-05-20"
-  },
-  "palm-2": {
-    "releaseDate": "2023-05-10"
-  },
-  "gemini-1-0-pro": {
-    "releaseDate": "2023-12-06"
-  },
-  "gemma-3-270m": {
-    "releaseDate": "2025-08-14"
-  },
-  "gemma-3-1b": {
-    "releaseDate": "2025-03-13"
-  },
-  "gemma-3-4b": {
-    "releaseDate": "2025-03-12"
-  },
-  "gemma-3n-e2b": {
-    "releaseDate": "2025-06-26"
-  },
-  "gemma-3n-e4b": {
-    "releaseDate": "2025-06-26"
-  },
-  "gemini-3-deep-think": {
-    "releaseDate": "2026-02-05"
   },
   "deepseek-v4-flash": {
     "pricing": {
