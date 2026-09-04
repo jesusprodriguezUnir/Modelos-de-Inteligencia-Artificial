@@ -259,11 +259,11 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.4). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "claude-fable-5-1-medium",
-    "iiSlug": "claude-fable-5-1-medium",
-    "company": "Anthropic",
+    "id": "gpt-6-astra",
+    "iiSlug": "gpt-6-astra",
+    "company": "OpenAI",
     "origin": "US",
-    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+    "displayName": "GPT-6 Astra (max)",
     "kind": "model",
     "category": [
       "coding",
@@ -279,13 +279,13 @@ export const autoModels: Model[] = [
       "text"
     ],
     "openWeight": false,
-    "releaseDate": "2026-09-01",
+    "releaseDate": "2026-09-03",
     "benchmarks": {
-      "terminalBench": 88.0,
-      "sciCode": 55.3,
-      "intelligenceIndex": 60.5
+      "terminalBench": 88.4,
+      "sciCode": 54.1,
+      "intelligenceIndex": 61.2
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.2). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.3). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "muse-spark-1-3-xhigh",
@@ -406,6 +406,35 @@ export const autoModels: Model[] = [
       "designArenaElo": 1394.1
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 104.3). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "gpt-6-astra-xhigh",
+    "iiSlug": "gpt-6-astra-xhigh",
+    "company": "OpenAI",
+    "origin": "US",
+    "displayName": "GPT-6 Astra (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-03",
+    "benchmarks": {
+      "terminalBench": 89.1,
+      "sciCode": 49.5,
+      "intelligenceIndex": 61.0
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 103.8). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "gemini-3-8-flash",
@@ -649,6 +678,36 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 91.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "k2-horizon-375b-a23b",
+    "iiSlug": "k2-horizon-375b-a23b",
+    "company": "MBZUAIInstituteofFoundationModels",
+    "origin": "EU",
+    "displayName": "K2 Horizon 375B A23B",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": null,
+      "outputPer1M": null,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-09-03",
+    "parameters": 375.0,
+    "benchmarks": {
+      "terminalBench": 71.9,
+      "sciCode": 40.7,
+      "intelligenceIndex": 47.3
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 83.1). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "minimax-m3",
     "iiSlug": "minimax-m3",
     "company": "MiniMax",
@@ -728,8 +787,8 @@ export const autoModels: Model[] = [
     ],
     "context": null,
     "pricing": {
-      "inputPer1M": 0.675,
-      "outputPer1M": 2.675,
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.6,
       "approx": true
     },
     "modalities": [
@@ -789,8 +848,8 @@ export const autoModels: Model[] = [
     ],
     "context": null,
     "pricing": {
-      "inputPer1M": 0.325,
-      "outputPer1M": 1.35,
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.5,
       "approx": true
     },
     "modalities": [
@@ -836,36 +895,6 @@ export const autoModels: Model[] = [
       "intelligenceIndex": 30.4
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 61.4). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "claude-4-5-haiku-reasoning",
-    "iiSlug": "claude-4-5-haiku-reasoning",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude 4.5 Haiku (Reasoning)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 1.0,
-      "outputPer1M": 5.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2025-10-15",
-    "benchmarks": {
-      "liveCodeBench": 0.6,
-      "terminalBench": 44.2,
-      "sciCode": 43.3,
-      "intelligenceIndex": 29.9
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 58.8). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "gpt-oss-120b",
@@ -930,37 +959,6 @@ export const autoModels: Model[] = [
       "intelligenceIndex": 22.8
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 40.2). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "nemotron-3-5-lightning",
-    "iiSlug": "nemotron-3-5-lightning",
-    "company": "NVIDIA",
-    "origin": "US",
-    "displayName": "Nemotron 3.5 Lightning",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.07,
-      "outputPer1M": 0.22,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-11",
-    "parameters": 31.6,
-    "benchmarks": {
-      "terminalBench": 24.3,
-      "sciCode": 31.6,
-      "intelligenceIndex": 23.6
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 39.0). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -1068,6 +1066,32 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-07-24"
   },
+  "gpt-6-astra": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 88.4,
+      "sciCode": 54.1,
+      "intelligenceIndex": 61.2
+    },
+    "releaseDate": "2026-09-03"
+  },
+  "gpt-6-astra-xhigh": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 89.1,
+      "sciCode": 49.5,
+      "intelligenceIndex": 61.0
+    },
+    "releaseDate": "2026-09-03"
+  },
   "gpt-5-6-sol": {
     "pricing": {
       "inputPer1M": 4.0,
@@ -1106,19 +1130,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 60.8
     },
     "releaseDate": "2026-09-02"
-  },
-  "claude-fable-5-1-medium": {
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 88.0,
-      "sciCode": 55.3,
-      "intelligenceIndex": 60.5
-    },
-    "releaseDate": "2026-09-01"
   },
   "kimi-k3": {
     "pricing": {
@@ -1247,6 +1258,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 27.0,
     "releaseDate": "2026-08-14"
   },
+  "k2-horizon-375b-a23b": {
+    "benchmarks": {
+      "terminalBench": 71.9,
+      "sciCode": 40.7,
+      "intelligenceIndex": 47.3
+    },
+    "parameters": 375.0,
+    "releaseDate": "2026-09-03"
+  },
   "minimax-m3": {
     "pricing": {
       "inputPer1M": 0.15,
@@ -1281,8 +1301,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "nvidia-nemotron-3-ultra-550b-a55b": {
     "pricing": {
-      "inputPer1M": 0.675,
-      "outputPer1M": 2.675,
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.6,
       "approx": true
     },
     "benchmarks": {
@@ -1308,8 +1328,8 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "muse-glimmer": {
     "pricing": {
-      "inputPer1M": 0.325,
-      "outputPer1M": 1.35,
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.5,
       "approx": true
     },
     "benchmarks": {
@@ -1335,20 +1355,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 128.0,
     "releaseDate": "2026-04-29"
   },
-  "claude-4-5-haiku-reasoning": {
-    "pricing": {
-      "inputPer1M": 1.0,
-      "outputPer1M": 5.0,
-      "approx": true
-    },
-    "benchmarks": {
-      "liveCodeBench": 0.6,
-      "terminalBench": 44.2,
-      "sciCode": 43.3,
-      "intelligenceIndex": 29.9
-    },
-    "releaseDate": "2025-10-15"
-  },
   "gpt-oss-120b": {
     "pricing": {
       "inputPer1M": 0.03,
@@ -1366,20 +1372,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 117.0,
     "releaseDate": "2025-08-05"
   },
-  "nemotron-3-5-lightning": {
-    "pricing": {
-      "inputPer1M": 0.07,
-      "outputPer1M": 0.22,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 24.3,
-      "sciCode": 31.6,
-      "intelligenceIndex": 23.6
-    },
-    "parameters": 31.6,
-    "releaseDate": "2026-08-11"
-  },
   "command-a-plus": {
     "pricing": {
       "inputPer1M": 0.0,
@@ -1393,6 +1385,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 218.0,
     "releaseDate": "2026-05-20"
+  },
+  "claude-fable-5-1-medium": {
+    "releaseDate": "2026-09-01"
   },
   "claude-opus-5-medium": {
     "releaseDate": "2026-07-24"
@@ -1459,6 +1454,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "claude-4-5-sonnet": {
     "releaseDate": "2025-09-29"
+  },
+  "claude-4-5-haiku-reasoning": {
+    "releaseDate": "2025-10-15"
   },
   "claude-4-sonnet-thinking": {
     "releaseDate": "2025-05-22"
@@ -1601,17 +1599,29 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "llama-3-2-instruct-1b": {
     "releaseDate": "2024-09-25"
   },
+  "gpt-6-astra-high": {
+    "releaseDate": "2026-09-03"
+  },
+  "gpt-6-astra-medium": {
+    "releaseDate": "2026-09-03"
+  },
   "gpt-5-6-sol-xhigh": {
     "releaseDate": "2026-07-09"
   },
   "gpt-5-6-sol-high": {
     "releaseDate": "2026-07-09"
   },
+  "gpt-6-astra-low": {
+    "releaseDate": "2026-09-03"
+  },
   "gpt-5-5": {
     "releaseDate": "2026-04-23"
   },
   "gpt-5-6-sol-medium": {
     "releaseDate": "2026-07-09"
+  },
+  "gpt-6-astra-non-reasoning": {
+    "releaseDate": "2026-09-03"
   },
   "gpt-5-5-high": {
     "releaseDate": "2026-04-23"
@@ -2846,6 +2856,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "motif-2-12-7b": {
     "releaseDate": "2025-12-04"
   },
+  "k2-think-v2": {
+    "releaseDate": "2025-12-15"
+  },
+  "k2-v2": {
+    "releaseDate": "2025-12-05"
+  },
+  "k2-v2-medium": {
+    "releaseDate": "2025-12-05"
+  },
+  "k2-v2-low": {
+    "releaseDate": "2025-12-05"
+  },
   "minimax-m2-7": {
     "releaseDate": "2026-03-18"
   },
@@ -3007,6 +3029,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "nvidia-nemotron-3-super-120b-a12b": {
     "releaseDate": "2026-03-11"
+  },
+  "nemotron-3-5-lightning": {
+    "releaseDate": "2026-08-11"
   },
   "nemotron-cascade-2-30b-a3b": {
     "releaseDate": "2026-03-19"
@@ -3449,18 +3474,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "r1-1776": {
     "releaseDate": "2025-02-18"
   },
-  "k2-think-v2": {
-    "releaseDate": "2025-12-15"
-  },
-  "k2-v2": {
-    "releaseDate": "2025-12-05"
-  },
-  "k2-v2-medium": {
-    "releaseDate": "2025-12-05"
-  },
-  "k2-v2-low": {
-    "releaseDate": "2025-12-05"
-  },
   "hyperclova-x-seed-think-32b": {
     "releaseDate": "2025-12-26"
   },
@@ -3665,6 +3678,12 @@ export const autoSpecs: Record<string, AutoSpec> = {
 };
 
 export const autoCompanies: Record<string, CompanyMeta> = {
+  "MBZUAIInstituteofFoundationModels": {
+    "name": "MBZUAI Institute of Foundation Models",
+    "origin": "EU",
+    "accent": "#64748b",
+    "blurb": "MBZUAI Institute of Foundation Models — datos del Artificial Analysis Intelligence Index."
+  },
   "NVIDIA": {
     "name": "NVIDIA",
     "origin": "US",
