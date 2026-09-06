@@ -644,9 +644,9 @@ export const autoModels: Model[] = [
     "benchmarks": {
       "terminalBench": 79.8,
       "sciCode": 46.6,
-      "intelligenceIndex": 41.6
+      "intelligenceIndex": 41.4
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 87.3). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 87.2). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "k2-horizon-375b-a23b",
@@ -1124,7 +1124,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "benchmarks": {
       "terminalBench": 79.8,
       "sciCode": 46.6,
-      "intelligenceIndex": 41.6
+      "intelligenceIndex": 41.4
     },
     "parameters": 27.0,
     "releaseDate": "2026-08-14"
@@ -2057,14 +2057,14 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gemini-3-8-flash-low": {
     "releaseDate": "2026-09-02"
   },
-  "gemini-3-5-flash": {
-    "releaseDate": "2026-05-19"
-  },
   "gemini-3-7-flash-low": {
     "releaseDate": "2026-08-13"
   },
   "gemini-3-6-flash": {
     "releaseDate": "2026-07-21"
+  },
+  "gemini-3-5-flash": {
+    "releaseDate": "2026-05-19"
   },
   "gemini-3-5-flash-medium": {
     "releaseDate": "2026-05-19"

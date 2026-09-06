@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-09-05T08:13:30Z`
+- **Última actualización:** `2026-09-06T08:13:44Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.2
 - **Método de extracción:** `rsc-html`
@@ -47,10 +47,10 @@
 | 18 | GLM-5.3-Flash | Z AI | 46.22 | — | — | — | 7.47 | ✓ | — |
 | 19 | GPT-5.6 Luna (max) | OpenAI | 43.44 | — | — | — | -10.28 | — | — |
 | 20 | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 42.11 | — | — | — | 0.83 | ✓ | — |
-| 21 | Qwen3.8 27B (xhigh) | Alibaba | 41.65 | — | — | — | -9.98 | ✓ | — |
+| 21 | Qwen3.8 27B (xhigh) | Alibaba | 41.41 | — | — | — | -9.98 | ✓ | — |
 | 22 | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 37.75 | — | — | — | -2.97 | ✓ | — |
 | 23 | MiniMax-M3 | MiniMax | 35.75 | — | — | — | 1.35 | ✓ | — |
-| 24 | Inkling (xhigh) | Thinking Machines | 32.19 | — | — | — | 2 | ✓ | — |
+| 24 | Inkling (xhigh) | Thinking Machines | 32.17 | — | — | — | 2 | ✓ | — |
 | 25 | Gemini 3.5 Flash-Lite | Google | 27.57 | — | — | — | 5.23 | — | — |
 
 ## `intelligence_index`
@@ -77,10 +77,10 @@
 | glm-5-3-flash | GLM-5.3-Flash | Z AI | 46.2237224739457 | 46.2237224739457 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 43.4414655969671 | 43.4414655969671 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 42.1132549231516 | 42.1132549231516 |
-| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 41.6459480116377 | 41.6459480116377 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 41.4059480116377 | 41.4059480116377 |
 | k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 37.7506901831038 | 37.7506901831038 |
 | minimax-m3 | MiniMax-M3 | MiniMax | 35.7477256720963 | 35.7477256720963 |
-| inkling | Inkling (xhigh) | Thinking Machines | 32.1865277396553 | 32.1865277396553 |
+| inkling | Inkling (xhigh) | Thinking Machines | 32.1665277396553 | 32.1665277396553 |
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 27.5743377606185 | 27.5743377606185 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 24.3772708027605 | 24.3772708027605 |
 | gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 15.5719877600873 | 15.5719877600873 |
@@ -89,65 +89,65 @@
 
 | slug | name | creator | gdpval | gdpval_v2 | tau_banking | terminalbench_v2_1 | scicode | hle | gpqa |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1769.1 | 1769.1 | 0.472164948453608 | 0.913857677902622 | 0.630787037037037 | 0.591288229842447 | 0.937373737373737 |
-| gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1584.13 | 1584.13 | 0.414432989690722 | 0.883895131086142 | 0.564814814814815 | 0.546802594995366 | 0.960606060606061 |
-| gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1558.4 | 1558.4 | 0.430927835051546 | 0.891385767790262 | 0.556712962962963 | 0.545875810936052 | 0.962626262626263 |
-| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1739.24 | 1739.24 | 0.420618556701031 | 0.891385767790262 | 0.563657407407407 | 0.548656163113994 | 0.932323232323232 |
-| claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1751.06 | 1751.06 | 0.457731958762887 | 0.910112359550562 | 0.608796296296296 | 0.587117701575533 | 0.934343434343434 |
-| claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1713.13 | 1713.13 | 0.43298969072165 | 0.880149812734082 | 0.556712962962963 | 0.544022242817424 | 0.937373737373737 |
-| gpt-6-astra-high | GPT-6 Astra (high) | OpenAI | 1533.06 | 1533.06 | 0.4 | 0.898876404494382 | 0.554398148148148 | 0.530583873957368 | 0.94949494949495 |
-| claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1636.84 | 1636.84 | 0.381443298969072 | 0.846441947565543 | 0.609953703703704 | 0.554680259499537 | 0.926262626262626 |
-| muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1720.15 | 1720.15 | 0.523711340206186 | 0.857677902621723 | 0.583333333333333 | 0.490732159406858 | 0.938383838383838 |
-| gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1506 | 1506 | 0.354639175257732 | 0.895131086142322 | 0.541666666666667 | 0.527340129749768 | 0.939393939393939 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1628.88 | 1628.88 | 0.443298969072165 | 0.880149812734082 | 0.570601851851852 | 0.494902687673772 | 0.941414141414141 |
-| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1647.85 | 1647.85 | 0.507216494845361 | 0.883895131086142 | 0.564814814814815 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1588.93 | 1588.93 | 0.45979381443299 | 0.850187265917603 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1681.03 | 1681.03 | 0.503092783505155 | 0.838951310861423 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 |
-| gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1466.99 | 1466.99 | 0.449484536082474 | 0.876404494382023 | 0.565972222222222 | 0.478220574606117 | 0.952525252525253 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1481.16 | 1481.16 | 0.402061855670103 | 0.880149812734082 | 0.549768518518518 | 0.429101019462465 | 0.925252525252525 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1631.85 | 1631.85 | 0.490721649484536 | 0.820224719101124 | 0.540509259259259 | 0.424467099165894 | 0.935353535353535 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1674.12 | 1674.12 | 0.472164948453608 | 0.842696629213483 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1493.56 | 1493.56 | 0.311340206185567 | 0.808988764044944 | 0.53587962962963 | 0.394810009267841 | 0.911111111111111 |
-| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1498.42 | 1498.42 | 0.395876288659794 | 0.786516853932584 | 0.510416666666667 | 0.410101946246525 | 0.928282828282828 |
-| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1467.93 | 1467.93 | 0.480412371134021 | 0.797752808988764 | 0.466435185185185 | 0.33920296570899 | 0.905050505050505 |
-| k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1414.86 | 1414.86 | 0.342268041237113 | 0.719101123595506 | 0.429398148148148 | 0.319740500463392 | 0.872727272727273 |
-| minimax-m3 | MiniMax-M3 | MiniMax | 1308.16 | 1308.16 | 0.152577319587629 | 0.651685393258427 | 0.471064814814815 | 0.389712696941613 | 0.929292929292929 |
-| inkling | Inkling (xhigh) | Thinking Machines | 1168.91 | 1168.91 | 0.290721649484536 | 0.550561797752809 | 0.469907407407407 | 0.318813716404078 | 0.871717171717172 |
-| gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1067.71 | 1067.71 | 0.175257731958763 | 0.535580524344569 | 0.413194444444444 | 0.188137164040778 | 0.838383838383838 |
-| muse-glimmer | Muse Glimmer (high) | Meta | 896.25 | 896.25 | 0.235051546391753 | 0.51685393258427 | 0.449074074074074 | 0.219647822057461 | 0.835353535353535 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 747.26 | 747.26 | 0.127835051546392 | 0.262172284644195 | 0.340277777777778 | 0.196014828544949 | 0.781818181818182 |
+| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1767.42 | 1767.42 | 0.472164948453608 | 0.913857677902622 | 0.630787037037037 | 0.591288229842447 | 0.937373737373737 |
+| gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1582.76 | 1582.76 | 0.414432989690722 | 0.883895131086142 | 0.564814814814815 | 0.546802594995366 | 0.960606060606061 |
+| gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1557.34 | 1557.34 | 0.430927835051546 | 0.891385767790262 | 0.556712962962963 | 0.545875810936052 | 0.962626262626263 |
+| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1738.08 | 1738.08 | 0.420618556701031 | 0.891385767790262 | 0.563657407407407 | 0.548656163113994 | 0.932323232323232 |
+| claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1749.69 | 1749.69 | 0.457731958762887 | 0.910112359550562 | 0.608796296296296 | 0.587117701575533 | 0.934343434343434 |
+| claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1710.58 | 1710.58 | 0.43298969072165 | 0.880149812734082 | 0.556712962962963 | 0.544022242817424 | 0.937373737373737 |
+| gpt-6-astra-high | GPT-6 Astra (high) | OpenAI | 1533.6 | 1533.6 | 0.4 | 0.898876404494382 | 0.554398148148148 | 0.530583873957368 | 0.94949494949495 |
+| claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1635.39 | 1635.39 | 0.381443298969072 | 0.846441947565543 | 0.609953703703704 | 0.554680259499537 | 0.926262626262626 |
+| muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1719.65 | 1719.65 | 0.523711340206186 | 0.857677902621723 | 0.583333333333333 | 0.490732159406858 | 0.938383838383838 |
+| gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1505.24 | 1505.24 | 0.354639175257732 | 0.895131086142322 | 0.541666666666667 | 0.527340129749768 | 0.939393939393939 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1627.48 | 1627.48 | 0.443298969072165 | 0.880149812734082 | 0.570601851851852 | 0.494902687673772 | 0.941414141414141 |
+| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1646.93 | 1646.93 | 0.507216494845361 | 0.883895131086142 | 0.564814814814815 | 0.429101019462465 | 0.94949494949495 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1587.5 | 1587.5 | 0.45979381443299 | 0.850187265917603 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1679.47 | 1679.47 | 0.503092783505155 | 0.838951310861423 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 |
+| gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1465.83 | 1465.83 | 0.449484536082474 | 0.876404494382023 | 0.565972222222222 | 0.478220574606117 | 0.952525252525253 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1480.27 | 1480.27 | 0.402061855670103 | 0.880149812734082 | 0.549768518518518 | 0.429101019462465 | 0.925252525252525 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1630.39 | 1630.39 | 0.490721649484536 | 0.820224719101124 | 0.540509259259259 | 0.424467099165894 | 0.935353535353535 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1672.94 | 1672.94 | 0.472164948453608 | 0.842696629213483 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1492.73 | 1492.73 | 0.311340206185567 | 0.808988764044944 | 0.53587962962963 | 0.394810009267841 | 0.911111111111111 |
+| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1496.68 | 1496.68 | 0.395876288659794 | 0.786516853932584 | 0.510416666666667 | 0.410101946246525 | 0.928282828282828 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1466.21 | 1466.21 | 0.480412371134021 | 0.797752808988764 | 0.466435185185185 | 0.33920296570899 | 0.905050505050505 |
+| k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1413.19 | 1413.19 | 0.342268041237113 | 0.719101123595506 | 0.429398148148148 | 0.319740500463392 | 0.872727272727273 |
+| minimax-m3 | MiniMax-M3 | MiniMax | 1306.45 | 1306.45 | 0.152577319587629 | 0.651685393258427 | 0.471064814814815 | 0.389712696941613 | 0.929292929292929 |
+| inkling | Inkling (xhigh) | Thinking Machines | 1168.42 | 1168.42 | 0.290721649484536 | 0.550561797752809 | 0.469907407407407 | 0.318813716404078 | 0.871717171717172 |
+| gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1066.51 | 1066.51 | 0.175257731958763 | 0.535580524344569 | 0.413194444444444 | 0.188137164040778 | 0.838383838383838 |
+| muse-glimmer | Muse Glimmer (high) | Meta | 894.78 | 894.78 | 0.235051546391753 | 0.51685393258427 | 0.449074074074074 | 0.219647822057461 | 0.835353535353535 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 746.06 | 746.06 | 0.127835051546392 | 0.262172284644195 | 0.340277777777778 | 0.196014828544949 | 0.781818181818182 |
 
 ## `aa_briefcase`
 
 | slug | name | creator | briefcase |
 | --- | --- | --- | --- |
-| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1665.82 |
-| gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1565.51 |
-| gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1539.19 |
-| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1650.28 |
-| claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1657.44 |
-| claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1629.57 |
-| gpt-6-astra-high | GPT-6 Astra (high) | OpenAI | 1499.79 |
-| claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1534.8 |
-| muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1560.45 |
-| gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1451.45 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1481.15 |
-| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1540.16 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1502.13 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1520.04 |
-| gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1205.69 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1335.18 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1445.31 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1460.68 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1344.66 |
-| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1271.16 |
-| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1404.14 |
-| k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1307.62 |
-| minimax-m3 | MiniMax-M3 | MiniMax | 1101.15 |
-| inkling | Inkling (xhigh) | Thinking Machines | 837.87 |
-| gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 646.87 |
-| muse-glimmer | Muse Glimmer (high) | Meta | 486.56 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 5.82 |
+| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1664.74 |
+| gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1563.84 |
+| gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1538.14 |
+| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1647.02 |
+| claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1655.55 |
+| claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1625.58 |
+| gpt-6-astra-high | GPT-6 Astra (high) | OpenAI | 1498.56 |
+| claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1533.52 |
+| muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1558.85 |
+| gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1451.87 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1478.66 |
+| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1537.76 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1499.88 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1518.58 |
+| gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1203.78 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1333.97 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1442.81 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1459.13 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1342.42 |
+| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1269.34 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1401.81 |
+| k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1305.76 |
+| minimax-m3 | MiniMax-M3 | MiniMax | 1099.07 |
+| inkling | Inkling (xhigh) | Thinking Machines | 836.55 |
+| gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 648.12 |
+| muse-glimmer | Muse Glimmer (high) | Meta | 487.43 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 0 |
 
 ## `aa_omniscience`
 
@@ -185,33 +185,33 @@
 
 | slug | name | creator | gdpval_v2 |
 | --- | --- | --- | --- |
-| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1769.1 |
-| gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1584.13 |
-| gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1558.4 |
-| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1739.24 |
-| claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1751.06 |
-| claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1713.13 |
-| gpt-6-astra-high | GPT-6 Astra (high) | OpenAI | 1533.06 |
-| claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1636.84 |
-| muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1720.15 |
-| gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1506 |
-| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1628.88 |
-| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1647.85 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1588.93 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1681.03 |
-| gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1466.99 |
-| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1481.16 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1631.85 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1674.12 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1493.56 |
-| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1498.42 |
-| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1467.93 |
-| k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1414.86 |
-| minimax-m3 | MiniMax-M3 | MiniMax | 1308.16 |
-| inkling | Inkling (xhigh) | Thinking Machines | 1168.91 |
-| gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1067.71 |
-| muse-glimmer | Muse Glimmer (high) | Meta | 896.25 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 747.26 |
+| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1767.42 |
+| gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1582.76 |
+| gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1557.34 |
+| claude-opus-5 | Claude Opus 5 (Adaptive Reasoning, Max Effort) | Anthropic | 1738.08 |
+| claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1749.69 |
+| claude-opus-5-xhigh | Claude Opus 5 (Adaptive Reasoning, Xhigh Effort) | Anthropic | 1710.58 |
+| gpt-6-astra-high | GPT-6 Astra (high) | OpenAI | 1533.6 |
+| claude-fable-5 | Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) | Anthropic | 1635.39 |
+| muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1719.65 |
+| gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1505.24 |
+| gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1627.48 |
+| grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1646.93 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1587.5 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1679.47 |
+| gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1465.83 |
+| gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1480.27 |
+| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1630.39 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1672.94 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1492.73 |
+| deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1496.68 |
+| qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1466.21 |
+| k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1413.19 |
+| minimax-m3 | MiniMax-M3 | MiniMax | 1306.45 |
+| inkling | Inkling (xhigh) | Thinking Machines | 1168.42 |
+| gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1066.51 |
+| muse-glimmer | Muse Glimmer (high) | Meta | 894.78 |
+| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 746.06 |
 
 ## `openness_index`
 
