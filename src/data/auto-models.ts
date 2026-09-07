@@ -76,9 +76,38 @@ export const autoModels: Model[] = [
     "benchmarks": {
       "terminalBench": 91.0,
       "sciCode": 60.9,
-      "intelligenceIndex": 53.8
+      "intelligenceIndex": 56.2
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.9). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 107.1). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-fable-5-1-high",
+    "iiSlug": "claude-fable-5-1-high",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
+    "benchmarks": {
+      "terminalBench": 89.9,
+      "sciCode": 58.7,
+      "intelligenceIndex": 54.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 104.6). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "claude-opus-5",
@@ -257,35 +286,6 @@ export const autoModels: Model[] = [
       "intelligenceIndex": 53.4
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 101.8). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-6-astra-medium",
-    "iiSlug": "gpt-6-astra-medium",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-6 Astra (medium)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-03",
-    "benchmarks": {
-      "terminalBench": 89.5,
-      "sciCode": 54.2,
-      "intelligenceIndex": 52.2
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 101.5). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "muse-spark-1-3",
@@ -855,6 +855,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-09-01"
   },
+  "claude-fable-5-1-xhigh": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 91.0,
+      "sciCode": 60.9,
+      "intelligenceIndex": 56.2
+    },
+    "releaseDate": "2026-09-01"
+  },
   "gpt-6-astra": {
     "pricing": {
       "inputPer1M": 10.0,
@@ -867,6 +880,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 54.7
     },
     "releaseDate": "2026-09-03"
+  },
+  "claude-fable-5-1-high": {
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "terminalBench": 89.9,
+      "sciCode": 58.7,
+      "intelligenceIndex": 54.5
+    },
+    "releaseDate": "2026-09-01"
   },
   "gpt-6-astra-xhigh": {
     "pricing": {
@@ -895,19 +921,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "designArenaElo": 1361.1
     },
     "releaseDate": "2026-07-24"
-  },
-  "claude-fable-5-1-xhigh": {
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 91.0,
-      "sciCode": 60.9,
-      "intelligenceIndex": 53.8
-    },
-    "releaseDate": "2026-09-01"
   },
   "claude-opus-5-xhigh": {
     "pricing": {
@@ -962,19 +975,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 53.0
     },
     "releaseDate": "2026-09-02"
-  },
-  "gpt-6-astra-medium": {
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "benchmarks": {
-      "terminalBench": 89.5,
-      "sciCode": 54.2,
-      "intelligenceIndex": 52.2
-    },
-    "releaseDate": "2026-09-03"
   },
   "gpt-5-6-sol": {
     "pricing": {
@@ -1214,20 +1214,17 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 117.0,
     "releaseDate": "2025-08-05"
   },
-  "claude-opus-5-high": {
-    "releaseDate": "2026-07-24"
-  },
-  "claude-fable-5-1-high": {
-    "releaseDate": "2026-09-01"
-  },
   "claude-fable-5-1-medium": {
     "releaseDate": "2026-09-01"
   },
-  "claude-opus-5-medium": {
+  "claude-opus-5-high": {
     "releaseDate": "2026-07-24"
   },
   "claude-fable-5-1-low": {
     "releaseDate": "2026-09-01"
+  },
+  "claude-opus-5-medium": {
+    "releaseDate": "2026-07-24"
   },
   "claude-opus-4-8": {
     "releaseDate": "2026-05-28"
@@ -1358,6 +1355,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "claude-sonnet-5-low": {
     "releaseDate": "2026-06-30"
   },
+  "gpt-6-astra-medium": {
+    "releaseDate": "2026-09-03"
+  },
   "gpt-5-6-sol-xhigh": {
     "releaseDate": "2026-07-09"
   },
@@ -1385,14 +1385,14 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gpt-5-4": {
     "releaseDate": "2026-03-05"
   },
-  "gpt-5-5-medium": {
-    "releaseDate": "2026-04-23"
-  },
   "gpt-5-6-luna-xhigh": {
     "releaseDate": "2026-07-09"
   },
   "gpt-5-6-terra-high": {
     "releaseDate": "2026-07-09"
+  },
+  "gpt-5-5-medium": {
+    "releaseDate": "2026-04-23"
   },
   "gpt-5-6-sol-low": {
     "releaseDate": "2026-07-09"
@@ -1835,11 +1835,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "grok-4-20": {
     "releaseDate": "2026-04-07"
   },
-  "grok-4-20-0309": {
-    "releaseDate": "2026-03-10"
-  },
   "grok-4-3": {
     "releaseDate": "2026-04-30"
+  },
+  "grok-4-20-0309": {
+    "releaseDate": "2026-03-10"
   },
   "grok-4-3-medium": {
     "releaseDate": "2026-04-30"
@@ -2054,11 +2054,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gemini-3-7-flash-medium": {
     "releaseDate": "2026-08-13"
   },
-  "gemini-3-8-flash-low": {
-    "releaseDate": "2026-09-02"
-  },
   "gemini-3-7-flash-low": {
     "releaseDate": "2026-08-13"
+  },
+  "gemini-3-8-flash-low": {
+    "releaseDate": "2026-09-02"
   },
   "gemini-3-6-flash": {
     "releaseDate": "2026-07-21"
@@ -2252,11 +2252,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-6-max": {
     "releaseDate": "2026-04-20"
   },
-  "qwen3-6-plus": {
-    "releaseDate": "2026-04-02"
-  },
   "qwen3-7-plus": {
     "releaseDate": "2026-06-01"
+  },
+  "qwen3-6-plus": {
+    "releaseDate": "2026-04-02"
   },
   "qwen3-6-27b": {
     "releaseDate": "2026-04-22"
@@ -2552,9 +2552,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen-chat-72b": {
     "releaseDate": "2023-11-30"
   },
-  "deepseek-v4-flash-vision": {
-    "releaseDate": "2026-08-21"
-  },
   "deepseek-v4-flash": {
     "pricing": {
       "inputPer1M": 0.0798,
@@ -2567,10 +2564,13 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-07-31"
   },
-  "deepseek-v4-pro-0424": {
-    "releaseDate": "2026-04-24"
+  "deepseek-v4-flash-vision": {
+    "releaseDate": "2026-08-21"
   },
   "deepseek-v4-pro-0424-high": {
+    "releaseDate": "2026-04-24"
+  },
+  "deepseek-v4-pro-0424": {
     "releaseDate": "2026-04-24"
   },
   "deepseek-v4-flash-0420": {
@@ -2735,41 +2735,17 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "hypernova-60b": {
     "releaseDate": "2026-05-26"
   },
-  "hy3": {
-    "pricing": {
-      "inputPer1M": 0.132,
-      "outputPer1M": 0.528,
-      "approx": true
-    },
-    "context": 262144,
-    "benchmarks": {
-      "designArenaElo": 1188.5
-    },
-    "releaseDate": "2026-07-06"
-  },
-  "hy3-preview": {
-    "pricing": {
-      "inputPer1M": 0.18,
-      "outputPer1M": 0.6,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2026-04-23"
-  },
-  "hy3-non-reasoning": {
-    "releaseDate": "2026-04-23"
-  },
   "mimo-v2-pro": {
     "releaseDate": "2026-03-18"
   },
   "mimo-v2-5-pro": {
     "releaseDate": "2026-04-22"
   },
-  "mimo-v2-5-0424": {
-    "releaseDate": "2026-04-22"
-  },
   "mimo-v2-omni-0327": {
     "releaseDate": "2026-03-27"
+  },
+  "mimo-v2-5-0424": {
+    "releaseDate": "2026-04-22"
   },
   "mimo-v2-omni": {
     "releaseDate": "2026-03-19"
@@ -2839,6 +2815,30 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "solar-mini": {
     "releaseDate": "2024-01-25"
+  },
+  "hy3": {
+    "pricing": {
+      "inputPer1M": 0.132,
+      "outputPer1M": 0.528,
+      "approx": true
+    },
+    "context": 262144,
+    "benchmarks": {
+      "designArenaElo": 1188.5
+    },
+    "releaseDate": "2026-07-06"
+  },
+  "hy3-preview": {
+    "pricing": {
+      "inputPer1M": 0.18,
+      "outputPer1M": 0.6,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2026-04-23"
+  },
+  "hy3-non-reasoning": {
+    "releaseDate": "2026-04-23"
   },
   "inkling-small": {
     "pricing": {
