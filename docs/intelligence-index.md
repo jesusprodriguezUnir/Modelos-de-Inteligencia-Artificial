@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-09-08T08:16:27Z`
+- **Última actualización:** `2026-09-09T08:16:01Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.3
 - **Método de extracción:** `rsc-html`
@@ -90,7 +90,7 @@
 
 | slug | name | creator | gdpval | gdpval_v2 | tau_banking | terminalbench_v2_1 | scicode | hle | gpqa |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1763.47 | 1763.47 | 0.472164948453608 | 0.913857677902622 | 0.630787037037037 | 0.591288229842447 | 0.937373737373737 |
+| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1763.64 | 1763.64 | 0.472164948453608 | 0.913857677902622 | 0.630787037037037 | 0.591288229842447 | 0.937373737373737 |
 | claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1745.29 | 1745.29 | 0.457731958762887 | 0.910112359550562 | 0.608796296296296 | 0.587117701575533 | 0.934343434343434 |
 | gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1580.2 | 1580.2 | 0.414432989690722 | 0.883895131086142 | 0.564814814814815 | 0.546802594995366 | 0.960606060606061 |
 | gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1555.23 | 1555.23 | 0.430927835051546 | 0.891385767790262 | 0.556712962962963 | 0.545875810936052 | 0.962626262626263 |
@@ -123,7 +123,7 @@
 
 | slug | name | creator | briefcase |
 | --- | --- | --- | --- |
-| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1661.64 |
+| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1661.82 |
 | claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1650.01 |
 | gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1562.01 |
 | gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1533.73 |
@@ -189,7 +189,7 @@
 
 | slug | name | creator | gdpval_v2 |
 | --- | --- | --- | --- |
-| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1763.47 |
+| claude-fable-5-1 | Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) | Anthropic | 1763.64 |
 | claude-fable-5-1-xhigh | Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) | Anthropic | 1745.29 |
 | gpt-6-astra | GPT-6 Astra (max) | OpenAI | 1580.2 |
 | gpt-6-astra-xhigh | GPT-6 Astra (xhigh) | OpenAI | 1555.23 |

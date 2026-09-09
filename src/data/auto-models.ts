@@ -1883,9 +1883,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-02-11"
   },
-  "glm-5-1": {
-    "releaseDate": "2026-04-07"
-  },
   "glm-5-turbo": {
     "pricing": {
       "inputPer1M": 1.2,
@@ -1897,6 +1894,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "designArenaElo": 1270.4
     },
     "releaseDate": "2026-03-15"
+  },
+  "glm-5-1": {
+    "releaseDate": "2026-04-07"
   },
   "glm-5-1-non-reasoning": {
     "releaseDate": "2026-04-07"
@@ -3227,18 +3227,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "granite-4-0-h-350m": {
     "releaseDate": "2025-10-28"
   },
-  "minicpm5-2b": {
-    "releaseDate": "2026-09-07"
-  },
-  "minicpm5-1b": {
-    "releaseDate": "2026-05-25"
-  },
-  "minicpm5-1b-non-reasoning": {
-    "releaseDate": "2026-05-25"
-  },
-  "minicpm-v4-6-1-3b": {
-    "releaseDate": "2026-05-11"
-  },
   "ernie-5-0-thinking-preview": {
     "releaseDate": "2025-11-13"
   },
@@ -3316,6 +3304,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "apriel-v1-6-15b-thinker": {
     "releaseDate": "2025-11-25"
+  },
+  "minicpm5-2b": {
+    "releaseDate": "2026-09-07"
+  },
+  "minicpm5-1b": {
+    "releaseDate": "2026-05-25"
+  },
+  "minicpm5-1b-non-reasoning": {
+    "releaseDate": "2026-05-25"
+  },
+  "minicpm-v4-6-1-3b": {
+    "releaseDate": "2026-05-11"
   },
   "sonar-reasoning-pro": {
     "pricing": {
