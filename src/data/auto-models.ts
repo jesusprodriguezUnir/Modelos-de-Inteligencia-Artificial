@@ -1448,20 +1448,20 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gpt-5-6-sol-low": {
     "releaseDate": "2026-07-09"
   },
-  "gpt-5-6-luna-high": {
-    "releaseDate": "2026-07-09"
-  },
-  "gpt-5-6-terra-medium": {
-    "releaseDate": "2026-07-09"
-  },
   "gpt-5-3-codex": {
     "releaseDate": "2026-02-05"
+  },
+  "gpt-5-6-luna-high": {
+    "releaseDate": "2026-07-09"
   },
   "gpt-5-5-low": {
     "releaseDate": "2026-04-23"
   },
   "gpt-5-2": {
     "releaseDate": "2025-12-11"
+  },
+  "gpt-5-6-terra-medium": {
+    "releaseDate": "2026-07-09"
   },
   "gpt-5-2-codex": {
     "releaseDate": "2025-12-11"
@@ -2096,26 +2096,215 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "kimi-linear-48b-a3b-instruct": {
     "releaseDate": "2025-10-30"
   },
-  "qwen3-8-flash-next": {
-    "releaseDate": "2026-08-26"
+  "gemini-3-8-flash-medium": {
+    "releaseDate": "2026-09-02"
+  },
+  "gemini-3-7-flash-medium": {
+    "releaseDate": "2026-08-13"
+  },
+  "gemini-3-7-flash": {
+    "releaseDate": "2026-08-13"
+  },
+  "gemini-3-7-flash-low": {
+    "releaseDate": "2026-08-13"
+  },
+  "gemini-3-6-flash": {
+    "releaseDate": "2026-07-21"
+  },
+  "gemini-3-8-flash-low": {
+    "releaseDate": "2026-09-02"
+  },
+  "gemini-3-5-flash-medium": {
+    "releaseDate": "2026-05-19"
+  },
+  "gemini-3-5-flash": {
+    "releaseDate": "2026-05-19"
+  },
+  "gemini-3-1-pro-preview": {
+    "releaseDate": "2026-02-19"
+  },
+  "gemini-3-pro": {
+    "releaseDate": "2025-11-18"
+  },
+  "gemini-3-flash-reasoning": {
+    "releaseDate": "2025-12-17"
+  },
+  "gemini-3-5-flash-minimal": {
+    "releaseDate": "2026-05-19"
+  },
+  "gemini-3-pro-low": {
+    "releaseDate": "2025-11-18"
+  },
+  "gemini-3-flash": {
+    "releaseDate": "2025-12-17"
+  },
+  "gemma-4-26b-a4b": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-2-5-pro": {
+    "releaseDate": "2025-06-05"
+  },
+  "gemini-3-1-flash-lite-preview": {
+    "releaseDate": "2026-03-03"
+  },
+  "gemini-2-5-flash-preview-09-2025-reasoning": {
+    "releaseDate": "2025-09-25"
+  },
+  "gemma-4-31b": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-2-5-pro-03-25": {
+    "releaseDate": "2025-03-25"
+  },
+  "gemini-2-5-pro-05-06": {
+    "releaseDate": "2025-05-06"
+  },
+  "gemma-4-12b": {
+    "releaseDate": "2026-06-03"
+  },
+  "gemma-4-31b-non-reasoning": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemma-4-26b-a4b-non-reasoning": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-2-5-flash-reasoning": {
+    "releaseDate": "2025-05-20"
+  },
+  "gemini-2-5-flash-preview-09-2025": {
+    "releaseDate": "2025-09-25"
+  },
+  "gemini-2-5-flash-reasoning-04-2025": {
+    "releaseDate": "2025-04-17"
+  },
+  "gemini-2-5-flash-lite-preview-09-2025-reasoning": {
+    "releaseDate": "2025-09-08"
+  },
+  "gemini-2-5-flash": {
+    "releaseDate": "2025-05-20"
+  },
+  "diffusiongemma-26b-a4b": {
+    "releaseDate": "2026-06-10"
+  },
+  "gemini-2-0-flash-thinking-exp-0121": {
+    "releaseDate": "2025-01-21"
+  },
+  "gemma-4-12b-non-reasoning": {
+    "releaseDate": "2026-06-03"
+  },
+  "gemini-2-5-flash-lite-preview-09-2025": {
+    "releaseDate": "2025-09-25"
+  },
+  "gemini-2-0-flash": {
+    "releaseDate": "2025-02-05"
+  },
+  "gemma-4-e4b": {
+    "releaseDate": "2026-04-03"
+  },
+  "gemini-2-0-pro-experimental-02-05": {
+    "releaseDate": "2025-02-05"
+  },
+  "gemini-2-5-flash-04-2025": {
+    "releaseDate": "2025-04-17"
+  },
+  "gemini-2-5-flash-lite-reasoning": {
+    "releaseDate": "2025-06-17"
+  },
+  "gemini-2-0-flash-experimental": {
+    "releaseDate": "2024-12-11"
+  },
+  "gemini-1-5-pro": {
+    "releaseDate": "2024-09-24"
+  },
+  "gemma-4-e2b": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemma-4-e4b-non-reasoning": {
+    "releaseDate": "2026-04-03"
+  },
+  "gemini-2-0-flash-lite-001": {
+    "releaseDate": "2025-02-25"
+  },
+  "gemini-2-0-flash-lite-preview": {
+    "releaseDate": "2025-02-05"
+  },
+  "gemini-1-5-flash": {
+    "releaseDate": "2024-09-24"
+  },
+  "gemini-2-5-flash-lite": {
+    "releaseDate": "2025-06-17"
+  },
+  "gemini-2-0-flash-thinking-exp-1219": {
+    "releaseDate": "2024-12-19"
+  },
+  "gemma-4-e2b-non-reasoning": {
+    "releaseDate": "2026-04-02"
+  },
+  "gemini-1-5-pro-may-2024": {
+    "releaseDate": "2024-05-15"
+  },
+  "gemini-1-5-flash-8b": {
+    "releaseDate": "2024-10-03"
+  },
+  "gemini-1-5-flash-may-2024": {
+    "releaseDate": "2024-05-14"
+  },
+  "gemini-1-0-ultra": {
+    "releaseDate": "2023-12-06"
+  },
+  "gemma-3n-e4b-preview-0520": {
+    "releaseDate": "2025-05-20"
+  },
+  "palm-2": {
+    "releaseDate": "2023-05-10"
+  },
+  "gemini-1-0-pro": {
+    "releaseDate": "2023-12-06"
+  },
+  "gemma-3-270m": {
+    "releaseDate": "2025-08-14"
+  },
+  "gemma-3-27b": {
+    "releaseDate": "2025-03-12"
+  },
+  "gemma-3-1b": {
+    "releaseDate": "2025-03-13"
+  },
+  "gemma-3-4b": {
+    "releaseDate": "2025-03-12"
+  },
+  "gemma-3n-e2b": {
+    "releaseDate": "2025-06-26"
+  },
+  "gemma-3n-e4b": {
+    "releaseDate": "2025-06-26"
+  },
+  "gemma-3-12b": {
+    "releaseDate": "2025-03-12"
+  },
+  "gemini-3-deep-think": {
+    "releaseDate": "2026-02-05"
   },
   "qwen3-8-max": {
     "releaseDate": "2026-08-03"
   },
-  "qwen3-8-27b-medium": {
-    "releaseDate": "2026-08-14"
+  "qwen3-8-flash-next": {
+    "releaseDate": "2026-08-26"
   },
   "qwen3-7-max": {
     "releaseDate": "2026-05-19"
   },
-  "qwen3-8-27b-low": {
-    "releaseDate": "2026-08-14"
-  },
   "qwen3-6-max": {
     "releaseDate": "2026-04-20"
   },
+  "qwen3-8-27b-medium": {
+    "releaseDate": "2026-08-14"
+  },
   "qwen3-6-plus": {
     "releaseDate": "2026-04-02"
+  },
+  "qwen3-8-27b-low": {
+    "releaseDate": "2026-08-14"
   },
   "qwen3-7-plus": {
     "releaseDate": "2026-06-01"
@@ -2125,9 +2314,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-8-27b-non-reasoning": {
     "releaseDate": "2026-08-14"
-  },
-  "qwen3-6-35b-a3b": {
-    "releaseDate": "2026-04-16"
   },
   "qwen3-6-27b": {
     "releaseDate": "2026-04-22"
@@ -2158,6 +2344,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "qwen3-5-397b-a17b": {
     "releaseDate": "2026-02-16"
+  },
+  "qwen3-6-35b-a3b": {
+    "releaseDate": "2026-04-16"
   },
   "qwen3-5-122b-a10b-non-reasoning": {
     "releaseDate": "2026-02-24"
@@ -2414,195 +2603,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "qwen3-0.6b-instruct-reasoning": {
     "releaseDate": "2025-04-28"
   },
-  "gemini-3-8-flash-medium": {
-    "releaseDate": "2026-09-02"
-  },
-  "gemini-3-7-flash-medium": {
-    "releaseDate": "2026-08-13"
-  },
-  "gemini-3-7-flash": {
-    "releaseDate": "2026-08-13"
-  },
-  "gemini-3-7-flash-low": {
-    "releaseDate": "2026-08-13"
-  },
-  "gemini-3-6-flash": {
-    "releaseDate": "2026-07-21"
-  },
-  "gemini-3-8-flash-low": {
-    "releaseDate": "2026-09-02"
-  },
-  "gemini-3-5-flash-medium": {
-    "releaseDate": "2026-05-19"
-  },
-  "gemini-3-5-flash": {
-    "releaseDate": "2026-05-19"
-  },
-  "gemini-3-1-pro-preview": {
-    "releaseDate": "2026-02-19"
-  },
-  "gemini-3-pro": {
-    "releaseDate": "2025-11-18"
-  },
-  "gemini-3-flash-reasoning": {
-    "releaseDate": "2025-12-17"
-  },
-  "gemini-3-5-flash-minimal": {
-    "releaseDate": "2026-05-19"
-  },
-  "gemini-3-pro-low": {
-    "releaseDate": "2025-11-18"
-  },
-  "gemini-3-flash": {
-    "releaseDate": "2025-12-17"
-  },
-  "gemma-4-26b-a4b": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-2-5-pro": {
-    "releaseDate": "2025-06-05"
-  },
-  "gemini-3-1-flash-lite-preview": {
-    "releaseDate": "2026-03-03"
-  },
-  "gemini-2-5-flash-preview-09-2025-reasoning": {
-    "releaseDate": "2025-09-25"
-  },
-  "gemma-4-31b": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-2-5-pro-03-25": {
-    "releaseDate": "2025-03-25"
-  },
-  "gemini-2-5-pro-05-06": {
-    "releaseDate": "2025-05-06"
-  },
-  "gemma-4-12b": {
-    "releaseDate": "2026-06-03"
-  },
-  "gemma-4-31b-non-reasoning": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemma-4-26b-a4b-non-reasoning": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-2-5-flash-reasoning": {
-    "releaseDate": "2025-05-20"
-  },
-  "gemini-2-5-flash-preview-09-2025": {
-    "releaseDate": "2025-09-25"
-  },
-  "gemini-2-5-flash-reasoning-04-2025": {
-    "releaseDate": "2025-04-17"
-  },
-  "gemini-2-5-flash-lite-preview-09-2025-reasoning": {
-    "releaseDate": "2025-09-08"
-  },
-  "gemini-2-5-flash": {
-    "releaseDate": "2025-05-20"
-  },
-  "diffusiongemma-26b-a4b": {
-    "releaseDate": "2026-06-10"
-  },
-  "gemini-2-0-flash-thinking-exp-0121": {
-    "releaseDate": "2025-01-21"
-  },
-  "gemma-4-12b-non-reasoning": {
-    "releaseDate": "2026-06-03"
-  },
-  "gemini-2-5-flash-lite-preview-09-2025": {
-    "releaseDate": "2025-09-25"
-  },
-  "gemini-2-0-flash": {
-    "releaseDate": "2025-02-05"
-  },
-  "gemma-4-e4b": {
-    "releaseDate": "2026-04-03"
-  },
-  "gemini-2-0-pro-experimental-02-05": {
-    "releaseDate": "2025-02-05"
-  },
-  "gemini-2-5-flash-04-2025": {
-    "releaseDate": "2025-04-17"
-  },
-  "gemini-2-5-flash-lite-reasoning": {
-    "releaseDate": "2025-06-17"
-  },
-  "gemini-2-0-flash-experimental": {
-    "releaseDate": "2024-12-11"
-  },
-  "gemini-1-5-pro": {
-    "releaseDate": "2024-09-24"
-  },
-  "gemma-4-e2b": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemma-4-e4b-non-reasoning": {
-    "releaseDate": "2026-04-03"
-  },
-  "gemini-2-0-flash-lite-001": {
-    "releaseDate": "2025-02-25"
-  },
-  "gemini-2-0-flash-lite-preview": {
-    "releaseDate": "2025-02-05"
-  },
-  "gemini-1-5-flash": {
-    "releaseDate": "2024-09-24"
-  },
-  "gemini-2-5-flash-lite": {
-    "releaseDate": "2025-06-17"
-  },
-  "gemini-2-0-flash-thinking-exp-1219": {
-    "releaseDate": "2024-12-19"
-  },
-  "gemma-4-e2b-non-reasoning": {
-    "releaseDate": "2026-04-02"
-  },
-  "gemini-1-5-pro-may-2024": {
-    "releaseDate": "2024-05-15"
-  },
-  "gemini-1-5-flash-8b": {
-    "releaseDate": "2024-10-03"
-  },
-  "gemini-1-5-flash-may-2024": {
-    "releaseDate": "2024-05-14"
-  },
-  "gemini-1-0-ultra": {
-    "releaseDate": "2023-12-06"
-  },
-  "gemma-3n-e4b-preview-0520": {
-    "releaseDate": "2025-05-20"
-  },
-  "palm-2": {
-    "releaseDate": "2023-05-10"
-  },
-  "gemini-1-0-pro": {
-    "releaseDate": "2023-12-06"
-  },
-  "gemma-3-270m": {
-    "releaseDate": "2025-08-14"
-  },
-  "gemma-3-27b": {
-    "releaseDate": "2025-03-12"
-  },
-  "gemma-3-1b": {
-    "releaseDate": "2025-03-13"
-  },
-  "gemma-3-4b": {
-    "releaseDate": "2025-03-12"
-  },
-  "gemma-3n-e2b": {
-    "releaseDate": "2025-06-26"
-  },
-  "gemma-3n-e4b": {
-    "releaseDate": "2025-06-26"
-  },
-  "gemma-3-12b": {
-    "releaseDate": "2025-03-12"
-  },
-  "gemini-3-deep-think": {
-    "releaseDate": "2026-02-05"
-  },
   "deepseek-v4-flash-vision": {
     "releaseDate": "2026-08-21"
   },
@@ -2636,7 +2636,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "deepseek-v4-pro-0424-non-reasoning": {
     "releaseDate": "2026-04-24"
   },
-  "deepseek-v4-flash-non-reasoning": {
+  "deepseek-v4-flash-0420-non-reasoning": {
     "releaseDate": "2026-04-24"
   },
   "deepseek-v3-2-reasoning-0925": {

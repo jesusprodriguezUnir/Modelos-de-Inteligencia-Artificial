@@ -1,6 +1,6 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-09-09T08:16:01Z`
+- **Última actualización:** `2026-09-10T08:16:06Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.3
 - **Método de extracción:** `rsc-html`
@@ -101,7 +101,7 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1500.67 | 1500.67 | 0.354639175257732 | 0.895131086142322 | 0.541666666666667 | 0.527340129749768 | 0.939393939393939 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1703.34 | 1703.34 | 0.505154639175258 | 0.842696629213483 | 0.587962962962963 | 0.487025023169602 | 0.935353535353535 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1624.11 | 1624.11 | 0.443298969072165 | 0.880149812734082 | 0.570601851851852 | 0.494902687673772 | 0.941414141414141 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1676.24 | 1676.24 | 0.503092783505155 | 0.838951310861423 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1674.94 | 1674.94 | 0.503092783505155 | 0.838951310861423 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 | 1642.96 | 0.507216494845361 | 0.883895131086142 | 0.564814814814815 | 0.429101019462465 | 0.94949494949495 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1583.53 | 1583.53 | 0.45979381443299 | 0.850187265917603 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 | 1476.96 | 0.402061855670103 | 0.880149812734082 | 0.549768518518518 | 0.429101019462465 | 0.925252525252525 |
@@ -134,7 +134,7 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1450.6 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1589.18 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1475 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1515.06 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1514.59 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1534.13 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1496.56 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1330 |
@@ -200,7 +200,7 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1500.67 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1703.34 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1624.11 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1676.24 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1674.94 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1583.53 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 |
