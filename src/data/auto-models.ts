@@ -838,6 +838,36 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 53.8). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "deepseek-v4-1-flash",
+    "iiSlug": "deepseek-v4-1-flash",
+    "company": "DeepSeek",
+    "origin": "China",
+    "displayName": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.3,
+      "outputPer1M": 1.2,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-09-10",
+    "parameters": 552.0,
+    "benchmarks": {
+      "sciCode": 51.9,
+      "intelligenceIndex": 39.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 40.5). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-oss-120b",
     "iiSlug": "gpt-oss-120b",
     "company": "OpenAI",
@@ -1117,6 +1147,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 2400.0,
     "releaseDate": "2026-08-12"
   },
+  "deepseek-v4-1-flash": {
+    "pricing": {
+      "inputPer1M": 0.3,
+      "outputPer1M": 1.2,
+      "approx": true
+    },
+    "benchmarks": {
+      "sciCode": 51.9,
+      "intelligenceIndex": 39.5
+    },
+    "parameters": 552.0,
+    "releaseDate": "2026-09-10"
+  },
   "gpt-5-6-luna": {
     "pricing": {
       "inputPer1M": 0.2,
@@ -1301,6 +1344,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-06-30"
   },
+  "claude-sonnet-5-high": {
+    "releaseDate": "2026-06-30"
+  },
   "claude-opus-4-6-adaptive": {
     "releaseDate": "2026-02-05"
   },
@@ -1402,9 +1448,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "claude-instant": {
     "releaseDate": "2023-03-14"
-  },
-  "claude-sonnet-5-high": {
-    "releaseDate": "2026-06-30"
   },
   "claude-sonnet-5-xhigh": {
     "releaseDate": "2026-06-30"
@@ -2723,6 +2766,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "deepseek-llm-67b-chat": {
     "releaseDate": "2023-11-29"
   },
+  "agnes-3-0-flash": {
+    "releaseDate": "2026-09-11"
+  },
   "agnes-2-5-pro-beta": {
     "releaseDate": "2026-08-26"
   },
@@ -2914,6 +2960,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "ling-3-0-flash": {
     "releaseDate": "2026-08-04"
+  },
+  "ling-3-0-flash-vl": {
+    "releaseDate": "2026-09-10"
   },
   "ring-2-6-1t": {
     "releaseDate": "2026-05-08"
