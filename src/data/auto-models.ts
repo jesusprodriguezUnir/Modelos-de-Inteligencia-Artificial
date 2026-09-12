@@ -649,6 +649,36 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 83.5). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "k2-horizon-375b-a23b",
+    "iiSlug": "k2-horizon-375b-a23b",
+    "company": "MBZUAIInstituteofFoundationModels",
+    "origin": "EU",
+    "displayName": "K2 Horizon 375B A23B",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": null,
+      "outputPer1M": null,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-09-03",
+    "parameters": 375.0,
+    "benchmarks": {
+      "terminalBench": 71.9,
+      "sciCode": 42.9,
+      "intelligenceIndex": 30.7
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 75.7). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "minimax-m3",
     "iiSlug": "minimax-m3",
     "company": "MiniMax",
@@ -1203,6 +1233,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "parameters": 27.0,
     "releaseDate": "2026-08-14"
   },
+  "k2-horizon-375b-a23b": {
+    "benchmarks": {
+      "terminalBench": 71.9,
+      "sciCode": 42.9,
+      "intelligenceIndex": 30.7
+    },
+    "parameters": 375.0,
+    "releaseDate": "2026-09-03"
+  },
   "minimax-m3": {
     "pricing": {
       "inputPer1M": 0.15,
@@ -1344,6 +1383,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-06-30"
   },
+  "claude-sonnet-5-xhigh": {
+    "releaseDate": "2026-06-30"
+  },
   "claude-sonnet-5-high": {
     "releaseDate": "2026-06-30"
   },
@@ -1449,13 +1491,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "claude-instant": {
     "releaseDate": "2023-03-14"
   },
-  "claude-sonnet-5-xhigh": {
-    "releaseDate": "2026-06-30"
-  },
   "gpt-6-astra-low": {
-    "releaseDate": "2026-09-03"
-  },
-  "gpt-6-astra-non-reasoning": {
     "releaseDate": "2026-09-03"
   },
   "gpt-5-6-sol-xhigh": {
@@ -2082,11 +2118,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "grok-1": {
     "releaseDate": "2024-03-17"
   },
-  "kimi-k3-low": {
-    "releaseDate": "2026-07-16"
-  },
   "kimi-k2-6": {
     "releaseDate": "2026-04-20"
+  },
+  "kimi-k3-low": {
+    "releaseDate": "2026-07-16"
   },
   "kimi-k2-7-code": {
     "releaseDate": "2026-06-12"
@@ -2775,8 +2811,14 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "agnes-2-5-pro-alpha": {
     "releaseDate": "2026-07-24"
   },
-  "k2-horizon-375b-a23b": {
-    "releaseDate": "2026-09-03"
+  "motif-3": {
+    "releaseDate": "2026-08-12"
+  },
+  "motif-0714": {
+    "releaseDate": "2026-07-14"
+  },
+  "motif-2-12-7b": {
+    "releaseDate": "2025-12-04"
   },
   "k2-think-v2": {
     "releaseDate": "2025-12-15"
@@ -2789,15 +2831,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "k2-v2-low": {
     "releaseDate": "2025-12-05"
-  },
-  "motif-3": {
-    "releaseDate": "2026-08-12"
-  },
-  "motif-0714": {
-    "releaseDate": "2026-07-14"
-  },
-  "motif-2-12-7b": {
-    "releaseDate": "2025-12-04"
   },
   "apodex-1-1": {
     "releaseDate": "2026-08-30"
@@ -3618,6 +3651,12 @@ export const autoSpecs: Record<string, AutoSpec> = {
 };
 
 export const autoCompanies: Record<string, CompanyMeta> = {
+  "MBZUAIInstituteofFoundationModels": {
+    "name": "MBZUAI Institute of Foundation Models",
+    "origin": "EU",
+    "accent": "#64748b",
+    "blurb": "MBZUAI Institute of Foundation Models — datos del Artificial Analysis Intelligence Index."
+  },
   "NVIDIA": {
     "name": "NVIDIA",
     "origin": "US",
