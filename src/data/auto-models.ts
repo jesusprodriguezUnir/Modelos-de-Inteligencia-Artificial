@@ -674,7 +674,7 @@ export const autoModels: Model[] = [
     "benchmarks": {
       "terminalBench": 71.9,
       "sciCode": 42.9,
-      "intelligenceIndex": 30.7
+      "intelligenceIndex": 30.8
     },
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 75.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
@@ -1237,7 +1237,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "benchmarks": {
       "terminalBench": 71.9,
       "sciCode": 42.9,
-      "intelligenceIndex": 30.7
+      "intelligenceIndex": 30.8
     },
     "parameters": 375.0,
     "releaseDate": "2026-09-03"

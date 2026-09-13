@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/fetch_intelligence_index.py (skill update-intelligence-index).
-// No editar a mano. Última actualización: 2026-09-12T08:13:47Z
+// No editar a mano. Última actualización: 2026-09-13T08:14:14Z
 // Fuente: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index (método: rsc-html, versión: v4.3)
 // Modelos: 646 metadata / 646 con datos.
 // Snapshot completo en ../../data/intelligence-index.json; raw en ../../data/raw/.
@@ -7,7 +7,7 @@
 import type { MasterRow, IntelligenceIndexMeta } from './intelligence-index-types';
 
 export const intelligenceIndexMeta: IntelligenceIndexMeta = {
-  "fetched_at": "2026-09-12T08:13:47Z",
+  "fetched_at": "2026-09-13T08:14:14Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.3",
   "method": "rsc-html",
@@ -493,7 +493,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 44.855717385614,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1667.27,
+    "gdpval_v2": 1661.42,
     "gdpval_elo": null,
     "omniscience": 14.3,
     "scicode": 0.590277777777778,
@@ -509,7 +509,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "aime": null,
     "mmlu_pro": null,
     "mmmu_pro": null,
-    "briefcase": 1512.51,
+    "briefcase": 1511.37,
     "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 753,
@@ -575,7 +575,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 43.7841729518782,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1569.47,
+    "gdpval_v2": 1569.28,
     "gdpval_elo": null,
     "omniscience": 19.7,
     "scicode": 0.594907407407407,
@@ -591,7 +591,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "aime": null,
     "mmlu_pro": null,
     "mmmu_pro": 0.805202312138728,
-    "briefcase": 1492.58,
+    "briefcase": 1492.47,
     "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 2800,
@@ -657,7 +657,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "intelligence_index_v4_1": 41.907366113455,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1655.63,
+    "gdpval_v2": 1655.48,
     "gdpval_elo": null,
     "omniscience": 7.46666666666667,
     "scicode": 0.516203703703704,
@@ -673,7 +673,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "aime": null,
     "mmlu_pro": null,
     "mmmu_pro": null,
-    "briefcase": 1449.23,
+    "briefcase": 1448.95,
     "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 320,
@@ -940,11 +940,11 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "name": "K2 Horizon 375B A23B",
     "short_name": null,
     "creator": "MBZUAI Institute of Foundation Models",
-    "intelligence_index": 30.7,
-    "intelligence_index_v4_1": 30.7,
+    "intelligence_index": 30.7949302696723,
+    "intelligence_index_v4_1": 30.7949302696723,
     "coding_index": null,
     "agentic_index": null,
-    "gdpval_v2": 1404.28,
+    "gdpval_v2": 1400,
     "gdpval_elo": null,
     "omniscience": -2.96666666666667,
     "scicode": 0.429398148148148,
@@ -960,7 +960,7 @@ export const intelligenceIndexMaster: MasterRow[] = [
     "aime": null,
     "mmlu_pro": null,
     "mmmu_pro": null,
-    "briefcase": 1299.25,
+    "briefcase": 1298.34,
     "is_open_weights": true,
     "context_window_tokens": null,
     "parameters": 375,

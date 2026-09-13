@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-12T08:13:47Z",
+  "fetched_at": "2026-09-13T08:14:14Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.3",
   "method": "rsc-html",
@@ -182,8 +182,8 @@
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
         "creator": "MBZUAI Institute of Foundation Models",
-        "intelligence_index": 30.7,
-        "intelligence_index_v4_1": 30.7
+        "intelligence_index": 30.7949302696723,
+        "intelligence_index_v4_1": 30.7949302696723
       },
       {
         "slug": "minimax-m3",
@@ -413,8 +413,8 @@
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "gdpval": 1667.27,
-        "gdpval_v2": 1667.27,
+        "gdpval": 1661.42,
+        "gdpval_v2": 1661.42,
         "tau_banking": 0.503092783505155,
         "terminalbench_v2_1": 0.838951310861423,
         "scicode": 0.590277777777778,
@@ -443,8 +443,8 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval": 1569.47,
-        "gdpval_v2": 1569.47,
+        "gdpval": 1569.28,
+        "gdpval_v2": 1569.28,
         "tau_banking": 0.45979381443299,
         "terminalbench_v2_1": 0.850187265917603,
         "scicode": 0.594907407407407,
@@ -476,8 +476,8 @@
         "slug": "glm-5-3-flash",
         "name": "GLM-5.3-Flash",
         "creator": "Z AI",
-        "gdpval": 1655.63,
-        "gdpval_v2": 1655.63,
+        "gdpval": 1655.48,
+        "gdpval_v2": 1655.48,
         "tau_banking": 0.472164948453608,
         "terminalbench_v2_1": 0.842696629213483,
         "scicode": 0.516203703703704,
@@ -582,8 +582,8 @@
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
         "creator": "MBZUAI Institute of Foundation Models",
-        "gdpval": 1404.28,
-        "gdpval_v2": 1404.28,
+        "gdpval": 1400,
+        "gdpval_v2": 1400,
         "tau_banking": 0.342268041237113,
         "terminalbench_v2_1": 0.719101123595506,
         "scicode": 0.429398148148148,
@@ -782,7 +782,7 @@
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "briefcase": 1512.51
+        "briefcase": 1511.37
       },
       {
         "slug": "grok-4-6",
@@ -794,7 +794,7 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "briefcase": 1492.58
+        "briefcase": 1492.47
       },
       {
         "slug": "gpt-5-6-terra",
@@ -806,7 +806,7 @@
         "slug": "glm-5-3-flash",
         "name": "GLM-5.3-Flash",
         "creator": "Z AI",
-        "briefcase": 1449.23
+        "briefcase": 1448.95
       },
       {
         "slug": "gemini-3-8-flash",
@@ -848,7 +848,7 @@
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
         "creator": "MBZUAI Institute of Foundation Models",
-        "briefcase": 1299.25
+        "briefcase": 1298.34
       },
       {
         "slug": "minimax-m3",
@@ -1146,7 +1146,7 @@
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "gdpval_v2": 1667.27
+        "gdpval_v2": 1661.42
       },
       {
         "slug": "grok-4-6",
@@ -1158,7 +1158,7 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval_v2": 1569.47
+        "gdpval_v2": 1569.28
       },
       {
         "slug": "gpt-5-6-terra",
@@ -1170,7 +1170,7 @@
         "slug": "glm-5-3-flash",
         "name": "GLM-5.3-Flash",
         "creator": "Z AI",
-        "gdpval_v2": 1655.63
+        "gdpval_v2": 1655.48
       },
       {
         "slug": "gemini-3-8-flash",
@@ -1212,7 +1212,7 @@
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
         "creator": "MBZUAI Institute of Foundation Models",
-        "gdpval_v2": 1404.28
+        "gdpval_v2": 1400
       },
       {
         "slug": "minimax-m3",
@@ -7332,7 +7332,7 @@
         "intelligence_index_v4_1": 44.855717385614,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1667.27,
+        "gdpval_v2": 1661.42,
         "gdpval_elo": null,
         "omniscience": 14.3,
         "scicode": 0.590277777777778,
@@ -7348,7 +7348,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1512.51,
+        "briefcase": 1511.37,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 753,
@@ -7414,7 +7414,7 @@
         "intelligence_index_v4_1": 43.7841729518782,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1569.47,
+        "gdpval_v2": 1569.28,
         "gdpval_elo": null,
         "omniscience": 19.7,
         "scicode": 0.594907407407407,
@@ -7430,7 +7430,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.805202312138728,
-        "briefcase": 1492.58,
+        "briefcase": 1492.47,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 2800,
@@ -7496,7 +7496,7 @@
         "intelligence_index_v4_1": 41.907366113455,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1655.63,
+        "gdpval_v2": 1655.48,
         "gdpval_elo": null,
         "omniscience": 7.46666666666667,
         "scicode": 0.516203703703704,
@@ -7512,7 +7512,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1449.23,
+        "briefcase": 1448.95,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 320,
@@ -7779,11 +7779,11 @@
         "name": "K2 Horizon 375B A23B",
         "short_name": null,
         "creator": "MBZUAI Institute of Foundation Models",
-        "intelligence_index": 30.7,
-        "intelligence_index_v4_1": 30.7,
+        "intelligence_index": 30.7949302696723,
+        "intelligence_index_v4_1": 30.7949302696723,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1404.28,
+        "gdpval_v2": 1400,
         "gdpval_elo": null,
         "omniscience": -2.96666666666667,
         "scicode": 0.429398148148148,
@@ -7799,7 +7799,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1299.25,
+        "briefcase": 1298.34,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 375,
