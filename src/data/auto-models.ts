@@ -1854,20 +1854,20 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gpt-35-turbo": {
     "releaseDate": "2022-11-30"
   },
-  "gpt-5-5-pro": {
-    "releaseDate": "2026-04-23"
+  "gpt-4o-mini-realtime-dec-2024": {
+    "releaseDate": "2024-12-17"
   },
   "gpt-5-4-pro": {
     "releaseDate": "2026-03-05"
   },
-  "gpt-4o-mini-realtime-dec-2024": {
-    "releaseDate": "2024-12-17"
+  "gpt-3-5-turbo-0613": {
+    "releaseDate": "2023-06-13"
   },
   "gpt-4o-realtime-dec-2024": {
     "releaseDate": "2024-12-17"
   },
-  "gpt-3-5-turbo-0613": {
-    "releaseDate": "2023-06-13"
+  "gpt-5-5-pro": {
+    "releaseDate": "2026-04-23"
   },
   "muse-spark-1-3-xhigh": {
     "releaseDate": "2026-09-02"
@@ -1941,11 +1941,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "llama-65b": {
     "releaseDate": "2023-02-24"
   },
-  "llama-3-instruct-8b": {
-    "releaseDate": "2024-04-18"
-  },
   "llama-3-2-instruct-1b": {
     "releaseDate": "2024-09-25"
+  },
+  "llama-3-instruct-8b": {
+    "releaseDate": "2024-04-18"
   },
   "glm-5-2": {
     "releaseDate": "2026-06-16"
@@ -2346,17 +2346,17 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gemma-3-27b": {
     "releaseDate": "2025-03-12"
   },
-  "gemma-3-1b": {
-    "releaseDate": "2025-03-13"
-  },
   "gemma-3-4b": {
     "releaseDate": "2025-03-12"
+  },
+  "gemma-3n-e4b": {
+    "releaseDate": "2025-06-26"
   },
   "gemma-3n-e2b": {
     "releaseDate": "2025-06-26"
   },
-  "gemma-3n-e4b": {
-    "releaseDate": "2025-06-26"
+  "gemma-3-1b": {
+    "releaseDate": "2025-03-13"
   },
   "gemma-3-12b": {
     "releaseDate": "2025-03-12"
@@ -2820,6 +2820,15 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "motif-2-12-7b": {
     "releaseDate": "2025-12-04"
   },
+  "k2-mova-36b-mid5": {
+    "releaseDate": "2026-09-03"
+  },
+  "k2-7b-ph2": {
+    "releaseDate": "2026-09-03"
+  },
+  "k2-4b-ph1": {
+    "releaseDate": "2026-09-03"
+  },
   "k2-think-v2": {
     "releaseDate": "2025-12-15"
   },
@@ -2831,6 +2840,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "k2-v2-low": {
     "releaseDate": "2025-12-05"
+  },
+  "k2-1b-final": {
+    "releaseDate": "2026-09-03"
   },
   "apodex-1-1": {
     "releaseDate": "2026-08-30"
@@ -3510,11 +3522,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "lfm2-8b-a1b": {
     "releaseDate": "2025-10-07"
   },
-  "lfm2-5-vl-1-6b": {
-    "releaseDate": "2026-01-05"
-  },
   "lfm2-1-2b": {
     "releaseDate": "2025-07-10"
+  },
+  "lfm2-5-vl-1-6b": {
+    "releaseDate": "2026-01-05"
   },
   "hermes-4-llama-3-1-70b-reasoning": {
     "releaseDate": "2025-08-27"

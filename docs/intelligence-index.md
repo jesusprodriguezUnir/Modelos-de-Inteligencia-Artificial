@@ -1,11 +1,11 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-09-13T08:14:14Z`
+- **Última actualización:** `2026-09-14T08:18:14Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.3
 - **Método de extracción:** `rsc-html`
-- **Modelos (metadata):** 646
-- **Entradas con datos:** 646
+- **Modelos (metadata):** 650
+- **Entradas con datos:** 650
 - **Secciones capturadas:** intelligence_index, sub_evaluations, aa_briefcase, aa_omniscience, gdpval_aa_v2, openness_index, price_cost, metadata
 - **Secciones NO capturadas:** coding_agent_index, cost_per_task, time_per_task, output_tokens, speed_latency
 
@@ -103,11 +103,11 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1500.67 | 1500.67 | 0.354639175257732 | 0.895131086142322 | 0.541666666666667 | 0.527340129749768 | 0.939393939393939 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1703.34 | 1703.34 | 0.505154639175258 | 0.842696629213483 | 0.587962962962963 | 0.487025023169602 | 0.935353535353535 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1624.11 | 1624.11 | 0.443298969072165 | 0.880149812734082 | 0.570601851851852 | 0.494902687673772 | 0.941414141414141 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1661.42 | 1661.42 | 0.503092783505155 | 0.838951310861423 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1657.71 | 1657.71 | 0.503092783505155 | 0.838951310861423 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 | 1642.96 | 0.507216494845361 | 0.883895131086142 | 0.564814814814815 | 0.429101019462465 | 0.94949494949495 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1569.28 | 1569.28 | 0.45979381443299 | 0.850187265917603 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1564.65 | 1564.65 | 0.45979381443299 | 0.850187265917603 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 | 1476.96 | 0.402061855670103 | 0.880149812734082 | 0.549768518518518 | 0.429101019462465 | 0.925252525252525 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1655.48 | 1655.48 | 0.472164948453608 | 0.842696629213483 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1654.95 | 1654.95 | 0.472164948453608 | 0.842696629213483 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1463.81 | 1463.81 | 0.449484536082474 | 0.876404494382023 | 0.565972222222222 | 0.478220574606117 | 0.952525252525253 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1627.82 | 1627.82 | 0.490721649484536 | 0.820224719101124 | 0.540509259259259 | 0.424467099165894 | 0.935353535353535 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 1632.06 | 1632.06 | — | — | 0.518518518518518 | 0.392493049119555 | — |
@@ -138,9 +138,9 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1450.6 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1589.18 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1475 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1511.37 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1511.26 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1534.13 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1492.47 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1491.82 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1330 |
 | glm-5-3-flash | GLM-5.3-Flash | Z AI | 1448.95 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1201.59 |
@@ -208,11 +208,11 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1500.67 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1703.34 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1624.11 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1661.42 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1657.71 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1569.28 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1564.65 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1655.48 |
+| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1654.95 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1463.81 |
 | qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1627.82 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 1632.06 |
