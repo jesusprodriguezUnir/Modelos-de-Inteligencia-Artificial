@@ -759,7 +759,7 @@ export const autoModels: Model[] = [
     "context": null,
     "pricing": {
       "inputPer1M": 0.6,
-      "outputPer1M": 2.6,
+      "outputPer1M": 2.4,
       "approx": true
     },
     "modalities": [
@@ -1277,7 +1277,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "nvidia-nemotron-3-ultra-550b-a55b": {
     "pricing": {
       "inputPer1M": 0.6,
-      "outputPer1M": 2.6,
+      "outputPer1M": 2.4,
       "approx": true
     },
     "benchmarks": {
@@ -2118,11 +2118,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "grok-1": {
     "releaseDate": "2024-03-17"
   },
-  "kimi-k2-6": {
-    "releaseDate": "2026-04-20"
-  },
   "kimi-k3-low": {
     "releaseDate": "2026-07-16"
+  },
+  "kimi-k2-6": {
+    "releaseDate": "2026-04-20"
   },
   "kimi-k2-7-code": {
     "releaseDate": "2026-06-12"
@@ -3003,11 +3003,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "hy3-non-reasoning": {
     "releaseDate": "2026-04-23"
   },
-  "ling-3-0-flash": {
-    "releaseDate": "2026-08-04"
-  },
   "ling-3-0-flash-vl": {
     "releaseDate": "2026-09-10"
+  },
+  "ling-3-0-flash": {
+    "releaseDate": "2026-08-04"
   },
   "ring-2-6-1t": {
     "releaseDate": "2026-05-08"
