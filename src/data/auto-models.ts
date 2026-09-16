@@ -23,240 +23,6 @@ export interface AutoSpec {
 
 export const autoModels: Model[] = [
   {
-    "id": "claude-fable-5-1",
-    "iiSlug": "claude-fable-5-1",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-01",
-    "benchmarks": {
-      "terminalBench": 91.4,
-      "sciCode": 63.1,
-      "intelligenceIndex": 53.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 106.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "claude-fable-5-1-xhigh",
-    "iiSlug": "claude-fable-5-1-xhigh",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-01",
-    "benchmarks": {
-      "terminalBench": 91.0,
-      "sciCode": 60.9,
-      "intelligenceIndex": 53.2
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 105.6). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "claude-fable-5-1-high",
-    "iiSlug": "claude-fable-5-1-high",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-01",
-    "benchmarks": {
-      "terminalBench": 89.9,
-      "sciCode": 58.7,
-      "intelligenceIndex": 51.2
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 103.0). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-6-astra",
-    "iiSlug": "gpt-6-astra",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-6 Astra (max)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-03",
-    "benchmarks": {
-      "terminalBench": 88.4,
-      "sciCode": 56.5,
-      "intelligenceIndex": 52.8
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 102.0). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-6-astra-xhigh",
-    "iiSlug": "gpt-6-astra-xhigh",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-6 Astra (xhigh)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-03",
-    "benchmarks": {
-      "terminalBench": 89.1,
-      "sciCode": 55.7,
-      "intelligenceIndex": 52.5
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 102.0). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-6-astra-high",
-    "iiSlug": "gpt-6-astra-high",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-6 Astra (high)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-03",
-    "benchmarks": {
-      "terminalBench": 89.9,
-      "sciCode": 55.4,
-      "intelligenceIndex": 51.0
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 101.6). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "claude-opus-5",
-    "iiSlug": "claude-opus-5",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 2.5,
-      "outputPer1M": 12.5,
-      "approx": true
-    },
-    "modalities": [
-      "image",
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-24",
-    "benchmarks": {
-      "terminalBench": 89.1,
-      "sciCode": 56.4,
-      "intelligenceIndex": 50.7,
-      "designArenaElo": 1361.1
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 101.4). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-6-astra-medium",
-    "iiSlug": "gpt-6-astra-medium",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-6 Astra (medium)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 10.0,
-      "outputPer1M": 50.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-03",
-    "benchmarks": {
-      "terminalBench": 89.5,
-      "sciCode": 54.2,
-      "intelligenceIndex": 49.7
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 100.2). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "claude-fable-5",
     "iiSlug": "claude-fable-5",
     "company": "Anthropic",
@@ -280,12 +46,12 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-06-09",
     "benchmarks": {
-      "terminalBench": 84.6,
+      "terminalBench": 62.9,
       "sciCode": 61.0,
       "intelligenceIndex": 49.7,
       "designArenaElo": 1346.4
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 100.0). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 87.0). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "gpt-5-6-sol",
@@ -310,132 +76,11 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-07-09",
     "benchmarks": {
-      "terminalBench": 88.0,
+      "terminalBench": 65.9,
       "sciCode": 57.1,
       "intelligenceIndex": 47.1
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 99.2). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "muse-spark-1-3",
-    "iiSlug": "muse-spark-1-3",
-    "company": "Meta",
-    "origin": "Open",
-    "displayName": "Muse Spark 1.3 (max)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 4.25,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-02",
-    "benchmarks": {
-      "terminalBench": 84.3,
-      "sciCode": 58.8,
-      "intelligenceIndex": 48.2
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 98.2). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "grok-4-6",
-    "iiSlug": "grok-4-6",
-    "company": "xAI",
-    "origin": "US",
-    "displayName": "Grok 4.6 (high)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-08-12",
-    "benchmarks": {
-      "terminalBench": 88.4,
-      "sciCode": 56.5,
-      "intelligenceIndex": 44.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 97.8). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "kimi-k3",
-    "iiSlug": "kimi-k3",
-    "company": "Moonshot",
-    "origin": "China",
-    "displayName": "Kimi K3 (max)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": 1048576,
-    "pricing": {
-      "inputPer1M": 3.0,
-      "outputPer1M": 15.0,
-      "approx": true
-    },
-    "modalities": [
-      "image",
-      "text",
-      "video"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-07-16",
-    "parameters": 2800.0,
-    "benchmarks": {
-      "terminalBench": 85.0,
-      "sciCode": 59.5,
-      "intelligenceIndex": 43.8,
-      "designArenaElo": 1394.1
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 96.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "glm-5-3",
-    "iiSlug": "glm-5-3",
-    "company": "Zhipu",
-    "origin": "China",
-    "displayName": "GLM-5.3 (max)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 1.4,
-      "outputPer1M": 4.4,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-18",
-    "parameters": 753.0,
-    "benchmarks": {
-      "terminalBench": 83.9,
-      "sciCode": 59.0,
-      "intelligenceIndex": 44.9
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 96.4). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 85.9). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "gpt-5-6-terra",
@@ -460,223 +105,11 @@ export const autoModels: Model[] = [
     "openWeight": false,
     "releaseDate": "2026-07-09",
     "benchmarks": {
-      "terminalBench": 88.0,
+      "terminalBench": 57.6,
       "sciCode": 55.0,
       "intelligenceIndex": 42.3
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 95.9). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gemini-3-8-flash",
-    "iiSlug": "gemini-3-8-flash",
-    "company": "Google",
-    "origin": "US",
-    "displayName": "Gemini 3.8 Flash (high)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.75,
-      "outputPer1M": 3.75,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-09-02",
-    "benchmarks": {
-      "terminalBench": 87.6,
-      "sciCode": 56.6,
-      "intelligenceIndex": 41.2
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 95.8). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "glm-5-3-flash",
-    "iiSlug": "glm-5-3-flash",
-    "company": "Zhipu",
-    "origin": "China",
-    "displayName": "GLM-5.3-Flash",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 0.5,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-26",
-    "parameters": 320.0,
-    "benchmarks": {
-      "terminalBench": 84.3,
-      "sciCode": 51.6,
-      "intelligenceIndex": 41.9
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 92.2). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "qwen3-8-2-4t-a95b",
-    "iiSlug": "qwen3-8-2-4t-a95b",
-    "company": "Alibaba",
-    "origin": "China",
-    "displayName": "Qwen3.8 2.4T A95B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-12",
-    "parameters": 2400.0,
-    "benchmarks": {
-      "terminalBench": 82.0,
-      "sciCode": 54.1,
-      "intelligenceIndex": 40.0
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 90.9). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "gpt-5-6-luna",
-    "iiSlug": "gpt-5-6-luna",
-    "company": "OpenAI",
-    "origin": "US",
-    "displayName": "GPT-5.6 Luna (max)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.2,
-      "outputPer1M": 1.2,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-07-09",
-    "benchmarks": {
-      "terminalBench": 80.9,
-      "sciCode": 53.6,
-      "intelligenceIndex": 37.5
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 88.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "deepseek-v4-pro",
-    "iiSlug": "deepseek-v4-pro",
-    "company": "DeepSeek",
-    "origin": "China",
-    "displayName": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": 1048576,
-    "pricing": {
-      "inputPer1M": 0.66,
-      "outputPer1M": 1.98,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-13",
-    "parameters": 1600.0,
-    "benchmarks": {
-      "terminalBench": 78.7,
-      "sciCode": 51.0,
-      "intelligenceIndex": 36.3,
-      "designArenaElo": 1239.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 85.7). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "qwen3-8-27b",
-    "iiSlug": "qwen3-8-27b",
-    "company": "Alibaba",
-    "origin": "China",
-    "displayName": "Qwen3.8 27B (xhigh)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning",
-      "budget"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 0.5,
-      "outputPer1M": 3.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-14",
-    "parameters": 27.0,
-    "benchmarks": {
-      "terminalBench": 79.8,
-      "sciCode": 46.6,
-      "intelligenceIndex": 33.9
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 83.5). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
-    "id": "k2-horizon-375b-a23b",
-    "iiSlug": "k2-horizon-375b-a23b",
-    "company": "MBZUAIInstituteofFoundationModels",
-    "origin": "EU",
-    "displayName": "K2 Horizon 375B A23B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": null,
-      "outputPer1M": null,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-09-03",
-    "parameters": 375.0,
-    "benchmarks": {
-      "terminalBench": 71.9,
-      "sciCode": 42.9,
-      "intelligenceIndex": 30.8
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 75.7). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 77.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "minimax-m3",
@@ -705,45 +138,68 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-06-01",
     "parameters": 428.0,
     "benchmarks": {
-      "terminalBench": 65.2,
+      "terminalBench": 42.4,
       "sciCode": 47.1,
       "intelligenceIndex": 29.6,
       "designArenaElo": 1247.6
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 72.8). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 59.1). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "inkling",
-    "iiSlug": "inkling",
-    "company": "ThinkingMachines",
+    "id": "claude-fable-5-1",
+    "iiSlug": "claude-fable-5-1",
+    "company": "Anthropic",
     "origin": "US",
-    "displayName": "Inkling (xhigh)",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
     "kind": "model",
     "category": [
       "coding",
       "reasoning"
     ],
-    "context": 524288,
+    "context": null,
     "pricing": {
-      "inputPer1M": 0.5,
-      "outputPer1M": 2.025,
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
       "approx": true
     },
     "modalities": [
-      "audio",
-      "image",
       "text"
     ],
-    "openWeight": true,
-    "releaseDate": "2026-07-15",
-    "parameters": 975.0,
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
     "benchmarks": {
-      "terminalBench": 55.1,
-      "sciCode": 47.0,
-      "intelligenceIndex": 25.5,
-      "designArenaElo": 1208.0
+      "sciCode": 63.1,
+      "intelligenceIndex": 53.4
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 64.6). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 51.9). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-fable-5-1-xhigh",
+    "iiSlug": "claude-fable-5-1-xhigh",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-01",
+    "benchmarks": {
+      "sciCode": 60.9,
+      "intelligenceIndex": 53.2
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 50.9). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "nvidia-nemotron-3-ultra-550b-a55b",
@@ -769,72 +225,298 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-06-04",
     "parameters": 550.0,
     "benchmarks": {
-      "terminalBench": 53.9,
+      "terminalBench": 36.4,
       "sciCode": 40.3,
       "intelligenceIndex": 23.4
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 60.2). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 49.6). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "gemini-3-5-flash-lite",
-    "iiSlug": "gemini-3-5-flash-lite",
-    "company": "Google",
+    "id": "claude-fable-5-1-high",
+    "iiSlug": "claude-fable-5-1-high",
+    "company": "Anthropic",
     "origin": "US",
-    "displayName": "Gemini 3.5 Flash-Lite",
+    "displayName": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
     "kind": "model",
     "category": [
       "coding",
-      "reasoning",
-      "budget"
+      "reasoning"
     ],
     "context": null,
     "pricing": {
-      "inputPer1M": 0.3,
-      "outputPer1M": 2.5,
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
       "approx": true
     },
     "modalities": [
       "text"
     ],
     "openWeight": false,
-    "releaseDate": "2026-07-21",
+    "releaseDate": "2026-09-01",
     "benchmarks": {
-      "terminalBench": 53.6,
-      "sciCode": 41.3,
-      "intelligenceIndex": 22.7
+      "sciCode": 58.7,
+      "intelligenceIndex": 51.2
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 60.0). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 49.1). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "muse-glimmer",
-    "iiSlug": "muse-glimmer",
-    "company": "Meta",
-    "origin": "Open",
-    "displayName": "Muse Glimmer (high)",
+    "id": "gpt-6-astra",
+    "iiSlug": "gpt-6-astra",
+    "company": "OpenAI",
+    "origin": "US",
+    "displayName": "GPT-6 Astra (max)",
     "kind": "model",
     "category": [
       "coding",
-      "reasoning",
-      "budget"
+      "reasoning"
     ],
     "context": null,
     "pricing": {
-      "inputPer1M": 0.35,
-      "outputPer1M": 1.5,
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-03",
+    "benchmarks": {
+      "sciCode": 56.5,
+      "intelligenceIndex": 52.8
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 49.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "gpt-6-astra-xhigh",
+    "iiSlug": "gpt-6-astra-xhigh",
+    "company": "OpenAI",
+    "origin": "US",
+    "displayName": "GPT-6 Astra (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-03",
+    "benchmarks": {
+      "sciCode": 55.7,
+      "intelligenceIndex": 52.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 48.5). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "claude-opus-5",
+    "iiSlug": "claude-opus-5",
+    "company": "Anthropic",
+    "origin": "US",
+    "displayName": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": 1000000,
+    "pricing": {
+      "inputPer1M": 2.5,
+      "outputPer1M": 12.5,
+      "approx": true
+    },
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-24",
+    "benchmarks": {
+      "sciCode": 56.4,
+      "intelligenceIndex": 50.7,
+      "designArenaElo": 1361.1
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 47.9). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "gpt-6-astra-high",
+    "iiSlug": "gpt-6-astra-high",
+    "company": "OpenAI",
+    "origin": "US",
+    "displayName": "GPT-6 Astra (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-03",
+    "benchmarks": {
+      "sciCode": 55.4,
+      "intelligenceIndex": 51.0
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 47.7). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "muse-spark-1-3",
+    "iiSlug": "muse-spark-1-3",
+    "company": "Meta",
+    "origin": "Open",
+    "displayName": "Muse Spark 1.3 (max)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 1.25,
+      "outputPer1M": 4.25,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-02",
+    "benchmarks": {
+      "sciCode": 58.8,
+      "intelligenceIndex": 48.2
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 47.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "gpt-6-astra-medium",
+    "iiSlug": "gpt-6-astra-medium",
+    "company": "OpenAI",
+    "origin": "US",
+    "displayName": "GPT-6 Astra (medium)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 10.0,
+      "outputPer1M": 50.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-03",
+    "benchmarks": {
+      "sciCode": 54.2,
+      "intelligenceIndex": 49.7
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 46.5). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "glm-5-3",
+    "iiSlug": "glm-5-3",
+    "company": "Zhipu",
+    "origin": "China",
+    "displayName": "GLM-5.3 (max)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 1.4,
+      "outputPer1M": 4.4,
       "approx": true
     },
     "modalities": [
       "text"
     ],
     "openWeight": true,
-    "releaseDate": "2026-08-10",
-    "parameters": 30.0,
+    "releaseDate": "2026-08-18",
+    "parameters": 753.0,
     "benchmarks": {
-      "terminalBench": 51.7,
-      "sciCode": 44.9,
-      "intelligenceIndex": 18.1
+      "sciCode": 59.0,
+      "intelligenceIndex": 44.9
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 58.0). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 46.0). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "kimi-k3",
+    "iiSlug": "kimi-k3",
+    "company": "Moonshot",
+    "origin": "China",
+    "displayName": "Kimi K3 (max)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": 1048576,
+    "pricing": {
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
+      "approx": true
+    },
+    "modalities": [
+      "image",
+      "text",
+      "video"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-07-16",
+    "parameters": 2800.0,
+    "benchmarks": {
+      "sciCode": 59.5,
+      "intelligenceIndex": 43.8,
+      "designArenaElo": 1394.1
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 45.7). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "grok-4-6",
+    "iiSlug": "grok-4-6",
+    "company": "xAI",
+    "origin": "US",
+    "displayName": "Grok 4.6 (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 6.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-08-12",
+    "benchmarks": {
+      "sciCode": 56.5,
+      "intelligenceIndex": 44.4
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 44.8). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "mistral-medium-3-5",
@@ -861,11 +543,98 @@ export const autoModels: Model[] = [
     "releaseDate": "2026-04-29",
     "parameters": 128.0,
     "benchmarks": {
-      "terminalBench": 50.6,
+      "terminalBench": 33.3,
       "sciCode": 40.2,
       "intelligenceIndex": 14.9
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 53.8). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 43.5). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "gemini-3-8-flash",
+    "iiSlug": "gemini-3-8-flash",
+    "company": "Google",
+    "origin": "US",
+    "displayName": "Gemini 3.8 Flash (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.75,
+      "outputPer1M": 3.75,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-02",
+    "benchmarks": {
+      "sciCode": 56.6,
+      "intelligenceIndex": 41.2
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 43.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "qwen3-8-2-4t-a95b",
+    "iiSlug": "qwen3-8-2-4t-a95b",
+    "company": "Alibaba",
+    "origin": "China",
+    "displayName": "Qwen3.8 2.4T A95B",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 6.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-08-12",
+    "parameters": 2400.0,
+    "benchmarks": {
+      "sciCode": 54.1,
+      "intelligenceIndex": 40.0
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 41.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "glm-5-3-flash",
+    "iiSlug": "glm-5-3-flash",
+    "company": "Zhipu",
+    "origin": "China",
+    "displayName": "GLM-5.3-Flash",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.5,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-08-26",
+    "parameters": 320.0,
+    "benchmarks": {
+      "sciCode": 51.6,
+      "intelligenceIndex": 41.9
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 41.6). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
     "id": "deepseek-v4-1-flash",
@@ -898,6 +667,95 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 40.5). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "gpt-5-6-luna",
+    "iiSlug": "gpt-5-6-luna",
+    "company": "OpenAI",
+    "origin": "US",
+    "displayName": "GPT-5.6 Luna (max)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.2,
+      "outputPer1M": 1.2,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-09",
+    "benchmarks": {
+      "sciCode": 53.6,
+      "intelligenceIndex": 37.5
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 40.2). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "iiSlug": "deepseek-v4-pro",
+    "company": "DeepSeek",
+    "origin": "China",
+    "displayName": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": 1048576,
+    "pricing": {
+      "inputPer1M": 0.66,
+      "outputPer1M": 1.98,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-08-13",
+    "parameters": 1600.0,
+    "benchmarks": {
+      "sciCode": 51.0,
+      "intelligenceIndex": 36.3,
+      "designArenaElo": 1239.4
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 38.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "qwen3-8-27b",
+    "iiSlug": "qwen3-8-27b",
+    "company": "Alibaba",
+    "origin": "China",
+    "displayName": "Qwen3.8 27B (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.5,
+      "outputPer1M": 3.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-08-14",
+    "parameters": 27.0,
+    "benchmarks": {
+      "sciCode": 46.6,
+      "intelligenceIndex": 33.9
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 35.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "gpt-oss-120b",
     "iiSlug": "gpt-oss-120b",
     "company": "OpenAI",
@@ -923,12 +781,132 @@ export const autoModels: Model[] = [
     "parameters": 117.0,
     "benchmarks": {
       "liveCodeBench": 0.9,
-      "terminalBench": 26.2,
+      "terminalBench": 23.5,
       "sciCode": 34.0,
       "intelligenceIndex": 12.3,
       "designArenaElo": 984.0
     },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 35.5). Precios aproximados; verifica en la web oficial del proveedor."
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 33.9). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "k2-horizon-375b-a23b",
+    "iiSlug": "k2-horizon-375b-a23b",
+    "company": "MBZUAIInstituteofFoundationModels",
+    "origin": "EU",
+    "displayName": "K2 Horizon 375B A23B",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": null,
+      "outputPer1M": null,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-09-03",
+    "parameters": 375.0,
+    "benchmarks": {
+      "sciCode": 42.9,
+      "intelligenceIndex": 30.8
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 32.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "inkling",
+    "iiSlug": "inkling",
+    "company": "ThinkingMachines",
+    "origin": "US",
+    "displayName": "Inkling (xhigh)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": 524288,
+    "pricing": {
+      "inputPer1M": 0.5,
+      "outputPer1M": 2.025,
+      "approx": true
+    },
+    "modalities": [
+      "audio",
+      "image",
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-07-15",
+    "parameters": 975.0,
+    "benchmarks": {
+      "sciCode": 47.0,
+      "intelligenceIndex": 25.5,
+      "designArenaElo": 1208.0
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 31.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "gemini-3-5-flash-lite",
+    "iiSlug": "gemini-3-5-flash-lite",
+    "company": "Google",
+    "origin": "US",
+    "displayName": "Gemini 3.5 Flash-Lite",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.3,
+      "outputPer1M": 2.5,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-07-21",
+    "benchmarks": {
+      "sciCode": 41.3,
+      "intelligenceIndex": 22.7
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 27.9). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
+    "id": "muse-glimmer",
+    "iiSlug": "muse-glimmer",
+    "company": "Meta",
+    "origin": "Open",
+    "displayName": "Muse Glimmer (high)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning",
+      "budget"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.5,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": true,
+    "releaseDate": "2026-08-10",
+    "parameters": 30.0,
+    "benchmarks": {
+      "sciCode": 44.9,
+      "intelligenceIndex": 18.1
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 27.0). Precios aproximados; verifica en la web oficial del proveedor."
   }
 ];
 
@@ -940,7 +918,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 91.4,
       "sciCode": 63.1,
       "intelligenceIndex": 53.4
     },
@@ -953,7 +930,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 91.0,
       "sciCode": 60.9,
       "intelligenceIndex": 53.2
     },
@@ -966,7 +942,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 88.4,
       "sciCode": 56.5,
       "intelligenceIndex": 52.8
     },
@@ -979,7 +954,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 89.1,
       "sciCode": 55.7,
       "intelligenceIndex": 52.5
     },
@@ -992,7 +966,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 89.9,
       "sciCode": 58.7,
       "intelligenceIndex": 51.2
     },
@@ -1005,7 +978,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 89.9,
       "sciCode": 55.4,
       "intelligenceIndex": 51.0
     },
@@ -1019,7 +991,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1000000,
     "benchmarks": {
-      "terminalBench": 89.1,
       "sciCode": 56.4,
       "intelligenceIndex": 50.7,
       "designArenaElo": 1361.1
@@ -1034,7 +1005,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1000000,
     "benchmarks": {
-      "terminalBench": 84.6,
+      "terminalBench": 62.9,
       "sciCode": 61.0,
       "intelligenceIndex": 49.7,
       "designArenaElo": 1346.4
@@ -1048,7 +1019,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 89.5,
       "sciCode": 54.2,
       "intelligenceIndex": 49.7
     },
@@ -1061,7 +1031,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 84.3,
       "sciCode": 58.8,
       "intelligenceIndex": 48.2
     },
@@ -1074,7 +1043,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 88.0,
+      "terminalBench": 65.9,
       "sciCode": 57.1,
       "intelligenceIndex": 47.1
     },
@@ -1087,7 +1056,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 83.9,
       "sciCode": 59.0,
       "intelligenceIndex": 44.9
     },
@@ -1101,7 +1069,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 88.4,
       "sciCode": 56.5,
       "intelligenceIndex": 44.4
     },
@@ -1115,7 +1082,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1048576,
     "benchmarks": {
-      "terminalBench": 85.0,
       "sciCode": 59.5,
       "intelligenceIndex": 43.8,
       "designArenaElo": 1394.1
@@ -1130,7 +1096,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 88.0,
+      "terminalBench": 57.6,
       "sciCode": 55.0,
       "intelligenceIndex": 42.3
     },
@@ -1143,7 +1109,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 84.3,
       "sciCode": 51.6,
       "intelligenceIndex": 41.9
     },
@@ -1157,7 +1122,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 87.6,
       "sciCode": 56.6,
       "intelligenceIndex": 41.2
     },
@@ -1170,7 +1134,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 82.0,
       "sciCode": 54.1,
       "intelligenceIndex": 40.0
     },
@@ -1197,7 +1160,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 80.9,
       "sciCode": 53.6,
       "intelligenceIndex": 37.5
     },
@@ -1211,7 +1173,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 1048576,
     "benchmarks": {
-      "terminalBench": 78.7,
       "sciCode": 51.0,
       "intelligenceIndex": 36.3,
       "designArenaElo": 1239.4
@@ -1226,7 +1187,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 79.8,
       "sciCode": 46.6,
       "intelligenceIndex": 33.9
     },
@@ -1235,7 +1195,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "k2-horizon-375b-a23b": {
     "benchmarks": {
-      "terminalBench": 71.9,
       "sciCode": 42.9,
       "intelligenceIndex": 30.8
     },
@@ -1250,7 +1209,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 524288,
     "benchmarks": {
-      "terminalBench": 65.2,
+      "terminalBench": 42.4,
       "sciCode": 47.1,
       "intelligenceIndex": 29.6,
       "designArenaElo": 1247.6
@@ -1266,7 +1225,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 524288,
     "benchmarks": {
-      "terminalBench": 55.1,
       "sciCode": 47.0,
       "intelligenceIndex": 25.5,
       "designArenaElo": 1208.0
@@ -1281,7 +1239,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 53.9,
+      "terminalBench": 36.4,
       "sciCode": 40.3,
       "intelligenceIndex": 23.4
     },
@@ -1295,7 +1253,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 53.6,
       "sciCode": 41.3,
       "intelligenceIndex": 22.7
     },
@@ -1308,7 +1265,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "approx": true
     },
     "benchmarks": {
-      "terminalBench": 51.7,
       "sciCode": 44.9,
       "intelligenceIndex": 18.1
     },
@@ -1323,7 +1279,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "context": 262144,
     "benchmarks": {
-      "terminalBench": 50.6,
+      "terminalBench": 33.3,
       "sciCode": 40.2,
       "intelligenceIndex": 14.9
     },
@@ -1339,7 +1295,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "context": 131072,
     "benchmarks": {
       "liveCodeBench": 0.9,
-      "terminalBench": 26.2,
+      "terminalBench": 23.5,
       "sciCode": 34.0,
       "intelligenceIndex": 12.3,
       "designArenaElo": 984.0
@@ -1602,9 +1558,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gpt-5-5-instant-05-26": {
     "releaseDate": "2026-05-05"
   },
-  "gpt-5-6-terra-non-reasoning": {
-    "releaseDate": "2026-07-09"
-  },
   "o3-pro": {
     "pricing": {
       "inputPer1M": 10.0,
@@ -1619,6 +1572,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gpt-5-4-nano": {
     "releaseDate": "2026-03-17"
+  },
+  "gpt-5-6-terra-non-reasoning": {
+    "releaseDate": "2026-07-09"
   },
   "gpt-5-low": {
     "releaseDate": "2025-08-07"
@@ -1665,9 +1621,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "gpt-5-2-non-reasoning": {
     "releaseDate": "2025-12-11"
   },
-  "gpt-5-6-luna-non-reasoning": {
-    "releaseDate": "2026-07-09"
-  },
   "o4-mini": {
     "pricing": {
       "inputPer1M": 0.55,
@@ -1679,6 +1632,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "designArenaElo": 993.0
     },
     "releaseDate": "2025-04-16"
+  },
+  "gpt-5-6-luna-non-reasoning": {
+    "releaseDate": "2026-07-09"
   },
   "o1": {
     "pricing": {
@@ -1946,6 +1902,327 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "llama-3-instruct-8b": {
     "releaseDate": "2024-04-18"
+  },
+  "qwen3-8-max": {
+    "releaseDate": "2026-09-02"
+  },
+  "qwen3-8-max-0803": {
+    "releaseDate": "2026-08-03"
+  },
+  "qwen3-8-flash-next": {
+    "releaseDate": "2026-08-26"
+  },
+  "qwen3-7-max": {
+    "releaseDate": "2026-05-19"
+  },
+  "qwen3-6-max": {
+    "releaseDate": "2026-04-20"
+  },
+  "qwen3-8-27b-medium": {
+    "releaseDate": "2026-08-14"
+  },
+  "qwen3-6-plus": {
+    "releaseDate": "2026-04-02"
+  },
+  "qwen3-8-27b-low": {
+    "releaseDate": "2026-08-14"
+  },
+  "qwen3-7-plus": {
+    "releaseDate": "2026-06-01"
+  },
+  "qwen3-5-27b": {
+    "releaseDate": "2026-02-24"
+  },
+  "qwen3-8-27b-non-reasoning": {
+    "releaseDate": "2026-08-14"
+  },
+  "qwen3-6-27b": {
+    "releaseDate": "2026-04-22"
+  },
+  "qwen3-5-397b-a17b-non-reasoning": {
+    "releaseDate": "2026-02-16"
+  },
+  "qwen3-max-thinking": {
+    "pricing": {
+      "inputPer1M": 0.78,
+      "outputPer1M": 3.9,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2026-01-26"
+  },
+  "qwen3-5-omni-plus": {
+    "releaseDate": "2026-03-30"
+  },
+  "qwen3-6-27b-non-reasoning": {
+    "releaseDate": "2026-04-22"
+  },
+  "qwen3-5-27b-non-reasoning": {
+    "releaseDate": "2026-02-24"
+  },
+  "qwen3-5-35b-a3b": {
+    "releaseDate": "2026-02-24"
+  },
+  "qwen3-5-397b-a17b": {
+    "releaseDate": "2026-02-16"
+  },
+  "qwen3-6-35b-a3b": {
+    "releaseDate": "2026-04-16"
+  },
+  "qwen3-5-122b-a10b-non-reasoning": {
+    "releaseDate": "2026-02-24"
+  },
+  "qwen3-max-thinking-preview": {
+    "releaseDate": "2025-11-03"
+  },
+  "qwen3-5-122b-a10b": {
+    "releaseDate": "2026-02-24"
+  },
+  "qwen3-max": {
+    "pricing": {
+      "inputPer1M": 0.78,
+      "outputPer1M": 3.9,
+      "approx": true
+    },
+    "context": 262144,
+    "benchmarks": {
+      "designArenaElo": 1118.1
+    },
+    "releaseDate": "2025-09-23"
+  },
+  "qwen3-6-35b-a3b-non-reasoning": {
+    "releaseDate": "2026-04-16"
+  },
+  "qwen3-5-35b-a3b-non-reasoning": {
+    "releaseDate": "2026-02-24"
+  },
+  "qwen3-5-9b": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-vl-235b-a22b-reasoning": {
+    "releaseDate": "2025-09-23"
+  },
+  "qwen3-5-9b-non-reasoning": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-5-4b": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-235b-a22b-instruct-2507-reasoning": {
+    "releaseDate": "2025-07-25"
+  },
+  "qwen3-max-preview": {
+    "releaseDate": "2025-09-05"
+  },
+  "qwen3-5-omni-flash": {
+    "releaseDate": "2026-03-30"
+  },
+  "qwen3-235b-a22b-instruct-2507": {
+    "releaseDate": "2025-07-21"
+  },
+  "qwen3-coder-480b-a35b-instruct": {
+    "releaseDate": "2025-07-22"
+  },
+  "qwen3-vl-32b-reasoning": {
+    "releaseDate": "2025-10-21"
+  },
+  "qwen3-next-80b-a3b-reasoning": {
+    "releaseDate": "2025-09-11"
+  },
+  "qwen3-5-4b-non-reasoning": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-coder-next": {
+    "pricing": {
+      "inputPer1M": 0.12,
+      "outputPer1M": 0.8,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2026-02-03"
+  },
+  "qwen3-vl-235b-a22b-instruct": {
+    "pricing": {
+      "inputPer1M": 0.21,
+      "outputPer1M": 1.9,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2025-09-23"
+  },
+  "qwen3-30b-a3b-2507-reasoning": {
+    "releaseDate": "2025-07-30"
+  },
+  "qwen3-next-80b-a3b-instruct": {
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 1.1,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2025-09-11"
+  },
+  "qwen3-coder-30b-a3b-instruct": {
+    "pricing": {
+      "inputPer1M": 0.07,
+      "outputPer1M": 0.28,
+      "approx": true
+    },
+    "context": 262144,
+    "benchmarks": {
+      "designArenaElo": 1091.7
+    },
+    "releaseDate": "2025-07-31"
+  },
+  "qwen3-235b-a22b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwq-32b": {
+    "releaseDate": "2025-03-05"
+  },
+  "qwen3-vl-30b-a3b-reasoning": {
+    "releaseDate": "2025-10-03"
+  },
+  "qwen3-4b-2507-instruct-reasoning": {
+    "releaseDate": "2025-08-06"
+  },
+  "qwen3-vl-32b-instruct": {
+    "pricing": {
+      "inputPer1M": 0.104,
+      "outputPer1M": 0.416,
+      "approx": true
+    },
+    "context": 131072,
+    "releaseDate": "2025-10-21"
+  },
+  "qwen3-235b-a22b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-vl-8b-reasoning": {
+    "releaseDate": "2025-10-14"
+  },
+  "qwen-2-5-max": {
+    "releaseDate": "2025-01-28"
+  },
+  "qwen3-vl-30b-a3b-instruct": {
+    "pricing": {
+      "inputPer1M": 0.13,
+      "outputPer1M": 0.52,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2025-10-03"
+  },
+  "qwen3-omni-30b-a3b-reasoning": {
+    "releaseDate": "2025-09-22"
+  },
+  "qwen2-5-72b-instruct": {
+    "releaseDate": "2024-09-19"
+  },
+  "qwen3-30b-a3b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "QwQ-32B-Preview": {
+    "releaseDate": "2024-11-27"
+  },
+  "qwen3-30b-a3b-2507": {
+    "releaseDate": "2025-07-29"
+  },
+  "qwen3-32b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-vl-8b-instruct": {
+    "pricing": {
+      "inputPer1M": 0.117,
+      "outputPer1M": 0.455,
+      "approx": true
+    },
+    "context": 262144,
+    "releaseDate": "2025-10-14"
+  },
+  "qwen3-4b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-32b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-vl-4b-reasoning": {
+    "releaseDate": "2025-10-14"
+  },
+  "qwen3-5-2b": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen2.5-32b-instruct": {
+    "releaseDate": "2024-09-19"
+  },
+  "qwen3-4b-2507-instruct": {
+    "releaseDate": "2025-08-06"
+  },
+  "qwen2-5-coder-32b-instruct": {
+    "releaseDate": "2024-11-11"
+  },
+  "qwen3-14b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-30b-a3b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-4b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen-turbo": {
+    "releaseDate": "2024-11-18"
+  },
+  "qwen3-14b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen2-72b-instruct": {
+    "releaseDate": "2024-06-07"
+  },
+  "qwen3-5-2b-non-reasoning": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-5-0-8b": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-omni-30b-a3b-instruct": {
+    "releaseDate": "2025-09-22"
+  },
+  "qwen3-8b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen2-5-coder-7b-instruct": {
+    "releaseDate": "2024-09-19"
+  },
+  "qwen3-vl-4b-instruct": {
+    "releaseDate": "2025-10-14"
+  },
+  "qwen1.5-110b-chat": {
+    "releaseDate": "2024-04-25"
+  },
+  "qwen-chat-72b": {
+    "releaseDate": "2023-11-30"
+  },
+  "qwen3-5-0-8b-non-reasoning": {
+    "releaseDate": "2026-03-02"
+  },
+  "qwen3-1.7b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-8b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen-chat-14b": {
+    "releaseDate": "2023-09-25"
+  },
+  "qwen3-1.7b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-0.6b-instruct": {
+    "releaseDate": "2025-04-28"
+  },
+  "qwen3-0.6b-instruct-reasoning": {
+    "releaseDate": "2025-04-28"
   },
   "glm-5-2": {
     "releaseDate": "2026-06-16"
@@ -2363,324 +2640,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "gemini-3-deep-think": {
     "releaseDate": "2026-02-05"
-  },
-  "qwen3-8-max": {
-    "releaseDate": "2026-08-03"
-  },
-  "qwen3-8-flash-next": {
-    "releaseDate": "2026-08-26"
-  },
-  "qwen3-7-max": {
-    "releaseDate": "2026-05-19"
-  },
-  "qwen3-6-max": {
-    "releaseDate": "2026-04-20"
-  },
-  "qwen3-8-27b-medium": {
-    "releaseDate": "2026-08-14"
-  },
-  "qwen3-6-plus": {
-    "releaseDate": "2026-04-02"
-  },
-  "qwen3-8-27b-low": {
-    "releaseDate": "2026-08-14"
-  },
-  "qwen3-7-plus": {
-    "releaseDate": "2026-06-01"
-  },
-  "qwen3-5-27b": {
-    "releaseDate": "2026-02-24"
-  },
-  "qwen3-8-27b-non-reasoning": {
-    "releaseDate": "2026-08-14"
-  },
-  "qwen3-6-27b": {
-    "releaseDate": "2026-04-22"
-  },
-  "qwen3-5-397b-a17b-non-reasoning": {
-    "releaseDate": "2026-02-16"
-  },
-  "qwen3-max-thinking": {
-    "pricing": {
-      "inputPer1M": 0.78,
-      "outputPer1M": 3.9,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2026-01-26"
-  },
-  "qwen3-5-omni-plus": {
-    "releaseDate": "2026-03-30"
-  },
-  "qwen3-6-27b-non-reasoning": {
-    "releaseDate": "2026-04-22"
-  },
-  "qwen3-5-27b-non-reasoning": {
-    "releaseDate": "2026-02-24"
-  },
-  "qwen3-5-35b-a3b": {
-    "releaseDate": "2026-02-24"
-  },
-  "qwen3-5-397b-a17b": {
-    "releaseDate": "2026-02-16"
-  },
-  "qwen3-6-35b-a3b": {
-    "releaseDate": "2026-04-16"
-  },
-  "qwen3-5-122b-a10b-non-reasoning": {
-    "releaseDate": "2026-02-24"
-  },
-  "qwen3-max-thinking-preview": {
-    "releaseDate": "2025-11-03"
-  },
-  "qwen3-5-122b-a10b": {
-    "releaseDate": "2026-02-24"
-  },
-  "qwen3-max": {
-    "pricing": {
-      "inputPer1M": 0.78,
-      "outputPer1M": 3.9,
-      "approx": true
-    },
-    "context": 262144,
-    "benchmarks": {
-      "designArenaElo": 1118.1
-    },
-    "releaseDate": "2025-09-23"
-  },
-  "qwen3-6-35b-a3b-non-reasoning": {
-    "releaseDate": "2026-04-16"
-  },
-  "qwen3-5-35b-a3b-non-reasoning": {
-    "releaseDate": "2026-02-24"
-  },
-  "qwen3-5-9b": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-vl-235b-a22b-reasoning": {
-    "releaseDate": "2025-09-23"
-  },
-  "qwen3-5-9b-non-reasoning": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-5-4b": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-235b-a22b-instruct-2507-reasoning": {
-    "releaseDate": "2025-07-25"
-  },
-  "qwen3-max-preview": {
-    "releaseDate": "2025-09-05"
-  },
-  "qwen3-5-omni-flash": {
-    "releaseDate": "2026-03-30"
-  },
-  "qwen3-235b-a22b-instruct-2507": {
-    "releaseDate": "2025-07-21"
-  },
-  "qwen3-coder-480b-a35b-instruct": {
-    "releaseDate": "2025-07-22"
-  },
-  "qwen3-vl-32b-reasoning": {
-    "releaseDate": "2025-10-21"
-  },
-  "qwen3-next-80b-a3b-reasoning": {
-    "releaseDate": "2025-09-11"
-  },
-  "qwen3-5-4b-non-reasoning": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-coder-next": {
-    "pricing": {
-      "inputPer1M": 0.12,
-      "outputPer1M": 0.8,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2026-02-03"
-  },
-  "qwen3-vl-235b-a22b-instruct": {
-    "pricing": {
-      "inputPer1M": 0.21,
-      "outputPer1M": 1.9,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2025-09-23"
-  },
-  "qwen3-30b-a3b-2507-reasoning": {
-    "releaseDate": "2025-07-30"
-  },
-  "qwen3-next-80b-a3b-instruct": {
-    "pricing": {
-      "inputPer1M": 0.1,
-      "outputPer1M": 1.1,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2025-09-11"
-  },
-  "qwen3-coder-30b-a3b-instruct": {
-    "pricing": {
-      "inputPer1M": 0.07,
-      "outputPer1M": 0.28,
-      "approx": true
-    },
-    "context": 262144,
-    "benchmarks": {
-      "designArenaElo": 1091.7
-    },
-    "releaseDate": "2025-07-31"
-  },
-  "qwen3-235b-a22b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwq-32b": {
-    "releaseDate": "2025-03-05"
-  },
-  "qwen3-vl-30b-a3b-reasoning": {
-    "releaseDate": "2025-10-03"
-  },
-  "qwen3-4b-2507-instruct-reasoning": {
-    "releaseDate": "2025-08-06"
-  },
-  "qwen3-vl-32b-instruct": {
-    "pricing": {
-      "inputPer1M": 0.104,
-      "outputPer1M": 0.416,
-      "approx": true
-    },
-    "context": 131072,
-    "releaseDate": "2025-10-21"
-  },
-  "qwen3-235b-a22b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-vl-8b-reasoning": {
-    "releaseDate": "2025-10-14"
-  },
-  "qwen-2-5-max": {
-    "releaseDate": "2025-01-28"
-  },
-  "qwen3-vl-30b-a3b-instruct": {
-    "pricing": {
-      "inputPer1M": 0.13,
-      "outputPer1M": 0.52,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2025-10-03"
-  },
-  "qwen3-omni-30b-a3b-reasoning": {
-    "releaseDate": "2025-09-22"
-  },
-  "qwen2-5-72b-instruct": {
-    "releaseDate": "2024-09-19"
-  },
-  "qwen3-30b-a3b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "QwQ-32B-Preview": {
-    "releaseDate": "2024-11-27"
-  },
-  "qwen3-30b-a3b-2507": {
-    "releaseDate": "2025-07-29"
-  },
-  "qwen3-32b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-vl-8b-instruct": {
-    "pricing": {
-      "inputPer1M": 0.117,
-      "outputPer1M": 0.455,
-      "approx": true
-    },
-    "context": 262144,
-    "releaseDate": "2025-10-14"
-  },
-  "qwen3-4b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-32b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-vl-4b-reasoning": {
-    "releaseDate": "2025-10-14"
-  },
-  "qwen3-5-2b": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen2.5-32b-instruct": {
-    "releaseDate": "2024-09-19"
-  },
-  "qwen3-4b-2507-instruct": {
-    "releaseDate": "2025-08-06"
-  },
-  "qwen2-5-coder-32b-instruct": {
-    "releaseDate": "2024-11-11"
-  },
-  "qwen3-14b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-30b-a3b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-4b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen-turbo": {
-    "releaseDate": "2024-11-18"
-  },
-  "qwen3-14b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen2-72b-instruct": {
-    "releaseDate": "2024-06-07"
-  },
-  "qwen3-5-2b-non-reasoning": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-5-0-8b": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-omni-30b-a3b-instruct": {
-    "releaseDate": "2025-09-22"
-  },
-  "qwen3-8b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen2-5-coder-7b-instruct": {
-    "releaseDate": "2024-09-19"
-  },
-  "qwen3-vl-4b-instruct": {
-    "releaseDate": "2025-10-14"
-  },
-  "qwen1.5-110b-chat": {
-    "releaseDate": "2024-04-25"
-  },
-  "qwen-chat-72b": {
-    "releaseDate": "2023-11-30"
-  },
-  "qwen3-5-0-8b-non-reasoning": {
-    "releaseDate": "2026-03-02"
-  },
-  "qwen3-1.7b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-8b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen-chat-14b": {
-    "releaseDate": "2023-09-25"
-  },
-  "qwen3-1.7b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-0.6b-instruct": {
-    "releaseDate": "2025-04-28"
-  },
-  "qwen3-0.6b-instruct-reasoning": {
-    "releaseDate": "2025-04-28"
   },
   "deepseek-v4-flash-vision": {
     "releaseDate": "2026-08-21"
@@ -3168,11 +3127,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "mistral-small-4": {
     "releaseDate": "2026-03-16"
   },
-  "mistral-medium-3-1": {
-    "releaseDate": "2025-08-12"
-  },
   "mistral-large-3": {
     "releaseDate": "2025-12-02"
+  },
+  "mistral-medium-3-1": {
+    "releaseDate": "2025-08-12"
   },
   "devstral-2": {
     "releaseDate": "2025-12-09"
@@ -3663,16 +3622,16 @@ export const autoSpecs: Record<string, AutoSpec> = {
 };
 
 export const autoCompanies: Record<string, CompanyMeta> = {
-  "MBZUAIInstituteofFoundationModels": {
-    "name": "MBZUAI Institute of Foundation Models",
-    "origin": "EU",
-    "accent": "#64748b",
-    "blurb": "MBZUAI Institute of Foundation Models — datos del Artificial Analysis Intelligence Index."
-  },
   "NVIDIA": {
     "name": "NVIDIA",
     "origin": "US",
     "accent": "#64748b",
     "blurb": "NVIDIA — datos del Artificial Analysis Intelligence Index."
+  },
+  "MBZUAIInstituteofFoundationModels": {
+    "name": "MBZUAI Institute of Foundation Models",
+    "origin": "EU",
+    "accent": "#64748b",
+    "blurb": "MBZUAI Institute of Foundation Models — datos del Artificial Analysis Intelligence Index."
   }
 };
