@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-16T08:16:19Z",
+  "fetched_at": "2026-09-17T08:17:00Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.3",
   "method": "rsc-html",
-  "n_models": 651,
-  "n_default_data": 651,
+  "n_models": 652,
+  "n_default_data": 652,
   "sections_captured": [
     "intelligence_index",
     "sub_evaluations",
@@ -102,6 +102,13 @@
         "intelligence_index_v4_1": 47.0613568915036
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "intelligence_index": 45.4354834980521,
+        "intelligence_index_v4_1": 45.4354834980521
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
@@ -131,7 +138,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "intelligence_index": 41.907366113455,
         "intelligence_index_v4_1": 41.907366113455
@@ -142,13 +149,6 @@
         "creator": "Google",
         "intelligence_index": 41.1863571765904,
         "intelligence_index_v4_1": 41.1863571765904
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "intelligence_index": 40.0445723105325,
-        "intelligence_index_v4_1": 40.0445723105325
       },
       {
         "slug": "deepseek-v4-1-flash",
@@ -401,11 +401,26 @@
         "mmmu_pro": 0.834104046242775
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "gdpval": 1688.96,
+        "gdpval_v2": 1688.96,
+        "tau_banking": 0.478350515463918,
+        "scicode": 0.520833333333333,
+        "hle": 0.430954587581094,
+        "gpqa": 0.928282828282828,
+        "critpt": 0.177142857142857,
+        "lcr": 0.803333333333333,
+        "omniscience": 11.9833333333333,
+        "mmmu_pro": 0.827745664739884
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "gdpval": 1655.16,
-        "gdpval_v2": 1655.16,
+        "gdpval": 1641.18,
+        "gdpval_v2": 1641.18,
         "tau_banking": 0.503092783505155,
         "scicode": 0.590277777777778,
         "hle": 0.422613531047266,
@@ -432,8 +447,8 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval": 1551.05,
-        "gdpval_v2": 1551.05,
+        "gdpval": 1547.63,
+        "gdpval_v2": 1547.63,
         "tau_banking": 0.45979381443299,
         "scicode": 0.594907407407407,
         "hle": 0.468952734012975,
@@ -462,7 +477,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "gdpval": 1654.95,
         "gdpval_v2": 1654.95,
@@ -490,20 +505,6 @@
         "mmmu_pro": 0.85606936416185
       },
       {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "gdpval": 1627.82,
-        "gdpval_v2": 1627.82,
-        "tau_banking": 0.490721649484536,
-        "scicode": 0.540509259259259,
-        "hle": 0.424467099165894,
-        "gpqa": 0.935353535353535,
-        "critpt": 0.2,
-        "lcr": 0.803333333333333,
-        "omniscience": 4.31666666666667
-      },
-      {
         "slug": "deepseek-v4-1-flash",
         "name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
         "creator": "DeepSeek",
@@ -520,8 +521,8 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "gdpval": 1463.89,
-        "gdpval_v2": 1463.89,
+        "gdpval": 1459.92,
+        "gdpval_v2": 1459.92,
         "tau_banking": 0.311340206185567,
         "scicode": 0.53587962962963,
         "hle": 0.394810009267841,
@@ -757,10 +758,16 @@
         "briefcase": 1475
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "briefcase": 1621.59
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "briefcase": 1511.24
+        "briefcase": 1505.44
       },
       {
         "slug": "grok-4-6",
@@ -782,7 +789,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "briefcase": 1448.95
       },
@@ -791,12 +798,6 @@
         "name": "Gemini 3.8 Flash (high)",
         "creator": "Google",
         "briefcase": 1201.59
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "briefcase": 1438.5
       },
       {
         "slug": "deepseek-v4-1-flash",
@@ -808,7 +809,7 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "briefcase": 1332.64
+        "briefcase": 1332.39
       },
       {
         "slug": "deepseek-v4-pro",
@@ -939,6 +940,12 @@
         "omniscience": 21.9666666666667
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "omniscience": 11.9833333333333
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
@@ -964,7 +971,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "omniscience": 7.46666666666667
       },
@@ -973,12 +980,6 @@
         "name": "Gemini 3.8 Flash (high)",
         "creator": "Google",
         "omniscience": 29.55
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "omniscience": 4.31666666666667
       },
       {
         "slug": "deepseek-v4-1-flash",
@@ -1121,10 +1122,16 @@
         "gdpval_v2": 1624.11
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "gdpval_v2": 1688.96
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "gdpval_v2": 1655.16
+        "gdpval_v2": 1641.18
       },
       {
         "slug": "grok-4-6",
@@ -1136,7 +1143,7 @@
         "slug": "kimi-k3",
         "name": "Kimi K3 (max)",
         "creator": "Kimi",
-        "gdpval_v2": 1551.05
+        "gdpval_v2": 1547.63
       },
       {
         "slug": "gpt-5-6-terra",
@@ -1146,7 +1153,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "gdpval_v2": 1654.95
       },
@@ -1155,12 +1162,6 @@
         "name": "Gemini 3.8 Flash (high)",
         "creator": "Google",
         "gdpval_v2": 1463.81
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "gdpval_v2": 1627.82
       },
       {
         "slug": "deepseek-v4-1-flash",
@@ -1172,7 +1173,7 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "gdpval_v2": 1463.89
+        "gdpval_v2": 1459.92
       },
       {
         "slug": "deepseek-v4-pro",
@@ -1303,6 +1304,12 @@
         "is_open_weights": false
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "is_open_weights": false
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
@@ -1328,7 +1335,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "is_open_weights": true
       },
@@ -1337,12 +1344,6 @@
         "name": "Gemini 3.8 Flash (high)",
         "creator": "Google",
         "is_open_weights": false
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "is_open_weights": true
       },
       {
         "slug": "deepseek-v4-1-flash",
@@ -1507,6 +1508,14 @@
         "cache_hit_price": 0.4
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "price_1m_input_tokens": 2,
+        "price_1m_output_tokens": 6,
+        "cache_hit_price": 0.25
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
@@ -1540,7 +1549,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "price_1m_input_tokens": 0.15,
         "price_1m_output_tokens": 0.5,
@@ -1553,14 +1562,6 @@
         "price_1m_input_tokens": 0.75,
         "price_1m_output_tokens": 3.75,
         "cache_hit_price": 0.075
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "price_1m_input_tokens": 2,
-        "price_1m_output_tokens": 6,
-        "cache_hit_price": 0.25
       },
       {
         "slug": "deepseek-v4-1-flash",
@@ -1714,7 +1715,7 @@
         "creator": "Anthropic",
         "reasoning_model": true,
         "release_date": "2026-06-09",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gpt-6-astra-medium",
@@ -1738,6 +1739,14 @@
         "creator": "OpenAI",
         "reasoning_model": true,
         "release_date": "2026-07-09",
+        "deprecated": false
+      },
+      {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "creator": "Alibaba",
+        "reasoning_model": true,
+        "release_date": "2026-09-02",
         "deprecated": false
       },
       {
@@ -1778,7 +1787,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "creator": "Z AI",
         "parameters": 320,
         "activeParams": 18,
@@ -1792,16 +1801,6 @@
         "creator": "Google",
         "reasoning_model": true,
         "release_date": "2026-09-02",
-        "deprecated": false
-      },
-      {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "creator": "Alibaba",
-        "parameters": 2400,
-        "activeParams": 95,
-        "reasoning_model": true,
-        "release_date": "2026-08-12",
         "deprecated": false
       },
       {
@@ -2942,7 +2941,7 @@
         "creator": "Meta",
         "reasoning_model": true,
         "release_date": "2026-08-05",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "muse-spark-1-1",
@@ -3089,19 +3088,19 @@
         "deprecated": true
       },
       {
-        "slug": "qwen3-8-max",
-        "name": "Qwen3.8 Max (0902)",
-        "creator": "Alibaba",
-        "reasoning_model": true,
-        "release_date": "2026-09-02",
-        "deprecated": false
-      },
-      {
         "slug": "qwen3-8-max-0803",
         "name": "Qwen3.8 Max",
         "creator": "Alibaba",
         "reasoning_model": true,
         "release_date": "2026-08-03",
+        "deprecated": true
+      },
+      {
+        "slug": "qwen3-8-2-4t-a95b",
+        "name": "Qwen3.8 2.4T A95B",
+        "creator": "Alibaba",
+        "reasoning_model": true,
+        "release_date": "2026-08-12",
         "deprecated": false
       },
       {
@@ -3182,7 +3181,7 @@
         "creator": "Alibaba",
         "reasoning_model": true,
         "release_date": "2026-04-22",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "qwen3-5-397b-a17b-non-reasoning",
@@ -3214,7 +3213,7 @@
         "creator": "Alibaba",
         "reasoning_model": false,
         "release_date": "2026-04-22",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "qwen3-5-27b-non-reasoning",
@@ -3790,7 +3789,7 @@
         "creator": "Z AI",
         "reasoning_model": true,
         "release_date": "2026-06-16",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "glm-5",
@@ -3966,7 +3965,7 @@
         "creator": "SpaceXAI",
         "reasoning_model": true,
         "release_date": "2026-07-08",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "grok-4-6-low",
@@ -4014,7 +4013,7 @@
         "creator": "SpaceXAI",
         "reasoning_model": true,
         "release_date": "2026-04-30",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "grok-4-3-low",
@@ -4022,7 +4021,7 @@
         "creator": "SpaceXAI",
         "reasoning_model": true,
         "release_date": "2026-04-30",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "grok-4",
@@ -4070,7 +4069,7 @@
         "creator": "SpaceXAI",
         "reasoning_model": false,
         "release_date": "2026-04-30",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "grok-4-20-non-reasoning",
@@ -4238,7 +4237,7 @@
         "creator": "Google",
         "reasoning_model": true,
         "release_date": "2026-08-13",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gemini-3-7-flash",
@@ -4246,7 +4245,7 @@
         "creator": "Google",
         "reasoning_model": true,
         "release_date": "2026-08-13",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gemini-3-7-flash-low",
@@ -4254,7 +4253,7 @@
         "creator": "Google",
         "reasoning_model": true,
         "release_date": "2026-08-13",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gemini-3-6-flash",
@@ -4262,7 +4261,7 @@
         "creator": "Google",
         "reasoning_model": true,
         "release_date": "2026-07-21",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gemini-3-8-flash-low",
@@ -4278,7 +4277,7 @@
         "creator": "Google",
         "reasoning_model": true,
         "release_date": "2026-05-19",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gemini-3-5-flash",
@@ -4318,7 +4317,7 @@
         "creator": "Google",
         "reasoning_model": false,
         "release_date": "2026-05-19",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "gemini-3-pro-low",
@@ -4730,7 +4729,7 @@
       },
       {
         "slug": "deepseek-v4-flash-vision",
-        "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Flash 0731 Vision (Reasoning, Max Effort)",
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-08-21",
@@ -4742,19 +4741,19 @@
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-07-31",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "deepseek-v4-pro-0424",
-        "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Pro 0424 (Reasoning, Max Effort)",
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-04-24",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "deepseek-v4-pro-0424-high",
-        "name": "DeepSeek V4 Pro (Reasoning, High Effort)",
+        "name": "DeepSeek V4 Pro 0424 (Reasoning, High Effort)",
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-04-24",
@@ -4762,7 +4761,7 @@
       },
       {
         "slug": "deepseek-v4-flash-0420-high",
-        "name": "DeepSeek V4 Flash (Reasoning, High Effort)",
+        "name": "DeepSeek V4 Flash 0420 (Reasoning, High Effort)",
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-04-24",
@@ -4770,7 +4769,7 @@
       },
       {
         "slug": "deepseek-v4-flash-0420",
-        "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Flash 0420 (Reasoning, Max Effort)",
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-04-24",
@@ -4786,7 +4785,7 @@
       },
       {
         "slug": "deepseek-v4-pro-0424-non-reasoning",
-        "name": "DeepSeek V4 Pro (Non-reasoning)",
+        "name": "DeepSeek V4 Pro 0424 (Non-reasoning)",
         "creator": "DeepSeek",
         "reasoning_model": false,
         "release_date": "2026-04-24",
@@ -4794,7 +4793,7 @@
       },
       {
         "slug": "deepseek-v4-flash-0420-non-reasoning",
-        "name": "DeepSeek V4 Flash (Non-reasoning)",
+        "name": "DeepSeek V4 Flash 0420 (Non-reasoning)",
         "creator": "DeepSeek",
         "reasoning_model": false,
         "release_date": "2026-04-24",
@@ -5182,7 +5181,7 @@
         "creator": "Xiaomi",
         "reasoning_model": true,
         "release_date": "2026-03-27",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "mimo-v2-omni",
@@ -5190,7 +5189,7 @@
         "creator": "Xiaomi",
         "reasoning_model": true,
         "release_date": "2026-03-19",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "mimo-v2-0206",
@@ -5230,7 +5229,7 @@
         "creator": "Xiaomi",
         "reasoning_model": false,
         "release_date": "2025-12-16",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "nex-n2-pro",
@@ -5286,7 +5285,7 @@
         "creator": "Upstage",
         "reasoning_model": true,
         "release_date": "2026-04-06",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "solar-pro-2-reasoning",
@@ -5390,6 +5389,14 @@
         "creator": "InclusionAI",
         "reasoning_model": true,
         "release_date": "2026-09-10",
+        "deprecated": false
+      },
+      {
+        "slug": "ling-3-0-flash-fin",
+        "name": "Ling-3.0-flash-Fin",
+        "creator": "InclusionAI",
+        "reasoning_model": true,
+        "release_date": "2026-09-11",
         "deprecated": false
       },
       {
@@ -5658,7 +5665,7 @@
       },
       {
         "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
+        "name": "K-EXAONE 2.0 0803",
         "creator": "LG AI Research",
         "reasoning_model": true,
         "release_date": "2026-08-12",
@@ -5670,7 +5677,7 @@
         "creator": "LG AI Research",
         "reasoning_model": true,
         "release_date": "2025-12-31",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "exaone-4-5-33b",
@@ -5686,7 +5693,7 @@
         "creator": "LG AI Research",
         "reasoning_model": false,
         "release_date": "2025-12-31",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "exaone-4-0-32b-reasoning",
@@ -6070,7 +6077,7 @@
         "creator": "IBM",
         "reasoning_model": false,
         "release_date": "2026-04-29",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "granite-4-1-8b",
@@ -6078,7 +6085,7 @@
         "creator": "IBM",
         "reasoning_model": false,
         "release_date": "2026-04-29",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "granite-4-0-h-small",
@@ -6094,7 +6101,7 @@
         "creator": "IBM",
         "reasoning_model": false,
         "release_date": "2026-04-29",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "granite-4-0-h-nano-1b",
@@ -6118,7 +6125,7 @@
         "creator": "IBM",
         "reasoning_model": false,
         "release_date": "2025-10-28",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "granite-3-3-8b-instruct",
@@ -6550,7 +6557,7 @@
         "creator": "Liquid AI",
         "reasoning_model": false,
         "release_date": "2025-09-23",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "lfm2-5-1-2b-instruct",
@@ -6566,7 +6573,7 @@
         "creator": "Liquid AI",
         "reasoning_model": false,
         "release_date": "2025-10-07",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "lfm2-1-2b",
@@ -7210,7 +7217,7 @@
         "release_date": "2026-06-09",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": 10,
         "price_1m_output": 50,
         "price_1m_blended_7_2_1": null,
@@ -7342,6 +7349,47 @@
         "output_tokens_per_task": null
       },
       {
+        "slug": "qwen3-8-max",
+        "name": "Qwen3.8 Max (0902)",
+        "short_name": null,
+        "creator": "Alibaba",
+        "intelligence_index": 45.4354834980521,
+        "intelligence_index_v4_1": 45.4354834980521,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": 1688.96,
+        "gdpval_elo": null,
+        "omniscience": 11.9833333333333,
+        "scicode": 0.520833333333333,
+        "hle": 0.430954587581094,
+        "gpqa": 0.928282828282828,
+        "critpt": 0.177142857142857,
+        "lcr": 0.803333333333333,
+        "terminalbench_v2_1": null,
+        "tau_banking": 0.478350515463918,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": 0.827745664739884,
+        "briefcase": 1621.59,
+        "is_open_weights": false,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-02",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": 2,
+        "price_1m_output": 6,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "short_name": null,
@@ -7350,7 +7398,7 @@
         "intelligence_index_v4_1": 44.855717385614,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1655.16,
+        "gdpval_v2": 1641.18,
         "gdpval_elo": null,
         "omniscience": 14.3,
         "scicode": 0.590277777777778,
@@ -7366,7 +7414,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1511.24,
+        "briefcase": 1505.44,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 753,
@@ -7432,7 +7480,7 @@
         "intelligence_index_v4_1": 43.7841729518782,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1551.05,
+        "gdpval_v2": 1547.63,
         "gdpval_elo": null,
         "omniscience": 19.7,
         "scicode": 0.594907407407407,
@@ -7507,7 +7555,7 @@
       },
       {
         "slug": "glm-5-3-flash",
-        "name": "GLM-5.3-Flash",
+        "name": "GLM 5.3 Flash",
         "short_name": null,
         "creator": "Z AI",
         "intelligence_index": 41.907366113455,
@@ -7588,47 +7636,6 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "qwen3-8-2-4t-a95b",
-        "name": "Qwen3.8 2.4T A95B",
-        "short_name": null,
-        "creator": "Alibaba",
-        "intelligence_index": 40.0445723105325,
-        "intelligence_index_v4_1": 40.0445723105325,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": 1627.82,
-        "gdpval_elo": null,
-        "omniscience": 4.31666666666667,
-        "scicode": 0.540509259259259,
-        "hle": 0.424467099165894,
-        "gpqa": 0.935353535353535,
-        "critpt": 0.2,
-        "lcr": 0.803333333333333,
-        "terminalbench_v2_1": null,
-        "tau_banking": 0.490721649484536,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": 1438.5,
-        "is_open_weights": true,
-        "context_window_tokens": null,
-        "parameters": 2400,
-        "activeParams": 95,
-        "release_date": "2026-08-12",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": 2,
-        "price_1m_output": 6,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
         "slug": "deepseek-v4-1-flash",
         "name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
         "short_name": null,
@@ -7678,7 +7685,7 @@
         "intelligence_index_v4_1": 37.5048489690841,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1463.89,
+        "gdpval_v2": 1459.92,
         "gdpval_elo": null,
         "omniscience": -10.2833333333333,
         "scicode": 0.53587962962963,
@@ -7694,7 +7701,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.785549132947977,
-        "briefcase": 1332.64,
+        "briefcase": 1332.39,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -13360,7 +13367,7 @@
         "release_date": "2026-08-05",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -14107,47 +14114,6 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "qwen3-8-max",
-        "name": "Qwen3.8 Max (0902)",
-        "short_name": null,
-        "creator": "Alibaba",
-        "intelligence_index": null,
-        "intelligence_index_v4_1": null,
-        "coding_index": null,
-        "agentic_index": null,
-        "gdpval_v2": null,
-        "gdpval_elo": null,
-        "omniscience": null,
-        "scicode": null,
-        "hle": null,
-        "gpqa": null,
-        "critpt": null,
-        "lcr": null,
-        "terminalbench_v2_1": null,
-        "tau_banking": null,
-        "ifbench": null,
-        "livecodebench": null,
-        "humaneval": null,
-        "aime": null,
-        "mmlu_pro": null,
-        "mmmu_pro": null,
-        "briefcase": null,
-        "is_open_weights": null,
-        "context_window_tokens": null,
-        "parameters": null,
-        "activeParams": null,
-        "release_date": "2026-09-02",
-        "reasoning_model": true,
-        "frontier_model": null,
-        "deprecated": false,
-        "price_1m_input": null,
-        "price_1m_output": null,
-        "price_1m_blended_7_2_1": null,
-        "cost_per_task_total": null,
-        "time_per_task": null,
-        "output_tokens_per_task": null
-      },
-      {
         "slug": "qwen3-8-max-0803",
         "name": "Qwen3.8 Max",
         "short_name": null,
@@ -14178,6 +14144,47 @@
         "parameters": null,
         "activeParams": null,
         "release_date": "2026-08-03",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": true,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "qwen3-8-2-4t-a95b",
+        "name": "Qwen3.8 2.4T A95B",
+        "short_name": null,
+        "creator": "Alibaba",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-08-12",
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,
@@ -14590,7 +14597,7 @@
         "release_date": "2026-04-22",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -14754,7 +14761,7 @@
         "release_date": "2026-04-22",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -17706,7 +17713,7 @@
         "release_date": "2026-06-16",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -18608,7 +18615,7 @@
         "release_date": "2026-07-08",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -18854,7 +18861,7 @@
         "release_date": "2026-04-30",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -18895,7 +18902,7 @@
         "release_date": "2026-04-30",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -19141,7 +19148,7 @@
         "release_date": "2026-04-30",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -20002,7 +20009,7 @@
         "release_date": "2026-08-13",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -20043,7 +20050,7 @@
         "release_date": "2026-08-13",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -20084,7 +20091,7 @@
         "release_date": "2026-08-13",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -20125,7 +20132,7 @@
         "release_date": "2026-07-21",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -20207,7 +20214,7 @@
         "release_date": "2026-05-19",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -20412,7 +20419,7 @@
         "release_date": "2026-05-19",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -22513,7 +22520,7 @@
       },
       {
         "slug": "deepseek-v4-flash-vision",
-        "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Flash 0731 Vision (Reasoning, Max Effort)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22585,7 +22592,7 @@
         "release_date": "2026-07-31",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -22595,7 +22602,7 @@
       },
       {
         "slug": "deepseek-v4-pro-0424",
-        "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Pro 0424 (Reasoning, Max Effort)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22626,7 +22633,7 @@
         "release_date": "2026-04-24",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -22636,7 +22643,7 @@
       },
       {
         "slug": "deepseek-v4-pro-0424-high",
-        "name": "DeepSeek V4 Pro (Reasoning, High Effort)",
+        "name": "DeepSeek V4 Pro 0424 (Reasoning, High Effort)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22677,7 +22684,7 @@
       },
       {
         "slug": "deepseek-v4-flash-0420-high",
-        "name": "DeepSeek V4 Flash (Reasoning, High Effort)",
+        "name": "DeepSeek V4 Flash 0420 (Reasoning, High Effort)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22718,7 +22725,7 @@
       },
       {
         "slug": "deepseek-v4-flash-0420",
-        "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Flash 0420 (Reasoning, Max Effort)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22800,7 +22807,7 @@
       },
       {
         "slug": "deepseek-v4-pro-0424-non-reasoning",
-        "name": "DeepSeek V4 Pro (Non-reasoning)",
+        "name": "DeepSeek V4 Pro 0424 (Non-reasoning)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22841,7 +22848,7 @@
       },
       {
         "slug": "deepseek-v4-flash-0420-non-reasoning",
-        "name": "DeepSeek V4 Flash (Non-reasoning)",
+        "name": "DeepSeek V4 Flash 0420 (Non-reasoning)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -24840,7 +24847,7 @@
         "release_date": "2026-03-27",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -24881,7 +24888,7 @@
         "release_date": "2026-03-19",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -25086,7 +25093,7 @@
         "release_date": "2025-12-16",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -25373,7 +25380,7 @@
         "release_date": "2026-04-06",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -25904,6 +25911,47 @@
         "parameters": null,
         "activeParams": null,
         "release_date": "2026-09-10",
+        "reasoning_model": true,
+        "frontier_model": null,
+        "deprecated": false,
+        "price_1m_input": null,
+        "price_1m_output": null,
+        "price_1m_blended_7_2_1": null,
+        "cost_per_task_total": null,
+        "time_per_task": null,
+        "output_tokens_per_task": null
+      },
+      {
+        "slug": "ling-3-0-flash-fin",
+        "name": "Ling-3.0-flash-Fin",
+        "short_name": null,
+        "creator": "InclusionAI",
+        "intelligence_index": null,
+        "intelligence_index_v4_1": null,
+        "coding_index": null,
+        "agentic_index": null,
+        "gdpval_v2": null,
+        "gdpval_elo": null,
+        "omniscience": null,
+        "scicode": null,
+        "hle": null,
+        "gpqa": null,
+        "critpt": null,
+        "lcr": null,
+        "terminalbench_v2_1": null,
+        "tau_banking": null,
+        "ifbench": null,
+        "livecodebench": null,
+        "humaneval": null,
+        "aime": null,
+        "mmlu_pro": null,
+        "mmmu_pro": null,
+        "briefcase": null,
+        "is_open_weights": null,
+        "context_window_tokens": null,
+        "parameters": null,
+        "activeParams": null,
+        "release_date": "2026-09-11",
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": false,
@@ -27269,7 +27317,7 @@
       },
       {
         "slug": "k-exaone-2-0-0803",
-        "name": "K-EXAONE 2.0",
+        "name": "K-EXAONE 2.0 0803",
         "short_name": null,
         "creator": "LG AI Research",
         "intelligence_index": null,
@@ -27341,7 +27389,7 @@
         "release_date": "2025-12-31",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -27423,7 +27471,7 @@
         "release_date": "2025-12-31",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -29391,7 +29439,7 @@
         "release_date": "2026-04-29",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -29432,7 +29480,7 @@
         "release_date": "2026-04-29",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -29514,7 +29562,7 @@
         "release_date": "2026-04-29",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -29637,7 +29685,7 @@
         "release_date": "2025-10-28",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -31851,7 +31899,7 @@
         "release_date": "2025-09-23",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -31933,7 +31981,7 @@
         "release_date": "2025-10-07",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,

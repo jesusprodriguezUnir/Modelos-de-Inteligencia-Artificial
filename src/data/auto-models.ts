@@ -23,37 +23,6 @@ export interface AutoSpec {
 
 export const autoModels: Model[] = [
   {
-    "id": "claude-fable-5",
-    "iiSlug": "claude-fable-5",
-    "company": "Anthropic",
-    "origin": "US",
-    "displayName": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": 1000000,
-    "pricing": {
-      "inputPer1M": 5.0,
-      "outputPer1M": 25.0,
-      "approx": true
-    },
-    "modalities": [
-      "image",
-      "text"
-    ],
-    "openWeight": false,
-    "releaseDate": "2026-06-09",
-    "benchmarks": {
-      "terminalBench": 62.9,
-      "sciCode": 61.0,
-      "intelligenceIndex": 49.7,
-      "designArenaElo": 1346.4
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 87.0). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "gpt-5-6-sol",
     "iiSlug": "gpt-5-6-sol",
     "company": "OpenAI",
@@ -519,6 +488,34 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 44.8). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "qwen3-8-max",
+    "iiSlug": "qwen3-8-max",
+    "company": "Alibaba",
+    "origin": "China",
+    "displayName": "Qwen3.8 Max (0902)",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 6.0,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-02",
+    "benchmarks": {
+      "sciCode": 52.1,
+      "intelligenceIndex": 45.4
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 43.6). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "mistral-medium-3-5",
     "iiSlug": "mistral-medium-3-5",
     "company": "Mistral",
@@ -578,40 +575,11 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 43.2). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
-    "id": "qwen3-8-2-4t-a95b",
-    "iiSlug": "qwen3-8-2-4t-a95b",
-    "company": "Alibaba",
-    "origin": "China",
-    "displayName": "Qwen3.8 2.4T A95B",
-    "kind": "model",
-    "category": [
-      "coding",
-      "reasoning"
-    ],
-    "context": null,
-    "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
-      "approx": true
-    },
-    "modalities": [
-      "text"
-    ],
-    "openWeight": true,
-    "releaseDate": "2026-08-12",
-    "parameters": 2400.0,
-    "benchmarks": {
-      "sciCode": 54.1,
-      "intelligenceIndex": 40.0
-    },
-    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 41.6). Precios aproximados; verifica en la web oficial del proveedor."
-  },
-  {
     "id": "glm-5-3-flash",
     "iiSlug": "glm-5-3-flash",
     "company": "Zhipu",
     "origin": "China",
-    "displayName": "GLM-5.3-Flash",
+    "displayName": "GLM 5.3 Flash",
     "kind": "model",
     "category": [
       "coding",
@@ -1049,6 +1017,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "releaseDate": "2026-07-09"
   },
+  "qwen3-8-max": {
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 6.0,
+      "approx": true
+    },
+    "benchmarks": {
+      "sciCode": 52.1,
+      "intelligenceIndex": 45.4
+    },
+    "releaseDate": "2026-09-02"
+  },
   "glm-5-3": {
     "pricing": {
       "inputPer1M": 1.4,
@@ -1126,19 +1106,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
       "intelligenceIndex": 41.2
     },
     "releaseDate": "2026-09-02"
-  },
-  "qwen3-8-2-4t-a95b": {
-    "pricing": {
-      "inputPer1M": 2.0,
-      "outputPer1M": 6.0,
-      "approx": true
-    },
-    "benchmarks": {
-      "sciCode": 54.1,
-      "intelligenceIndex": 40.0
-    },
-    "parameters": 2400.0,
-    "releaseDate": "2026-08-12"
   },
   "deepseek-v4-1-flash": {
     "pricing": {
@@ -1903,11 +1870,11 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "llama-3-instruct-8b": {
     "releaseDate": "2024-04-18"
   },
-  "qwen3-8-max": {
-    "releaseDate": "2026-09-02"
-  },
   "qwen3-8-max-0803": {
     "releaseDate": "2026-08-03"
+  },
+  "qwen3-8-2-4t-a95b": {
+    "releaseDate": "2026-08-12"
   },
   "qwen3-8-flash-next": {
     "releaseDate": "2026-08-26"
@@ -2964,6 +2931,9 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "ling-3-0-flash-vl": {
     "releaseDate": "2026-09-10"
+  },
+  "ling-3-0-flash-fin": {
+    "releaseDate": "2026-09-11"
   },
   "ling-3-0-flash": {
     "releaseDate": "2026-08-04"

@@ -1,11 +1,11 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-09-16T08:16:19Z`
+- **Última actualización:** `2026-09-17T08:17:00Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.3
 - **Método de extracción:** `rsc-html`
-- **Modelos (metadata):** 651
-- **Entradas con datos:** 651
+- **Modelos (metadata):** 652
+- **Entradas con datos:** 652
 - **Secciones capturadas:** intelligence_index, sub_evaluations, aa_briefcase, aa_omniscience, gdpval_aa_v2, openness_index, price_cost, metadata
 - **Secciones NO capturadas:** coding_agent_index, cost_per_task, time_per_task, output_tokens, speed_latency
 
@@ -38,13 +38,13 @@
 | 9 | GPT-6 Astra (medium) | OpenAI | 49.67 | — | — | — | 42.22 | — | — |
 | 10 | Muse Spark 1.3 (max) | Meta | 48.17 | — | — | — | 25 | — | — |
 | 11 | GPT-5.6 Sol (max) | OpenAI | 47.06 | — | — | — | 21.97 | — | — |
-| 12 | GLM-5.3 (max) | Z AI | 44.86 | — | — | — | 14.30 | ✓ | — |
-| 13 | Grok 4.6 (high) | SpaceXAI | 44.41 | — | — | — | 30.48 | — | — |
-| 14 | Kimi K3 (max) | Kimi | 43.78 | — | — | — | 19.70 | ✓ | — |
-| 15 | GPT-5.6 Terra (max) | OpenAI | 42.25 | — | — | — | 0.05 | — | — |
-| 16 | GLM-5.3-Flash | Z AI | 41.91 | — | — | — | 7.47 | ✓ | — |
-| 17 | Gemini 3.8 Flash (high) | Google | 41.19 | — | — | — | 29.55 | — | — |
-| 18 | Qwen3.8 2.4T A95B | Alibaba | 40.04 | — | — | — | 4.32 | ✓ | — |
+| 12 | Qwen3.8 Max (0902) | Alibaba | 45.44 | — | — | — | 11.98 | — | — |
+| 13 | GLM-5.3 (max) | Z AI | 44.86 | — | — | — | 14.30 | ✓ | — |
+| 14 | Grok 4.6 (high) | SpaceXAI | 44.41 | — | — | — | 30.48 | — | — |
+| 15 | Kimi K3 (max) | Kimi | 43.78 | — | — | — | 19.70 | ✓ | — |
+| 16 | GPT-5.6 Terra (max) | OpenAI | 42.25 | — | — | — | 0.05 | — | — |
+| 17 | GLM 5.3 Flash | Z AI | 41.91 | — | — | — | 7.47 | ✓ | — |
+| 18 | Gemini 3.8 Flash (high) | Google | 41.19 | — | — | — | 29.55 | — | — |
 | 19 | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 39.55 | — | — | — | -5.30 | ✓ | — |
 | 20 | GPT-5.6 Luna (max) | OpenAI | 37.50 | — | — | — | -10.28 | — | — |
 | 21 | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 36.28 | — | — | — | 0.83 | ✓ | — |
@@ -68,13 +68,13 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 49.6685363034369 | 49.6685363034369 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 48.1690107719685 | 48.1690107719685 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 47.0613568915036 | 47.0613568915036 |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | 45.4354834980521 | 45.4354834980521 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 44.855717385614 | 44.855717385614 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 44.4050073012592 | 44.4050073012592 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 43.7841729518782 | 43.7841729518782 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 42.2514998239494 | 42.2514998239494 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 41.907366113455 | 41.907366113455 |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | 41.907366113455 | 41.907366113455 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 41.1863571765904 | 41.1863571765904 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 40.0445723105325 | 40.0445723105325 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 39.545442472527 | 39.545442472527 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 37.5048489690841 | 37.5048489690841 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 36.2828791278402 | 36.2828791278402 |
@@ -103,15 +103,15 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1500.67 | 1500.67 | 0.354639175257732 | 0.541666666666667 | 0.527340129749768 | 0.939393939393939 | 0.291428571428571 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1703.34 | 1703.34 | 0.505154639175258 | 0.587962962962963 | 0.487025023169602 | 0.935353535353535 | 0.248571428571429 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1624.11 | 1624.11 | 0.443298969072165 | 0.570601851851852 | 0.494902687673772 | 0.941414141414141 | 0.322857142857143 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1655.16 | 1655.16 | 0.503092783505155 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 | 0.191428571428571 |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | 1688.96 | 1688.96 | 0.478350515463918 | 0.520833333333333 | 0.430954587581094 | 0.928282828282828 | 0.177142857142857 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1641.18 | 1641.18 | 0.503092783505155 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 | 0.191428571428571 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 | 1642.96 | 0.507216494845361 | 0.564814814814815 | 0.429101019462465 | 0.94949494949495 | 0.171428571428571 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1551.05 | 1551.05 | 0.45979381443299 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 | 0.234285714285714 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1547.63 | 1547.63 | 0.45979381443299 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 | 0.234285714285714 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 | 1476.96 | 0.402061855670103 | 0.549768518518518 | 0.429101019462465 | 0.925252525252525 | 0.3 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1654.95 | 1654.95 | 0.472164948453608 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 | 0.154285714285714 |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | 1654.95 | 1654.95 | 0.472164948453608 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 | 0.154285714285714 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1463.81 | 1463.81 | 0.449484536082474 | 0.565972222222222 | 0.478220574606117 | 0.952525252525253 | 0.182857142857143 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1627.82 | 1627.82 | 0.490721649484536 | 0.540509259259259 | 0.424467099165894 | 0.935353535353535 | 0.2 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 1632.06 | 1632.06 | — | 0.518518518518518 | 0.392493049119555 | — | 0.142857142857143 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1463.89 | 1463.89 | 0.311340206185567 | 0.53587962962963 | 0.394810009267841 | 0.911111111111111 | 0.205714285714286 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1459.92 | 1459.92 | 0.311340206185567 | 0.53587962962963 | 0.394810009267841 | 0.911111111111111 | 0.205714285714286 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1493.31 | 1493.31 | 0.395876288659794 | 0.510416666666667 | 0.410101946246525 | 0.928282828282828 | 0.18 |
 | qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1463.25 | 1463.25 | 0.480412371134021 | 0.466435185185185 | 0.33920296570899 | 0.905050505050505 | 0.0542857142857143 |
 | k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1400 | 1400 | 0.342268041237113 | 0.429398148148148 | 0.319740500463392 | 0.872727272727273 | 0.0457142857142857 |
@@ -138,15 +138,15 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1450.6 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1589.18 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1475 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1511.24 |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | 1621.59 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1505.44 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1534.13 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1488.1 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1330 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1448.95 |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | 1448.95 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1201.59 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1438.5 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 1423.72 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1332.64 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1332.39 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1264.67 |
 | qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1397.82 |
 | k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1298.34 |
@@ -173,13 +173,13 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 42.2166666666667 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 25 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 21.9666666666667 |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | 11.9833333333333 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 14.3 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 30.4833333333333 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 19.7 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 0.05 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 7.46666666666667 |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | 7.46666666666667 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 29.55 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 4.31666666666667 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | -5.3 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | -10.2833333333333 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 0.833333333333333 |
@@ -208,15 +208,15 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 1500.67 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1703.34 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 1624.11 |
-| glm-5-3 | GLM-5.3 (max) | Z AI | 1655.16 |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | 1688.96 |
+| glm-5-3 | GLM-5.3 (max) | Z AI | 1641.18 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 |
-| kimi-k3 | Kimi K3 (max) | Kimi | 1551.05 |
+| kimi-k3 | Kimi K3 (max) | Kimi | 1547.63 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 1654.95 |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | 1654.95 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1463.81 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 1627.82 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 1632.06 |
-| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1463.89 |
+| gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 1459.92 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1493.31 |
 | qwen3-8-27b | Qwen3.8 27B (xhigh) | Alibaba | 1463.25 |
 | k2-horizon-375b-a23b | K2 Horizon 375B A23B | MBZUAI Institute of Foundation Models | 1400 |
@@ -243,13 +243,13 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | False |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | False |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | False |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | False |
 | glm-5-3 | GLM-5.3 (max) | Z AI | True |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | False |
 | kimi-k3 | Kimi K3 (max) | Kimi | True |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | False |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | True |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | True |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | False |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | True |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | True |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | False |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | True |
@@ -278,13 +278,13 @@
 | gpt-6-astra-medium | GPT-6 Astra (medium) | OpenAI | 10 | 50 | 1 |
 | muse-spark-1-3 | Muse Spark 1.3 (max) | Meta | 1.25 | 4.25 | 0.15 |
 | gpt-5-6-sol | GPT-5.6 Sol (max) | OpenAI | 4 | 20 | 0.4 |
+| qwen3-8-max | Qwen3.8 Max (0902) | Alibaba | 2 | 6 | 0.25 |
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1.4 | 4.4 | 0.26 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 2 | 6 | 0.5 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 3 | 15 | 0.3 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 2 | 12 | 0.2 |
-| glm-5-3-flash | GLM-5.3-Flash | Z AI | 0.15 | 0.5 | 0.026 |
+| glm-5-3-flash | GLM 5.3 Flash | Z AI | 0.15 | 0.5 | 0.026 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 0.75 | 3.75 | 0.075 |
-| qwen3-8-2-4t-a95b | Qwen3.8 2.4T A95B | Alibaba | 2 | 6 | 0.25 |
 | deepseek-v4-1-flash | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 0.3 | 1.2 | 0.006 |
 | gpt-5-6-luna | GPT-5.6 Luna (max) | OpenAI | 0.2 | 1.2 | 0.02 |
 | deepseek-v4-pro | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 1.32 | 3.96 | 0.044 |
