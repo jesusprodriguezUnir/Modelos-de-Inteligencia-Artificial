@@ -759,8 +759,8 @@ export const autoModels: Model[] = [
   {
     "id": "k2-horizon-375b-a23b",
     "iiSlug": "k2-horizon-375b-a23b",
-    "company": "MBZUAIInstituteofFoundationModels",
-    "origin": "EU",
+    "company": "InstituteofFoundationModels",
+    "origin": "US",
     "displayName": "K2 Horizon 375B A23B",
     "kind": "model",
     "category": [
@@ -2501,7 +2501,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
     "releaseDate": "2025-04-17"
   },
   "gemini-2-5-flash-lite-preview-09-2025-reasoning": {
-    "releaseDate": "2025-09-08"
+    "releaseDate": "2025-09-25"
   },
   "gemini-2-5-flash": {
     "releaseDate": "2025-05-20"
@@ -2746,13 +2746,13 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "motif-2-12-7b": {
     "releaseDate": "2025-12-04"
   },
-  "k2-mova-36b-mid5": {
+  "k2-horizon-mova-36b-a4b": {
     "releaseDate": "2026-09-03"
   },
-  "k2-7b-ph2": {
+  "k2-horizon-7b": {
     "releaseDate": "2026-09-03"
   },
-  "k2-4b-ph1": {
+  "k2-horizon-3-7b": {
     "releaseDate": "2026-09-03"
   },
   "k2-think-v2": {
@@ -2767,7 +2767,7 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "k2-v2-low": {
     "releaseDate": "2025-12-05"
   },
-  "k2-1b-final": {
+  "k2-horizon-0-9b": {
     "releaseDate": "2026-09-03"
   },
   "apodex-1-1": {
@@ -3598,10 +3598,10 @@ export const autoCompanies: Record<string, CompanyMeta> = {
     "accent": "#64748b",
     "blurb": "NVIDIA — datos del Artificial Analysis Intelligence Index."
   },
-  "MBZUAIInstituteofFoundationModels": {
-    "name": "MBZUAI Institute of Foundation Models",
-    "origin": "EU",
+  "InstituteofFoundationModels": {
+    "name": "Institute of Foundation Models",
+    "origin": "US",
     "accent": "#64748b",
-    "blurb": "MBZUAI Institute of Foundation Models — datos del Artificial Analysis Intelligence Index."
+    "blurb": "Institute of Foundation Models — datos del Artificial Analysis Intelligence Index."
   }
 };

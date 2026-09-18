@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-17T08:17:00Z",
+  "fetched_at": "2026-09-18T08:15:39Z",
   "source_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
   "index_version": "v4.3",
   "method": "rsc-html",
@@ -181,7 +181,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": 30.7949302696723,
         "intelligence_index_v4_1": 30.7949302696723
       },
@@ -240,8 +240,8 @@
         "slug": "claude-fable-5-1",
         "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
         "creator": "Anthropic",
-        "gdpval": 1763.64,
-        "gdpval_v2": 1763.64,
+        "gdpval": 1723.58,
+        "gdpval_v2": 1723.58,
         "tau_banking": 0.472164948453608,
         "scicode": 0.630787037037037,
         "hle": 0.591288229842447,
@@ -387,8 +387,8 @@
         "slug": "gpt-5-6-sol",
         "name": "GPT-5.6 Sol (max)",
         "creator": "OpenAI",
-        "gdpval": 1624.11,
-        "gdpval_v2": 1624.11,
+        "gdpval": 1586.78,
+        "gdpval_v2": 1586.78,
         "tau_banking": 0.443298969072165,
         "terminalbench_v2_1": 0.659090909090909,
         "scicode": 0.570601851851852,
@@ -404,8 +404,8 @@
         "slug": "qwen3-8-max",
         "name": "Qwen3.8 Max (0902)",
         "creator": "Alibaba",
-        "gdpval": 1688.96,
-        "gdpval_v2": 1688.96,
+        "gdpval": 1664.28,
+        "gdpval_v2": 1664.28,
         "tau_banking": 0.478350515463918,
         "scicode": 0.520833333333333,
         "hle": 0.430954587581094,
@@ -419,8 +419,8 @@
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "gdpval": 1641.18,
-        "gdpval_v2": 1641.18,
+        "gdpval": 1633.8,
+        "gdpval_v2": 1633.8,
         "tau_banking": 0.503092783505155,
         "scicode": 0.590277777777778,
         "hle": 0.422613531047266,
@@ -521,8 +521,8 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "gdpval": 1459.92,
-        "gdpval_v2": 1459.92,
+        "gdpval": 1455.6,
+        "gdpval_v2": 1455.6,
         "tau_banking": 0.311340206185567,
         "scicode": 0.53587962962963,
         "hle": 0.394810009267841,
@@ -564,7 +564,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "gdpval": 1400,
         "gdpval_v2": 1400,
         "tau_banking": 0.342268041237113,
@@ -695,7 +695,7 @@
         "slug": "claude-fable-5-1",
         "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
         "creator": "Anthropic",
-        "briefcase": 1661.82
+        "briefcase": 1646.09
       },
       {
         "slug": "claude-fable-5-1-xhigh",
@@ -731,7 +731,7 @@
         "slug": "claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "creator": "Anthropic",
-        "briefcase": 1644.9
+        "briefcase": 1633.44
       },
       {
         "slug": "claude-fable-5",
@@ -755,19 +755,19 @@
         "slug": "gpt-5-6-sol",
         "name": "GPT-5.6 Sol (max)",
         "creator": "OpenAI",
-        "briefcase": 1475
+        "briefcase": 1463.44
       },
       {
         "slug": "qwen3-8-max",
         "name": "Qwen3.8 Max (0902)",
         "creator": "Alibaba",
-        "briefcase": 1621.59
+        "briefcase": 1609.69
       },
       {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "briefcase": 1505.44
+        "briefcase": 1504.38
       },
       {
         "slug": "grok-4-6",
@@ -809,7 +809,7 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "briefcase": 1332.39
+        "briefcase": 1332.9
       },
       {
         "slug": "deepseek-v4-pro",
@@ -826,7 +826,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "briefcase": 1298.34
       },
       {
@@ -1008,7 +1008,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "omniscience": -2.96666666666667
       },
       {
@@ -1059,7 +1059,7 @@
         "slug": "claude-fable-5-1",
         "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
         "creator": "Anthropic",
-        "gdpval_v2": 1763.64
+        "gdpval_v2": 1723.58
       },
       {
         "slug": "claude-fable-5-1-xhigh",
@@ -1119,19 +1119,19 @@
         "slug": "gpt-5-6-sol",
         "name": "GPT-5.6 Sol (max)",
         "creator": "OpenAI",
-        "gdpval_v2": 1624.11
+        "gdpval_v2": 1586.78
       },
       {
         "slug": "qwen3-8-max",
         "name": "Qwen3.8 Max (0902)",
         "creator": "Alibaba",
-        "gdpval_v2": 1688.96
+        "gdpval_v2": 1664.28
       },
       {
         "slug": "glm-5-3",
         "name": "GLM-5.3 (max)",
         "creator": "Z AI",
-        "gdpval_v2": 1641.18
+        "gdpval_v2": 1633.8
       },
       {
         "slug": "grok-4-6",
@@ -1173,7 +1173,7 @@
         "slug": "gpt-5-6-luna",
         "name": "GPT-5.6 Luna (max)",
         "creator": "OpenAI",
-        "gdpval_v2": 1459.92
+        "gdpval_v2": 1455.6
       },
       {
         "slug": "deepseek-v4-pro",
@@ -1190,7 +1190,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "gdpval_v2": 1400
       },
       {
@@ -1372,7 +1372,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "is_open_weights": true
       },
       {
@@ -1844,7 +1844,7 @@
       {
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "parameters": 375,
         "activeParams": 23,
         "reasoning_model": true,
@@ -2093,7 +2093,7 @@
         "creator": "Anthropic",
         "reasoning_model": false,
         "release_date": "2026-02-17",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "claude-4-1-opus-thinking",
@@ -3293,7 +3293,7 @@
         "creator": "Alibaba",
         "reasoning_model": false,
         "release_date": "2026-02-24",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "qwen3-5-9b",
@@ -3837,7 +3837,7 @@
         "creator": "Z AI",
         "reasoning_model": false,
         "release_date": "2026-06-16",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "glm-4-7",
@@ -4444,7 +4444,7 @@
         "name": "Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning)",
         "creator": "Google",
         "reasoning_model": true,
-        "release_date": "2025-09-08",
+        "release_date": "2025-09-25",
         "deprecated": true
       },
       {
@@ -4729,7 +4729,7 @@
       },
       {
         "slug": "deepseek-v4-flash-vision",
-        "name": "DeepSeek V4 Flash 0731 Vision (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-08-21",
@@ -4757,7 +4757,7 @@
         "creator": "DeepSeek",
         "reasoning_model": true,
         "release_date": "2026-04-24",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "deepseek-v4-flash-0420-high",
@@ -4789,7 +4789,7 @@
         "creator": "DeepSeek",
         "reasoning_model": false,
         "release_date": "2026-04-24",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "deepseek-v4-flash-0420-non-reasoning",
@@ -4797,7 +4797,7 @@
         "creator": "DeepSeek",
         "reasoning_model": false,
         "release_date": "2026-04-24",
-        "deprecated": false
+        "deprecated": true
       },
       {
         "slug": "deepseek-v3-2-reasoning-0925",
@@ -5040,25 +5040,25 @@
         "deprecated": false
       },
       {
-        "slug": "k2-mova-36b-mid5",
+        "slug": "k2-horizon-mova-36b-a4b",
         "name": "K2 Horizon MoVA 36B A4B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2026-09-03",
         "deprecated": false
       },
       {
-        "slug": "k2-7b-ph2",
+        "slug": "k2-horizon-7b",
         "name": "K2 Horizon 7B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2026-09-03",
         "deprecated": false
       },
       {
-        "slug": "k2-4b-ph1",
+        "slug": "k2-horizon-3-7b",
         "name": "K2 Horizon 3.7B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2026-09-03",
         "deprecated": false
@@ -5066,7 +5066,7 @@
       {
         "slug": "k2-think-v2",
         "name": "K2 Think V2",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2025-12-15",
         "deprecated": false
@@ -5074,7 +5074,7 @@
       {
         "slug": "k2-v2",
         "name": "K2-V2 (high)",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2025-12-05",
         "deprecated": false
@@ -5082,7 +5082,7 @@
       {
         "slug": "k2-v2-medium",
         "name": "K2-V2 (medium)",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2025-12-05",
         "deprecated": false
@@ -5090,15 +5090,15 @@
       {
         "slug": "k2-v2-low",
         "name": "K2-V2 (low)",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2025-12-05",
         "deprecated": false
       },
       {
-        "slug": "k2-1b-final",
+        "slug": "k2-horizon-0-9b",
         "name": "K2 Horizon 0.9B",
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "reasoning_model": true,
         "release_date": "2026-09-03",
         "deprecated": false
@@ -5233,7 +5233,7 @@
       },
       {
         "slug": "nex-n2-pro",
-        "name": "Nex-N2-Pro",
+        "name": "Nex-N2-Pro (based on Qwen3.5-397B-A17B)",
         "creator": "Nex AGI",
         "reasoning_model": true,
         "release_date": "2026-06-02",
@@ -6906,7 +6906,7 @@
         "intelligence_index_v4_1": 53.3737509623252,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1763.64,
+        "gdpval_v2": 1723.58,
         "gdpval_elo": null,
         "omniscience": 43.45,
         "scicode": 0.630787037037037,
@@ -6922,7 +6922,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1661.82,
+        "briefcase": 1646.09,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7168,7 +7168,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.847398843930636,
-        "briefcase": 1644.9,
+        "briefcase": 1633.44,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7316,7 +7316,7 @@
         "intelligence_index_v4_1": 47.0613568915036,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1624.11,
+        "gdpval_v2": 1586.78,
         "gdpval_elo": null,
         "omniscience": 21.9666666666667,
         "scicode": 0.570601851851852,
@@ -7332,7 +7332,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.834104046242775,
-        "briefcase": 1475,
+        "briefcase": 1463.44,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7357,7 +7357,7 @@
         "intelligence_index_v4_1": 45.4354834980521,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1688.96,
+        "gdpval_v2": 1664.28,
         "gdpval_elo": null,
         "omniscience": 11.9833333333333,
         "scicode": 0.520833333333333,
@@ -7373,7 +7373,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.827745664739884,
-        "briefcase": 1621.59,
+        "briefcase": 1609.69,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7398,7 +7398,7 @@
         "intelligence_index_v4_1": 44.855717385614,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1641.18,
+        "gdpval_v2": 1633.8,
         "gdpval_elo": null,
         "omniscience": 14.3,
         "scicode": 0.590277777777778,
@@ -7414,7 +7414,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": null,
-        "briefcase": 1505.44,
+        "briefcase": 1504.38,
         "is_open_weights": true,
         "context_window_tokens": null,
         "parameters": 753,
@@ -7685,7 +7685,7 @@
         "intelligence_index_v4_1": 37.5048489690841,
         "coding_index": null,
         "agentic_index": null,
-        "gdpval_v2": 1459.92,
+        "gdpval_v2": 1455.6,
         "gdpval_elo": null,
         "omniscience": -10.2833333333333,
         "scicode": 0.53587962962963,
@@ -7701,7 +7701,7 @@
         "aime": null,
         "mmlu_pro": null,
         "mmmu_pro": 0.785549132947977,
-        "briefcase": 1332.39,
+        "briefcase": 1332.9,
         "is_open_weights": false,
         "context_window_tokens": null,
         "parameters": null,
@@ -7803,7 +7803,7 @@
         "slug": "k2-horizon-375b-a23b",
         "name": "K2 Horizon 375B A23B",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": 30.7949302696723,
         "intelligence_index_v4_1": 30.7949302696723,
         "coding_index": null,
@@ -9021,7 +9021,7 @@
         "release_date": "2026-02-17",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -15171,7 +15171,7 @@
         "release_date": "2026-02-24",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -17959,7 +17959,7 @@
         "release_date": "2026-06-16",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -21072,7 +21072,7 @@
         "context_window_tokens": null,
         "parameters": null,
         "activeParams": null,
-        "release_date": "2025-09-08",
+        "release_date": "2025-09-25",
         "reasoning_model": true,
         "frontier_model": null,
         "deprecated": true,
@@ -22520,7 +22520,7 @@
       },
       {
         "slug": "deepseek-v4-flash-vision",
-        "name": "DeepSeek V4 Flash 0731 Vision (Reasoning, Max Effort)",
+        "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
         "short_name": null,
         "creator": "DeepSeek",
         "intelligence_index": null,
@@ -22674,7 +22674,7 @@
         "release_date": "2026-04-24",
         "reasoning_model": true,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -22838,7 +22838,7 @@
         "release_date": "2026-04-24",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -22879,7 +22879,7 @@
         "release_date": "2026-04-24",
         "reasoning_model": false,
         "frontier_model": null,
-        "deprecated": false,
+        "deprecated": true,
         "price_1m_input": null,
         "price_1m_output": null,
         "price_1m_blended_7_2_1": null,
@@ -24118,10 +24118,10 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "k2-mova-36b-mid5",
+        "slug": "k2-horizon-mova-36b-a4b",
         "name": "K2 Horizon MoVA 36B A4B",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24159,10 +24159,10 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "k2-7b-ph2",
+        "slug": "k2-horizon-7b",
         "name": "K2 Horizon 7B",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24200,10 +24200,10 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "k2-4b-ph1",
+        "slug": "k2-horizon-3-7b",
         "name": "K2 Horizon 3.7B",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24244,7 +24244,7 @@
         "slug": "k2-think-v2",
         "name": "K2 Think V2",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24285,7 +24285,7 @@
         "slug": "k2-v2",
         "name": "K2-V2 (high)",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24326,7 +24326,7 @@
         "slug": "k2-v2-medium",
         "name": "K2-V2 (medium)",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24367,7 +24367,7 @@
         "slug": "k2-v2-low",
         "name": "K2-V2 (low)",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -24405,10 +24405,10 @@
         "output_tokens_per_task": null
       },
       {
-        "slug": "k2-1b-final",
+        "slug": "k2-horizon-0-9b",
         "name": "K2 Horizon 0.9B",
         "short_name": null,
-        "creator": "MBZUAI Institute of Foundation Models",
+        "creator": "Institute of Foundation Models",
         "intelligence_index": null,
         "intelligence_index_v4_1": null,
         "coding_index": null,
@@ -25103,7 +25103,7 @@
       },
       {
         "slug": "nex-n2-pro",
-        "name": "Nex-N2-Pro",
+        "name": "Nex-N2-Pro (based on Qwen3.5-397B-A17B)",
         "short_name": null,
         "creator": "Nex AGI",
         "intelligence_index": null,
