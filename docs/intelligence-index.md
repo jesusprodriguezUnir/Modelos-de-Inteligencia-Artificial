@@ -1,11 +1,11 @@
 # Artificial Analysis Intelligence Index
 
-- **Última actualización:** `2026-09-18T08:15:39Z`
+- **Última actualización:** `2026-09-19T08:14:03Z`
 - **Fuente:** https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
 - **Versión del índice:** v4.3
 - **Método de extracción:** `rsc-html`
-- **Modelos (metadata):** 652
-- **Entradas con datos:** 652
+- **Modelos (metadata):** 653
+- **Entradas con datos:** 653
 - **Secciones capturadas:** intelligence_index, sub_evaluations, aa_briefcase, aa_omniscience, gdpval_aa_v2, openness_index, price_cost, metadata
 - **Secciones NO capturadas:** coding_agent_index, cost_per_task, time_per_task, output_tokens, speed_latency
 
@@ -42,16 +42,16 @@
 | 13 | GLM-5.3 (max) | Z AI | 44.86 | — | — | — | 14.30 | ✓ | — |
 | 14 | Grok 4.6 (high) | SpaceXAI | 44.41 | — | — | — | 30.48 | — | — |
 | 15 | Kimi K3 (max) | Kimi | 43.78 | — | — | — | 19.70 | ✓ | — |
-| 16 | GPT-5.6 Terra (max) | OpenAI | 42.25 | — | — | — | 0.05 | — | — |
-| 17 | GLM 5.3 Flash | Z AI | 41.91 | — | — | — | 7.47 | ✓ | — |
-| 18 | Gemini 3.8 Flash (high) | Google | 41.19 | — | — | — | 29.55 | — | — |
-| 19 | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 39.55 | — | — | — | -5.30 | ✓ | — |
-| 20 | GPT-5.6 Luna (max) | OpenAI | 37.50 | — | — | — | -10.28 | — | — |
-| 21 | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 36.28 | — | — | — | 0.83 | ✓ | — |
-| 22 | Qwen3.8 27B (xhigh) | Alibaba | 33.90 | — | — | — | -9.98 | ✓ | — |
-| 23 | K2 Horizon 375B A23B | Institute of Foundation Models | 30.79 | — | — | — | -2.97 | ✓ | — |
-| 24 | MiniMax-M3 | MiniMax | 29.61 | — | — | — | 1.35 | ✓ | — |
-| 25 | Inkling (xhigh) | Thinking Machines | 25.54 | — | — | — | 2 | ✓ | — |
+| 16 | Step 5 Preview | StepFun | 43.64 | — | — | — | 16.38 | — | — |
+| 17 | GPT-5.6 Terra (max) | OpenAI | 42.25 | — | — | — | 0.05 | — | — |
+| 18 | GLM 5.3 Flash | Z AI | 41.91 | — | — | — | 7.47 | ✓ | — |
+| 19 | Gemini 3.8 Flash (high) | Google | 41.19 | — | — | — | 29.55 | — | — |
+| 20 | DeepSeek V4.1 Flash (Reasoning, Max Effort) | DeepSeek | 39.55 | — | — | — | -5.30 | ✓ | — |
+| 21 | GPT-5.6 Luna (max) | OpenAI | 37.50 | — | — | — | -10.28 | — | — |
+| 22 | DeepSeek V4 Pro 0813 (Reasoning, Max Effort) | DeepSeek | 36.28 | — | — | — | 0.83 | ✓ | — |
+| 23 | Qwen3.8 27B (xhigh) | Alibaba | 33.90 | — | — | — | -9.98 | ✓ | — |
+| 24 | K2 Horizon 375B A23B | Institute of Foundation Models | 30.79 | — | — | — | -2.97 | ✓ | — |
+| 25 | MiniMax-M3 | MiniMax | 29.61 | — | — | — | 1.35 | ✓ | — |
 
 ## `intelligence_index`
 
@@ -72,6 +72,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | 44.855717385614 | 44.855717385614 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 44.4050073012592 | 44.4050073012592 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 43.7841729518782 | 43.7841729518782 |
+| step-5 | Step 5 Preview | StepFun | 43.6394799141614 | 43.6394799141614 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 42.2514998239494 | 42.2514998239494 |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | 41.907366113455 | 41.907366113455 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 41.1863571765904 | 41.1863571765904 |
@@ -86,7 +87,8 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 22.6606674839812 | 22.6606674839812 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 18.0678176089465 | 18.0678176089465 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 14.8946727802691 | 14.8946727802691 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 12.3483931512592 | 12.3483931512592 |
+
+_…y 1 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `sub_evaluations`
 
@@ -107,6 +109,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1633.8 | 1633.8 | 0.503092783505155 | 0.590277777777778 | 0.422613531047266 | 0.917171717171717 | 0.191428571428571 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 | 1642.96 | 0.507216494845361 | 0.564814814814815 | 0.429101019462465 | 0.94949494949495 | 0.171428571428571 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1547.63 | 1547.63 | 0.45979381443299 | 0.594907407407407 | 0.468952734012975 | 0.935353535353535 | 0.234285714285714 |
+| step-5 | Step 5 Preview | StepFun | 1571.24 | 1571.24 | — | 0.58912037037037 | 0.464782205746061 | — | 0.208571428571429 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 | 1476.96 | 0.402061855670103 | 0.549768518518518 | 0.429101019462465 | 0.925252525252525 | 0.3 |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | 1654.95 | 1654.95 | 0.472164948453608 | 0.516203703703704 | 0.398517145505097 | 0.912121212121212 | 0.154285714285714 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1463.81 | 1463.81 | 0.449484536082474 | 0.565972222222222 | 0.478220574606117 | 0.952525252525253 | 0.182857142857143 |
@@ -121,7 +124,8 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1063.25 | 1063.25 | 0.175257731958763 | 0.413194444444444 | 0.188137164040778 | 0.838383838383838 | 0 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 892.72 | 892.72 | 0.235051546391753 | 0.449074074074074 | 0.219647822057461 | 0.835353535353535 | 0.0257142857142857 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 875.14 | 875.14 | 0.150515463917526 | 0.40162037037037 | 0.137627432808156 | 0.748484848484849 | 0 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 744.74 | 744.74 | 0.127835051546392 | 0.340277777777778 | 0.196014828544949 | 0.781818181818182 | 0.0114285714285714 |
+
+_…y 1 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `aa_briefcase`
 
@@ -142,6 +146,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1504.38 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1534.13 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1488.1 |
+| step-5 | Step 5 Preview | StepFun | 1417.09 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1330 |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | 1448.95 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1201.59 |
@@ -156,7 +161,8 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 645.32 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 481.02 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 523.63 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 0 |
+
+_…y 1 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `aa_omniscience`
 
@@ -177,6 +183,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | 14.3 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 30.4833333333333 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 19.7 |
+| step-5 | Step 5 Preview | StepFun | 16.3833333333333 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 0.05 |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | 7.46666666666667 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 29.55 |
@@ -191,7 +198,8 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 5.23333333333333 |
 | muse-glimmer | Muse Glimmer (high) | Meta | -32.85 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | -36.8 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | -49.25 |
+
+_…y 1 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `gdpval_aa_v2`
 
@@ -212,6 +220,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1633.8 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 1642.96 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 1547.63 |
+| step-5 | Step 5 Preview | StepFun | 1571.24 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 1476.96 |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | 1654.95 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 1463.81 |
@@ -226,7 +235,8 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | 1063.25 |
 | muse-glimmer | Muse Glimmer (high) | Meta | 892.72 |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | 875.14 |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | 744.74 |
+
+_…y 1 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `openness_index`
 
@@ -247,6 +257,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | True |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | False |
 | kimi-k3 | Kimi K3 (max) | Kimi | True |
+| step-5 | Step 5 Preview | StepFun | False |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | False |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | True |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | False |
@@ -261,7 +272,8 @@
 | gemini-3-5-flash-lite | Gemini 3.5 Flash-Lite | Google | False |
 | muse-glimmer | Muse Glimmer (high) | Meta | True |
 | mistral-medium-3-5 | Mistral Medium 3.5 | Mistral | True |
-| gpt-oss-120b | gpt-oss-120b (high) | OpenAI | True |
+
+_…y 1 filas más. Ver JSON completo en `data/intelligence-index.json`._
 
 ## `price_cost`
 
@@ -282,6 +294,7 @@
 | glm-5-3 | GLM-5.3 (max) | Z AI | 1.4 | 4.4 | 0.26 |
 | grok-4-6 | Grok 4.6 (high) | SpaceXAI | 2 | 6 | 0.5 |
 | kimi-k3 | Kimi K3 (max) | Kimi | 3 | 15 | 0.3 |
+| step-5 | Step 5 Preview | StepFun | 1 | 2.7 | 0.05 |
 | gpt-5-6-terra | GPT-5.6 Terra (max) | OpenAI | 2 | 12 | 0.2 |
 | glm-5-3-flash | GLM 5.3 Flash | Z AI | 0.15 | 0.5 | 0.026 |
 | gemini-3-8-flash | Gemini 3.8 Flash (high) | Google | 0.75 | 3.75 | 0.075 |

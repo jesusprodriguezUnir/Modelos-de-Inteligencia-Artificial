@@ -460,6 +460,35 @@ export const autoModels: Model[] = [
     "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 45.7). Precios aproximados; verifica en la web oficial del proveedor."
   },
   {
+    "id": "step-5",
+    "iiSlug": "step-5",
+    "company": "StepFun",
+    "origin": "China",
+    "displayName": "Step 5 Preview",
+    "kind": "model",
+    "category": [
+      "coding",
+      "reasoning"
+    ],
+    "context": null,
+    "pricing": {
+      "inputPer1M": 1.0,
+      "outputPer1M": 2.7,
+      "approx": true
+    },
+    "modalities": [
+      "text"
+    ],
+    "openWeight": false,
+    "releaseDate": "2026-09-18",
+    "parameters": 600.0,
+    "benchmarks": {
+      "sciCode": 58.9,
+      "intelligenceIndex": 43.6
+    },
+    "notes": "Importado automáticamente del Artificial Analysis Intelligence Index (Score 45.4). Precios aproximados; verifica en la web oficial del proveedor."
+  },
+  {
     "id": "grok-4-6",
     "iiSlug": "grok-4-6",
     "company": "xAI",
@@ -1068,6 +1097,19 @@ export const autoSpecs: Record<string, AutoSpec> = {
     },
     "parameters": 2800.0,
     "releaseDate": "2026-07-16"
+  },
+  "step-5": {
+    "pricing": {
+      "inputPer1M": 1.0,
+      "outputPer1M": 2.7,
+      "approx": true
+    },
+    "benchmarks": {
+      "sciCode": 58.9,
+      "intelligenceIndex": 43.6
+    },
+    "parameters": 600.0,
+    "releaseDate": "2026-09-18"
   },
   "gpt-5-6-terra": {
     "pricing": {
@@ -2419,6 +2461,18 @@ export const autoSpecs: Record<string, AutoSpec> = {
   "kimi-linear-48b-a3b-instruct": {
     "releaseDate": "2025-10-30"
   },
+  "step-3-7-flash": {
+    "releaseDate": "2026-05-29"
+  },
+  "step-3-5-flash": {
+    "releaseDate": "2026-04-02"
+  },
+  "step-3-5-flash-0202": {
+    "releaseDate": "2026-02-02"
+  },
+  "step-3-vl-10b": {
+    "releaseDate": "2026-01-20"
+  },
   "gemini-3-8-flash-medium": {
     "releaseDate": "2026-09-02"
   },
@@ -3072,18 +3126,6 @@ export const autoSpecs: Record<string, AutoSpec> = {
   },
   "longcat-flash-lite": {
     "releaseDate": "2026-01-28"
-  },
-  "step-3-7-flash": {
-    "releaseDate": "2026-05-29"
-  },
-  "step-3-5-flash": {
-    "releaseDate": "2026-04-02"
-  },
-  "step-3-5-flash-0202": {
-    "releaseDate": "2026-02-02"
-  },
-  "step-3-vl-10b": {
-    "releaseDate": "2026-01-20"
   },
   "doubao-seed-code": {
     "releaseDate": "2025-11-11"
